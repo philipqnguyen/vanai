@@ -646,16 +646,41 @@ svg.lp { display: block; flex: 0 0 auto; }
   border-top: 1px solid var(--lp-track); font-size: 11px; color: var(--lp-muted);
 }
 
-/* the Character window's abilities that did not fit on the bar */
-.abook { margin-top: 12px; }
-.abook .wsection { margin-bottom: 4px; }
-.abrow {
-  display: flex; align-items: center; gap: 8px; padding: 5px 6px; border-radius: 6px;
-  border: 1px solid transparent; font-size: 13px; color: var(--lp-parch); cursor: grab;
+/* the Character window: three tabs in the header, as the Journal and the
+   Court have; wider than a lone panel so the title and the tabs share a line */
+.window.character .whead { padding: 14px 14px 0 22px; }
+.window.character .wtitle { margin-bottom: 12px; white-space: nowrap; }
+.window.character .wclose { margin-bottom: 10px; }
+#win-character { width: var(--char-w); }
+.chtabs { display: flex; gap: 2px; align-self: flex-end; }
+.chtabs .lp-tab { padding: 8px 10px 10px; font-size: 13px; cursor: pointer; }
+.chtabs .lp-tab:hover { color: var(--lp-parch); }
+
+/* the Abilities tab: every ability of the job, the learned ones draggable */
+.abook { display: flex; flex-direction: column; gap: 6px; }
+.abook .abintro { margin-bottom: 2px; }
+.abcard {
+  display: flex; align-items: flex-start; gap: 10px; padding: 8px 10px; border-radius: 8px;
+  border: 1px solid var(--lp-hair); background: rgba(255, 255, 255, 0.02); cursor: grab;
 }
-.abrow:hover { border-color: var(--lp-hair-2); background: rgba(255, 255, 255, 0.03); }
-.abrow .abico { display: flex; color: #e3dac6; }
-.abrow .ablv { margin-left: auto; font-size: 11px; color: var(--lp-muted); }
+.abcard:hover { border-color: var(--lp-hair-2); background: rgba(255, 255, 255, 0.04); }
+.abcard.locked { cursor: default; opacity: 0.5; }
+.abcard.locked:hover { border-color: var(--lp-hair); background: rgba(255, 255, 255, 0.02); }
+.abcard .abico {
+  width: 38px; height: 38px; border-radius: 8px; flex: none; display: flex; align-items: center; justify-content: center;
+  background: rgba(255, 255, 255, 0.05); border: 1px solid var(--lp-brass-line); color: #e3dac6;
+}
+.abcard .abtext { flex: 1; min-width: 0; }
+.abcard .abtop { display: flex; align-items: baseline; gap: 8px; }
+.abcard .abname { font-size: 14px; font-weight: 600; color: var(--lp-parch-hi); }
+.abcard .abcost { font-size: 11px; font-weight: 600; }
+.abcard .abcost.tp { color: #f0c06a; }
+.abcard .abcost.mp { color: var(--lp-mp-ink); }
+.abcard .abcost.hp { color: var(--lp-low); }
+.abcard .abtag { margin-left: auto; font-size: 11px; color: var(--lp-muted); white-space: nowrap; }
+.abcard .abtag.on { color: var(--lp-brass); }
+.abcard .abmeta { display: flex; flex-wrap: wrap; gap: 2px 10px; margin-top: 2px; font-size: 11px; color: var(--lp-muted); }
+.abcard .abdesc { margin-top: 4px; font-size: 12.5px; line-height: 1.4; color: var(--lp-body); }
 
 .statgrid.attr span:nth-child(even) { font-variant-numeric: tabular-nums; }
 
@@ -759,7 +784,7 @@ svg.lp { display: block; flex: 0 0 auto; }
    window-drag.ts moves a dragged one to left/top and remembers it per id,
    which overrides all of this. --win-step is one window plus a 12px gap,
    for the ones that open beside another. */
-#hud { --win-right: calc(24px + 292px + 16px); --win-step: calc(360px + 12px); --win-floor: 112px; }
+#hud { --win-right: calc(24px + 292px + 16px); --win-step: calc(360px + 12px); --win-floor: 112px; --char-w: 420px; }
 /* --win-floor keeps a full window off the bottom row: the hotbar's top (50px
    up plus 50px slots) and a 12px gap. --win-top is the default spot, and a
    cascaded window moves it so its height still stops at the floor. */
@@ -925,9 +950,9 @@ svg.lp { display: block; flex: 0 0 auto; }
 
 /* examine-a-piece window, opened beside the Character window */
 /* beside the Character window at the default spot; once that would run off
-   the left edge (332 + 372 + 360 = 1064px), it cascades over it instead */
-#win-item { right: calc(var(--win-right) + var(--win-step)); }
-@media (max-width: 1091px) { #win-item { right: calc(var(--win-right) + 32px); --win-top: 182px; } }
+   the left edge (332 + 432 + 360 = 1124px), it cascades over it instead */
+#win-item { right: calc(var(--win-right) + var(--char-w) + 12px); }
+@media (max-width: 1151px) { #win-item { right: calc(var(--win-right) + 32px); --win-top: 182px; } }
 .itemhead { display: flex; align-items: center; gap: 10px; }
 .itemhead .iicon.big {
   width: 42px; height: 42px; border-radius: 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--lp-brass-line);
@@ -937,7 +962,12 @@ svg.lp { display: block; flex: 0 0 auto; }
 
 .statgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; font-size: 13px; margin-bottom: 10px; }
 .statgrid .k { color: var(--lp-muted); }
-.jobrow { display: flex; justify-content: space-between; padding: 6px 4px; border-bottom: 1px solid var(--lp-hair); font-size: 13px; color: var(--lp-parch); }
+.jobrow { display: flex; align-items: center; gap: 10px; padding: 8px 4px; border-bottom: 1px solid var(--lp-hair); font-size: 13px; color: var(--lp-parch); }
+.jobrow .jobico { display: flex; color: var(--lp-parch-2); }
+.jobrow.cur .jobico, .jobrow.cur .jobname { color: var(--lp-parch-hi); }
+.jobrow.cur .jobname { font-weight: 700; }
+.jobrow .jobtag { font-size: 11px; color: var(--lp-brass); }
+.jobrow .joblv { margin-left: auto; }
 /* the Settings volume sliders */
 #win-settings input[type="range"] { accent-color: var(--lp-brass); }
 /* the Settings menu: a row per page, and the way back from one */

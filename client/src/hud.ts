@@ -189,7 +189,9 @@ export function initHud(opts: { refreshInventory: () => Promise<void> }): HudApi
         <button class="btn" id="inv-no">Decline</button><button class="btn gold" id="inv-yes">Join</button>
       </div></div>
       <div class="window" id="win-inventory"><div class="whead"><span class="wtitle">Bags</span><button class="wclose" aria-label="Close">${lpIcon("close", 14, 2.2)}</button></div><div class="wbody"></div></div>
-      <div class="window" id="win-character"><div class="whead"><span class="wtitle">Character</span><button class="wclose" aria-label="Close">${lpIcon("close", 14, 2.2)}</button></div><div class="wbody"></div></div>
+      <div class="window character" id="win-character"><div class="whead"><span class="wtitle">Character</span>
+        <div class="chtabs" role="tablist" aria-label="Character sections"><button type="button" class="lp-tab" role="tab" tabindex="-1" data-chtab="status" aria-selected="true">Status</button><button type="button" class="lp-tab" role="tab" tabindex="-1" data-chtab="abilities" aria-selected="false">Abilities</button><button type="button" class="lp-tab" role="tab" tabindex="-1" data-chtab="jobs" aria-selected="false">Jobs</button></div>
+        <button class="wclose" aria-label="Close">${lpIcon("close", 14, 2.2)}</button></div><div class="wbody"></div></div>
       <div class="window journal" id="win-quests"><div class="whead"><span class="wtitle">Journal</span>
         <div class="jtabs" role="tablist" aria-label="Journal sections"><button type="button" class="lp-tab" role="tab" tabindex="-1" data-jtab="active" aria-selected="true">Duties <span class="jcount lp-num"></span></button><button type="button" class="lp-tab" role="tab" tabindex="-1" data-jtab="done" aria-selected="false">Completed</button></div>
         <button class="wclose" aria-label="Close">${lpIcon("close", 14, 2.2)}</button></div><div class="wbody"></div></div>
@@ -307,6 +309,7 @@ export function initHud(opts: { refreshInventory: () => Promise<void> }): HudApi
   initMailHud(api, marketDeps);
   initWindowDrag($("hud"));
   initJournal();
+  initCharacterTabs();
   // keep focus where it was, so Space (jump) and Enter never re-press an answer
   $("dialog-panel").addEventListener("mousedown", (e) => {
     if ((e.target as HTMLElement).closest("button")) e.preventDefault();
@@ -1377,7 +1380,7 @@ const api: HudApi = {
     w.classList.toggle("on", !was);
     if (!was) {
       if (name === "inventory") renderInventory();
-      if (name === "character") renderCharacter();
+      if (name === "character") { jobChoosing = false; renderCharacter(); }
       if (name === "quests") api.refreshQuests();
       if (name === "settings") renderSettings();
       if (name === "map") { resetMapView(); renderMapWindow($("win-map").querySelector(".wbody") as HTMLElement); }
@@ -2942,19 +2945,27 @@ const TARGET_LABEL: Record<string, string> = {
 // 90 → "90s", 300 → "5m"
 const fmtSecs = (n: number): string => (n >= 60 && n % 60 === 0 ? `${n / 60}m` : `${n}s`);
 
-function abilityTipHtml(ab: any, foot: string): string {
-  const cost = ab.kind === "ws" || ab.tp ? `<span class="tipcost tp">${ab.tp || 100} TP</span>`
-    : ab.mp ? `<span class="tipcost mp">${ab.mp} MP</span>`
-    : ab.hp_cost_pct ? `<span class="tipcost hp">${ab.hp_cost_pct}% HP</span>` : "";
-  const meta = [
-    `${esc(JOBS[ab.job]?.name || ab.job || "")} · Lv ${ab.lvl}`,
+// what an ability is paid in, as the tip and the Abilities tab show it
+function abilityCostHtml(ab: any, cls: string): string {
+  return ab.kind === "ws" || ab.tp ? `<span class="${cls} tp">${ab.tp || 100} TP</span>`
+    : ab.mp ? `<span class="${cls} mp">${ab.mp} MP</span>`
+    : ab.hp_cost_pct ? `<span class="${cls} hp">${ab.hp_cost_pct}% HP</span>` : "";
+}
+
+// the Abilities tab is one job's already, so it leaves the job's name out
+function abilityMetaHtml(ab: any, withJob = true): string {
+  return [
+    withJob ? `${esc(JOBS[ab.job]?.name || ab.job || "")} · Lv ${ab.lvl}` : `Lv ${ab.lvl}`,
     ab.cast ? `Cast ${Number(ab.cast).toFixed(1)}s` : "Instant",
     TARGET_LABEL[ab.target] || "",
     ab.cd ? `Recast ${fmtSecs(ab.cd)}` : "",
     ab.duration ? `Lasts ${fmtSecs(ab.duration)}` : "",
   ].filter(Boolean).map((t) => `<span>${t}</span>`).join("");
-  return `<div class="tiphead"><span class="lp-name tipname">${esc(ab.name)}</span>${cost}</div>`
-    + `<div class="tipmeta">${meta}</div>`
+}
+
+function abilityTipHtml(ab: any, foot: string): string {
+  return `<div class="tiphead"><span class="lp-name tipname">${esc(ab.name)}</span>${abilityCostHtml(ab, "tipcost")}</div>`
+    + `<div class="tipmeta">${abilityMetaHtml(ab)}</div>`
     + (ab.desc ? `<div class="tipdesc">${esc(ab.desc)}</div>` : "")
     + `<div class="tipfoot">${foot}</div>`;
 }
@@ -2967,26 +2978,33 @@ function slotTipHtml(i: number): string {
   return abilityTipHtml(rec.ab, foot);
 }
 
-// Abilities past the ten slots (jobs reach 15-17 by level 50) would be
-// unreachable, so the Character window lists every ability off the bar for
-// dragging on. Nothing is written when the bar holds them all.
-function appendAbilityBook(body: Element): void {
-  if (!state.self || !slotEls.length) return;
+// The Character window's Abilities tab: every ability of the job, learned
+// or not, with its icon and what it does. Jobs reach 15-17 by level 50 and
+// the bar holds ten, so a learned one is dragged from here onto a slot; one
+// not yet learned is listed dimmed at the level it comes at.
+function renderAbilityBook(body: Element): void {
+  const s = state.self!;
+  const learned = new Set(state.abilities.map((a) => a.id));
   const on = new Set(hotbarLayout);
-  const off = abilitiesInOrder().filter((a) => !on.has(a.id));
-  if (!off.length) return;
+  const all = Object.entries(ABILITIES)
+    .filter(([, a]) => a.job === s.job)
+    .map(([id, a]) => ({ id, ...a }))
+    .sort((a, b) => a.lvl - b.lvl || a.name.localeCompare(b.name));
+  const known = all.filter((a) => learned.has(a.id)).length;
   const wrap = el("div", "abook");
-  wrap.innerHTML = `<div class="wsection">Abilities · drag onto your bar</div>`
-    + off.map((a) => `<div class="abrow" draggable="true" data-ab="${esc(a.id)}">`
-      + `<span class="abico">${abilityStrokeIcon(a, 18)}</span><span class="abname">${esc(a.name)}</span>`
-      + `<span class="ablv lp-num">Lv ${a.lvl}</span></div>`).join("");
-  wrap.querySelectorAll<HTMLElement>(".abrow").forEach((row) => {
-    const ab = off.find((a) => a.id === row.dataset.ab);
-    row.addEventListener("dragstart", (e) => {
-      hideItemTip();
-      e.dataTransfer!.setData("text/plain", `ab:${row.dataset.ab}`);
-    });
-    if (ab) attachTip(row, () => abilityTipHtml(ab, "Drag onto your bar to use it"));
+  wrap.innerHTML = `<div class="imeta abintro">${esc(JOBS[s.job]?.name || s.job)} · ${known} of ${all.length} learned. Drag one onto your bar to use it.</div>`
+    + all.map((a) => {
+      const has = learned.has(a.id);
+      const tag = !has ? `<span class="abtag">Not yet learned</span>` : on.has(a.id) ? `<span class="abtag on">On bar</span>` : "";
+      return `<div class="abcard${has ? "" : " locked"}"${has ? ` draggable="true"` : ""} data-ab="${esc(a.id)}">`
+        + `<span class="abico">${abilityStrokeIcon(a, 26)}</span>`
+        + `<div class="abtext"><div class="abtop"><span class="abname">${esc(a.name)}</span>${abilityCostHtml(a, "abcost")}${tag}</div>`
+        + `<div class="abmeta">${abilityMetaHtml(a, false)}</div>`
+        + (a.desc ? `<div class="abdesc">${esc(a.desc)}</div>` : "")
+        + `</div></div>`;
+    }).join("");
+  wrap.querySelectorAll<HTMLElement>(".abcard[draggable]").forEach((row) => {
+    row.addEventListener("dragstart", (e) => e.dataTransfer!.setData("text/plain", `ab:${row.dataset.ab}`));
   });
   body.appendChild(wrap);
 }
@@ -3198,11 +3216,26 @@ async function unequipSlot(slot: string): Promise<void> {
   await applyEquipResult(await rest.unequip(slot), issued);
 }
 
+type CharTab = "status" | "abilities" | "jobs";
+let charTab: CharTab = "status";
+// set while the window was opened from a trainer's "Change job": the Jobs tab
+// then offers the job chooser under the list
+let jobChoosing = false;
+
 function renderCharacterIfOpen(): void {
   if (!state.self || !$("win-character").classList.contains("on")) return;
-  // the job chooser is drawn onto the sheet — redraw it whole, so a stat
-  // tick cannot sweep the choice away mid-decision
-  if ($("win-character").querySelector(".jobgrid")) openJobChange(); else renderCharacter();
+  renderCharacter();
+}
+
+function initCharacterTabs(): void {
+  $("win-character").querySelector(".chtabs")!.addEventListener("click", (e) => {
+    const tab = (e.target as HTMLElement).closest<HTMLElement>("[data-chtab]");
+    if (!tab || !state.self) return;
+    charTab = tab.dataset.chtab as CharTab;
+    closeGearMenu();
+    hideItemTip();
+    renderCharacter();
+  });
 }
 
 function equippedRow(slot: string): any | null {
@@ -3352,7 +3385,21 @@ function showItemWindow(key: string): void {
 }
 
 function renderCharacter(): void {
-  const body = $("win-character").querySelector(".wbody")!;
+  const win = $("win-character");
+  const body = win.querySelector(".wbody") as HTMLElement;
+  win.querySelectorAll<HTMLElement>("[data-chtab]").forEach((t) =>
+    t.setAttribute("aria-selected", String(t.dataset.chtab === charTab)));
+  // a stat tick redraws the open tab; keep the reader where they were in it
+  const keep = body.dataset.tab === charTab ? body.scrollTop : 0;
+  body.dataset.tab = charTab;
+  body.innerHTML = "";
+  if (charTab === "abilities") renderAbilityBook(body);
+  else if (charTab === "jobs") renderJobs(body);
+  else renderStatus(body);
+  body.scrollTop = keep;
+}
+
+function renderStatus(body: HTMLElement): void {
   const s = state.self!;
   const st = s.stats;
   body.innerHTML = `
@@ -3379,28 +3426,41 @@ function renderCharacter(): void {
     <div class="wsection" style="margin:8px 0 4px">Arms &amp; Raiment</div>`;
   renderGear(body);
   body.insertAdjacentHTML("beforeend",
-    `<div class="imeta" style="margin:2px 0 2px">Click a slot to fit it, or to remove and examine what is worn.</div>
-     <div class="wsection" style="margin:8px 0 2px">Jobs</div>`);
-  state.jobs.forEach((j) => {
-    body.insertAdjacentHTML("beforeend",
-      `<div class="jobrow"><span>${JOBS[j.job]?.name || j.job}${j.job === s.job ? " ★" : ""}</span><span class="imeta">Lv ${j.level}</span></div>`);
-  });
-  body.insertAdjacentHTML("beforeend", `<div class="imeta" style="margin-top:8px">Change jobs beside a trainer: the Paladin hall in Caerdun, the chanters' hall in Heartwood, the mending college in Moonmere.</div>`);
-  appendAbilityBook(body);
+    `<div class="imeta" style="margin:2px 0 2px">Click a slot to fit it, or to remove and examine what is worn.</div>`);
 }
 
-function openJobChange(): void {
-  const body = $("win-character").querySelector(".wbody")!;
-  $("win-character").classList.add("on");
-  renderCharacter();
+function renderJobs(body: HTMLElement): void {
+  const s = state.self!;
+  const level = new Map(state.jobs.map((j) => [j.job, j.level]));
+  body.innerHTML = JOB_LIST.map((j) => {
+    const lv = level.get(j);
+    const cur = j === s.job;
+    return `<div class="jobrow${cur ? " cur" : ""}"><span class="jobico">${jobIcon(j, 20)}</span>`
+      + `<span class="jobname">${esc(JOBS[j]?.name || j)}</span>`
+      + (cur ? `<span class="jobtag">Current</span>` : "")
+      + `<span class="imeta joblv">${lv ? `Lv ${lv}` : "Not begun"}</span></div>`;
+  }).join("")
+    + `<div class="imeta" style="margin-top:8px">Change jobs beside a trainer: the Paladin hall in Caerdun, the chanters' hall in Heartwood, the mending college in Moonmere.</div>`;
+  if (!jobChoosing) return;
   body.insertAdjacentHTML("beforeend", `<div class="wsection" style="margin:10px 0 4px">Take up a job</div>`);
   const grid = el("div", "jobgrid");
   JOB_LIST.forEach((j) => {
-    const b = el("div", `job${state.self!.job === j ? " sel" : ""}`, j);
-    b.addEventListener("click", () => { send("change_job", { job: j }); $("win-character").classList.remove("on"); });
+    const b = el("div", `job${s.job === j ? " sel" : ""}`, j);
+    b.addEventListener("click", () => {
+      send("change_job", { job: j });
+      jobChoosing = false;
+      $("win-character").classList.remove("on");
+    });
     grid.appendChild(b);
   });
   body.appendChild(grid);
+}
+
+function openJobChange(): void {
+  $("win-character").classList.add("on");
+  charTab = "jobs";
+  jobChoosing = true;
+  renderCharacter();
 }
 
 // ---------- direct trading ----------
