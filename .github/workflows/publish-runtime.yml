@@ -12,6 +12,7 @@ on:
   push:
     branches: [main]
     paths: [client/src/asset-index.json]
+  workflow_dispatch: {}   # run it by hand (gh workflow run publish-runtime.yml) for the current main
 
 permissions:
   contents: write
