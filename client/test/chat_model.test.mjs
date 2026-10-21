@@ -5,6 +5,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   pillFor, routeOutgoing, nextSticky, isSticky, isTab, rowVisible, TAB_GROUPS, PLACEHOLDER,
+  chatBounds, clampChatSize, CHAT_MIN_W, CHAT_MIN_LOG_H,
 } from "../src/chat_model.ts";
 
 test("a prefix picks the pill over the sticky channel", () => {
@@ -82,4 +83,14 @@ test("the style.css tab filter keeps exactly the TAB_GROUPS classes", async () =
     const kept = [...m[1].matchAll(/:not\(\.([\w-]+)\)/g)].map((x) => x[1]);
     assert.deepEqual(kept.sort(), [...group].sort(), tab);
   }
+});
+
+test("a dragged chat stays clear of the hotbar and leaves the party frame room", () => {
+  // 1280x720, the floor: 50vw - 307 = 333 wide, 720 - 434 = 286 of log
+  assert.deepEqual(chatBounds(1280, 720), { maxW: 333, maxLogH: 286 });
+  assert.deepEqual(clampChatSize(900, 900, 1280, 720), { w: 333, logH: 286 });
+  assert.deepEqual(clampChatSize(10, 10, 1280, 720), { w: CHAT_MIN_W, logH: CHAT_MIN_LOG_H });
+  assert.deepEqual(clampChatSize(520.4, 300.6, 1920, 1080), { w: 520, logH: 301 });
+  // a window too small for any growth still keeps the minimums
+  assert.deepEqual(chatBounds(500, 400), { maxW: CHAT_MIN_W, maxLogH: CHAT_MIN_LOG_H });
 });

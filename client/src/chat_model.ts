@@ -78,3 +78,26 @@ export function rowVisible(tab: Tab, cls: string): boolean {
   const g = TAB_GROUPS[tab];
   return !g || g.includes(cls);
 }
+
+/** The chat's resizable bounds. The width keeps the chat's right edge clear of
+ *  the centred hotbar (style.css #chat: 50vw - 307 at most, 300 at least); the
+ *  log may grow until the party frame above it keeps 120px of room (#party-frame
+ *  starts at 204, and the chat's tabs, composer and margins take 78 + 20 + 12),
+ *  and never shrinks below a few lines. */
+export const CHAT_MIN_W = 300;
+export const CHAT_MIN_LOG_H = 80;
+export function chatBounds(viewW: number, viewH: number): { maxW: number; maxLogH: number } {
+  return {
+    maxW: Math.max(CHAT_MIN_W, Math.floor(viewW / 2 - 307)),
+    maxLogH: Math.max(CHAT_MIN_LOG_H, Math.floor(viewH - 434)),
+  };
+}
+
+/** A dragged size held inside chatBounds. */
+export function clampChatSize(w: number, logH: number, viewW: number, viewH: number): { w: number; logH: number } {
+  const { maxW, maxLogH } = chatBounds(viewW, viewH);
+  return {
+    w: Math.min(Math.max(Math.round(w), CHAT_MIN_W), maxW),
+    logH: Math.min(Math.max(Math.round(logH), CHAT_MIN_LOG_H), maxLogH),
+  };
+}

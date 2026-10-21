@@ -27,7 +27,7 @@ import { initMailHud, renderMailWindow } from "./mail-hud";
 import { pager } from "./pager";
 import { pageOf, friendAction } from "./social_model";
 import { initCourtHud, renderCourtWindow, courtCharacterLine, courtHeraldButtons, isCourtStationId, courtJournalGroup, courtJournalDetail, courtHasBounties, drawCourtMinimapBanner, courtVendorPriceHtml, courtRelicName, courtRelicMeta, courtRelicTip } from "./court-hud";
-import { pillFor, routeOutgoing, nextSticky, isSticky, isTab, PLACEHOLDER, type Sticky, type Tab } from "./chat_model";
+import { pillFor, routeOutgoing, nextSticky, isSticky, isTab, PLACEHOLDER, clampChatSize, type Sticky, type Tab } from "./chat_model";
 import { getTracked, isTracked, toggleTracked, orderTracker, arrow8, fmtDist } from "./quest_track";
 import { isFullscreen, toggleFullscreen, exitFullscreen } from "./fullscreen";
 import {
@@ -151,6 +151,7 @@ export function initHud(opts: { refreshInventory: () => Promise<void> }): HudApi
       </div>
       <div id="party-frame"></div>
       <section id="chat" aria-label="Chat">
+        <div class="chat-grip n" data-axis="n"></div><div class="chat-grip e" data-axis="e"></div><div class="chat-grip ne" data-axis="ne" title="Drag to resize · double-click to reset"></div>
         <div class="chat-tabs" role="tablist" aria-label="Chat channels">
           <button type="button" class="lp-tab" role="tab" tabindex="-1" data-tab="all" aria-selected="true">All</button>
           <button type="button" class="lp-tab" role="tab" tabindex="-1" data-tab="party" aria-selected="false">Party</button>
@@ -614,6 +615,74 @@ function initChat(): void {
   setChatTab(chatTab);
   renderUnread();
   refreshPill();
+  initChatResize();
+}
+
+// The chat is resized by its top and right edges (it sits in the bottom-left
+// corner, so those are the two that face open screen); a double-click on a
+// grip puts it back. Each axis is saved only once it has been dragged, so an
+// undragged one keeps the stylesheet's default and its narrow-screen cascade.
+// The stylesheet caps both, so a size saved on a bigger screen still fits.
+const CHAT_SIZE = "vanai_chat_size";
+type ChatSize = { w?: number; h?: number };
+function applyChatSize(size: ChatSize): void {
+  const hud = $("hud");
+  if (size.w) hud.style.setProperty("--chat-w", `${size.w}px`); else hud.style.removeProperty("--chat-w");
+  if (size.h) hud.style.setProperty("--chat-log-user", `${size.h}px`); else hud.style.removeProperty("--chat-log-user");
+}
+
+function initChatResize(): void {
+  const chat = $("chat"), log = $("chat-log");
+  let size: ChatSize = {};
+  try {
+    const s = JSON.parse(loadPref(CHAT_SIZE) || "{}") as ChatSize;
+    if (Number.isFinite(s.w)) size.w = s.w;
+    if (Number.isFinite(s.h)) size.h = s.h;
+  } catch { /* a garbled pref is the default size */ }
+  applyChatSize(size);
+  chat.querySelectorAll<HTMLElement>(".chat-grip").forEach((grip) => {
+    const axis = grip.dataset.axis!;
+    // the composer keeps focus through a drag
+    grip.addEventListener("mousedown", (e) => e.preventDefault());
+    grip.addEventListener("pointerdown", (e) => {
+      if (e.button !== 0) return;
+      const w0 = chat.offsetWidth, h0 = log.offsetHeight, sx = e.clientX, sy = e.clientY;
+      grip.setPointerCapture(e.pointerId);
+      chat.classList.add("resizing");
+      const move = (ev: PointerEvent) => {
+        if (ev.buttons === 0) { end(ev); return; }
+        const c = clampChatSize(w0 + ev.clientX - sx, h0 - (ev.clientY - sy), innerWidth, innerHeight);
+        // a corner drag that only went up must not pin the width (or the
+        // reverse), which would stop the default following the window
+        if (axis.includes("e") && ev.clientX !== sx) size.w = c.w;
+        if (axis.includes("n") && ev.clientY !== sy) size.h = c.logH;
+        applyChatSize(size);
+        log.scrollTop = log.scrollHeight;
+      };
+      const end = (ev: PointerEvent) => {
+        grip.removeEventListener("pointermove", move);
+        grip.removeEventListener("pointerup", end);
+        grip.removeEventListener("pointercancel", end);
+        grip.removeEventListener("lostpointercapture", end);
+        if (grip.hasPointerCapture(ev.pointerId)) grip.releasePointerCapture(ev.pointerId);
+        chat.classList.remove("resizing");
+        savePref(CHAT_SIZE, JSON.stringify(size));
+        // the party frame's room is the screen above the chat
+        fitPartyFrame();
+      };
+      grip.addEventListener("pointermove", move);
+      grip.addEventListener("pointerup", end);
+      grip.addEventListener("pointercancel", end);
+      grip.addEventListener("lostpointercapture", end);
+    });
+    grip.addEventListener("dblclick", () => {
+      size = {};
+      applyChatSize(size);
+      savePref(CHAT_SIZE, "{}");
+      log.scrollTop = log.scrollHeight;
+      fitPartyFrame();
+    });
+  });
 }
 
 // ---------- player context menu ----------
