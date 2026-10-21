@@ -52,6 +52,7 @@ module ApplicationCable
       pool(websocket_message)
     rescue => e
       logger.error("[vanai] fast move: #{e.class}: #{e.message}")
+      Vanai::ErrorReports.report(e, "fast move")
     end
 
     def dispatch_websocket_message(websocket_message)

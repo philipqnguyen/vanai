@@ -53,6 +53,7 @@ module Vanai
         rescue => e
           ticket[:error] = e
           Rails.logger.error("[vanai] join load char=#{char_id}: #{e.class}: #{e.message}")
+          ErrorReports.report(e, "join load", char_id: char_id)
         ensure
           # whatever ends the read, the ticket goes back: one the world never
           # saw again would hold its character out, and its slot, for good

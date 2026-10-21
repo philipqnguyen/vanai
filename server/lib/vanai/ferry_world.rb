@@ -106,6 +106,7 @@ module Vanai
           rejected[cid] = nil
         rescue ActiveRecord::ActiveRecordError => e
           Rails.logger.error("[vanai] ferry transfer char=#{cid}: #{e.class}: #{e.message}")
+          ErrorReports.report(e, "ferry transfer", char_id: cid)
           rejected[cid] = 'The crossing could not be recorded. Try again with the next boat; no fare was charged.' if attrs[:ferry_voyage]
         end
       end

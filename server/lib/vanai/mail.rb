@@ -111,6 +111,7 @@ module Vanai
         ActiveRecord::Base.connection_pool.with_connection { expire_listings! }
       rescue => e
         Rails.logger.error("[mail] sweep error: #{e.class}: #{e.message}\n#{e.backtrace.first(8).join("\n")}")
+        ErrorReports.report(e, "mail sweep")
       end
 
       # ---- players' letters ----

@@ -132,6 +132,7 @@ module Vanai
       ActiveRecord::Base.connection_pool.with_connection(&block)
     rescue => e
       Rails.logger.error("[vanai] position writer: #{e.class}: #{e.message}")
+      ErrorReports.report(e, "position writer")
     end
 
     def write(rows)
@@ -143,14 +144,17 @@ module Vanai
       rescue ActiveRecord::ActiveRecordError => e
         # one bad row must not lose the others
         Rails.logger.error("[vanai] persist_positions: #{e.message}")
+        ErrorReports.report(e, "persist_positions", rows: rows.size)
         rows.each do |r|
           statement(conn, [r])
         rescue ActiveRecord::ActiveRecordError => e2
           Rails.logger.error("[vanai] persist_position #{r[0]}: #{e2.message}")
+          ErrorReports.report(e2, "persist_position", char_id: r[0])
         end
       end
     rescue => e
       Rails.logger.error("[vanai] position writer: #{e.class}: #{e.message}")
+      ErrorReports.report(e, "position writer")
     end
 
     # World.persist_position's UPDATE, row for row, the dead_at CASE included.

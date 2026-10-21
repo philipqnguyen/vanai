@@ -105,6 +105,7 @@ module Vanai
         end
       rescue => e
         Rails.logger.error("[courts] tick error: #{e.class}: #{e.message}\n#{e.backtrace.first(8).join("\n")}")
+        ErrorReports.report(e, "courts tick")
       end
 
       # One unthrottled pass (the tests call this directly).
@@ -151,6 +152,7 @@ module Vanai
         part.call(list)
       rescue => e
         Rails.logger.error("[vanai] courts join #{part.name} (#{list.size}): #{e.class}: #{e.message}")
+        ErrorReports.report(e, "courts join #{part.name}", characters: list.size)
         list.size > 1 ? list.flat_map { |ps| join_part(part, [ps]) } : []
       end
 
