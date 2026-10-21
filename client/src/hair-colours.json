@@ -1,0 +1,56 @@
+{
+ "models/characters/aedri-female/braid.glb": {
+  "file": "576172d6712114862ac4aef0062c9d094f4264a6af360a214e36fff2d9667b20.glb",
+  "colour": "#503629",
+  "mid": 0.2327,
+  "spread": 0.0416
+ },
+ "models/characters/aedri-male/waves.glb": {
+  "file": "488a31b4f5018811ee908a4c2930b71940641a8e804710ed36ea20c66f291f6e.glb",
+  "colour": "#281f1d",
+  "mid": 0.0913,
+  "spread": 0.0599
+ },
+ "models/characters/karrog-male/coif.glb": {
+  "file": "7fc52ac62afe5ff5d6aab04e039061ed5a975cf1b82e3c5b539fc07d29537f7e.glb",
+  "colour": "#3c2c27",
+  "mid": 0.1546,
+  "spread": 0.0891
+ },
+ "models/characters/karrog-male/beard.glb": {
+  "file": "642c0eb33e0552acafae7df3bbc5251a7f62a43c4e02d1924370455bfb2b135c.glb",
+  "colour": "#3c2c27",
+  "mid": 0.1546,
+  "spread": 0.0891
+ },
+ "models/characters/nym-female/hair.glb": {
+  "file": "db387393319aa6df3444bd4b73ca574eb70c92d5649461e3fe488219f2881180.glb",
+  "colour": "#4e3827",
+  "mid": 0.2335,
+  "spread": 0.0443
+ },
+ "models/characters/nym-male/hair.glb": {
+  "file": "eeef7edb38e1bf3b0edb4273ed6c7a0122323b58b3e22896edb922017fb7ab00.glb",
+  "colour": "#493c33",
+  "mid": 0.2056,
+  "spread": 0.0849
+ },
+ "models/characters/rasha-female/hair.glb": {
+  "file": "246c3113fded0c06fea8e021d47eff7ef4330c956f8d32db4a036613aa0ee5bf.glb",
+  "colour": "#866249",
+  "mid": 0.4139,
+  "spread": 0.0444
+ },
+ "models/characters/valdren-female/hair.glb": {
+  "file": "2a1f5c0143a75d7d9c898adc190ac9a09822d9ff1ec60523fb331eaf3c8512bf.glb",
+  "colour": "#ada49b",
+  "mid": 0.6229,
+  "spread": 0.1112
+ },
+ "models/characters/valdren-male/hair.glb": {
+  "file": "a06cd9bdbe5cb2189f3e70680e403ef19166ac8338d6f52b3dad1a218fbe4467.glb",
+  "colour": "#cbb495",
+  "mid": 0.7206,
+  "spread": 0.0195
+ }
+}

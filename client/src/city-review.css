@@ -1,0 +1,13 @@
+.city-review { position:fixed; bottom:24px; left:24px; z-index:20; width:310px; padding:20px 22px; color:#edf0e7; background:linear-gradient(130deg,#172e39ef,#203e48ce); border:1px solid #d0c29965; box-shadow:0 8px 35px #13283230; font:14px/1.5 Georgia,serif; border-radius:3px; }
+.city-review .city-kicker {font:10px/1.5 system-ui,sans-serif;letter-spacing:.2em;color:#d1bf8d;}
+.city-review h1 {font:36px/1.2 Georgia,serif;letter-spacing:.02em;margin:9px 0 2px;color:#fff8e7;}
+.city-review p {margin:0 0 18px;color:#c5d7d9;font-size:13px;}
+.city-review .city-controls {display:flex;gap:5px;flex-wrap:wrap;margin:13px 0;}
+.city-review .city-controls span {flex-basis:100%;font:10px system-ui,sans-serif;text-transform:uppercase;letter-spacing:.14em;color:#c0b791;margin-bottom:3px;}
+.city-review button {font:11px system-ui,sans-serif;border:1px solid #758d9170;border-radius:2px;padding:6px 9px;color:#dae7e7;background:#18333d;cursor:pointer;}
+.city-review button.active {background:#cabb8f;color:#20333b;border-color:#e8dbb3;}
+.city-review .city-help {font:11px/1.8 system-ui,sans-serif;margin:17px 0 10px;}
+.city-review .city-links {display:flex;gap:12px;flex-wrap:wrap;font:11px/1.7 system-ui,sans-serif;}
+.city-review a {color:#dfcd9c;}
+.city-review small {display:block;font:10px system-ui,sans-serif;color:#9fb6be;margin-top:15px;}
+@media(max-width:700px) {.city-review {bottom:10px;left:10px;width:230px;padding:12px;} .city-review h1{font-size:24px;} .city-review .city-help{display:none;}}

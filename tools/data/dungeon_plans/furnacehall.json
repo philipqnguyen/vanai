@@ -1,0 +1,622 @@
+{
+  "key": "furnacehall",
+  "format": 1,
+  "notes": "Extracted from zones.json by tools/data/dungeon_plan.py; edit this, then `write`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "Kiln Mouth",
+        "x": -2,
+        "z": -11,
+        "w": 5,
+        "d": 3,
+        "kind": "entry",
+        "y": 0,
+        "ceiling": 9.5
+      },
+      {
+        "id": "stoking",
+        "name": "Great Bottle Kiln",
+        "x": -9,
+        "z": -7,
+        "w": 15,
+        "d": 9,
+        "kind": "kiln",
+        "y": 0,
+        "ceiling": 20
+      },
+      {
+        "id": "cullet",
+        "name": "Cullet Sorting",
+        "x": -18,
+        "z": -6,
+        "w": 6,
+        "d": 6,
+        "kind": "cullet",
+        "y": 0,
+        "ceiling": 12
+      },
+      {
+        "id": "sand",
+        "name": "Sand Store",
+        "x": 9,
+        "z": -6,
+        "w": 6,
+        "d": 6,
+        "kind": "sand",
+        "y": 0,
+        "ceiling": 12
+      },
+      {
+        "id": "west",
+        "name": "First Annealing Room",
+        "x": -15,
+        "z": 5,
+        "w": 7,
+        "d": 6,
+        "kind": "anneal",
+        "y": 0,
+        "ceiling": 12
+      },
+      {
+        "id": "east",
+        "name": "Second Annealing Room",
+        "x": 9,
+        "z": 5,
+        "w": 7,
+        "d": 6,
+        "kind": "anneal",
+        "y": 0,
+        "ceiling": 12
+      },
+      {
+        "id": "panes",
+        "name": "Pane Hall",
+        "x": -4,
+        "z": 6,
+        "w": 9,
+        "d": 8,
+        "kind": "panes",
+        "y": 0,
+        "ceiling": 16
+      },
+      {
+        "id": "master",
+        "name": "Furnace Master’s Chamber",
+        "x": -4,
+        "z": 17,
+        "w": 9,
+        "d": 7,
+        "kind": "master",
+        "y": 0,
+        "ceiling": 16
+      },
+      {
+        "id": "office",
+        "name": "Pour Ledger Office",
+        "x": 10,
+        "z": 18,
+        "w": 6,
+        "d": 6,
+        "kind": "office",
+        "y": 0,
+        "ceiling": 7
+      },
+      {
+        "id": "flue",
+        "name": "Old Flue Chapel",
+        "x": -15,
+        "z": 15,
+        "w": 6,
+        "d": 6,
+        "kind": "flue",
+        "y": 0,
+        "ceiling": 14
+      }
+    ],
+    "corridors": [
+      {
+        "points": [
+          [
+            0,
+            -9
+          ],
+          [
+            0,
+            -7
+          ]
+        ],
+        "name": "The Charging Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -9,
+            -3
+          ],
+          [
+            -13,
+            -3
+          ]
+        ],
+        "name": "The Cullet Run",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            5,
+            -3
+          ],
+          [
+            9,
+            -3
+          ]
+        ],
+        "name": "The Sand Run",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -15,
+            -1
+          ],
+          [
+            -15,
+            2
+          ],
+          [
+            -12,
+            2
+          ],
+          [
+            -12,
+            5
+          ]
+        ],
+        "name": "The West Barrow Way",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            12,
+            -1
+          ],
+          [
+            12,
+            5
+          ]
+        ],
+        "name": "The East Barrow Way",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -9,
+            8
+          ],
+          [
+            -4,
+            8
+          ]
+        ],
+        "name": "The West Pane Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            4,
+            8
+          ],
+          [
+            9,
+            8
+          ]
+        ],
+        "name": "The East Pane Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            0,
+            13
+          ],
+          [
+            0,
+            17
+          ]
+        ],
+        "name": "The Master's Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -12,
+            10
+          ],
+          [
+            -12,
+            15
+          ]
+        ],
+        "name": "The Chapel Stair",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            12,
+            10
+          ],
+          [
+            12,
+            18
+          ]
+        ],
+        "name": "The Ledger Walk",
+        "ceiling": 5
+      }
+    ],
+    "obstacles": [
+      {
+        "x": -7,
+        "z": -5,
+        "w": 4,
+        "d": 4
+      },
+      {
+        "x": 1,
+        "z": 1,
+        "w": 4,
+        "d": 1
+      },
+      {
+        "x": -3,
+        "z": 9,
+        "w": 1,
+        "d": 3
+      },
+      {
+        "x": 3,
+        "z": 9,
+        "w": 1,
+        "d": 3
+      },
+      {
+        "x": -1,
+        "z": 23,
+        "w": 3,
+        "d": 1
+      }
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    }
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "Floor levels, with the pour ledger office",
+      "floors": [
+        0,
+        2
+      ],
+      "decks": [
+        {
+          "cx": 50.0,
+          "cz": 90.5,
+          "hx": 12.0,
+          "hz": 3.5,
+          "sin": 0,
+          "cos": 1,
+          "y": 2,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": 46,
+          "z0": 81,
+          "y0": 0,
+          "x1": 46,
+          "z1": 87,
+          "y1": 2,
+          "half": 3,
+          "ux": 0,
+          "uz": 1,
+          "len": 6
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout",
+        "raise": [
+          {
+            "x": 10,
+            "z": 22,
+            "w": 6,
+            "d": 2,
+            "y": 2
+          }
+        ]
+      }
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -37.5
+  },
+  "portals": [
+    {
+      "id": "fh_mouth",
+      "name": "The Kiln Mouth",
+      "x": 0,
+      "z": -42.7,
+      "to": "glassworks",
+      "tx": -20,
+      "tz": 98,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.2,
+        "column": 5.5,
+        "floor": 0.03
+      }
+    },
+    {
+      "id": "fh_out",
+      "name": "The Master's Way Out",
+      "x": -12,
+      "z": 88,
+      "to": "glassworks",
+      "tx": -20,
+      "tz": 98,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.2,
+        "column": 5.5,
+        "floor": 0.03
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_fh_stoking",
+      "name": "The Stoking Floor",
+      "x": 7,
+      "z": -12,
+      "xp": 90
+    },
+    {
+      "id": "lm_fh_panes",
+      "name": "The Pane Hall",
+      "x": 0,
+      "z": 30,
+      "xp": 90
+    },
+    {
+      "id": "lm_fh_master",
+      "name": "The Furnace Master's Chamber",
+      "x": 0,
+      "z": 76,
+      "xp": 150
+    },
+    {
+      "id": "lm_fh_chapel",
+      "name": "The Old Flue Chapel",
+      "x": -48,
+      "z": 72,
+      "xp": 90
+    },
+    {
+      "id": "lm_fh_office",
+      "name": "The Pour Ledger Office",
+      "x": 53,
+      "z": 83,
+      "xp": 90
+    }
+  ],
+  "interactables": [
+    {
+      "id": "furnace_ledger_stand",
+      "name": "The Furnace Ledger",
+      "x": 50,
+      "z": 89,
+      "idle_msg": "The furnace ledger on its stand, three centuries of pours in one hand. The last page: 'To the capital of Vanai. Window replacements, phase four. By order of the Regent, for the Restoration.'",
+      "active_msg": "You take the last page. Phase four, for the Restoration, by order of the Regent. The city is being readied for somebody.",
+      "prop": "ledger_stand",
+      "y": 2,
+      "site": "raised_chamber",
+      "floor": 1
+    }
+  ],
+  "camps": [
+    {
+      "monster": "furnace_stoker",
+      "min_lvl": 28,
+      "max_lvl": 29,
+      "count": 2,
+      "x": 8,
+      "z": -20,
+      "radius": 3.5,
+      "respawn": 40
+    },
+    {
+      "monster": "furnace_stoker",
+      "min_lvl": 28,
+      "max_lvl": 29,
+      "count": 2,
+      "x": -22,
+      "z": -2,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "ash_sprite",
+      "min_lvl": 29,
+      "max_lvl": 30,
+      "count": 2,
+      "x": 10,
+      "z": -5,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "cinder_slime",
+      "min_lvl": 28,
+      "max_lvl": 29,
+      "count": 2,
+      "x": -66,
+      "z": -18,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "cinder_slime",
+      "min_lvl": 28,
+      "max_lvl": 29,
+      "count": 2,
+      "x": -57,
+      "z": -8,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "forge_wight",
+      "min_lvl": 29,
+      "max_lvl": 29,
+      "count": 2,
+      "x": -40,
+      "z": 25,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "ember_wisp",
+      "min_lvl": 28,
+      "max_lvl": 29,
+      "count": 3,
+      "x": -55,
+      "z": 35,
+      "radius": 2.5,
+      "respawn": 40
+    },
+    {
+      "monster": "the_cinder_abbot",
+      "min_lvl": 29,
+      "max_lvl": 29,
+      "count": 1,
+      "x": -50,
+      "z": 70,
+      "radius": 3,
+      "respawn": 600
+    },
+    {
+      "monster": "amber_husk",
+      "min_lvl": 28,
+      "max_lvl": 29,
+      "count": 2,
+      "x": 42,
+      "z": -18,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "amber_husk",
+      "min_lvl": 28,
+      "max_lvl": 29,
+      "count": 1,
+      "x": 52,
+      "z": -8,
+      "radius": 2,
+      "respawn": 40
+    },
+    {
+      "monster": "ash_sprite",
+      "min_lvl": 29,
+      "max_lvl": 30,
+      "count": 3,
+      "x": 48,
+      "z": 30,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "amber_acolyte",
+      "min_lvl": 29,
+      "max_lvl": 29,
+      "count": 2,
+      "x": 53,
+      "z": 77,
+      "radius": 2.5,
+      "respawn": 40
+    },
+    {
+      "monster": "furnace_sentinel",
+      "min_lvl": 29,
+      "max_lvl": 30,
+      "count": 3,
+      "x": 0,
+      "z": 38,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "slag_golem",
+      "min_lvl": 29,
+      "max_lvl": 29,
+      "count": 1,
+      "x": -8,
+      "z": 50,
+      "radius": 2,
+      "respawn": 40
+    },
+    {
+      "monster": "slag_golem",
+      "min_lvl": 29,
+      "max_lvl": 29,
+      "count": 1,
+      "x": 8,
+      "z": 50,
+      "radius": 2,
+      "respawn": 40
+    },
+    {
+      "monster": "furnace_stoker",
+      "min_lvl": 29,
+      "max_lvl": 30,
+      "count": 2,
+      "x": 0,
+      "z": 60,
+      "radius": 1,
+      "respawn": 45
+    },
+    {
+      "monster": "furnace_stoker",
+      "min_lvl": 29,
+      "max_lvl": 30,
+      "count": 2,
+      "x": 0,
+      "z": 72,
+      "radius": 2.5,
+      "respawn": 45
+    },
+    {
+      "monster": "the_master_of_the_furnace",
+      "min_lvl": 30,
+      "max_lvl": 30,
+      "count": 1,
+      "x": 0,
+      "z": 84,
+      "radius": 3,
+      "respawn": 900
+    }
+  ]
+}

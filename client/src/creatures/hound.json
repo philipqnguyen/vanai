@@ -1,0 +1,76 @@
+{
+ "file": "creatures/hound.glb",
+ "plan": "canine",
+ "height": 1.18,
+ "length": 2.011,
+ "width": 0.476,
+ "top": 1.18,
+ "minY": -0.0033,
+ "groundY": -0.0033,
+ "forward": -0.085,
+ "tris": [
+  4150,
+  1224
+ ],
+ "budget": 4200,
+ "bones": 26,
+ "atlas": 512,
+ "emissive": false,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.62,
+  "Run": 0.46,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 2.5,
+  "Run": 5.6
+ },
+ "bytes": 429956,
+ "held": [],
+ "groundLift": {
+  "Death": 0.241
+ },
+ "notes": "the hound look: a lean short-coated hunting hound with a brass collar and key-tag",
+ "role": "common",
+ "variants": {
+  "lodge_hound": {
+   "atlas": "creatures/hound@lodge_hound.ktx2",
+   "bytes": 74903
+  },
+  "garden_hound": {
+   "atlas": "creatures/hound@garden_hound.ktx2",
+   "bytes": 89284
+  },
+  "slag_hound": {
+   "atlas": "creatures/hound@slag_hound.ktx2",
+   "bytes": 89033,
+   "emit": "creatures/hound@slag_hound_emit.ktx2"
+  },
+  "mill_hound": {
+   "atlas": "creatures/hound@mill_hound.ktx2",
+   "bytes": 89112
+  },
+  "cinder_hound": {
+   "atlas": "creatures/hound@cinder_hound.ktx2",
+   "bytes": 86136,
+   "emit": "creatures/hound@cinder_hound_emit.ktx2"
+  },
+  "char_hound": {
+   "atlas": "creatures/hound@char_hound.ktx2",
+   "bytes": 81880,
+   "emit": "creatures/hound@char_hound_emit.ktx2"
+  },
+  "ward_hound": {
+   "atlas": "creatures/hound@ward_hound.ktx2",
+   "bytes": 89471
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/canine.py",
+ "fast": false
+}

@@ -1,0 +1,6 @@
+# Read by `bundle exec sidekiq`. Keep :concurrency at or below the Active Record
+# pool size (RAILS_MAX_THREADS) so workers never starve waiting on a connection.
+:concurrency: <%= ENV.fetch("SIDEKIQ_CONCURRENCY") { ENV.fetch("RAILS_MAX_THREADS", 5) } %>
+:queues:
+  - default
+  - mailers

@@ -1,0 +1,45 @@
+{
+ "file": "creatures/old_bellwether.glb",
+ "plan": "amphibian",
+ "height": 4.038,
+ "length": 6.928,
+ "width": 7.976,
+ "top": 4.038,
+ "minY": 0.0264,
+ "groundY": 0.0264,
+ "forward": 0.061,
+ "tris": [
+  10700,
+  3210
+ ],
+ "budget": 12000,
+ "bones": 23,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 2.077,
+  "Run": 1.483,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.983,
+  "Run": 7.179
+ },
+ "bytes": 884016,
+ "held": [],
+ "groundLift": {
+  "Death": 0.061
+ },
+ "notes": "Old Bellwether NM: a four-metre toad crowned in sedge and brass with three bells, a swallowed lantern glowing in its throat",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/old_bellwether.py",
+ "fast": false
+}

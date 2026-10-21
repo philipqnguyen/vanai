@@ -1,0 +1,69 @@
+{
+ "file": "creatures/rampart.glb",
+ "plan": "sentinel",
+ "height": 2.654,
+ "length": 0.876,
+ "width": 1.727,
+ "top": 2.654,
+ "minY": -0.0053,
+ "groundY": -0.0053,
+ "forward": 0.254,
+ "tris": [
+  4396,
+  1318
+ ],
+ "budget": 4600,
+ "bones": 22,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.163,
+  "Run": 0.484,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6
+ },
+ "speeds": {
+  "Walk": 1.923,
+  "Run": 4.687
+ },
+ "bytes": 491576,
+ "held": [
+  [
+   5455,
+   5852
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.12
+ },
+ "notes": "the rampart look: the heavy line guard, tower shield and spear",
+ "role": "common",
+ "variants": {
+  "slag_golem": {
+   "atlas": "creatures/rampart@slag_golem.ktx2",
+   "bytes": 91223,
+   "emit": "creatures/rampart@slag_golem_emit.ktx2"
+  },
+  "wall_sentinel": {
+   "atlas": "creatures/rampart@wall_sentinel.ktx2",
+   "bytes": 91831
+  },
+  "household_guard": {
+   "atlas": "creatures/rampart@household_guard.ktx2",
+   "bytes": 96483,
+   "emit": "creatures/rampart@household_guard_emit.ktx2"
+  },
+  "palace_sentinel": {
+   "atlas": "creatures/rampart@palace_sentinel.ktx2",
+   "bytes": 98107,
+   "emit": "creatures/rampart@palace_sentinel_emit.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/sentinel.py",
+ "fast": false
+}

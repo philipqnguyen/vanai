@@ -1,0 +1,803 @@
+{
+ "dungeon_glasshouse": {
+  "name": "The Propagating Cellars",
+  "zone": "glasshouse",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4,
+    "fade": {
+     "in": 2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       7.5,
+       2.6,
+       -44.3
+      ],
+      "look": [
+       -1,
+       1.4,
+       -35
+      ]
+     },
+     "to": {
+      "pos": [
+       4.5,
+       2.7,
+       -43.5
+      ],
+      "look": [
+       0,
+       0.8,
+       -28
+      ]
+     }
+    }
+   },
+   {
+    "dur": 6,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.6,
+       -35
+      ],
+      "look": [
+       0,
+       -0.5,
+       -14
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.3,
+       -24
+      ],
+      "look": [
+       0,
+       0.8,
+       -6
+      ]
+     }
+    },
+    "title": {
+     "at": 0.8,
+     "dur": 4.6,
+     "text": "The Propagating Cellars",
+     "sub": "Under the King's Gardens"
+    }
+   },
+   {
+    "dur": 9.6,
+    "cam": {
+     "from": {
+      "pos": [
+       -11.5,
+       3,
+       -18
+      ],
+      "look": [
+       2,
+       1,
+       -6
+      ]
+     },
+     "to": {
+      "pos": [
+       -11.5,
+       3,
+       -14
+      ],
+      "look": [
+       2,
+       1,
+       -2
+      ]
+     },
+     "ease": "linear"
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 5.2,
+      "text": "Every plant in the King's Gardens was raised down here, under the glasshouse."
+     },
+     {
+      "at": 5.6,
+      "dur": 3.9,
+      "text": "The gardeners are still raising stock, three centuries on."
+     }
+    ]
+   },
+   {
+    "dur": 7.2,
+    "cam": {
+     "from": {
+      "pos": [
+       4,
+       2.6,
+       -22
+      ],
+      "look": [
+       0,
+       1.4,
+       -6
+      ]
+     },
+     "to": {
+      "pos": [
+       3,
+       2.5,
+       -19
+      ],
+      "look": [
+       0,
+       1.4,
+       -6
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 6.0,
+      "text": "Every bench is potted and watered. The carts that leave here are loaded for the capital."
+     }
+    ]
+   },
+   {
+    "dur": 6.9,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        3.0,
+        2.2,
+        -3.6
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        4.5
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        2.3,
+        1.9,
+        -2.9
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        5
+       ]
+      }
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 6.7,
+      "text": "The way runs through the Potting Hall and the Sapling Nursery to the Nurseryman's Office at the end."
+     }
+    ]
+   }
+  ]
+ },
+ "dungeon_furnacehall": {
+  "name": "The Furnace Hall",
+  "zone": "furnacehall",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4,
+    "fade": {
+     "in": 2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       5,
+       2.4,
+       -35.4
+      ],
+      "look": [
+       -0.5,
+       1.0,
+       -41
+      ]
+     },
+     "to": {
+      "pos": [
+       4.5,
+       2.35,
+       -35.5
+      ],
+      "look": [
+       -0.5,
+       1.0,
+       -41.5
+      ]
+     }
+    }
+   },
+   {
+    "dur": 5.5,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.3,
+       -36
+      ],
+      "look": [
+       0,
+       2.5,
+       -20
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.6,
+       -29
+      ],
+      "look": [
+       -4,
+       6,
+       -14
+      ]
+     }
+    },
+    "title": {
+     "at": 0.7,
+     "dur": 4.3,
+     "text": "The Furnace Hall",
+     "sub": "Under the Glassworks"
+    }
+   },
+   {
+    "dur": 9.6,
+    "cam": {
+     "from": {
+      "pos": [
+       14,
+       6,
+       -27
+      ],
+      "look": [
+       -6,
+       6,
+       -12
+      ]
+     },
+     "to": {
+      "pos": [
+       10,
+       7,
+       -26
+      ],
+      "look": [
+       -10,
+       7,
+       -14
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 4.7,
+      "text": "The Glassworks' furnaces are down here, and they have never gone cold."
+     },
+     {
+      "at": 5.2,
+      "dur": 4.1,
+      "text": "Three hundred years of fire, and the pour has never stopped."
+     }
+    ]
+   },
+   {
+    "dur": 5.4,
+    "cam": {
+     "from": {
+      "pos": [
+       -4,
+       3.5,
+       -28
+      ],
+      "look": [
+       8,
+       1.2,
+       -19
+      ]
+     },
+     "to": {
+      "pos": [
+       -2,
+       3.2,
+       -27
+      ],
+      "look": [
+       8,
+       1.2,
+       -19
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 4.9,
+      "text": "The stokers who feed them have not left the floor in three hundred years."
+     }
+    ]
+   },
+   {
+    "dur": 6.5,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        3.0,
+        2.2,
+        -3.6
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        4.5
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        2.3,
+        1.9,
+        -2.9
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        5
+       ]
+      }
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 6.3,
+      "text": "The way runs over the Stoking Floor and through the Pane Hall to the Furnace Master's Chamber."
+     }
+    ]
+   }
+  ]
+ },
+ "dungeon_greatsluice": {
+  "name": "The Great Sluice",
+  "zone": "greatsluice",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 3.8,
+    "fade": {
+     "in": 2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       5,
+       2.4,
+       -39.3
+      ],
+      "look": [
+       -0.5,
+       1.0,
+       -45
+      ]
+     },
+     "to": {
+      "pos": [
+       4.5,
+       2.35,
+       -39.4
+      ],
+      "look": [
+       -0.5,
+       1.0,
+       -45.5
+      ]
+     }
+    }
+   },
+   {
+    "dur": 5.5,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.4,
+       -40
+      ],
+      "look": [
+       0,
+       3,
+       -24
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       3,
+       -33
+      ],
+      "look": [
+       6,
+       6,
+       0
+      ]
+     }
+    },
+    "title": {
+     "at": 0.7,
+     "dur": 4.3,
+     "text": "The Great Sluice",
+     "sub": "On the Canal Works fen"
+    }
+   },
+   {
+    "dur": 11.0,
+    "cam": {
+     "from": {
+      "pos": [
+       -4,
+       6,
+       -32
+      ],
+      "look": [
+       20,
+       4,
+       0
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       7,
+       -31
+      ],
+      "look": [
+       16,
+       5,
+       0
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 5.7,
+      "text": "This is the Great Sluice: the wheel and the pumps that kept the empire's canals open."
+     },
+     {
+      "at": 6.0,
+      "dur": 5.0,
+      "text": "The wheel still turns and the pumps still run, for barges that never come."
+     }
+    ]
+   },
+   {
+    "dur": 6.0,
+    "cam": {
+     "from": {
+      "pos": [
+       34,
+       3.5,
+       -31
+      ],
+      "look": [
+       44,
+       1.4,
+       -20
+      ]
+     },
+     "to": {
+      "pos": [
+       35,
+       3.2,
+       -28
+      ],
+      "look": [
+       44,
+       1.4,
+       -20
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.6,
+      "text": "The way runs round the wheel, through the Pump Hall, to the Sluice Master's Chamber."
+     }
+    ]
+   },
+   {
+    "dur": 6.0,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        3.0,
+        2.2,
+        -3.6
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        4.5
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        2.3,
+        1.9,
+        -2.9
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        5
+       ]
+      }
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.8,
+      "text": "This season the sentinels began mending the locks. The ledger of repairs is kept here."
+     }
+    ]
+   }
+  ]
+ },
+ "dungeon_greatgranary": {
+  "name": "The Great Granary",
+  "zone": "greatgranary",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4,
+    "fade": {
+     "in": 2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       7,
+       2.4,
+       -44.3
+      ],
+      "look": [
+       -2,
+       1.6,
+       -35
+      ]
+     },
+     "to": {
+      "pos": [
+       5.5,
+       2.4,
+       -41
+      ],
+      "look": [
+       -1,
+       1.6,
+       -30
+      ]
+     }
+    }
+   },
+   {
+    "dur": 5.5,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.4,
+       -36
+      ],
+      "look": [
+       0,
+       2.6,
+       -20
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       3,
+       -27
+      ],
+      "look": [
+       0,
+       4,
+       -10
+      ]
+     }
+    },
+    "title": {
+     "at": 0.7,
+     "dur": 4.3,
+     "text": "The Great Granary",
+     "sub": "Forty towers of grain"
+    }
+   },
+   {
+    "dur": 9.9,
+    "cam": {
+     "from": {
+      "pos": [
+       16,
+       6,
+       -24
+      ],
+      "look": [
+       0,
+       2,
+       -14
+      ]
+     },
+     "to": {
+      "pos": [
+       12,
+       7,
+       -22
+      ],
+      "look": [
+       -4,
+       3,
+       -12
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 5.6,
+      "text": "This was the empire's granary. Every wagon was weighed here and every sack counted."
+     },
+     {
+      "at": 5.95,
+      "dur": 3.9,
+      "text": "Inside are forty towers of grain. The count is still kept."
+     }
+    ]
+   },
+   {
+    "dur": 7.6,
+    "cam": {
+     "from": {
+      "pos": [
+       8,
+       2.2,
+       -22
+      ],
+      "look": [
+       0,
+       0.6,
+       -15
+      ]
+     },
+     "to": {
+      "pos": [
+       6.5,
+       2,
+       -20.5
+      ],
+      "look": [
+       0,
+       0.6,
+       -15
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 6.5,
+      "text": "For three hundred years the harvest was reaped and left to rot. This year the towers are filling."
+     }
+    ]
+   },
+   {
+    "dur": 6.6,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        3.0,
+        2.2,
+        -3.6
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        4.5
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        2.3,
+        1.9,
+        -2.9
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        5
+       ]
+      }
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 6.4,
+      "text": "The way runs through the Tally Hall and between the forty towers to the Granary-Master's Office."
+     }
+    ]
+   }
+  ]
+ }
+}

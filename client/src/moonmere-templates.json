@@ -1,0 +1,714 @@
+{
+  "about": "THE CONTRACT'S TEMPLATE LIST for Moonmere's Banded Cloisters (MOONMERE.md, section 5). Both tracks read it: the planners (client/src/zones/moonmere_*.ts) may emit only these file names, and the generator (tools/assets/build_moonmere_cloister_modules.py) must build every one of them and nothing else into client/public/models/moonmere-cloister/. Change it only together with MOONMERE.md, as a contract amendment both tracks see. Budgets live in the tests, never here. Amended by A-1, A-4, A-13 and A-14 (MOONMERE.md section 12). `bands` must equal the seed's (tools/data/moonmere-plan-seed.json) and MOONMERE.md section 2.",
+  "dir": "/models/moonmere-cloister/",
+  "datums": {
+    "bay": 4.0,
+    "halfBay": 2.0,
+    "stretch": [
+      0.75,
+      1.25
+    ],
+    "storey": 3.6,
+    "plinth": {
+      "ct": 1.2,
+      "st": 1.2,
+      "hl": 0.6,
+      "wr": 0.0,
+      "cy": 0.0,
+      "cl": 0.0,
+      "rs": 0.0
+    },
+    "eave": {
+      "ct": 11.6,
+      "st": 12.0,
+      "hl": 11.4,
+      "cy": 11.6,
+      "cl": 7.2,
+      "rs": 7.2,
+      "wr": 6.2
+    },
+    "depth": {
+      "ct": 9.0,
+      "st": 9.0,
+      "hl": 9.0,
+      "rs": 8.0,
+      "wr": 8.5,
+      "cl": 4.0
+    },
+    "loggiaStorey": 3.2,
+    "warehouseLoft": 2.6,
+    "overhang": 1.0,
+    "towerOverhang": 1.2,
+    "longTowerOverhang": 1.4,
+    "parapet": 1.1,
+    "gate": [
+      3.2,
+      4.4
+    ],
+    "door": [
+      1.4,
+      2.6
+    ],
+    "intStair": {
+      "risers": 12,
+      "riser": 0.3,
+      "tread": 0.33,
+      "run": 3.96,
+      "width": 1.2
+    },
+    "streetFlight": {
+      "risers": 4,
+      "riser": 0.25,
+      "tread": 0.52,
+      "run": 2.08,
+      "width": 5.0
+    },
+    "levels": {
+      "quay": 1.0,
+      "l1": 7.2,
+      "l2": 14.4,
+      "knoll": 21.6
+    },
+    "lod": {
+      "lod1": 45,
+      "lod2": 140
+    },
+    "cell": 48,
+    "sky": 96,
+    "depthRule": "Rows are built to their rank's depth. Pitched roof slices are built for 9.0 and never stretched in depth; roof_flat, pergola, ret_flank, ret_low (and their LOD1s) are built for 9.0 and stretched in local z by axes to 8.0/8.5 only.",
+    "frame": "yaw = Babylon rotation.y: local +x = (cos yaw, -sin yaw), local +z = (sin yaw, cos yaw) = the front (MOONMERE.md D-13)",
+    "roofPlacement": "roof pieces at groundY + eave[rank] (the rank's ground; the eave datum includes the plinth)"
+  },
+  "bands": {
+    "about": "o from the quay line, dc from the outer sea (MOONMERE.md section 2). A riser under a body ramps at [back - 3.0, back - 0.6] in that body's frame; r1Bare / r2Bare are the bare spans.",
+    "quayApron": 9.0,
+    "quayRow": [
+      9.0,
+      17.5
+    ],
+    "r1Bare": [
+      14.5,
+      16.9
+    ],
+    "roofLap": 0.3,
+    "walkEdge": 17.8,
+    "l1Walk": [
+      17.8,
+      24.0
+    ],
+    "block": [
+      24.5,
+      51.5
+    ],
+    "blockRanks": [
+      9.0,
+      10.0,
+      8.0
+    ],
+    "r2Bare": [
+      48.5,
+      50.9
+    ],
+    "terrace": [
+      51.8,
+      59.0
+    ],
+    "outerRow": [
+      59.0,
+      68.0
+    ],
+    "coastBeach": 8.0,
+    "coastL1": 26.0,
+    "riserRun": 2.4,
+    "riserInBody": [
+      3.0,
+      0.6
+    ],
+    "cellMax": 48.0
+  },
+  "categories": {
+    "bays": [
+      "bay_ct_win",
+      "bay_ct_door",
+      "bay_ct_gate",
+      "bay_ct_shop",
+      "bay_ct_loggia",
+      "bay_st_door",
+      "bay_st_shop",
+      "bay_st_win",
+      "bay_st_oriel",
+      "bay_cy_win",
+      "bay_cl_arch",
+      "bay_rs_win",
+      "bay_wr_load",
+      "bay_wr_door",
+      "bay_hl_win",
+      "bay_hl_door",
+      "half_turret",
+      "half_postern",
+      "bay_rs_back"
+    ],
+    "lod1": [
+      "bay_ct_l1",
+      "bay_ct_l1_door",
+      "bay_ct_l1_open",
+      "bay_st_l1",
+      "bay_st_l1_door",
+      "bay_st_l1_oriel",
+      "bay_cy_l1",
+      "bay_rs_l1",
+      "bay_cl_l1",
+      "bay_wr_l1_open",
+      "bay_hl_l1",
+      "bay_hl_l1_door",
+      "half_turret_l1",
+      "half_postern_l1",
+      "ret_flank_l1",
+      "ret_low_l1",
+      "bay_rs_back_l1"
+    ],
+    "cards": [
+      "card_ct",
+      "card_st",
+      "card_cy",
+      "card_wr",
+      "card_hl",
+      "card_turret"
+    ],
+    "corners": [
+      "corner_quoin",
+      "ret_flank",
+      "ret_low"
+    ],
+    "eaves": [
+      "eave_brk"
+    ],
+    "skyline": [
+      "roof_run",
+      "roof_hip_end",
+      "roof_gable_end",
+      "roof_mono",
+      "roof_mono_end",
+      "roof_pav",
+      "roof_flat",
+      "pergola",
+      "altana",
+      "chimney",
+      "cap_turret"
+    ],
+    "joinery": [
+      "shutters_pair",
+      "door_leaf"
+    ],
+    "towers": [
+      "tower_a",
+      "tower_a_l1",
+      "tower_b",
+      "tower_b_l1",
+      "card_tower",
+      "cap_tower"
+    ],
+    "civic": [
+      "lt_shell",
+      "lt_shell_l1",
+      "lt_louvres",
+      "lt_in",
+      "bs_shell",
+      "bs_in",
+      "al_shell",
+      "al_in",
+      "ar_shell",
+      "ar_in",
+      "lodge_shell",
+      "lodge_in",
+      "pg_shell",
+      "cg_shell",
+      "ch_shell",
+      "ch_in",
+      "mc_shell",
+      "mc_in",
+      "inn_shell",
+      "inn_in",
+      "sl_shell",
+      "bh_bay",
+      "home_in",
+      "oh_in_a",
+      "oh_in_b",
+      "shop_in",
+      "wr_in",
+      "lodge_shell_b",
+      "ex_shell",
+      "ex_shell_l1",
+      "ex_in"
+    ],
+    "ground": [
+      "quay_wall",
+      "quay_wall_l1",
+      "quay_stair",
+      "flight_seg",
+      "flight_seg_l1",
+      "cheek_wall",
+      "lane_wall",
+      "parapet_run",
+      "kerb",
+      "pier_deck",
+      "riser_rock",
+      "riser_rock_l1",
+      "flight_flank",
+      "cheek_landing",
+      "cw_abut"
+    ],
+    "causeway": [
+      "cw_bay",
+      "cw_head"
+    ],
+    "dressing": [
+      "lamp_bracket",
+      "lamp_post",
+      "bench_stone",
+      "planter",
+      "stall_pentice",
+      "sign_ink",
+      "sign_cup",
+      "sign_key",
+      "vine_wall",
+      "lemon_tub",
+      "well_head",
+      "cafe_set",
+      "washing_line",
+      "crate_stack",
+      "net_rack",
+      "bollard",
+      "boat_skiff",
+      "boat_launch",
+      "lamp_lantern",
+      "lamp_sconce",
+      "bench_timber",
+      "plaque_ring",
+      "plaque_moon",
+      "plaque_lemon",
+      "planter_herb",
+      "planter_trail",
+      "vine_rose",
+      "vine_wisteria",
+      "lemon_pot",
+      "hoist_sacks",
+      "hoist_barrel",
+      "crystal_dais",
+      "mere_fountain",
+      "court_fountain",
+      "market_stall_a",
+      "market_stall_b",
+      "wall_arcade",
+      "orchard_lemon_a",
+      "orchard_lemon_b",
+      "olive_tree",
+      "cypress",
+      "oleander",
+      "herb_bed",
+      "pier_rail",
+      "washing_line_long"
+    ]
+  },
+  "lods": {
+    "bay_ct_win": [
+      "bay_ct_win",
+      "bay_ct_l1",
+      "card_ct"
+    ],
+    "bay_ct_door": [
+      "bay_ct_door",
+      "bay_ct_l1_door",
+      "card_ct"
+    ],
+    "bay_ct_shop": [
+      "bay_ct_shop",
+      "bay_ct_l1_door",
+      "card_ct"
+    ],
+    "bay_ct_gate": [
+      "bay_ct_gate",
+      "bay_ct_l1_open",
+      "card_ct"
+    ],
+    "bay_ct_loggia": [
+      "bay_ct_loggia",
+      "bay_ct_l1_open",
+      "card_ct"
+    ],
+    "bay_st_win": [
+      "bay_st_win",
+      "bay_st_l1",
+      "card_st"
+    ],
+    "bay_st_door": [
+      "bay_st_door",
+      "bay_st_l1_door",
+      "card_st"
+    ],
+    "bay_st_shop": [
+      "bay_st_shop",
+      "bay_st_l1_door",
+      "card_st"
+    ],
+    "bay_st_oriel": [
+      "bay_st_oriel",
+      "bay_st_l1_oriel",
+      "card_st"
+    ],
+    "bay_cy_win": [
+      "bay_cy_win",
+      "bay_cy_l1",
+      "card_cy"
+    ],
+    "bay_rs_win": [
+      "bay_rs_win",
+      "bay_rs_l1",
+      "card_cy"
+    ],
+    "bay_cl_arch": [
+      "bay_cl_arch",
+      "bay_cl_l1",
+      "card_cy"
+    ],
+    "bay_wr_load": [
+      "bay_wr_load",
+      "bay_wr_l1_open",
+      "card_wr"
+    ],
+    "bay_wr_door": [
+      "bay_wr_door",
+      "bay_wr_l1_open",
+      "card_wr"
+    ],
+    "bay_hl_win": [
+      "bay_hl_win",
+      "bay_hl_l1",
+      "card_hl"
+    ],
+    "bay_hl_door": [
+      "bay_hl_door",
+      "bay_hl_l1_door",
+      "card_hl"
+    ],
+    "half_turret": [
+      "half_turret",
+      "half_turret_l1",
+      "card_turret"
+    ],
+    "half_postern": [
+      "half_postern",
+      "half_postern_l1",
+      "card_turret"
+    ],
+    "tower_a": [
+      "tower_a",
+      "tower_a_l1",
+      "card_tower"
+    ],
+    "tower_b": [
+      "tower_b",
+      "tower_b_l1",
+      "card_tower"
+    ],
+    "lt_shell": [
+      "lt_shell",
+      "lt_shell_l1",
+      "lt_shell_l1"
+    ],
+    "quay_wall": [
+      "quay_wall",
+      "quay_wall_l1",
+      "quay_wall_l1"
+    ],
+    "flight_seg": [
+      "flight_seg",
+      "flight_seg_l1",
+      "flight_seg_l1"
+    ],
+    "ret_flank": [
+      "ret_flank",
+      "ret_flank_l1",
+      "ret_flank_l1"
+    ],
+    "ret_low": [
+      "ret_low",
+      "ret_low_l1",
+      "ret_low_l1"
+    ],
+    "riser_rock": [
+      "riser_rock",
+      "riser_rock_l1",
+      "riser_rock_l1"
+    ],
+    "bay_rs_back": [
+      "bay_rs_back",
+      "bay_rs_back_l1",
+      "card_cy"
+    ],
+    "flight_flank": [
+      "flight_flank",
+      "flight_flank",
+      "flight_flank"
+    ],
+    "ex_shell": [
+      "ex_shell",
+      "ex_shell_l1",
+      "ex_shell_l1"
+    ]
+  },
+  "masks": {
+    "near": [
+      "corner_quoin",
+      "shutters_pair",
+      "door_leaf"
+    ],
+    "lod0Only": [
+      "eave_brk",
+      "bench_stone",
+      "planter",
+      "sign_ink",
+      "sign_cup",
+      "sign_key",
+      "cafe_set",
+      "washing_line",
+      "crate_stack",
+      "net_rack",
+      "bollard",
+      "stall_pentice",
+      "lemon_tub",
+      "bench_timber",
+      "plaque_ring",
+      "plaque_moon",
+      "plaque_lemon",
+      "planter_herb",
+      "planter_trail",
+      "lemon_pot",
+      "hoist_sacks",
+      "hoist_barrel",
+      "orchard_lemon_a",
+      "orchard_lemon_b",
+      "olive_tree",
+      "cypress",
+      "oleander",
+      "herb_bed",
+      "washing_line_long"
+    ],
+    "to140": [
+      "vine_wall",
+      "lamp_bracket",
+      "lamp_post",
+      "well_head",
+      "boat_skiff",
+      "boat_launch",
+      "kerb",
+      "cheek_wall",
+      "parapet_run",
+      "lane_wall",
+      "pier_deck",
+      "quay_stair",
+      "lamp_lantern",
+      "lamp_sconce",
+      "vine_rose",
+      "vine_wisteria",
+      "cheek_landing",
+      "crystal_dais",
+      "mere_fountain",
+      "court_fountain",
+      "market_stall_a",
+      "market_stall_b",
+      "wall_arcade",
+      "pier_rail"
+    ],
+    "interiorNearOnly": [
+      "lt_in",
+      "bs_in",
+      "al_in",
+      "ar_in",
+      "lodge_in",
+      "ch_in",
+      "mc_in",
+      "inn_in",
+      "home_in",
+      "oh_in_a",
+      "oh_in_b",
+      "shop_in",
+      "wr_in",
+      "ex_in"
+    ],
+    "alwaysDrawn": [
+      "roof_run",
+      "roof_hip_end",
+      "roof_gable_end",
+      "roof_mono",
+      "roof_mono_end",
+      "roof_pav",
+      "roof_flat",
+      "pergola",
+      "altana",
+      "chimney",
+      "cap_turret",
+      "cap_tower",
+      "bs_shell",
+      "al_shell",
+      "ar_shell",
+      "lodge_shell",
+      "pg_shell",
+      "cg_shell",
+      "ch_shell",
+      "mc_shell",
+      "inn_shell",
+      "sl_shell",
+      "bh_bay",
+      "lodge_shell_b"
+    ],
+    "withLongTower": [
+      "lt_louvres"
+    ]
+  },
+  "tint": {
+    "wash": [
+      "bays",
+      "lod1",
+      "cards",
+      "corners",
+      "half_turret",
+      "half_postern",
+      "pergola",
+      "tower_a",
+      "tower_a_l1",
+      "tower_b",
+      "tower_b_l1",
+      "card_tower",
+      "roof_flat"
+    ],
+    "glaze": [
+      "roof_run",
+      "roof_hip_end",
+      "roof_gable_end",
+      "roof_mono",
+      "roof_mono_end",
+      "roof_pav",
+      "altana",
+      "cap_turret",
+      "cap_tower"
+    ],
+    "joinery": [
+      "shutters_pair",
+      "door_leaf",
+      "stall_pentice",
+      "bench_timber"
+    ],
+    "glazes": {
+      "about": "A-4 (look pass M2, MEASURED in the cloister-v2 roofscape and aerial): the glaze family's multipliers on the NEUTRAL pantile firing, so the multiplier alone sets the hue. Plum and smoke-violet are dE76 17.8 apart (the A-1 values on the old lilac firing: 6.2). client/src/zones/moonmere_kit.ts MM_TINTS.glaze must equal these (keys with underscores).",
+      "smoke-violet": [
+        0.55,
+        0.57,
+        0.9
+      ],
+      "plum": [
+        0.75,
+        0.42,
+        0.58
+      ],
+      "slate-teal": [
+        0.42,
+        0.68,
+        0.75
+      ],
+      "ash": [
+        0.86,
+        0.84,
+        0.88
+      ],
+      "weathered": [
+        0.56,
+        0.51,
+        0.48
+      ]
+    },
+    "about": "one tint class per pool: altana takes glaze only; roof_flat takes WASH (A-4: its deck is paved in the pale tufa, a glaze turned it pink). Washes keep B >= 0.80 so the basalt bands stay blue (MOONMERE.md section 5)."
+  },
+  "variants": {
+    "about": "A-4 (look pass M2): the dressing a mount KIND may take, so no row is one unit stamped twenty times. planDressing picks per bay with a seeded draw from the house id and bay index, never the same choice on two neighbouring bays, and may leave a mount empty (the 'empty' share). A CELL draws from at most `perCell` of a kind's files (rotated per cell by a seeded offset): every variant is a pool in its cell, and a cell holds at most 24/18/6 distinct files at LOD0/1/2 (section 8) -- so variety is BETWEEN neighbouring bays and BETWEEN cells, never all variants everywhere. A file placed at a mount takes the mount's axes. 'bench' mounts are the plinth's seat slots (two a window bay): a bench, a planter at ground (y 0, z +0.25) or nothing. Lamp variants are all glow members (MOONMERE_KIT.glows.members must list lamp_lantern and lamp_sconce). Vine variants spread at most +-1.0 m from the root, so they clear the bay's lamp; lemon_pot is the courts' and galleries' smaller tree.",
+    "lamp": {
+      "files": [
+        "lamp_bracket",
+        "lamp_lantern",
+        "lamp_sconce"
+      ],
+      "empty": 0.15,
+      "perCell": 2
+    },
+    "bench": {
+      "files": [
+        "bench_stone",
+        "bench_timber",
+        "planter",
+        "planter_herb",
+        "planter_trail"
+      ],
+      "empty": 0.3,
+      "perCell": 3
+    },
+    "plaque": {
+      "files": [
+        "plaque_ring",
+        "plaque_moon",
+        "plaque_lemon"
+      ],
+      "empty": 0.35,
+      "perCell": 2
+    },
+    "planter": {
+      "files": [
+        "planter",
+        "planter_herb",
+        "planter_trail"
+      ],
+      "empty": 0.3,
+      "perCell": 2
+    },
+    "vine": {
+      "files": [
+        "vine_wall",
+        "vine_rose",
+        "vine_wisteria"
+      ],
+      "empty": 0.45,
+      "perCell": 2
+    },
+    "hoist": {
+      "files": [
+        "hoist_sacks",
+        "hoist_barrel"
+      ],
+      "empty": 0.35,
+      "perCell": 2
+    },
+    "sign": {
+      "files": [
+        "sign_ink",
+        "sign_cup",
+        "sign_key"
+      ],
+      "empty": 0.0
+    },
+    "tub": {
+      "files": [
+        "lemon_tub",
+        "lemon_pot"
+      ],
+      "empty": 0.0
+    },
+    "seat": {
+      "files": [
+        "bench_stone",
+        "bench_timber",
+        "cafe_set"
+      ],
+      "empty": 0.0
+    },
+    "glazeJitter": "every pitched-roof slice of a house takes the house's glaze x (0.94 .. 1.0) per channel, seeded per slice (tint only darkens) (a re-laid run, not one stamped sheet); roof_flat takes the house's wash"
+  }
+}

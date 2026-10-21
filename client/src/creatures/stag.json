@@ -1,0 +1,57 @@
+{
+ "file": "creatures/stag.glb",
+ "plan": "cervid",
+ "height": 2.324,
+ "length": 1.838,
+ "width": 1.503,
+ "top": 2.324,
+ "minY": 0.0039,
+ "groundY": 0.0039,
+ "forward": 0.165,
+ "tris": [
+  4160,
+  1248
+ ],
+ "budget": 4200,
+ "bones": 27,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.9,
+  "Run": 0.52,
+  "Attack_A": 1.1,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 1.75,
+  "Run": 5.4
+ },
+ "bytes": 429828,
+ "held": [],
+ "groundLift": {
+  "Death": 0.356
+ },
+ "notes": "the stag look: a tall deer, the weight of the silhouette in a wide rack",
+ "role": "common",
+ "variants": {
+  "gloamstag": {
+   "atlas": "creatures/stag@gloamstag.ktx2",
+   "bytes": 83812
+  },
+  "pale_stag": {
+   "atlas": "creatures/stag@pale_stag.ktx2",
+   "bytes": 90628
+  },
+  "red_stag": {
+   "atlas": "creatures/stag@red_stag.ktx2",
+   "bytes": 82498
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/cervid.py",
+ "fast": false
+}

@@ -1,0 +1,530 @@
+{
+  "key": "belltower",
+  "format": 1,
+  "notes": "Extracted from zones.json by tools/data/dungeon_plan.py; edit this, then `write`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "Tower Door",
+        "x": -2,
+        "z": -15,
+        "w": 5,
+        "d": 3,
+        "kind": "entry",
+        "y": 0,
+        "ceiling": 8
+      },
+      {
+        "id": "lower",
+        "name": "Flooded Valley Archive",
+        "x": -4,
+        "z": -10,
+        "w": 9,
+        "d": 6,
+        "kind": "archive",
+        "y": -0.8,
+        "ceiling": 14.8
+      },
+      {
+        "id": "wax",
+        "name": "Wax Stores",
+        "x": 8,
+        "z": -11,
+        "w": 5,
+        "d": 5,
+        "kind": "wax",
+        "y": 0,
+        "ceiling": 9
+      },
+      {
+        "id": "west",
+        "name": "Western Archive Gallery",
+        "x": -9,
+        "z": -3,
+        "w": 5,
+        "d": 7,
+        "kind": "archive",
+        "y": 8,
+        "ceiling": 11
+      },
+      {
+        "id": "cells",
+        "name": "Wardens’ Cells",
+        "x": -17,
+        "z": -2,
+        "w": 5,
+        "d": 5,
+        "kind": "cells",
+        "y": 8,
+        "ceiling": 7
+      },
+      {
+        "id": "upper",
+        "name": "Dry Provincial Originals",
+        "x": -9,
+        "z": 7,
+        "w": 6,
+        "d": 5,
+        "kind": "archive",
+        "y": 16,
+        "ceiling": 10
+      },
+      {
+        "id": "escapement",
+        "name": "The Escapement",
+        "x": 4,
+        "z": 7,
+        "w": 6,
+        "d": 5,
+        "kind": "gears",
+        "y": 16,
+        "ceiling": 13
+      },
+      {
+        "id": "east",
+        "name": "Eastern Clock Gallery",
+        "x": 5,
+        "z": -3,
+        "w": 5,
+        "d": 7,
+        "kind": "gallery",
+        "y": 24,
+        "ceiling": 11
+      },
+      {
+        "id": "bell",
+        "name": "The Bell Chamber",
+        "x": -2,
+        "z": -2,
+        "w": 5,
+        "d": 5,
+        "kind": "bell",
+        "y": 32,
+        "ceiling": 14
+      }
+    ],
+    "corridors": [
+      [
+        [
+          0,
+          -13
+        ],
+        [
+          0,
+          -10
+        ]
+      ],
+      {
+        "points": [
+          [
+            4,
+            -8
+          ],
+          [
+            8,
+            -8
+          ]
+        ],
+        "y": 0
+      },
+      {
+        "points": [
+          [
+            -4,
+            -8
+          ],
+          [
+            -7,
+            -8
+          ],
+          [
+            -7,
+            -3
+          ]
+        ],
+        "y": 0
+      },
+      [
+        [
+          -9,
+          0
+        ],
+        [
+          -13,
+          0
+        ]
+      ],
+      [
+        [
+          -7,
+          3
+        ],
+        [
+          -7,
+          7
+        ]
+      ],
+      [
+        [
+          -4,
+          9
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      [
+        [
+          -4,
+          10
+        ],
+        [
+          4,
+          10
+        ]
+      ],
+      [
+        [
+          7,
+          7
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    }
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "Archive and clock ascent",
+      "cx": -4,
+      "cz": -4,
+      "span": 152,
+      "len": 144,
+      "yaw": 0,
+      "floors": [
+        -0.8,
+        0,
+        8,
+        16,
+        24,
+        32
+      ],
+      "decks": [
+        {
+          "derive": "cells"
+        }
+      ],
+      "ramps": [
+        {
+          "x0": -28,
+          "z0": -28,
+          "y0": 0,
+          "x1": -28,
+          "z1": -14,
+          "y1": 8,
+          "half": 1.7,
+          "ux": 0.0,
+          "uz": 1.0,
+          "len": 14.0
+        },
+        {
+          "x0": -28,
+          "z0": 14,
+          "y0": 8,
+          "x1": -28,
+          "z1": 26,
+          "y1": 16,
+          "half": 1.7,
+          "ux": 0.0,
+          "uz": 1.0,
+          "len": 12.0
+        },
+        {
+          "x0": 28,
+          "z0": 26,
+          "y0": 16,
+          "x1": 28,
+          "z1": 14,
+          "y1": 24,
+          "half": 1.7,
+          "ux": 0.0,
+          "uz": -1.0,
+          "len": 12.0
+        },
+        {
+          "x0": 22,
+          "z0": 0,
+          "y0": 24,
+          "x1": 10,
+          "z1": 0,
+          "y1": 32,
+          "half": 1.7
+        },
+        {
+          "x0": 0,
+          "z0": -42,
+          "y0": 0,
+          "x1": 0,
+          "z1": -40,
+          "y1": -0.8,
+          "half": 1.7,
+          "ux": 0.0,
+          "uz": 1.0,
+          "len": 2.0
+        },
+        {
+          "x0": -18,
+          "z0": -32,
+          "y0": 0,
+          "x1": -16,
+          "z1": -32,
+          "y1": -0.8,
+          "half": 1.7,
+          "ux": 1.0,
+          "uz": 0.0,
+          "len": 2.0
+        },
+        {
+          "x0": 18,
+          "z0": -32,
+          "y0": 0,
+          "x1": 16,
+          "z1": -32,
+          "y1": -0.8,
+          "half": 1.7,
+          "ux": -1.0,
+          "uz": 0.0,
+          "len": 2.0
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout"
+      }
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -53.5
+  },
+  "portals": [
+    {
+      "id": "bt_door",
+      "name": "The Tower Door",
+      "x": 0,
+      "z": -58.7,
+      "to": "reservoir",
+      "tx": 50,
+      "tz": 80,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.2,
+        "column": 6,
+        "floor": 0.02
+      }
+    },
+    {
+      "id": "bt_out",
+      "name": "The Bell Chamber's Way Out",
+      "x": -6.5,
+      "z": -6.5,
+      "y": 32,
+      "to": "reservoir",
+      "tx": 50,
+      "tz": 80,
+      "site": "raised_chamber",
+      "floor": 5,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.0,
+        "floor": 0.02
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_bt_archive",
+      "name": "The Valley Archive",
+      "x": 0,
+      "z": -30,
+      "xp": 90
+    },
+    {
+      "id": "lm_bt_escapement",
+      "name": "The Escapement",
+      "x": 26,
+      "z": 36,
+      "xp": 100
+    },
+    {
+      "id": "lm_bt_bell",
+      "name": "The Bell Chamber",
+      "x": 0,
+      "z": 0,
+      "xp": 160
+    },
+    {
+      "id": "lm_bt_clock",
+      "name": "The Clock Gallery",
+      "x": 33,
+      "z": 3,
+      "xp": 90
+    }
+  ],
+  "interactables": [
+    {
+      "id": "wax_cabinet",
+      "name": "The Wax-Sealed Cabinet",
+      "x": 4,
+      "z": 6,
+      "idle_msg": "A cabinet in the bell chamber, sealed with wax before the valley was flooded; whatever is inside was meant to be found dry, by someone, someday. Through the wax you can make out one page lying in it, and a bundle of rolled papers beside it.",
+      "active_msg": "You break the wax and lift the page out. One line, written the night before the vanishing in a hand so calm it is almost rude: 'Seal it behind us.' Beside it lie the striking rolls, the bell's peal written out year by year; the gaps between the strokes grow shorter every year, closing on one date.",
+      "prop": "cabinet",
+      "y": 32,
+      "site": "raised_chamber",
+      "floor": 5
+    },
+    {
+      "id": "striking_rolls",
+      "name": "The Striking Rolls",
+      "x": -4,
+      "z": 6,
+      "idle_msg": "The bell's record, roll on roll. It is not a bell. It is a clock face the size of a valley, and it is counting down.",
+      "active_msg": "You take the striking rolls. Every court will want them; every court will read the same date.",
+      "prop": "document_table",
+      "y": 32,
+      "site": "raised_chamber",
+      "floor": 5
+    }
+  ],
+  "camps": [
+    {
+      "monster": "archive_keeper",
+      "min_lvl": 22,
+      "max_lvl": 23,
+      "count": 2,
+      "x": -8,
+      "z": -27,
+      "radius": 3.5,
+      "respawn": 40
+    },
+    {
+      "monster": "archive_keeper",
+      "min_lvl": 22,
+      "max_lvl": 23,
+      "count": 2,
+      "x": 8,
+      "z": -33,
+      "radius": 3.5,
+      "respawn": 40
+    },
+    {
+      "monster": "bell_haunt",
+      "min_lvl": 22,
+      "max_lvl": 24,
+      "count": 2,
+      "x": -28,
+      "z": 0,
+      "radius": 4.5,
+      "respawn": 40
+    },
+    {
+      "monster": "bell_haunt",
+      "min_lvl": 22,
+      "max_lvl": 24,
+      "count": 2,
+      "x": -44,
+      "z": 0,
+      "radius": 1.1,
+      "respawn": 40
+    },
+    {
+      "monster": "archive_keeper",
+      "min_lvl": 23,
+      "max_lvl": 24,
+      "count": 3,
+      "x": -26,
+      "z": 36,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "tower_warden",
+      "min_lvl": 24,
+      "max_lvl": 25,
+      "count": 3,
+      "x": 26,
+      "z": 36,
+      "radius": 6,
+      "respawn": 45
+    },
+    {
+      "monster": "bell_haunt",
+      "min_lvl": 24,
+      "max_lvl": 25,
+      "count": 3,
+      "x": 30,
+      "z": -6,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "bell_haunt",
+      "min_lvl": 24,
+      "max_lvl": 25,
+      "count": 2,
+      "x": 0,
+      "z": 38,
+      "radius": 2.2,
+      "respawn": 45
+    },
+    {
+      "monster": "the_bellringer_of_the_valley",
+      "min_lvl": 25,
+      "max_lvl": 25,
+      "count": 1,
+      "x": 0,
+      "z": 0,
+      "radius": 3,
+      "respawn": 600
+    },
+    {
+      "monster": "drowned_acolyte",
+      "min_lvl": 23,
+      "max_lvl": 24,
+      "count": 3,
+      "x": -60,
+      "z": 0,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "silt_acolyte",
+      "min_lvl": 23,
+      "max_lvl": 24,
+      "count": 3,
+      "x": 40,
+      "z": -36,
+      "radius": 3,
+      "respawn": 40
+    }
+  ]
+}

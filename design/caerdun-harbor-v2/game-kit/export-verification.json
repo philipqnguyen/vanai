@@ -1,0 +1,1487 @@
+{
+  "modules": 55,
+  "boundsAndPivots": "pass",
+  "externalImages": "pass",
+  "runtimeBytes": 4629808,
+  "exports": [
+    {
+      "file": "wall_0_plain.glb",
+      "size": [
+        2.0,
+        3.4,
+        0.47
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.4,
+        0.1
+      ],
+      "min_y": 0.0,
+      "verts": 2064,
+      "prims": 3,
+      "mats": [
+        "CD_Lime",
+        "CD_FloorOak",
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_0_window.glb",
+      "size": [
+        2.0,
+        3.4,
+        0.71
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.4,
+        0.34
+      ],
+      "min_y": 0.0,
+      "verts": 3768,
+      "prims": 6,
+      "mats": [
+        "CD_Lime",
+        "CD_Iron",
+        "CD_Oxblood",
+        "CD_WindowGlass",
+        "CD_Granite",
+        "CD_FloorOak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_0_door.glb",
+      "size": [
+        2.35,
+        3.4,
+        0.615
+      ],
+      "min": [
+        -1.175,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.175,
+        3.4,
+        0.245
+      ],
+      "min_y": 0.0,
+      "verts": 2640,
+      "prims": 4,
+      "mats": [
+        "CD_Lime",
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_1_plain.glb",
+      "size": [
+        2.0,
+        3.4,
+        0.53
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.4,
+        0.16
+      ],
+      "min_y": 0.0,
+      "verts": 624,
+      "prims": 3,
+      "mats": [
+        "CD_Oak",
+        "CD_FloorOak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_1_window.glb",
+      "size": [
+        2.0,
+        3.4,
+        0.71
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.4,
+        0.34
+      ],
+      "min_y": 0.0,
+      "verts": 2232,
+      "prims": 7,
+      "mats": [
+        "CD_Oak",
+        "CD_Iron",
+        "CD_Oxblood",
+        "CD_WindowGlass",
+        "CD_Lime",
+        "CD_FloorOak",
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_1_door.glb",
+      "size": [
+        2.35,
+        3.4,
+        0.615
+      ],
+      "min": [
+        -1.175,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.175,
+        3.4,
+        0.245
+      ],
+      "min_y": 0.0,
+      "verts": 1200,
+      "prims": 4,
+      "mats": [
+        "CD_Granite",
+        "CD_Oak",
+        "CD_FloorOak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_2_plain.glb",
+      "size": [
+        2.0,
+        3.4,
+        0.53
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.4,
+        0.16
+      ],
+      "min_y": 0.0,
+      "verts": 1392,
+      "prims": 3,
+      "mats": [
+        "CD_Lime",
+        "CD_FloorOak",
+        "CD_Oak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_2_window.glb",
+      "size": [
+        2.0,
+        3.4,
+        0.71
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.4,
+        0.34
+      ],
+      "min_y": 0.0,
+      "verts": 3384,
+      "prims": 7,
+      "mats": [
+        "CD_Lime",
+        "CD_Iron",
+        "CD_Oxblood",
+        "CD_WindowGlass",
+        "CD_Oak",
+        "CD_FloorOak",
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_2_door.glb",
+      "size": [
+        2.35,
+        3.4,
+        0.615
+      ],
+      "min": [
+        -1.175,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.175,
+        3.4,
+        0.245
+      ],
+      "min_y": 0.0,
+      "verts": 1968,
+      "prims": 4,
+      "mats": [
+        "CD_Granite",
+        "CD_Lime",
+        "CD_FloorOak",
+        "CD_Oak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_3_plain.glb",
+      "size": [
+        2.0,
+        3.4,
+        0.53
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.4,
+        0.16
+      ],
+      "min_y": 0.0,
+      "verts": 720,
+      "prims": 3,
+      "mats": [
+        "CD_Oak",
+        "CD_FloorOak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_3_window.glb",
+      "size": [
+        2.0,
+        3.4,
+        0.71
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.4,
+        0.34
+      ],
+      "min_y": 0.0,
+      "verts": 2232,
+      "prims": 7,
+      "mats": [
+        "CD_Oak",
+        "CD_Iron",
+        "CD_Oxblood",
+        "CD_WindowGlass",
+        "CD_Lime",
+        "CD_FloorOak",
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "wall_3_door.glb",
+      "size": [
+        2.35,
+        3.4,
+        0.615
+      ],
+      "min": [
+        -1.175,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.175,
+        3.4,
+        0.245
+      ],
+      "min_y": 0.0,
+      "verts": 1200,
+      "prims": 4,
+      "mats": [
+        "CD_Granite",
+        "CD_Oak",
+        "CD_FloorOak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "tower_plain.glb",
+      "size": [
+        2.0,
+        3.125,
+        0.47
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.125,
+        0.1
+      ],
+      "min_y": 0.0,
+      "verts": 1776,
+      "prims": 3,
+      "mats": [
+        "CD_Lime",
+        "CD_FloorOak",
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "tower_window.glb",
+      "size": [
+        2.0,
+        3.125,
+        0.71
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.0,
+        3.125,
+        0.34
+      ],
+      "min_y": 0.0,
+      "verts": 3576,
+      "prims": 6,
+      "mats": [
+        "CD_Lime",
+        "CD_Iron",
+        "CD_Oxblood",
+        "CD_WindowGlass",
+        "CD_Granite",
+        "CD_FloorOak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "tower_door.glb",
+      "size": [
+        2.35,
+        3.125,
+        0.615
+      ],
+      "min": [
+        -1.175,
+        0.0,
+        -0.37
+      ],
+      "max": [
+        1.175,
+        3.125,
+        0.245
+      ],
+      "min_y": 0.0,
+      "verts": 2160,
+      "prims": 4,
+      "mats": [
+        "CD_Lime",
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "door.glb",
+      "size": [
+        1.89,
+        2.46,
+        0.157
+      ],
+      "min": [
+        0.0,
+        0.01,
+        -0.047
+      ],
+      "max": [
+        1.89,
+        2.47,
+        0.11
+      ],
+      "min_y": 0.01,
+      "verts": 384,
+      "prims": 2,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Iron"
+      ],
+      "glb": true
+    },
+    {
+      "file": "floor.glb",
+      "size": [
+        1.0,
+        0.18,
+        1.0
+      ],
+      "min": [
+        -0.5,
+        -0.18,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "min_y": -0.18,
+      "verts": 24,
+      "prims": 1,
+      "mats": [
+        "CD_FloorOak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "ceiling.glb",
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ],
+      "min": [
+        -0.5,
+        -0.1,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "min_y": -0.1,
+      "verts": 24,
+      "prims": 1,
+      "mats": [
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "beam.glb",
+      "size": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        1.0,
+        0.5
+      ],
+      "min_y": 0.0,
+      "verts": 96,
+      "prims": 1,
+      "mats": [
+        "CD_Oak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "stone.glb",
+      "size": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "max": [
+        0.5,
+        1.0,
+        0.5
+      ],
+      "min_y": 0.0,
+      "verts": 96,
+      "prims": 1,
+      "mats": [
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "foundation.glb",
+      "size": [
+        2.0,
+        1.0,
+        0.4
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.2
+      ],
+      "max": [
+        1.0,
+        1.0,
+        0.2
+      ],
+      "min_y": 0.0,
+      "verts": 96,
+      "prims": 1,
+      "mats": [
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "quay.glb",
+      "size": [
+        2,
+        1,
+        2
+      ],
+      "min": [
+        -1,
+        0,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min_y": 0,
+      "verts": 96,
+      "prims": 1,
+      "mats": [
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "rail.glb",
+      "size": [
+        2.0,
+        1.07,
+        0.09
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -0.045
+      ],
+      "max": [
+        1.0,
+        1.07,
+        0.045
+      ],
+      "min_y": 0.0,
+      "verts": 576,
+      "prims": 2,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "stairs.glb",
+      "size": [
+        2.23,
+        4.471,
+        5.655
+      ],
+      "min": [
+        -1.115,
+        -0.049,
+        -5.628
+      ],
+      "max": [
+        1.115,
+        4.422,
+        0.028
+      ],
+      "min_y": -0.049,
+      "verts": 3456,
+      "prims": 2,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_4_85.glb",
+      "size": [
+        4.92,
+        2.382,
+        2.0
+      ],
+      "min": [
+        -2.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        2.46,
+        2.217,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 1872,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_4_85.glb",
+      "size": [
+        5.001,
+        2.204,
+        0.38
+      ],
+      "min": [
+        -2.501,
+        -0.061,
+        -0.19
+      ],
+      "max": [
+        2.501,
+        2.143,
+        0.19
+      ],
+      "min_y": -0.061,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_4_105.glb",
+      "size": [
+        4.92,
+        2.872,
+        2.0
+      ],
+      "min": [
+        -2.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        2.46,
+        2.707,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 1872,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_4_105.glb",
+      "size": [
+        5.014,
+        2.68,
+        0.38
+      ],
+      "min": [
+        -2.507,
+        -0.054,
+        -0.19
+      ],
+      "max": [
+        2.507,
+        2.626,
+        0.19
+      ],
+      "min_y": -0.054,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_6_85.glb",
+      "size": [
+        6.92,
+        3.233,
+        2.0
+      ],
+      "min": [
+        -3.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        3.46,
+        3.068,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 2448,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_6_85.glb",
+      "size": [
+        7.001,
+        3.054,
+        0.38
+      ],
+      "min": [
+        -3.501,
+        -0.061,
+        -0.19
+      ],
+      "max": [
+        3.501,
+        2.993,
+        0.19
+      ],
+      "min_y": -0.061,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_6_105.glb",
+      "size": [
+        6.92,
+        3.922,
+        2.0
+      ],
+      "min": [
+        -3.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        3.46,
+        3.757,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 2448,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_6_105.glb",
+      "size": [
+        7.014,
+        3.73,
+        0.38
+      ],
+      "min": [
+        -3.507,
+        -0.054,
+        -0.19
+      ],
+      "max": [
+        3.507,
+        3.676,
+        0.19
+      ],
+      "min_y": -0.054,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_8_85.glb",
+      "size": [
+        8.92,
+        4.083,
+        2.0
+      ],
+      "min": [
+        -4.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        4.46,
+        3.918,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 3024,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_8_85.glb",
+      "size": [
+        9.001,
+        3.904,
+        0.38
+      ],
+      "min": [
+        -4.501,
+        -0.061,
+        -0.19
+      ],
+      "max": [
+        4.501,
+        3.843,
+        0.19
+      ],
+      "min_y": -0.061,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_8_105.glb",
+      "size": [
+        8.92,
+        4.972,
+        2.0
+      ],
+      "min": [
+        -4.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        4.46,
+        4.807,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 3024,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_8_105.glb",
+      "size": [
+        9.014,
+        4.78,
+        0.38
+      ],
+      "min": [
+        -4.507,
+        -0.054,
+        -0.19
+      ],
+      "max": [
+        4.507,
+        4.726,
+        0.19
+      ],
+      "min_y": -0.054,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_10_85.glb",
+      "size": [
+        10.92,
+        4.932,
+        2.0
+      ],
+      "min": [
+        -5.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        5.46,
+        4.767,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 3600,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_10_85.glb",
+      "size": [
+        11.001,
+        4.754,
+        0.38
+      ],
+      "min": [
+        -5.501,
+        -0.061,
+        -0.19
+      ],
+      "max": [
+        5.501,
+        4.693,
+        0.19
+      ],
+      "min_y": -0.061,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_10_105.glb",
+      "size": [
+        10.92,
+        6.023,
+        2.0
+      ],
+      "min": [
+        -5.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        5.46,
+        5.858,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 3600,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_10_105.glb",
+      "size": [
+        11.014,
+        5.83,
+        0.38
+      ],
+      "min": [
+        -5.507,
+        -0.054,
+        -0.19
+      ],
+      "max": [
+        5.507,
+        5.776,
+        0.19
+      ],
+      "min_y": -0.054,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_12_85.glb",
+      "size": [
+        12.92,
+        5.782,
+        2.0
+      ],
+      "min": [
+        -6.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        6.46,
+        5.617,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 3984,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_12_85.glb",
+      "size": [
+        13.001,
+        5.604,
+        0.38
+      ],
+      "min": [
+        -6.501,
+        -0.061,
+        -0.19
+      ],
+      "max": [
+        6.501,
+        5.543,
+        0.19
+      ],
+      "min_y": -0.061,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_12_105.glb",
+      "size": [
+        12.92,
+        7.072,
+        2.0
+      ],
+      "min": [
+        -6.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        6.46,
+        6.907,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 3984,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_12_105.glb",
+      "size": [
+        13.014,
+        6.88,
+        0.38
+      ],
+      "min": [
+        -6.507,
+        -0.054,
+        -0.19
+      ],
+      "max": [
+        6.507,
+        6.826,
+        0.19
+      ],
+      "min_y": -0.054,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_14_85.glb",
+      "size": [
+        14.92,
+        6.633,
+        2.0
+      ],
+      "min": [
+        -7.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        7.46,
+        6.468,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 4560,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_14_85.glb",
+      "size": [
+        15.001,
+        6.454,
+        0.38
+      ],
+      "min": [
+        -7.501,
+        -0.061,
+        -0.19
+      ],
+      "max": [
+        7.501,
+        6.393,
+        0.19
+      ],
+      "min_y": -0.061,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "roof_14_105.glb",
+      "size": [
+        14.92,
+        8.122,
+        2.0
+      ],
+      "min": [
+        -7.46,
+        -0.165,
+        -1.0
+      ],
+      "max": [
+        7.46,
+        7.957,
+        1.0
+      ],
+      "min_y": -0.165,
+      "verts": 4560,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "gable_14_105.glb",
+      "size": [
+        15.014,
+        7.93,
+        0.38
+      ],
+      "min": [
+        -7.507,
+        -0.054,
+        -0.19
+      ],
+      "max": [
+        7.507,
+        7.876,
+        0.19
+      ],
+      "min_y": -0.054,
+      "verts": 594,
+      "prims": 3,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Lime"
+      ],
+      "glb": true
+    },
+    {
+      "file": "chimney.glb",
+      "size": [
+        1.02,
+        2.546,
+        1.06
+      ],
+      "min": [
+        -0.51,
+        0.0,
+        -0.53
+      ],
+      "max": [
+        0.51,
+        2.546,
+        0.53
+      ],
+      "min_y": 0.0,
+      "verts": 600,
+      "prims": 2,
+      "mats": [
+        "CD_Granite",
+        "CD_Iron"
+      ],
+      "glb": true
+    },
+    {
+      "file": "porch.glb",
+      "size": [
+        2.96,
+        3.15,
+        1.7
+      ],
+      "min": [
+        -1.48,
+        0.0,
+        -0.1
+      ],
+      "max": [
+        1.48,
+        3.15,
+        1.6
+      ],
+      "min_y": 0.0,
+      "verts": 432,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_Slate"
+      ],
+      "glb": true
+    },
+    {
+      "file": "exterior_stairs.glb",
+      "size": [
+        2.0,
+        1.0,
+        2.088
+      ],
+      "min": [
+        -1.0,
+        0.0,
+        -1.044
+      ],
+      "max": [
+        1.0,
+        1.0,
+        1.044
+      ],
+      "min_y": 0.0,
+      "verts": 672,
+      "prims": 1,
+      "mats": [
+        "CD_Granite"
+      ],
+      "glb": true
+    },
+    {
+      "file": "dormer.glb",
+      "size": [
+        2.303,
+        2.165,
+        1.985
+      ],
+      "min": [
+        -1.151,
+        0.0,
+        -1.6
+      ],
+      "max": [
+        1.151,
+        2.165,
+        0.385
+      ],
+      "min_y": 0.0,
+      "verts": 750,
+      "prims": 5,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Lime",
+        "CD_Oak",
+        "CD_Slate",
+        "CD_Oxblood"
+      ],
+      "glb": true
+    },
+    {
+      "file": "table.glb",
+      "size": [
+        2.15,
+        0.805,
+        2.18
+      ],
+      "min": [
+        -1.075,
+        0.0,
+        -1.09
+      ],
+      "max": [
+        1.075,
+        0.805,
+        1.09
+      ],
+      "min_y": 0.0,
+      "verts": 1056,
+      "prims": 2,
+      "mats": [
+        "CD_Oak",
+        "CD_FloorOak"
+      ],
+      "glb": true
+    },
+    {
+      "file": "bed.glb",
+      "size": [
+        1.6,
+        0.68,
+        2.15
+      ],
+      "min": [
+        -0.8,
+        0.09,
+        -1.075
+      ],
+      "max": [
+        0.8,
+        0.77,
+        1.075
+      ],
+      "min_y": 0.09,
+      "verts": 384,
+      "prims": 3,
+      "mats": [
+        "CD_Oak",
+        "CD_Oxblood",
+        "CD_Linen"
+      ],
+      "glb": true
+    },
+    {
+      "file": "shelf.glb",
+      "size": [
+        1.9,
+        2.2,
+        0.42
+      ],
+      "min": [
+        -0.95,
+        0.0,
+        -0.21
+      ],
+      "max": [
+        0.95,
+        2.2,
+        0.21
+      ],
+      "min_y": 0.0,
+      "verts": 4032,
+      "prims": 4,
+      "mats": [
+        "CD_FloorOak",
+        "CD_Oak",
+        "CD_Linen",
+        "CD_Oxblood"
+      ],
+      "glb": true
+    }
+  ]
+}

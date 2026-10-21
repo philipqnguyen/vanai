@@ -1,0 +1,999 @@
+{
+  "key": "mausoleum",
+  "format": 1,
+  "notes": "Extracted from zones.json by tools/data/dungeon_plan.py; edit this, then `write`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "Hall of Names",
+        "x": -2,
+        "z": -29,
+        "w": 5,
+        "d": 5,
+        "kind": "entry",
+        "ceiling": 12
+      },
+      {
+        "id": "crossing",
+        "name": "The Crossing Hall",
+        "x": -3,
+        "z": -20,
+        "w": 7,
+        "d": 7,
+        "kind": "hall",
+        "ceiling": 12
+      },
+      {
+        "id": "westcrypt",
+        "name": "The West Crypt — Ivory Gallery",
+        "x": -19,
+        "z": -20,
+        "w": 7,
+        "d": 7,
+        "kind": "crypt",
+        "ceiling": 8.5
+      },
+      {
+        "id": "eastcrypt",
+        "name": "The East Crypt — Blue Gallery",
+        "x": 13,
+        "z": -20,
+        "w": 7,
+        "d": 7,
+        "kind": "crypt",
+        "ceiling": 8.5
+      },
+      {
+        "id": "westshrine",
+        "name": "Shrine of the First Vigil",
+        "x": -27,
+        "z": -15,
+        "w": 3,
+        "d": 5,
+        "kind": "shrine",
+        "ceiling": 7
+      },
+      {
+        "id": "eastshrine",
+        "name": "Shrine of the Last Letter",
+        "x": 25,
+        "z": -15,
+        "w": 3,
+        "d": 5,
+        "kind": "shrine",
+        "ceiling": 7
+      },
+      {
+        "id": "linen",
+        "name": "The Linen Room",
+        "x": -11,
+        "z": -28,
+        "w": 3,
+        "d": 3,
+        "kind": "store",
+        "ceiling": 7
+      },
+      {
+        "id": "register",
+        "name": "The Visitors’ Register",
+        "x": 7,
+        "z": -28,
+        "w": 5,
+        "d": 3,
+        "kind": "library",
+        "ceiling": 7
+      },
+      {
+        "id": "westgallery",
+        "name": "The Lantern Gallery",
+        "x": -19,
+        "z": -7,
+        "w": 7,
+        "d": 7,
+        "kind": "crypt",
+        "ceiling": 8.5
+      },
+      {
+        "id": "eastgallery",
+        "name": "The Root Gallery",
+        "x": 13,
+        "z": -7,
+        "w": 7,
+        "d": 7,
+        "kind": "crypt",
+        "ceiling": 8.5
+      },
+      {
+        "id": "cloister",
+        "name": "The Court of the Unreturned",
+        "x": -3,
+        "z": 0,
+        "w": 7,
+        "d": 7,
+        "kind": "hall",
+        "ceiling": 7
+      },
+      {
+        "id": "offering",
+        "name": "The Silent Offering",
+        "x": -10,
+        "z": 2,
+        "w": 3,
+        "d": 3,
+        "kind": "shrine",
+        "ceiling": 7
+      },
+      {
+        "id": "westhall",
+        "name": "The Three Sisters",
+        "x": -19,
+        "z": 7,
+        "w": 7,
+        "d": 5,
+        "kind": "shrine",
+        "ceiling": 12
+      },
+      {
+        "id": "easthall",
+        "name": "The Vigil of Banners",
+        "x": 13,
+        "z": 7,
+        "w": 7,
+        "d": 5,
+        "kind": "hall",
+        "ceiling": 12
+      },
+      {
+        "id": "nave",
+        "name": "The Long Vigil",
+        "x": -3,
+        "z": 12,
+        "w": 7,
+        "d": 9,
+        "kind": "hall",
+        "ceiling": 12
+      },
+      {
+        "id": "archive",
+        "name": "The Unfinished Ledger",
+        "x": 25,
+        "z": 6,
+        "w": 3,
+        "d": 5,
+        "kind": "library",
+        "ceiling": 7
+      },
+      {
+        "id": "tomb",
+        "name": "The Unnamed Tomb",
+        "x": -26,
+        "z": 5,
+        "w": 3,
+        "d": 3,
+        "kind": "crypt",
+        "ceiling": 7
+      },
+      {
+        "id": "vestibule",
+        "name": "The Folded Standard",
+        "x": 13,
+        "z": 17,
+        "w": 5,
+        "d": 3,
+        "kind": "chamber",
+        "ceiling": 7
+      },
+      {
+        "id": "vault",
+        "name": "The Emperors’ Vault",
+        "x": 13,
+        "z": 25,
+        "w": 7,
+        "d": 9,
+        "kind": "boss",
+        "ceiling": 13
+      },
+      {
+        "id": "return",
+        "name": "The Keepers’ Stair",
+        "x": 7,
+        "z": 24,
+        "w": 3,
+        "d": 3,
+        "kind": "store",
+        "ceiling": 7
+      }
+    ],
+    "corridors": [
+      {
+        "points": [
+          [
+            -1,
+            -25
+          ],
+          [
+            -1,
+            -20
+          ]
+        ],
+        "name": "The Processional",
+        "ceiling": 9
+      },
+      {
+        "points": [
+          [
+            0,
+            -25
+          ],
+          [
+            0,
+            -20
+          ]
+        ],
+        "name": "The Processional",
+        "ceiling": 9
+      },
+      {
+        "points": [
+          [
+            1,
+            -25
+          ],
+          [
+            1,
+            -20
+          ]
+        ],
+        "name": "The Processional",
+        "ceiling": 9
+      },
+      [
+        [
+          -3,
+          -17
+        ],
+        [
+          -13,
+          -17
+        ]
+      ],
+      [
+        [
+          3,
+          -17
+        ],
+        [
+          13,
+          -17
+        ]
+      ],
+      [
+        [
+          -19,
+          -16
+        ],
+        [
+          -23,
+          -16
+        ],
+        [
+          -23,
+          -13
+        ],
+        [
+          -25,
+          -13
+        ]
+      ],
+      [
+        [
+          19,
+          -16
+        ],
+        [
+          23,
+          -16
+        ],
+        [
+          23,
+          -13
+        ],
+        [
+          25,
+          -13
+        ]
+      ],
+      [
+        [
+          -9,
+          -26
+        ],
+        [
+          -2,
+          -26
+        ]
+      ],
+      [
+        [
+          2,
+          -26
+        ],
+        [
+          7,
+          -26
+        ]
+      ],
+      [
+        [
+          -10,
+          -26
+        ],
+        [
+          -16,
+          -26
+        ],
+        [
+          -16,
+          -20
+        ]
+      ],
+      [
+        [
+          9,
+          -26
+        ],
+        [
+          16,
+          -26
+        ],
+        [
+          16,
+          -20
+        ]
+      ],
+      [
+        [
+          -16,
+          -14
+        ],
+        [
+          -16,
+          -7
+        ]
+      ],
+      [
+        [
+          16,
+          -14
+        ],
+        [
+          16,
+          -7
+        ]
+      ],
+      [
+        [
+          -13,
+          -3
+        ],
+        [
+          -8,
+          -3
+        ],
+        [
+          -8,
+          -10
+        ],
+        [
+          8,
+          -10
+        ],
+        [
+          8,
+          -3
+        ],
+        [
+          13,
+          -3
+        ]
+      ],
+      [
+        [
+          -8,
+          -3
+        ],
+        [
+          -8,
+          3
+        ],
+        [
+          -3,
+          3
+        ]
+      ],
+      [
+        [
+          13,
+          -3
+        ],
+        [
+          8,
+          -3
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      [
+        [
+          -16,
+          -1
+        ],
+        [
+          -16,
+          7
+        ]
+      ],
+      [
+        [
+          16,
+          -1
+        ],
+        [
+          16,
+          7
+        ]
+      ],
+      [
+        [
+          -16,
+          11
+        ],
+        [
+          -16,
+          16
+        ],
+        [
+          -3,
+          16
+        ]
+      ],
+      [
+        [
+          16,
+          11
+        ],
+        [
+          16,
+          14
+        ],
+        [
+          3,
+          14
+        ]
+      ],
+      {
+        "points": [
+          [
+            -1,
+            6
+          ],
+          [
+            -1,
+            12
+          ]
+        ],
+        "name": "The Mourners' Way",
+        "ceiling": 9
+      },
+      {
+        "points": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            12
+          ]
+        ],
+        "name": "The Mourners' Way",
+        "ceiling": 9
+      },
+      {
+        "points": [
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            12
+          ]
+        ],
+        "name": "The Mourners' Way",
+        "ceiling": 9
+      },
+      [
+        [
+          -19,
+          8
+        ],
+        [
+          -22,
+          8
+        ],
+        [
+          -22,
+          6
+        ],
+        [
+          -24,
+          6
+        ]
+      ],
+      [
+        [
+          19,
+          8
+        ],
+        [
+          25,
+          8
+        ]
+      ],
+      [
+        [
+          16,
+          14
+        ],
+        [
+          21,
+          14
+        ],
+        [
+          21,
+          18
+        ],
+        [
+          17,
+          18
+        ]
+      ],
+      [
+        [
+          15,
+          19
+        ],
+        [
+          15,
+          22
+        ],
+        [
+          22,
+          22
+        ],
+        [
+          22,
+          27
+        ],
+        [
+          19,
+          27
+        ]
+      ],
+      [
+        [
+          13,
+          28
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          8,
+          25
+        ]
+      ],
+      [
+        [
+          8,
+          24
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          3,
+          18
+        ]
+      ]
+    ],
+    "obstacles": [
+      {
+        "x": -1,
+        "z": 2,
+        "w": 1,
+        "d": 1
+      },
+      {
+        "x": 1,
+        "z": 2,
+        "w": 1,
+        "d": 1
+      },
+      {
+        "x": -1,
+        "z": 4,
+        "w": 1,
+        "d": 1
+      },
+      {
+        "x": 1,
+        "z": 4,
+        "w": 1,
+        "d": 1
+      }
+    ]
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "Raised chamber",
+      "cx": 64,
+      "cz": 124,
+      "span": 28,
+      "len": 22,
+      "yaw": 0,
+      "floors": [
+        0,
+        1.2
+      ],
+      "decks": [
+        {
+          "cx": 64.0,
+          "cz": 127.25,
+          "hx": 14.0,
+          "hz": 6.75,
+          "sin": 0,
+          "cos": 1,
+          "y": 1.2,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": 64,
+          "z0": 116,
+          "y0": 0,
+          "x1": 64,
+          "z1": 121,
+          "y1": 1.2,
+          "half": 5,
+          "ux": 0,
+          "uz": 1,
+          "len": 5
+        }
+      ]
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -102.5
+  },
+  "portals": [
+    {
+      "id": "ms_door",
+      "name": "The Mausoleum Door",
+      "x": 0,
+      "z": -108,
+      "to": "huntingwood",
+      "tx": -196,
+      "tz": 96,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.6,
+        "floor": 0.05
+      }
+    },
+    {
+      "id": "ms_out",
+      "name": "The Bier's Way Out",
+      "x": 56.5,
+      "z": 130.5,
+      "y": 1.2,
+      "to": "huntingwood",
+      "tx": -196,
+      "tz": 96,
+      "site": "raised_chamber",
+      "floor": 1,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.2,
+        "column": 7.5,
+        "floor": 0.02
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_ms_crossing",
+      "name": "The Crossing Hall",
+      "x": 0,
+      "z": -64,
+      "xp": 80
+    },
+    {
+      "id": "lm_ms_westcrypt",
+      "name": "The West Crypt",
+      "x": -64,
+      "z": -64,
+      "xp": 80
+    },
+    {
+      "id": "lm_ms_eastcrypt",
+      "name": "The East Crypt",
+      "x": 64,
+      "z": -64,
+      "xp": 80
+    },
+    {
+      "id": "lm_ms_vault",
+      "name": "The Emperors' Vault",
+      "x": 64,
+      "z": 112,
+      "xp": 150
+    },
+    {
+      "id": "lm_ms_vigil",
+      "name": "The Long Vigil",
+      "x": 0,
+      "z": 64,
+      "xp": 100
+    },
+    {
+      "id": "lm_ms_court",
+      "name": "The Court of the Unreturned",
+      "x": 0,
+      "z": 12,
+      "xp": 80
+    }
+  ],
+  "interactables": [
+    {
+      "id": "writ_mausoleum",
+      "name": "The Sealed Notice",
+      "x": 64,
+      "z": 130.4,
+      "idle_msg": "The Emperors' Vault, under the dome at the Mausoleum's heart. On the empty bier where an emperor would lie, a notice under wax: the Sealed Notice, the founding writ of the Hunting Wood. Through the wax you can read it: The household departs this night and will return. Keep out. Keep well.",
+      "active_msg": "You break the seal and lift the writ. The household departs this night and will return. Keep out. Keep well. One line, in a steady hand, and nothing else. The writ is yours, and the province's founding terms with it; take its words back to Scout Bettany at Caerdun's Forward Camp.",
+      "prop": "dais_notice",
+      "y": 1.2,
+      "table_height": 1.5,
+      "site": "raised_chamber",
+      "floor": 1
+    },
+    {
+      "id": "ms_visitors_register",
+      "name": "The Visitors' Register",
+      "x": 8,
+      "z": -107,
+      "y": 0,
+      "prop": "existing_table",
+      "table_height": 1.2,
+      "idle_msg": "Fresh ink waits beside a register open at its last entry. The date is almost three centuries old. The visitor signed only: sorry. Below it, the next line has been ruled with care.",
+      "active_msg": "Fresh ink waits beside the visitors' register. The next line is still blank."
+    },
+    {
+      "id": "ms_unfinished_ledger",
+      "name": "The Unfinished Ledger",
+      "x": 108,
+      "z": 32,
+      "y": 0,
+      "prop": "existing_table",
+      "table_height": 1.1,
+      "idle_msg": "Lamp oil received. Linen washed. The names read at dusk. The same entries, year after year. The final column — Household returned — remains empty.",
+      "active_msg": "The household has not returned. The lamps have never gone out."
+    }
+  ],
+  "camps": [
+    {
+      "monster": "tomb_attendant",
+      "min_lvl": 20,
+      "max_lvl": 21,
+      "count": 3,
+      "x": 0,
+      "z": -68,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "tomb_attendant",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 32,
+      "z": -68,
+      "radius": 1.1,
+      "respawn": 45
+    },
+    {
+      "monster": "crypt_shade",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 3,
+      "x": 64,
+      "z": -70,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "barrow_wight",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 64,
+      "z": -18,
+      "radius": 3.5,
+      "respawn": 40
+    },
+    {
+      "monster": "barrow_wight",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 64,
+      "z": 10,
+      "radius": 1.1,
+      "respawn": 45
+    },
+    {
+      "monster": "barrow_wight",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 104,
+      "z": -52,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "hollow_warder",
+      "min_lvl": 22,
+      "max_lvl": 22,
+      "count": 1,
+      "x": 64,
+      "z": 36,
+      "radius": 4,
+      "respawn": 600
+    },
+    {
+      "monster": "crypt_shade",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": -32,
+      "z": -68,
+      "radius": 1.1,
+      "respawn": 45
+    },
+    {
+      "monster": "tomb_attendant",
+      "min_lvl": 20,
+      "max_lvl": 21,
+      "count": 2,
+      "x": -64,
+      "z": -72,
+      "radius": 3.5,
+      "respawn": 40
+    },
+    {
+      "monster": "crypt_shade",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": -66,
+      "z": -58,
+      "radius": 2.5,
+      "respawn": 45
+    },
+    {
+      "monster": "crypt_shade",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": -104,
+      "z": -52,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "tomb_warden",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 3,
+      "x": -64,
+      "z": -16,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "wardens_echo",
+      "min_lvl": 22,
+      "max_lvl": 22,
+      "count": 1,
+      "x": -64,
+      "z": 36,
+      "radius": 4,
+      "respawn": 300
+    },
+    {
+      "monster": "tomb_attendant",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": -9,
+      "z": 12,
+      "radius": 2,
+      "respawn": 45
+    },
+    {
+      "monster": "tomb_attendant",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 9,
+      "z": 12,
+      "radius": 2,
+      "respawn": 45
+    },
+    {
+      "monster": "tomb_warden",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 3,
+      "x": 0,
+      "z": 60,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "tomb_attendant",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 0,
+      "z": 76,
+      "radius": 2.5,
+      "respawn": 45
+    },
+    {
+      "monster": "tomb_attendant",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 60,
+      "z": 72,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "the_warden_of_the_mausoleum",
+      "min_lvl": 22,
+      "max_lvl": 22,
+      "count": 1,
+      "x": 64,
+      "z": 112,
+      "radius": 4,
+      "respawn": 600
+    }
+  ]
+}

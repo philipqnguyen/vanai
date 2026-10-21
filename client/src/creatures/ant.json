@@ -1,0 +1,49 @@
+{
+ "file": "creatures/ant.glb",
+ "plan": "insect",
+ "height": 1.199,
+ "length": 2.179,
+ "width": 1.932,
+ "top": 1.199,
+ "minY": -0.0075,
+ "groundY": -0.0075,
+ "forward": 0.019,
+ "tris": [
+  3973,
+  1184
+ ],
+ "budget": 4200,
+ "bones": 27,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.8,
+  "Run": 0.46,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 1.8,
+  "Run": 3.6
+ },
+ "bytes": 437568,
+ "held": [
+  [
+   3481,
+   3875
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.025
+ },
+ "notes": "the ant look: the sack ant, a horse-sized worker carrying a flour sack in its jaws",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/insect.py",
+ "fast": false
+}

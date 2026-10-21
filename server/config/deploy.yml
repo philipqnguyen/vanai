@@ -1,0 +1,197 @@
+<%
+  # Every deploy names a destination (`bin/kamal deploy -d production`), and a bare
+  # `bin/kamal deploy` stops here: there is no default server to fall back on.
+  # Kamal sets KAMAL_DESTINATION before rendering this file.
+  destination = ENV["KAMAL_DESTINATION"].to_s
+  abort "Name a destination: bin/kamal <command> -d production" if destination.empty?
+
+  # Every per-host value comes from the environment, so this file is the same
+  # for anyone running their own server. The repository root's .env.<destination>
+  # (or VANAI_ENV_FILE, relative to the root) is loaded first; values already in
+  # the shell win. See .env.production.example. Kamal runs from server/, so the
+  # root is one level up.
+  require "dotenv"
+  env_file = ENV.fetch("VANAI_ENV_FILE", ".env.#{destination}")
+  Dotenv.load(File.expand_path(env_file, File.expand_path("..")))
+
+  need = ->(key) do
+    value = ENV[key].to_s
+    abort "#{key} is not set in #{env_file} (template: .env.production.example at the repository root)" if value.empty?
+    value
+  end
+
+  host = need.("VANAI_HOST")
+  domain = need.("VANAI_DOMAIN")
+
+  # The front door, chosen by name rather than read off TUNNEL_TOKEN: a tunnelled
+  # host whose token went missing would otherwise switch to Let's Encrypt, and the
+  # tunnel would loop on kamal-proxy's HTTP-to-HTTPS redirect.
+  https = need.("VANAI_HTTPS")
+  abort "VANAI_HTTPS is #{https.inspect}: use tunnel or letsencrypt" unless %w[tunnel letsencrypt].include?(https)
+  tunnel = https == "tunnel"
+  need.("TUNNEL_TOKEN") if tunnel
+
+  # .kamal/secrets-common passes secrets by name, so an empty one would reach the
+  # containers as "" and fail only once they boot. Check them before anything runs.
+  %w[KAMAL_REGISTRY_PASSWORD SECRET_KEY_BASE POSTGRES_PASSWORD].each(&need)
+-%>
+# Name of your application. Used to uniquely configure containers.
+service: vanai
+
+# Name of the container image (use your-user/app-name on external registries).
+image: <%= need.("KAMAL_IMAGE") %>
+
+servers:
+  web:
+    - <%= host %>
+  # Same host as the web role; concurrency comes from config/sidekiq.yml. Not proxied, and the
+  # entrypoint only runs db:prepare for "bin/rails server", so this container never migrates.
+  sidekiq:
+    hosts:
+      - <%= host %>
+    cmd: bundle exec sidekiq
+
+# letsencrypt: kamal-proxy terminates TLS with a Let's Encrypt certificate, so the
+# domain's DNS must point at the host and ports 80/443 must be open. tunnel: the
+# Cloudflare tunnel terminates TLS and the host needs no open web ports.
+proxy:
+  ssl: <%= !tunnel %>
+  host: <%= domain %>
+
+# Where you keep your container images.
+registry:
+  server: <%= ENV.fetch("KAMAL_REGISTRY_SERVER", "ghcr.io") %>
+  username: <%= need.("KAMAL_REGISTRY_USER") %>
+
+  # Always use an access token rather than real password when possible.
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+# Inject ENV variables into containers (secrets come from .kamal/secrets-common).
+env:
+  secret:
+    - SECRET_KEY_BASE
+    - POSTGRES_PASSWORD
+    # The AI courts' switch (COURTS.md "Dormant courts"): empty, the courts are
+    # dormant; set, they sit. Read by web (the world) and job (CouncilJob) alike.
+    - ANTHROPIC_API_KEY
+  clear:
+    RAILS_ENV: production
+
+    # Action Cable's origin allowlist (config/environments/production.rb). Without
+    # it the allowlist is empty and every WebSocket handshake is rejected.
+    APP_ORIGIN: https://<%= domain %>
+
+    REDIS_SIDEKIQ_URL: redis://vanai-redis_sidekiq:6379/0
+    REDIS_CABLE_URL: redis://vanai-redis_cable:6379/0
+    REDIS_CACHE_URL: redis://vanai-redis_cache:6379/0
+
+    # MUST stay at 0 (single-mode Puma). The game world lives in the web process's
+    # memory and the world loop is a thread inside it, so every additional Puma
+    # worker would fork a second, divergent copy of the world. Threads are fine.
+    WEB_CONCURRENCY: 0
+    RAILS_MAX_THREADS: 5
+
+    # Ruby's time slice in ms (default 100). Every thread takes the GVL in
+    # turn, and the world thread waking for its tick waited a whole slice
+    # behind each busy request or cable thread: up to a tick late. At 10 the
+    # wait is a few ms, and the world thread's priority (World::WORLD_PRIORITY)
+    # keeps its own slice long. docs/SERVER-PERF.md rule 10.
+    RUBY_THREAD_TIMESLICE: 10
+
+    # Match this to any external database server to configure Active Record correctly
+    # Use vanai-db for a db accessory server on same machine via local kamal docker network.
+    DB_HOST: vanai-db
+
+    # Log everything from Rails
+    # RAILS_LOG_LEVEL: debug
+
+# Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
+# "bin/kamal logs -r job" will tail logs from the first server in the job section.
+aliases:
+  console: app exec --interactive --reuse "bin/rails console"
+  shell: app exec --interactive --reuse "bash"
+  logs: app logs -f
+  dbc: app exec --interactive --reuse "bin/rails dbconsole --include-password"
+
+# Use a persistent storage volume for Active Storage files.
+# Recommended to change this to a mounted volume path that is backed up off server.
+volumes:
+  - "vanai_storage:/rails/storage"
+<% if ENV["VANAI_ASSET_BASE"] == "/runtime" %>
+  # Same-origin maker assets (DEPLOY.md "The maker's assets"): the runtime folder's
+  # files/, synced to this host directory, served by Rails' static file server.
+  - "<%= ENV.fetch("VANAI_RUNTIME_DIR", "/var/lib/vanai/runtime") %>:/rails/public/runtime:ro"
+<% end %>
+
+# Bridge fingerprinted assets, like JS and CSS, between versions to avoid
+# hitting 404 on in-flight requests. Combines all files from new and old
+# version inside the asset_path.
+asset_path: /rails/public/assets
+
+# Configure the image builder.
+builder:
+  arch: amd64
+
+  # Build from the repository root so the image can include client/ (built by the
+  # Dockerfile's node stage) and shared/ (the JSON game data the server loads at
+  # boot). --file is resolved from this directory; the context is one level up.
+  context: ..
+  dockerfile: Dockerfile
+
+  # The client bundle is built against this address (server/Dockerfile's client stage).
+  args:
+    VITE_ASSET_BASE: <%= need.("VANAI_ASSET_BASE") %>
+
+  # # Build image via remote server (useful for faster amd64 builds on arm64 computers)
+  # remote: ssh://docker@docker-builder-server
+
+ssh:
+  user: <%= ENV.fetch("VANAI_SSH_USER", "root") %>
+  port: <%= ENV.fetch("VANAI_SSH_PORT", "22") %>
+
+accessories:
+  db:
+    image: postgres:18
+    host: <%= host %>
+    port: "127.0.0.1:5432:5432"
+    env:
+      clear:
+        POSTGRES_USER: vanai
+        POSTGRES_DB: vanai_production
+      secret:
+        - POSTGRES_PASSWORD
+    directories:
+      - data:/var/lib/postgresql
+  redis_sidekiq:
+    image: valkey/valkey:9.0.3
+    host: <%= host %>
+    port: "127.0.0.1:6379:6379"
+    cmd: valkey-server --maxmemory 50mb --maxmemory-policy noeviction --appendonly yes --appendfsync everysec
+    directories:
+      - data:/data
+  redis_cable:
+    image: valkey/valkey:9.0.3
+    host: <%= host %>
+    port: "127.0.0.1:6380:6379"
+    cmd: valkey-server --maxmemory 50mb --maxmemory-policy allkeys-lru
+    directories:
+      - data:/data
+  redis_cache:
+    image: valkey/valkey:9.0.3
+    host: <%= host %>
+    port: "127.0.0.1:6381:6379"
+    cmd: valkey-server --maxmemory 50mb --maxmemory-policy allkeys-lru
+    directories:
+      - data:/data
+<% if tunnel -%>
+  # The tunnel's public hostname points at http://kamal-proxy:80 (Cloudflare
+  # dashboard): accessories share Kamal's `kamal` Docker network.
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    host: <%= host %>
+    cmd: tunnel --no-autoupdate run
+    env:
+      secret:
+        - TUNNEL_TOKEN
+<% end -%>

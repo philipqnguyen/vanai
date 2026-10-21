@@ -1,0 +1,50 @@
+{
+ "file": "creatures/the_head_gardener.glb",
+ "plan": "sentinel",
+ "height": 5.607,
+ "length": 2.106,
+ "width": 3.58,
+ "top": 5.607,
+ "minY": -0.0118,
+ "groundY": -0.0118,
+ "forward": 0.698,
+ "tris": [
+  11842,
+  3550
+ ],
+ "budget": 12000,
+ "bones": 22,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.397,
+  "Run": 0.581,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.797,
+  "Run": 6.817
+ },
+ "bytes": 1099340,
+ "held": [
+  [
+   14013,
+   14878
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.386
+ },
+ "notes": "The Head Gardener: green apron over pale plate, the trellises grown over its shoulders, the shears",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_head_gardener.py",
+ "fast": false
+}

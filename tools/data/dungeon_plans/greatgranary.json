@@ -1,0 +1,931 @@
+{
+  "key": "greatgranary",
+  "format": 1,
+  "notes": "Extracted from zones.json by tools/data/dungeon_plan.py; edit this, then `write`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "The Wagon Dock",
+        "x": -2,
+        "z": -11,
+        "w": 5,
+        "d": 3,
+        "kind": "entry",
+        "y": 0,
+        "ceiling": 14
+      },
+      {
+        "id": "tally",
+        "name": "The Tally Hall",
+        "x": -5,
+        "z": -6,
+        "w": 11,
+        "d": 5,
+        "kind": "tally",
+        "y": 0,
+        "ceiling": 15
+      },
+      {
+        "id": "mill",
+        "name": "The Mill",
+        "x": -14,
+        "z": -9,
+        "w": 7,
+        "d": 7,
+        "kind": "mill",
+        "y": 0,
+        "ceiling": 17
+      },
+      {
+        "id": "winnow",
+        "name": "The Winnowing Floor",
+        "x": 8,
+        "z": -9,
+        "w": 7,
+        "d": 7,
+        "kind": "winnow",
+        "y": 0,
+        "ceiling": 17
+      },
+      {
+        "id": "silos",
+        "name": "The Forty Towers",
+        "x": -9,
+        "z": 0,
+        "w": 19,
+        "d": 35,
+        "kind": "silos",
+        "y": 0,
+        "ceiling": 30
+      },
+      {
+        "id": "ledger",
+        "name": "The Ledger Hall",
+        "x": -3,
+        "z": 36,
+        "w": 7,
+        "d": 4,
+        "kind": "ledger",
+        "y": 0,
+        "ceiling": 9
+      },
+      {
+        "id": "office",
+        "name": "The Granary-Master's Office",
+        "x": -4,
+        "z": 41,
+        "w": 9,
+        "d": 7,
+        "kind": "office",
+        "y": 0,
+        "ceiling": 13
+      }
+    ],
+    "corridors": [
+      {
+        "points": [
+          [
+            -1,
+            -9
+          ],
+          [
+            -1,
+            -6
+          ]
+        ],
+        "name": "The Weighbridge Gate",
+        "ceiling": 6.4
+      },
+      {
+        "points": [
+          [
+            0,
+            -9
+          ],
+          [
+            0,
+            -6
+          ]
+        ],
+        "name": "The Weighbridge Gate",
+        "ceiling": 6.4
+      },
+      {
+        "points": [
+          [
+            1,
+            -9
+          ],
+          [
+            1,
+            -6
+          ]
+        ],
+        "name": "The Weighbridge Gate",
+        "ceiling": 6.4
+      },
+      {
+        "points": [
+          [
+            -5,
+            -4
+          ],
+          [
+            -8,
+            -4
+          ]
+        ],
+        "name": "The Mill Passage",
+        "ceiling": 5.6
+      },
+      {
+        "points": [
+          [
+            5,
+            -4
+          ],
+          [
+            8,
+            -4
+          ]
+        ],
+        "name": "The Chaff Passage",
+        "ceiling": 5.6
+      },
+      {
+        "points": [
+          [
+            -9,
+            -3
+          ],
+          [
+            -9,
+            0
+          ]
+        ],
+        "name": "The West Sack Way",
+        "ceiling": 5.6
+      },
+      {
+        "points": [
+          [
+            9,
+            -3
+          ],
+          [
+            9,
+            0
+          ]
+        ],
+        "name": "The East Sack Way",
+        "ceiling": 5.6
+      },
+      {
+        "points": [
+          [
+            0,
+            34
+          ],
+          [
+            0,
+            36
+          ]
+        ],
+        "name": "The Count Door",
+        "ceiling": 5.6
+      },
+      {
+        "points": [
+          [
+            0,
+            39
+          ],
+          [
+            0,
+            41
+          ]
+        ],
+        "name": "The Office Door",
+        "ceiling": 5.6
+      }
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    },
+    "obstacles": [
+      {
+        "x": -8,
+        "z": 1,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 1,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 1,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 1,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 4,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 4,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 4,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 4,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 7,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 7,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 7,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 7,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 10,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 10,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 10,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 10,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 13,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 13,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 13,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 13,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 20,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 20,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 20,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 20,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 23,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 23,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 23,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 23,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 26,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 26,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 26,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 26,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 29,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 29,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 29,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 29,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -8,
+        "z": 32,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -5,
+        "z": 32,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 4,
+        "z": 32,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 7,
+        "z": 32,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": -1,
+        "z": 15,
+        "w": 3,
+        "d": 2
+      },
+      {
+        "x": -13,
+        "z": -7,
+        "w": 2,
+        "d": 2
+      },
+      {
+        "x": 12,
+        "z": -7,
+        "w": 2,
+        "d": 2
+      }
+    ],
+    "walkways": [
+      {
+        "id": "lane-36",
+        "name": "West side aisle",
+        "points": [
+          [
+            -36,
+            0
+          ],
+          [
+            -36,
+            136
+          ]
+        ]
+      },
+      {
+        "id": "lane-24",
+        "name": "West tower aisle",
+        "points": [
+          [
+            -24,
+            0
+          ],
+          [
+            -24,
+            136
+          ]
+        ]
+      },
+      {
+        "id": "lane0",
+        "name": "The loading lane",
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            136
+          ]
+        ]
+      },
+      {
+        "id": "lane24",
+        "name": "East tower aisle",
+        "points": [
+          [
+            24,
+            0
+          ],
+          [
+            24,
+            136
+          ]
+        ]
+      },
+      {
+        "id": "lane36",
+        "name": "East side aisle",
+        "points": [
+          [
+            36,
+            0
+          ],
+          [
+            36,
+            136
+          ]
+        ]
+      },
+      {
+        "id": "cross0",
+        "name": "Cross aisle 1",
+        "points": [
+          [
+            -36,
+            0
+          ],
+          [
+            36,
+            0
+          ]
+        ]
+      },
+      {
+        "id": "cross1",
+        "name": "Cross aisle 2",
+        "points": [
+          [
+            -36,
+            12
+          ],
+          [
+            36,
+            12
+          ]
+        ]
+      },
+      {
+        "id": "cross2",
+        "name": "Cross aisle 3",
+        "points": [
+          [
+            -36,
+            24
+          ],
+          [
+            36,
+            24
+          ]
+        ]
+      },
+      {
+        "id": "cross3",
+        "name": "Cross aisle 4",
+        "points": [
+          [
+            -36,
+            36
+          ],
+          [
+            36,
+            36
+          ]
+        ]
+      },
+      {
+        "id": "cross4",
+        "name": "Cross aisle 5",
+        "points": [
+          [
+            -36,
+            48
+          ],
+          [
+            36,
+            48
+          ]
+        ]
+      },
+      {
+        "id": "cross5",
+        "name": "Cross aisle 6",
+        "points": [
+          [
+            -36,
+            68
+          ],
+          [
+            36,
+            68
+          ]
+        ]
+      },
+      {
+        "id": "cross6",
+        "name": "Cross aisle 7",
+        "points": [
+          [
+            -36,
+            88
+          ],
+          [
+            36,
+            88
+          ]
+        ]
+      },
+      {
+        "id": "cross7",
+        "name": "Cross aisle 8",
+        "points": [
+          [
+            -36,
+            100
+          ],
+          [
+            36,
+            100
+          ]
+        ]
+      },
+      {
+        "id": "cross8",
+        "name": "Cross aisle 9",
+        "points": [
+          [
+            -36,
+            112
+          ],
+          [
+            36,
+            112
+          ]
+        ]
+      },
+      {
+        "id": "cross9",
+        "name": "Cross aisle 10",
+        "points": [
+          [
+            -36,
+            124
+          ],
+          [
+            36,
+            124
+          ]
+        ]
+      },
+      {
+        "id": "cross10",
+        "name": "Cross aisle 11",
+        "points": [
+          [
+            -36,
+            136
+          ],
+          [
+            36,
+            136
+          ]
+        ]
+      }
+    ]
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "Floor levels, with the provisioning office landing",
+      "yaw": 0,
+      "floors": [
+        0,
+        2
+      ],
+      "decks": [
+        {
+          "cx": 0.0,
+          "cz": 186.0,
+          "hx": 18.0,
+          "hz": 4.0,
+          "sin": 0,
+          "cos": 1,
+          "y": 2,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": 0,
+          "z0": 177,
+          "y0": 0,
+          "x1": 0,
+          "z1": 182,
+          "y1": 2,
+          "half": 3
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout",
+        "raise": [
+          {
+            "x": -4,
+            "z": 46,
+            "w": 9,
+            "d": 2,
+            "y": 2
+          }
+        ]
+      }
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -37.5
+  },
+  "portals": [
+    {
+      "id": "gg_doors",
+      "name": "The Great Doors",
+      "x": 0,
+      "z": -42.7,
+      "to": "granaryplains",
+      "tx": 183.5,
+      "tz": -40,
+      "fx": "rune",
+      "th": -1.5708,
+      "rune": {
+        "radius": 2.2,
+        "column": 6.5,
+        "floor": 0.04
+      }
+    },
+    {
+      "id": "gg_out",
+      "name": "The Provisioning Way Out",
+      "x": -12,
+      "z": 176,
+      "to": "granaryplains",
+      "tx": 183.5,
+      "tz": -40,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.0,
+        "column": 6.5,
+        "floor": 0.04
+      },
+      "th": -1.5708
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_gg_tally",
+      "name": "The Tally Hall",
+      "x": 0,
+      "z": -16,
+      "xp": 90
+    },
+    {
+      "id": "lm_gg_silo",
+      "name": "The Count Floor",
+      "x": 0,
+      "z": 70,
+      "xp": 90
+    },
+    {
+      "id": "lm_gg_office",
+      "name": "The Granary-Master's Office",
+      "x": 0,
+      "z": 166,
+      "xp": 150
+    },
+    {
+      "id": "lm_gg_mill",
+      "name": "The Mill",
+      "x": -42,
+      "z": -22,
+      "xp": 90
+    },
+    {
+      "id": "lm_gg_winnow",
+      "name": "The Winnowing Floor",
+      "x": 43,
+      "z": -21,
+      "xp": 90
+    }
+  ],
+  "interactables": [
+    {
+      "id": "provisioning_stand",
+      "name": "The Provisioning Ledger",
+      "x": 5,
+      "z": 186,
+      "idle_msg": "The provisioning ledger on its stand: forty towers, tower by tower, filled and filling. 'Flour for the capital, phase five. Rations for a city from the morning they arrive.'",
+      "active_msg": "You take the season's pages. They are not coming back to rebuild. They are coming back to resume.",
+      "prop": "ledger_stand",
+      "y": 2,
+      "site": "raised_chamber",
+      "floor": 1
+    }
+  ],
+  "camps": [
+    {
+      "monster": "granary_rat",
+      "min_lvl": 32,
+      "max_lvl": 33,
+      "count": 3,
+      "x": 0,
+      "z": -15,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "mill_hound",
+      "min_lvl": 32,
+      "max_lvl": 33,
+      "count": 2,
+      "x": -40,
+      "z": -31,
+      "radius": 3.5,
+      "respawn": 40
+    },
+    {
+      "monster": "mill_hound",
+      "min_lvl": 32,
+      "max_lvl": 33,
+      "count": 2,
+      "x": -38,
+      "z": -17,
+      "radius": 3.5,
+      "respawn": 40
+    },
+    {
+      "monster": "chaff_sprite",
+      "min_lvl": 33,
+      "max_lvl": 34,
+      "count": 3,
+      "x": 38,
+      "z": -20,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "granary_rat",
+      "min_lvl": 32,
+      "max_lvl": 33,
+      "count": 3,
+      "x": 0,
+      "z": 26,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "count_sentinel",
+      "min_lvl": 33,
+      "max_lvl": 34,
+      "count": 3,
+      "x": 0,
+      "z": 74,
+      "radius": 4.5,
+      "respawn": 45
+    },
+    {
+      "monster": "chaff_sprite",
+      "min_lvl": 33,
+      "max_lvl": 34,
+      "count": 2,
+      "x": 0,
+      "z": 102,
+      "radius": 4.5,
+      "respawn": 40
+    },
+    {
+      "monster": "count_sentinel",
+      "min_lvl": 34,
+      "max_lvl": 34,
+      "count": 3,
+      "x": 0,
+      "z": 150,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "the_granary_master",
+      "min_lvl": 34,
+      "max_lvl": 34,
+      "count": 1,
+      "x": 0,
+      "z": 169,
+      "radius": 3,
+      "respawn": 900
+    }
+  ]
+}

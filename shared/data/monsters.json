@@ -1,0 +1,6294 @@
+{
+  "young_gloamwolf": {
+    "name": "Wold Pup",
+    "family": "wolf",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.85,
+    "dmg_mult": 0.9,
+    "delay": 2.6,
+    "move_speed": 5.2,
+    "height_m": 0.8,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "gloam_pelt",
+        "chance": 0.45
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      2,
+      6
+    ]
+  },
+  "gloamwolf": {
+    "name": "Wold Wolf",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.0,
+    "dmg_mult": 1.0,
+    "delay": 2.6,
+    "move_speed": 5.6,
+    "height_m": 1.2,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "gloam_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      4,
+      10
+    ]
+  },
+  "greywold_boar": {
+    "name": "Wold Boar",
+    "family": "boar",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.1,
+    "delay": 3.4,
+    "move_speed": 4.6,
+    "height_m": 1.4,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "boar_hide",
+        "chance": 0.5
+      },
+      {
+        "item": "boar_tusk",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      3,
+      9
+    ]
+  },
+  "mist_sprite": {
+    "name": "Mist Sprite",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.7,
+    "dmg_mult": 1.2,
+    "delay": 3.8,
+    "move_speed": 4.2,
+    "height_m": 1.2,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "sprite_dust",
+        "chance": 0.55
+      },
+      {
+        "item": "dim_ember",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      5,
+      12
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.3
+    },
+    "undead": true
+  },
+  "gloamstag": {
+    "name": "Old Stag",
+    "family": "stag",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.15,
+    "delay": 3.0,
+    "move_speed": 6.4,
+    "height_m": 2.1,
+    "radius_m": 0.75,
+    "evasive": true,
+    "drops": [
+      {
+        "item": "stag_antler",
+        "chance": 0.4
+      },
+      {
+        "item": "gloam_pelt",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      6,
+      14
+    ]
+  },
+  "mireback_drakeling": {
+    "name": "Mireback Drakeling",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.15,
+    "dmg_mult": 1.1,
+    "delay": 3.0,
+    "move_speed": 5.4,
+    "height_m": 1.3,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.45
+      },
+      {
+        "item": "mire_gem",
+        "chance": 0.08
+      },
+      {
+        "item": "venom_sac",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      8,
+      16
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.28
+    }
+  },
+  "silvershell_crab": {
+    "name": "Silvershell Crab",
+    "family": "crab",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.6,
+    "dmg_mult": 0.95,
+    "delay": 3.6,
+    "move_speed": 3.6,
+    "height_m": 0.9,
+    "radius_m": 1.3,
+    "drops": [
+      {
+        "item": "silver_shell",
+        "chance": 0.5
+      },
+      {
+        "item": "crab_meat",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      6,
+      13
+    ]
+  },
+  "loch_drake": {
+    "name": "Loch Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.35,
+    "dmg_mult": 1.2,
+    "delay": 3.2,
+    "move_speed": 5.8,
+    "height_m": 2.2,
+    "radius_m": 0.95,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.55
+      },
+      {
+        "item": "drake_fang_charm",
+        "chance": 0.04
+      },
+      {
+        "item": "venom_sac",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      12,
+      24
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.32
+    }
+  },
+  "barrow_wight": {
+    "name": "Barrow Wight",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.25,
+    "dmg_mult": 1.3,
+    "delay": 3.6,
+    "move_speed": 4.4,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.5
+      },
+      {
+        "item": "vigil_locket",
+        "chance": 0.05
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ],
+    "undead": true
+  },
+  "hushed_keeper": {
+    "name": "Hushed Keeper",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "caster": true,
+    "hp_mult": 1.1,
+    "dmg_mult": 1.25,
+    "delay": 3.8,
+    "move_speed": 4.2,
+    "height_m": 2.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.5
+      },
+      {
+        "item": "keepers_cord",
+        "chance": 0.06
+      }
+    ],
+    "gold": [
+      12,
+      25
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.25
+    },
+    "undead": true
+  },
+  "gnarlfang": {
+    "name": "Gnarlfang",
+    "family": "wolf",
+    "aggressive": true,
+    "links": false,
+    "notorious": true,
+    "hp_mult": 6.0,
+    "dmg_mult": 1.5,
+    "delay": 2.4,
+    "move_speed": 6.2,
+    "height_m": 3.5,
+    "radius_m": 1.55,
+    "drops": [
+      {
+        "item": "gnarlfang_fang",
+        "chance": 1.0
+      },
+      {
+        "item": "gnarled_hide_vest",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      60,
+      120
+    ]
+  },
+  "wardens_echo": {
+    "name": "The Warden's Echo",
+    "family": "wight",
+    "aggressive": true,
+    "links": false,
+    "miniboss": true,
+    "hp_mult": 5.0,
+    "dmg_mult": 1.4,
+    "delay": 3.2,
+    "move_speed": 4.6,
+    "height_m": 3.5,
+    "radius_m": 1.3,
+    "drops": [
+      {
+        "item": "echo_shard",
+        "chance": 1.0
+      },
+      {
+        "item": "wardens_signet",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      80,
+      140
+    ],
+    "undead": true
+  },
+  "hollow_warder": {
+    "name": "The Hollow Warder",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "boss": true,
+    "hp_mult": 11.0,
+    "dmg_mult": 1.55,
+    "delay": 3.0,
+    "move_speed": 4.8,
+    "height_m": 4.5,
+    "radius_m": 1.1,
+    "drops": [
+      {
+        "item": "warders_lantern",
+        "chance": 1.0
+      },
+      {
+        "item": "hollow_greatsword",
+        "chance": 0.35
+      },
+      {
+        "item": "abbess_cane",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      200,
+      350
+    ],
+    "caster": true
+  },
+  "silt_lurker": {
+    "name": "Silt Lurker",
+    "family": "crab",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.0,
+    "delay": 3.5,
+    "move_speed": 3.8,
+    "height_m": 1.1,
+    "radius_m": 1.6,
+    "drops": [
+      {
+        "item": "silver_shell",
+        "chance": 0.4
+      },
+      {
+        "item": "silt_pearl",
+        "chance": 0.05
+      },
+      {
+        "item": "drowned_relic",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      14,
+      26
+    ]
+  },
+  "drowned_acolyte": {
+    "name": "Drowned Acolyte",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.3,
+    "delay": 3.4,
+    "move_speed": 4.4,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3
+    },
+    "drops": [
+      {
+        "item": "drowned_relic",
+        "chance": 0.5
+      },
+      {
+        "item": "wight_ash",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      16,
+      30
+    ],
+    "undead": true
+  },
+  "bell_haunt": {
+    "name": "Bell Haunt",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.7,
+    "dmg_mult": 1.4,
+    "delay": 3.0,
+    "move_speed": 4.6,
+    "height_m": 2.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "echo_shard",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      20,
+      40
+    ],
+    "caster": true,
+    "undead": true
+  },
+  "thornfang": {
+    "name": "Thornfang",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.0,
+    "dmg_mult": 1.05,
+    "delay": 2.6,
+    "move_speed": 5.8,
+    "height_m": 1.2,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "wolf_fang",
+        "chance": 0.4
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      8,
+      16
+    ]
+  },
+  "bramble_boar": {
+    "name": "Bramble Boar",
+    "family": "boar",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.1,
+    "delay": 3.0,
+    "move_speed": 5.0,
+    "height_m": 1.4,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "boar_tusk",
+        "chance": 0.45
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.4
+      },
+      {
+        "item": "root_amber",
+        "chance": 0.12
+      }
+    ],
+    "gold": [
+      10,
+      20
+    ]
+  },
+  "thorn_sprite": {
+    "name": "Thorn Sprite",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.7,
+    "dmg_mult": 1.25,
+    "delay": 3.6,
+    "move_speed": 4.4,
+    "height_m": 1.2,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "sprite_dust",
+        "chance": 0.5
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.3
+      },
+      {
+        "item": "wisp_essence",
+        "chance": 0.1
+      }
+    ],
+    "gold": [
+      9,
+      18
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.3
+    },
+    "undead": true
+  },
+  "elder_stag": {
+    "name": "Elder Stag",
+    "family": "stag",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.1,
+    "delay": 2.9,
+    "move_speed": 6.2,
+    "height_m": 2.3,
+    "radius_m": 0.8,
+    "drops": [
+      {
+        "item": "stag_antler",
+        "chance": 0.5
+      },
+      {
+        "item": "root_amber",
+        "chance": 0.18
+      }
+    ],
+    "gold": [
+      12,
+      22
+    ]
+  },
+  "fen_lurker": {
+    "name": "Fen Lurker",
+    "family": "crab",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.35,
+    "dmg_mult": 1.1,
+    "delay": 3.2,
+    "move_speed": 4.4,
+    "height_m": 1.2,
+    "radius_m": 1.75,
+    "drops": [
+      {
+        "item": "fen_shell",
+        "chance": 0.5
+      },
+      {
+        "item": "mire_pearl",
+        "chance": 0.22
+      }
+    ],
+    "gold": [
+      12,
+      24
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3
+    }
+  },
+  "mire_drake": {
+    "name": "Mire Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.25,
+    "dmg_mult": 1.2,
+    "delay": 2.8,
+    "move_speed": 5.6,
+    "height_m": 2.0,
+    "radius_m": 0.85,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.45
+      },
+      {
+        "item": "mire_pearl",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      14,
+      28
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.25
+    }
+  },
+  "bog_wight": {
+    "name": "Bog Wight",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.15,
+    "dmg_mult": 1.15,
+    "delay": 3.0,
+    "move_speed": 4.6,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.5
+      },
+      {
+        "item": "wisp_essence",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      14,
+      26
+    ],
+    "undead": true
+  },
+  "marsh_light": {
+    "name": "Marsh Light",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.75,
+    "dmg_mult": 1.3,
+    "delay": 3.6,
+    "move_speed": 4.4,
+    "height_m": 1.1,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "wisp_essence",
+        "chance": 0.45
+      },
+      {
+        "item": "sprite_dust",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      14,
+      28
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.35
+    },
+    "undead": true
+  },
+  "root_horror": {
+    "name": "Root Horror",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.2,
+    "delay": 3.1,
+    "move_speed": 4.4,
+    "height_m": 2.0,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "root_amber",
+        "chance": 0.45
+      },
+      {
+        "item": "wight_ash",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      16,
+      30
+    ],
+    "undead": true
+  },
+  "rootbound_shade": {
+    "name": "Rootbound Shade",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.85,
+    "dmg_mult": 1.35,
+    "delay": 3.4,
+    "move_speed": 4.6,
+    "height_m": 1.2,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "wisp_essence",
+        "chance": 0.5
+      },
+      {
+        "item": "root_amber",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      16,
+      32
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.3
+    },
+    "undead": true
+  },
+  "the_rootbound_warden": {
+    "name": "The Rootbound Warden",
+    "family": "boss",
+    "aggressive": true,
+    "links": true,
+    "boss": true,
+    "hp_mult": 12.0,
+    "dmg_mult": 1.6,
+    "delay": 3.0,
+    "move_speed": 4.8,
+    "height_m": 5.5,
+    "radius_m": 1.4,
+    "drops": [
+      {
+        "item": "wardens_heartwood",
+        "chance": 1.0
+      },
+      {
+        "item": "rootcleaver",
+        "chance": 0.35
+      },
+      {
+        "item": "heartwood_maul",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      260,
+      420
+    ]
+  },
+  "old_quillback": {
+    "name": "Old Quillback",
+    "family": "boar",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 5.0,
+    "dmg_mult": 1.4,
+    "delay": 2.9,
+    "move_speed": 5.4,
+    "height_m": 4.0,
+    "radius_m": 1.55,
+    "drops": [
+      {
+        "item": "quillback_hide",
+        "chance": 1.0
+      },
+      {
+        "item": "boar_tusk",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      120,
+      220
+    ]
+  },
+  "duskmaw": {
+    "name": "Duskmaw",
+    "family": "wolf",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 4.5,
+    "dmg_mult": 1.45,
+    "delay": 2.4,
+    "move_speed": 6.2,
+    "height_m": 3.2,
+    "radius_m": 1.25,
+    "drops": [
+      {
+        "item": "duskmaw_fang",
+        "chance": 1.0
+      },
+      {
+        "item": "gloam_pelt",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      100,
+      200
+    ]
+  },
+  "the_pale_lurker": {
+    "name": "The Pale Lurker",
+    "family": "crab",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 6.0,
+    "dmg_mult": 1.4,
+    "delay": 3.2,
+    "move_speed": 4.6,
+    "height_m": 3.3,
+    "radius_m": 4.15,
+    "drops": [
+      {
+        "item": "paleshell_band",
+        "chance": 1.0
+      },
+      {
+        "item": "fen_shell",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      150,
+      260
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.35
+    }
+  },
+  "mother_sedge": {
+    "name": "Mother Sedge",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 4.0,
+    "dmg_mult": 1.5,
+    "delay": 3.2,
+    "move_speed": 4.8,
+    "height_m": 4.0,
+    "radius_m": 1.2,
+    "drops": [
+      {
+        "item": "wisp_essence",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      180,
+      300
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.4
+    },
+    "undead": true
+  },
+  "hush_stalker": {
+    "name": "Ash Stalker",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.25,
+    "delay": 2.5,
+    "move_speed": 6.0,
+    "height_m": 1.3,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "gloam_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      18,
+      32
+    ]
+  },
+  "craghorn": {
+    "name": "Craghorn",
+    "family": "boar",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.25,
+    "delay": 3.0,
+    "move_speed": 5.2,
+    "height_m": 1.5,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "boar_tusk",
+        "chance": 0.5
+      },
+      {
+        "item": "glimmer_ore",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      18,
+      34
+    ]
+  },
+  "pale_watcher": {
+    "name": "Pale Watcher",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.85,
+    "dmg_mult": 1.35,
+    "delay": 3.5,
+    "move_speed": 4.6,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "wisp_essence",
+        "chance": 0.5
+      },
+      {
+        "item": "sprite_dust",
+        "chance": 0.4
+      },
+      {
+        "item": "lastlight_jerkin",
+        "chance": 0.06
+      }
+    ],
+    "gold": [
+      18,
+      36
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.35
+    },
+    "undead": true
+  },
+  "ash_wight": {
+    "name": "Ash Wight",
+    "family": "spirit",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 4.4,
+    "dmg_mult": 2.1,
+    "delay": 2.4,
+    "move_speed": 6.2,
+    "height_m": 2.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "glassed_bark",
+        "chance": 0.35
+      },
+      {
+        "item": "ash_flower",
+        "chance": 0.45
+      }
+    ],
+    "gold": [
+      50,
+      100
+    ],
+    "evasive": true,
+    "undead": true
+  },
+  "hush_drake": {
+    "name": "Crag Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.4,
+    "dmg_mult": 1.35,
+    "delay": 2.7,
+    "move_speed": 5.8,
+    "height_m": 2.0,
+    "radius_m": 0.85,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.5
+      },
+      {
+        "item": "ash_pearl",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      22,
+      40
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.25
+    }
+  },
+  "silence_haunt": {
+    "name": "Silence Haunt",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.9,
+    "dmg_mult": 1.45,
+    "delay": 3.3,
+    "move_speed": 4.8,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "wisp_essence",
+        "chance": 0.55
+      },
+      {
+        "item": "ash_pearl",
+        "chance": 0.25
+      },
+      {
+        "item": "gloamweave_robe",
+        "chance": 0.06
+      }
+    ],
+    "gold": [
+      24,
+      44
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.4
+    },
+    "undead": true
+  },
+  "unlit_keeper": {
+    "name": "Unlit Keeper",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.4,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 2.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.6
+      },
+      {
+        "item": "hushward_helm",
+        "chance": 0.06
+      }
+    ],
+    "gold": [
+      26,
+      48
+    ],
+    "undead": true
+  },
+  "the_unlit_king": {
+    "name": "The Unlit King",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "boss": true,
+    "hp_mult": 14.0,
+    "dmg_mult": 1.7,
+    "delay": 2.9,
+    "move_speed": 5.0,
+    "height_m": 4.8,
+    "radius_m": 1.25,
+    "drops": [
+      {
+        "item": "kings_last_light",
+        "chance": 1.0
+      },
+      {
+        "item": "unlit_crown",
+        "chance": 0.5
+      },
+      {
+        "item": "hushward_plate",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      400,
+      650
+    ],
+    "caster": true,
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.35
+    }
+  },
+  "young_thornfang": {
+    "name": "Young Thornfang",
+    "family": "wolf",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.85,
+    "dmg_mult": 0.9,
+    "delay": 2.6,
+    "move_speed": 5.2,
+    "height_m": 0.9,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "wolf_fang",
+        "chance": 0.35
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      2,
+      6
+    ]
+  },
+  "bramble_shoat": {
+    "name": "Bramble Shoat",
+    "family": "boar",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.0,
+    "delay": 3.3,
+    "move_speed": 4.6,
+    "height_m": 1.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "boar_hide",
+        "chance": 0.5
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      3,
+      8
+    ]
+  },
+  "reed_crab": {
+    "name": "Reed Crab",
+    "family": "crab",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 0.85,
+    "delay": 3.5,
+    "move_speed": 3.6,
+    "height_m": 0.7,
+    "radius_m": 1.05,
+    "drops": [
+      {
+        "item": "fen_shell",
+        "chance": 0.45
+      },
+      {
+        "item": "crab_meat",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      2,
+      6
+    ]
+  },
+  "marsh_fox": {
+    "name": "Marsh Fox",
+    "family": "wolf",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.85,
+    "dmg_mult": 0.9,
+    "delay": 2.6,
+    "move_speed": 5.4,
+    "height_m": 0.9,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "fox_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      2,
+      7
+    ]
+  },
+  "fen_hatchling": {
+    "name": "Fen Hatchling",
+    "family": "drake",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.0,
+    "dmg_mult": 1.0,
+    "delay": 3.0,
+    "move_speed": 5.0,
+    "height_m": 1.0,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.4
+      },
+      {
+        "item": "fox_pelt",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      3,
+      8
+    ]
+  },
+  "bog_wisp": {
+    "name": "Bog Wisp",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.7,
+    "dmg_mult": 1.15,
+    "delay": 3.7,
+    "move_speed": 4.2,
+    "height_m": 1.1,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "sprite_dust",
+        "chance": 0.5
+      },
+      {
+        "item": "wisp_essence",
+        "chance": 0.12
+      }
+    ],
+    "gold": [
+      4,
+      10
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.25
+    },
+    "undead": true
+  },
+  "mire_strider": {
+    "name": "Mire Strider",
+    "family": "stag",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.1,
+    "delay": 3.0,
+    "move_speed": 6.2,
+    "height_m": 1.8,
+    "radius_m": 0.65,
+    "evasive": true,
+    "drops": [
+      {
+        "item": "stag_antler",
+        "chance": 0.35
+      },
+      {
+        "item": "fox_pelt",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      5,
+      12
+    ]
+  },
+  "shrine_wight": {
+    "name": "Shrine Wight",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.25,
+    "dmg_mult": 1.25,
+    "delay": 3.5,
+    "move_speed": 4.4,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.5
+      },
+      {
+        "item": "votive_wax",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ],
+    "undead": true
+  },
+  "silt_acolyte": {
+    "name": "Silt Acolyte",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "caster": true,
+    "hp_mult": 1.15,
+    "dmg_mult": 1.25,
+    "delay": 3.6,
+    "move_speed": 4.3,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "votive_wax",
+        "chance": 0.45
+      },
+      {
+        "item": "drowned_relic",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      12,
+      24
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.25
+    },
+    "undead": true
+  },
+  "drowned_chorister": {
+    "name": "Drowned Chorister",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.85,
+    "dmg_mult": 1.3,
+    "delay": 3.7,
+    "move_speed": 4.4,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "sprite_dust",
+        "chance": 0.4
+      },
+      {
+        "item": "votive_wax",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      13,
+      26
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.3
+    },
+    "undead": true
+  },
+  "the_undertow": {
+    "name": "The Undertow",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 10.0,
+    "dmg_mult": 1.5,
+    "delay": 3.0,
+    "move_speed": 4.8,
+    "height_m": 5.0,
+    "radius_m": 1.75,
+    "boss": true,
+    "drops": [
+      {
+        "item": "undertow_pearl",
+        "chance": 1.0
+      },
+      {
+        "item": "tidebound_blade",
+        "chance": 0.35
+      },
+      {
+        "item": "choristers_cane",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      200,
+      340
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.35
+    }
+  },
+  "root_creeper": {
+    "name": "Root Creeper",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.15,
+    "dmg_mult": 1.15,
+    "delay": 3.2,
+    "move_speed": 4.3,
+    "height_m": 1.9,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "root_amber",
+        "chance": 0.35
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      9,
+      20
+    ],
+    "undead": true
+  },
+  "amber_jackal": {
+    "name": "Amber Jackal",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.1,
+    "dmg_mult": 1.15,
+    "delay": 2.6,
+    "move_speed": 5.8,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "amber_resin",
+        "chance": 0.45
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      20,
+      36
+    ]
+  },
+  "dune_strider": {
+    "name": "Dune Strider",
+    "family": "stag",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.35,
+    "dmg_mult": 1.15,
+    "delay": 2.9,
+    "move_speed": 6.4,
+    "height_m": 2.0,
+    "radius_m": 0.7,
+    "evasive": true,
+    "drops": [
+      {
+        "item": "stag_antler",
+        "chance": 0.4
+      },
+      {
+        "item": "amber_resin",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      22,
+      38
+    ]
+  },
+  "resin_sprite": {
+    "name": "Resin Sprite",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.75,
+    "dmg_mult": 1.3,
+    "delay": 3.6,
+    "move_speed": 4.4,
+    "height_m": 1.2,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "sprite_dust",
+        "chance": 0.45
+      },
+      {
+        "item": "amber_shard",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      22,
+      40
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.3
+    },
+    "undead": true
+  },
+  "glasswing_drake": {
+    "name": "Glasswing Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.25,
+    "delay": 2.8,
+    "move_speed": 5.8,
+    "height_m": 2.0,
+    "radius_m": 0.85,
+    "drops": [
+      {
+        "item": "glass_scale",
+        "chance": 0.45
+      },
+      {
+        "item": "amber_shard",
+        "chance": 0.18
+      }
+    ],
+    "gold": [
+      24,
+      42
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.28
+    }
+  },
+  "amber_husk": {
+    "name": "Amber Husk",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.35,
+    "dmg_mult": 1.25,
+    "delay": 3.2,
+    "move_speed": 4.5,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "amber_resin",
+        "chance": 0.45
+      },
+      {
+        "item": "amber_shard",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      24,
+      44
+    ],
+    "undead": true
+  },
+  "the_glass_stag": {
+    "name": "The Mirror Stag",
+    "family": "stag",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 5.5,
+    "dmg_mult": 1.45,
+    "delay": 2.8,
+    "move_speed": 6.4,
+    "height_m": 5.5,
+    "radius_m": 2.0,
+    "notorious": true,
+    "drops": [
+      {
+        "item": "glass_antler_charm",
+        "chance": 1.0
+      },
+      {
+        "item": "glass_scale",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      180,
+      320
+    ]
+  },
+  "vault_husk": {
+    "name": "Vault Husk",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.4,
+    "dmg_mult": 1.3,
+    "delay": 3.1,
+    "move_speed": 4.6,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "amber_shard",
+        "chance": 0.45
+      },
+      {
+        "item": "wight_ash",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      26,
+      48
+    ],
+    "undead": true
+  },
+  "amber_acolyte": {
+    "name": "Amber Acolyte",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.9,
+    "dmg_mult": 1.35,
+    "delay": 3.5,
+    "move_speed": 4.5,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "amber_shard",
+        "chance": 0.4
+      },
+      {
+        "item": "wisp_essence",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      28,
+      50
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.3
+    },
+    "undead": true
+  },
+  "silt_strider": {
+    "name": "Silt Strider",
+    "family": "crab",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.2,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 1.4,
+    "radius_m": 2.05,
+    "drops": [
+      {
+        "item": "silt_chitin",
+        "chance": 0.45
+      },
+      {
+        "item": "silt_pearl",
+        "chance": 0.1
+      }
+    ],
+    "gold": [
+      16,
+      34
+    ]
+  },
+  "mere_wraith": {
+    "name": "Mere Wraith",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.3,
+    "delay": 3.2,
+    "move_speed": 4.7,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "mere_tear",
+        "chance": 0.45
+      },
+      {
+        "item": "wight_ash",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      30,
+      54
+    ],
+    "undead": true
+  },
+  "bed_drake": {
+    "name": "Bed Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.35,
+    "dmg_mult": 1.3,
+    "delay": 2.8,
+    "move_speed": 5.7,
+    "height_m": 2.0,
+    "radius_m": 0.85,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.45
+      },
+      {
+        "item": "brine_pearl",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      30,
+      56
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3
+    }
+  },
+  "thirst_root": {
+    "name": "Thirst Root",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.45,
+    "dmg_mult": 1.3,
+    "delay": 3.3,
+    "move_speed": 4.3,
+    "height_m": 2.0,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "mere_tear",
+        "chance": 0.4
+      },
+      {
+        "item": "silt_chitin",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      32,
+      58
+    ],
+    "undead": true
+  },
+  "rain_wisp": {
+    "name": "Rain Wisp",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.8,
+    "dmg_mult": 1.4,
+    "delay": 3.5,
+    "move_speed": 4.6,
+    "height_m": 1.2,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "wisp_essence",
+        "chance": 0.5
+      },
+      {
+        "item": "mere_tear",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      32,
+      58
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.35
+    },
+    "undead": true
+  },
+  "old_greedgullet": {
+    "name": "Old Greedgullet",
+    "family": "crab",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 5.5,
+    "dmg_mult": 1.45,
+    "delay": 3.2,
+    "move_speed": 4.6,
+    "height_m": 3.7,
+    "radius_m": 3.9,
+    "notorious": true,
+    "drops": [
+      {
+        "item": "brine_pearl",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      320,
+      520
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.35
+    }
+  },
+  "drowned_warden": {
+    "name": "Drowned Sexton",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.45,
+    "dmg_mult": 1.35,
+    "delay": 3.0,
+    "move_speed": 4.8,
+    "height_m": 1.9,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "mere_tear",
+        "chance": 0.45
+      },
+      {
+        "item": "brine_pearl",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      34,
+      60
+    ],
+    "undead": true
+  },
+  "deep_chorister": {
+    "name": "Deep Chorister",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.9,
+    "dmg_mult": 1.45,
+    "delay": 3.4,
+    "move_speed": 4.7,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "wisp_essence",
+        "chance": 0.5
+      },
+      {
+        "item": "brine_pearl",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      36,
+      64
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.35
+    },
+    "undead": true
+  },
+  "the_thirst": {
+    "name": "The Thirst",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 12.0,
+    "dmg_mult": 1.6,
+    "delay": 3.0,
+    "move_speed": 4.8,
+    "height_m": 5.0,
+    "radius_m": 3.9,
+    "boss": true,
+    "drops": [
+      {
+        "item": "thirstless_band",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      520,
+      800
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.35
+    },
+    "caster": true
+  },
+  "cinder_wolf": {
+    "name": "Cinder Wolf",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.25,
+    "dmg_mult": 1.3,
+    "delay": 2.5,
+    "move_speed": 6.0,
+    "height_m": 1.25,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "cinder_ash",
+        "chance": 0.45
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      36,
+      62
+    ]
+  },
+  "ashhorn": {
+    "name": "Ashhorn",
+    "family": "boar",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.3,
+    "delay": 3.0,
+    "move_speed": 5.0,
+    "height_m": 1.6,
+    "radius_m": 0.75,
+    "drops": [
+      {
+        "item": "boar_tusk",
+        "chance": 0.4
+      },
+      {
+        "item": "cinder_ash",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      38,
+      66
+    ]
+  },
+  "ember_wisp": {
+    "name": "Ember Wisp",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.85,
+    "dmg_mult": 1.45,
+    "delay": 3.4,
+    "move_speed": 4.6,
+    "height_m": 1.2,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "ember_glass",
+        "chance": 0.4
+      },
+      {
+        "item": "sprite_dust",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      38,
+      66
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.35
+    },
+    "undead": true
+  },
+  "slag_golem": {
+    "name": "Slag Golem",
+    "family": "wight",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.7,
+    "dmg_mult": 1.35,
+    "delay": 3.5,
+    "move_speed": 4.2,
+    "height_m": 2.6,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "slag_iron",
+        "chance": 0.5
+      },
+      {
+        "item": "ember_glass",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      40,
+      70
+    ],
+    "undead": true
+  },
+  "cragmaw_drake": {
+    "name": "Cragmaw Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.45,
+    "dmg_mult": 1.4,
+    "delay": 2.7,
+    "move_speed": 5.8,
+    "height_m": 2.1,
+    "radius_m": 0.9,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.45
+      },
+      {
+        "item": "ember_glass",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      42,
+      74
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3
+    }
+  },
+  "the_furnace_hart": {
+    "name": "The Furnace Hart",
+    "family": "stag",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 6.0,
+    "dmg_mult": 1.5,
+    "delay": 2.7,
+    "move_speed": 6.4,
+    "height_m": 5.5,
+    "radius_m": 1.95,
+    "notorious": true,
+    "drops": [
+      {
+        "item": "ember_glass",
+        "chance": 1.0
+      },
+      {
+        "item": "amberflame_charm",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      420,
+      680
+    ]
+  },
+  "forge_wight": {
+    "name": "Forge Wight",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.4,
+    "delay": 3.0,
+    "move_speed": 4.7,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "slag_iron",
+        "chance": 0.45
+      },
+      {
+        "item": "cinder_ash",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      44,
+      78
+    ],
+    "undead": true
+  },
+  "cinder_chorister": {
+    "name": "Cinder Chorister",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.95,
+    "dmg_mult": 1.5,
+    "delay": 3.3,
+    "move_speed": 4.8,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "ember_glass",
+        "chance": 0.45
+      },
+      {
+        "item": "wisp_essence",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      46,
+      82
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.35
+    },
+    "undead": true
+  },
+  "the_cinder_abbot": {
+    "name": "The Cinder Abbot",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 12.5,
+    "dmg_mult": 1.65,
+    "delay": 2.9,
+    "move_speed": 4.9,
+    "height_m": 5.0,
+    "radius_m": 1.25,
+    "boss": true,
+    "drops": [
+      {
+        "item": "amber_crown",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      700,
+      1100
+    ],
+    "caster": true
+  },
+  "pale_stag": {
+    "name": "Pale Stag",
+    "family": "stag",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.3,
+    "delay": 2.8,
+    "move_speed": 6.4,
+    "height_m": 2.0,
+    "radius_m": 0.7,
+    "evasive": true,
+    "drops": [
+      {
+        "item": "pale_petal",
+        "chance": 0.45
+      },
+      {
+        "item": "stag_antler",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      44,
+      78
+    ]
+  },
+  "gloam_panther": {
+    "name": "Garden Panther",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.45,
+    "delay": 2.4,
+    "move_speed": 6.4,
+    "height_m": 1.3,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "gloam_thread",
+        "chance": 0.45
+      },
+      {
+        "item": "pale_petal",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      46,
+      82
+    ]
+  },
+  "hush_bloom": {
+    "name": "Pale Bloom",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 0.9,
+    "dmg_mult": 1.5,
+    "delay": 3.4,
+    "move_speed": 4.6,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "pale_petal",
+        "chance": 0.4
+      },
+      {
+        "item": "wisp_essence",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      46,
+      82
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.4
+    },
+    "undead": true
+  },
+  "garden_keeper": {
+    "name": "Garden Keeper",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.45,
+    "delay": 2.9,
+    "move_speed": 4.9,
+    "height_m": 2.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "gloam_thread",
+        "chance": 0.45
+      },
+      {
+        "item": "first_ash",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      48,
+      86
+    ],
+    "undead": true
+  },
+  "pale_drake": {
+    "name": "Pale Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.5,
+    "delay": 2.7,
+    "move_speed": 5.9,
+    "height_m": 2.0,
+    "radius_m": 0.85,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.45
+      },
+      {
+        "item": "first_ash",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      50,
+      90
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3
+    }
+  },
+  "the_gardeners_grief": {
+    "name": "The Gardener's Grief",
+    "family": "wight",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 6.5,
+    "dmg_mult": 1.55,
+    "delay": 2.9,
+    "move_speed": 5.0,
+    "height_m": 5.0,
+    "radius_m": 1.1,
+    "notorious": true,
+    "drops": [
+      {
+        "item": "pale_petal",
+        "chance": 1.0
+      },
+      {
+        "item": "regents_seal",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      600,
+      950
+    ],
+    "undead": true
+  },
+  "first_keeper": {
+    "name": "First Keeper",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.5,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 2.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "first_ash",
+        "chance": 0.5
+      },
+      {
+        "item": "gloam_thread",
+        "chance": 0.35
+      },
+      {
+        "item": "lastlight_cap",
+        "chance": 0.06
+      }
+    ],
+    "gold": [
+      52,
+      96
+    ],
+    "undead": true
+  },
+  "gloam_echo": {
+    "name": "Household Echo",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "caster": true,
+    "hp_mult": 1.0,
+    "dmg_mult": 1.55,
+    "delay": 3.2,
+    "move_speed": 4.9,
+    "height_m": 1.4,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "first_ash",
+        "chance": 0.45
+      },
+      {
+        "item": "wisp_essence",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      54,
+      100
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.4
+    },
+    "undead": true
+  },
+  "meadow_hare": {
+    "name": "Meadow Hare",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.6,
+    "dmg_mult": 0.7,
+    "delay": 2.4,
+    "move_speed": 5.6,
+    "height_m": 0.6,
+    "radius_m": 0.3,
+    "drops": [
+      {
+        "item": "hare_pelt",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      1,
+      4
+    ]
+  },
+  "field_fox": {
+    "name": "Field Fox",
+    "family": "wolf",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.85,
+    "dmg_mult": 0.9,
+    "delay": 2.6,
+    "move_speed": 5.4,
+    "height_m": 0.9,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "fox_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      2,
+      6
+    ]
+  },
+  "cap_mushnub": {
+    "name": "Cap Mushnub",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.1,
+    "dmg_mult": 0.9,
+    "delay": 3.0,
+    "move_speed": 3.4,
+    "height_m": 1.0,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "mushroom_cap",
+        "chance": 0.55
+      }
+    ],
+    "gold": [
+      2,
+      7
+    ]
+  },
+  "young_boar": {
+    "name": "Young Boar",
+    "family": "boar",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.0,
+    "delay": 3.3,
+    "move_speed": 4.6,
+    "height_m": 1.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "boar_hide",
+        "chance": 0.5
+      },
+      {
+        "item": "boar_tusk",
+        "chance": 0.2
+      },
+      {
+        "item": "hunters_ring",
+        "chance": 0.03
+      }
+    ],
+    "gold": [
+      3,
+      8
+    ]
+  },
+  "meadow_slime": {
+    "name": "Meadow Slime",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.2,
+    "dmg_mult": 0.85,
+    "delay": 3.2,
+    "move_speed": 3.2,
+    "height_m": 0.9,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "slime_gel",
+        "chance": 0.6
+      }
+    ],
+    "gold": [
+      2,
+      7
+    ]
+  },
+  "grey_wolf": {
+    "name": "Grey Wolf",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.0,
+    "dmg_mult": 1.05,
+    "delay": 2.6,
+    "move_speed": 5.4,
+    "height_m": 1.2,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "wolf_pelt",
+        "chance": 0.45
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      3,
+      9
+    ]
+  },
+  "beacon_jackdaw": {
+    "name": "Beacon Jackdaw",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.15,
+    "dmg_mult": 1.1,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 0.8,
+    "radius_m": 0.3,
+    "drops": [
+      {
+        "item": "potion",
+        "chance": 0.2
+      },
+      {
+        "item": "forged_charter",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      6,
+      14
+    ]
+  },
+  "wild_boar": {
+    "name": "Wild Boar",
+    "family": "boar",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.15,
+    "delay": 3.4,
+    "move_speed": 4.6,
+    "height_m": 1.4,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "boar_hide",
+        "chance": 0.55
+      },
+      {
+        "item": "boar_tusk",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      4,
+      11
+    ]
+  },
+  "old_bristle": {
+    "name": "Old Bristle",
+    "family": "boar",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 5.0,
+    "dmg_mult": 1.4,
+    "delay": 2.9,
+    "move_speed": 5.4,
+    "height_m": 4.0,
+    "radius_m": 1.7,
+    "drops": [
+      {
+        "item": "bristle_hide",
+        "chance": 1.0
+      },
+      {
+        "item": "boar_tusk",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      120,
+      220
+    ],
+    "notorious": true
+  },
+  "wood_hen": {
+    "name": "Wood Hen",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.6,
+    "dmg_mult": 0.7,
+    "delay": 2.4,
+    "move_speed": 4.8,
+    "height_m": 0.7,
+    "radius_m": 0.3,
+    "drops": [
+      {
+        "item": "hen_feather",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      1,
+      4
+    ]
+  },
+  "brook_frog": {
+    "name": "Brook Frog",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.9,
+    "dmg_mult": 0.85,
+    "delay": 2.8,
+    "move_speed": 4.4,
+    "height_m": 0.6,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "frog_leg",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      2,
+      6
+    ]
+  },
+  "red_fox": {
+    "name": "Red Fox",
+    "family": "wolf",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.85,
+    "dmg_mult": 0.9,
+    "delay": 2.6,
+    "move_speed": 5.4,
+    "height_m": 0.9,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "fox_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      2,
+      6
+    ]
+  },
+  "grove_pigeon": {
+    "name": "Grove Pigeon",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.9,
+    "dmg_mult": 0.9,
+    "delay": 2.6,
+    "move_speed": 5.8,
+    "height_m": 0.6,
+    "radius_m": 0.25,
+    "drops": [
+      {
+        "item": "hen_feather",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      2,
+      7
+    ],
+    "evasive": true
+  },
+  "barrow_digger": {
+    "name": "Barrow Digger",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.15,
+    "dmg_mult": 1.1,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 0.9,
+    "radius_m": 0.8,
+    "drops": [
+      {
+        "item": "potion",
+        "chance": 0.2
+      },
+      {
+        "item": "grave_goods",
+        "chance": 0.65
+      }
+    ],
+    "gold": [
+      6,
+      14
+    ]
+  },
+  "the_orchard_sow": {
+    "name": "The Orchard Sow",
+    "family": "boar",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 5.0,
+    "dmg_mult": 1.4,
+    "delay": 2.9,
+    "move_speed": 5.4,
+    "height_m": 4.0,
+    "radius_m": 1.9,
+    "drops": [
+      {
+        "item": "sow_hide",
+        "chance": 1.0
+      },
+      {
+        "item": "boar_tusk",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      120,
+      220
+    ],
+    "notorious": true
+  },
+  "snow_hare": {
+    "name": "Snow Hare",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.7,
+    "dmg_mult": 0.75,
+    "delay": 2.4,
+    "move_speed": 5.8,
+    "height_m": 0.6,
+    "radius_m": 0.3,
+    "drops": [
+      {
+        "item": "hare_pelt",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      3,
+      8
+    ]
+  },
+  "winter_wolf": {
+    "name": "Winter Wolf",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.1,
+    "dmg_mult": 1.1,
+    "delay": 2.6,
+    "move_speed": 5.6,
+    "height_m": 1.3,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "wolf_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      6,
+      14
+    ]
+  },
+  "ridge_stag": {
+    "name": "Ridge Stag",
+    "family": "stag",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.0,
+    "delay": 3.0,
+    "move_speed": 5.6,
+    "height_m": 2.1,
+    "radius_m": 0.75,
+    "drops": [
+      {
+        "item": "stag_antler",
+        "chance": 0.4
+      },
+      {
+        "item": "boar_hide",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      6,
+      14
+    ]
+  },
+  "frost_slime": {
+    "name": "Frost Slime",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 0.9,
+    "delay": 3.2,
+    "move_speed": 3.2,
+    "height_m": 1.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "slime_gel",
+        "chance": 0.6
+      },
+      {
+        "item": "frost_gel",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      5,
+      13
+    ]
+  },
+  "rime_sprite": {
+    "name": "Rime Sprite",
+    "family": "sprite",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.9,
+    "dmg_mult": 1.15,
+    "delay": 2.8,
+    "move_speed": 4.6,
+    "height_m": 1.2,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "sprite_dust",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      6,
+      15
+    ],
+    "caster": true,
+    "undead": true
+  },
+  "snare_spider": {
+    "name": "Snare Spider",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.15,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 1.2,
+    "radius_m": 1.15,
+    "drops": [
+      {
+        "item": "hi_potion",
+        "chance": 0.15
+      },
+      {
+        "item": "snare_silk",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      12,
+      26
+    ]
+  },
+  "the_old_man_of_the_road": {
+    "name": "The Old Man of the Road",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 6.0,
+    "dmg_mult": 1.5,
+    "delay": 3.2,
+    "move_speed": 4.8,
+    "height_m": 5.5,
+    "radius_m": 1.5,
+    "drops": [
+      {
+        "item": "yeti_hide",
+        "chance": 1.0
+      },
+      {
+        "item": "hi_potion",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      200,
+      360
+    ],
+    "notorious": true
+  },
+  "sand_crab": {
+    "name": "Sand Crab",
+    "family": "crab",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 0.9,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 0.9,
+    "radius_m": 1.3,
+    "drops": [
+      {
+        "item": "silver_shell",
+        "chance": 0.4
+      },
+      {
+        "item": "crab_meat",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      4,
+      10
+    ]
+  },
+  "shore_gull": {
+    "name": "Shore Gull",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 0.9,
+    "dmg_mult": 0.95,
+    "delay": 2.6,
+    "move_speed": 5.8,
+    "height_m": 0.7,
+    "radius_m": 0.3,
+    "drops": [
+      {
+        "item": "hen_feather",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      3,
+      9
+    ],
+    "evasive": true
+  },
+  "tide_glub": {
+    "name": "Tide Glub",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.4,
+    "dmg_mult": 1.0,
+    "delay": 3.2,
+    "move_speed": 3.4,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "slime_gel",
+        "chance": 0.5
+      },
+      {
+        "item": "brine_pearl",
+        "chance": 0.1
+      }
+    ],
+    "gold": [
+      5,
+      12
+    ]
+  },
+  "strand_drake": {
+    "name": "Strand Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.2,
+    "delay": 3.0,
+    "move_speed": 5.4,
+    "height_m": 1.9,
+    "radius_m": 0.8,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.45
+      },
+      {
+        "item": "drake_fang_charm",
+        "chance": 0.03
+      }
+    ],
+    "gold": [
+      8,
+      18
+    ]
+  },
+  "combe_hermit": {
+    "name": "Combe Hermit",
+    "family": "crab",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.15,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 1.3,
+    "radius_m": 0.8,
+    "drops": [
+      {
+        "item": "hi_potion",
+        "chance": 0.15
+      },
+      {
+        "item": "silver_shell",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      12,
+      26
+    ]
+  },
+  "the_purser": {
+    "name": "The Purser",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 5.5,
+    "dmg_mult": 1.5,
+    "delay": 3.0,
+    "move_speed": 4.4,
+    "height_m": 4.5,
+    "radius_m": 1.1,
+    "drops": [
+      {
+        "item": "pursers_ledger",
+        "chance": 1.0
+      },
+      {
+        "item": "hi_potion",
+        "chance": 0.5
+      },
+      {
+        "item": "drowned_katana",
+        "chance": 0.35
+      },
+      {
+        "item": "bellbronze_mace",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      200,
+      360
+    ],
+    "caster": true,
+    "notorious": true,
+    "undead": true
+  },
+  "wood_boar": {
+    "name": "Wood Boar",
+    "family": "boar",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.7,
+    "dmg_mult": 1.2,
+    "delay": 3.4,
+    "move_speed": 4.6,
+    "height_m": 1.5,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "boar_hide",
+        "chance": 0.5
+      },
+      {
+        "item": "boar_tusk",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ]
+  },
+  "kings_hound": {
+    "name": "King's Hound",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.15,
+    "delay": 2.5,
+    "move_speed": 5.8,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "hound_collar",
+        "chance": 0.25
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ]
+  },
+  "red_stag": {
+    "name": "Red Stag",
+    "family": "stag",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.7,
+    "dmg_mult": 1.1,
+    "delay": 3.0,
+    "move_speed": 5.6,
+    "height_m": 2.2,
+    "radius_m": 0.8,
+    "drops": [
+      {
+        "item": "stag_antler",
+        "chance": 0.45
+      }
+    ],
+    "gold": [
+      10,
+      24
+    ]
+  },
+  "holloway_rummager": {
+    "name": "Holloway Rummager",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.25,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 1.3,
+    "radius_m": 0.75,
+    "drops": [
+      {
+        "item": "hi_potion",
+        "chance": 0.15
+      },
+      {
+        "item": "potion",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      16,
+      34
+    ]
+  },
+  "forest_wolf": {
+    "name": "Forest Wolf",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.2,
+    "delay": 2.6,
+    "move_speed": 5.6,
+    "height_m": 1.3,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "wolf_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      12,
+      26
+    ]
+  },
+  "ride_warden": {
+    "name": "Ride Warden",
+    "family": "construct",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.6,
+    "dmg_mult": 1.35,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 2.4,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.35
+      },
+      {
+        "item": "work_order",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      20,
+      44
+    ]
+  },
+  "the_master_of_hounds": {
+    "name": "The Master of Hounds",
+    "family": "construct",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 7.0,
+    "dmg_mult": 1.6,
+    "delay": 3.2,
+    "move_speed": 4.8,
+    "height_m": 5.0,
+    "radius_m": 1.2,
+    "drops": [
+      {
+        "item": "masters_whistle",
+        "chance": 1.0
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      260,
+      440
+    ],
+    "notorious": true
+  },
+  "tomb_attendant": {
+    "name": "Tomb Attendant",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.4,
+    "dmg_mult": 1.15,
+    "delay": 2.8,
+    "move_speed": 4.4,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.4
+      },
+      {
+        "item": "votive_wax",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      12,
+      26
+    ],
+    "undead": true
+  },
+  "crypt_shade": {
+    "name": "Crypt Shade",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.3,
+    "delay": 3.0,
+    "move_speed": 4.6,
+    "height_m": 2.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "echo_shard",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      14,
+      28
+    ],
+    "caster": true,
+    "undead": true
+  },
+  "tomb_warden": {
+    "name": "Tomb Warden",
+    "family": "wight",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.2,
+    "dmg_mult": 1.35,
+    "delay": 3.2,
+    "move_speed": 4.2,
+    "height_m": 2.2,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.5
+      },
+      {
+        "item": "wardens_signet",
+        "chance": 0.04
+      }
+    ],
+    "gold": [
+      18,
+      36
+    ],
+    "undead": true
+  },
+  "the_warden_of_the_mausoleum": {
+    "name": "The Warden of the Mausoleum",
+    "family": "boss",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 9.0,
+    "dmg_mult": 1.7,
+    "delay": 3.4,
+    "move_speed": 4.2,
+    "height_m": 6.0,
+    "radius_m": 1.5,
+    "drops": [
+      {
+        "item": "visitors_list",
+        "chance": 1.0
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 1.0
+      },
+      {
+        "item": "mistwalker_katana",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      400,
+      700
+    ],
+    "boss": true
+  },
+  "estate_hound": {
+    "name": "Estate Hound",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.15,
+    "delay": 2.5,
+    "move_speed": 5.8,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "hound_collar",
+        "chance": 0.25
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ]
+  },
+  "sap_beetle": {
+    "name": "Sap Beetle",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.0,
+    "delay": 3.2,
+    "move_speed": 4.0,
+    "height_m": 1.0,
+    "radius_m": 0.85,
+    "drops": [
+      {
+        "item": "beetle_shell",
+        "chance": 0.45
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ]
+  },
+  "stump_mushnub": {
+    "name": "Stump Mushnub",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.1,
+    "delay": 3.2,
+    "move_speed": 3.2,
+    "height_m": 1.6,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "mushroom_cap",
+        "chance": 0.5
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ]
+  },
+  "stack_gnawer": {
+    "name": "Stack Gnawer",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.25,
+    "delay": 2.9,
+    "move_speed": 4.8,
+    "height_m": 1.1,
+    "radius_m": 0.9,
+    "drops": [
+      {
+        "item": "hi_potion",
+        "chance": 0.15
+      },
+      {
+        "item": "thorn_resin",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      16,
+      34
+    ]
+  },
+  "rank_wolf": {
+    "name": "Rank Wolf",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.2,
+    "delay": 2.6,
+    "move_speed": 5.6,
+    "height_m": 1.3,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "wolf_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      12,
+      26
+    ]
+  },
+  "felling_sentinel": {
+    "name": "Felling Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.8,
+    "dmg_mult": 1.4,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.4,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.35
+      },
+      {
+        "item": "work_order",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      20,
+      44
+    ]
+  },
+  "the_foreman": {
+    "name": "The Foreman",
+    "family": "construct",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 7.0,
+    "dmg_mult": 1.6,
+    "delay": 3.2,
+    "move_speed": 4.4,
+    "height_m": 5.0,
+    "radius_m": 1.2,
+    "drops": [
+      {
+        "item": "foremans_saw",
+        "chance": 1.0
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      260,
+      440
+    ],
+    "notorious": true
+  },
+  "shift_clerk": {
+    "name": "Shift Clerk",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.4,
+    "dmg_mult": 1.15,
+    "delay": 2.8,
+    "move_speed": 4.4,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "work_order",
+        "chance": 0.4
+      },
+      {
+        "item": "votive_wax",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      12,
+      26
+    ],
+    "undead": true
+  },
+  "lodge_hound": {
+    "name": "Lodge Hound",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.2,
+    "delay": 2.5,
+    "move_speed": 5.8,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "hound_collar",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      12,
+      26
+    ]
+  },
+  "tally_sentinel": {
+    "name": "Tally Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.4,
+    "dmg_mult": 1.35,
+    "delay": 3.2,
+    "move_speed": 4.0,
+    "height_m": 2.3,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      18,
+      36
+    ]
+  },
+  "the_overseer": {
+    "name": "The Overseer",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 9.0,
+    "dmg_mult": 1.7,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 5.5,
+    "radius_m": 1.3,
+    "drops": [
+      {
+        "item": "the_rota",
+        "chance": 1.0
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 1.0
+      },
+      {
+        "item": "rootbound_wraps",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      400,
+      700
+    ],
+    "boss": true,
+    "caster": true
+  },
+  "mere_frog": {
+    "name": "Mere Frog",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.0,
+    "delay": 2.8,
+    "move_speed": 4.4,
+    "height_m": 0.8,
+    "radius_m": 0.65,
+    "drops": [
+      {
+        "item": "frog_leg",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      10,
+      20
+    ]
+  },
+  "villa_cat": {
+    "name": "Villa Cat",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.0,
+    "dmg_mult": 1.1,
+    "delay": 2.4,
+    "move_speed": 5.8,
+    "height_m": 0.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "cat_whisker",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      8,
+      18
+    ],
+    "evasive": true
+  },
+  "lake_heron": {
+    "name": "Lake Heron",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.2,
+    "dmg_mult": 1.1,
+    "delay": 2.8,
+    "move_speed": 5.4,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "hen_feather",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ],
+    "evasive": true
+  },
+  "lily_slime": {
+    "name": "Lily Slime",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.0,
+    "delay": 3.2,
+    "move_speed": 3.2,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "slime_gel",
+        "chance": 0.6
+      },
+      {
+        "item": "mere_pearl",
+        "chance": 0.08
+      }
+    ],
+    "gold": [
+      10,
+      22
+    ]
+  },
+  "folly_otter": {
+    "name": "Folly Otter",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.5,
+    "dmg_mult": 1.25,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 0.6,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "hi_potion",
+        "chance": 0.15
+      },
+      {
+        "item": "mere_pearl",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      16,
+      34
+    ]
+  },
+  "mere_drake": {
+    "name": "Mere Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.3,
+    "delay": 3.0,
+    "move_speed": 5.4,
+    "height_m": 2.0,
+    "radius_m": 0.85,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.45
+      },
+      {
+        "item": "mire_pearl",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      14,
+      30
+    ]
+  },
+  "garden_sentinel": {
+    "name": "Garden Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.6,
+    "dmg_mult": 1.35,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 2.4,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.35
+      },
+      {
+        "item": "work_order",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      20,
+      44
+    ]
+  },
+  "old_bellwether": {
+    "name": "Old Bellwether",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 7.0,
+    "dmg_mult": 1.6,
+    "delay": 3.2,
+    "move_speed": 4.6,
+    "height_m": 4.0,
+    "radius_m": 3.7,
+    "drops": [
+      {
+        "item": "bellwethers_crown",
+        "chance": 1.0
+      },
+      {
+        "item": "mere_pearl",
+        "chance": 1.0
+      },
+      {
+        "item": "sedge_lantern",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      260,
+      440
+    ],
+    "notorious": true
+  },
+  "ballroom_guest": {
+    "name": "Ballroom Guest",
+    "family": "sprite",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.25,
+    "delay": 2.8,
+    "move_speed": 4.6,
+    "height_m": 2.1,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "echo_shard",
+        "chance": 0.4
+      },
+      {
+        "item": "dance_card",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      12,
+      28
+    ],
+    "caster": true,
+    "undead": true
+  },
+  "house_steward": {
+    "name": "House Steward",
+    "family": "wight",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.2,
+    "delay": 2.8,
+    "move_speed": 4.4,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.4
+      },
+      {
+        "item": "votive_wax",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      12,
+      26
+    ],
+    "undead": true
+  },
+  "the_musician": {
+    "name": "Musician",
+    "family": "wight",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.4,
+    "delay": 3.2,
+    "move_speed": 4.0,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "echo_shard",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      18,
+      36
+    ],
+    "caster": true,
+    "undead": true
+  },
+  "the_master_of_ceremonies": {
+    "name": "The Master of Ceremonies",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 9.0,
+    "dmg_mult": 1.7,
+    "delay": 3.4,
+    "move_speed": 4.4,
+    "height_m": 6.0,
+    "radius_m": 1.5,
+    "drops": [
+      {
+        "item": "the_music_box",
+        "chance": 1.0
+      },
+      {
+        "item": "dance_card",
+        "chance": 1.0
+      },
+      {
+        "item": "meredge_blade",
+        "chance": 0.35
+      },
+      {
+        "item": "merelight_staff",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      400,
+      700
+    ],
+    "caster": true,
+    "boss": true,
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.3
+    }
+  },
+  "steeple_crow": {
+    "name": "Steeple Crow",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.3,
+    "dmg_mult": 1.2,
+    "delay": 2.6,
+    "move_speed": 5.8,
+    "height_m": 0.9,
+    "radius_m": 0.3,
+    "drops": [
+      {
+        "item": "hen_feather",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      14,
+      30
+    ],
+    "evasive": true
+  },
+  "valley_wolf": {
+    "name": "Valley Wolf",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.3,
+    "delay": 2.6,
+    "move_speed": 5.6,
+    "height_m": 1.35,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "wolf_pelt",
+        "chance": 0.5
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      16,
+      34
+    ]
+  },
+  "lake_pike": {
+    "name": "Lake Pike",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.9,
+    "dmg_mult": 1.3,
+    "delay": 3.0,
+    "move_speed": 5.0,
+    "height_m": 1.4,
+    "radius_m": 1.25,
+    "drops": [
+      {
+        "item": "pike_tooth",
+        "chance": 0.45
+      }
+    ],
+    "gold": [
+      16,
+      34
+    ]
+  },
+  "reservoir_loon": {
+    "name": "Reservoir Loon",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.35,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 1.0,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "hi_potion",
+        "chance": 0.2
+      },
+      {
+        "item": "drowned_relic",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      24,
+      48
+    ]
+  },
+  "sluice_sentinel": {
+    "name": "Sluice Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 3.2,
+    "dmg_mult": 1.5,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.4,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "work_order",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      28,
+      60
+    ]
+  },
+  "tailrace_drake": {
+    "name": "Tailrace Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.4,
+    "dmg_mult": 1.5,
+    "delay": 3.0,
+    "move_speed": 5.4,
+    "height_m": 2.1,
+    "radius_m": 0.9,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      24,
+      50
+    ]
+  },
+  "the_drowned_warden": {
+    "name": "The Drowned Warden",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 8.0,
+    "dmg_mult": 1.7,
+    "delay": 3.2,
+    "move_speed": 4.4,
+    "height_m": 5.0,
+    "radius_m": 1.5,
+    "drops": [
+      {
+        "item": "wardens_key",
+        "chance": 1.0
+      },
+      {
+        "item": "drowned_relic",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      320,
+      560
+    ],
+    "notorious": true
+  },
+  "archive_keeper": {
+    "name": "Archive Keeper",
+    "family": "wight",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.0,
+    "dmg_mult": 1.35,
+    "delay": 2.9,
+    "move_speed": 4.2,
+    "height_m": 2.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "wight_ash",
+        "chance": 0.4
+      },
+      {
+        "item": "striking_slip",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      20,
+      40
+    ],
+    "caster": true,
+    "undead": true
+  },
+  "tower_warden": {
+    "name": "Tower Warden",
+    "family": "construct",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.0,
+    "dmg_mult": 1.5,
+    "delay": 3.3,
+    "move_speed": 4.0,
+    "height_m": 2.4,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      26,
+      52
+    ]
+  },
+  "the_bellringer_of_the_valley": {
+    "name": "The Bellringer",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 11.0,
+    "dmg_mult": 1.8,
+    "delay": 3.4,
+    "move_speed": 4.2,
+    "height_m": 6.0,
+    "radius_m": 1.4,
+    "drops": [
+      {
+        "item": "bell_toll_band",
+        "chance": 1.0
+      },
+      {
+        "item": "the_striking_hammer",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      500,
+      900
+    ],
+    "boss": true,
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3
+    }
+  },
+  "garden_dove": {
+    "name": "Garden Dove",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 1.4,
+    "dmg_mult": 1.2,
+    "delay": 2.6,
+    "move_speed": 5.8,
+    "height_m": 0.6,
+    "radius_m": 0.25,
+    "drops": [
+      {
+        "item": "hen_feather",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      16,
+      32
+    ],
+    "evasive": true
+  },
+  "pruning_sentinel": {
+    "name": "Pruning Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 3.4,
+    "dmg_mult": 1.55,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.4,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "work_order",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      30,
+      64
+    ]
+  },
+  "garden_hound": {
+    "name": "Garden Hound",
+    "family": "wolf",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.9,
+    "dmg_mult": 1.4,
+    "delay": 2.5,
+    "move_speed": 5.8,
+    "height_m": 1.15,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "hound_collar",
+        "chance": 0.3
+      },
+      {
+        "item": "wolf_fang",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      18,
+      38
+    ]
+  },
+  "nursery_slime": {
+    "name": "Nursery Slime",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 2.2,
+    "dmg_mult": 1.3,
+    "delay": 3.2,
+    "move_speed": 3.2,
+    "height_m": 1.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "slime_gel",
+        "chance": 0.6
+      },
+      {
+        "item": "silver_cutting",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      18,
+      38
+    ]
+  },
+  "silver_bowerbird": {
+    "name": "Silver Bowerbird",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.0,
+    "dmg_mult": 1.45,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 0.9,
+    "radius_m": 0.3,
+    "drops": [
+      {
+        "item": "hi_potion",
+        "chance": 0.2
+      },
+      {
+        "item": "silver_cutting",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      28,
+      56
+    ]
+  },
+  "trellis_drake": {
+    "name": "Trellis Drake",
+    "family": "drake",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.6,
+    "dmg_mult": 1.55,
+    "delay": 3.0,
+    "move_speed": 5.4,
+    "height_m": 2.1,
+    "radius_m": 0.9,
+    "drops": [
+      {
+        "item": "drake_scale",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      28,
+      56
+    ]
+  },
+  "the_head_gardener": {
+    "name": "The Head Gardener",
+    "family": "construct",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 9.0,
+    "dmg_mult": 1.8,
+    "delay": 3.2,
+    "move_speed": 4.2,
+    "height_m": 5.5,
+    "radius_m": 1.35,
+    "drops": [
+      {
+        "item": "gardeners_shears",
+        "chance": 1.0
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      380,
+      640
+    ],
+    "notorious": true
+  },
+  "graft_sentinel": {
+    "name": "Graft Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 3.2,
+    "dmg_mult": 1.55,
+    "delay": 3.3,
+    "move_speed": 4.0,
+    "height_m": 2.3,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "work_order",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      28,
+      56
+    ]
+  },
+  "root_slime": {
+    "name": "Root Slime",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.4,
+    "dmg_mult": 1.4,
+    "delay": 3.2,
+    "move_speed": 3.2,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "slime_gel",
+        "chance": 0.6
+      },
+      {
+        "item": "root_amber",
+        "chance": 0.15
+      }
+    ],
+    "gold": [
+      22,
+      44
+    ]
+  },
+  "seed_wasp": {
+    "name": "Seed Wasp",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.5,
+    "delay": 2.6,
+    "move_speed": 5.6,
+    "height_m": 0.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "beetle_shell",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      22,
+      44
+    ],
+    "evasive": true
+  },
+  "the_nurseryman": {
+    "name": "The Nurseryman",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 11.0,
+    "dmg_mult": 1.85,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 6.0,
+    "radius_m": 1.4,
+    "drops": [
+      {
+        "item": "nursery_ledger",
+        "chance": 1.0
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      520,
+      900
+    ],
+    "boss": true,
+    "caster": true,
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3
+    }
+  },
+  "glass_wasp": {
+    "name": "Glass Wasp",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.3,
+    "delay": 2.4,
+    "move_speed": 6.0,
+    "height_m": 1.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "wasp_glass",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      18,
+      36
+    ],
+    "evasive": true
+  },
+  "slag_hound": {
+    "name": "Slag Hound",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.6,
+    "dmg_mult": 1.5,
+    "delay": 2.8,
+    "move_speed": 5.6,
+    "height_m": 1.2,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "slag_lump",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      20,
+      42
+    ]
+  },
+  "furnace_sentinel": {
+    "name": "Furnace Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 3.8,
+    "dmg_mult": 1.6,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.5,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "cullet",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      32,
+      66
+    ]
+  },
+  "dune_drake": {
+    "name": "Dune Drake",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.4,
+    "dmg_mult": 1.65,
+    "delay": 2.9,
+    "move_speed": 5.2,
+    "height_m": 2.1,
+    "radius_m": 0.9,
+    "drops": [
+      {
+        "item": "drake_scale_amber",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      36,
+      70
+    ]
+  },
+  "cinder_slime": {
+    "name": "Cinder Slime",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.2,
+    "dmg_mult": 1.4,
+    "delay": 3.0,
+    "move_speed": 3.4,
+    "height_m": 1.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "slag_lump",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      18,
+      40
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3,
+      "dmg": 3,
+      "dur": 10
+    }
+  },
+  "pane_lizard": {
+    "name": "Pane Lizard",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.3,
+    "dmg_mult": 1.5,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 1.2,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "glass_pane",
+        "chance": 0.35
+      },
+      {
+        "item": "hi_potion",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      30,
+      60
+    ]
+  },
+  "melt_crab": {
+    "name": "Melt Crab",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.0,
+    "dmg_mult": 1.5,
+    "delay": 3.2,
+    "move_speed": 3.6,
+    "height_m": 1.2,
+    "radius_m": 1.75,
+    "drops": [
+      {
+        "item": "cullet",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      24,
+      50
+    ]
+  },
+  "the_glassblower": {
+    "name": "The Glassblower",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 8.0,
+    "dmg_mult": 1.8,
+    "delay": 3.4,
+    "move_speed": 4.2,
+    "height_m": 5.5,
+    "radius_m": 1.3,
+    "drops": [
+      {
+        "item": "glass_pane",
+        "chance": 1.0
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 1.0
+      },
+      {
+        "item": "regents_edge",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      300,
+      520
+    ],
+    "boss": true
+  },
+  "furnace_stoker": {
+    "name": "Furnace Stoker",
+    "family": "undead",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.8,
+    "dmg_mult": 1.5,
+    "delay": 2.8,
+    "move_speed": 4.6,
+    "height_m": 1.9,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "stoker_iron",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      26,
+      52
+    ],
+    "undead": true
+  },
+  "ash_sprite": {
+    "name": "Ash Sprite",
+    "family": "spirit",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.5,
+    "delay": 2.4,
+    "move_speed": 6.2,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "cullet",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      22,
+      44
+    ],
+    "evasive": true,
+    "undead": true
+  },
+  "the_master_of_the_furnace": {
+    "name": "The Master of the Furnace",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 12.0,
+    "dmg_mult": 1.9,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 6.5,
+    "radius_m": 1.7,
+    "drops": [
+      {
+        "item": "furnace_ledger",
+        "chance": 1.0
+      },
+      {
+        "item": "master_tongs",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      560,
+      960
+    ],
+    "boss": true,
+    "caster": true
+  },
+  "fen_leech": {
+    "name": "Fen Leech",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.0,
+    "dmg_mult": 1.4,
+    "delay": 2.6,
+    "move_speed": 3.6,
+    "height_m": 1.0,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "leech_gland",
+        "chance": 0.45
+      }
+    ],
+    "gold": [
+      20,
+      42
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.35,
+      "dmg": 3,
+      "dur": 12
+    }
+  },
+  "reed_wolf": {
+    "name": "Reed Wolf",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 3.0,
+    "dmg_mult": 1.6,
+    "delay": 2.6,
+    "move_speed": 6.0,
+    "height_m": 1.2,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "fen_wolf_pelt",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      26,
+      54
+    ]
+  },
+  "bog_lurker": {
+    "name": "Bog Lurker",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.6,
+    "dmg_mult": 1.55,
+    "delay": 3.0,
+    "move_speed": 3.8,
+    "height_m": 1.5,
+    "radius_m": 1.25,
+    "drops": [
+      {
+        "item": "bog_iron",
+        "chance": 0.3
+      },
+      {
+        "item": "reed_bundle",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      28,
+      58
+    ]
+  },
+  "marsh_wisp": {
+    "name": "Marsh Wisp",
+    "family": "spirit",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.0,
+    "dmg_mult": 1.6,
+    "delay": 2.4,
+    "move_speed": 6.4,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "bog_iron",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      24,
+      48
+    ],
+    "evasive": true,
+    "undead": true
+  },
+  "dredge_sentinel": {
+    "name": "Dredge Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 4.2,
+    "dmg_mult": 1.7,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.5,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "repair_order",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      36,
+      72
+    ]
+  },
+  "canal_pike": {
+    "name": "Canal Pike",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.8,
+    "dmg_mult": 1.6,
+    "delay": 2.8,
+    "move_speed": 5.6,
+    "height_m": 1.3,
+    "radius_m": 1.2,
+    "drops": [
+      {
+        "item": "pike_roe",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      24,
+      50
+    ]
+  },
+  "barge_crayfish": {
+    "name": "Barge Crayfish",
+    "family": "crab",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.6,
+    "dmg_mult": 1.6,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 1.2,
+    "radius_m": 1.25,
+    "drops": [
+      {
+        "item": "hi_potion",
+        "chance": 0.2
+      },
+      {
+        "item": "bog_iron",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      32,
+      64
+    ]
+  },
+  "the_lock_keeper": {
+    "name": "The Lock-Keeper",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 9.0,
+    "dmg_mult": 1.9,
+    "delay": 3.4,
+    "move_speed": 4.2,
+    "height_m": 5.0,
+    "radius_m": 1.2,
+    "drops": [
+      {
+        "item": "lock_keepers_key",
+        "chance": 1.0
+      },
+      {
+        "item": "bog_iron",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      340,
+      600
+    ],
+    "boss": true
+  },
+  "pump_sentinel": {
+    "name": "Pump Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 4.4,
+    "dmg_mult": 1.75,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.5,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "pump_gear",
+        "chance": 0.4
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      40,
+      80
+    ]
+  },
+  "drowned_bargeman": {
+    "name": "Drowned Bargeman",
+    "family": "undead",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 3.2,
+    "dmg_mult": 1.6,
+    "delay": 2.8,
+    "move_speed": 4.4,
+    "height_m": 1.8,
+    "radius_m": 0.45,
+    "drops": [
+      {
+        "item": "bog_iron",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      30,
+      60
+    ],
+    "undead": true
+  },
+  "sluice_eel": {
+    "name": "Sluice Eel",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.0,
+    "dmg_mult": 1.7,
+    "delay": 2.6,
+    "move_speed": 5.8,
+    "height_m": 1.4,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "leech_gland",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      30,
+      60
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.3,
+      "dmg": 4,
+      "dur": 10
+    }
+  },
+  "the_sluice_master": {
+    "name": "The Sluice Master",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 13.0,
+    "dmg_mult": 2.0,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 6.5,
+    "radius_m": 1.5,
+    "drops": [
+      {
+        "item": "works_ledger",
+        "chance": 1.0
+      },
+      {
+        "item": "pump_gear",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      620,
+      1040
+    ],
+    "boss": true,
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.35
+    }
+  },
+  "field_hawk": {
+    "name": "Field Hawk",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 1.8,
+    "dmg_mult": 1.5,
+    "delay": 2.4,
+    "move_speed": 6.8,
+    "height_m": 0.9,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "hawk_feather",
+        "chance": 0.45
+      }
+    ],
+    "gold": [
+      22,
+      44
+    ],
+    "evasive": true
+  },
+  "granary_rat": {
+    "name": "Granary Rat",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 1.6,
+    "dmg_mult": 1.3,
+    "delay": 2.2,
+    "move_speed": 5.6,
+    "height_m": 0.7,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "wheat_sheaf",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      16,
+      36
+    ]
+  },
+  "straw_slime": {
+    "name": "Straw Slime",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.6,
+    "dmg_mult": 1.5,
+    "delay": 3.0,
+    "move_speed": 3.4,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "wheat_sheaf",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      22,
+      46
+    ]
+  },
+  "husk_drake": {
+    "name": "Husk Drake",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.8,
+    "dmg_mult": 1.75,
+    "delay": 2.9,
+    "move_speed": 5.2,
+    "height_m": 2.1,
+    "radius_m": 0.9,
+    "drops": [
+      {
+        "item": "husk_scale",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      40,
+      78
+    ],
+    "undead": true
+  },
+  "reaping_sentinel": {
+    "name": "Reaping Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 4.6,
+    "dmg_mult": 1.8,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.6,
+    "radius_m": 0.65,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "provisioning_order",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      42,
+      84
+    ]
+  },
+  "sack_ant": {
+    "name": "Sack Ant",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 2.8,
+    "dmg_mult": 1.65,
+    "delay": 2.8,
+    "move_speed": 5.0,
+    "height_m": 1.3,
+    "radius_m": 1.1,
+    "drops": [
+      {
+        "item": "flour_sack",
+        "chance": 0.35
+      },
+      {
+        "item": "hi_potion",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      36,
+      70
+    ]
+  },
+  "feral_ox": {
+    "name": "Feral Ox",
+    "family": "beast",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 5.0,
+    "dmg_mult": 1.9,
+    "delay": 3.2,
+    "move_speed": 4.6,
+    "height_m": 2.0,
+    "radius_m": 1.0,
+    "drops": [
+      {
+        "item": "ox_horn",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      44,
+      90
+    ]
+  },
+  "the_reaper": {
+    "name": "The Reaper",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 10.0,
+    "dmg_mult": 2.0,
+    "delay": 3.4,
+    "move_speed": 4.2,
+    "height_m": 6.0,
+    "radius_m": 1.45,
+    "drops": [
+      {
+        "item": "reapers_blade",
+        "chance": 1.0
+      },
+      {
+        "item": "provisioning_order",
+        "chance": 1.0
+      },
+      {
+        "item": "greedgullet_band",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      380,
+      660
+    ],
+    "boss": true
+  },
+  "chaff_sprite": {
+    "name": "Chaff Sprite",
+    "family": "spirit",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.4,
+    "dmg_mult": 1.7,
+    "delay": 2.4,
+    "move_speed": 6.4,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "wheat_sheaf",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      30,
+      60
+    ],
+    "evasive": true,
+    "undead": true
+  },
+  "mill_hound": {
+    "name": "Mill Hound",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 3.6,
+    "dmg_mult": 1.8,
+    "delay": 2.6,
+    "move_speed": 6.0,
+    "height_m": 1.25,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "flour_sack",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      34,
+      68
+    ]
+  },
+  "the_granary_master": {
+    "name": "The Granary-Master",
+    "family": "boss",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 14.0,
+    "dmg_mult": 2.1,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 6.0,
+    "radius_m": 1.4,
+    "drops": [
+      {
+        "item": "provisioning_ledger",
+        "chance": 1.0
+      },
+      {
+        "item": "tally_seal",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      680,
+      1120
+    ],
+    "boss": true
+  },
+  "count_sentinel": {
+    "name": "Count Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 4.8,
+    "dmg_mult": 1.85,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.5,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "tally_seal",
+        "chance": 0.4
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      46,
+      92
+    ]
+  },
+  "crag_hawk": {
+    "name": "Crag Hawk",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.2,
+    "dmg_mult": 1.6,
+    "delay": 2.4,
+    "move_speed": 7.0,
+    "height_m": 1.0,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "crag_feather",
+        "chance": 0.45
+      }
+    ],
+    "gold": [
+      26,
+      52
+    ],
+    "evasive": true
+  },
+  "snow_cat": {
+    "name": "Snow Cat",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.4,
+    "dmg_mult": 1.8,
+    "delay": 2.6,
+    "move_speed": 6.4,
+    "height_m": 1.2,
+    "radius_m": 0.65,
+    "drops": [
+      {
+        "item": "snowcat_pelt",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      34,
+      68
+    ]
+  },
+  "wall_sentinel": {
+    "name": "Wall Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 5.0,
+    "dmg_mult": 1.9,
+    "delay": 3.4,
+    "move_speed": 3.9,
+    "height_m": 2.6,
+    "radius_m": 0.65,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "wall_stone",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      46,
+      92
+    ]
+  },
+  "rampart_sentinel": {
+    "name": "Rampart Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 6.0,
+    "dmg_mult": 2.0,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 3.0,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.5
+      },
+      {
+        "item": "watch_ledger",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      54,
+      108
+    ]
+  },
+  "ice_slime": {
+    "name": "Ice Slime",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.0,
+    "dmg_mult": 1.6,
+    "delay": 3.0,
+    "move_speed": 3.4,
+    "height_m": 1.1,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "ice_crystal",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      28,
+      56
+    ],
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.25,
+      "dur": 6
+    }
+  },
+  "rampart_gecko": {
+    "name": "Rampart Gecko",
+    "family": "drake",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 3.2,
+    "dmg_mult": 1.8,
+    "delay": 2.8,
+    "move_speed": 5.4,
+    "height_m": 1.0,
+    "radius_m": 1.5,
+    "drops": [
+      {
+        "item": "runners_rope",
+        "chance": 0.4
+      },
+      {
+        "item": "hi_potion",
+        "chance": 0.2
+      }
+    ],
+    "gold": [
+      40,
+      80
+    ]
+  },
+  "frost_wight": {
+    "name": "Frost Wight",
+    "family": "spirit",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 3.0,
+    "dmg_mult": 1.9,
+    "delay": 2.4,
+    "move_speed": 6.2,
+    "height_m": 1.4,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "ice_crystal",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      36,
+      72
+    ],
+    "evasive": true,
+    "undead": true
+  },
+  "the_wall_drake": {
+    "name": "The Wall Drake",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 11.0,
+    "dmg_mult": 2.1,
+    "delay": 3.2,
+    "move_speed": 5.0,
+    "height_m": 6.5,
+    "radius_m": 3.25,
+    "drops": [
+      {
+        "item": "slate_scale",
+        "chance": 1.0
+      },
+      {
+        "item": "crag_feather",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      420,
+      720
+    ],
+    "boss": true
+  },
+  "watch_sentinel": {
+    "name": "Watch Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 5.6,
+    "dmg_mult": 2.0,
+    "delay": 3.4,
+    "move_speed": 3.8,
+    "height_m": 2.6,
+    "radius_m": 0.65,
+    "drops": [
+      {
+        "item": "watch_ledger",
+        "chance": 0.4
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      52,
+      104
+    ]
+  },
+  "beacon_wisp": {
+    "name": "Beacon Wisp",
+    "family": "spirit",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 2.8,
+    "dmg_mult": 1.9,
+    "delay": 2.4,
+    "move_speed": 6.4,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "ice_crystal",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      36,
+      72
+    ],
+    "evasive": true,
+    "undead": true
+  },
+  "the_wall_warden": {
+    "name": "The Wall-Warden",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 15.0,
+    "dmg_mult": 2.2,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 6.0,
+    "radius_m": 1.4,
+    "drops": [
+      {
+        "item": "wardens_seal",
+        "chance": 1.0
+      },
+      {
+        "item": "regents_reply",
+        "chance": 1.0
+      },
+      {
+        "item": "tideglass_staff",
+        "chance": 0.35
+      },
+      {
+        "item": "wardens_trident",
+        "chance": 0.35
+      },
+      {
+        "item": "waterline_locket",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      760,
+      1240
+    ],
+    "boss": true,
+    "caster": true
+  },
+  "ash_beast": {
+    "name": "Ash Beast",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 5.2,
+    "dmg_mult": 2.0,
+    "delay": 2.6,
+    "move_speed": 6.4,
+    "height_m": 1.5,
+    "radius_m": 0.6,
+    "drops": [
+      {
+        "item": "ash_pelt",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      50,
+      100
+    ]
+  },
+  "cinder_hound": {
+    "name": "Cinder Hound",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 4.6,
+    "dmg_mult": 2.0,
+    "delay": 2.4,
+    "move_speed": 6.6,
+    "height_m": 1.3,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "ember_shard",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      46,
+      92
+    ]
+  },
+  "glass_drake": {
+    "name": "Glass Drake",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 6.0,
+    "dmg_mult": 2.2,
+    "delay": 2.9,
+    "move_speed": 5.4,
+    "height_m": 2.3,
+    "radius_m": 1.0,
+    "drops": [
+      {
+        "item": "glassed_bark",
+        "chance": 0.4
+      },
+      {
+        "item": "ember_shard",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      64,
+      128
+    ]
+  },
+  "ember_slime": {
+    "name": "Ember Slime",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 4.2,
+    "dmg_mult": 2.0,
+    "delay": 3.0,
+    "move_speed": 3.4,
+    "height_m": 1.2,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "ember_shard",
+        "chance": 0.45
+      }
+    ],
+    "gold": [
+      44,
+      88
+    ],
+    "inflicts": {
+      "kind": "poison",
+      "chance": 0.35,
+      "dmg": 6,
+      "dur": 10
+    }
+  },
+  "scorch_sentinel": {
+    "name": "Scorch Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 7.0,
+    "dmg_mult": 2.3,
+    "delay": 3.4,
+    "move_speed": 3.9,
+    "height_m": 2.7,
+    "radius_m": 0.65,
+    "drops": [
+      {
+        "item": "sentinel_plate",
+        "chance": 0.5
+      },
+      {
+        "item": "oil_flask",
+        "chance": 0.3
+      }
+    ],
+    "gold": [
+      70,
+      140
+    ]
+  },
+  "ash_giant": {
+    "name": "Ash Giant",
+    "family": "beast",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 9.0,
+    "dmg_mult": 2.5,
+    "delay": 3.6,
+    "move_speed": 4.2,
+    "height_m": 4.0,
+    "radius_m": 1.2,
+    "drops": [
+      {
+        "item": "giants_tooth",
+        "chance": 0.3
+      },
+      {
+        "item": "ash_pelt",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      90,
+      180
+    ]
+  },
+  "pyre_vulture": {
+    "name": "Pyre Vulture",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 4.4,
+    "dmg_mult": 2.1,
+    "delay": 2.8,
+    "move_speed": 5.2,
+    "height_m": 1.4,
+    "radius_m": 0.5,
+    "drops": [
+      {
+        "item": "glassed_bark",
+        "chance": 0.3
+      },
+      {
+        "item": "hi_potion",
+        "chance": 0.25
+      }
+    ],
+    "gold": [
+      54,
+      108
+    ]
+  },
+  "the_glassed_stag": {
+    "name": "The Glassed Stag",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 13.0,
+    "dmg_mult": 2.4,
+    "delay": 3.0,
+    "move_speed": 6.0,
+    "height_m": 6.5,
+    "radius_m": 2.25,
+    "drops": [
+      {
+        "item": "stag_glass",
+        "chance": 1.0
+      },
+      {
+        "item": "glassed_bark",
+        "chance": 1.0
+      },
+      {
+        "item": "abbots_ember",
+        "chance": 0.5
+      },
+      {
+        "item": "furnace_horn",
+        "chance": 0.5
+      }
+    ],
+    "gold": [
+      520,
+      900
+    ],
+    "boss": true
+  },
+  "beacon_sentinel": {
+    "name": "Beacon Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 7.4,
+    "dmg_mult": 2.4,
+    "delay": 3.4,
+    "move_speed": 3.9,
+    "height_m": 2.7,
+    "radius_m": 0.65,
+    "drops": [
+      {
+        "item": "oil_flask",
+        "chance": 0.4
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      76,
+      152
+    ]
+  },
+  "oil_wisp": {
+    "name": "Oil Wisp",
+    "family": "spirit",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 4.6,
+    "dmg_mult": 2.3,
+    "delay": 2.4,
+    "move_speed": 6.4,
+    "height_m": 1.3,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "oil_flask",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      56,
+      112
+    ],
+    "evasive": true,
+    "undead": true
+  },
+  "char_hound": {
+    "name": "Char Hound",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 5.4,
+    "dmg_mult": 2.2,
+    "delay": 2.4,
+    "move_speed": 6.6,
+    "height_m": 1.3,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "ember_shard",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      56,
+      112
+    ]
+  },
+  "the_beacon_keeper": {
+    "name": "The Beacon-Keeper",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 17.0,
+    "dmg_mult": 2.5,
+    "delay": 3.4,
+    "move_speed": 4.0,
+    "height_m": 6.0,
+    "radius_m": 1.6,
+    "drops": [
+      {
+        "item": "beacon_log",
+        "chance": 1.0
+      },
+      {
+        "item": "keepers_lamp",
+        "chance": 1.0
+      },
+      {
+        "item": "forgemothers_iron",
+        "chance": 1.0
+      },
+      {
+        "item": "abbots_maul",
+        "chance": 0.35
+      },
+      {
+        "item": "cinderplate_cuirass",
+        "chance": 0.35
+      }
+    ],
+    "gold": [
+      900,
+      1500
+    ],
+    "boss": true,
+    "caster": true,
+    "inflicts": {
+      "kind": "blind",
+      "chance": 0.35
+    }
+  },
+  "household_guard": {
+    "name": "Household Guard",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 8.0,
+    "dmg_mult": 2.5,
+    "delay": 3.2,
+    "move_speed": 4.2,
+    "height_m": 2.6,
+    "radius_m": 0.65,
+    "drops": [
+      {
+        "item": "household_key",
+        "chance": 0.4
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      90,
+      180
+    ]
+  },
+  "ward_hound": {
+    "name": "Ward Hound",
+    "family": "beast",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 6.0,
+    "dmg_mult": 2.4,
+    "delay": 2.4,
+    "move_speed": 6.8,
+    "height_m": 1.3,
+    "radius_m": 0.55,
+    "drops": [
+      {
+        "item": "household_key",
+        "chance": 0.2
+      },
+      {
+        "item": "lastlight_trews",
+        "chance": 0.05
+      }
+    ],
+    "gold": [
+      70,
+      140
+    ]
+  },
+  "archive_wisp": {
+    "name": "Archive Wisp",
+    "family": "spirit",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 5.6,
+    "dmg_mult": 2.5,
+    "delay": 2.4,
+    "move_speed": 6.4,
+    "height_m": 1.4,
+    "radius_m": 0.4,
+    "drops": [
+      {
+        "item": "archive_minute",
+        "chance": 0.4
+      }
+    ],
+    "gold": [
+      76,
+      152
+    ],
+    "evasive": true,
+    "undead": true
+  },
+  "palace_sentinel": {
+    "name": "Palace Sentinel",
+    "family": "construct",
+    "aggressive": true,
+    "links": true,
+    "hp_mult": 10.0,
+    "dmg_mult": 2.7,
+    "delay": 3.4,
+    "move_speed": 3.9,
+    "height_m": 3.0,
+    "radius_m": 0.7,
+    "drops": [
+      {
+        "item": "palace_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "sentinel_plate",
+        "chance": 0.4
+      },
+      {
+        "item": "firstward_chausses",
+        "chance": 0.06
+      }
+    ],
+    "gold": [
+      110,
+      220
+    ]
+  },
+  "the_regent": {
+    "name": "The Regent",
+    "family": "boss",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 24.0,
+    "dmg_mult": 3.0,
+    "delay": 3.2,
+    "move_speed": 4.4,
+    "height_m": 5.5,
+    "radius_m": 1.3,
+    "drops": [
+      {
+        "item": "regents_minutes",
+        "chance": 1.0
+      },
+      {
+        "item": "the_last_keys",
+        "chance": 1.0
+      },
+      {
+        "item": "gloamheart_blade",
+        "chance": 0.35
+      },
+      {
+        "item": "griefpetal_locket",
+        "chance": 1.0
+      }
+    ],
+    "gold": [
+      2000,
+      3000
+    ],
+    "boss": true,
+    "caster": true
+  },
+  "nm_gates_cd": {
+    "name": "The Gate-Marshal",
+    "family": "construct",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 13.0,
+    "dmg_mult": 2.4,
+    "delay": 3.4,
+    "move_speed": 4.2,
+    "height_m": 5.5,
+    "radius_m": 1.45,
+    "drops": [],
+    "gold": [
+      560,
+      960
+    ],
+    "notorious": true
+  },
+  "nm_gates_hw": {
+    "name": "The Proclaimer",
+    "family": "construct",
+    "aggressive": false,
+    "links": false,
+    "hp_mult": 14.0,
+    "dmg_mult": 2.5,
+    "delay": 3.2,
+    "move_speed": 4.4,
+    "height_m": 5.5,
+    "radius_m": 1.5,
+    "notorious": true,
+    "drops": [],
+    "gold": [
+      600,
+      1000
+    ]
+  },
+  "nm_gates_mm": {
+    "name": "The Sealing Clerk",
+    "family": "construct",
+    "aggressive": true,
+    "links": false,
+    "hp_mult": 14.0,
+    "dmg_mult": 2.5,
+    "delay": 3.2,
+    "move_speed": 4.4,
+    "height_m": 5.5,
+    "radius_m": 1.3,
+    "notorious": true,
+    "drops": [],
+    "gold": [
+      600,
+      1000
+    ]
+  }
+}

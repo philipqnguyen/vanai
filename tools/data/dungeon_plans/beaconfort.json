@@ -1,0 +1,531 @@
+{
+  "key": "beaconfort",
+  "format": 1,
+  "notes": "The Beacon Fort, rebuilt 2026-10-11 (tmp/dungeons/beaconfort/RESULT.md). One route: the Gate Yard, the Gatehouse, the Ash-Dusted Court (the bailey), west through the Guard Hall and the Oil Stores, up the walled Oil Stair to the Wardens' Cells on the ridge, along the Wall Walk to the Beacon Stair Terrace (the cold beacon, the mid set-piece), up the Great Stair to the Beacon Chamber (the boss) and the live beacon on its dais. The east wing (Ash Cellar, Signal Room) is a side branch. Edit this, then `dungeon_plan.py write beaconfort`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "Gate Yard",
+        "x": -2,
+        "z": -11,
+        "w": 5,
+        "d": 3,
+        "kind": "yard",
+        "y": 0,
+        "open": true
+      },
+      {
+        "id": "gatehouse",
+        "name": "The Gatehouse",
+        "x": -1,
+        "z": -8,
+        "w": 3,
+        "d": 3,
+        "kind": "gate",
+        "y": 0,
+        "ceiling": 10
+      },
+      {
+        "id": "court",
+        "name": "Ash-Dusted Court",
+        "x": -6,
+        "z": -5,
+        "w": 13,
+        "d": 11,
+        "kind": "court",
+        "y": 0,
+        "open": true
+      },
+      {
+        "id": "guard",
+        "name": "Guard Hall",
+        "x": -16,
+        "z": -4,
+        "w": 7,
+        "d": 6,
+        "kind": "guard",
+        "y": 0,
+        "ceiling": 10
+      },
+      {
+        "id": "oil",
+        "name": "Oil Stores",
+        "x": -16,
+        "z": 4,
+        "w": 7,
+        "d": 5,
+        "kind": "oil",
+        "y": 0,
+        "ceiling": 10
+      },
+      {
+        "id": "ash",
+        "name": "Ash Cellar",
+        "x": 10,
+        "z": -4,
+        "w": 7,
+        "d": 6,
+        "kind": "ash",
+        "y": 0,
+        "ceiling": 10
+      },
+      {
+        "id": "signal",
+        "name": "Signal Room",
+        "x": 10,
+        "z": 4,
+        "w": 7,
+        "d": 5,
+        "kind": "signal",
+        "y": 0,
+        "ceiling": 10
+      },
+      {
+        "id": "cells",
+        "name": "Wardens’ Cells",
+        "x": -16,
+        "z": 14,
+        "w": 7,
+        "d": 5,
+        "kind": "cells",
+        "y": 8,
+        "ceiling": 10
+      },
+      {
+        "id": "ridge",
+        "name": "Beacon Stair Terrace",
+        "x": -4,
+        "z": 8,
+        "w": 9,
+        "d": 9,
+        "kind": "ridge",
+        "y": 8,
+        "open": true
+      },
+      {
+        "id": "beacon",
+        "name": "Beacon Chamber",
+        "x": -3,
+        "z": 23,
+        "w": 7,
+        "d": 9,
+        "kind": "beacon",
+        "y": 16,
+        "open": true
+      }
+    ],
+    "corridors": [
+      [
+        [
+          -6,
+          -1
+        ],
+        [
+          -10,
+          -1
+        ]
+      ],
+      [
+        [
+          6,
+          -1
+        ],
+        [
+          10,
+          -1
+        ]
+      ],
+      [
+        [
+          -13,
+          1
+        ],
+        [
+          -13,
+          4
+        ]
+      ],
+      [
+        [
+          13,
+          1
+        ],
+        [
+          13,
+          4
+        ]
+      ],
+      {
+        "points": [
+          [
+            -14,
+            8
+          ],
+          [
+            -14,
+            14
+          ]
+        ],
+        "open": true,
+        "name": "The Oil Stair"
+      },
+      {
+        "points": [
+          [
+            -13,
+            8
+          ],
+          [
+            -13,
+            14
+          ]
+        ],
+        "open": true,
+        "name": "The Oil Stair"
+      },
+      {
+        "points": [
+          [
+            -10,
+            16
+          ],
+          [
+            -4,
+            16
+          ]
+        ],
+        "y": 8,
+        "open": true,
+        "name": "The Wall Walk"
+      },
+      {
+        "points": [
+          [
+            -1,
+            16
+          ],
+          [
+            -1,
+            23
+          ]
+        ],
+        "open": true,
+        "name": "The Great Stair"
+      },
+      {
+        "points": [
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            23
+          ]
+        ],
+        "open": true,
+        "name": "The Great Stair"
+      },
+      {
+        "points": [
+          [
+            1,
+            16
+          ],
+          [
+            1,
+            23
+          ]
+        ],
+        "open": true,
+        "name": "The Great Stair"
+      }
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    },
+    "obstacles": [
+      {
+        "x": 0,
+        "z": 11,
+        "w": 1,
+        "d": 1
+      },
+      {
+        "x": -1,
+        "z": 31,
+        "w": 3,
+        "d": 1
+      }
+    ]
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "Beacon ridge ascent",
+      "yaw": 0,
+      "floors": [
+        0,
+        8,
+        16,
+        18
+      ],
+      "decks": [
+        {
+          "derive": "cells"
+        },
+        {
+          "cx": 0.0,
+          "cz": 122.0,
+          "hx": 14.0,
+          "hz": 4.0,
+          "sin": 0,
+          "cos": 1,
+          "y": 18,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": -54,
+          "z0": 34,
+          "y0": 0,
+          "x1": -54,
+          "z1": 54,
+          "y1": 8,
+          "half": 3.1
+        },
+        {
+          "x0": 0,
+          "z0": 66,
+          "y0": 8,
+          "x1": 0,
+          "z1": 90,
+          "y1": 16,
+          "half": 5.1
+        },
+        {
+          "x0": -4,
+          "z0": 112,
+          "y0": 16,
+          "x1": -4,
+          "z1": 118,
+          "y1": 18,
+          "half": 1.8
+        },
+        {
+          "x0": 4,
+          "z0": 112,
+          "y0": 16,
+          "x1": 4,
+          "z1": 118,
+          "y1": 18,
+          "half": 1.8
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout",
+        "raise": [
+          {
+            "x": -3,
+            "z": 30,
+            "w": 7,
+            "d": 2,
+            "y": 18
+          }
+        ]
+      }
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -37.5
+  },
+  "portals": [
+    {
+      "id": "bf_door",
+      "name": "The Beacon Fort's Door",
+      "x": 0,
+      "z": -42.7,
+      "to": "burnedland",
+      "tx": 238,
+      "tz": -48,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.2
+      }
+    },
+    {
+      "id": "bf_out",
+      "name": "The Beacon's Way Out",
+      "x": 10,
+      "z": 122,
+      "y": 18,
+      "to": "burnedland",
+      "tx": 238,
+      "tz": -48,
+      "site": "raised_chamber",
+      "floor": 3,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.2,
+        "floor": 0.02
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_bf_guard",
+      "name": "The Guard Hall",
+      "x": -52,
+      "z": -6,
+      "xp": 120
+    },
+    {
+      "id": "lm_bf_stair",
+      "name": "The Beacon Stair",
+      "x": 0,
+      "z": 62,
+      "xp": 120
+    },
+    {
+      "id": "lm_bf_beacon",
+      "name": "The Beacon Chamber",
+      "x": 0,
+      "z": 108,
+      "xp": 200
+    },
+    {
+      "id": "lm_bf_court",
+      "name": "The Ash-Dusted Court",
+      "x": 2,
+      "z": 2,
+      "xp": 120
+    },
+    {
+      "id": "lm_bf_cells",
+      "name": "The Wardens' Cells",
+      "x": -50,
+      "z": 66,
+      "xp": 100
+    }
+  ],
+  "interactables": [
+    {
+      "id": "beacon_log_stand",
+      "name": "The Beacon Log",
+      "x": -10,
+      "z": 122,
+      "idle_msg": "The beacon log, open on its stand at the last page. The final entry, in a calm hand: 'The household departs at the appointed hour. Lit at the signal. The fire faced outward, as instructed. The fire is ours.'",
+      "active_msg": "You take the last page. As instructed: somebody wrote the instruction, and the beacon followed it.",
+      "prop": "ledger_stand",
+      "y": 18,
+      "site": "raised_chamber",
+      "floor": 3
+    }
+  ],
+  "camps": [
+    {
+      "monster": "char_hound",
+      "min_lvl": 40,
+      "max_lvl": 41,
+      "count": 3,
+      "x": -6,
+      "z": -8,
+      "radius": 6,
+      "respawn": 40
+    },
+    {
+      "monster": "char_hound",
+      "min_lvl": 40,
+      "max_lvl": 41,
+      "count": 2,
+      "x": -52,
+      "z": -6,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "ember_slime",
+      "min_lvl": 40,
+      "max_lvl": 41,
+      "count": 2,
+      "x": 46,
+      "z": -8,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "ember_slime",
+      "min_lvl": 40,
+      "max_lvl": 41,
+      "count": 2,
+      "x": 58,
+      "z": 0,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "oil_wisp",
+      "min_lvl": 41,
+      "max_lvl": 42,
+      "count": 3,
+      "x": -56,
+      "z": 22,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "oil_wisp",
+      "min_lvl": 41,
+      "max_lvl": 42,
+      "count": 2,
+      "x": -46,
+      "z": 28,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "cinder_chorister",
+      "min_lvl": 40,
+      "max_lvl": 41,
+      "count": 3,
+      "x": -52,
+      "z": 64,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "beacon_sentinel",
+      "min_lvl": 42,
+      "max_lvl": 43,
+      "count": 3,
+      "x": 0,
+      "z": 58,
+      "radius": 5,
+      "respawn": 45
+    },
+    {
+      "monster": "beacon_sentinel",
+      "min_lvl": 43,
+      "max_lvl": 44,
+      "count": 3,
+      "x": 0,
+      "z": 96,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "the_beacon_keeper",
+      "min_lvl": 44,
+      "max_lvl": 44,
+      "count": 1,
+      "x": 0,
+      "z": 108,
+      "radius": 3,
+      "respawn": 900
+    }
+  ]
+}

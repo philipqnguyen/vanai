@@ -1,0 +1,60 @@
+# The two halves' checks on every push and pull request. Neither job has the
+# character runtime (ASSETS.md), so the client runs the tests that do not read
+# it (`npm run test:no-runtime`); the full `npm test` needs VANAI_RUNTIME.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      # database.yml leaves host and role to libpq, which reads these
+      PGHOST: localhost
+      PGUSER: postgres
+      PGPASSWORD: postgres
+    defaults:
+      run:
+        working-directory: server
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libvips
+      - uses: ruby/setup-ruby@v1
+        with:
+          working-directory: server
+          bundler-cache: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # setup, bundler-audit, the shared/data audit, every server test
+      - run: bin/ci
+
+  client:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: client
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+          cache-dependency-path: client/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - run: npm run test:no-runtime

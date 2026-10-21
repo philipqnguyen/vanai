@@ -1,0 +1,47 @@
+{
+ "file": "creatures/eel.glb",
+ "plan": "fish",
+ "height": 1.243,
+ "length": 1.823,
+ "width": 0.908,
+ "top": 1.243,
+ "minY": -0.01,
+ "groundY": -0.01,
+ "forward": -0.245,
+ "tris": [
+  3400,
+  1008
+ ],
+ "budget": 4200,
+ "bones": 12,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.0,
+  "Run": 0.6,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 2.0,
+  "Run": 5.0
+ },
+ "bytes": 283244,
+ "held": [],
+ "groundLift": {},
+ "notes": "the eel look: reared from a coil on the ground, a fin the whole length; the leech is its banded variant",
+ "role": "common",
+ "variants": {
+  "fen_leech": {
+   "atlas": "creatures/eel@fen_leech.ktx2",
+   "bytes": 67282
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/fish.py",
+ "fast": false
+}

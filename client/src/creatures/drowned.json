@@ -1,0 +1,51 @@
+{
+ "file": "creatures/drowned.glb",
+ "plan": "husk",
+ "height": 1.771,
+ "length": 0.577,
+ "width": 0.682,
+ "top": 1.771,
+ "minY": -0.0045,
+ "groundY": -0.0045,
+ "forward": 0.038,
+ "tris": [
+  3820,
+  1135
+ ],
+ "budget": 4200,
+ "bones": 20,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.318,
+  "Run": 0.76,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2
+ },
+ "speeds": {
+  "Walk": 1.217,
+  "Run": 3.244
+ },
+ "bytes": 442432,
+ "held": [],
+ "groundLift": {
+  "Death": 0.158
+ },
+ "notes": "the drowned look: wet hair over the face, a torn habit, weed, a cold light in the breast",
+ "role": "common",
+ "variants": {
+  "shrine_wight": {
+   "atlas": "creatures/drowned@shrine_wight.ktx2",
+   "bytes": 104638,
+   "mr": "creatures/drowned@shrine_wight_mr.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/husk.py",
+ "fast": false
+}

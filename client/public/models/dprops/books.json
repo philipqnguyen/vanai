@@ -1,0 +1,366 @@
+{
+ "pack": "books",
+ "props": {
+  "bookcase": {
+   "pack": "books",
+   "min": [
+    -0.87,
+    0,
+    -0.23
+   ],
+   "max": [
+    0.87,
+    2.43,
+    0.23
+   ],
+   "tris": 2657,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "lodge": "#c4b0a0",
+    "furnace": "#b4a698"
+   }
+  },
+  "bookcase_narrow": {
+   "pack": "books",
+   "min": [
+    -0.73,
+    0,
+    -0.23
+   ],
+   "max": [
+    0.73,
+    2.54,
+    0.23
+   ],
+   "tris": 2737,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "lodge": "#d0c0b0",
+    "furnace": "#b8aa9c"
+   }
+  },
+  "lectern": {
+   "pack": "books",
+   "min": [
+    -0.25,
+    0,
+    -0.25
+   ],
+   "max": [
+    0.25,
+    1.384,
+    0.25
+   ],
+   "tris": 872,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "lodge": "#d0c0b0"
+   }
+  },
+  "shelf_wall": {
+   "pack": "books",
+   "min": [
+    -0.98,
+    0,
+    -0.17
+   ],
+   "max": [
+    0.997,
+    2.02,
+    0.176
+   ],
+   "tris": 3865,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "furnace": "#b0a294"
+   }
+  },
+  "shelf_bottles": {
+   "pack": "books",
+   "min": [
+    -0.56,
+    0,
+    -0.12
+   ],
+   "max": [
+    0.56,
+    0.64,
+    0.12
+   ],
+   "tris": 2380,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "sword_rest": {
+   "pack": "books",
+   "min": [
+    -0.635,
+    0,
+    -0.11
+   ],
+   "max": [
+    0.58,
+    0.383,
+    0.11
+   ],
+   "tris": 844,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "page_stack": {
+   "pack": "books",
+   "min": [
+    -0.153,
+    0,
+    -0.17
+   ],
+   "max": [
+    0.17,
+    0.155,
+    0.181
+   ],
+   "tris": 454,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "pages_loose": {
+   "pack": "books",
+   "min": [
+    -0.268,
+    0,
+    -0.242
+   ],
+   "max": [
+    0.309,
+    0.065,
+    0.222
+   ],
+   "tris": 144,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "scroll": {
+   "pack": "books",
+   "min": [
+    -0.151,
+    0,
+    -0.036
+   ],
+   "max": [
+    0.151,
+    0.06,
+    0.031
+   ],
+   "tris": 356,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  }
+ },
+ "swap": {
+  "props/Bookcase_1.gltf": {
+   "to": "bookcase",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.87,
+     0.012,
+     -0.206
+    ],
+    "max": [
+     0.87,
+     2.443,
+     0.208
+    ]
+   }
+  },
+  "props/Bookcase_2.gltf": {
+   "to": "bookcase_narrow",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.731,
+     -0.017,
+     -0.214
+    ],
+    "max": [
+     0.731,
+     2.527,
+     0.214
+    ]
+   }
+  },
+  "props/BookStand.gltf": {
+   "to": "lectern",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.253,
+     -0.002,
+     -0.256
+    ],
+    "max": [
+     0.254,
+     1.444,
+     0.256
+    ]
+   }
+  },
+  "dungeon/shelves.glb": {
+   "to": "shelf_wall",
+   "dyaw": 3.141592653589793,
+   "offset": [
+    0,
+    0,
+    0.06
+   ],
+   "from": {
+    "min": [
+     -1,
+     0.75,
+     0.25
+    ],
+    "max": [
+     1,
+     2.7,
+     0.75
+    ]
+   }
+  },
+  "props/Shelf_Small_Bottles.gltf": {
+   "to": "shelf_bottles",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.569,
+     -0.019,
+     0.01
+    ],
+    "max": [
+     0.568,
+     0.628,
+     0.295
+    ]
+   }
+  },
+  "props/Shelf_Sword.gltf": {
+   "to": "sword_rest",
+   "dyaw": 3.141592653589793,
+   "offset": [
+    0,
+    0.126,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.474,
+     -0.097,
+     -0.009
+    ],
+    "max": [
+     0.474,
+     0.174,
+     0.196
+    ]
+   }
+  },
+  "props/Page_Stack_Large.gltf": {
+   "to": "page_stack",
+   "fit": "footprint",
+   "offset": [
+    0,
+    0.013,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.146,
+     -0.013,
+     -0.162
+    ],
+    "max": [
+     0.171,
+     0.105,
+     0.167
+    ]
+   }
+  },
+  "props/Page_Stack_Small.gltf": {
+   "to": "pages_loose",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.235,
+     0,
+     -0.293
+    ],
+    "max": [
+     0.297,
+     0.013,
+     0.118
+    ]
+   }
+  },
+  "props/Parchment.gltf": {
+   "to": "pages_loose",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.115,
+     -0.002,
+     -0.131
+    ],
+    "max": [
+     0.123,
+     0.047,
+     0.13
+    ]
+   }
+  },
+  "props/Scroll_1.gltf": {
+   "to": "scroll",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.121,
+     0.001,
+     -0.025
+    ],
+    "max": [
+     0.123,
+     0.06,
+     0.038
+    ]
+   }
+  },
+  "props/Scroll_2.gltf": {
+   "to": "scroll",
+   "fit": "footprint",
+   "scale": 0.85,
+   "from": {
+    "min": [
+     -0.113,
+     0,
+     -0.025
+    ],
+    "max": [
+     0.12,
+     0.059,
+     0.038
+    ]
+   }
+  }
+ }
+}

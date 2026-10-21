@@ -1,0 +1,51 @@
+{
+ "file": "creatures/the_lock_keeper.glb",
+ "plan": "sentinel",
+ "height": 4.889,
+ "length": 1.8,
+ "width": 2.671,
+ "top": 4.889,
+ "minY": -0.164,
+ "groundY": 0.004,
+ "forward": -0.006,
+ "tris": [
+  10952,
+  3284
+ ],
+ "budget": 12000,
+ "bones": 20,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.589,
+  "Run": 0.761,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.833,
+  "Run": 6.0
+ },
+ "bytes": 977280,
+ "held": [
+  [
+   10169,
+   11691
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.082
+ },
+ "notes": "The Lock-Keeper: the Canal Works' boss -- oilskin and sou'wester over plate, weed at the joints, a key the size of a paddle",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_lock_keeper.py",
+ "fast": false
+}

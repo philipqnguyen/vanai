@@ -1,0 +1,48 @@
+{
+ "file": "creatures/dancer.glb",
+ "plan": "wisp",
+ "height": 2.074,
+ "length": 1.086,
+ "width": 1.212,
+ "top": 2.074,
+ "minY": -0.0145,
+ "groundY": -0.0145,
+ "forward": 0.007,
+ "tris": [
+  3900,
+  1170
+ ],
+ "budget": 4200,
+ "bones": 25,
+ "atlas": 512,
+ "emissive": true,
+ "mr": false,
+ "clips": {
+  "Idle": 4.5,
+  "Walk": 2.4,
+  "Run": 1.2,
+  "Attack_A": 1.2,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.5,
+  "Cast": 3.6
+ },
+ "speeds": {
+  "Walk": 2.0,
+  "Run": 4.4
+ },
+ "bytes": 418908,
+ "held": [
+  [
+   3064,
+   3162
+  ]
+ ],
+ "groundLift": {},
+ "notes": "the dancer look: a waltzing pair of empty gowns, a light in each collar, a dance card",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/wisp.py",
+ "fast": false
+}

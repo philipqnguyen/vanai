@@ -1,0 +1,38 @@
+{
+ "about": "The Capital facade sheet: cl_stone, cl_fabric and cl_glass stacked into one -- written by tools/assets/paint_capital_textures.py (capital_atlas.FACADE); do not edit by hand.",
+ "file": "cl_facade.jpg",
+ "glow": {
+  "e": "cl_facade_glow_e.png",
+  "r": "cl_facade_glow_r.png"
+ },
+ "rough": "cl_facade_rough.png",
+ "size": [
+  2048,
+  3072
+ ],
+ "uv": {
+  "stone": [
+   1.0,
+   0.0,
+   0.6666666666666666,
+   0.0
+  ],
+  "fabric": [
+   0.5,
+   0.0,
+   0.3333333333333333,
+   0.6666666666666666
+  ],
+  "glass": [
+   0.5,
+   0.5,
+   0.16666666666666666,
+   0.765625
+  ]
+ },
+ "roughness": {
+  "stone": 0.9,
+  "fabric": 0.7,
+  "glass": 0.12
+ }
+}

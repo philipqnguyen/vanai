@@ -1,0 +1,51 @@
+{
+  "PLD": {
+    "name": "Paladin", "role": "tank", "weapon_type": "sword", "armor": ["cloth", "leather", "chain"],
+    "hp_per_level": 24, "mp_per_level": 6,
+    "base": { "str": 8, "vit": 10, "int": 5, "mnd": 7, "agi": 6 },
+    "growth": { "str": 2.0, "vit": 2.6, "int": 0.8, "mnd": 1.6, "agi": 1.2 },
+    "desc": "Sword, shield, and an oath. Holds the line and the monster's hate."
+  },
+  "SAM": {
+    "name": "Samurai", "role": "tank", "weapon_type": "katana", "armor": ["cloth", "leather", "chain"],
+    "hp_per_level": 22, "mp_per_level": 3,
+    "base": { "str": 9, "vit": 8, "int": 4, "mnd": 5, "agi": 9 },
+    "growth": { "str": 2.4, "vit": 2.2, "int": 0.6, "mnd": 1.0, "agi": 1.8 },
+    "desc": "A duelist's tank: posture and parry over shield and wall."
+  },
+  "DRK": {
+    "name": "Dark Knight", "role": "damage", "weapon_type": "greatsword", "armor": ["cloth", "leather", "chain"],
+    "hp_per_level": 19, "mp_per_level": 5,
+    "base": { "str": 11, "vit": 6, "int": 7, "mnd": 4, "agi": 7 },
+    "growth": { "str": 2.8, "vit": 1.5, "int": 1.6, "mnd": 0.6, "agi": 1.6 },
+    "desc": "Greatsword and forbidden arts. Spends blood for power."
+  },
+  "BLM": {
+    "name": "Black Mage", "role": "damage", "weapon_type": "staff", "armor": ["cloth"],
+    "hp_per_level": 13, "mp_per_level": 12,
+    "base": { "str": 4, "vit": 5, "int": 12, "mnd": 7, "agi": 6 },
+    "growth": { "str": 0.8, "vit": 1.0, "int": 2.9, "mnd": 1.4, "agi": 1.2 },
+    "desc": "Glass cannon with a death wish. Owns the burst window."
+  },
+  "WHM": {
+    "name": "White Mage", "role": "healer", "weapon_type": "cudgel", "armor": ["cloth", "leather"],
+    "hp_per_level": 15, "mp_per_level": 11,
+    "base": { "str": 5, "vit": 6, "int": 7, "mnd": 12, "agi": 5 },
+    "growth": { "str": 1.0, "vit": 1.3, "int": 1.2, "mnd": 2.8, "agi": 1.0 },
+    "desc": "The traditional healer: great heals, protective spells, the final say over who lives."
+  },
+  "MNK": {
+    "name": "Monk", "role": "healer", "weapon_type": "handwraps", "armor": ["cloth", "leather"],
+    "hp_per_level": 18, "mp_per_level": 9,
+    "base": { "str": 7, "vit": 7, "int": 5, "mnd": 10, "agi": 8 },
+    "growth": { "str": 1.6, "vit": 1.6, "int": 0.8, "mnd": 2.2, "agi": 1.6 },
+    "desc": "A battle-chanter: quick heals, mending-over-time, breath returned to the party."
+  },
+  "races": {
+    "aedri":   { "name": "Aedri", "playable": true,   "mods": { "str": 1.0,  "vit": 1.0,  "int": 1.0,  "mnd": 1.0,  "agi": 1.0  }, "hp_mod": 1.0,  "mp_mod": 1.0,  "desc": "Humankind. Balanced in all things, fearless in exactly the wrong ways." },
+    "valdren": { "name": "Valdren", "playable": true, "mods": { "str": 0.95, "vit": 0.92, "int": 1.08, "mnd": 1.08, "agi": 1.05 }, "hp_mod": 0.95, "mp_mod": 1.1,  "desc": "The tall folk of Heartwood. Silver-eyed, long-lived, keen of mind." },
+    "karrog":  { "name": "Karrog", "playable": true,  "mods": { "str": 1.1,  "vit": 1.12, "int": 0.9,  "mnd": 0.95, "agi": 0.88 }, "hp_mod": 1.12, "mp_mod": 0.85, "desc": "The stone-patient. They outwaited the border; they will outwait the Return." },
+    "nym":     { "name": "Nym", "playable": true,     "mods": { "str": 0.85, "vit": 0.9,  "int": 1.12, "mnd": 1.1,  "agi": 1.06 }, "hp_mod": 0.88, "mp_mod": 1.18, "desc": "Small deerfolk with delicate antlers and broad, rounded ears." },
+    "rasha":   { "name": "Rasha", "playable": true, "mods": { "str": 1.05, "vit": 0.95, "int": 0.95, "mnd": 0.95, "agi": 1.12 }, "hp_mod": 0.98, "mp_mod": 0.95, "desc": "The foxfolk exiles. Sharp-sensed hunters; they heard the gates before anyone saw them." }
+  }
+}

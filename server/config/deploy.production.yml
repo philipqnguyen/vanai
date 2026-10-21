@@ -1,0 +1,45 @@
+# The production destination: `bin/kamal deploy -d production`.
+#
+# Kamal deep-merges this file over config/deploy.yml for -d production only.
+# Where a setting belongs:
+#
+#   config/deploy.yml          what every destination shares
+#   .env.production (root)     what differs per server or operator: host,
+#                              domain, registry, secrets
+#   this file                  what production does differently that isn't
+#                              secret -- nothing yet
+#
+# For example, more Puma threads and debug logging in production only (replace
+# the {} below with this):
+#
+#   env:
+#     clear:
+#       RAILS_MAX_THREADS: 8
+#       RAILS_LOG_LEVEL: debug
+#
+# Hashes merge key by key: the example changes those two settings and keeps every
+# other env.clear value from deploy.yml. Lists are replaced whole: setting
+# env.secret here means listing every secret again, not only the new one.
+#
+# Another destination is another pair, e.g. config/deploy.staging.yml and
+# .env.staging, deployed with -d staging. On its own server it needs nothing more.
+# On this one it must give the accessories their own names and ports --
+# accessories are named without the destination (vanai-db), so it would otherwise
+# take over production's database -- and point DB_HOST and the REDIS_*_URL
+# settings at them:
+#
+#   accessories:
+#     db:
+#       service: vanai-staging-db
+#       port: "127.0.0.1:5433:5432"
+#   env:
+#     clear:
+#       DB_HOST: vanai-staging-db
+#
+# Don't rename a destination that is running: Kamal puts it into container and
+# proxy service names (vanai-web-production), so a new name boots a second web
+# container -- a second world -- beside the first.
+#
+# The file must exist for -d production, and YAML with only comments is empty,
+# which Kamal can't merge: hence the {}.
+{}

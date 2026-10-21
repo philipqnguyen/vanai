@@ -1,0 +1,97 @@
+{
+ "file": "creatures/drake.glb",
+ "plan": "reptile",
+ "height": 1.872,
+ "length": 3.596,
+ "width": 0.701,
+ "top": 1.872,
+ "minY": 0.005,
+ "groundY": 0.005,
+ "forward": -0.311,
+ "tris": [
+  4085,
+  1184
+ ],
+ "budget": 4200,
+ "bones": 27,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.78,
+  "Run": 0.5,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 2.2,
+  "Run": 5.6
+ },
+ "bytes": 461336,
+ "held": [],
+ "groundLift": {
+  "Death": 0.184
+ },
+ "notes": "the drake look: a two-legged drake, horned, jaw-frilled, crest and back plates",
+ "role": "common",
+ "variants": {
+  "mire_drake": {
+   "atlas": "creatures/drake@mire_drake.ktx2",
+   "bytes": 83367
+  },
+  "hush_drake": {
+   "atlas": "creatures/drake@hush_drake.ktx2",
+   "bytes": 83217
+  },
+  "glasswing_drake": {
+   "atlas": "creatures/drake@glasswing_drake.ktx2",
+   "bytes": 113708,
+   "emit": "creatures/drake@glasswing_drake_emit.ktx2",
+   "mr": "creatures/drake@glasswing_drake_mr.ktx2"
+  },
+  "bed_drake": {
+   "atlas": "creatures/drake@bed_drake.ktx2",
+   "bytes": 81327
+  },
+  "cragmaw_drake": {
+   "atlas": "creatures/drake@cragmaw_drake.ktx2",
+   "bytes": 79774
+  },
+  "pale_drake": {
+   "atlas": "creatures/drake@pale_drake.ktx2",
+   "bytes": 91023
+  },
+  "strand_drake": {
+   "atlas": "creatures/drake@strand_drake.ktx2",
+   "bytes": 91929
+  },
+  "tailrace_drake": {
+   "atlas": "creatures/drake@tailrace_drake.ktx2",
+   "bytes": 80697
+  },
+  "trellis_drake": {
+   "atlas": "creatures/drake@trellis_drake.ktx2",
+   "bytes": 90353
+  },
+  "dune_drake": {
+   "atlas": "creatures/drake@dune_drake.ktx2",
+   "bytes": 93881
+  },
+  "husk_drake": {
+   "atlas": "creatures/drake@husk_drake.ktx2",
+   "bytes": 95373
+  },
+  "glass_drake": {
+   "atlas": "creatures/drake@glass_drake.ktx2",
+   "bytes": 112831,
+   "emit": "creatures/drake@glass_drake_emit.ktx2",
+   "mr": "creatures/drake@glass_drake_mr.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/reptile.py",
+ "fast": false
+}

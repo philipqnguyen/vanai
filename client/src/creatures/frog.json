@@ -1,0 +1,48 @@
+{
+ "file": "creatures/frog.glb",
+ "plan": "amphibian",
+ "height": 0.736,
+ "length": 1.255,
+ "width": 1.187,
+ "top": 0.736,
+ "minY": 0.0048,
+ "groundY": 0.0048,
+ "forward": 0.012,
+ "tris": [
+  2900,
+  870
+ ],
+ "budget": 3200,
+ "bones": 23,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.885,
+  "Run": 0.632,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 1.272,
+  "Run": 3.061
+ },
+ "bytes": 332612,
+ "held": [],
+ "groundLift": {},
+ "notes": "the frog look: glossy, leopard-spotted, gold-eyed; the bog toad wears it warty",
+ "role": "common",
+ "variants": {
+  "bog_lurker": {
+   "atlas": "creatures/frog@bog_lurker.ktx2",
+   "bytes": 92432,
+   "mr": "creatures/frog@bog_lurker_mr.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/amphibian.py",
+ "fast": false
+}

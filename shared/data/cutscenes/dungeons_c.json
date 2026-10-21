@@ -1,0 +1,580 @@
+{
+ "dungeon_greatwatchtower": {
+  "name": "The Great Watchtower",
+  "zone": "greatwatchtower",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4,
+    "fade": {
+     "in": 1.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       6.5,
+       4.8,
+       -36.3
+      ],
+      "look": [
+       -2.5,
+       0.6,
+       -42.5
+      ],
+      "fov": 0.95
+     },
+     "to": {
+      "pos": [
+       5.6,
+       4.4,
+       -36.6
+      ],
+      "look": [
+       -2,
+       0.7,
+       -42.5
+      ],
+      "fov": 0.95
+     }
+    }
+   },
+   {
+    "dur": 5.5,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       1.75,
+       -35.6
+      ],
+      "look": [
+       0,
+       1.9,
+       -20
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       1.8,
+       -30.6
+      ],
+      "look": [
+       0,
+       2.3,
+       -14
+      ]
+     }
+    },
+    "title": {
+     "at": 0.6,
+     "dur": 4.8,
+     "text": "The Great Watchtower",
+     "sub": "On the Border Wall"
+    }
+   },
+   {
+    "dur": 12.0,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       1.8,
+       -17
+      ],
+      "look": [
+       0,
+       3.5,
+       0
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.0,
+       -7
+      ],
+      "look": [
+       0,
+       7.5,
+       14
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 6.2,
+      "text": "The empire's great tower over the border. From here its sentinels watched the wall both ways."
+     },
+     {
+      "at": 6.7,
+      "dur": 5.2,
+      "text": "They have logged every climb since the Night. Yours is already in the log."
+     }
+    ]
+   },
+   {
+    "dur": 6.0,
+    "cam": {
+     "from": {
+      "pos": [
+       -12.5,
+       1.7,
+       -29.4
+      ],
+      "look": [
+       -6,
+       1.9,
+       -18
+      ]
+     },
+     "to": {
+      "pos": [
+       -12,
+       1.7,
+       -28.8
+      ],
+      "look": [
+       -6,
+       1.9,
+       -18
+      ]
+     },
+     "ease": "linear"
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.2,
+      "text": "The way up runs through the guardroom and the bastion to the Herald's Chamber."
+     }
+    ]
+   },
+   {
+    "dur": 6.4,
+    "fade": {
+     "out": 1.3
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.1,
+        2.55,
+        -3.1
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.0,
+        4.5
+       ]
+      },
+      "fov": 1.05
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.0,
+        2.65,
+        -3.15
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.05,
+        5
+       ]
+      },
+      "fov": 1.05
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.7,
+      "text": "The courts' letters are to be presented here, to whoever answers for the household."
+     }
+    ]
+   }
+  ]
+ },
+ "dungeon_beaconfort": {
+  "name": "The Beacon Fort",
+  "zone": "beaconfort",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4,
+    "fade": {
+     "in": 1.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       8,
+       3.6,
+       -40.5
+      ],
+      "look": [
+       -2,
+       1.6,
+       -42
+      ],
+      "fov": 0.95
+     },
+     "to": {
+      "pos": [
+       7.2,
+       3.3,
+       -40
+      ],
+      "look": [
+       -2,
+       1.6,
+       -41.8
+      ],
+      "fov": 0.95
+     }
+    }
+   },
+   {
+    "dur": 5.5,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.2,
+       -35.8
+      ],
+      "look": [
+       0,
+       18,
+       124
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.4,
+       -31
+      ],
+      "look": [
+       0,
+       18,
+       124
+      ]
+     }
+    },
+    "title": {
+     "at": 0.6,
+     "dur": 4.8,
+     "text": "The Beacon Fort",
+     "sub": "On the Melt Ridge, in the Burned Land"
+    }
+   },
+   {
+    "dur": 11.2,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2,
+       -31
+      ],
+      "look": [
+       0,
+       2,
+       -12
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.3,
+       -24.5
+      ],
+      "look": [
+       -3,
+       2,
+       -8
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 5.3,
+      "text": "A signal fort on the fire line, up in the saddle of the Melt Ridge."
+     },
+     {
+      "at": 5.7,
+      "dur": 5.3,
+      "text": "A beacon went up here the night the fire came. Another has been kept lit since."
+     }
+    ]
+   },
+   {
+    "dur": 6.0,
+    "cam": {
+     "from": {
+      "pos": [
+       5,
+       1.3,
+       -14
+      ],
+      "look": [
+       -6,
+       1.0,
+       -8
+      ]
+     },
+     "to": {
+      "pos": [
+       3.2,
+       1.25,
+       -12.4
+      ],
+      "look": [
+       -6,
+       1.0,
+       -8
+      ]
+     },
+     "ease": "linear"
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.8,
+      "text": "The way runs through the court and guard hall, then up the ridge to the Beacon Chamber."
+     }
+    ]
+   },
+   {
+    "dur": 6.4,
+    "fade": {
+     "out": 1.3
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.1,
+        2.55,
+        -3.1
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.0,
+        4.5
+       ]
+      },
+      "fov": 1.05
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.0,
+        2.65,
+        -3.15
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.05,
+        5
+       ]
+      },
+      "fov": 1.05
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.4,
+      "text": "Its keepers are still at their posts, and the beacon log is still kept up."
+     }
+    ]
+   }
+  ]
+ },
+ "dungeon_keep": {
+  "name": "The Keep",
+  "zone": "keep",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4,
+    "fade": {
+     "in": 1.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       10,
+       3.4,
+       -48.5
+      ],
+      "look": [
+       -4,
+       0.9,
+       -36
+      ]
+     },
+     "to": {
+      "pos": [
+       8,
+       3.5,
+       -48
+      ],
+      "look": [
+       -3,
+       1.0,
+       -35
+      ]
+     }
+    }
+   },
+   {
+    "dur": 5,
+    "cam": {
+     "from": {
+      "pos": [
+       -5,
+       2.1,
+       -41
+      ],
+      "look": [
+       0,
+       3.6,
+       -34
+      ],
+      "fov": 0.95
+     },
+     "to": {
+      "pos": [
+       -3.8,
+       2.3,
+       -39.8
+      ],
+      "look": [
+       0,
+       3.8,
+       -34
+      ],
+      "fov": 0.95
+     }
+    },
+    "title": {
+     "at": 0.5,
+     "dur": 4.2,
+     "text": "The Keep",
+     "sub": "The castle at the Capital's heart"
+    }
+   },
+   {
+    "dur": 14.4,
+    "cam": {
+     "from": {
+      "pos": [
+       -3.5,
+       2.2,
+       -44
+      ],
+      "look": [
+       -24,
+       1.8,
+       -44
+      ]
+     },
+     "to": {
+      "pos": [
+       -8.3,
+       2.0,
+       -44
+      ],
+      "look": [
+       -24,
+       1.5,
+       -44
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 7.1,
+      "text": "The Keep: the castle at the capital's heart, where the household lived. The throne is in its Great Hall."
+     },
+     {
+      "at": 7.6,
+      "dur": 6.5,
+      "text": "The great doors of the hall are barred. The way in runs round, through the household's own rooms."
+     }
+    ]
+   },
+   {
+    "dur": 6.4,
+    "fade": {
+     "out": 1.3
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        2.2,
+        2.2,
+        -5
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.6,
+        6
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.9,
+        2.3,
+        -5.4
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        0.65,
+        6.5
+       ]
+      },
+      "fov": 0.9
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 6.0,
+      "text": "Past the kitchens, the Long Gallery and the chapel, the way comes round to the Great Hall."
+     }
+    ]
+   }
+  ]
+ }
+}

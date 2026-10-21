@@ -1,0 +1,24 @@
+{
+  "near": [
+    2,
+    1,
+    3
+  ],
+  "tammon": [
+    2,
+    1,
+    3
+  ],
+  "far": [
+    0,
+    0,
+    0
+  ],
+  "otherZone": [
+    0,
+    0,
+    0
+  ],
+  "ok": true,
+  "scope": "Real WebAudio node creation and distance/zone gating; not a subjective listening review."
+}

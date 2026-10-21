@@ -1,0 +1,49 @@
+{
+ "file": "creatures/the_master_of_the_furnace.glb",
+ "plan": "sentinel",
+ "height": 6.531,
+ "length": 2.612,
+ "width": 4.351,
+ "top": 6.531,
+ "minY": -0.0939,
+ "groundY": 0.0029,
+ "forward": 0.06,
+ "tris": [
+  11000,
+  3300
+ ],
+ "budget": 12000,
+ "bones": 21,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.63,
+  "Run": 0.678,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 2.2,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.897,
+  "Run": 7.061
+ },
+ "bytes": 1024108,
+ "held": [
+  [
+   10466,
+   11285
+  ]
+ ],
+ "groundLift": {},
+ "notes": "The Master of the Furnace: a furnace made walking, the door for a chest, master tongs, the pour ledger chained to its wrist",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_master_of_the_furnace.py",
+ "fast": false
+}

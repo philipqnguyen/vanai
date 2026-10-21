@@ -1,0 +1,51 @@
+{
+ "file": "creatures/the_sluice_master.glb",
+ "plan": "sentinel",
+ "height": 6.76,
+ "length": 2.198,
+ "width": 4.1,
+ "top": 6.76,
+ "minY": -0.5308,
+ "groundY": 0.0111,
+ "forward": -0.159,
+ "tris": [
+  11124,
+  3332
+ ],
+ "budget": 12000,
+ "bones": 21,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.81,
+  "Run": 0.863,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.945,
+  "Run": 6.271
+ },
+ "bytes": 1051184,
+ "held": [
+  [
+   12503,
+   13320
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.175
+ },
+ "notes": "The Sluice Master: the Great Sluice's boss -- the gate yoke over its shoulders, the lock-wheel on its helm, a wet weed-hung coat and the gaff hook",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_sluice_master.py",
+ "fast": false
+}

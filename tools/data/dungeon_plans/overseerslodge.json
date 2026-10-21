@@ -1,0 +1,687 @@
+{
+  "key": "overseerslodge",
+  "format": 1,
+  "notes": "Rebuilt 2026-10-11 (dungeon revamp): one timber house on an axis -- Porch, Clerks' Hall, Tally Room, Rota Hall (gallery), Counting Room, Centuries of Ledgers, the Overseer's Office -- with the shift wings (dormitories, mess, Hound Court) and the Rootbound Lock-up off it. See client/src/zones/overseerslodge.ts. Edit this, then `write`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "The Porch",
+        "x": -2,
+        "z": -11,
+        "w": 5,
+        "d": 3,
+        "kind": "entry",
+        "y": 0,
+        "ceiling": 6.5
+      },
+      {
+        "id": "clerks",
+        "name": "Clerks’ Hall",
+        "x": -4,
+        "z": -7,
+        "w": 9,
+        "d": 8,
+        "kind": "desks",
+        "y": 0,
+        "ceiling": 8
+      },
+      {
+        "id": "dormwest",
+        "name": "First Shift Dormitory",
+        "x": -12,
+        "z": -6,
+        "w": 6,
+        "d": 5,
+        "kind": "bunks",
+        "y": 0,
+        "ceiling": 6
+      },
+      {
+        "id": "dormeast",
+        "name": "Second Shift Dormitory",
+        "x": 7,
+        "z": -6,
+        "w": 6,
+        "d": 5,
+        "kind": "bunks",
+        "y": 0,
+        "ceiling": 6
+      },
+      {
+        "id": "mess",
+        "name": "Empty Mess Hall",
+        "x": -12,
+        "z": 2,
+        "w": 6,
+        "d": 5,
+        "kind": "mess",
+        "y": 0,
+        "ceiling": 6.5
+      },
+      {
+        "id": "kennels",
+        "name": "Hound Court",
+        "x": 7,
+        "z": 2,
+        "w": 7,
+        "d": 6,
+        "kind": "kennels",
+        "y": 0,
+        "ceiling": 6.5
+      },
+      {
+        "id": "tally",
+        "name": "Tally Room",
+        "x": -4,
+        "z": 3,
+        "w": 9,
+        "d": 5,
+        "kind": "tally",
+        "y": 0,
+        "ceiling": 4.3
+      },
+      {
+        "id": "rota",
+        "name": "Rota Hall",
+        "x": -5,
+        "z": 10,
+        "w": 11,
+        "d": 8,
+        "kind": "rota",
+        "y": 0,
+        "ceiling": 10.5
+      },
+      {
+        "id": "lockup",
+        "name": "Rootbound Lock-up",
+        "x": 9,
+        "z": 11,
+        "w": 7,
+        "d": 6,
+        "kind": "roots",
+        "y": 0,
+        "ceiling": 7
+      },
+      {
+        "id": "counting",
+        "name": "Private Counting Room",
+        "x": -4,
+        "z": 20,
+        "w": 9,
+        "d": 4,
+        "kind": "counting",
+        "y": 0,
+        "ceiling": 5
+      },
+      {
+        "id": "archive",
+        "name": "Centuries of Ledgers",
+        "x": -3,
+        "z": 26,
+        "w": 7,
+        "d": 6,
+        "kind": "archive",
+        "y": 0,
+        "ceiling": 9.5
+      },
+      {
+        "id": "office",
+        "name": "Overseer’s Office",
+        "x": -4,
+        "z": 34,
+        "w": 9,
+        "d": 7,
+        "kind": "boss",
+        "y": 0,
+        "ceiling": 8
+      }
+    ],
+    "corridors": [
+      {
+        "points": [
+          [
+            0,
+            -9
+          ],
+          [
+            0,
+            -7
+          ]
+        ],
+        "name": "Porch passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            -4,
+            -4
+          ],
+          [
+            -7,
+            -4
+          ]
+        ],
+        "name": "West wing passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            4,
+            -4
+          ],
+          [
+            7,
+            -4
+          ]
+        ],
+        "name": "East wing passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            -10,
+            -2
+          ],
+          [
+            -10,
+            2
+          ]
+        ],
+        "name": "West wing back passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            10,
+            -2
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "name": "East dormitory passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "name": "Clerks’ passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            -7,
+            5
+          ],
+          [
+            -4,
+            5
+          ]
+        ],
+        "name": "Mess passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            5
+          ]
+        ],
+        "name": "Kennel passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            10
+          ]
+        ],
+        "name": "Rota passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            5,
+            14
+          ],
+          [
+            9,
+            14
+          ]
+        ],
+        "name": "Lock-up passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            0,
+            17
+          ],
+          [
+            0,
+            20
+          ]
+        ],
+        "name": "Counting passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            0,
+            23
+          ],
+          [
+            0,
+            26
+          ]
+        ],
+        "name": "Archive passage",
+        "ceiling": 4.1
+      },
+      {
+        "points": [
+          [
+            0,
+            31
+          ],
+          [
+            0,
+            34
+          ]
+        ],
+        "name": "The Overseer’s door",
+        "ceiling": 4.1
+      }
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    },
+    "obstacles": [
+      {
+        "x": 14,
+        "z": 15,
+        "w": 2,
+        "d": 2
+      }
+    ],
+    "walkways": [
+      {
+        "id": "west-gallery",
+        "name": "West upper gallery",
+        "points": [
+          [
+            -19,
+            53
+          ],
+          [
+            -19,
+            68
+          ]
+        ],
+        "y": 4
+      },
+      {
+        "id": "rear-gallery",
+        "name": "Behind the upstairs desks",
+        "points": [
+          [
+            -19,
+            66
+          ],
+          [
+            19,
+            66
+          ]
+        ],
+        "y": 4
+      },
+      {
+        "id": "east-gallery",
+        "name": "East upper gallery",
+        "points": [
+          [
+            19,
+            66
+          ],
+          [
+            19,
+            40
+          ]
+        ],
+        "y": 4
+      }
+    ]
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "Floor levels, with the Overseer's desk platform",
+      "yaw": 0,
+      "floors": [
+        0,
+        2
+      ],
+      "decks": [
+        {
+          "cx": 0.0,
+          "cz": 158.0,
+          "hx": 18.0,
+          "hz": 4.0,
+          "sin": 0,
+          "cos": 1,
+          "y": 2,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": 0,
+          "z0": 149,
+          "y0": 0,
+          "x1": 0,
+          "z1": 154,
+          "y1": 2,
+          "half": 4
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout",
+        "raise": [
+          {
+            "x": -4,
+            "z": 39,
+            "w": 9,
+            "d": 2,
+            "y": 2
+          }
+        ]
+      }
+    },
+    "rota_gallery": {
+      "name": "Rota gallery",
+      "cx": 0,
+      "cz": 54,
+      "span": 44,
+      "len": 32,
+      "yaw": 0,
+      "floors": [
+        0,
+        4
+      ],
+      "decks": [
+        {
+          "cx": -19,
+          "cz": 61.5,
+          "hx": 3,
+          "hz": 8.5,
+          "sin": 0,
+          "cos": 1,
+          "y": 4,
+          "holes": []
+        },
+        {
+          "cx": 19,
+          "cz": 54,
+          "hx": 3,
+          "hz": 16,
+          "sin": 0,
+          "cos": 1,
+          "y": 4,
+          "holes": []
+        },
+        {
+          "cx": 0,
+          "cz": 65,
+          "hx": 22,
+          "hz": 5,
+          "sin": 0,
+          "cos": 1,
+          "y": 4,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": -17.8,
+          "z0": 40,
+          "y0": 0,
+          "x1": -17.8,
+          "z1": 53,
+          "y1": 4,
+          "half": 1.6
+        }
+      ]
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -37.5
+  },
+  "portals": [
+    {
+      "id": "ol_door",
+      "name": "The Overseer's Door",
+      "x": 0,
+      "z": -42.7,
+      "to": "timberestates",
+      "tx": 200,
+      "tz": 112,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.2,
+        "column": 5.5,
+        "floor": 0.06
+      }
+    },
+    {
+      "id": "ol_out",
+      "name": "The Office Way Out",
+      "x": 12,
+      "z": 158,
+      "y": 2,
+      "to": "timberestates",
+      "tx": 200,
+      "tz": 112,
+      "site": "raised_chamber",
+      "floor": 1,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.0,
+        "column": 5.5,
+        "floor": 0.06
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_ol_clerks",
+      "name": "The Clerks' Hall",
+      "x": 0,
+      "z": -14,
+      "xp": 80
+    },
+    {
+      "id": "lm_ol_rota",
+      "name": "The Rota Hall",
+      "x": 0,
+      "z": 52,
+      "xp": 90
+    },
+    {
+      "id": "lm_ol_office",
+      "name": "The Overseer's Office",
+      "x": 0,
+      "z": 146,
+      "xp": 150
+    },
+    {
+      "id": "lm_ol_ledgers",
+      "name": "Centuries of Ledgers",
+      "x": 2,
+      "z": 116,
+      "xp": 90
+    },
+    {
+      "id": "lm_ol_kennels",
+      "name": "The Hound Court",
+      "x": 42,
+      "z": 20,
+      "xp": 80
+    }
+  ],
+  "interactables": [
+    {
+      "id": "writ_lodge",
+      "name": "The Sealed Notice",
+      "x": 0,
+      "z": 158,
+      "idle_msg": "The Sealed Notice: a single sheet under a wax seal on the overseer's desk, beside a shift rota three hundred years long with every shift marked absent. Through the wax you can read the hand: The household departs this night and will return. Keep out. Keep well.",
+      "active_msg": "You break the seal. The founding writ of the Timber Estates, in the empire's own hand and under its own seal: The household departs this night and will return. Keep out. Keep well. The writ is yours, and with it the province's founding terms, to carry back to Scout Wenna at the forward camp.",
+      "prop": "document_desk",
+      "y": 2,
+      "site": "raised_chamber",
+      "floor": 1
+    }
+  ],
+  "camps": [
+    {
+      "monster": "shift_clerk",
+      "min_lvl": 20,
+      "max_lvl": 21,
+      "count": 3,
+      "x": 0,
+      "z": -18,
+      "radius": 4.5,
+      "respawn": 40
+    },
+    {
+      "monster": "shift_clerk",
+      "min_lvl": 20,
+      "max_lvl": 21,
+      "count": 2,
+      "x": 0,
+      "z": -7,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "shift_clerk",
+      "min_lvl": 20,
+      "max_lvl": 21,
+      "count": 3,
+      "x": -38,
+      "z": -16,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "lodge_hound",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 38,
+      "z": -16,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "lodge_hound",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 40,
+      "z": 18,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "tally_sentinel",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 0,
+      "z": 20,
+      "radius": 5,
+      "respawn": 45
+    },
+    {
+      "monster": "shift_clerk",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 6,
+      "z": 48,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "tally_sentinel",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 1,
+      "x": 0,
+      "z": 86,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "shift_clerk",
+      "min_lvl": 21,
+      "max_lvl": 22,
+      "count": 2,
+      "x": 0,
+      "z": 114,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "the_rootbound_warden",
+      "min_lvl": 22,
+      "max_lvl": 22,
+      "count": 1,
+      "x": 46,
+      "z": 52,
+      "radius": 5,
+      "respawn": 600
+    },
+    {
+      "monster": "the_overseer",
+      "min_lvl": 22,
+      "max_lvl": 22,
+      "count": 1,
+      "x": 0,
+      "z": 141,
+      "radius": 4,
+      "respawn": 600
+    }
+  ]
+}

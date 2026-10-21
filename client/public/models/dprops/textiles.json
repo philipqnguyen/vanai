@@ -1,0 +1,265 @@
+{
+ "pack": "textiles",
+ "props": {
+  "banner_lamp": {
+   "pack": "textiles",
+   "min": [
+    -0.73,
+    0.005,
+    -0.091
+   ],
+   "max": [
+    0.73,
+    2.8,
+    0.057
+   ],
+   "tris": 1528,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "banner_shield": {
+   "pack": "textiles",
+   "min": [
+    -0.73,
+    0.005,
+    -0.139
+   ],
+   "max": [
+    0.73,
+    2.8,
+    0.057
+   ],
+   "tris": 2266,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "banner_sheaf": {
+   "pack": "textiles",
+   "min": [
+    -0.93,
+    0.005,
+    -0.091
+   ],
+   "max": [
+    0.93,
+    2.825,
+    0.17
+   ],
+   "tris": 1832,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "sack_tied": {
+   "pack": "textiles",
+   "min": [
+    -0.319,
+    0,
+    -0.258
+   ],
+   "max": [
+    0.326,
+    0.8,
+    0.259
+   ],
+   "tris": 1488,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "sack_open": {
+   "pack": "textiles",
+   "min": [
+    -0.339,
+    0,
+    -0.283
+   ],
+   "max": [
+    0.342,
+    0.676,
+    0.291
+   ],
+   "tris": 1560,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "rug_round": {
+   "pack": "textiles",
+   "min": [
+    -1.26,
+    0,
+    -1.26
+   ],
+   "max": [
+    1.26,
+    0.01,
+    1.26
+   ],
+   "tris": 1230,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  }
+ },
+ "swap": {
+  "dungeon/banner_patternA_blue.glb": {
+   "to": "banner_lamp",
+   "fit": "placement",
+   "pivot": [
+    0,
+    0.53,
+    0
+   ],
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.75,
+     0.531,
+     0.378
+    ],
+    "max": [
+     0.75,
+     3.727,
+     0.69
+    ]
+   }
+  },
+  "dungeon/banner_patternB_blue.glb": {
+   "to": "banner_lamp",
+   "fit": "placement",
+   "pivot": [
+    0,
+    0.53,
+    0
+   ],
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.75,
+     0.531,
+     0.378
+    ],
+    "max": [
+     0.75,
+     3.727,
+     0.69
+    ]
+   }
+  },
+  "dungeon/banner_patternC_blue.glb": {
+   "to": "banner_lamp",
+   "fit": "placement",
+   "pivot": [
+    0,
+    0.53,
+    0
+   ],
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.75,
+     0.531,
+     0.378
+    ],
+    "max": [
+     0.75,
+     3.727,
+     0.69
+    ]
+   }
+  },
+  "dungeon/banner_shield_blue.glb": {
+   "to": "banner_shield",
+   "fit": "placement",
+   "pivot": [
+    0,
+    0.53,
+    0
+   ],
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -1.116,
+     0.531,
+     0.315
+    ],
+    "max": [
+     1.116,
+     3.727,
+     0.69
+    ]
+   }
+  },
+  "dungeon/banner_patternA_yellow.glb": {
+   "to": "banner_sheaf",
+   "fit": "placement",
+   "pivot": [
+    0,
+    0.53,
+    0
+   ],
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.75,
+     0.531,
+     0.378
+    ],
+    "max": [
+     0.75,
+     3.727,
+     0.69
+    ]
+   }
+  },
+  "props/Bag.gltf": {
+   "to": "sack_tied",
+   "from": {
+    "min": [
+     -0.33,
+     0.002,
+     -0.244
+    ],
+    "max": [
+     0.325,
+     0.802,
+     0.3
+    ]
+   }
+  },
+  "props/Bag_2.gltf": {
+   "to": "sack_open",
+   "from": {
+    "min": [
+     -0.376,
+     -0.002,
+     -0.292
+    ],
+    "max": [
+     0.342,
+     0.717,
+     0.311
+    ]
+   }
+  },
+  "props/Rug_Round.gltf": {
+   "to": "rug_round",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -1.229,
+     0,
+     -1.229
+    ],
+    "max": [
+     1.229,
+     0,
+     1.229
+    ]
+   }
+  }
+ }
+}

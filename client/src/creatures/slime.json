@@ -1,0 +1,83 @@
+{
+ "file": "creatures/slime.glb",
+ "plan": "ooze",
+ "height": 1.032,
+ "length": 0.835,
+ "width": 0.957,
+ "top": 1.032,
+ "minY": 0.0083,
+ "groundY": 0.0083,
+ "forward": -0.009,
+ "tris": [
+  1800,
+  535
+ ],
+ "budget": 2600,
+ "bones": 6,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.8,
+  "Run": 0.55,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 1.4,
+  "Run": 3.0
+ },
+ "bytes": 164144,
+ "held": [],
+ "groundLift": {},
+ "notes": "the slime look: meadow jelly with a daisy on top",
+ "role": "common",
+ "variants": {
+  "frost_slime": {
+   "atlas": "creatures/slime@frost_slime.ktx2",
+   "bytes": 55503,
+   "emit": "creatures/slime@frost_slime_emit.ktx2"
+  },
+  "tide_glub": {
+   "atlas": "creatures/slime@tide_glub.ktx2",
+   "bytes": 52959,
+   "emit": "creatures/slime@tide_glub_emit.ktx2"
+  },
+  "nursery_slime": {
+   "atlas": "creatures/slime@nursery_slime.ktx2",
+   "bytes": 51620,
+   "emit": "creatures/slime@nursery_slime_emit.ktx2"
+  },
+  "root_slime": {
+   "atlas": "creatures/slime@root_slime.ktx2",
+   "bytes": 62975,
+   "emit": "creatures/slime@root_slime_emit.ktx2"
+  },
+  "cinder_slime": {
+   "atlas": "creatures/slime@cinder_slime.ktx2",
+   "bytes": 53616,
+   "emit": "creatures/slime@cinder_slime_emit.ktx2"
+  },
+  "straw_slime": {
+   "atlas": "creatures/slime@straw_slime.ktx2",
+   "bytes": 52184,
+   "emit": "creatures/slime@straw_slime_emit.ktx2"
+  },
+  "ice_slime": {
+   "atlas": "creatures/slime@ice_slime.ktx2",
+   "bytes": 55523,
+   "emit": "creatures/slime@ice_slime_emit.ktx2"
+  },
+  "ember_slime": {
+   "atlas": "creatures/slime@ember_slime.ktx2",
+   "bytes": 50521,
+   "emit": "creatures/slime@ember_slime_emit.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/ooze.py",
+ "fast": false
+}

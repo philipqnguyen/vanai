@@ -1,0 +1,108 @@
+{
+ "file": "creatures/sentinel.glb",
+ "plan": "sentinel",
+ "height": 2.417,
+ "length": 0.845,
+ "width": 1.532,
+ "top": 2.417,
+ "minY": -0.0029,
+ "groundY": -0.0029,
+ "forward": 0.217,
+ "tris": [
+  4137,
+  1240
+ ],
+ "budget": 4600,
+ "bones": 22,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.141,
+  "Run": 0.475,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6
+ },
+ "speeds": {
+  "Walk": 1.886,
+  "Run": 4.596
+ },
+ "bytes": 486836,
+ "held": [
+  [
+   5408,
+   5656
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.117
+ },
+ "notes": "the field sentinel: the household's groundsman, kettle hat, livery apron, pruning bill and the caretaker's kit",
+ "role": "common",
+ "variants": {
+  "tally_sentinel": {
+   "atlas": "creatures/sentinel@tally_sentinel.ktx2",
+   "bytes": 95535
+  },
+  "garden_sentinel": {
+   "atlas": "creatures/sentinel@garden_sentinel.ktx2",
+   "bytes": 96515
+  },
+  "sluice_sentinel": {
+   "atlas": "creatures/sentinel@sluice_sentinel.ktx2",
+   "bytes": 95530
+  },
+  "tower_warden": {
+   "atlas": "creatures/sentinel@tower_warden.ktx2",
+   "bytes": 95682
+  },
+  "pruning_sentinel": {
+   "atlas": "creatures/sentinel@pruning_sentinel.ktx2",
+   "bytes": 96916
+  },
+  "graft_sentinel": {
+   "atlas": "creatures/sentinel@graft_sentinel.ktx2",
+   "bytes": 96646
+  },
+  "furnace_sentinel": {
+   "atlas": "creatures/sentinel@furnace_sentinel.ktx2",
+   "bytes": 96819,
+   "emit": "creatures/sentinel@furnace_sentinel_emit.ktx2"
+  },
+  "dredge_sentinel": {
+   "atlas": "creatures/sentinel@dredge_sentinel.ktx2",
+   "bytes": 93864
+  },
+  "pump_sentinel": {
+   "atlas": "creatures/sentinel@pump_sentinel.ktx2",
+   "bytes": 94195
+  },
+  "reaping_sentinel": {
+   "atlas": "creatures/sentinel@reaping_sentinel.ktx2",
+   "bytes": 94772
+  },
+  "count_sentinel": {
+   "atlas": "creatures/sentinel@count_sentinel.ktx2",
+   "bytes": 95557
+  },
+  "watch_sentinel": {
+   "atlas": "creatures/sentinel@watch_sentinel.ktx2",
+   "bytes": 93773
+  },
+  "scorch_sentinel": {
+   "atlas": "creatures/sentinel@scorch_sentinel.ktx2",
+   "bytes": 86787,
+   "emit": "creatures/sentinel@scorch_sentinel_emit.ktx2"
+  },
+  "beacon_sentinel": {
+   "atlas": "creatures/sentinel@beacon_sentinel.ktx2",
+   "bytes": 93427
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/sentinel.py",
+ "fast": false
+}

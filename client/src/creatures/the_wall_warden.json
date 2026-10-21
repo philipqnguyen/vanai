@@ -1,0 +1,51 @@
+{
+ "file": "creatures/the_wall_warden.glb",
+ "plan": "sentinel",
+ "height": 6.095,
+ "length": 1.786,
+ "width": 4.136,
+ "top": 6.095,
+ "minY": -0.6954,
+ "groundY": 0.0042,
+ "forward": 0.001,
+ "tris": [
+  10962,
+  3288
+ ],
+ "budget": 12000,
+ "bones": 20,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.78,
+  "Run": 0.853,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 3.104,
+  "Run": 6.573
+ },
+ "bytes": 996196,
+ "held": [
+  [
+   9942,
+   11989
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.182
+ },
+ "notes": "The Wall-Warden: the Great Watchtower's boss -- a crown of merlons, trident and tideglass staff crossed, the Regent's reply sealed on its chest",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_wall_warden.py",
+ "fast": false
+}

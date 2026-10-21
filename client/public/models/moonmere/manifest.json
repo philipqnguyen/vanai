@@ -1,0 +1,131 @@
+{
+  "door": {
+    "triangles": 440,
+    "materials": [
+      "MM_Metal",
+      "MM_Wood"
+    ]
+  },
+  "bookcase": {
+    "triangles": 1680,
+    "materials": [
+      "MM_Book",
+      "MM_Wood"
+    ]
+  },
+  "desk": {
+    "triangles": 104,
+    "materials": [
+      "MM_Linen",
+      "MM_Wood"
+    ]
+  },
+  "seal_press": {
+    "triangles": 220,
+    "materials": [
+      "MM_Clay",
+      "MM_Metal",
+      "MM_Wood"
+    ]
+  },
+  "star_globe": {
+    "triangles": 7736,
+    "materials": [
+      "MM_Glass",
+      "MM_Linen",
+      "MM_Metal",
+      "MM_Stone"
+    ]
+  },
+  "telescope": {
+    "triangles": 460,
+    "materials": [
+      "MM_Glass",
+      "MM_Metal",
+      "MM_Stone",
+      "MM_Wood"
+    ]
+  },
+  "water_clock": {
+    "triangles": 708,
+    "materials": [
+      "MM_Glass",
+      "MM_Linen",
+      "MM_Metal",
+      "MM_Stone",
+      "MM_Wood"
+    ]
+  },
+  "music_box": {
+    "triangles": 2124,
+    "materials": [
+      "MM_Linen",
+      "MM_Metal",
+      "MM_Wood"
+    ]
+  },
+  "bed": {
+    "triangles": 192,
+    "materials": [
+      "MM_Cloth",
+      "MM_Linen",
+      "MM_Wood"
+    ]
+  },
+  "bench": {
+    "triangles": 72,
+    "materials": [
+      "MM_Stone",
+      "MM_Wood"
+    ]
+  },
+  "home_table": {
+    "triangles": 768,
+    "materials": [
+      "MM_Book",
+      "MM_Clay",
+      "MM_Linen",
+      "MM_Wood"
+    ]
+  },
+  "home_chair": {
+    "triangles": 440,
+    "materials": [
+      "MM_Cloth",
+      "MM_Wood"
+    ]
+  },
+  "home_cupboard": {
+    "triangles": 676,
+    "materials": [
+      "MM_Clay",
+      "MM_Linen",
+      "MM_Metal",
+      "MM_Wood"
+    ]
+  },
+  "home_chest": {
+    "triangles": 264,
+    "materials": [
+      "MM_Cloth",
+      "MM_Linen",
+      "MM_Metal",
+      "MM_Wood"
+    ]
+  },
+  "home_rug": {
+    "triangles": 260,
+    "materials": [
+      "MM_Cloth",
+      "MM_Linen"
+    ]
+  },
+  "home_herbs": {
+    "triangles": 584,
+    "materials": [
+      "MM_Clay",
+      "MM_Herb",
+      "MM_Wood"
+    ]
+  }
+}

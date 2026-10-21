@@ -1,0 +1,3 @@
+@AGENTS.md
+@docs/ARCHITECTURE.md
+@CONTRIBUTING.md

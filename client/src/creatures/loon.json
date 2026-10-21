@@ -1,0 +1,52 @@
+{
+ "file": "creatures/loon.glb",
+ "plan": "bird",
+ "height": 0.887,
+ "length": 1.277,
+ "width": 0.421,
+ "top": 0.887,
+ "minY": -0.0038,
+ "groundY": -0.0038,
+ "forward": 0.078,
+ "tris": [
+  4100,
+  1222
+ ],
+ "budget": 4200,
+ "bones": 23,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.5,
+  "Run": 0.26,
+  "Attack_A": 0.95,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.3,
+  "Fly": 0.26
+ },
+ "speeds": {
+  "Walk": 1.25,
+  "Run": 4.4
+ },
+ "bytes": 402068,
+ "held": [
+  [
+   3510,
+   3810
+  ]
+ ],
+ "groundLift": {
+  "Walk": 0.048,
+  "Run": 0.019,
+  "Death": 0.113
+ },
+ "notes": "the loon look: low and long, chequered, a dagger bill holding a drowned village's votive",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/bird.py",
+ "fast": false
+}

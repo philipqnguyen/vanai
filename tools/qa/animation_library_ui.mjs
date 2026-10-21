@@ -1,0 +1,33 @@
+import {chromium,CHANNEL,QA_BASE} from './lib/playwright.mjs';
+import {mkdirSync,writeFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const out='.playwright-mcp/animation-library';mkdirSync(out,{recursive:true});
+const browser=await chromium.launch({...CHANNEL,headless:true});
+try{
+ const page=await browser.newPage({viewport:{width:1200,height:1000}}),errors=[],requests=[];
+ page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>requests.push(r.url()));
+ await page.goto(QA_BASE+'/animation-library-review.html?body=karrog-male&clip=Sword_Attack_Standing');
+ await page.waitForFunction(()=>window.__animationLibrary?.ready,null,{timeout:120000});
+ await page.evaluate(()=>{window.__animationLibrary.pause();window.__animationLibrary.seek(.45);});
+ await page.check('#weapon');await page.waitForFunction(()=>window.__animationLibrary.avatar.weapon?.isEnabled());
+ await page.screenshot({path:out+'/karrog-sword-reference.png'});
+ await page.selectOption('#clip','Swim_Idle_Loop');await page.uncheck('#ground');await page.click('#frame-pose');await page.screenshot({path:out+'/swim-full-pose.png'});assert.equal(await page.evaluate(()=>window.__animationLibrary.scene.getMeshByName('lineup_ground').isEnabled()),false);
+ await page.fill('#search','GroundSit');assert.ok(await page.locator('#clip option').count()>=3);
+ await page.fill('#search','not-a-real-clip');assert.equal(await page.locator('#clip option').count(),0);
+ await page.fill('#search','');await page.selectOption('#clip','Idle_Loop');
+ await page.click('#play');const start=await page.evaluate(()=>window.__animationLibrary.group.animatables[0]?.masterFrame);
+ await page.waitForTimeout(400);const end=await page.evaluate(()=>window.__animationLibrary.group.animatables[0]?.masterFrame);assert.ok(end>start,'Playback clock advances');
+ await page.click('#play');const paused=await page.locator('#clock').textContent();await page.waitForTimeout(150);assert.equal(await page.locator('#clock').textContent(),paused);
+ await page.evaluate(()=>{window.__animationLibrary.seek(1);});assert.equal(await page.inputValue('#time'),'1');
+ await page.setViewportSize({width:390,height:844});await page.screenshot({path:out+'/phone.png'});
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+ await page.close();
+ const game=await browser.newPage();game.on('request',r=>requests.push(r.url()));
+ await game.goto(QA_BASE+'/?character-preview');await game.waitForFunction(()=>window.__characterPreview,null,{timeout:120000});
+ await game.evaluate(()=>window.postMessage({type:'character-appearance',race:'aedri',job:'PLD',appearance:{face:'male',hair:'waves'}},location.origin));
+ await game.waitForFunction(()=>window.__characterPreview.avatar()?.model,null,{timeout:120000});
+ const libraryRequests=requests.filter(r=>r.includes('/animation-library/quaternius/'));
+ assert.equal(libraryRequests.length,2,'Review fetched one catalog + one shared buffer; normal creation fetched neither');assert.deepEqual(errors,[]);
+ writeFileSync(out+'/ui.json',JSON.stringify({passed:true,playPauseSeek:true,search:true,phone:true,referenceWeapon:true,normalCreationLibraryRequests:0,errors},null,2));
+ console.log('Review controls, phone layout, reference weapon, and normal-creation isolation passed');
+}finally{await browser.close();}

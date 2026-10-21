@@ -1,0 +1,45 @@
+{
+ "file": "creatures/otter.glb",
+ "plan": "small_mammal",
+ "height": 0.984,
+ "length": 3.679,
+ "width": 0.741,
+ "top": 0.984,
+ "minY": -0.0021,
+ "groundY": -0.0021,
+ "forward": -0.464,
+ "tris": [
+  3190,
+  930
+ ],
+ "budget": 3200,
+ "bones": 24,
+ "atlas": 512,
+ "emissive": false,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.637,
+  "Run": 0.516,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 1.805,
+  "Run": 6.939
+ },
+ "bytes": 362604,
+ "held": [],
+ "groundLift": {
+  "Attack_A": 0.063,
+  "Death": 0.241
+ },
+ "notes": "the Folly Otter: a villa bath towel worn as a stole",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/small_mammal.py",
+ "fast": false
+}

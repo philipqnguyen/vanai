@@ -1,0 +1,50 @@
+{
+ "file": "creatures/hare.glb",
+ "plan": "small_mammal",
+ "height": 0.741,
+ "length": 0.649,
+ "width": 0.322,
+ "top": 0.741,
+ "minY": -0.013,
+ "groundY": -0.013,
+ "forward": -0.03,
+ "tris": [
+  2598,
+  766
+ ],
+ "budget": 3200,
+ "bones": 23,
+ "atlas": 512,
+ "emissive": false,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.6,
+  "Run": 0.42,
+  "Attack_A": 0.9,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.0
+ },
+ "speeds": {
+  "Walk": 1.349,
+  "Run": 3.515
+ },
+ "bytes": 347636,
+ "held": [],
+ "groundLift": {
+  "Attack_A": 0.016,
+  "Death": 0.075
+ },
+ "notes": "the hare look: a sprig of clover behind one ear",
+ "role": "common",
+ "variants": {
+  "snow_hare": {
+   "atlas": "creatures/hare@snow_hare.ktx2",
+   "bytes": 94002
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/small_mammal.py",
+ "fast": false
+}

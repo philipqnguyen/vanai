@@ -1,0 +1,72 @@
+{
+ "about": "Caerdun's Sea Gate facade sheet: stone, far, joinery and glass stacked into one -- written by tools/assets/paint_caerdun_textures.py (caerdun_atlas.FACADE); do not edit by hand.",
+ "name": "SG_Facade",
+ "file": "sg_facade.jpg",
+ "size": [
+  2048,
+  4096
+ ],
+ "rough": "sg_facade_rough.png",
+ "roughSize": [
+  1024,
+  2048
+ ],
+ "glow": {
+  "e": "sg_facade_glow.png"
+ },
+ "glowSize": [
+  1024,
+  2048
+ ],
+ "uv": {
+  "stone": [
+   1.0,
+   0.0,
+   0.5,
+   0.0
+  ],
+  "far": [
+   1.0,
+   0.0,
+   0.25,
+   0.5
+  ],
+  "joinery": [
+   0.5,
+   0.0,
+   0.25,
+   0.75
+  ],
+  "glass": [
+   0.25,
+   0.5,
+   0.125,
+   0.75
+  ]
+ },
+ "uvOrder": "[su, ou, sv, ov]: u' = u su + ou, v' = v sv + ov in glTF UVs (v down), as CL_FACADE",
+ "parts": {
+  "SG_Stone": "stone",
+  "SG_Far": "far",
+  "SG_Joinery": "joinery",
+  "SG_Glass": "glass"
+ },
+ "roughness": {
+  "stone": 0.92,
+  "far": 0.9,
+  "joinery": 0.8,
+  "glass": 0.15
+ },
+ "stripCopy": {
+  "src": [
+   0,
+   512,
+   1024,
+   512
+  ],
+  "dst": [
+   1024,
+   3584
+  ]
+ }
+}

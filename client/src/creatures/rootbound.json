@@ -1,0 +1,56 @@
+{
+ "file": "creatures/rootbound.glb",
+ "plan": "rooted",
+ "height": 2.049,
+ "length": 0.549,
+ "width": 0.94,
+ "top": 2.049,
+ "minY": 0.0039,
+ "groundY": 0.0039,
+ "forward": 0.078,
+ "tris": [
+  3898,
+  1162
+ ],
+ "budget": 4200,
+ "bones": 21,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.5,
+  "Run": 0.95,
+  "Attack_A": 1.25,
+  "Attack_B": 1.15,
+  "Hit": 0.5,
+  "Death": 1.7,
+  "Cast": 3.2,
+  "Special": 2.1
+ },
+ "speeds": {
+  "Walk": 1.3,
+  "Run": 3.0
+ },
+ "bytes": 476000,
+ "held": [],
+ "groundLift": {
+  "Death": 0.115
+ },
+ "notes": "the rootbound look: roots in a gardener's shape, amber in the joints, his straw hat",
+ "role": "common",
+ "variants": {
+  "root_creeper": {
+   "atlas": "creatures/rootbound@root_creeper.ktx2",
+   "bytes": 91432
+  },
+  "thirst_root": {
+   "atlas": "creatures/rootbound@thirst_root.ktx2",
+   "bytes": 97450,
+   "mr": "creatures/rootbound@thirst_root_mr.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/rooted.py",
+ "fast": false
+}

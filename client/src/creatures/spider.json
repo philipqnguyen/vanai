@@ -1,0 +1,42 @@
+{
+ "file": "creatures/spider.glb",
+ "plan": "insect",
+ "height": 1.156,
+ "length": 2.305,
+ "width": 2.049,
+ "top": 1.156,
+ "minY": 0.0005,
+ "groundY": 0.0005,
+ "forward": -0.043,
+ "tris": [
+  3652,
+  1090
+ ],
+ "budget": 4200,
+ "bones": 30,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.8,
+  "Run": 0.48,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 2.2,
+  "Run": 5.0
+ },
+ "bytes": 486592,
+ "held": [],
+ "groundLift": {},
+ "notes": "the spider look: the snow spider of the North Road, a snare line from its spinnerets",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/insect.py",
+ "fast": false
+}

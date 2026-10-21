@@ -1,0 +1,46 @@
+{
+ "file": "creatures/gull.glb",
+ "plan": "bird",
+ "height": 0.648,
+ "length": 0.949,
+ "width": 0.272,
+ "top": 0.648,
+ "minY": -0.0017,
+ "groundY": -0.0017,
+ "forward": -0.128,
+ "tris": [
+  3122,
+  926
+ ],
+ "budget": 3200,
+ "bones": 23,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.38,
+  "Run": 0.42,
+  "Attack_A": 0.95,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.3,
+  "Fly": 0.336
+ },
+ "speeds": {
+  "Walk": 1.45,
+  "Run": 4.6
+ },
+ "bytes": 381156,
+ "held": [],
+ "groundLift": {
+  "Walk": 0.017,
+  "Death": 0.079
+ },
+ "notes": "the gull look: long black-tipped wings, a hooked yellow bill with the red spot",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/bird.py",
+ "fast": false
+}

@@ -1,0 +1,66 @@
+{
+ "file": "creatures/husk.glb",
+ "plan": "husk",
+ "height": 1.889,
+ "length": 0.501,
+ "width": 0.769,
+ "top": 1.889,
+ "minY": -0.0037,
+ "groundY": -0.0037,
+ "forward": 0.062,
+ "tris": [
+  4346,
+  1292
+ ],
+ "budget": 4400,
+ "bones": 20,
+ "atlas": 512,
+ "emissive": true,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.789,
+  "Run": 0.759,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2
+ },
+ "speeds": {
+  "Walk": 1.581,
+  "Run": 3.795
+ },
+ "bytes": 477332,
+ "held": [],
+ "groundLift": {
+  "Death": 0.149
+ },
+ "notes": "the husk look: the barrow dead, grave linen, a locket and a bronze circlet",
+ "role": "common",
+ "variants": {
+  "ash_wight": {
+   "atlas": "creatures/husk@ash_wight.ktx2",
+   "bytes": 93530,
+   "emit": "creatures/husk@ash_wight_emit.ktx2"
+  },
+  "amber_husk": {
+   "atlas": "creatures/husk@amber_husk.ktx2",
+   "bytes": 97299,
+   "emit": "creatures/husk@amber_husk_emit.ktx2"
+  },
+  "forge_wight": {
+   "atlas": "creatures/husk@forge_wight.ktx2",
+   "bytes": 83185,
+   "emit": "creatures/husk@forge_wight_emit.ktx2"
+  },
+  "furnace_stoker": {
+   "atlas": "creatures/husk@furnace_stoker.ktx2",
+   "bytes": 89704,
+   "emit": "creatures/husk@furnace_stoker_emit.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/husk.py",
+ "fast": false
+}

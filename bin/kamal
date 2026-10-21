@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Run Kamal from the repository root.
+#
+# Kamal resolves everything -- config/deploy.yml, .kamal/secrets-common and the
+# Dockerfile passed to --file -- relative to the working directory, and all of
+# those live in server/ (deploy.yml finds the root's .env.<destination> from there). So this
+# just moves there and hands off to the real binstub; the command Kamal ends up
+# running is identical either way.
+#
+# Consequence: a relative path in an argument (-c, mainly) is read from server/.
+set -e
+cd "$(dirname "$0")/../server"
+exec bin/kamal "$@"

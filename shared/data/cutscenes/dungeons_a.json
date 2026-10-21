@@ -1,0 +1,818 @@
+{
+ "dungeon_mausoleum": {
+  "name": "The Mausoleum",
+  "zone": "mausoleum",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4.6,
+    "cam": {
+     "from": {
+      "pos": [
+       7.5,
+       2.0,
+       -113
+      ],
+      "look": [
+       -2,
+       2.6,
+       -106
+      ]
+     },
+     "to": {
+      "pos": [
+       7,
+       2.3,
+       -112
+      ],
+      "look": [
+       3,
+       2.6,
+       -96
+      ]
+     }
+    },
+    "fade": {
+     "in": 1.8
+    }
+   },
+   {
+    "dur": 5.2,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.6,
+       -97.5
+      ],
+      "look": [
+       0,
+       2.6,
+       -70
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.7,
+       -93
+      ],
+      "look": [
+       0,
+       2.4,
+       -66
+      ]
+     }
+    },
+    "title": {
+     "at": 0.6,
+     "dur": 4.2,
+     "text": "The Mausoleum",
+     "sub": "The Tomb of the Emperors, under the Hunting Wood"
+    }
+   },
+   {
+    "dur": 9.9,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       6,
+       -80
+      ],
+      "look": [
+       0,
+       2,
+       -60
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       5.4,
+       -76.5
+      ],
+      "look": [
+       0,
+       1.8,
+       -60
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 4.7,
+      "text": "The emperors of Vanai were laid to rest here, under the Hunting Wood."
+     },
+     {
+      "at": 5.1,
+      "dur": 4.7,
+      "text": "Their vigil lamps have never gone out. Something still fills them."
+     }
+    ]
+   },
+   {
+    "dur": 5.7,
+    "cam": {
+     "from": {
+      "pos": [
+       -3.5,
+       2.0,
+       -76
+      ],
+      "look": [
+       0,
+       1.3,
+       -68
+      ],
+      "fov": 0.6
+     },
+     "to": {
+      "pos": [
+       -3,
+       1.9,
+       -74.8
+      ],
+      "look": [
+       0,
+       1.3,
+       -68
+      ],
+      "fov": 0.56
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.3,
+      "text": "Four biers in the court are made up with fresh linen, for a household due back."
+     }
+    ]
+   },
+   {
+    "dur": 5.8,
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        2.0,
+        1.6,
+        -3.0
+       ]
+      },
+      "look": {
+       "self": [
+        -0.4,
+        0.7,
+        5
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.7,
+        1.75,
+        -3.2
+       ]
+      },
+      "look": {
+       "self": [
+        -0.3,
+        0.8,
+        6
+       ]
+      },
+      "fov": 0.9
+     }
+    },
+    "fade": {
+     "out": 1.4
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.4,
+      "text": "The way runs through the Crossing Hall and the Long Vigil to the Emperors' Vault."
+     }
+    ]
+   }
+  ]
+ },
+ "dungeon_overseerslodge": {
+  "name": "The Overseer's Lodge",
+  "zone": "overseerslodge",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4.6,
+    "cam": {
+     "from": {
+      "pos": [
+       -7.8,
+       4.1,
+       -35.6
+      ],
+      "look": [
+       2.5,
+       1.7,
+       -40
+      ]
+     },
+     "to": {
+      "pos": [
+       -7.4,
+       3.9,
+       -36.4
+      ],
+      "look": [
+       2.5,
+       1.8,
+       -38.5
+      ]
+     }
+    },
+    "fade": {
+     "in": 1.8
+    }
+   },
+   {
+    "dur": 5.2,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.0,
+       -34.5
+      ],
+      "look": [
+       0,
+       2.0,
+       -20
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.5,
+       -28.5
+      ],
+      "look": [
+       0,
+       2.0,
+       -16
+      ]
+     }
+    },
+    "title": {
+     "at": 0.6,
+     "dur": 4.2,
+     "text": "The Overseer's Lodge",
+     "sub": "The Office of the Timber Estates"
+    }
+   },
+   {
+    "dur": 9.9,
+    "cam": {
+     "from": {
+      "pos": [
+       -15,
+       5.5,
+       -28
+      ],
+      "look": [
+       4,
+       1.5,
+       -14
+      ]
+     },
+     "to": {
+      "pos": [
+       -13.5,
+       5.2,
+       -25.5
+      ],
+      "look": [
+       4,
+       1.5,
+       -12
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 3.8,
+      "text": "The empire ran the Timber Estates from this house."
+     },
+     {
+      "at": 4.3,
+      "dur": 5.4,
+      "text": "Every desk is laid out for a shift that has not come in for three hundred years."
+     }
+    ]
+   },
+   {
+    "dur": 5.7,
+    "cam": {
+     "from": {
+      "pos": [
+       7,
+       2.4,
+       -28
+      ],
+      "look": [
+       0,
+       1.4,
+       -18
+      ],
+      "fov": 0.6
+     },
+     "to": {
+      "pos": [
+       6,
+       2.3,
+       -26.5
+      ],
+      "look": [
+       0,
+       1.4,
+       -18
+      ],
+      "fov": 0.56
+     }
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.4,
+      "text": "At every window it is still the night the household left: moonlight on the rows."
+     }
+    ]
+   },
+   {
+    "dur": 5.9,
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        2.0,
+        1.6,
+        -3.0
+       ]
+      },
+      "look": {
+       "self": [
+        -0.4,
+        0.7,
+        5
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.7,
+        1.75,
+        -3.2
+       ]
+      },
+      "look": {
+       "self": [
+        -0.3,
+        0.8,
+        6
+       ]
+      },
+      "fov": 0.9
+     }
+    },
+    "fade": {
+     "out": 1.4
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.4,
+      "text": "The way runs through the Clerks' Hall and the Rota Hall to the Overseer's Office."
+     }
+    ]
+   }
+  ]
+ },
+ "dungeon_sunkenballroom": {
+  "name": "The Sunken Ballroom",
+  "zone": "sunkenballroom",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4.6,
+    "cam": {
+     "from": {
+      "pos": [
+       -4.5,
+       4.4,
+       -41
+      ],
+      "look": [
+       3,
+       2.5,
+       -53
+      ]
+     },
+     "to": {
+      "pos": [
+       -4.5,
+       4.2,
+       -42
+      ],
+      "look": [
+       2,
+       0.5,
+       -36
+      ]
+     }
+    },
+    "fade": {
+     "in": 1.8
+    }
+   },
+   {
+    "dur": 5.2,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       3.0,
+       -40.5
+      ],
+      "look": [
+       0,
+       0.5,
+       -20
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.6,
+       -29
+      ],
+      "look": [
+       0,
+       1.2,
+       -14
+      ]
+     }
+    },
+    "title": {
+     "at": 0.6,
+     "dur": 4.2,
+     "text": "The Sunken Ballroom",
+     "sub": "The Palace under the West Mere"
+    }
+   },
+   {
+    "dur": 9.9,
+    "cam": {
+     "from": {
+      "pos": [
+       27,
+       3.2,
+       -20
+      ],
+      "look": [
+       -10,
+       1.2,
+       -17
+      ]
+     },
+     "to": {
+      "pos": [
+       24.5,
+       3.1,
+       -19.5
+      ],
+      "look": [
+       -10,
+       1.2,
+       -17
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 4.8,
+      "text": "The household held its summer balls in this palace under the west mere."
+     },
+     {
+      "at": 5.15,
+      "dur": 4.75,
+      "text": "The lake presses at every window. The last ball was never cleared away."
+     }
+    ]
+   },
+   {
+    "dur": 5.7,
+    "cam": {
+     "from": {
+      "pos": [
+       -8,
+       2.2,
+       -13.5
+      ],
+      "look": [
+       -16,
+       1.3,
+       -17
+      ],
+      "fov": 0.6
+     },
+     "to": {
+      "pos": [
+       -9.5,
+       2.1,
+       -13.5
+      ],
+      "look": [
+       -16,
+       1.3,
+       -17
+      ],
+      "fov": 0.56
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 5.3,
+      "text": "The cloaks are still on their hooks. The supper on the tables was never eaten."
+     }
+    ]
+   },
+   {
+    "dur": 6.0,
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        2.0,
+        1.6,
+        -3.0
+       ]
+      },
+      "look": {
+       "self": [
+        -0.4,
+        0.7,
+        5
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.7,
+        1.75,
+        -3.2
+       ]
+      },
+      "look": {
+       "self": [
+        -0.3,
+        0.8,
+        6
+       ]
+      },
+      "fov": 0.9
+     }
+    },
+    "fade": {
+     "out": 1.4
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 5.8,
+      "text": "The gallery's doors to the floor have fallen in. The way round runs through the salons."
+     }
+    ]
+   }
+  ]
+ },
+ "dungeon_belltower": {
+  "name": "The Bell Tower",
+  "zone": "belltower",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "shots": [
+   {
+    "dur": 4.6,
+    "cam": {
+     "from": {
+      "pos": [
+       -6.5,
+       3.8,
+       -57.5
+      ],
+      "look": [
+       2,
+       1.8,
+       -60.5
+      ]
+     },
+     "to": {
+      "pos": [
+       -6.2,
+       3.8,
+       -57
+      ],
+      "look": [
+       0,
+       1.8,
+       -50
+      ]
+     }
+    },
+    "fade": {
+     "in": 1.8
+    }
+   },
+   {
+    "dur": 5.2,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.0,
+       -50.5
+      ],
+      "look": [
+       0,
+       2.5,
+       -30
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       2.6,
+       -42
+      ],
+      "look": [
+       0,
+       3.5,
+       -20
+      ]
+     }
+    },
+    "title": {
+     "at": 0.6,
+     "dur": 4.2,
+     "text": "The Bell Tower",
+     "sub": "The Valley Archive"
+    }
+   },
+   {
+    "dur": 9.9,
+    "cam": {
+     "from": {
+      "pos": [
+       -14,
+       3,
+       -40
+      ],
+      "look": [
+       10,
+       2,
+       -20
+      ]
+     },
+     "to": {
+      "pos": [
+       -12,
+       3.4,
+       -38
+      ],
+      "look": [
+       10,
+       2.4,
+       -19
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 5.6,
+      "text": "Every province sent its original records to this tower, the empire's valley archive."
+     },
+     {
+      "at": 6.0,
+      "dur": 3.8,
+      "text": "The lowest floors are flooded. The stacks are still wet."
+     }
+    ]
+   },
+   {
+    "dur": 7.0,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       2.4,
+       -26.5
+      ],
+      "look": [
+       0,
+       4,
+       -19
+      ],
+      "fov": 0.75
+     },
+     "to": {
+      "pos": [
+       0,
+       2.5,
+       -25.2
+      ],
+      "look": [
+       0,
+       4.6,
+       -19
+      ],
+      "fov": 0.75
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 6.7,
+      "text": "The way up runs floor by floor, stair by stair, round the open shaft to the bell chamber at the top."
+     }
+    ]
+   },
+   {
+    "dur": 5.0,
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        2.0,
+        1.6,
+        -3.0
+       ]
+      },
+      "look": {
+       "self": [
+        -0.4,
+        0.7,
+        5
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.7,
+        1.75,
+        -3.2
+       ]
+      },
+      "look": {
+       "self": [
+        -0.3,
+        0.8,
+        6
+       ]
+      },
+      "fov": 0.9
+     }
+    },
+    "fade": {
+     "out": 1.4
+    },
+    "lines": [
+     {
+      "at": 0.2,
+      "dur": 4.6,
+      "text": "On the hour, the bell rings. Nobody outside has ever known for whom."
+     }
+    ]
+   }
+  ]
+ }
+}

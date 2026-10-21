@@ -1,0 +1,414 @@
+{
+ "pack": "tomb",
+ "props": {
+  "bone_long": {
+   "pack": "tomb",
+   "min": [
+    -0.26,
+    0,
+    -0.033
+   ],
+   "max": [
+    0.234,
+    0.06,
+    0.067
+   ],
+   "tris": 315,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "bones_scatter": {
+   "pack": "tomb",
+   "min": [
+    -0.262,
+    0,
+    -0.228
+   ],
+   "max": [
+    0.251,
+    0.06,
+    0.214
+   ],
+   "tris": 774,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "skull": {
+   "pack": "tomb",
+   "min": [
+    -0.073,
+    0.002,
+    -0.073
+   ],
+   "max": [
+    0.072,
+    0.169,
+    0.107
+   ],
+   "tris": 666,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "coffin": {
+   "pack": "tomb",
+   "min": [
+    -0.395,
+    0,
+    -1.1
+   ],
+   "max": [
+    0.395,
+    0.632,
+    1.1
+   ],
+   "tris": 2225,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "pot_shards": {
+   "pack": "tomb",
+   "min": [
+    -0.441,
+    0,
+    -0.487
+   ],
+   "max": [
+    0.483,
+    0.286,
+    0.458
+   ],
+   "tris": 676,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "rubble_heap": {
+   "pack": "tomb",
+   "min": [
+    -1.029,
+    0,
+    -0.802
+   ],
+   "max": [
+    1,
+    1.752,
+    0.759
+   ],
+   "tris": 2568,
+   "farTris": 208,
+   "far": true,
+   "small": false,
+   "tint": {
+    "tomb": "#e2dcd2"
+   }
+  },
+  "rubble_spill": {
+   "pack": "tomb",
+   "min": [
+    -2.65,
+    0,
+    -1.35
+   ],
+   "max": [
+    2.65,
+    1.224,
+    1.35
+   ],
+   "tris": 2840,
+   "farTris": 168,
+   "far": true,
+   "small": false,
+   "tint": {
+    "tomb": "#e2dcd2"
+   }
+  },
+  "boulder_moss": {
+   "pack": "tomb",
+   "min": [
+    -0.497,
+    0,
+    -0.476
+   ],
+   "max": [
+    0.491,
+    0.828,
+    0.449
+   ],
+   "tris": 288,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "dirt_straw": {
+   "pack": "tomb",
+   "min": [
+    -0.932,
+    0.002,
+    -0.922
+   ],
+   "max": [
+    0.859,
+    0.04,
+    0.918
+   ],
+   "tris": 338,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  }
+ },
+ "swap": {
+  "halloween/bone_A.gltf": {
+   "to": "bone_long",
+   "fit": "real",
+   "offset": [
+    0,
+    0.138,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.353,
+     -0.138,
+     -0.1
+    ],
+    "max": [
+     0.353,
+     0.138,
+     0.1
+    ]
+   }
+  },
+  "halloween/bone_C.gltf": {
+   "to": "bone_long",
+   "fit": "real",
+   "offset": [
+    0,
+    0.15,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.553,
+     -0.138,
+     -0.1
+    ],
+    "max": [
+     0.553,
+     0.138,
+     0.1
+    ]
+   }
+  },
+  "halloween/bone_B.gltf": {
+   "to": "bones_scatter",
+   "fit": "real",
+   "offset": [
+    0,
+    0.087,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.298,
+     -0.087,
+     -0.143
+    ],
+    "max": [
+     0.309,
+     0.087,
+     0.143
+    ]
+   }
+  },
+  "props/Skull.gltf": {
+   "to": "skull",
+   "fit": "real",
+   "from": {
+    "min": [
+     -0.076,
+     -0.001,
+     -0.143
+    ],
+    "max": [
+     0.076,
+     0.194,
+     0.118
+    ]
+   }
+  },
+  "halloween/coffin_decorated.gltf": {
+   "to": "coffin",
+   "fit": "real",
+   "from": {
+    "min": [
+     -1,
+     0,
+     -1.5
+    ],
+    "max": [
+     1,
+     0.903,
+     1.5
+    ]
+   }
+  },
+  "props/Vase_Rubble_Large.gltf": {
+   "to": "pot_shards",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.443,
+     -0.003,
+     -0.496
+    ],
+    "max": [
+     0.448,
+     0.178,
+     0.515
+    ]
+   }
+  },
+  "props/Vase_Rubble_Medium.gltf": {
+   "to": "pot_shards",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.38,
+     0.003,
+     -0.278
+    ],
+    "max": [
+     0.417,
+     0.178,
+     0.32
+    ]
+   }
+  },
+  "props/Vase_Rubble_Small.gltf": {
+   "to": "pot_shards",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.178,
+     -0.002,
+     -0.239
+    ],
+    "max": [
+     0.255,
+     0.153,
+     0.173
+    ]
+   }
+  },
+  "dungeon/rubble_half.glb": {
+   "to": "rubble_heap",
+   "from": {
+    "min": [
+     0,
+     0,
+     -1.516
+    ],
+    "max": [
+     4,
+     3.5,
+     1.484
+    ]
+   }
+  },
+  "dungeon/rubble_large.glb": {
+   "to": "rubble_spill",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -4.069,
+     0,
+     -1.586
+    ],
+    "max": [
+     4.06,
+     3.496,
+     1.597
+    ]
+   }
+  },
+  "Rock_Moss_1.glb": {
+   "to": "boulder_moss",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.185,
+     -0.172,
+     -0.225
+    ],
+    "max": [
+     0.3,
+     0.778,
+     0.242
+    ]
+   }
+  },
+  "Rock_Moss_2.glb": {
+   "to": "boulder_moss",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.264,
+     -0.137,
+     -0.356
+    ],
+    "max": [
+     0.348,
+     0.555,
+     0.295
+    ]
+   }
+  },
+  "dungeon/floor_dirt_small_A.glb": {
+   "to": "dirt_straw",
+   "fit": "footprint",
+   "offset": [
+    0,
+    0.155,
+    0
+   ],
+   "from": {
+    "min": [
+     -1,
+     -0.1,
+     -1
+    ],
+    "max": [
+     1,
+     0.086,
+     1
+    ]
+   }
+  },
+  "dungeon/floor_dirt_small_C.glb": {
+   "to": "dirt_straw",
+   "fit": "footprint",
+   "offset": [
+    0,
+    0.155,
+    0
+   ],
+   "from": {
+    "min": [
+     -1,
+     -0.1,
+     -1
+    ],
+    "max": [
+     1,
+     0.109,
+     1
+    ]
+   }
+  }
+ }
+}

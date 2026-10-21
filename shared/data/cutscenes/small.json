@@ -1,0 +1,902 @@
+{
+ "job_caerdun": {
+  "name": "The Paladin Hall",
+  "zone": "caerdun",
+  "trigger": {
+   "type": "job_change"
+  },
+  "daytime": 0.12,
+  "mark": [
+   19.5,
+   -50.5,
+   1.5708
+  ],
+  "shots": [
+   {
+    "dur": 5.5,
+    "fade": {
+     "in": 1.2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       33,
+       15,
+       -80
+      ],
+      "look": [
+       22,
+       5,
+       -48
+      ]
+     },
+     "to": {
+      "pos": [
+       28,
+       11,
+       -72
+      ],
+      "look": [
+       22,
+       4.5,
+       -49
+      ]
+     },
+     "ease": "out"
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:drillmaster_hal"
+     },
+     {
+      "at": 0,
+      "who": "npc:drillmaster_hal",
+      "face": "self"
+     }
+    ],
+    "title": {
+     "at": 0.9,
+     "dur": 4.2,
+     "text": "The Paladin Hall",
+     "sub": "Caerdun: where any job is taken up"
+    }
+   },
+   {
+    "dur": 9.9,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "drillmaster_hal",
+       "off": [
+        -0.85,
+        1.92,
+        4.0
+       ]
+      },
+      "look": {
+       "npc": "drillmaster_hal",
+       "off": [
+        0,
+        1.62,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "drillmaster_hal",
+       "off": [
+        -0.7,
+        1.8699999999999999,
+        3.6
+       ]
+      },
+      "look": {
+       "npc": "drillmaster_hal",
+       "off": [
+        0,
+        1.62,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:drillmaster_hal"
+     },
+     {
+      "at": 0,
+      "who": "npc:drillmaster_hal",
+      "face": "self"
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 9.2,
+      "who": "npc:drillmaster_hal",
+      "text": "Another job? Good. Every job in this hall is open to an explorer who will drill it. Change back whenever you stand in the hall's light."
+     }
+    ]
+   },
+   {
+    "dur": 7.5,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "drillmaster_hal",
+       "off": [
+        -1.5,
+        1.3,
+        0.75
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.15,
+        0
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "npc": "drillmaster_hal",
+       "off": [
+        -1.35,
+        1.25,
+        0.95
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.15,
+        0
+       ]
+      },
+      "fov": 0.88
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 6.9,
+      "who": "npc:drillmaster_hal",
+      "text": "The body remembers what the drill taught it; the old job keeps. The new weapon only has to catch up."
+     }
+    ]
+   },
+   {
+    "dur": 5.5,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "drillmaster_hal",
+       "off": [
+        -1.1,
+        1.67,
+        4.5
+       ]
+      },
+      "look": {
+       "npc": "drillmaster_hal",
+       "off": [
+        0,
+        1.13,
+        0
+       ]
+      },
+      "fov": 0.7
+     },
+     "to": {
+      "pos": {
+       "npc": "drillmaster_hal",
+       "off": [
+        -0.6,
+        2.6,
+        7.5
+       ]
+      },
+      "look": {
+       "npc": "drillmaster_hal",
+       "off": [
+        0,
+        0.97,
+        0
+       ]
+      },
+      "fov": 0.74
+     }
+    },
+    "cues": [
+     {
+      "at": 2.4,
+      "who": "npc:drillmaster_hal",
+      "anim": "emote:Wave",
+      "for": 2.4
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 2.8,
+      "who": "npc:drillmaster_hal",
+      "text": "Back straight, {name}. Off you go."
+     }
+    ]
+   }
+  ]
+ },
+ "job_heartwood": {
+  "name": "The Chanters' Hall",
+  "zone": "heartwood",
+  "trigger": {
+   "type": "job_change"
+  },
+  "daytime": 0.12,
+  "mark": [
+   94.0,
+   -112.2,
+   0.0
+  ],
+  "shots": [
+   {
+    "dur": 5.5,
+    "fade": {
+     "in": 1.2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       75,
+       9,
+       -105
+      ],
+      "look": [
+       100,
+       3,
+       -114
+      ]
+     },
+     "to": {
+      "pos": [
+       78.5,
+       6,
+       -111.5
+      ],
+      "look": [
+       100,
+       3,
+       -114
+      ]
+     },
+     "ease": "out"
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:chantmaster_wynn"
+     },
+     {
+      "at": 0,
+      "who": "npc:chantmaster_wynn",
+      "face": "self"
+     }
+    ],
+    "title": {
+     "at": 0.9,
+     "dur": 4.2,
+     "text": "The Chanters' Hall",
+     "sub": "Heartwood: where any job is taken up"
+    }
+   },
+   {
+    "dur": 10.3,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        1.1,
+        1.3,
+        3.7
+       ]
+      },
+      "look": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        0,
+        0.85,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        0.9500000000000001,
+        1.25,
+        3.3000000000000003
+       ]
+      },
+      "look": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        0,
+        0.85,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:chantmaster_wynn"
+     },
+     {
+      "at": 0,
+      "who": "npc:chantmaster_wynn",
+      "face": "self"
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 9.6,
+      "who": "npc:chantmaster_wynn",
+      "text": "A new job. Good. A song lives in too many chests to steal, and so does a skill. Stand in the hall's light whenever you want the old one back."
+     }
+    ]
+   },
+   {
+    "dur": 7.9,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        1.5,
+        1.3,
+        0.4500000000000002
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.15,
+        0
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        1.35,
+        1.25,
+        0.6500000000000001
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.15,
+        0
+       ]
+      },
+      "fov": 0.88
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 7.3,
+      "who": "npc:chantmaster_wynn",
+      "text": "Sing it badly for a week; every job starts badly. The trees forgive a wrong note sooner than a silent one."
+     }
+    ]
+   },
+   {
+    "dur": 5.5,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        1.1,
+        1.05,
+        4.2
+       ]
+      },
+      "look": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        0,
+        0.59,
+        0
+       ]
+      },
+      "fov": 0.7
+     },
+     "to": {
+      "pos": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        0.6,
+        2.6,
+        7.2
+       ]
+      },
+      "look": {
+       "npc": "chantmaster_wynn",
+       "off": [
+        0,
+        0.51,
+        0
+       ]
+      },
+      "fov": 0.74
+     }
+    },
+    "cues": [
+     {
+      "at": 2.4,
+      "who": "npc:chantmaster_wynn",
+      "anim": "emote:Wave",
+      "for": 2.4
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 3.0,
+      "who": "npc:chantmaster_wynn",
+      "text": "Go gently, {name}. They are listening."
+     }
+    ]
+   }
+  ]
+ },
+ "job_moonmere": {
+  "name": "The Mending College",
+  "zone": "moonmere",
+  "trigger": {
+   "type": "job_change"
+  },
+  "daytime": 0.12,
+  "mark": [
+   86.36,
+   126.99,
+   -0.9716
+  ],
+  "shots": [
+   {
+    "dur": 5.5,
+    "fade": {
+     "in": 1.2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       77,
+       9,
+       108
+      ],
+      "look": [
+       84,
+       4,
+       126
+      ]
+     },
+     "to": {
+      "pos": [
+       86,
+       7,
+       110
+      ],
+      "look": [
+       84,
+       4,
+       126
+      ]
+     },
+     "ease": "out"
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:proctor_elm"
+     },
+     {
+      "at": 0,
+      "who": "npc:proctor_elm",
+      "face": "self"
+     }
+    ],
+    "title": {
+     "at": 0.9,
+     "dur": 4.2,
+     "text": "The Mending College",
+     "sub": "Moonmere: where any job is taken up"
+    }
+   },
+   {
+    "dur": 10.4,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "proctor_elm",
+       "off": [
+        0.85,
+        1.9,
+        4.0
+       ]
+      },
+      "look": {
+       "npc": "proctor_elm",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "proctor_elm",
+       "off": [
+        0.7,
+        1.8499999999999999,
+        3.6
+       ]
+      },
+      "look": {
+       "npc": "proctor_elm",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:proctor_elm"
+     },
+     {
+      "at": 0,
+      "who": "npc:proctor_elm",
+      "face": "self"
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 9.7,
+      "who": "npc:proctor_elm",
+      "text": "Another job. The academy will want a form for that. The college will not: stand in its light and any job is yours, this one or the old one back."
+     }
+    ]
+   },
+   {
+    "dur": 6.5,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "proctor_elm",
+       "off": [
+        1.5,
+        1.3,
+        0.75
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.15,
+        0
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "npc": "proctor_elm",
+       "off": [
+        1.35,
+        1.25,
+        0.95
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.15,
+        0
+       ]
+      },
+      "fov": 0.88
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 5.8,
+      "who": "npc:proctor_elm",
+      "text": "We mend what the road did. What a new job does to your pride, you mend yourself."
+     }
+    ]
+   },
+   {
+    "dur": 5.5,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "proctor_elm",
+       "off": [
+        1.1,
+        1.65,
+        4.5
+       ]
+      },
+      "look": {
+       "npc": "proctor_elm",
+       "off": [
+        0,
+        1.12,
+        0
+       ]
+      },
+      "fov": 0.7
+     },
+     "to": {
+      "pos": {
+       "npc": "proctor_elm",
+       "off": [
+        0.6,
+        2.1,
+        5.5
+       ]
+      },
+      "look": {
+       "npc": "proctor_elm",
+       "off": [
+        0,
+        0.96,
+        0
+       ]
+      },
+      "fov": 0.74
+     }
+    },
+    "cues": [
+     {
+      "at": 2.4,
+      "who": "npc:proctor_elm",
+      "anim": "emote:Wave",
+      "for": 2.4
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 4.2,
+      "who": "npc:proctor_elm",
+      "text": "Rest first, {name}. Then go and be bad at it elsewhere."
+     }
+    ]
+   }
+  ]
+ },
+ "attune_first": {
+  "name": "The First Crystal",
+  "zone": "*",
+  "trigger": {
+   "type": "attune"
+  },
+  "music": "*",
+  "shots": [
+   {
+    "dur": 4.6,
+    "fade": {
+     "in": 1.0
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        0.9,
+        1.35,
+        -2.6
+       ]
+      },
+      "look": {
+       "crystal": true,
+       "off": [
+        0,
+        2.1,
+        0
+       ]
+      },
+      "fov": 1.0
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.1,
+        1.25,
+        -3.0
+       ]
+      },
+      "look": {
+       "crystal": true,
+       "off": [
+        0,
+        2.6,
+        0
+       ]
+      },
+      "fov": 1.0
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 4.1,
+      "text": "The teleport crystal knows you now: you are attuned to it."
+     }
+    ]
+   },
+   {
+    "dur": 10.5,
+    "cam": {
+     "from": {
+      "pos": {
+       "crystal": true,
+       "off": [
+        -5.6,
+        3.4,
+        -4.6
+       ]
+      },
+      "look": {
+       "crystal": true,
+       "off": [
+        0,
+        4.6,
+        0
+       ]
+      },
+      "fov": 0.8
+     },
+     "to": {
+      "pos": {
+       "crystal": true,
+       "off": [
+        4.6,
+        5.0,
+        -5.6
+       ]
+      },
+      "look": {
+       "crystal": true,
+       "off": [
+        0,
+        4.6,
+        0
+       ]
+      },
+      "fov": 0.8
+     },
+     "via": {
+      "crystal": true,
+      "off": [
+       0,
+       4.2,
+       -7.6
+      ]
+     },
+     "ease": "linear"
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 10.0,
+      "text": "Touch it to open its menu. From any crystal that knows you, you can travel to any other for a small fare, and choose one to call home; home is free."
+     }
+    ]
+   },
+   {
+    "dur": 4.0,
+    "fade": {
+     "out": 1.3
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.0,
+        1.9,
+        -3.6
+       ]
+      },
+      "look": {
+       "crystal": true,
+       "off": [
+        0,
+        1.8,
+        0
+       ]
+      },
+      "fov": 1.0
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.7,
+        2.4,
+        -6.0
+       ]
+      },
+      "look": {
+       "crystal": true,
+       "off": [
+        0,
+        1.7,
+        0
+       ]
+      },
+      "fov": 1.0
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 3.1,
+      "text": "If you fall, you wake at your home crystal."
+     }
+    ]
+   }
+  ]
+ }
+}

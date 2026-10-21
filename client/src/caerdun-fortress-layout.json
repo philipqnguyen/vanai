@@ -1,0 +1,4781 @@
+{
+ "about": "Caerdun as a fortress (branch caerdun-fortress, 2026-10-06): the plan as data the Babylon-free planners in client/src/zones/caerdun_*.ts make into the city (CITY-BUILD.md step 4). Direction C, the Sea Gate (CF-1), with A's landward front -- rock-cut ditch, barbican, drawbridge and arch (CF-2) -- in C's granite (CF-4), walled area ~42,500 m2 (CF-5), all 43 NPCs (CF-6), walkable wall walks (CF-7). Numbers fixed by the build contract (tools/data/caerdun_contract.json) are copied, never retyped; the plan's own decisions are the rows, yards, wall stairs' bays and the harbour's detail. Rulings CF-n: CAERDUN.md \"Rulings\".",
+ "buildNotes": [
+  "DEPARTURE (contract 4.4 W4/W5): every sg_wall_stair rises toward its run's FROM node -- the module's +x runs against the run when its back stands on the town face -- so W4 rises south to a landing beside w1 and W5 east to one beside s4 (the contract had them rising north and west).",
+  "DEPARTURE (contract 4.2): round the Lantern Bastion the plateau edge follows each curtain's outside to the drum's flank and crosses in front of the gorge at bastion-local z -4.6, so the drum and its strip-level hall stand on the strip (the contract's line went 3 m outside the drum, which buried the hall, the postern and the keeper's door). A gorge apron (sg_scarp bays at local z -1.5, faces inside the gorge masonry) covers the town-side band; the drawn slope stays out of the hall where B1/B2 stand (measured by the test).",
+  "CLOSE-OUT (2026-10-06): the Samurai hall stands at its true 16 m depth, moved 3.5 m north (centre z -94.333) so its back is a metre clear of tower s1; its great door is on the parade's south edge and Code-Master Rudd stands before it (the contract's spot moved with it).",
+  "DEPARTURE (contract 4.5): the outer quay's own sg_quay bays are the sea face from (-244,-60) to (-238,-6); the contract's 5 m sg_harbour_wall on that line and its sg_quay along x -238 overlapped from z -54 north. sg_harbour_wall stands north of the water gate and as the south curtain's sea bay (moved to x -221: at -219 it overlapped the harbour tower).",
+  "DEPARTURE (contract 4.5): the warehouses back on the scarp foot with a 0.5 m gap (facades at x ~-178..-183); at the contract's x -176 their 12.2 m bodies stood inside the battered scarp.",
+  "Contract label fixed: the Smiths' Guild faces NORTH onto Wall Street (yaw 0; its rect is z -25..-15 with the facade at -15), not yaw pi.",
+  "The court hall's datums leave C2's head (z -2.8) 1.6 m short of the gallery (z -4.4): a landing at the gallery's height joins them. The crown terrace's caphouse well runs to the terrace's edge, so a landing inside the caphouse takes F4's head, its door on its +x side.",
+  "The scarp is continuous behind the Wall Stair (its battered face passes under the covered flight) so its apron and deck carry the walker from the stair's head to the Sea Gate's outer mouth.",
+  "The house rows place each house at the first free position along its facade line (the mock-up's separating-axis rule); a house that does not fit is reported in planCaerdun().blocks.unplaced and fails the test.",
+  "FIX PASS (2026-10-06, after the plan review): the walk's holes closed -- tower rooms' chamfer walls inside the outer diagonals, the walk deck over each flank door's whole opening, a floor through each corner tower's door, a wall from each curtain's parados to the bastion's gorge parapet, the platform laid as one disc. Every open edge inside the climbing shells (court, clock, Crown Gate towers, bastion, lighthouse) gets a rail from caerdun_guard.ts, found by probing with the game's ground rule.",
+  "FIX PASS: the plan takes the generator's departures from its manifest -- the clock's flights alternating between the +x and -x walls with their wells, the Crown Gate's stairwells over F2/F2s/F4 (the crown terrace now runs on inside the caphouse) -- and holds them equal in the test. DEPARTURE PENDING THE GENERATOR: the caphouse's east door at the contract's 1.3 m (z -6.95..-5.65); the shipped 1.0 m door left the body 5 cm a side and the crown post unreached.",
+  "FIX PASS: roofs and cones as the modules are -- the end bay's ridge (or dormer) dropped under every hip, the house turrets' cones on their merlons at 14.9 x the turret's y scale (on the turret's axis), the Sea Gate pair's on the cap at 29.2 (both MEASURED from the manifest; the contract's 19.85 and 29.65 floated them).",
+  "FIX PASS, THE TOWN: the Tally Quarter's 40 m lot is gone -- the Tally close carries Tally Lane on to Yard Street (z -58, 3 m south of its line, past the inn), the Garrison Range (the brief's eighth named building, house bays like the stores) faces the parade across Yard Street and lines the close, and South Lane's north side west of Yard Street is a row. The contract's E-W lane at z 50 in the North Street Quarter is laid (the court lane). Rows are party-walled terraces (gap 0); Lantern Street's north facade is the contract's z 30; Wall Street's south rows are 12 m deep; a lean-to stands behind every house whose yard runs 10 m or more (16). Rampart Row's rr5 is one 5-bay house and Yard North two, to keep 52 houses.",
+  "CLOSE-OUT (2026-10-06), THE YARDS: Philip kept 44-52 houses, so the 12 m yard rule gave way: every yard is WALLED where it meets a street, lane or square (sg_low_wall with an open sg_yard_gate in every run of 4.5 m or more) and DRESSED as a kitchen garden (sg_yard_dress plots and sg_well wells, caerdun_yards.ts) until no open lot is wider than 12 m (CAERDUN-CONTRACT.md 4.7; the plan test holds both halves).",
+  "CLOSE-OUT: no invisible wall at a visible drop -- every guard rail inside the climbing shells carries a handrail module on its line (sg_rail on floors' edges, sg_rail_flight up flights' sides); the ledge outside the sea curtain has a low granite parapet (sg_low_wall) on the scarp's coping, open only at the Wall Stair's head, and across its free ends (the pit by the bastion's drum, the south end, the NE corner); the bastion's junction walls are sg_parados; the scarp's battered face has a collider at its foot on the strip. The moles' 1.1 m edges stay open: a quay is open.",
+  "CLOSE-OUT: s_caer_1's 'both ends of the sea front; everything else is stairs' (CF-17; it said 'the two ends of Caerdun') -- the harbour ward runs south to the strip's end (its curtain at z -128.5) with the Harbour Terrace there, and the Lantern Wall closes the ward's north end from the bastion's drum to the harbour wall: the Lantern Quay beyond (the keeper's door, the pilots' house, the north mole) is reached through the bastion's stair hall, so the terrace and the lighthouse's foot are joined only by the Wall Stair, the city and the bastion's stairs. The quay apron is on grid lines.",
+  "CLOSE-OUT: the Crown Gate's F3 and F4 are each split by a half-landing (F3a/F3b, F4a/F4b: 16 + 15 risers) -- 31 risers at 0.205 was one over the contract's 30; the layout copies the flights and landings from the manifest's departures.",
+  "CLOSE-OUT: Bertil Lund ('at the kitchen table') and Innkeeper Sayre ('in here', by the fire) stand indoors: the third bay of Bertil's house on Landward Lane and of the Crown Inn is sg_house_open, its ground-floor room walkable (CF-6), each NPC 1 m clear of its furniture.",
+  "Corner towers are culling cells of their own (tower:sw, tower:ne, tower:se): with se-s1's 43 m run the corner made a 50 m cell (MEASURED from the manifest's extents).",
+  "The Samurai hall's banners hang larger from its outer bays, the Paladin hall's flank its door: the halls are told apart by their banners' placement (CF-8 keeps both blue and bone).",
+  "RULINGS 2026-10-08: CF-16 the guild halls' great doors stand open on lit vestibules (sg_guild_hall.vestibule; Lund and Rudd stand in them); CF-18 a lighthouse keeper (lampkeeper_varn) on the bastion platform, the light post on her left; CF-22 the exit portal in the barbican's arch on the city side of the drawbridge, the spawn in the barbican court, the passage's outer mouth closed behind the glow (the glacis, bridge and ditch are scenery); CF-15 the court_archive site is 'in' the court hall."
+ ],
+ "shape": {
+  "pts": [
+   [
+    -201.24,
+    -182.832
+   ],
+   [
+    -210.8207,
+    -132.1765
+   ],
+   [
+    -222.2607,
+    -82.0704
+   ],
+   [
+    -244.842,
+    -35.256
+   ],
+   [
+    -232.6709,
+    16.1713
+   ],
+   [
+    -215.3959,
+    65.4633
+   ],
+   [
+    -184.47,
+    109.044
+   ],
+   [
+    -139.9561,
+    131.5
+   ],
+   [
+    -92.8847,
+    147.5622
+   ],
+   [
+    -46.4062,
+    165.1066
+   ],
+   [
+    0.0,
+    182.832
+   ],
+   [
+    46.1669,
+    176.4638
+   ],
+   [
+    92.2837,
+    169.7506
+   ],
+   [
+    137.6203,
+    157.6738
+   ],
+   [
+    184.47,
+    156.0
+   ],
+   [
+    176.0,
+    110.0
+   ],
+   [
+    172.0,
+    60.0
+   ],
+   [
+    174.0,
+    10.0
+   ],
+   [
+    174.0,
+    -40.0
+   ],
+   [
+    166.0,
+    -95.0
+   ],
+   [
+    140.0,
+    -135.0
+   ],
+   [
+    100.0,
+    -148.0
+   ],
+   [
+    50.0,
+    -150.0
+   ],
+   [
+    0.0,
+    -150.0
+   ],
+   [
+    -50.0,
+    -150.0
+   ],
+   [
+    -100.0,
+    -156.0
+   ],
+   [
+    -150.0,
+    -168.0
+   ]
+  ],
+  "coast": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ]
+ },
+ "walls": {
+  "nodes": [
+   {
+    "id": "sw",
+    "x": -146.0,
+    "z": -107.333,
+    "kind": "corner"
+   },
+   {
+    "id": "w1",
+    "x": -155.0,
+    "z": -70.0,
+    "kind": "tower"
+   },
+   {
+    "id": "sgS",
+    "x": -160.0,
+    "z": -29.4,
+    "kind": "cone"
+   },
+   {
+    "id": "seagate",
+    "x": -160.0,
+    "z": -10.0,
+    "kind": "seagate"
+   },
+   {
+    "id": "sgN",
+    "x": -156.335,
+    "z": 9.755,
+    "kind": "cone"
+   },
+   {
+    "id": "bastionS",
+    "x": -153.837,
+    "z": 23.227,
+    "kind": "bastionS"
+   },
+   {
+    "id": "bastionN",
+    "x": -134.595,
+    "z": 47.532,
+    "kind": "bastionN"
+   },
+   {
+    "id": "n1",
+    "x": -122.0,
+    "z": 58.0,
+    "kind": "tower"
+   },
+   {
+    "id": "ramparts",
+    "x": -95.0,
+    "z": 71.0,
+    "kind": "tall"
+   },
+   {
+    "id": "n3",
+    "x": -62.0,
+    "z": 84.0,
+    "kind": "tower"
+   },
+   {
+    "id": "n4",
+    "x": -37.0,
+    "z": 93.1,
+    "kind": "tall"
+   },
+   {
+    "id": "n5",
+    "x": 0.0,
+    "z": 107.0,
+    "kind": "tower"
+   },
+   {
+    "id": "n6",
+    "x": 34.0,
+    "z": 106.0,
+    "kind": "tower"
+   },
+   {
+    "id": "ne",
+    "x": 65.333,
+    "z": 103.0,
+    "kind": "corner"
+   },
+   {
+    "id": "e1",
+    "x": 65.333,
+    "z": 62.0,
+    "kind": "tower"
+   },
+   {
+    "id": "e2",
+    "x": 65.333,
+    "z": 22.0,
+    "kind": "tower"
+   },
+   {
+    "id": "crowngate",
+    "x": 65.333,
+    "z": -18.0,
+    "kind": "gate"
+   },
+   {
+    "id": "e3",
+    "x": 65.333,
+    "z": -62.0,
+    "kind": "tower"
+   },
+   {
+    "id": "se",
+    "x": 65.333,
+    "z": -107.333,
+    "kind": "corner"
+   },
+   {
+    "id": "s1",
+    "x": 22.0,
+    "z": -107.333,
+    "kind": "tower"
+   },
+   {
+    "id": "s2",
+    "x": -20.0,
+    "z": -107.333,
+    "kind": "tower"
+   },
+   {
+    "id": "s3",
+    "x": -62.0,
+    "z": -107.333,
+    "kind": "tower"
+   },
+   {
+    "id": "s4",
+    "x": -104.0,
+    "z": -107.333,
+    "kind": "tower"
+   }
+  ],
+  "half": {
+   "tower": 5.0,
+   "tall": 5.0,
+   "cone": 5.0,
+   "corner": 6.5,
+   "seagate": 6.4,
+   "gate": 15.0,
+   "bastionS": 0.0,
+   "bastionN": 0.0
+  },
+  "deckInto": {
+   "tower": 1.45,
+   "tall": 1.45,
+   "cone": 1.45,
+   "corner": 2.0,
+   "seagate": 0.5,
+   "gate": 0.0,
+   "bastionS": 1.5,
+   "bastionN": 1.5
+  },
+  "seaRuns": [
+   "sw",
+   "w1",
+   "sgS",
+   "seagate",
+   "sgN",
+   "bastionN",
+   "n1",
+   "ramparts",
+   "n3",
+   "n4",
+   "n5",
+   "n6"
+  ],
+  "bastion": {
+   "x": -145.0,
+   "z": 36.0,
+   "face": [
+    -24.0,
+    19.0
+   ]
+  },
+  "stairs": [
+   {
+    "id": "W3",
+    "run": "ne-e1",
+    "bay": 1
+   },
+   {
+    "id": "W4",
+    "run": "w1-sgS",
+    "bay": 1
+   },
+   {
+    "id": "W5",
+    "run": "s4-sw",
+    "bay": 1
+   }
+  ],
+  "coneOnTall": [
+   -3.0,
+   29.2,
+   -1.6
+  ],
+  "cressetEvery": 2,
+  "litBays": {
+   "runs": [
+    "sw-w1",
+    "w1-sgS",
+    "sgS-seagate",
+    "seagate-sgN",
+    "sgN-bastionS",
+    "bastionN-n1"
+   ],
+   "every": 1,
+   "offset": 0
+  },
+  "doors": {
+   "tower": [
+    -1.55,
+    0.75
+   ],
+   "cornerHalf": 1.45
+  },
+  "plateauEdgeRef": [
+   [
+    -148.92,
+    -108.04
+   ],
+   [
+    -157.95,
+    -70.54
+   ],
+   [
+    -162.99,
+    -29.58
+   ],
+   [
+    -162.99,
+    -9.73
+   ],
+   [
+    -159.3,
+    10.18
+   ],
+   [
+    -157.69,
+    22.29
+   ],
+   [
+    -165.31,
+    28.06
+   ],
+   [
+    -167.91,
+    39.39
+   ],
+   [
+    -162.64,
+    49.97
+   ],
+   [
+    -153.56,
+    57.52
+   ],
+   [
+    -141.93,
+    57.59
+   ],
+   [
+    -135.0,
+    51.54
+   ],
+   [
+    -123.54,
+    60.58
+   ],
+   [
+    -96.2,
+    73.75
+   ],
+   [
+    -63.06,
+    86.81
+   ],
+   [
+    -38.04,
+    95.91
+   ],
+   [
+    -0.49,
+    109.96
+   ],
+   [
+    34.19,
+    108.99
+   ],
+   [
+    65.62,
+    105.99
+   ]
+  ],
+  "scarpTopRef": [
+   [
+    -153.29,
+    -109.09
+   ],
+   [
+    -162.38,
+    -71.34
+   ],
+   [
+    -167.49,
+    -29.86
+   ],
+   [
+    -167.47,
+    -9.31
+   ],
+   [
+    -163.76,
+    10.82
+   ],
+   [
+    -161.84,
+    20.54
+   ],
+   [
+    -169.11,
+    25.65
+   ],
+   [
+    -172.37,
+    39.94
+   ],
+   [
+    -166.17,
+    52.76
+   ],
+   [
+    -155.12,
+    61.74
+   ],
+   [
+    -140.46,
+    61.84
+   ],
+   [
+    -134.91,
+    56.04
+   ],
+   [
+    -125.84,
+    64.44
+   ],
+   [
+    -98.0,
+    77.87
+   ],
+   [
+    -64.66,
+    91.01
+   ],
+   [
+    -39.6,
+    100.13
+   ],
+   [
+    -1.23,
+    114.4
+   ],
+   [
+    34.47,
+    113.49
+   ],
+   [
+    66.05,
+    110.47
+   ]
+  ],
+  "crownGate": {
+   "stairwells": {
+    "F2": [
+     -9.4,
+     -5.6,
+     -7.4,
+     -1.6
+    ],
+    "F2s": [
+     7.4,
+     -5.6,
+     9.4,
+     -1.6
+    ],
+    "F4": [
+     -9.4,
+     -5.6,
+     -7.4,
+     -1.2
+    ]
+   },
+   "caphouseDoor": [
+    -6.95,
+    -5.65
+   ],
+   "flights": [
+    {
+     "from": [
+      -12.6,
+      0.0,
+      -5.6
+     ],
+     "half": 1.0,
+     "id": "F1",
+     "to": [
+      -12.6,
+      5.7,
+      3.1
+     ]
+    },
+    {
+     "from": [
+      -8.4,
+      5.7,
+      3.1
+     ],
+     "half": 1.0,
+     "id": "F2",
+     "to": [
+      -8.4,
+      11.4,
+      -5.6
+     ]
+    },
+    {
+     "id": "F3a",
+     "from": [
+      -12.6,
+      11.4,
+      -5.6
+     ],
+     "to": [
+      -12.6,
+      14.6774,
+      -0.8
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F3b",
+     "from": [
+      -12.6,
+      14.6774,
+      0.2
+     ],
+     "to": [
+      -12.6,
+      17.75,
+      4.7
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F4a",
+     "from": [
+      -8.4,
+      17.75,
+      4.7
+     ],
+     "to": [
+      -8.4,
+      20.8226,
+      0.2
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F4b",
+     "from": [
+      -8.4,
+      20.8226,
+      -0.8
+     ],
+     "to": [
+      -8.4,
+      24.1,
+      -5.6
+     ],
+     "half": 1.0
+    },
+    {
+     "from": [
+      12.6,
+      0.0,
+      -5.6
+     ],
+     "half": 1.0,
+     "id": "F1s",
+     "to": [
+      12.6,
+      5.7,
+      3.1
+     ]
+    },
+    {
+     "from": [
+      8.4,
+      5.7,
+      3.1
+     ],
+     "half": 1.0,
+     "id": "F2s",
+     "to": [
+      8.4,
+      11.4,
+      -5.6
+     ]
+    }
+   ],
+   "landings": [
+    {
+     "x": [
+      -13.8,
+      -7.2
+     ],
+     "y": 5.7,
+     "z": [
+      3.1,
+      5.8
+     ]
+    },
+    {
+     "y": 14.6774,
+     "x": [
+      -13.6,
+      -11.6
+     ],
+     "z": [
+      -0.8,
+      0.2
+     ]
+    },
+    {
+     "y": 17.75,
+     "x": [
+      -13.8,
+      -7.2
+     ],
+     "z": [
+      4.7,
+      5.8
+     ]
+    },
+    {
+     "y": 20.8226,
+     "x": [
+      -9.4,
+      -7.4
+     ],
+     "z": [
+      -0.8,
+      0.2
+     ]
+    },
+    {
+     "x": [
+      7.2,
+      13.8
+     ],
+     "y": 5.7,
+     "z": [
+      3.1,
+      5.8
+     ]
+    }
+   ]
+  },
+  "scarp": {
+   "parapetGaps": [
+    {
+     "x": -167.5,
+     "z": -10.0,
+     "half": 2.4
+    }
+   ]
+  }
+ },
+ "landward": {
+  "ditch": {
+   "lipIn": 93.333,
+   "floor0": 98.0,
+   "floor1": 107.333,
+   "lipOut": 112.0,
+   "zSouthFace": -130.667,
+   "zSouthFloor": -126.0,
+   "zNorthFloor": 107.333,
+   "floorY": 1.875
+  },
+  "barbican": {
+   "x": 89.333,
+   "z": -18.0,
+   "yaw": 1.5707963267948966
+  },
+  "court": {
+   "x0": 74.333,
+   "x1": 85.333,
+   "zS": -24.5,
+   "zN": -11.5,
+   "bays": 3
+  },
+  "spawn": [
+   79.0,
+   -18.0
+  ],
+  "portal": [
+   92.0,
+   -18.0
+  ],
+  "spur": {
+   "x": 65.333,
+   "z0": 108.0,
+   "z1": 192.0,
+   "yAbs": 0.5
+  }
+ },
+ "terrain": {
+  "ditch": {
+   "lipIn": 93.333,
+   "floor0": 98.0,
+   "floor1": 107.333,
+   "lipOut": 112.0,
+   "zSouthFace": -130.667,
+   "zSouthFloor": -126.0,
+   "zNorthFloor": 107.333,
+   "floorY": 1.875
+  },
+  "wild": {
+   "x": 140.0,
+   "z": -135.333,
+   "ramp": 20.0
+  },
+  "plateauSouthX": -152.0,
+  "plateauCliff": [
+   [
+    68.3,
+    106.0
+   ],
+   [
+    100.0,
+    107.0
+   ],
+   [
+    140.0,
+    104.0
+   ],
+   [
+    176.0,
+    100.0
+   ]
+  ],
+  "strip": {
+   "y": 0.5,
+   "apron": {
+    "rect": [
+     -238.0,
+     -121.333,
+     -172.667,
+     18.667
+    ],
+    "y": 0.95
+   }
+  }
+ },
+ "civic": {
+  "crown_gate": {
+   "file": "sg_crown_gate",
+   "x": 65.333,
+   "z": -18.0,
+   "yaw": 1.5707963267948966,
+   "y": 0.0
+  },
+  "barbican": {
+   "file": "sg_barbican",
+   "x": 89.333,
+   "z": -18.0,
+   "yaw": 1.5707963267948966,
+   "y": 0.0
+  },
+  "seagate": {
+   "file": "sg_seagate",
+   "x": -160.0,
+   "z": -10.0,
+   "yaw": -1.47908,
+   "y": 0.0
+  },
+  "court_hall": {
+   "file": "sg_court_hall",
+   "x": 25.0,
+   "z": 2.0,
+   "yaw": 3.141592653589793,
+   "y": 0.0
+  },
+  "clock_tower": {
+   "file": "sg_clock_tower",
+   "x": 42.5,
+   "z": 0.0,
+   "yaw": 3.141592653589793,
+   "y": 0.0,
+   "flights": [
+    {
+     "id": "K0",
+     "from": [
+      2.7,
+      1.0,
+      -2.8
+     ],
+     "to": [
+      2.7,
+      4.4,
+      2.8
+     ]
+    },
+    {
+     "id": "K1",
+     "from": [
+      -2.7,
+      4.4,
+      2.8
+     ],
+     "to": [
+      -2.7,
+      7.8,
+      -2.8
+     ]
+    },
+    {
+     "id": "K2",
+     "from": [
+      2.7,
+      7.8,
+      -2.8
+     ],
+     "to": [
+      2.7,
+      11.2,
+      2.8
+     ]
+    },
+    {
+     "id": "K3",
+     "from": [
+      -2.7,
+      11.2,
+      2.8
+     ],
+     "to": [
+      -2.7,
+      14.6,
+      -2.8
+     ]
+    },
+    {
+     "id": "K4",
+     "from": [
+      2.7,
+      14.6,
+      -2.8
+     ],
+     "to": [
+      2.7,
+      18.0,
+      2.8
+     ]
+    }
+   ],
+   "holes": [
+    null,
+    [
+     1.3,
+     -2.8,
+     3.8,
+     2.8
+    ],
+    [
+     -3.8,
+     -2.8,
+     -1.3,
+     2.8
+    ],
+    [
+     1.3,
+     -2.8,
+     3.8,
+     2.8
+    ],
+    [
+     -3.8,
+     -2.8,
+     -1.3,
+     2.8
+    ],
+    [
+     1.3,
+     -2.8,
+     3.8,
+     2.8
+    ]
+   ]
+  },
+  "paladin_hall": {
+   "file": "sg_guild_hall",
+   "x": 25.0,
+   "z": -40.0,
+   "yaw": 3.141592653589793,
+   "y": 0.0
+  },
+  "samurai_hall": {
+   "file": "sg_guild_hall",
+   "x": 25.0,
+   "z": -94.333,
+   "yaw": 0.0,
+   "y": 0.0
+  },
+  "street_arch": {
+   "file": "sg_street_arch",
+   "x": -10.0,
+   "z": -18.0,
+   "yaw": 1.5707963267948966,
+   "y": 0.0
+  },
+  "market": {
+   "file": "sg_market",
+   "x": -44.0,
+   "z": -22.0,
+   "yaw": 0.0,
+   "stalls": [
+    [
+     -7.5,
+     -7.3,
+     1.5,
+     1.2
+    ],
+    [
+     7.5,
+     -7.3,
+     1.5,
+     1.2
+    ],
+    [
+     -7.5,
+     7.3,
+     1.5,
+     1.2
+    ],
+    [
+     7.5,
+     7.3,
+     1.5,
+     1.2
+    ]
+   ]
+  },
+  "squareDress": [
+   {
+    "file": "sg_well",
+    "x": 17.0,
+    "z": -28.0,
+    "yaw": 0.0
+   },
+   {
+    "file": "sg_well",
+    "x": 33.0,
+    "z": -28.0,
+    "yaw": 0.0
+   }
+  ],
+  "dress": [
+   {
+    "id": "stall_n0",
+    "file": "sg_stall",
+    "x": -58.0,
+    "z": -8.5,
+    "face": [
+     0,
+     -1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_n1",
+    "file": "sg_stall",
+    "x": -52.0,
+    "z": -8.5,
+    "face": [
+     0,
+     -1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_n2",
+    "file": "sg_stall",
+    "x": -46.0,
+    "z": -8.5,
+    "face": [
+     0,
+     -1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_n3",
+    "file": "sg_stall",
+    "x": -30.0,
+    "z": -8.5,
+    "face": [
+     0,
+     -1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_n4",
+    "file": "sg_stall",
+    "x": -24.0,
+    "z": -8.5,
+    "face": [
+     0,
+     -1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_n5",
+    "file": "sg_stall",
+    "x": -18.0,
+    "z": -8.5,
+    "face": [
+     0,
+     -1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_e0",
+    "file": "sg_stall",
+    "x": -19.0,
+    "z": -27.0,
+    "face": [
+     -1,
+     0
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_e1",
+    "file": "sg_stall",
+    "x": -19.0,
+    "z": -33.0,
+    "face": [
+     -1,
+     0
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_s0",
+    "file": "sg_stall",
+    "x": -60.0,
+    "z": -34.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "cart_market0",
+    "file": "sg_cart",
+    "x": -33.0,
+    "z": -12.5,
+    "face": [
+     1,
+     0
+    ],
+    "box": [
+     1.6,
+     0.7,
+     1.4
+    ],
+    "boxAt": [
+     0.6,
+     0.0
+    ]
+   },
+   {
+    "id": "cart_market1",
+    "file": "sg_cart",
+    "x": -57.0,
+    "z": -20.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     1.6,
+     0.7,
+     1.4
+    ],
+    "boxAt": [
+     0.6,
+     0.0
+    ]
+   },
+   {
+    "id": "drill_e",
+    "file": "sg_drill",
+    "x": 44.0,
+    "z": -72.0,
+    "face": [
+     -1,
+     0
+    ],
+    "box": [
+     4.7,
+     2.6,
+     2.0
+    ],
+    "foot": true
+   },
+   {
+    "id": "drill_se",
+    "file": "sg_drill",
+    "x": 40.0,
+    "z": -80.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     4.7,
+     2.6,
+     2.0
+    ],
+    "foot": true
+   },
+   {
+    "id": "flagpole",
+    "file": "sg_flagpole",
+    "x": 33.0,
+    "z": -63.0,
+    "face": [
+     0,
+     -1
+    ],
+    "box": [
+     0.55,
+     0.55,
+     3.0
+    ],
+    "foot": true
+   },
+   {
+    "id": "flag",
+    "file": "sg_banner",
+    "x": 33.0,
+    "z": -63.2,
+    "face": [
+     0,
+     -1
+    ],
+    "y": 11.5,
+    "axes": [
+     1.1,
+     1.1,
+     1.1
+    ]
+   },
+   {
+    "id": "device_paladin",
+    "file": "sg_device_shield",
+    "x": 25.0,
+    "z": -49.25,
+    "face": [
+     0,
+     -1
+    ],
+    "y": 11.0
+   },
+   {
+    "id": "device_samurai",
+    "file": "sg_device_blades",
+    "x": 25.0,
+    "z": -85.08,
+    "face": [
+     0,
+     1
+    ],
+    "y": 11.0
+   },
+   {
+    "id": "turret_paladin",
+    "file": "sg_stair_turret",
+    "x": 43.0,
+    "z": -40.0,
+    "face": [
+     1,
+     0
+    ],
+    "axes": [
+     1,
+     1.9,
+     1
+    ],
+    "box": [
+     1.8,
+     1.45,
+     28.31
+    ],
+    "boxAt": [
+     0.0,
+     -0.45
+    ],
+    "foot": true
+   },
+   {
+    "id": "turret_samurai",
+    "file": "sg_stair_turret",
+    "x": 43.0,
+    "z": -94.3,
+    "face": [
+     1,
+     0
+    ],
+    "axes": [
+     1,
+     1.75,
+     1
+    ],
+    "box": [
+     1.8,
+     1.45,
+     26.075
+    ],
+    "boxAt": [
+     0.0,
+     -0.45
+    ],
+    "foot": true
+   },
+   {
+    "id": "turret_paladin_cone",
+    "file": "sg_cone",
+    "x": 43.0,
+    "z": -40.0,
+    "face": [
+     1,
+     0
+    ],
+    "y": 28.31
+   },
+   {
+    "id": "lamp0",
+    "file": "sg_lamp",
+    "x": -227.0,
+    "z": -58.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp1",
+    "file": "sg_lamp",
+    "x": -227.0,
+    "z": -30.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp2",
+    "file": "sg_lamp",
+    "x": -227.0,
+    "z": -16.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp3",
+    "file": "sg_lamp",
+    "x": -208.0,
+    "z": -104.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp4",
+    "file": "sg_lamp",
+    "x": -168.0,
+    "z": -104.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp5",
+    "file": "sg_lamp",
+    "x": -190.0,
+    "z": -86.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp6",
+    "file": "sg_lamp",
+    "x": -190.0,
+    "z": 31.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "lamp7",
+    "file": "sg_lamp",
+    "x": -180.0,
+    "z": 48.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "lamp8",
+    "file": "sg_lamp",
+    "x": -159.5,
+    "z": 51.3,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "lamp9",
+    "file": "sg_lamp",
+    "x": -163.2,
+    "z": 46.6,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "lamp10",
+    "file": "sg_lamp",
+    "x": -196.0,
+    "z": -60.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp11",
+    "file": "sg_lamp",
+    "x": -196.0,
+    "z": -20.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp12",
+    "file": "sg_lamp",
+    "x": -215.0,
+    "z": 23.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp13",
+    "file": "sg_lamp",
+    "x": -200.0,
+    "z": 23.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp14",
+    "file": "sg_lamp",
+    "x": -185.0,
+    "z": 23.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp15",
+    "file": "sg_lamp",
+    "x": -170.0,
+    "z": 23.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp16",
+    "file": "sg_lamp",
+    "x": -212.0,
+    "z": 62.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "lamp17",
+    "file": "sg_lamp",
+    "x": -198.0,
+    "z": 58.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "lamp18",
+    "file": "sg_lamp",
+    "x": -184.0,
+    "z": 62.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "lamp19",
+    "file": "sg_lamp",
+    "x": -170.0,
+    "z": 66.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "lamp20",
+    "file": "sg_lamp",
+    "x": -156.0,
+    "z": 72.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "yAbs": 0.7
+   },
+   {
+    "id": "stall_fish0",
+    "file": "sg_stall",
+    "x": -206.0,
+    "z": -32.0,
+    "face": [
+     -1,
+     0
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "stall_fish1",
+    "file": "sg_stall",
+    "x": -206.0,
+    "z": -24.0,
+    "face": [
+     -1,
+     0
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "stall_fish2",
+    "file": "sg_stall",
+    "x": -206.0,
+    "z": -16.0,
+    "face": [
+     -1,
+     0
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "cart_quay",
+    "file": "sg_cart",
+    "x": -218.0,
+    "z": -48.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     1.6,
+     0.7,
+     1.4
+    ],
+    "boxAt": [
+     0.6,
+     0.0
+    ],
+    "yAbs": 1.15
+   },
+   {
+    "id": "lamp_crown0",
+    "file": "sg_lamp",
+    "x": 6.0,
+    "z": -30.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "y": 0.05
+   },
+   {
+    "id": "lamp_crown1",
+    "file": "sg_lamp",
+    "x": 55.5,
+    "z": -30.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "y": 0.05
+   },
+   {
+    "id": "lamp_crown2",
+    "file": "sg_lamp",
+    "x": 6.0,
+    "z": -7.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "y": 0.05
+   },
+   {
+    "id": "lamp_crown3",
+    "file": "sg_lamp",
+    "x": 55.5,
+    "z": -7.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "y": 0.05
+   },
+   {
+    "id": "bench_crown0",
+    "file": "sg_low_wall",
+    "x": 11.0,
+    "z": -30.8,
+    "face": [
+     0,
+     1
+    ],
+    "axes": [
+     0.5,
+     0.4,
+     1.0
+    ],
+    "y": 0.17,
+    "box": [
+     1.0,
+     0.3,
+     0.45
+    ]
+   },
+   {
+    "id": "bench_crown1",
+    "file": "sg_low_wall",
+    "x": 25.0,
+    "z": -30.8,
+    "face": [
+     0,
+     1
+    ],
+    "axes": [
+     0.5,
+     0.4,
+     1.0
+    ],
+    "y": 0.17,
+    "box": [
+     1.0,
+     0.3,
+     0.45
+    ]
+   },
+   {
+    "id": "bench_crown2",
+    "file": "sg_low_wall",
+    "x": 45.0,
+    "z": -30.8,
+    "face": [
+     0,
+     1
+    ],
+    "axes": [
+     0.5,
+     0.4,
+     1.0
+    ],
+    "y": 0.17,
+    "box": [
+     1.0,
+     0.3,
+     0.45
+    ]
+   },
+   {
+    "id": "stall_lantern0",
+    "file": "sg_stall",
+    "x": -124.0,
+    "z": 10.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_lantern1",
+    "file": "sg_stall",
+    "x": -118.0,
+    "z": 10.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_lantern2",
+    "file": "sg_stall",
+    "x": -112.0,
+    "z": 10.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "stall_lantern3",
+    "file": "sg_stall",
+    "x": -112.0,
+    "z": 39.5,
+    "face": [
+     0,
+     -1
+    ],
+    "box": [
+     2.3,
+     1.0,
+     2.6
+    ]
+   },
+   {
+    "id": "well_lantern",
+    "file": "sg_well",
+    "x": -115.0,
+    "z": 25.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     1.1,
+     1.0,
+     2.8
+    ],
+    "foot": true
+   },
+   {
+    "id": "cart_lantern0",
+    "file": "sg_cart",
+    "x": -124.5,
+    "z": 31.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     1.6,
+     0.7,
+     1.4
+    ],
+    "boxAt": [
+     0.6,
+     0.0
+    ]
+   },
+   {
+    "id": "cart_lantern1",
+    "file": "sg_cart",
+    "x": -106.0,
+    "z": 37.5,
+    "face": [
+     -1,
+     0
+    ],
+    "box": [
+     1.6,
+     0.7,
+     1.4
+    ],
+    "boxAt": [
+     0.6,
+     0.0
+    ]
+   },
+   {
+    "id": "block_lantern",
+    "file": "sg_low_wall",
+    "x": -107.0,
+    "z": 12.0,
+    "face": [
+     0,
+     1
+    ],
+    "axes": [
+     0.3,
+     0.55,
+     1.6
+    ],
+    "y": 0.17,
+    "box": [
+     0.6,
+     0.45,
+     0.6
+    ]
+   },
+   {
+    "id": "lamp_lantern0",
+    "file": "sg_lamp",
+    "x": -126.5,
+    "z": 9.5,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "y": 0.05
+   },
+   {
+    "id": "lamp_lantern1",
+    "file": "sg_lamp",
+    "x": -102.0,
+    "z": 10.0,
+    "face": [
+     0,
+     1
+    ],
+    "box": [
+     0.3,
+     0.3,
+     3.8
+    ],
+    "y": 0.05
+   },
+   {
+    "id": "bench_lantern0",
+    "file": "sg_low_wall",
+    "x": -126.0,
+    "z": 21.0,
+    "face": [
+     1,
+     0
+    ],
+    "axes": [
+     0.5,
+     0.4,
+     1.0
+    ],
+    "y": 0.17,
+    "box": [
+     1.0,
+     0.3,
+     0.45
+    ]
+   },
+   {
+    "id": "bench_lantern1",
+    "file": "sg_low_wall",
+    "x": -121.0,
+    "z": 40.5,
+    "face": [
+     0,
+     -1
+    ],
+    "axes": [
+     0.5,
+     0.4,
+     1.0
+    ],
+    "y": 0.17,
+    "box": [
+     1.0,
+     0.3,
+     0.45
+    ]
+   },
+   {
+    "id": "drill_ne",
+    "file": "sg_drill",
+    "x": 47.0,
+    "z": -57.0,
+    "face": [
+     -1,
+     0
+    ],
+    "box": [
+     4.7,
+     2.6,
+     2.0
+    ],
+    "foot": true
+   }
+  ],
+  "auction_house": {
+   "file": "sg_auction_house",
+   "x": -32.0,
+   "z": -47.75,
+   "yaw": 0.0
+  }
+ },
+ "harbour": {
+  "quay": {
+   "line": [
+    [
+     -244.0,
+     -60.0
+    ],
+    [
+     -238.72,
+     -12.5
+    ]
+   ],
+   "bays": 6
+  },
+  "harbourWall": [
+   [
+    [
+     -232.583,
+     11.44
+    ],
+    [
+     -222.0,
+     48.0
+    ]
+   ]
+  ],
+  "waterGate": {
+   "x": -236.0,
+   "z": 5.0,
+   "yaw": -1.5707963267948966
+  },
+  "moles": [
+   {
+    "from": [
+     -238.0,
+     -6.0
+    ],
+    "to": [
+     -270.0,
+     -6.0
+    ],
+    "yaw": 3.141592653589793
+   },
+   {
+    "from": [
+     -228.0,
+     42.0
+    ],
+    "to": [
+     -262.0,
+     42.0
+    ],
+    "yaw": 0.0
+   }
+  ],
+  "chainTowers": [
+   {
+    "x": -275.0,
+    "z": -6.0,
+    "yaw": -1.5707963267948966,
+    "harbourTower": true
+   },
+   {
+    "x": -267.0,
+    "z": 42.0,
+    "yaw": -1.5707963267948966
+   }
+  ],
+  "warehouses": [
+   {
+    "z": -88.0
+   },
+   {
+    "z": -70.0
+   },
+   {
+    "z": -52.0
+   },
+   {
+    "z": -30.0,
+    "loft": true
+   }
+  ],
+  "pilotHouse": {
+   "x": -212.0,
+   "z": 50.0,
+   "yaw": -2.49809
+  },
+  "boats": [
+   [
+    -250.0,
+    8.0,
+    0.2
+   ],
+   [
+    -256.0,
+    16.0,
+    -0.4
+   ],
+   [
+    -248.0,
+    26.0,
+    0.1
+   ],
+   [
+    -262.0,
+    22.0,
+    1.3
+   ],
+   [
+    -254.0,
+    34.0,
+    -0.2
+   ],
+   [
+    -243.5,
+    18.0,
+    1.4
+   ],
+   [
+    -266.0,
+    9.0,
+    -1.1
+   ],
+   [
+    -259.0,
+    30.0,
+    0.5
+   ]
+  ],
+  "quayDress": [
+   [
+    -229.5,
+    -50.0,
+    -1.5708
+   ],
+   [
+    -230.5,
+    -22.0,
+    -1.27
+   ],
+   [
+    -228.0,
+    -70.0,
+    -1.5708
+   ],
+   [
+    -226.0,
+    -92.0,
+    -1.4
+   ],
+   [
+    -200.0,
+    -78.0,
+    0.2
+   ],
+   [
+    -200.0,
+    -45.0,
+    -0.15
+   ],
+   [
+    -221.0,
+    9.0,
+    -1.7
+   ],
+   [
+    -198.0,
+    -2.0,
+    0.35
+   ],
+   [
+    -216.0,
+    -110.0,
+    0.0
+   ],
+   [
+    -176.0,
+    -112.0,
+    3.1416
+   ],
+   [
+    -221.0,
+    -62.0,
+    -1.4
+   ],
+   [
+    -221.0,
+    -80.0,
+    -1.7
+   ],
+   [
+    -213.0,
+    -96.0,
+    0.6
+   ]
+  ],
+  "wallStair": {
+   "bays": [
+    {
+     "x": -189.5,
+     "z": -10.0,
+     "yAbs": 0.5
+    },
+    {
+     "x": -185.5,
+     "z": -10.0,
+     "yAbs": 2.0625
+    },
+    {
+     "x": -181.5,
+     "z": -10.0,
+     "yAbs": 3.625
+    },
+    {
+     "x": -177.5,
+     "z": -10.0,
+     "yAbs": 5.1875
+    },
+    {
+     "x": -173.5,
+     "z": -10.0,
+     "yAbs": 6.75
+    },
+    {
+     "x": -169.5,
+     "z": -10.0,
+     "yAbs": 8.3125
+    }
+   ],
+   "flight": {
+    "from": [
+     -191.5,
+     0.5,
+     -10.0
+    ],
+    "to": [
+     -167.5,
+     9.875,
+     -10.0
+    ],
+    "half": 2.4
+   }
+  },
+  "southCurtain": {
+   "from": [
+    -154.5,
+    -128.5
+   ],
+   "to": [
+    -200.0,
+    -128.5
+   ],
+   "yAbs": 0.5,
+   "tower": [
+    -205.0,
+    -128.5
+   ],
+   "seaBay": [
+    -214.0,
+    -128.5
+   ]
+  },
+  "lanternWall": {
+   "from": [
+    -158.0,
+    28.0
+   ],
+   "to": [
+    -224.5,
+    28.0
+   ],
+   "yAbs": 0.5
+  }
+ },
+ "streets": [
+  {
+   "id": "crown_street",
+   "pts": [
+    [
+     57.333,
+     -18.0
+    ],
+    [
+     -6.06,
+     -18.0
+    ]
+   ],
+   "half": 4.5,
+   "stone": "setts"
+  },
+  {
+   "id": "wall_street",
+   "pts": [
+    [
+     -62.0,
+     -10.0
+    ],
+    [
+     -153.9,
+     -10.0
+    ]
+   ],
+   "half": 3.5,
+   "stone": "setts"
+  },
+  {
+   "id": "cross_street",
+   "pts": [
+    [
+     -40.0,
+     -2.0
+    ],
+    [
+     -40.0,
+     21.0
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "lantern_street",
+   "pts": [
+    [
+     -4.0,
+     25.0
+    ],
+    [
+     -100.0,
+     25.0
+    ]
+   ],
+   "half": 4.0,
+   "stone": "setts"
+  },
+  {
+   "id": "north_street",
+   "pts": [
+    [
+     0.0,
+     -13.5
+    ],
+    [
+     0.0,
+     87.0
+    ]
+   ],
+   "half": 4.0,
+   "stone": "setts"
+  },
+  {
+   "id": "yard_street",
+   "pts": [
+    [
+     0.0,
+     -22.5
+    ],
+    [
+     0.0,
+     -92.0
+    ]
+   ],
+   "half": 4.0,
+   "stone": "setts"
+  },
+  {
+   "id": "south_lane",
+   "pts": [
+    [
+     -140.0,
+     -92.8
+    ],
+    [
+     -4.0,
+     -92.8
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "smiths_lane",
+   "pts": [
+    [
+     -102.0,
+     -15.0
+    ],
+    [
+     -102.0,
+     -89.8
+    ]
+   ],
+   "half": 2.5,
+   "stone": "setts"
+  },
+  {
+   "id": "tally_lane",
+   "pts": [
+    [
+     -146.0,
+     -55.0
+    ],
+    [
+     -62.0,
+     -55.0
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "landward_lane",
+   "pts": [
+    [
+     56.0,
+     -4.0
+    ],
+    [
+     56.0,
+     84.0
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "approach_road",
+   "pts": [
+    [
+     112.0,
+     -18.0
+    ],
+    [
+     176.0,
+     -18.0
+    ]
+   ],
+   "half": 3.5,
+   "stone": "earth"
+  },
+  {
+   "id": "rampart_lane",
+   "line": "the north sea curtain, 11.5..18.4 m inboard (the mock-up rule)",
+   "half": 3.45,
+   "stone": "setts",
+   "inset": [
+    11.5,
+    18.4
+   ],
+   "from": [
+    "n1",
+    "ramparts",
+    "n3",
+    "n4",
+    "n5",
+    "n6",
+    "ne"
+   ],
+   "trim": {
+    "start": 4.0,
+    "endX": 53.0
+   }
+  },
+  {
+   "id": "court_lane",
+   "pts": [
+    [
+     4.0,
+     50.0
+    ],
+    [
+     53.0,
+     50.0
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "tally_close",
+   "pts": [
+    [
+     -62.0,
+     -58.0
+    ],
+    [
+     -4.0,
+     -58.0
+    ]
+   ],
+   "half": 2.0,
+   "stone": "setts"
+  }
+ ],
+ "squares": [
+  {
+   "id": "crown_square",
+   "stone": "flags",
+   "rect": [
+    4.0,
+    -32.0,
+    57.333,
+    -6.0
+   ]
+  },
+  {
+   "id": "market_yard",
+   "stone": "flags",
+   "rect": [
+    -62.0,
+    -40.0,
+    -14.0,
+    -2.0
+   ]
+  },
+  {
+   "id": "lantern_yard",
+   "stone": "flags",
+   "poly": [
+    [
+     -128,
+     8
+    ],
+    [
+     -104,
+     8
+    ],
+    [
+     -100,
+     19
+    ],
+    [
+     -100,
+     31
+    ],
+    [
+     -104,
+     42
+    ],
+    [
+     -117,
+     42
+    ],
+    [
+     -128,
+     38
+    ]
+   ]
+  },
+  {
+   "id": "parade",
+   "stone": "earth",
+   "rect": [
+    6.0,
+    -86.0,
+    52.0,
+    -50.0
+   ]
+  },
+  {
+   "id": "quay",
+   "stone": "flags",
+   "rect": [
+    -238.0,
+    -62.0,
+    -226.0,
+    -6.0
+   ],
+   "level": 0.95
+  },
+  {
+   "id": "harbour_terrace",
+   "stone": "flags",
+   "rect": [
+    -210.0,
+    -120.0,
+    -166.0,
+    -102.0
+   ],
+   "level": 0.95
+  }
+ ],
+ "paving": {
+  "polys": [
+   {
+    "id": "gorge_close",
+    "poly": [
+     [
+      -151.0,
+      17.5
+     ],
+     [
+      -140.0,
+      8.0
+     ],
+     [
+      -128.0,
+      8.0
+     ],
+     [
+      -128.0,
+      38.0
+     ],
+     [
+      -128.6,
+      46.0
+     ]
+    ],
+    "stone": "flags",
+    "what": "square"
+   }
+  ],
+  "extras": [
+   {
+    "id": "arch_passage",
+    "rect": [
+     -13.95,
+     -21.0,
+     -6.06,
+     -15.0
+    ],
+    "stone": "setts",
+    "what": "passage"
+   }
+  ],
+  "yards": [],
+  "yardFill": {
+   "cell": 16.0,
+   "stone": "earth"
+  },
+  "strip": {
+   "rects": [
+    [
+     -238.0,
+     -126.0,
+     -150.0,
+     26.0
+    ],
+    [
+     -226.0,
+     29.5,
+     -150.0,
+     50.0
+    ],
+    [
+     -226.0,
+     50.0,
+     -136.0,
+     106.0
+    ]
+   ],
+   "cell": 4.0,
+   "stone": "setts",
+   "maxRun": 12.0,
+   "coastClear": 6.0
+  }
+ },
+ "districts": [
+  {
+   "id": "rampart_row",
+   "target": 9,
+   "where": "wall-houses against the north sea curtain town face from bastionN to x 38 (the NE wall stair), backs on the curtain, wrapping tower backs; the curtain bays behind them are sg_seawall_window"
+  },
+  {
+   "id": "lantern_quarter",
+   "target": 8,
+   "rect": [
+    -100.0,
+    10.0,
+    -4.0,
+    40.0
+   ],
+   "where": "Lantern Street north row (facade z 30) and south row (facade z 20)"
+  },
+  {
+   "id": "wall_street_quarter",
+   "target": 9,
+   "rect": [
+    -150.0,
+    -25.0,
+    -66.0,
+    5.0
+   ],
+   "where": "Wall Street north row (facade z -5) and south row (facade z -15) with the Smiths' Guild (role smiths, x -125..-105, not a house)"
+  },
+  {
+   "id": "yard_north",
+   "target": 3,
+   "rect": [
+    -62.0,
+    -2.0,
+    -4.0,
+    10.0
+   ],
+   "where": "one row facing the Market Yard (facade z -2)"
+  },
+  {
+   "id": "market_south",
+   "target": 3,
+   "rect": [
+    -62.0,
+    -50.0,
+    -16.0,
+    -40.0
+   ],
+   "where": "one row facing the yard (facade z -40): the armourer and the auction house are two of its bays"
+  },
+  {
+   "id": "arch_flanks",
+   "target": 2,
+   "rect": [
+    -14.0,
+    -34.0,
+    -4.0,
+    -2.0
+   ],
+   "where": "the houses the street arch springs from, north and south of Crown Street"
+  },
+  {
+   "id": "tally_quarter",
+   "target": 7,
+   "rect": [
+    -146.0,
+    -105.833,
+    -4.0,
+    -25.0
+   ],
+   "where": "south-lane wall-houses (facade z -95.83, backs on the south curtain), rows on Tally Lane, Smiths' Lane and Yard Street's west side; the Crown Inn (role inn, x -16..-4, z -56..-40, facade x -4) is here and not a house"
+  },
+  {
+   "id": "north_street_quarter",
+   "target": 5,
+   "rect": [
+    4.0,
+    12.0,
+    53.0,
+    86.0
+   ],
+   "where": "east of North Street behind the court hall: North Street east row, the landward lane west row, an E-W lane at z 50"
+  },
+  {
+   "id": "north_street_west",
+   "target": 2,
+   "rect": [
+    -36.0,
+    40.0,
+    -4.0,
+    76.0
+   ],
+   "where": "rows facing North Street (facade x -4)"
+  }
+ ],
+ "rows": [
+  {
+   "id": "lq_n",
+   "district": "lantern_quarter",
+   "line": [
+    [
+     -4.0,
+     30.0
+    ],
+    [
+     -100.0,
+     30.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 5,
+     "turret": true,
+     "cone": true
+    },
+    4,
+    5
+   ],
+   "seed": 11,
+   "start": 1.0
+  },
+  {
+   "id": "lq_s1",
+   "district": "lantern_quarter",
+   "line": [
+    [
+     -100.0,
+     21.0
+    ],
+    [
+     -43.0,
+     21.0
+    ]
+   ],
+   "houses": [
+    4,
+    {
+     "bays": 4,
+     "turret": true
+    }
+   ],
+   "seed": 12,
+   "start": 2.0
+  },
+  {
+   "id": "lq_s2",
+   "district": "lantern_quarter",
+   "line": [
+    [
+     -37.0,
+     21.0
+    ],
+    [
+     -4.0,
+     21.0
+    ]
+   ],
+   "houses": [
+    5
+   ],
+   "seed": 13,
+   "start": 2.0
+  },
+  {
+   "id": "yn",
+   "district": "yard_north",
+   "line": [
+    [
+     -14.0,
+     -2.0
+    ],
+    [
+     -62.0,
+     -2.0
+    ]
+   ],
+   "houses": [
+    5,
+    {
+     "bays": 4,
+     "turret": true
+    }
+   ],
+   "seed": 21
+  },
+  {
+   "id": "af_n",
+   "district": "arch_flanks",
+   "line": [
+    [
+     -4.0,
+     8.0
+    ],
+    [
+     -4.0,
+     -11.05
+    ]
+   ],
+   "houses": [
+    4
+   ],
+   "seed": 31
+  },
+  {
+   "id": "af_s",
+   "district": "arch_flanks",
+   "line": [
+    [
+     -4.0,
+     -24.95
+    ],
+    [
+     -4.0,
+     -38.0
+    ]
+   ],
+   "houses": [
+    3
+   ],
+   "seed": 32
+  },
+  {
+   "id": "ms",
+   "district": "market_south",
+   "line": [
+    [
+     -62.0,
+     -40.0
+    ],
+    [
+     -46.0,
+     -40.0
+    ]
+   ],
+   "houses": [
+    4
+   ],
+   "seed": 41
+  },
+  {
+   "id": "ws_n",
+   "district": "wall_street_quarter",
+   "line": [
+    [
+     -63.0,
+     -5.0
+    ],
+    [
+     -150.0,
+     -5.0
+    ]
+   ],
+   "houses": [
+    5,
+    {
+     "bays": 4,
+     "turret": true
+    },
+    4,
+    5
+   ],
+   "seed": 51
+  },
+  {
+   "id": "ws_s1",
+   "district": "wall_street_quarter",
+   "line": [
+    [
+     -150.0,
+     -15.0
+    ],
+    [
+     -125.0,
+     -15.0
+    ]
+   ],
+   "houses": [
+    3,
+    3
+   ],
+   "seed": 52,
+   "depth": 12.0
+  },
+  {
+   "id": "ws_s2",
+   "district": "wall_street_quarter",
+   "line": [
+    [
+     -99.5,
+     -15.0
+    ],
+    [
+     -62.0,
+     -15.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 4,
+     "turret": true
+    },
+    4
+   ],
+   "seed": 53,
+   "depth": 12.0
+  },
+  {
+   "id": "tq_sl1",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -98.0,
+     -95.833
+    ],
+    [
+     -68.0,
+     -95.833
+    ]
+   ],
+   "houses": [
+    4,
+    3
+   ],
+   "seed": 61,
+   "wall": true
+  },
+  {
+   "id": "tq_sl2",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -56.0,
+     -95.833
+    ],
+    [
+     -26.0,
+     -95.833
+    ]
+   ],
+   "houses": [
+    5
+   ],
+   "seed": 62,
+   "wall": true,
+   "start": 4.0
+  },
+  {
+   "id": "tq_tn1",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -62.0,
+     -52.0
+    ],
+    [
+     -99.5,
+     -52.0
+    ]
+   ],
+   "houses": [
+    5,
+    4
+   ],
+   "seed": 63,
+   "mix": "back",
+   "depth": 12.0
+  },
+  {
+   "id": "tq_tn2",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -104.5,
+     -52.0
+    ],
+    [
+     -146.0,
+     -52.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 5,
+     "turret": true
+    },
+    4
+   ],
+   "seed": 64,
+   "mix": "back",
+   "start": 2.0,
+   "depth": 12.0
+  },
+  {
+   "id": "tq_ts1",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -146.0,
+     -58.0
+    ],
+    [
+     -104.5,
+     -58.0
+    ]
+   ],
+   "houses": [
+    5,
+    4
+   ],
+   "seed": 65,
+   "mix": "back",
+   "depth": 12.0
+  },
+  {
+   "id": "tq_ts2",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -99.5,
+     -58.0
+    ],
+    [
+     -62.0,
+     -58.0
+    ]
+   ],
+   "houses": [
+    5,
+    4
+   ],
+   "seed": 66,
+   "mix": "back",
+   "depth": 12.0
+  },
+  {
+   "id": "tq_sn",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -16.0,
+     -89.8
+    ],
+    [
+     -62.0,
+     -89.8
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 4,
+     "turret": true
+    },
+    4,
+    3
+   ],
+   "seed": 67,
+   "mix": "back"
+  },
+  {
+   "id": "nsq_w",
+   "district": "north_street_quarter",
+   "line": [
+    [
+     4.0,
+     13.0
+    ],
+    [
+     4.0,
+     86.0
+    ]
+   ],
+   "houses": [
+    5,
+    {
+     "bays": 5,
+     "turret": true
+    }
+   ],
+   "seed": 71,
+   "start": 2.0
+  },
+  {
+   "id": "nsq_e",
+   "district": "north_street_quarter",
+   "line": [
+    [
+     53.0,
+     84.0
+    ],
+    [
+     53.0,
+     13.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 5,
+     "open": 2,
+     "h": 1.16,
+     "turret": true
+    },
+    {
+     "bays": 4,
+     "h": 1.16,
+     "turret": true
+    }
+   ],
+   "seed": 72,
+   "start": 4.0
+  },
+  {
+   "id": "nsq_m",
+   "district": "north_street_quarter",
+   "line": [
+    [
+     15.0,
+     47.0
+    ],
+    [
+     42.0,
+     47.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 5,
+     "turret": true
+    }
+   ],
+   "seed": 73
+  },
+  {
+   "id": "nsw",
+   "district": "north_street_west",
+   "line": [
+    [
+     -4.0,
+     76.0
+    ],
+    [
+     -4.0,
+     40.0
+    ]
+   ],
+   "houses": [
+    4
+   ],
+   "seed": 81,
+   "gap": 4.0
+  },
+  {
+   "id": "inn",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -4.0,
+     -40.0
+    ],
+    [
+     -4.0,
+     -56.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 4,
+     "kinds": [
+      "plain",
+      "shop",
+      "open",
+      "plain"
+     ]
+    }
+   ],
+   "seed": 91,
+   "role": "inn",
+   "depth": 12.0
+  },
+  {
+   "id": "lq_works",
+   "district": "lantern_quarter",
+   "line": [
+    [
+     -61.0,
+     30.0
+    ],
+    [
+     -100.0,
+     30.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 4,
+     "kinds": [
+      "hoist",
+      "shut",
+      "plain",
+      "hoist"
+     ]
+    },
+    {
+     "bays": 4,
+     "kinds": [
+      "shut",
+      "hoist",
+      "shut",
+      "plain"
+     ]
+    }
+   ],
+   "seed": 98,
+   "role": "workshops",
+   "start": 1.0
+  },
+  {
+   "id": "smiths",
+   "district": "wall_street_quarter",
+   "line": [
+    [
+     -125.0,
+     -15.0
+    ],
+    [
+     -105.0,
+     -15.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 5,
+     "kinds": [
+      "shut",
+      "shop",
+      "hoist",
+      "shop",
+      "shut"
+     ]
+    }
+   ],
+   "seed": 92,
+   "role": "smiths"
+  },
+  {
+   "id": "stores_s",
+   "district": "parade",
+   "line": [
+    [
+     53.833,
+     -86.0
+    ],
+    [
+     53.833,
+     -68.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 4,
+     "kinds": [
+      "shut",
+      "shut",
+      "shut",
+      "shut"
+     ]
+    }
+   ],
+   "seed": 93,
+   "role": "stores"
+  },
+  {
+   "id": "stores_e3",
+   "district": "parade",
+   "line": [
+    [
+     53.833,
+     -68.0
+    ],
+    [
+     53.833,
+     -56.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 3,
+     "kinds": [
+      "shut",
+      "shut",
+      "shut"
+     ]
+    }
+   ],
+   "seed": 94,
+   "role": "stores",
+   "depth": 6.5
+  },
+  {
+   "id": "stores_n",
+   "district": "parade",
+   "line": [
+    [
+     53.833,
+     -56.0
+    ],
+    [
+     53.833,
+     -50.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 1,
+     "kinds": [
+      "shut"
+     ]
+    }
+   ],
+   "seed": 95,
+   "role": "stores"
+  },
+  {
+   "id": "range_y",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -4.0,
+     -60.0
+    ],
+    [
+     -4.0,
+     -89.8
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 4,
+     "kinds": [
+      "shut",
+      "plain",
+      "plain",
+      "shut"
+     ]
+    },
+    {
+     "bays": 3,
+     "kinds": [
+      "plain",
+      "shut",
+      "plain"
+     ]
+    }
+   ],
+   "seed": 96,
+   "role": "barracks",
+   "depth": 12.0
+  },
+  {
+   "id": "range_c",
+   "district": "tally_quarter",
+   "line": [
+    [
+     -62.0,
+     -60.0
+    ],
+    [
+     -16.0,
+     -60.0
+    ]
+   ],
+   "houses": [
+    {
+     "bays": 4,
+     "kinds": [
+      "plain",
+      "shut",
+      "plain",
+      "shut"
+     ]
+    },
+    {
+     "bays": 4,
+     "kinds": [
+      "shut",
+      "plain",
+      "shut",
+      "plain"
+     ]
+    },
+    {
+     "bays": 3,
+     "kinds": [
+      "plain",
+      "shut",
+      "plain"
+     ]
+    }
+   ],
+   "seed": 97,
+   "role": "barracks",
+   "depth": 12.0
+  }
+ ],
+ "wallRows": [
+  {
+   "id": "rr1",
+   "district": "rampart_row",
+   "against": "n1-ramparts",
+   "s": [
+    6.0,
+    24.0
+   ],
+   "houses": [
+    4
+   ],
+   "seed": 101,
+   "mix": "back",
+   "pent": 0.68
+  },
+  {
+   "id": "rr2",
+   "district": "rampart_row",
+   "against": "ramparts-n3",
+   "s": [
+    6.0,
+    29.5
+   ],
+   "houses": [
+    3,
+    2
+   ],
+   "seed": 102,
+   "mix": "back",
+   "pent": 0.68
+  },
+  {
+   "id": "rr3",
+   "district": "rampart_row",
+   "against": "n3-n4",
+   "s": [
+    6.0,
+    20.6
+   ],
+   "houses": [
+    3
+   ],
+   "seed": 103,
+   "mix": "back",
+   "pent": 0.68
+  },
+  {
+   "id": "rr4",
+   "district": "rampart_row",
+   "against": "n4-n5",
+   "s": [
+    6.0,
+    33.5
+   ],
+   "houses": [
+    3,
+    3
+   ],
+   "seed": 104,
+   "mix": "back",
+   "pent": 0.68
+  },
+  {
+   "id": "rr5",
+   "district": "rampart_row",
+   "against": "n5-n6",
+   "s": [
+    6.0,
+    28.0
+   ],
+   "houses": [
+    5
+   ],
+   "seed": 105,
+   "mix": "back",
+   "pent": 0.68
+  },
+  {
+   "id": "rr6",
+   "district": "rampart_row",
+   "against": "n6-ne",
+   "s": [
+    6.0,
+    24.0
+   ],
+   "houses": [
+    4
+   ],
+   "seed": 106,
+   "mix": "back",
+   "pent": 0.68
+  },
+  {
+   "id": "rb1",
+   "district": "rampart_row",
+   "against": "ramparts-n3",
+   "s": [
+    2.0,
+    34.0
+   ],
+   "houses": [
+    4
+   ],
+   "seed": 111,
+   "mix": "street",
+   "facing": {
+    "inset": 18.4
+   }
+  },
+  {
+   "id": "rb2",
+   "district": "rampart_row",
+   "against": "n3-n4",
+   "s": [
+    2.0,
+    25.0
+   ],
+   "houses": [
+    4
+   ],
+   "seed": 112,
+   "mix": "street",
+   "facing": {
+    "inset": 18.4
+   }
+  },
+  {
+   "id": "rb3",
+   "district": "rampart_row",
+   "against": "n4-n5",
+   "s": [
+    2.0,
+    36.0
+   ],
+   "houses": [
+    4
+   ],
+   "seed": 113,
+   "mix": "street",
+   "facing": {
+    "inset": 18.4
+   }
+  }
+ ],
+ "spots": {
+  "spawn": {
+   "x": 79.0,
+   "z": -18.0,
+   "region": "wall",
+   "yaw": -1.5708,
+   "why": "CF-22: in the barbican court before the Crown Gate, facing the city (zones.json spawn.h); 13 m from the portal, past its reach; == caerdunfields cf_caerdun tx/tz"
+  },
+  "cd_fields": {
+   "x": 92.0,
+   "z": -18.0,
+   "region": "wall",
+   "kind": "portal",
+   "room": "barbican",
+   "why": "CF-22: in the barbican's arch on the city side of the drawbridge (cd3/cd6 go out through it); its glow fills the arch's outer mouth"
+  },
+  "lm_cd2_gate": {
+   "x": 88.0,
+   "z": -18.0,
+   "region": "wall",
+   "kind": "landmark",
+   "why": "the barbican on the bridge (fix round 1: with the portal it was discovered on arrival, 22 m from spawn, never at the gate; here 36 m on)"
+  },
+  "crystal_caerdun": {
+   "x": 25.0,
+   "z": -18.0,
+   "region": "city",
+   "kind": "milestone",
+   "why": "CF-9: does not move; Crown Square on the Crown Street axis"
+  },
+  "lm_cd2_court": {
+   "x": 25.0,
+   "z": -8.5,
+   "region": "city",
+   "kind": "landmark",
+   "why": "The Wage Vaults: the court hall door on Crown Square"
+  },
+  "lm_cd2_market": {
+   "x": -40.0,
+   "z": -22.0,
+   "region": "city",
+   "kind": "landmark",
+   "why": "the Market Yard, where Crown Street, Wall Street and Cross Street meet"
+  },
+  "lm_cd2_drill": {
+   "x": 16.0,
+   "z": -74.0,
+   "region": "city",
+   "kind": "landmark",
+   "why": "== cd_dueling_ground, in the drill yards"
+  },
+  "lm_cd2_quay": {
+   "x": -207.0,
+   "z": -117.0,
+   "region": "harbour",
+   "kind": "landmark",
+   "why": "s_caer_1: the Harbour Terrace at the harbour ward's south end, at sea level; to the lighthouse's foot only by the Wall Stair, the city and the bastion's stairs"
+  },
+  "lm_cd2_light": {
+   "x": -159.426,
+   "z": 47.421,
+   "region": "harbour",
+   "kind": "landmark",
+   "why": "s_caer_1: the other end, at sea level: the keeper's door at the Lantern Bastion's foot"
+  },
+  "lm_cd2_wall": {
+   "x": -95.0,
+   "z": 71.0,
+   "region": "wall",
+   "kind": "landmark",
+   "why": "== cd_muster_ramparts"
+  },
+  "cd_muster_harbour": {
+   "x": -271.5,
+   "z": -6.0,
+   "region": "harbour",
+   "kind": "interactable",
+   "y": 1.6,
+   "site": "watch_harbour",
+   "floor": 0,
+   "why": "1/4: inside the south chain tower (the harbour tower) at mole-deck level"
+  },
+  "cd_muster_light": {
+   "x": -146.529,
+   "z": 38.741,
+   "region": "wall",
+   "kind": "interactable",
+   "y": 21.275,
+   "site": "watch_light",
+   "floor": 2,
+   "why": "2/4: on the Lantern Bastion's platform at the lighthouse door (the lighthouse's foot)"
+  },
+  "cd_muster_ramparts": {
+   "x": -95.0,
+   "z": 71.0,
+   "region": "wall",
+   "kind": "interactable",
+   "y": 21.275,
+   "site": "watch_ramparts",
+   "floor": 1,
+   "why": "3/4: in the tall sea-curtain tower at walk level (the sea ramparts)"
+  },
+  "cd_muster_crown": {
+   "x": 66.833,
+   "z": -20.5,
+   "region": "wall",
+   "kind": "interactable",
+   "y": 33.975,
+   "site": "watch_crown",
+   "floor": 3,
+   "why": "4/4: the crown terrace on the Crown Gate, the highest walkable deck on the wall, facing the road east"
+  },
+  "paymaster_vail": {
+   "x": 30.0,
+   "z": 3.0,
+   "region": "city",
+   "kind": "npc",
+   "y": 10.875,
+   "site": "court_archive",
+   "floor": 0,
+   "why": "the Wage Vaults (court hall floor 0)"
+  },
+  "wage_desk": {
+   "x": 28.6,
+   "z": 3.5,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 10.875,
+   "yaw": 3.14159,
+   "why": "beside Vail; faces the door, its plaque read from the way in (fix round 1: at yaw 0 it read mirrored)"
+  },
+  "cd_volume_one": {
+   "x": 20.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "interactable",
+   "y": 10.875,
+   "site": "court_archive",
+   "floor": 0,
+   "why": "the shelves on rails at the vault back wall"
+  },
+  "cd_volume_one_rails": {
+   "x": 20.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 10.875,
+   "yaw": 3.14159,
+   "why": "under its volume"
+  },
+  "cd_volume_onefifty": {
+   "x": 23.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "interactable",
+   "y": 10.875,
+   "site": "court_archive",
+   "floor": 0,
+   "why": "the shelves on rails at the vault back wall"
+  },
+  "cd_volume_onefifty_rails": {
+   "x": 23.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 10.875,
+   "yaw": 3.14159,
+   "why": "under its volume"
+  },
+  "cd_volume_threehundred": {
+   "x": 26.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "interactable",
+   "y": 10.875,
+   "site": "court_archive",
+   "floor": 0,
+   "why": "the shelves on rails at the vault back wall"
+  },
+  "cd_volume_threehundred_rails": {
+   "x": 26.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 10.875,
+   "yaw": 3.14159,
+   "why": "under its volume"
+  },
+  "court_table": {
+   "x": 25.0,
+   "z": 2.0,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 14.275,
+   "why": "court hall floor 1 (\"at this table\")"
+  },
+  "cd_gate_clock": {
+   "x": 42.5,
+   "z": -2.6,
+   "region": "city",
+   "kind": "interactable",
+   "y": 24.475,
+   "site": "imperial_clock",
+   "floor": 4,
+   "why": "floor 4 of the clock tower beside the court hall, behind the grate in the square-facing dial"
+  },
+  "gate_sergeant_ottey": {
+   "x": 14.0,
+   "z": -56.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "The Drill Yards, the parade NW"
+  },
+  "marshal_grett": {
+   "x": 40.0,
+   "z": -60.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "The Drill Yards, drilling recruits"
+  },
+  "duelist_sabel_cd": {
+   "x": 20.0,
+   "z": -77.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "at the dueling ground"
+  },
+  "cd_dueling_ground": {
+   "x": 16.0,
+   "z": -74.0,
+   "region": "city",
+   "kind": "interactable",
+   "why": "a ring of worn granite in the drill yards (cd4)"
+  },
+  "lord_marshal": {
+   "x": 29.0,
+   "z": -68.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "keeps to the parade square: its centre"
+  },
+  "drillmaster_hal": {
+   "x": 22.0,
+   "z": -50.5,
+   "region": "city",
+   "kind": "npc",
+   "why": "sanctuary at the Paladin (north) hall's great door, in the hall's light"
+  },
+  "shield_captain_lund": {
+   "x": 26.2,
+   "z": -44.4,
+   "region": "city",
+   "kind": "npc",
+   "room": "paladin",
+   "why": "CF-16: the Shield Line, in the Paladin (north) hall's lit vestibule behind its open great door"
+  },
+  "code_master_rudd": {
+   "x": 26.2,
+   "z": -89.933,
+   "region": "city",
+   "kind": "npc",
+   "room": "samurai",
+   "why": "CF-16: the Duelling Code, in the Samurai (south) hall's lit vestibule behind its open great door"
+  },
+  "quartermaster_kettle": {
+   "x": 51.0,
+   "z": -68.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "the Halls' Stores against the landward curtain between the halls"
+  },
+  "armourer_brann": {
+   "x": -54.0,
+   "z": -36.5,
+   "region": "city",
+   "kind": "npc",
+   "why": "Market Yard south row shopfront (\"between my good swords\")"
+  },
+  "chandler_mott": {
+   "x": -44.0,
+   "z": -23.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "Market Yard stall (unchanged)"
+  },
+  "broker_ashby": {
+   "x": -37.5,
+   "z": -53.4,
+   "region": "city",
+   "kind": "npc",
+   "room": "auction",
+   "why": "the auction house (2026-10-11): behind a broker's counter on the Exchange's back wall, facing the yard"
+  },
+  "innkeeper_sayre": {
+   "x": -10.24,
+   "z": -50.7,
+   "region": "city",
+   "kind": "npc",
+   "room": "inn:0",
+   "why": "the Crown Inn's taproom, by its fire (indoors, CF-6)"
+  },
+  "guildmaster_torv": {
+   "x": -110.0,
+   "z": -14.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "the Smiths' Guild on Wall Street (unchanged x)"
+  },
+  "torv_craft_bench": {
+   "x": -113.0,
+   "z": -14.4,
+   "region": "city",
+   "kind": "furnishing",
+   "why": "against the guild facade beside Torv"
+  },
+  "cd_resident_elin_lathe": {
+   "x": -186.5,
+   "z": -52.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay Warehouses",
+   "why": "Warehouse Tallyman: at a warehouse door"
+  },
+  "cd_resident_ragnar_stave": {
+   "x": -234.0,
+   "z": -12.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Line Baiter: on the quay apron by the south mole"
+  },
+  "cd_resident_helga_kettle": {
+   "x": 10.0,
+   "z": -9.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Ledger Copyist: by the court hall"
+  },
+  "cd_resident_osk_holt": {
+   "x": -208.0,
+   "z": 44.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Pilots' House",
+   "why": "Fjord Pilot: at the pilots' house by the north mole"
+  },
+  "cd_resident_maud_selby": {
+   "x": 19.0,
+   "z": -8.5,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Wage Clerk: at the court hall door"
+  },
+  "cd_resident_gerda_lowe": {
+   "x": -186.5,
+   "z": -30.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Sail Loft",
+   "why": "Sail Mender"
+  },
+  "cd_resident_olav_garth": {
+   "x": 8.5,
+   "z": -62.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Parade",
+   "why": "Pensioned Pikeman: the parade edge"
+  },
+  "cd_resident_einar_colter": {
+   "x": -26.0,
+   "z": -32.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Market Yard",
+   "why": "Grain Factor"
+  },
+  "cd_resident_birger_keane": {
+   "x": -51.0,
+   "z": 28.5,
+   "region": "city",
+   "kind": "npc",
+   "home": "Lantern Street",
+   "why": "Home Nurse: a north-row doorstep (the third house's door: x -70 was a walled yard's)"
+  },
+  "cd_resident_astrid_kemp": {
+   "x": 44.0,
+   "z": -46.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Shield Lane",
+   "why": "Shield Polisher: by the Paladin hall"
+  },
+  "cd_resident_dag_grieve": {
+   "x": 50.0,
+   "z": -9.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Harness Maker: inside the Crown Gate"
+  },
+  "cd_resident_lotta_rudd": {
+   "x": -102.0,
+   "z": -40.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Smiths' Lane",
+   "why": "Blade Grinder (Rudd's cousin)"
+  },
+  "cd_resident_runa_boyd": {
+   "x": -108.0,
+   "z": 48.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Rampart Row",
+   "why": "Retired Net Maker"
+  },
+  "cd_resident_bertil_lund": {
+   "x": 47.8,
+   "z": 69.3,
+   "region": "city",
+   "kind": "npc",
+   "home": "Landward Lane",
+   "why": "Retired Wall Captain: at his kitchen table, in the open ground-floor room of his house on Landward Lane by the W3 wall stair (CF-6, indoors: his daughter's 'at the kitchen table')",
+   "room": "nsq_e:0"
+  },
+  "cd_resident_garrick_stott": {
+   "x": -228.0,
+   "z": -40.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Quay Porter"
+  },
+  "cd_resident_ida_wain": {
+   "x": -224.0,
+   "z": -2.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Rope Coiler: by the water gate"
+  },
+  "cd_resident_lennart_hurst": {
+   "x": -172.0,
+   "z": 32.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Lantern Bastion",
+   "why": "Lighthouse Oil Carrier: at the bastion foot"
+  },
+  "cd_resident_folke_orr": {
+   "x": -214.0,
+   "z": -20.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Fish Seller"
+  },
+  "cd_resident_inga_daws": {
+   "x": -214.0,
+   "z": -8.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Mussel Seller"
+  },
+  "cd_resident_sten_mallet": {
+   "x": 36.0,
+   "z": -60.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Parade",
+   "why": "Drill Recruit, under Grett"
+  },
+  "cd_resident_ivar_copper": {
+   "x": -50.0,
+   "z": -26.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Market Yard",
+   "why": "Cloth Buyer"
+  },
+  "cd_resident_ulf_bracy": {
+   "x": 5.5,
+   "z": -24.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Pie Seller: where Crown Street enters the square"
+  },
+  "cd_resident_signe_hobb": {
+   "x": 40.0,
+   "z": -28.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Lamplighter"
+  },
+  "cd_resident_vigdis_sorley": {
+   "x": 31.0,
+   "z": -8.5,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Court Petitioner: at the court hall door"
+  },
+  "cd_resident_britt_lisle": {
+   "x": 50.0,
+   "z": -29.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Wagon Wright: inside the Crown Gate"
+  },
+  "cd_resident_kerstin_webb": {
+   "x": -36.0,
+   "z": -8.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Market Yard",
+   "why": "Town Crier"
+  },
+  "cd_resident_karin_grange": {
+   "x": -58.0,
+   "z": 22.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Lantern Street",
+   "why": "Chimney Sweep"
+  },
+  "cd_resident_arne_wray": {
+   "x": -210.0,
+   "z": 38.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Gull Scarer: by the north mole"
+  },
+  "cd_resident_knut_crofton": {
+   "x": -86.161,
+   "z": 74.482,
+   "region": "wall",
+   "kind": "npc",
+   "y": 21.275,
+   "site": "watch_ramparts",
+   "floor": 1,
+   "home": "The Sea Ramparts",
+   "why": "Wall Sentry: on the walk (CF-6 upper levels allowed, CF-7)"
+  },
+  "lampkeeper_varn": {
+   "x": -146.529,
+   "z": 37.4,
+   "region": "wall",
+   "kind": "npc",
+   "y": 21.275,
+   "site": "watch_light",
+   "floor": 2,
+   "yaw": 1.5708,
+   "why": "CF-18: the lighthouse keeper at her post on the bastion platform, the light post on her left (cd1: 'stand on her left')"
+  },
+  "broker_pike": {
+   "x": -42.5,
+   "z": -53.4,
+   "region": "city",
+   "kind": "npc",
+   "room": "auction",
+   "why": "the auction house (2026-10-11): behind a broker's counter on the Exchange's back wall, facing the yard"
+  },
+  "broker_tarrant": {
+   "x": -26.5,
+   "z": -53.4,
+   "region": "city",
+   "kind": "npc",
+   "room": "auction",
+   "why": "the auction house (2026-10-11): behind a broker's counter on the Exchange's back wall, facing the yard"
+  },
+  "broker_lang": {
+   "x": -21.5,
+   "z": -53.4,
+   "region": "city",
+   "kind": "npc",
+   "room": "auction",
+   "why": "the auction house (2026-10-11): behind a broker's counter on the Exchange's back wall, facing the yard"
+  }
+ },
+ "sites": {
+  "court_archive": {
+   "cx": 25.0,
+   "cz": 2.0,
+   "yaw": 3.141592653589793,
+   "span": 24.0,
+   "len": 16.0,
+   "floors": [
+    10.875,
+    14.275,
+    17.675
+   ],
+   "shell": "sg_court_hall",
+   "name": "Wage Vaults in the Court Hall"
+  },
+  "imperial_clock": {
+   "cx": 42.5,
+   "cz": 0.0,
+   "yaw": 3.141592653589793,
+   "span": 10.0,
+   "len": 10.0,
+   "floors": [
+    10.875,
+    14.275,
+    17.675,
+    21.075,
+    24.475,
+    27.875
+   ],
+   "shell": "sg_clock_tower",
+   "name": "Imperial clock tower"
+  },
+  "watch_harbour": {
+   "cx": -275.0,
+   "cz": -6.0,
+   "r": 7.0,
+   "floors": [
+    1.6
+   ],
+   "shell": "sg_chain_tower",
+   "name": "The Harbour Tower"
+  },
+  "watch_light": {
+   "cx": -151.272,
+   "cz": 40.966,
+   "yaw": -0.90116,
+   "span": 36.0,
+   "len": 22.0,
+   "floors": [
+    0.5,
+    9.875,
+    21.275
+   ],
+   "shell": "sg_bastion",
+   "groundCells": true,
+   "name": "The Lantern Bastion"
+  },
+  "watch_ramparts": {
+   "cx": -95.0,
+   "cz": 71.0,
+   "yaw": -0.412,
+   "span": 46.0,
+   "len": 13.0,
+   "floors": [
+    9.875,
+    21.275
+   ],
+   "shell": "sg_tower_tall",
+   "groundCells": true,
+   "name": "The Sea Ramparts Watch"
+  },
+  "watch_crown": {
+   "cx": 65.333,
+   "cz": -18.0,
+   "yaw": 1.5707963267948966,
+   "span": 34.0,
+   "len": 20.0,
+   "floors": [
+    9.875,
+    21.275,
+    27.625,
+    33.975
+   ],
+   "shell": "sg_crown_gate",
+   "groundCells": true,
+   "name": "The Crown Gate"
+  }
+ },
+ "droppedSites": [
+  "cd_house_511686",
+  "cd_house_192854",
+  "cd_house_464355",
+  "cd_house_224994",
+  "cd_house_881144",
+  "cd_house_11403"
+ ],
+ "camps": [],
+ "signs": [
+  "innkeeper_sayre",
+  "guildmaster_torv",
+  "armourer_brann"
+ ],
+ "blocking": {
+  "spotPad": 1.5,
+  "namedSpotPad": 0.5,
+  "towerPad": 1.0,
+  "stairPad": 1.0,
+  "maxTurrets": 12,
+  "maxCones": 2,
+  "leantoYard": 7.0
+ },
+ "backs": {
+  "rule": {
+   "depth": 7.0,
+   "minSide": 6,
+   "margin": 1.8,
+   "publicMargin": 0.1,
+   "minBays": 2,
+   "maxBays": 4,
+   "spotPad": 2.5,
+   "max": 120
+  },
+  "fixed": [
+   {
+    "id": "shed_s",
+    "x": -200.0,
+    "z": -94.0,
+    "face": [
+     -1.0,
+     0.0
+    ],
+    "bays": 3,
+    "h": 0.92,
+    "y0": 0.95
+   },
+   {
+    "id": "shed_m",
+    "x": -200.0,
+    "z": -72.0,
+    "face": [
+     -1.0,
+     0.0
+    ],
+    "bays": 3,
+    "h": 1.0,
+    "y0": 0.95
+   },
+   {
+    "id": "shed_n",
+    "x": -200.0,
+    "z": -40.0,
+    "face": [
+     -1.0,
+     0.0
+    ],
+    "bays": 3,
+    "h": 0.92,
+    "y0": 0.95
+   }
+  ]
+ },
+ "rooms": {
+  "sg_house_open": {
+   "x": [
+    -1.8,
+    1.8
+   ],
+   "z": [
+    -9.8,
+    -0.45
+   ],
+   "ceiling": 3.4,
+   "door": [
+    -0.75,
+    0.75
+   ],
+   "doorTop": 3.0,
+   "hearth": [
+    -0.95,
+    0.95,
+    -9.8,
+    -9.2
+   ],
+   "table": [
+    -1.7,
+    -0.35,
+    -6.5,
+    -4.0
+   ],
+   "dresser": [
+    1.35,
+    1.8,
+    -8.6,
+    -6.6
+   ]
+  },
+  "sg_guild_hall": {
+   "x": [
+    -3.6,
+    3.6
+   ],
+   "z": [
+    1.6,
+    7.0
+   ],
+   "ceiling": 7.0,
+   "door": [
+    -1.6,
+    1.6
+   ],
+   "doorSpring": 4.6,
+   "doorTop": 6.2,
+   "front": 9.2,
+   "benches": [
+    [
+     -3.6,
+     -3.05,
+     2.2,
+     5.8
+    ],
+    [
+     3.05,
+     3.6,
+     2.2,
+     5.8
+    ]
+   ],
+   "benchTop": 0.46,
+   "innerArch": [
+    -1.4,
+    1.4,
+    5.0
+   ],
+   "lamps": [
+    [
+     -3.6,
+     4.3,
+     3.4
+    ],
+    [
+     3.6,
+     4.3,
+     3.4
+    ]
+   ]
+  },
+  "sg_auction_house": {
+   "body": {
+    "x": [
+     -14.0,
+     14.0
+    ],
+    "z": [
+     -7.75,
+     7.75
+    ]
+   },
+   "wall": 1.0,
+   "room": {
+    "x": [
+     -13.0,
+     13.0
+    ],
+    "z": [
+     -6.75,
+     6.75
+    ],
+    "ceiling": 6.6
+   },
+   "arches": [
+    [
+     -12.8,
+     -9.2,
+     3.9,
+     6.1
+    ],
+    [
+     -7.4,
+     -3.8,
+     3.9,
+     6.1
+    ],
+    [
+     -1.8,
+     1.8,
+     4.2,
+     6.4
+    ],
+    [
+     3.8,
+     7.4,
+     3.9,
+     6.1
+    ],
+    [
+     9.2,
+     12.8,
+     3.9,
+     6.1
+    ]
+   ],
+   "eave": 12.4,
+   "tower": {
+    "x": [
+     -3.8,
+     3.8
+    ],
+    "z": [
+     0.75,
+     8.35
+    ],
+    "top": 28.2,
+    "piers": [
+     [
+      -3.8,
+      -2.6,
+      0.75,
+      1.95
+     ],
+     [
+      2.6,
+      3.8,
+      0.75,
+      1.95
+     ]
+    ]
+   },
+   "counters": [
+    [
+     -12.0,
+     -9.0,
+     -4.6,
+     -3.8,
+     1.08
+    ],
+    [
+     -7.0,
+     -4.0,
+     -4.6,
+     -3.8,
+     1.08
+    ],
+    [
+     4.0,
+     7.0,
+     -4.6,
+     -3.8,
+     1.08
+    ],
+    [
+     9.0,
+     12.0,
+     -4.6,
+     -3.8,
+     1.08
+    ]
+   ],
+   "brokers": [
+    [
+     -10.5,
+     -5.65
+    ],
+    [
+     -5.5,
+     -5.65
+    ],
+    [
+     5.5,
+     -5.65
+    ],
+    [
+     10.5,
+     -5.65
+    ]
+   ],
+   "board": [
+    -2.6,
+    2.6,
+    -6.75,
+    -6.59,
+    1.0,
+    4.0
+   ],
+   "lamps": [
+    [
+     -3.3,
+     3.6,
+     -6.75,
+     0.0
+    ],
+    [
+     3.3,
+     3.6,
+     -6.75,
+     0.0
+    ],
+    [
+     -8.3,
+     3.6,
+     6.75,
+     3.141592653589793
+    ],
+    [
+     8.3,
+     3.6,
+     6.75,
+     3.141592653589793
+    ],
+    [
+     -8.3,
+     3.6,
+     7.75,
+     0.0
+    ],
+    [
+     8.3,
+     3.6,
+     7.75,
+     0.0
+    ],
+    [
+     -2.8,
+     4.4,
+     8.35,
+     0.0
+    ],
+    [
+     2.8,
+     4.4,
+     8.35,
+     0.0
+    ],
+    [
+     -13.0,
+     3.6,
+     0.0,
+     1.5707963267948966
+    ],
+    [
+     13.0,
+     3.6,
+     0.0,
+     -1.5707963267948966
+    ]
+   ],
+   "emblem": {
+    "y": 21.6,
+    "r": 1.75
+   }
+  }
+ },
+ "yards": {
+  "wallOffset": 0.25,
+  "gateMin": 4.5,
+  "rasterTarget": 7,
+  "spotPad": 1.5,
+  "wellEvery": 6,
+  "verge": 3.0
+ }
+}

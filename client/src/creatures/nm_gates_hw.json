@@ -1,0 +1,51 @@
+{
+ "file": "creatures/nm_gates_hw.glb",
+ "plan": "sentinel",
+ "height": 5.972,
+ "length": 3.023,
+ "width": 3.447,
+ "top": 5.972,
+ "minY": 0.0041,
+ "groundY": 0.0041,
+ "forward": 0.126,
+ "tris": [
+  10950,
+  3284
+ ],
+ "budget": 12000,
+ "bones": 24,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.641,
+  "Run": 0.763,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.884,
+  "Run": 6.293
+ },
+ "bytes": 995136,
+ "held": [
+  [
+   11078,
+   11462
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.248
+ },
+ "notes": "The Proclaimer: Heartwood's trial at the Capital's gates -- a belfry yoke and bell, a horn-mouthed helm, the proclamation to the ground",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/nm_gates_hw.py",
+ "fast": false
+}

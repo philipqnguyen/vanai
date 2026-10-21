@@ -1,0 +1,1948 @@
+{
+ "story_writ_mausoleum": {
+  "name": "The Mausoleum's Writ",
+  "zone": "mausoleum",
+  "trigger": {
+   "type": "interact",
+   "object": "writ_mausoleum"
+  },
+  "party": true,
+  "shots": [
+   {
+    "dur": 11.1,
+    "fade": {
+     "in": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       64,
+       9,
+       95
+      ],
+      "look": [
+       64,
+       4,
+       130
+      ],
+      "fov": 0.85
+     },
+     "to": {
+      "pos": [
+       64,
+       6.5,
+       103
+      ],
+      "look": [
+       64,
+       3,
+       130
+      ],
+      "fov": 0.85
+     },
+     "ease": "out"
+    },
+    "lines": [
+     {
+      "at": 1.2,
+      "dur": 9.8,
+      "text": "The Emperors' Vault, at the heart of the Mausoleum. A crowned emperor in every niche, and under the dome an empty bier, its linen made up fresh."
+     }
+    ]
+   },
+   {
+    "dur": 10.3,
+    "cam": {
+     "from": {
+      "pos": [
+       69,
+       2.8,
+       123.5
+      ],
+      "look": [
+       64,
+       2.2,
+       130.4
+      ],
+      "fov": 0.7
+     },
+     "to": {
+      "pos": [
+       67.5,
+       2.6,
+       125.5
+      ],
+      "look": [
+       64,
+       2.1,
+       130.4
+      ],
+      "fov": 0.7
+     }
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 9.4,
+      "text": "On the bier, where an emperor would lie, the province's founding writ: the empire's own statement of what this land is, sealed under wax."
+     }
+    ]
+   },
+   {
+    "dur": 11.2,
+    "cam": {
+     "from": {
+      "pos": [
+       66.0,
+       4.0,
+       127.9
+      ],
+      "look": [
+       64,
+       2.75,
+       130.4
+      ],
+      "fov": 0.55
+     },
+     "to": {
+      "pos": [
+       65.5,
+       3.8,
+       128.5
+      ],
+      "look": [
+       64,
+       2.75,
+       130.4
+      ],
+      "fov": 0.55
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 4.9,
+      "text": "\"The household departs this night and will return. Keep out. Keep well.\""
+     },
+     {
+      "at": 5.6,
+      "dur": 5.5,
+      "text": "Written the night they left. The household: the empire's people, one great house."
+     }
+    ]
+   },
+   {
+    "dur": 7,
+    "fade": {
+     "out": 1.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       65.5,
+       3.6,
+       124
+      ],
+      "look": [
+       64,
+       2.5,
+       130
+      ],
+      "fov": 0.85
+     },
+     "to": {
+      "pos": [
+       64,
+       7,
+       108
+      ],
+      "look": [
+       64,
+       3,
+       128
+      ],
+      "fov": 0.85
+     }
+    },
+    "title": {
+     "at": 1.0,
+     "dur": 5.4,
+     "text": "Keep out. Keep well.",
+     "sub": "The founding writ of the Hunting Wood"
+    }
+   }
+  ]
+ },
+ "story_writ_lodge": {
+  "name": "The Overseer's Writ",
+  "zone": "overseerslodge",
+  "trigger": {
+   "type": "interact",
+   "object": "writ_lodge"
+  },
+  "party": true,
+  "shots": [
+   {
+    "dur": 12.2,
+    "fade": {
+     "in": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       4.2,
+       136
+      ],
+      "look": [
+       0,
+       3.2,
+       158
+      ],
+      "fov": 0.85
+     },
+     "to": {
+      "pos": [
+       0,
+       4.4,
+       141
+      ],
+      "look": [
+       0,
+       3.0,
+       158
+      ],
+      "fov": 0.85
+     },
+     "ease": "out"
+    },
+    "lines": [
+     {
+      "at": 1.2,
+      "dur": 10.9,
+      "text": "The Overseer's Office, at the heart of the Overseer's Lodge, where the Timber Estates were run. Every desk in the house is laid out for a shift that never came."
+     }
+    ]
+   },
+   {
+    "dur": 9.4,
+    "cam": {
+     "from": {
+      "pos": [
+       -4.5,
+       3.6,
+       151.5
+      ],
+      "look": [
+       0,
+       2.7,
+       158
+      ],
+      "fov": 0.75
+     },
+     "to": {
+      "pos": [
+       -3,
+       3.4,
+       153.5
+      ],
+      "look": [
+       0,
+       2.7,
+       158
+      ],
+      "fov": 0.75
+     }
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 8.5,
+      "text": "On the desk, beside the Estates' survey and a rota three hundred years long, the province's founding writ, sealed under wax."
+     }
+    ]
+   },
+   {
+    "dur": 11.2,
+    "cam": {
+     "from": {
+      "pos": [
+       1.2,
+       4.2,
+       155.4
+      ],
+      "look": [
+       0,
+       2.9,
+       158
+      ],
+      "fov": 0.62
+     },
+     "to": {
+      "pos": [
+       0.7,
+       4.0,
+       156.0
+      ],
+      "look": [
+       0,
+       2.9,
+       158
+      ],
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 4.9,
+      "text": "\"The household departs this night and will return. Keep out. Keep well.\""
+     },
+     {
+      "at": 5.6,
+      "dur": 5.5,
+      "text": "Written the night they left. The household: the empire's people, one great house."
+     }
+    ]
+   },
+   {
+    "dur": 7,
+    "fade": {
+     "out": 1.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       3,
+       4,
+       154
+      ],
+      "look": [
+       0,
+       2.6,
+       158
+      ],
+      "fov": 0.85
+     },
+     "to": {
+      "pos": [
+       10,
+       7,
+       143
+      ],
+      "look": [
+       0,
+       3,
+       156
+      ],
+      "fov": 0.85
+     }
+    },
+    "title": {
+     "at": 1.0,
+     "dur": 5.4,
+     "text": "Keep out. Keep well.",
+     "sub": "The founding writ of the Timber Estates"
+    }
+   }
+  ]
+ },
+ "story_writ_ballroom": {
+  "name": "The Ballroom's Writ",
+  "zone": "sunkenballroom",
+  "trigger": {
+   "type": "interact",
+   "object": "writ_ballroom"
+  },
+  "party": true,
+  "shots": [
+   {
+    "dur": 11.7,
+    "fade": {
+     "in": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       8,
+       22
+      ],
+      "look": [
+       2,
+       1,
+       58
+      ],
+      "fov": 0.85
+     },
+     "to": {
+      "pos": [
+       0,
+       5.5,
+       30
+      ],
+      "look": [
+       3,
+       0.5,
+       58
+      ],
+      "fov": 0.85
+     },
+     "ease": "out"
+    },
+    "lines": [
+     {
+      "at": 1.2,
+      "dur": 10.4,
+      "text": "The Sunken Ballroom, under the west mere, where the household's last waltz stopped mid-step. On the bandstand, a music box still plays one bar of it."
+     }
+    ]
+   },
+   {
+    "dur": 8.3,
+    "cam": {
+     "from": {
+      "pos": [
+       -3,
+       2.4,
+       52.5
+      ],
+      "look": [
+       4,
+       1.0,
+       58
+      ],
+      "fov": 0.75
+     },
+     "to": {
+      "pos": [
+       -1.5,
+       2.2,
+       54
+      ],
+      "look": [
+       4,
+       1.0,
+       58
+      ],
+      "fov": 0.75
+     }
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 7.4,
+      "text": "Beside it, the province's founding writ, the empire's own statement of what this land is, sealed under wax."
+     }
+    ]
+   },
+   {
+    "dur": 11.2,
+    "cam": {
+     "from": {
+      "pos": [
+       2.4,
+       2.0,
+       55.6
+      ],
+      "look": [
+       4,
+       1.1,
+       58
+      ],
+      "fov": 0.62
+     },
+     "to": {
+      "pos": [
+       2.9,
+       1.9,
+       56.2
+      ],
+      "look": [
+       4,
+       1.1,
+       58
+      ],
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 4.9,
+      "text": "\"The household departs this night and will return. Keep out. Keep well.\""
+     },
+     {
+      "at": 5.6,
+      "dur": 5.5,
+      "text": "Written the night they left. The household: the empire's people, one great house."
+     }
+    ]
+   },
+   {
+    "dur": 7,
+    "fade": {
+     "out": 1.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       3,
+       52
+      ],
+      "look": [
+       4,
+       1,
+       58
+      ],
+      "fov": 0.85
+     },
+     "to": {
+      "pos": [
+       -8,
+       8,
+       36
+      ],
+      "look": [
+       3,
+       0,
+       56
+      ],
+      "fov": 0.85
+     }
+    },
+    "title": {
+     "at": 1.0,
+     "dur": 5.4,
+     "text": "Keep out. Keep well.",
+     "sub": "The founding writ of the Summer Lakes"
+    }
+   }
+  ]
+ },
+ "story_bell": {
+  "name": "Seal It Behind Us",
+  "zone": "belltower",
+  "trigger": {
+   "type": "interact",
+   "object": "wax_cabinet"
+  },
+  "party": true,
+  "shots": [
+   {
+    "dur": 10.7,
+    "fade": {
+     "in": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -4,
+       16,
+       -15
+      ],
+      "look": [
+       0,
+       21.5,
+       17.6
+      ],
+      "fov": 0.95
+     },
+     "to": {
+      "pos": [
+       -1.5,
+       18.5,
+       -15
+      ],
+      "look": [
+       0,
+       22.3,
+       17.6
+      ],
+      "fov": 0.95
+     },
+     "ease": "out"
+    },
+    "lines": [
+     {
+      "at": 1.2,
+      "dur": 9.4,
+      "text": "The Bell Tower of the drowned valley. Everyone in the three cities grew up on the story of the bell that rings over the water for nobody."
+     }
+    ]
+   },
+   {
+    "dur": 11.2,
+    "cam": {
+     "from": {
+      "pos": [
+       8.5,
+       1.8,
+       -2
+      ],
+      "look": [
+       4,
+       1,
+       6
+      ],
+      "fov": 0.8
+     },
+     "to": {
+      "pos": [
+       7,
+       1.7,
+       1
+      ],
+      "look": [
+       4,
+       1,
+       6
+      ],
+      "fov": 0.8
+     }
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 10.3,
+      "text": "In the bell chamber at the top, a cabinet sealed in wax before the valley was flooded, so that someone, someday, would find it dry. Inside it, one page."
+     }
+    ]
+   },
+   {
+    "dur": 13.1,
+    "cam": {
+     "from": {
+      "pos": [
+       4,
+       2.3,
+       3.5
+      ],
+      "look": [
+       4,
+       0.85,
+       6
+      ],
+      "fov": 0.62
+     },
+     "to": {
+      "pos": [
+       4,
+       2.0,
+       4.3
+      ],
+      "look": [
+       4,
+       0.9,
+       6
+      ],
+      "fov": 0.62
+     }
+    },
+    "title": {
+     "at": 0.4,
+     "dur": 3.4,
+     "text": "Seal it behind us."
+    },
+    "lines": [
+     {
+      "at": 3.8,
+      "dur": 9.2,
+      "text": "The last order the empire gave, written the night before it left, in a calm hand. They left on purpose, and locked the door themselves."
+     }
+    ]
+   },
+   {
+    "dur": 10.8,
+    "cam": {
+     "from": {
+      "pos": [
+       -7,
+       1.8,
+       2
+      ],
+      "look": [
+       -4,
+       1,
+       6
+      ],
+      "fov": 0.75
+     },
+     "to": {
+      "pos": [
+       -5.6,
+       1.7,
+       3.4
+      ],
+      "look": [
+       -4,
+       1,
+       6
+      ],
+      "fov": 0.75
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 10.1,
+      "text": "Beside it, the striking rolls: what the bell has rung each year since the flood. The peal changes yearly, and the gaps between strokes grow shorter."
+     }
+    ]
+   },
+   {
+    "dur": 9.6,
+    "fade": {
+     "out": 1.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       6,
+       1.6,
+       -6
+      ],
+      "look": [
+       0,
+       9,
+       0
+      ],
+      "fov": 0.9
+     },
+     "to": {
+      "pos": [
+       9,
+       2.4,
+       -9
+      ],
+      "look": [
+       0,
+       8,
+       0
+      ],
+      "fov": 0.9
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 8.9,
+      "text": "It was never a bell. It is a clock the size of a valley, and it is counting down to the date the empire wrote down for its return."
+     }
+    ]
+   }
+  ]
+ },
+ "story_embassy": {
+  "name": "The Embassy",
+  "zone": "borderwall",
+  "trigger": {
+   "type": "quest_complete",
+   "quest": "race5"
+  },
+  "daytime": 0.12,
+  "mark": [
+   9.8,
+   -50.4,
+   -0.64
+  ],
+  "shots": [
+   {
+    "dur": 9.5,
+    "fade": {
+     "in": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       40,
+       15,
+       -110
+      ],
+      "look": [
+       0,
+       25,
+       -21
+      ]
+     },
+     "to": {
+      "pos": [
+       30,
+       11,
+       -96
+      ],
+      "look": [
+       3,
+       20,
+       -30
+      ]
+     },
+     "ease": "out"
+    },
+    "lines": [
+     {
+      "at": 1.0,
+      "dur": 8.4,
+      "text": "Three letters, one from each city's court, presented at the Great Watchtower to whatever commands in the empire's absence."
+     }
+    ]
+   },
+   {
+    "dur": 11.2,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "herald_sentinel",
+       "off": [
+        0.6,
+        1.25,
+        3.0
+       ]
+      },
+      "look": {
+       "npc": "herald_sentinel",
+       "off": [
+        0,
+        0.85,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "herald_sentinel",
+       "off": [
+        0.3,
+        1.15,
+        2.4
+       ]
+      },
+      "look": {
+       "npc": "herald_sentinel",
+       "off": [
+        0,
+        0.85,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 10.5,
+      "who": "npc:herald_sentinel",
+      "text": "Your letters are received, and will be conveyed to the household. I am instructed to return this reply. It was prepared in advance. Considerably in advance."
+     }
+    ],
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:herald_sentinel"
+     },
+     {
+      "at": 0,
+      "who": "npc:herald_sentinel",
+      "face": "self"
+     }
+    ]
+   },
+   {
+    "dur": 11.6,
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.0,
+        1.9,
+        -2.4
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.0,
+        3.2
+       ]
+      },
+      "fov": 0.7
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.8,
+        1.8,
+        -2.0
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.0,
+        3.2
+       ]
+      },
+      "fov": 0.7
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 10.9,
+      "who": "npc:herald_sentinel",
+      "text": "To the caretaker governments of the free cities. The household thanks you for keeping the land warm. You are asked to prepare an accounting of your stewardship,"
+     }
+    ]
+   },
+   {
+    "dur": 12.0,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "herald_sentinel",
+       "off": [
+        -0.5,
+        1.0,
+        2.2
+       ]
+      },
+      "look": {
+       "npc": "herald_sentinel",
+       "off": [
+        0,
+        0.9,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "herald_sentinel",
+       "off": [
+        -0.3,
+        0.95,
+        1.9
+       ]
+      },
+      "look": {
+       "npc": "herald_sentinel",
+       "off": [
+        0,
+        0.9,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 11.3,
+      "who": "npc:herald_sentinel",
+      "text": "and to be ready to yield custody of the interior provinces upon the Restoration. Signed and sealed: the Regent, keeper of the capital, servant of the returning crown."
+     }
+    ]
+   },
+   {
+    "dur": 12.0,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "morrow_wall",
+       "off": [
+        0.5,
+        1.75,
+        2.4
+       ]
+      },
+      "look": {
+       "npc": "morrow_wall",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "morrow_wall",
+       "off": [
+        0.3,
+        1.72,
+        2.0
+       ]
+      },
+      "look": {
+       "npc": "morrow_wall",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 7.8,
+      "who": "npc:morrow_wall",
+      "text": "Caretaker governments. Three hundred years burying our own dead outside their locked door, and we're the house staff."
+     },
+     {
+      "at": 8.2,
+      "dur": 3.7,
+      "who": "npc:morrow_wall",
+      "text": "Junn, write this down: the bill now has a cover letter."
+     }
+    ]
+   },
+   {
+    "dur": 6.6,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.2,
+        2.2,
+        -4.5
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.4,
+        4
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.8,
+        2.7,
+        -6.5
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.8,
+        6
+       ]
+      }
+     }
+    },
+    "lines": [
+     {
+      "at": 0.3,
+      "dur": 6.2,
+      "text": "Whatever the Regent is, it wrote that reply long ago. It has been expecting us."
+     }
+    ]
+   }
+  ]
+ },
+ "story_regent_walls": {
+  "name": "From the Walls",
+  "zone": "burnedland",
+  "trigger": {
+   "type": "quest_complete",
+   "quest": "ash3"
+  },
+  "daytime": 0.995,
+  "mark": [
+   -7.9,
+   -148.6,
+   0.04
+  ],
+  "shots": [
+   {
+    "dur": 9.7,
+    "fade": {
+     "in": 2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -60,
+       30,
+       -205
+      ],
+      "look": [
+       0,
+       15,
+       -105
+      ]
+     },
+     "to": {
+      "pos": [
+       -42,
+       22,
+       -188
+      ],
+      "look": [
+       0,
+       14,
+       -108
+      ]
+     },
+     "ease": "out"
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 9.0,
+      "text": "The last camp, before the gates of the capital. It held through the night. Before dawn, the Regent's voice came down from the walls."
+     }
+    ],
+    "cues": [
+     {
+      "at": 0,
+      "who": "npc:sabel_gates",
+      "face": "self"
+     },
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:sabel_gates"
+     }
+    ]
+   },
+   {
+    "dur": 15.2,
+    "cam": {
+     "from": {
+      "pos": [
+       6,
+       2,
+       -126
+      ],
+      "look": [
+       0,
+       13,
+       -108
+      ],
+      "fov": 0.8
+     },
+     "to": {
+      "pos": [
+       3.5,
+       2.6,
+       -129
+      ],
+      "look": [
+       0,
+       14,
+       -108
+      ],
+      "fov": 0.8
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 7.8,
+      "text": "The Regent, from the walls: \"Travellers. You kept your watch at my door through the night, and you kept it well.\""
+     },
+     {
+      "at": 8.6,
+      "dur": 6.5,
+      "text": "\"The household's law allows for an audit of its keeping, and I find that you have become one.\""
+     }
+    ]
+   },
+   {
+    "dur": 8.3,
+    "cam": {
+     "from": {
+      "pos": [
+       -14,
+       4,
+       -140
+      ],
+      "look": [
+       0,
+       12,
+       -110
+      ],
+      "fov": 0.8
+     },
+     "to": {
+      "pos": [
+       -10,
+       5,
+       -136
+      ],
+      "look": [
+       0,
+       12,
+       -110
+      ],
+      "fov": 0.8
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 7.6,
+      "text": "\"At first light I will unbar the gates of the capital. Come in. Write down what you find. I have kept it well.\""
+     }
+    ]
+   },
+   {
+    "dur": 8.3,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "morrow_gates",
+       "off": [
+        0.5,
+        1.75,
+        2.4
+       ]
+      },
+      "look": {
+       "npc": "morrow_gates",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "morrow_gates",
+       "off": [
+        0.3,
+        1.72,
+        2.0
+       ]
+      },
+      "look": {
+       "npc": "morrow_gates",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 7.6,
+      "who": "npc:morrow_gates",
+      "text": "Kept it well. Three hundred years alone in there with the dusting, and what it wants from us is a good report."
+     }
+    ]
+   },
+   {
+    "dur": 7.6,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "sabel_gates",
+       "off": [
+        1.3,
+        1.15,
+        1.7
+       ]
+      },
+      "look": {
+       "npc": "sabel_gates",
+       "off": [
+        0,
+        0.85,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "sabel_gates",
+       "off": [
+        1.1,
+        1.1,
+        1.45
+       ]
+      },
+      "look": {
+       "npc": "sabel_gates",
+       "off": [
+        0,
+        0.86,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 6.9,
+      "who": "npc:sabel_gates",
+      "text": "Then we write it an honest one. That's what an audit is. Sleep, all of you; we go in at first light."
+     }
+    ]
+   },
+   {
+    "dur": 3.5,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.0,
+        2.0,
+        -3.2
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.4,
+        4
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.8,
+        2.6,
+        -5.5
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.8,
+        6
+       ]
+      }
+     }
+    }
+   }
+  ]
+ },
+ "story_census": {
+  "name": "The Census",
+  "zone": "capital",
+  "trigger": {
+   "type": "landmark",
+   "landmark": "lm_cap_census"
+  },
+  "daytime": 0.15,
+  "mark": [
+   -63.4,
+   -119.6,
+   3.14
+  ],
+  "shots": [
+   {
+    "dur": 11.4,
+    "fade": {
+     "in": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -20,
+       3,
+       -116
+      ],
+      "look": [
+       -63,
+       10,
+       -116
+      ]
+     },
+     "to": {
+      "pos": [
+       -34,
+       4,
+       -116
+      ],
+      "look": [
+       -63,
+       7,
+       -116
+      ]
+     },
+     "ease": "out"
+    },
+    "lines": [
+     {
+      "at": 1.0,
+      "dur": 10.3,
+      "text": "The Census Hall: the Hall of the Household, where the empire kept the register of every one of its people. Roll on roll, from the floor to the ceiling."
+     }
+    ],
+    "cues": [
+     {
+      "at": 0,
+      "who": "npc:sabel_census",
+      "face": "self"
+     },
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:sabel_census"
+     }
+    ]
+   },
+   {
+    "dur": 9.0,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "sabel_census",
+       "off": [
+        4.5,
+        2.5,
+        11
+       ]
+      },
+      "look": {
+       "npc": "sabel_census",
+       "off": [
+        -2.6,
+        0.9,
+        6.5
+       ]
+      },
+      "fov": 0.8
+     },
+     "to": {
+      "pos": {
+       "npc": "sabel_census",
+       "off": [
+        3.2,
+        2.2,
+        10
+       ]
+      },
+      "look": {
+       "npc": "sabel_census",
+       "off": [
+        -2.6,
+        0.9,
+        6.5
+       ]
+      },
+      "fov": 0.8
+     }
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 8.1,
+      "text": "The rolls lie open on the table, and the last entries are fresh, in the same calm hand that wrote 'Seal it behind us'."
+     }
+    ]
+   },
+   {
+    "dur": 12.2,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "sabel_census",
+       "off": [
+        0.8,
+        1.05,
+        1.8
+       ]
+      },
+      "look": {
+       "npc": "sabel_census",
+       "off": [
+        0,
+        0.85,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "sabel_census",
+       "off": [
+        0.5,
+        1.0,
+        1.5
+       ]
+      },
+      "look": {
+       "npc": "sabel_census",
+       "off": [
+        0,
+        0.86,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 11.5,
+      "who": "npc:sabel_census",
+      "text": "The rolls are current, and they're not theirs. They're ours. Caerdun, Heartwood, Moonmere: births, deaths and marriages, three hundred years of us, kept up to this year."
+     }
+    ]
+   },
+   {
+    "dur": 14.5,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "sabel_census",
+       "off": [
+        4.4,
+        1.5,
+        1.7
+       ]
+      },
+      "look": {
+       "npc": "sabel_census",
+       "off": [
+        -0.2,
+        1.0,
+        1.7
+       ]
+      },
+      "fov": 0.72
+     },
+     "to": {
+      "pos": {
+       "npc": "sabel_census",
+       "off": [
+        4.0,
+        1.45,
+        1.7
+       ]
+      },
+      "look": {
+       "npc": "sabel_census",
+       "off": [
+        -0.2,
+        1.0,
+        1.7
+       ]
+      },
+      "fov": 0.72
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 5.3,
+      "who": "npc:sabel_census",
+      "text": "You're in here, {name}. So am I. Emmer is. So is everyone we've ever buried."
+     },
+     {
+      "at": 6.1,
+      "dur": 8.3,
+      "who": "npc:sabel_census",
+      "text": "We were never outside the empire. The sentinels' household is us too. We were the part of the household that stayed home."
+     }
+    ]
+   },
+   {
+    "dur": 7.9,
+    "fade": {
+     "out": 1.6
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "sabel_census",
+       "off": [
+        3,
+        3.0,
+        11.5
+       ]
+      },
+      "look": {
+       "npc": "sabel_census",
+       "off": [
+        -1.5,
+        0.8,
+        3.0
+       ]
+      },
+      "fov": 0.9
+     },
+     "to": {
+      "pos": {
+       "npc": "sabel_census",
+       "off": [
+        2,
+        3.6,
+        12.5
+       ]
+      },
+      "look": {
+       "npc": "sabel_census",
+       "off": [
+        -1.5,
+        0.8,
+        3.0
+       ]
+      },
+      "fov": 0.9
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 7.4,
+      "who": "npc:sabel_census",
+      "text": "Kept out, and kept well: the writ's two orders, and we were both. I still can't tell you which one this is."
+     }
+    ]
+   }
+  ]
+ },
+ "story_epilogue": {
+  "name": "Fulfilled",
+  "zone": "northroad",
+  "trigger": {
+   "type": "quest_complete",
+   "quest": "cap4"
+  },
+  "daytime": 0.42,
+  "mark": [
+   4.1,
+   7.6,
+   -0.04
+  ],
+  "shots": [
+   {
+    "dur": 10.9,
+    "fade": {
+     "in": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -30,
+       8,
+       -35
+      ],
+      "look": [
+       2,
+       3,
+       6
+      ]
+     },
+     "to": {
+      "pos": [
+       -22,
+       6,
+       -26
+      ],
+      "look": [
+       2,
+       3,
+       6
+      ]
+     },
+     "ease": "out"
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 10.0,
+      "text": "The Halfway Inn on the North Road, on neither city's ground. Three envoys met at its long table one night, and everything since began here."
+     }
+    ]
+   },
+   {
+    "dur": 15.7,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "auntie_wren",
+       "off": [
+        0.6,
+        1.75,
+        2.0
+       ]
+      },
+      "look": {
+       "npc": "auntie_wren",
+       "off": [
+        0,
+        1.55,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "auntie_wren",
+       "off": [
+        0.35,
+        1.7,
+        1.6
+       ]
+      },
+      "look": {
+       "npc": "auntie_wren",
+       "off": [
+        0,
+        1.55,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 8.4,
+      "who": "npc:auntie_wren",
+      "text": "So it's true, then. They're home. Three hundred years of empty rooms upstairs, kept for guests who never came up the road."
+     },
+     {
+      "at": 9.2,
+      "dur": 6.4,
+      "who": "npc:auntie_wren",
+      "text": "My grandmother's grandmother kept them made up anyway, daft old hope that she was. Bless her."
+     }
+    ],
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:auntie_wren"
+     },
+     {
+      "at": 0,
+      "who": "npc:auntie_wren",
+      "face": "self"
+     }
+    ]
+   },
+   {
+    "dur": 7.6,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "archivist_junn",
+       "off": [
+        -4.0,
+        1.7,
+        0.42
+       ]
+      },
+      "look": {
+       "npc": "archivist_junn",
+       "off": [
+        2.68,
+        0.9,
+        1.12
+       ]
+      },
+      "fov": 0.8
+     },
+     "to": {
+      "pos": {
+       "npc": "archivist_junn",
+       "off": [
+        -3.37,
+        1.65,
+        0.53
+       ]
+      },
+      "look": {
+       "npc": "archivist_junn",
+       "off": [
+        2.68,
+        0.9,
+        1.12
+       ]
+      },
+      "fov": 0.8
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 7.0,
+      "who": "npc:auntie_wren",
+      "text": "Well. Someone go up and open the windows. Two peoples on the road now; we're going to need the space."
+     }
+    ]
+   },
+   {
+    "dur": 9.2,
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        0.9,
+        1.8,
+        -1.1
+       ]
+      },
+      "look": {
+       "npc": "auntie_wren",
+       "off": [
+        0,
+        1.5,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.8,
+        1.75,
+        -0.9
+       ]
+      },
+      "look": {
+       "npc": "auntie_wren",
+       "off": [
+        0,
+        1.5,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 8.6,
+      "who": "npc:auntie_wren",
+      "text": "And love, your charter came back from the court this morning. The licence that sent you through the gates. Stamped. One word."
+     }
+    ]
+   },
+   {
+    "dur": 6,
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        0.5,
+        1.4,
+        2.5
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.2,
+        0
+       ]
+      },
+      "fov": 0.65
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.35,
+        1.38,
+        2.2
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.2,
+        0
+       ]
+      },
+      "fov": 0.65
+     }
+    },
+    "title": {
+     "at": 0.8,
+     "dur": 4.8,
+     "text": "Fulfilled",
+     "sub": "One word, stamped on your charter."
+    }
+   },
+   {
+    "dur": 4,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.2,
+        2.1,
+        -3.6
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.6,
+        4
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.8,
+        2.6,
+        -5.8
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.8,
+        6
+       ]
+      }
+     }
+    }
+   }
+  ]
+ }
+}

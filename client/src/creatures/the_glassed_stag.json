@@ -1,0 +1,45 @@
+{
+ "file": "creatures/the_glassed_stag.glb",
+ "plan": "cervid",
+ "height": 7.643,
+ "length": 5.514,
+ "width": 5.137,
+ "top": 7.643,
+ "minY": 0.003,
+ "groundY": 0.003,
+ "forward": 0.493,
+ "tris": [
+  11260,
+  3378
+ ],
+ "budget": 12000,
+ "bones": 27,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.559,
+  "Run": 0.901,
+  "Attack_A": 1.1,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4,
+  "Special": 2.1
+ },
+ "speeds": {
+  "Walk": 3.031,
+  "Run": 9.353
+ },
+ "bytes": 1051556,
+ "held": [],
+ "groundLift": {
+  "Death": 1.182
+ },
+ "notes": "the Glassed Stag boss: run to glass, a glassed orchard for a rack, the abbot's ember in the chest",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_glassed_stag.py",
+ "fast": false
+}

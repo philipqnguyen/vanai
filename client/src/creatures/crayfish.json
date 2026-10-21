@@ -1,0 +1,47 @@
+{
+ "file": "creatures/crayfish.glb",
+ "plan": "crustacean",
+ "height": 1.295,
+ "length": 3.214,
+ "width": 2.349,
+ "top": 1.295,
+ "minY": 0.002,
+ "groundY": 0.002,
+ "forward": 0.071,
+ "tris": [
+  3894,
+  1168
+ ],
+ "budget": 4200,
+ "bones": 28,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.622,
+  "Run": 0.424,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 0.76,
+  "Run": 1.886
+ },
+ "bytes": 476380,
+ "held": [
+  [
+   4072,
+   4423
+  ]
+ ],
+ "groundLift": {},
+ "notes": "the Barge Crayfish: claws raised, a torn barge plank in the left, bog iron rusting on both",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/crustacean.py",
+ "fast": false
+}

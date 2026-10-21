@@ -1,0 +1,48 @@
+{
+ "file": "creatures/the_foreman.glb",
+ "plan": "sentinel",
+ "height": 4.784,
+ "length": 1.271,
+ "width": 3.541,
+ "top": 4.784,
+ "minY": 0.0025,
+ "groundY": 0.0025,
+ "forward": 0.017,
+ "tris": [
+  11067,
+  3318
+ ],
+ "budget": 12000,
+ "bones": 22,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.463,
+  "Run": 0.609,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 2.0,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.667,
+  "Run": 6.5
+ },
+ "bytes": 978516,
+ "held": [
+  [
+   9464,
+   11431
+  ]
+ ],
+ "groundLift": {},
+ "notes": "The Foreman: the felling gang's master, broad and low, the crosscut saw across its back, the tally on its breast",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_foreman.py",
+ "fast": false
+}

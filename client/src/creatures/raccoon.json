@@ -1,0 +1,44 @@
+{
+ "file": "creatures/raccoon.glb",
+ "plan": "small_mammal",
+ "height": 1.382,
+ "length": 2.975,
+ "width": 0.901,
+ "top": 1.382,
+ "minY": -0.0027,
+ "groundY": -0.0027,
+ "forward": -0.28,
+ "tris": [
+  4180,
+  1232
+ ],
+ "budget": 4200,
+ "bones": 25,
+ "atlas": 512,
+ "emissive": false,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.754,
+  "Run": 0.522,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 1.528,
+  "Run": 6.262
+ },
+ "bytes": 439696,
+ "held": [],
+ "groundLift": {
+  "Death": 0.191
+ },
+ "notes": "the Holloway Rummager: a bear-sized masked raccoon, cutpurse hands, a stolen garrison baldric and purse",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/small_mammal.py",
+ "fast": false
+}

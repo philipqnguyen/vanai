@@ -1,0 +1,31 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=25.9.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "node --test test/*.test.mjs",
+    "pretest": "node ../scripts/runtime-root.mjs",
+    "test:no-runtime": "node --test $(grep -LE 'runtime-assets|runtimeRoot|VANAI_RUNTIME|runtime-root' test/*.test.mjs)",
+    "assets:import": "node ../scripts/import-asset-index.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0"
+  },
+  "dependencies": {
+    "@babylonjs/core": "9.22.0",
+    "@babylonjs/loaders": "9.22.0",
+    "@rails/actioncable": "^7.2.302",
+    "babylonjs-ktx2decoder": "9.22.0",
+    "meshoptimizer": "1.3.0"
+  }
+}

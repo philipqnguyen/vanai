@@ -1,0 +1,52 @@
+{
+ "file": "creatures/the_granary_master.glb",
+ "plan": "sentinel",
+ "height": 6.703,
+ "length": 2.022,
+ "width": 3.726,
+ "top": 6.703,
+ "minY": 0.0048,
+ "groundY": 0.0048,
+ "forward": 0.071,
+ "tris": [
+  10966,
+  3288
+ ],
+ "budget": 12000,
+ "bones": 20,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.569,
+  "Run": 0.748,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.83,
+  "Run": 6.025
+ },
+ "bytes": 1082924,
+ "held": [
+  [
+   12365,
+   13828
+  ]
+ ],
+ "groundLift": {
+  "Walk": 0.031,
+  "Death": 0.255
+ },
+ "notes": "The Granary-Master: the Great Granary's boss -- a bin of a body, a granary roof for a helm, forty tally seals, the ledger and the scoop",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_granary_master.py",
+ "fast": false
+}

@@ -1,0 +1,35 @@
+{
+  "inactive": true,
+  "readable": true,
+  "destinations": true,
+  "completed": true,
+  "distinctFloors": true,
+  "shelves": [
+    {
+      "zone": "moonmere",
+      "x": 31.839555773903783,
+      "z": 32.364426593395244,
+      "y": 33.01345549540768,
+      "label": "The Moon Stack",
+      "kind": "point"
+    },
+    {
+      "zone": "moonmere",
+      "x": 31.839555773903783,
+      "z": 32.364426593395244,
+      "y": 29.413455495407685,
+      "label": "The Two-Moon Stack",
+      "kind": "point"
+    },
+    {
+      "zone": "moonmere",
+      "x": 5.4,
+      "z": 268,
+      "y": 0.82,
+      "label": "The Ferry Crates",
+      "kind": "point"
+    }
+  ],
+  "crestHeight": 10.4,
+  "scope": "Journal gating, supplementary readable and stacked objective markers; no server or account."
+}

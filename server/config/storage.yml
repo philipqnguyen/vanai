@@ -1,0 +1,27 @@
+test:
+  service: Disk
+  root: <%= Rails.root.join("tmp/storage") %>
+
+local:
+  service: Disk
+  root: <%= Rails.root.join("storage") %>
+
+# The AWS secrets come from the environment (.env.production), never from credentials
+# amazon:
+#   service: S3
+#   access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] %>
+#   secret_access_key: <%= ENV["AWS_SECRET_ACCESS_KEY"] %>
+#   region: us-east-1
+#   bucket: your_own_bucket-<%= Rails.env %>
+
+# Remember not to checkin your GCS keyfile to a repository
+# google:
+#   service: GCS
+#   project: your_project
+#   credentials: <%= Rails.root.join("path/to/gcs.keyfile") %>
+#   bucket: your_own_bucket-<%= Rails.env %>
+
+# mirror:
+#   service: Mirror
+#   primary: local
+#   mirrors: [ amazon, google, microsoft ]

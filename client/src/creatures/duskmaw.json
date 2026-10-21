@@ -1,0 +1,45 @@
+{
+ "file": "creatures/duskmaw.glb",
+ "plan": "canine",
+ "height": 3.394,
+ "length": 5.268,
+ "width": 1.369,
+ "top": 3.394,
+ "minY": -0.0208,
+ "groundY": -0.0208,
+ "forward": -0.197,
+ "tris": [
+  10139,
+  3015
+ ],
+ "budget": 12000,
+ "bones": 26,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.019,
+  "Run": 0.756,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4,
+  "Special": 2.2
+ },
+ "speeds": {
+  "Walk": 4.108,
+  "Run": 9.202
+ },
+ "bytes": 886564,
+ "held": [],
+ "groundLift": {
+  "Death": 0.673
+ },
+ "notes": "Duskmaw NM: dusk-blue, a frost-shard mane to mid-back, a maw lit from inside",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/duskmaw.py",
+ "fast": false
+}

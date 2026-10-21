@@ -1,0 +1,45 @@
+{
+ "file": "creatures/the_wall_drake.glb",
+ "plan": "reptile",
+ "height": 6.492,
+ "length": 12.199,
+ "width": 3.478,
+ "top": 6.492,
+ "minY": 0.0062,
+ "groundY": 0.0062,
+ "forward": -0.749,
+ "tris": [
+  10629,
+  3178
+ ],
+ "budget": 12000,
+ "bones": 27,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.703,
+  "Run": 1.056,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4,
+  "Special": 2.2
+ },
+ "speeds": {
+  "Walk": 2.725,
+  "Run": 4.768
+ },
+ "bytes": 914436,
+ "held": [],
+ "groundLift": {
+  "Death": 0.287
+ },
+ "notes": "the Wall Drake: four-legged drake at 3x, masonry plates, crag feathers, merlon tail",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_wall_drake.py",
+ "fast": false
+}

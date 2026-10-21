@@ -1,0 +1,47 @@
+{
+ "file": "creatures/the_orchard_sow.glb",
+ "plan": "suid",
+ "height": 3.092,
+ "length": 4.995,
+ "width": 1.73,
+ "top": 3.092,
+ "minY": 0.003,
+ "groundY": 0.003,
+ "forward": 0.651,
+ "tris": [
+  9638,
+  2890
+ ],
+ "budget": 12000,
+ "bones": 27,
+ "atlas": 1024,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.954,
+  "Run": 0.681,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.3,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.469,
+  "Run": 5.62
+ },
+ "bytes": 778840,
+ "held": [],
+ "groundLift": {
+  "Attack_A": 0.032,
+  "Attack_B": 0.073,
+  "Death": 0.65
+ },
+ "notes": "the Orchard Sow NM: a sow, no tusks, windfall apples and leaves caught in her crest, a litter's worth of scars",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_orchard_sow.py",
+ "fast": false
+}

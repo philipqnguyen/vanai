@@ -1,0 +1,51 @@
+{
+ "file": "creatures/the_regent.glb",
+ "plan": "sentinel",
+ "height": 5.358,
+ "length": 2.217,
+ "width": 2.407,
+ "top": 5.358,
+ "minY": 0.004,
+ "groundY": 0.004,
+ "forward": 0.189,
+ "tris": [
+  10760,
+  3228
+ ],
+ "budget": 12000,
+ "bones": 27,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.201,
+  "Run": 0.752,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.613,
+  "Run": 4.736
+ },
+ "bytes": 971356,
+ "held": [
+  [
+   9186,
+   9839
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.033
+ },
+ "notes": "The Regent: the final boss, the caretaker on the borrowed throne",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_regent.py",
+ "fast": false
+}

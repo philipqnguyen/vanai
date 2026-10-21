@@ -1,0 +1,1397 @@
+:root {
+  /* the original names stay (64 inline styles in hud.ts read them), remapped
+     onto the Lamplight palette; new tokens live under --lp-* */
+  --bg: #12141c;
+  --bg-deep: #0b0e15;
+  --panel: rgba(11, 14, 21, 0.78);
+  --panel-solid: #0d1018;
+  --line: rgba(255, 255, 255, 0.1);
+  --text: #ece6d6;
+  --dim: #a39d8e;
+  --gold: #c9a35c;
+  --gold-dim: #a8874c;
+  --hp: #7cbd70;
+  --mp: #6fa3d6;
+  --tp: #f0c06a;
+  --xp: #b9aaf0;
+  --danger: #d0604f;
+  --online: #7fb87a;
+  --caerdun: #7d9bb8;
+  --heartwood: #82ab76;
+  --moonmere: #9d8fc9;
+  --rare: #c9a35c;
+  --uncommon: #8fae8a;
+
+  /* Lamplight: surfaces */
+  --lp-ink: #0b0e15;
+  --lp-panel: rgba(11, 14, 21, 0.78);
+  --lp-panel-strong: rgba(11, 14, 21, 0.9);
+  --lp-window: rgba(13, 16, 24, 0.95);
+  --lp-tip: rgba(11, 14, 21, 0.97);
+  --lp-brass: #c9a35c;
+  --lp-brass-line: rgba(201, 163, 92, 0.38);
+  --lp-brass-soft: rgba(201, 163, 92, 0.12);
+  /* text, brightest to faintest */
+  --lp-parch: #ece6d6;
+  --lp-parch-hi: #f3ead6;
+  --lp-parch-2: #d9d0bc;
+  --lp-body: #d2cab8;
+  --lp-sub: #b9b2a2;
+  --lp-muted: #a39d8e;
+  --lp-faint: #8f897c;
+  --lp-hair: rgba(255, 255, 255, 0.07);
+  --lp-hair-2: rgba(255, 255, 255, 0.12);
+  --lp-track: rgba(255, 255, 255, 0.08);
+  /* meter fills */
+  --lp-hp-grad: linear-gradient(180deg, #96cf89, #5e9a57);
+  --lp-mp-grad: linear-gradient(180deg, #8dbdf0, #5689c2);
+  --lp-tp-grad: linear-gradient(180deg, #f0c06a, #c88d34);
+  --lp-foe-grad: linear-gradient(180deg, #e98b75, #b5503f);
+  --lp-xp-grad: linear-gradient(90deg, #8f7fd6, #c3b6f5);
+  --lp-cast-grad: linear-gradient(90deg, #8dbdf0, #cfe4fb);
+  --lp-mp-ink: #8dbdf0;
+  --lp-low: #e0705c;
+  /* names over heads and in frames */
+  --lp-foe-name: #f3c1b4;
+  --lp-tough: #f3a86a;
+  --lp-npc: #a9dca0;
+  --lp-player: #a8c8e8;
+  --lp-party: #c3b1f0;
+  --lp-side: #8fd0c2;
+  --lp-guild: #c9a3e3;
+  /* chat channels */
+  --ch-say: #a8c8e8;
+  --ch-party: #c3b1f0;
+  --ch-company: #8fd8a8;
+  --ch-tell: #d99ac9;
+  --ch-system: #c9ab78;
+  /* depth */
+  --lp-shadow-panel: 0 10px 28px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --lp-shadow-window: 0 24px 60px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --lp-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg-deep); }
+body { font-family: "Alegreya Sans", "Trebuchet MS", sans-serif; color: var(--text); font-size: 14px; }
+#game-canvas { position: fixed; inset: 0; width: 100%; height: 100%; touch-action: none; outline: none; }
+#app { position: fixed; inset: 0; pointer-events: none; }
+/* zero specificity, so a child's own pointer-events: none (nameplates, quest
+   beacons, float text, all appended straight to #app) wins and clicks, drags
+   and the wheel reach the canvas through them */
+:where(#app > *) { pointer-events: auto; }
+button { font-family: inherit; cursor: pointer; }
+input { font-family: inherit; }
+
+/* ---------- shared bits ---------- */
+/* Buttons map by meaning, not by class name, so every existing call site
+   adopts Lamplight unchanged: .gold was always the commit action and becomes
+   the brass primary, .primary (once blue) the secondary, bare .btn the quiet
+   kind; .danger is new, for the destructive one */
+.btn {
+  height: 36px; padding: 0 16px; border-radius: 8px; background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14); color: var(--lp-sub);
+  font-size: 13px; letter-spacing: normal;
+}
+.btn:hover { border-color: rgba(255, 255, 255, 0.28); color: var(--lp-parch); }
+.btn.primary { background: rgba(255, 255, 255, 0.05); border-color: rgba(201, 163, 92, 0.5); color: var(--lp-parch); }
+.btn.gold {
+  background: linear-gradient(180deg, #d8b46c, #b48a45); border-color: #e2c48a;
+  color: #1a140a; font-weight: 700;
+}
+.btn.gold:hover { filter: brightness(1.08); color: #1a140a; border-color: #e2c48a; }
+.btn.danger { background: rgba(208, 96, 79, 0.14); border-color: rgba(208, 96, 79, 0.6); color: #f0a294; }
+/* the kinds out-rank .btn:hover, so each restates its own hover */
+.btn.primary:hover { border-color: rgba(201, 163, 92, 0.75); }
+.btn.danger:hover { border-color: rgba(208, 96, 79, 0.85); }
+.btn:disabled { opacity: 0.45; cursor: default; }
+/* the decision surfaces get the Kit's tall button; dense rows the short one */
+#dialog-panel .btn, #death-overlay .btn { height: 44px; border-radius: 9px; padding: 0 20px; font-size: 14px; }
+/* the id-scoped tall rule out-ranks a bare .btn.sm, so the dialogue's small
+   buttons (reward strip, list rows) name it again */
+.invrow .btn, .btn.sm, #dialog-panel .btn.sm { height: 28px; padding: 0 10px; font-size: 12px; border-radius: 7px; }
+/* HUD text field — built only through textInput() in hud.ts, which swallows
+   keydowns so the world's movement and window shortcuts never see them */
+.hud-field {
+  flex: 1; min-width: 0; background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text); padding: 5px 9px; border-radius: 7px;
+}
+.hud-field:focus { outline: none; border-color: var(--lp-brass-line); }
+.fieldrow { display: flex; gap: 8px; margin-bottom: 10px; }
+.bar { height: 7px; background: var(--lp-track); border-radius: 1px; overflow: hidden; }
+.bar > div { height: 100%; transition: width 0.25s ease; }
+.serif { font-family: "Cinzel", serif; }
+
+/* ---------- Lamplight primitives ---------- */
+/* The Kit's recurring pieces, so later HUD markup composes classes instead of
+   repeating the design's inline values */
+.lp-panel {
+  background: var(--lp-panel); border: 1px solid var(--lp-brass-line);
+  border-radius: 12px; box-shadow: var(--lp-shadow-panel);
+}
+.lp-panel.quiet { border-color: rgba(255, 255, 255, 0.08); }
+/* HUD text sits over a live 3D scene, so anything not on a panel needs this */
+.lp-shadowed { text-shadow: var(--lp-text-shadow); }
+.lp-name { font-family: "Cinzel", serif; font-weight: 600; }
+/* NPC speech and flavour are set in the serif italic */
+.lp-spoken { font-family: "Alegreya", serif; font-style: italic; }
+.lp-num { font-variant-numeric: tabular-nums; }
+.lp-label { font-size: 10px; font-weight: 700; letter-spacing: 1.2px; color: var(--lp-sub); }
+.lp-section, .wsection {
+  font-size: 10px; font-weight: 700; letter-spacing: 1.8px; color: var(--lp-muted); text-transform: uppercase;
+}
+/* meters: <div class="lp-meter hp h8"><i style="width:..%"></i></div> */
+.lp-meter {
+  position: relative; height: 10px; border-radius: 5px; background: var(--lp-track);
+  overflow: hidden; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.55);
+}
+.lp-meter > i { display: block; height: 100%; border-radius: inherit; transition: width 0.25s ease; }
+.lp-meter.hp > i { background: var(--lp-hp-grad); }
+.lp-meter.mp > i { background: var(--lp-mp-grad); }
+.lp-meter.tp > i { background: #f0c06a; }
+.lp-meter.foe > i { background: var(--lp-foe-grad); }
+.lp-meter.xp > i { background: var(--lp-xp-grad); }
+.lp-meter.cast > i { background: var(--lp-cast-grad); }
+.lp-meter.h3 { height: 3px; border-radius: 2px; }
+.lp-meter.h4 { height: 4px; border-radius: 2px; }
+.lp-meter.h6 { height: 6px; border-radius: 3px; }
+.lp-meter.h7 { height: 7px; border-radius: 4px; }
+.lp-meter.h8 { height: 8px; border-radius: 4px; }
+.lp-meter.h14 { height: 14px; border-radius: 7px; }
+/* a small filled tag (DUTY TARGET, GUILD); the caller sets its background */
+.lp-chip {
+  display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 1.2px;
+  color: #0b0e15; border-radius: 3px; padding: 1px 4px;
+}
+.lp-kbd {
+  display: inline-block; min-width: 26px; height: 26px; box-sizing: border-box; border-radius: 6px;
+  border: 1px solid var(--lp-brass); color: var(--lp-brass); background: rgba(255, 255, 255, 0.04);
+  font: 700 13px/24px "Alegreya Sans", sans-serif; text-align: center;
+}
+.lp-kbd.sm {
+  min-width: 0; height: auto; padding: 0 5px; border-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px; color: var(--lp-parch); font-size: 11px; line-height: 16px;
+}
+/* the quest marker shape; colour comes from currentColor (questColor) */
+.lp-diamond {
+  display: inline-block; width: 7px; height: 7px; transform: rotate(45deg);
+  background: currentColor; flex: 0 0 auto;
+}
+/* tabs and chip buttons are real <button>s so window-drag.ts never starts a
+   drag from them when they sit in a header */
+.lp-tab {
+  padding: 6px 10px 7px; background: transparent; border: 0; border-bottom: 2px solid transparent;
+  color: var(--lp-sub); font: inherit; font-size: 12px;
+}
+.lp-tab[aria-selected="true"] { border-bottom-color: var(--lp-brass); color: var(--lp-parch-hi); font-weight: 700; }
+.lp-chipbtn {
+  height: 28px; padding: 0 10px; border-radius: 14px; background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12); color: var(--lp-sub); font-size: 12px;
+}
+.lp-chipbtn.on { background: rgba(201, 163, 92, 0.16); border-color: rgba(201, 163, 92, 0.6); color: var(--lp-parch-hi); }
+.lp-iconbtn {
+  width: 24px; height: 24px; padding: 0; border-radius: 6px; background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12); color: var(--lp-parch-2);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+svg.lp { display: block; flex: 0 0 auto; }
+
+/* ---------- full screens: pregame.css ---------- */
+
+.jobgrid .job {
+  border: 1px solid var(--lp-hair-2); background: rgba(255, 255, 255, 0.03); border-radius: 8px;
+  color: var(--lp-parch); padding: 10px 6px; text-align: center; cursor: pointer; font-size: 12px;
+}
+.jobgrid .job.sel { border-color: var(--lp-brass); color: var(--lp-parch-hi); background: var(--lp-brass-soft); }
+.jobgrid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.desc { font-family: "Alegreya", serif; font-style: italic; color: var(--dim); font-size: 13px; min-height: 36px; }
+
+/* ---------- HUD ---------- */
+/* z 10 puts every HUD panel over the world labels (nameplates z 5, combat
+   text z 6), which are #app children appended after #hud and would otherwise
+   paint across the minimap and the toasts; the menus (70), the item tip (80)
+   and the loading screen (60, pregame.css) sit outside #hud and still clear it */
+#hud { position: fixed; inset: 0; pointer-events: none; display: none; z-index: 10; }
+#hud.on { display: block; }
+#hud > * { pointer-events: auto; }
+
+/* the right column (Main artboard): minimap cluster over Duties. It is a flex
+   column stopped short of the dock, so a long Duties list shrinks and clips
+   instead of running into it. Only the buttons inside take clicks; the rest
+   lets a world click through to the monster underneath. */
+#hud #right-col {
+  position: fixed; right: 24px; top: 18px; bottom: 150px;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 30px; pointer-events: none;
+}
+#minimap-cluster { width: 196px; display: flex; flex-direction: column; align-items: center; gap: 8px; flex: 0 0 auto; }
+.mm-ring {
+  position: relative; width: 184px; height: 184px; border-radius: 50%; padding: 5px; box-sizing: border-box;
+  background: rgba(11, 14, 21, 0.85); border: 1px solid var(--lp-brass); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+}
+/* 172 is MM_CSS in hud.ts; the backing store is sized to it × devicePixelRatio */
+#minimap { width: 172px; height: 172px; border-radius: 50%; display: block; }
+.mm-north {
+  position: absolute; left: 50%; top: -9px; transform: translateX(-50%); width: 20px; height: 18px;
+  box-sizing: border-box; border-radius: 5px; background: var(--lp-ink); border: 1px solid var(--lp-brass);
+  color: var(--lp-brass); font: 700 11px/16px "Cinzel", serif; text-align: center;
+}
+.mm-zoom {
+  position: absolute; width: 24px; height: 24px; padding: 0; border-radius: 50%;
+  background: var(--lp-ink); border: 1px solid var(--lp-brass-line); color: var(--lp-parch);
+  font-size: 15px; line-height: 20px; pointer-events: auto;
+}
+.mm-zoom:hover { border-color: var(--lp-brass); }
+.mm-zoom.in { left: 4px; bottom: 18px; }
+.mm-zoom.out { left: 22px; bottom: -2px; }
+.mm-caption { text-align: center; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95), 0 0 10px rgba(0, 0, 0, 0.6); }
+#zone-name {
+  font: 600 13px "Cinzel", serif; letter-spacing: 2.5px; color: var(--lp-parch-hi);
+  text-transform: uppercase; text-align: center;
+}
+#game-clock {
+  display: flex; justify-content: center; align-items: center; gap: 6px; margin-top: 3px;
+  font-size: 12px; color: var(--lp-parch-2);
+}
+#game-clock svg { color: var(--lp-brass); }
+
+/* the player plate (Main artboard): emblem, Cinzel name, HP/MP meters, TP in three segments */
+#player-frame {
+  position: fixed; left: 20px; top: 20px; width: 316px; box-sizing: border-box;
+  padding: 12px 14px 12px 12px; display: flex; gap: 12px; align-items: flex-start;
+}
+#player-frame .pemblem {
+  position: relative; flex: 0 0 auto; width: 50px; height: 50px; border-radius: 12px;
+  background: radial-gradient(circle at 50% 35%, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.25));
+  border: 1px solid var(--lp-brass); color: var(--lp-brass);
+  display: flex; align-items: center; justify-content: center;
+}
+#player-frame .pjob-icon { display: flex; }
+#player-frame .plvl {
+  position: absolute; bottom: -7px; left: 50%; transform: translateX(-50%);
+  min-width: 22px; height: 16px; padding: 0 5px; box-sizing: border-box; border-radius: 8px;
+  background: var(--lp-ink); border: 1px solid var(--lp-brass); color: var(--lp-parch-hi);
+  font-size: 11px; font-weight: 700; line-height: 14px; text-align: center;
+}
+#player-frame .pmain { flex: 1; min-width: 0; }
+#player-frame .prow { display: flex; align-items: baseline; gap: 8px; }
+#player-frame .pname {
+  font-size: 18px; letter-spacing: 0.5px; color: var(--lp-parch-hi);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;
+}
+#player-frame .pjob { font-size: 12px; color: var(--lp-sub); white-space: nowrap; }
+#player-frame .pgrid {
+  display: grid; grid-template-columns: 20px minmax(0, 1fr) 64px; align-items: center;
+  column-gap: 8px; row-gap: 6px; margin-top: 8px;
+}
+#player-frame .hpnum, #player-frame .mpnum, #player-frame .tpnum {
+  font-size: 12px; text-align: right; color: var(--lp-parch-hi); white-space: nowrap;
+}
+#player-frame .pgrid .dim { color: var(--lp-sub); } /* on the 0.78 panel: see .combatline */
+#player-frame .tpnum { color: #f0c06a; }
+#player-frame .tpsegs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px; }
+#player-frame .tpsegs > i { display: block; height: 7px; border-radius: 2px; background: var(--lp-track); }
+#player-frame .tpsegs > i.full { background: var(--lp-tp-grad); box-shadow: 0 0 6px rgba(240, 192, 106, 0.45); }
+#player-frame.dead { background: rgba(40, 14, 12, 0.9); border-color: rgba(214, 102, 84, 0.4); }
+#player-frame.dead .pname { color: #e9a397; }
+
+/* effects on you: a tile per buff, counted down locally between self updates */
+#buff-row { position: fixed; left: 22px; top: 140px; display: flex; gap: 8px; pointer-events: none; }
+#buff-row .buff { display: flex; flex-direction: column; align-items: center; gap: 2px; pointer-events: auto; }
+#buff-row .bicon {
+  width: 30px; height: 30px; box-sizing: border-box; border-radius: 7px; background: rgba(11, 14, 21, 0.82);
+  border: 1px solid; display: flex; align-items: center; justify-content: center;
+}
+/* ability glyphs come from abilityStrokeIcon at its default stroke; every tile draws at 1.7 */
+#buff-row .bicon svg { stroke-width: 1.7; }
+#buff-row .def .bicon { border-color: var(--lp-brass); color: var(--lp-brass); }
+#buff-row .benefit .bicon { border-color: #7fc79a; color: #9fdcb4; }
+#buff-row .debuff .bicon { border-color: rgba(214, 102, 84, 0.65); color: #e9a397; }
+#buff-row .btime { font-size: 10px; color: var(--lp-parch); text-shadow: var(--lp-text-shadow); min-height: 13px; }
+
+/* target frame (Main + Kit): top centre, where the compass ribbon was */
+#target-frame {
+  position: fixed; top: 18px; left: 50%; transform: translateX(-50%);
+  width: min(560px, calc(100vw - 720px)); min-width: 380px; box-sizing: border-box;
+  padding: 10px 16px 12px; display: none;
+}
+#target-frame.on { display: block; }
+#target-frame .trow { display: flex; align-items: center; gap: 10px; min-width: 0; }
+#target-frame .tlv {
+  padding: 1px 7px; border-radius: 5px; font-size: 11px; font-weight: 700;
+  background: rgba(236, 230, 214, 0.12); border: 1px solid rgba(236, 230, 214, 0.35); color: var(--lp-parch-hi);
+}
+#target-frame .tlv.tough { background: rgba(240, 150, 80, 0.16); border-color: rgba(240, 150, 80, 0.6); color: var(--lp-tough); }
+#target-frame .tname {
+  font-size: 18px; letter-spacing: 0.4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;
+}
+#target-frame .tname.foe { color: var(--lp-foe-name); }
+#target-frame .tname.foe.tough, #target-frame .tcon.tough { color: var(--lp-tough); }
+#target-frame .tname.npc { color: var(--lp-npc); }
+#target-frame .tname.pc, #target-frame .tname.self { color: var(--lp-player); }
+#target-frame .tname.obj { color: var(--lp-parch); }
+#target-frame .tcon { font-size: 12px; color: var(--lp-sub); font-style: italic; white-space: nowrap; }
+/* a player's job line is a fact, not a description, so the Kit sets it upright */
+#target-frame.pc .tcon, #target-frame.self .tcon { font-style: normal; }
+#target-frame .tside {
+  margin-left: auto; display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--lp-sub); white-space: nowrap;
+}
+#target-frame .ttot { display: inline-flex; align-items: center; gap: 4px; color: var(--lp-parch-hi); }
+#target-frame .tparty { color: var(--lp-party); }
+#target-frame .tfallen { color: #e9a397; }
+#target-frame .tquest { display: inline-flex; align-items: center; gap: 6px; }
+#target-frame .tquest .lp-diamond { width: 8px; height: 8px; }
+#target-frame .lp-diamond.hollow { background: transparent; box-shadow: inset 0 0 0 1.5px currentColor; }
+#target-frame .tduty { font-size: 11px; padding: 1px 5px; background: #f0c06a; }
+#target-frame .tmeter { margin-top: 8px; }
+#target-frame .tmeter > b { position: absolute; top: 0; width: 1px; height: 14px; background: rgba(0, 0, 0, 0.35); }
+#target-frame .thp {
+  position: absolute; right: 8px; top: 0; font-size: 11px; line-height: 14px; font-weight: 700;
+  color: #fff7ea; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+#target-frame .tfar {
+  position: absolute; left: 8px; top: 0; font-size: 11px; line-height: 14px; font-style: italic;
+  color: #e9a397; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); display: none;
+}
+#target-frame.far .tfar { display: block; }
+#target-frame.far .tmeter > i { opacity: 0.55; }
+/* a player's meter: slim, solid green, no ticks and no % */
+#target-frame .tmeter.pcm { height: 8px; border-radius: 4px; }
+#target-frame .tmeter.pcm > i { background: var(--hp); }
+#target-frame .tmeter.pcm > b, #target-frame .tmeter.pcm > span { display: none; }
+#target-frame .tfoot { display: none; align-items: center; gap: 10px; margin-top: 8px; }
+#target-frame.foot .tfoot { display: flex; }
+#target-frame.nometer .tmeter, #target-frame.nometer .tfoot { display: none; }
+#target-frame .teffects { display: contents; }
+#target-frame .tfx {
+  display: inline-flex; align-items: center; gap: 4px; padding: 2px 7px 2px 4px; border-radius: 6px;
+  border: 1px solid rgba(240, 192, 106, 0.5); font-size: 11px; color: #f0c06a; white-space: nowrap;
+}
+#target-frame .tcast { flex: 1 1 auto; display: none; align-items: center; gap: 8px; }
+#target-frame.casting .tcast { display: flex; }
+#target-frame .tcname { font-size: 12px; font-style: italic; color: #f0c06a; white-space: nowrap; }
+#target-frame .tcast .lp-meter { flex: 1 1 auto; box-shadow: none; }
+#target-frame .tcast .lp-meter > i { width: 0; transition: none; }
+#target-frame .tctime { font-size: 11px; color: var(--lp-sub); }
+
+/* party rows (Kit): HP then a thin MP line that turns into the cast line;
+   the numbers live in the row's tooltip */
+/* A full party must never run into the chat, so the frame is capped at the
+   space above it, and it drops whole rows rather than slicing one: it wraps
+   as a column, so a row that does not fit starts a second column, which the
+   wide column-gap pushes past the clip. The 14px padding (and left 20 - 14)
+   is room for the low-HP glow, which the clip would otherwise cut off. The
+   height is definite rather than a max-height, because a column only wraps
+   reliably against a definite height; the frame itself is transparent and
+   lets world clicks through, so only the rows take them. It is content-box
+   against the global border-box so the rows keep the design's 256px and the
+   height is exactly the row space; the bottom padding is glow room that may
+   spill into the 12px gap, never row space. Which rows stay is chosen by
+   fitPartyFrame in hud.ts; this clip is only the net beneath it. */
+#hud #party-frame {
+  position: fixed; left: 6px; top: 204px; box-sizing: content-box; width: 256px; padding: 0 14px 14px;
+  height: calc(100vh - 204px - 20px - var(--chat-h) - 12px); overflow: hidden; pointer-events: none;
+  display: flex; flex-direction: column; flex-wrap: wrap; align-content: flex-start; row-gap: 6px; column-gap: 40px;
+}
+#party-frame > * { flex: 0 0 auto; width: 100%; box-sizing: border-box; pointer-events: auto; }
+/* fitPartyFrame (hud.ts) hides the lowest-ranked rows that will not fit */
+/* outranks the .pmember display:flex rule below, which would otherwise win on order */
+#party-frame > .pmember[hidden], #party-frame > [hidden] { display: none; }
+#party-frame .phead {
+  display: flex; justify-content: space-between; align-items: baseline; padding: 0 4px;
+  font-size: 10px; font-weight: 700; letter-spacing: 2px; color: var(--lp-parch-2); text-shadow: var(--lp-text-shadow);
+}
+#party-frame .phead .pcount { color: var(--lp-sub); letter-spacing: 1px; }
+#party-frame .pmember {
+  display: flex; gap: 9px; align-items: center; padding: 7px 10px 8px 8px;
+  background: var(--lp-panel); border: 1px solid var(--lp-hair); border-radius: 9px; cursor: pointer;
+}
+#party-frame .picon {
+  flex: 0 0 auto; width: 26px; height: 26px; box-sizing: border-box; border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.18); color: #e9e2cf;
+  display: flex; align-items: center; justify-content: center;
+}
+#party-frame .pbody { flex: 1 1 auto; min-width: 0; }
+#party-frame .lp-meter { box-shadow: none; }
+#party-frame .ptop { display: flex; justify-content: space-between; gap: 6px; font-size: 13px; }
+#party-frame .pnm { color: var(--lp-parch-hi); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#party-frame .plead { color: var(--lp-brass); font-size: 11px; }
+#party-frame .pjl { font-size: 11px; color: var(--lp-sub); white-space: nowrap; }
+#party-frame .php { margin-top: 4px; }
+#party-frame .php > i { background: var(--hp); }
+#party-frame .pmp { margin-top: 2px; }
+#party-frame .pmp > i { background: var(--mp); }
+#party-frame .pcast { display: none; align-items: center; gap: 6px; margin-top: 3px; }
+#party-frame .pcast.on { display: flex; }
+#party-frame .pcast .lp-meter { flex: 1 1 auto; }
+#party-frame .pcast .lp-meter > i { width: 0; background: #f0c06a; transition: none; }
+#party-frame .pcname { font-size: 10px; color: #f0c06a; font-style: italic; white-space: nowrap; }
+#party-frame .pwhere { font-size: 11px; color: var(--lp-sub); margin-top: 3px; }
+#party-frame .pmember.targeted { border-color: var(--lp-brass); }
+#party-frame .pmember.low {
+  border-color: rgba(214, 102, 84, 0.65);
+  box-shadow: 0 0 0 1px rgba(214, 102, 84, 0.2), 0 0 14px rgba(214, 102, 84, 0.25);
+}
+#party-frame .pmember.low .php > i { background: var(--lp-low); }
+#party-frame .pmember.dead { background: rgba(40, 14, 12, 0.9); border-color: rgba(214, 102, 84, 0.4); }
+#party-frame .pmember.dead .pnm, #party-frame .pmember.dead .pjl { color: #e9a397; }
+#party-frame .pmember.dead .picon { border-color: rgba(214, 102, 84, 0.5); }
+#party-frame .pfallen {
+  display: flex; justify-content: space-between; align-items: baseline; margin-top: 3px;
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #e9a397;
+}
+/* a hint for whoever can raise; the click itself still only targets */
+#party-frame .praise { display: none; color: var(--lp-brass); font-size: 11px; font-weight: 400; letter-spacing: 0.5px; }
+#party-frame .pmember:hover .praise { display: inline; }
+/* a member mid-crossing keeps their seat, quietly — usually a second or two */
+#party-frame .pmember.away { border-style: dashed; border-color: rgba(255, 255, 255, 0.14); opacity: 0.6; cursor: default; }
+/* restated after .low/.dead: the healer's target is usually exactly that row */
+#party-frame .pmember.targeted.low, #party-frame .pmember.targeted.dead { border-color: var(--lp-brass); }
+#party-frame .pmember.away .astat { font-size: 11px; font-style: italic; color: var(--lp-sub); margin-top: 3px; }
+
+/* the raise offer is a prompt card (.lp-prompt) set inside the death overlay */
+#raise-offer { display: none; margin-top: 14px; width: 420px; max-width: calc(100vw - 32px); }
+#raise-offer.on { display: block; }
+/* a prompt's 36px buttons, not the overlay's tall release button */
+#raise-offer .btn { height: 36px; border-radius: 8px; padding: 0 16px; font-size: 13px; }
+
+/* chat (Main artboard): channel tabs over one shared log, the composer always
+   showing beneath it. Its height is fixed by construction (tab row 38 + log +
+   composer 38 + border 2) so the party frame can stop short of it. */
+#hud { --chat-log-h: 168px; --chat-h: calc(var(--chat-log-h) + 78px); }
+#chat {
+  position: fixed; left: 20px; bottom: 20px; box-sizing: border-box;
+  /* the design's 404, narrowed with the window so the chat's right edge stays
+     14.5px clear of the centred 545px hotbar: 20 + (50vw - 307) = 50vw - 272.5 - 14.5 */
+  width: min(404px, max(300px, calc(50vw - 307px)));
+  background: var(--lp-panel); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; overflow: hidden;
+}
+.chat-tabs { display: flex; gap: 2px; padding: 6px 6px 0; border-bottom: 1px solid var(--lp-hair); }
+.chat-tabs .lp-tab { display: flex; align-items: center; height: 31px; box-sizing: border-box; line-height: 16px; cursor: pointer; }
+.chat-tabs .lp-tab:hover { color: var(--lp-parch); }
+.chat-tabs .unread {
+  min-width: 15px; height: 15px; padding: 0 4px; box-sizing: border-box; border-radius: 8px; background: var(--ch-tell);
+  color: var(--lp-ink); font-size: 10px; font-weight: 700; line-height: 15px; text-align: center; margin-left: 5px; display: none;
+}
+.chat-tabs .unread.has { display: inline-block; }
+#chat-log {
+  height: var(--chat-log-h); box-sizing: border-box; padding: 8px 12px; font-size: 13px; line-height: 1.55;
+  overflow-y: auto; scrollbar-width: thin; overflow-wrap: anywhere;
+}
+/* the tabs filter by row class; chat_model.ts TAB_GROUPS names the same groups */
+#chat-log[data-filter="party"] > :not(.party),
+#chat-log[data-filter="company"] > :not(.company),
+#chat-log[data-filter="tells"] > :not(.tell),
+#chat-log[data-filter="combat"] > :not(.combatline):not(.xp):not(.loot) { display: none; }
+#chat-log .say { color: var(--lp-parch); }
+#chat-log .say .from { color: var(--ch-say); }
+#chat-log .party { color: #e7dcf7; }
+#chat-log .party .from { color: var(--ch-party); }
+#chat-log .company { color: #d6efe0; }
+#chat-log .company .from { color: var(--ch-company); }
+/* whispers: a rose-violet of their own, so they never read as say */
+#chat-log .tell { color: #f0cbe6; }
+#chat-log .tell .from { color: var(--ch-tell); font-style: italic; }
+#chat-log .system { color: var(--ch-system); font-style: italic; }
+/* --lp-faint is for the opaque windows; the 0.78 panels let a bright scene
+   through, so the dim text on them is --lp-sub */
+#chat-log .combatline { color: var(--lp-sub); font-size: 12px; }
+#chat-log .loot { color: #9fcf95; }
+#chat-log .xp { color: var(--xp); }
+.chat-compose { display: flex; gap: 6px; align-items: center; padding: 0 8px 8px; }
+/* where the line is going: its prefix, else the sticky channel (click cycles) */
+.chat-pill {
+  flex: 0 0 auto; display: flex; align-items: center; gap: 4px; padding: 0 8px; height: 30px;
+  border-radius: 7px; border: 0; font: inherit; font-size: 12px; font-weight: 700; white-space: nowrap; cursor: pointer;
+  color: var(--ch-say); background: rgba(168, 200, 232, 0.14);
+}
+.chat-pill[data-ch="party"] { color: var(--ch-party); background: rgba(195, 177, 240, 0.14); }
+.chat-pill[data-ch="company"] { color: var(--ch-company); background: rgba(143, 216, 168, 0.14); }
+.chat-pill[data-ch="tell"] { color: var(--ch-tell); background: rgba(217, 154, 201, 0.14); max-width: 45%; overflow: hidden; }
+.chat-pill[data-ch="tell"] .plabel { overflow: hidden; text-overflow: ellipsis; }
+.chat-pill[data-ch="command"] { color: var(--lp-muted); background: rgba(255, 255, 255, 0.06); }
+#chat-input {
+  display: block; flex: 1 1 auto; min-width: 0; height: 30px; box-sizing: border-box; padding: 0 10px;
+  border-radius: 7px; background: rgba(0, 0, 0, 0.35); border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--lp-parch); font: inherit; font-size: 13px;
+}
+#chat-input::placeholder { color: var(--lp-faint); }
+#chat-input.on, #chat-input:focus { outline: none; border-color: var(--lp-brass-line); }
+
+/* hotbar (Main artboard): ten fixed 50px slots; each reads its state from
+   border, glow and ink alone (Kit "ability slot"), set by tickHotbar */
+#hotbar {
+  position: fixed; bottom: 50px; left: 50%; transform: translateX(-50%); width: 545px;
+  display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 5px;
+  pointer-events: none;
+}
+#hotbar .slot {
+  position: relative; width: 50px; height: 50px; padding: 0; border-radius: 10px;
+  background: rgba(11, 14, 21, 0.84); border: 1px solid var(--lp-hair-2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35); color: #e3dac6;
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+  pointer-events: auto; user-select: none; -webkit-user-select: none; font: inherit;
+  transition: border-color 0.12s;
+}
+#hotbar .slot:hover { border-color: rgba(255, 255, 255, 0.24); }
+#hotbar .slot:focus { outline: none; }
+#hotbar .slot .ico { display: flex; pointer-events: none; }
+#hotbar .slot .key { position: absolute; left: 5px; top: 3px; font-size: 10px; font-weight: 700; color: var(--lp-muted); }
+#hotbar .slot .cost { position: absolute; right: 5px; bottom: 3px; font-size: 10px; font-weight: 700; }
+#hotbar .slot .cost.tp { color: #f0c06a; }
+#hotbar .slot .cost.mp { color: var(--lp-mp-ink); }
+#hotbar .slot .cost.item { color: var(--lp-parch); }
+#hotbar .slot .cost.short, #hotbar .slot .cost.hp { color: var(--lp-low); }
+#hotbar .slot .cd {
+  position: absolute; inset: 0; border-radius: 9px; display: none;
+  align-items: center; justify-content: center; pointer-events: none;
+}
+#hotbar .slot.cd .cd { display: flex; }
+#hotbar .slot .cdtext { font-size: 16px; font-weight: 700; color: #fff7ea; text-shadow: 0 1px 3px #000; }
+#hotbar .slot .uline { display: none; }
+#hotbar .slot.cd { color: var(--lp-faint); }
+#hotbar .slot.tpready {
+  border-color: var(--lp-brass); color: #f6e7c4;
+  box-shadow: 0 0 0 1px rgba(201, 163, 92, 0.35), 0 0 14px rgba(201, 163, 92, 0.4);
+}
+#hotbar .slot.short { color: #6f6a60; }
+#hotbar .slot.far { border-color: rgba(208, 96, 79, 0.55); box-shadow: inset 0 0 0 40px rgba(208, 96, 79, 0.16); color: #e9a397; }
+#hotbar .slot.active { border-color: rgba(201, 163, 92, 0.7); box-shadow: inset 0 0 12px rgba(201, 163, 92, 0.25); color: #f6e7c4; }
+#hotbar .slot.active .uline {
+  display: block; position: absolute; left: 50%; bottom: -5px; transform: translateX(-50%);
+  width: 18px; height: 3px; border-radius: 2px; background: var(--lp-brass);
+}
+#hotbar .slot.empty { border: 1px dashed rgba(255, 255, 255, 0.16); box-shadow: none; color: var(--lp-faint); cursor: default; }
+#hotbar .slot.dim { opacity: 0.45; }
+#hotbar .slot.pressed { transform: translateY(1px); box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.6); border-color: rgba(255, 255, 255, 0.24); }
+.gicon { display: block; }
+.invrow .iicon { width: 30px; height: 30px; border-radius: 6px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--lp-hair-2); display: flex; align-items: center; justify-content: center; flex: none; }
+.invrow .iicon .gicon { width: 20px; height: 20px; }
+
+
+#hotbar .slot.dragover { border-color: var(--lp-brass); }
+.invrow.dragover { outline: 1px dashed var(--lp-brass-line); background: var(--lp-brass-soft); }
+.invrow[draggable="true"] { cursor: grab; }
+
+/* Duties (Main artboard): the focused row is boxed in brass and carries the
+   live bearing and the progress segments; the rest show their count */
+/* the gradient fades toward the left, where the text starts, so the text
+   carries the shared shadow and the light end stays dark enough over sky */
+#quest-tracker {
+  width: 292px; box-sizing: border-box; padding: 12px 14px; border-radius: 12px;
+  background: linear-gradient(270deg, rgba(11, 14, 21, 0.72), rgba(11, 14, 21, 0.55));
+  text-shadow: var(--lp-text-shadow);
+  pointer-events: none; flex: 0 1 auto; min-height: 0; overflow: hidden;
+}
+#quest-tracker[hidden] { display: none; }
+/* fitTrackerRows: not even the header fits (the ferry panel in the column on
+   a 720px window), so Duties leaves whole rather than as a sliced strip */
+#quest-tracker.nofit { display: none; }
+#quest-tracker .thead { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+#quest-tracker .tlabel { letter-spacing: 2px; color: var(--lp-parch-2); }
+#quest-tracker .tcount { font-size: 11px; color: var(--lp-sub); }
+#quest-tracker .tcollapse { margin-left: auto; pointer-events: auto; }
+#quest-tracker .thead:last-child { margin-bottom: 0; }
+#quest-tracker .trows { display: flex; flex-direction: column; gap: 12px; }
+/* fitTrackerRows drops a row that would be sliced by the column's bottom */
+#quest-tracker .trow[hidden] { display: none; }
+#quest-tracker .tl1 { display: flex; align-items: center; gap: 7px; }
+#quest-tracker .lp-chip { flex: 0 0 auto; }
+#quest-tracker .tname {
+  font-size: 14px; font-weight: 500; color: var(--lp-parch-hi);
+  min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#quest-tracker .tmeta { margin-left: auto; flex: 0 0 auto; font-size: 12px; color: var(--lp-parch-2); white-space: nowrap; }
+#quest-tracker .tmeta.tdist { font-size: 11px; }
+#quest-tracker .tobj { font-size: 12px; color: var(--lp-body); margin-top: 3px; }
+#quest-tracker .tnote { font-size: 11px; font-style: italic; color: var(--lp-sub); margin-top: 2px; }
+#quest-tracker .trow.focus {
+  padding: 8px 10px; margin: 0 -10px; border-radius: 8px;
+  background: var(--lp-brass-soft); border: 1px solid var(--lp-brass-line);
+}
+#quest-tracker .tsegs { display: grid; gap: 3px; margin-top: 6px; }
+#quest-tracker .tsegs > i { display: block; height: 4px; border-radius: 2px; background: rgba(255, 255, 255, 0.14); }
+
+#item-tip {
+  /* above the menus (z 70) — the gear slot menu shows a tip per candidate */
+  position: fixed; z-index: 80; display: none; pointer-events: none;
+  width: 290px;
+  background: var(--lp-tip); border: 1px solid var(--lp-brass-line); border-radius: 10px;
+  padding: 12px 14px; font-size: 12px; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+#item-tip.on { display: block; }
+/* item tip (Panels artboard): name, "Head · cloth · Lv 3", stats, then the
+   comparison with what is worn */
+#item-tip .tname { font: 600 15px "Cinzel", serif; color: var(--lp-parch); }
+#item-tip .tname.rare { color: var(--rare); }
+#item-tip .tname.uncommon { color: var(--uncommon); }
+#item-tip .tmeta { color: var(--lp-muted); font-size: 12px; margin-top: 2px; }
+#item-tip .tmeta.tprice { margin-top: 8px; }
+#item-tip .tstat { color: var(--lp-body); font-size: 13px; margin-top: 8px; }
+#item-tip .tstat + .tstat { margin-top: 2px; }
+#item-tip .tcompare { margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 12px; }
+#item-tip .tcompare .tlead { color: var(--lp-muted); }
+#item-tip .up { color: #9fcf95; }
+#item-tip .down { color: #e0907f; }
+/* ability tip (Kit "on hover"): name and cost, meta line, description, how to use */
+#item-tip .tiphead { display: flex; align-items: baseline; gap: 8px; }
+#item-tip .tipname { font-size: 15px; color: var(--lp-parch); }
+#item-tip .tipcost { margin-left: auto; font-size: 12px; font-weight: 700; white-space: nowrap; }
+#item-tip .tipcost.mp { color: var(--lp-mp-ink); }
+#item-tip .tipcost.tp { color: #f0c06a; }
+#item-tip .tipcost.hp { color: var(--lp-low); }
+#item-tip .tipmeta { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 4px; font-size: 11px; color: var(--lp-muted); }
+#item-tip .tipdesc { font-size: 13px; color: var(--lp-body); margin-top: 8px; line-height: 1.45; }
+#item-tip .tipfoot {
+  display: flex; align-items: center; gap: 6px; margin-top: 10px; padding-top: 8px;
+  border-top: 1px solid var(--lp-track); font-size: 11px; color: var(--lp-muted);
+}
+
+/* the Character window's abilities that did not fit on the bar */
+.abook { margin-top: 12px; }
+.abook .wsection { margin-bottom: 4px; }
+.abrow {
+  display: flex; align-items: center; gap: 8px; padding: 5px 6px; border-radius: 6px;
+  border: 1px solid transparent; font-size: 13px; color: var(--lp-parch); cursor: grab;
+}
+.abrow:hover { border-color: var(--lp-hair-2); background: rgba(255, 255, 255, 0.03); }
+.abrow .abico { display: flex; color: #e3dac6; }
+.abrow .ablv { margin-left: auto; font-size: 11px; color: var(--lp-muted); }
+
+.statgrid.attr span:nth-child(even) { font-variant-numeric: tabular-nums; }
+
+/* the self cast sits over the hotbar in MP blue (Main); party and target
+   cast lines use TP gold (Kit) */
+#cast-bar {
+  position: fixed; bottom: 128px; left: 50%; transform: translateX(-50%); width: 300px;
+  display: none; pointer-events: none;
+}
+#cast-bar.on { display: block; }
+#cast-bar .crow { display: flex; justify-content: space-between; font-size: 12px; text-shadow: var(--lp-text-shadow); }
+#cast-bar .label { color: var(--lp-parch-hi); font-style: italic; }
+#cast-bar .ctime { color: var(--lp-parch-2); }
+#cast-bar .bar {
+  height: 6px; margin-top: 3px; border-radius: 3px; background: rgba(11, 14, 21, 0.8);
+  border: 1px solid var(--lp-hair-2); overflow: hidden;
+}
+#cast-bar .bar > div { height: 100%; background: var(--lp-cast-grad); transition: none; }
+
+/* the dock (Main artboard): nine icon keys with their shortcut in the corner
+   (the ninth, the Court, is the courts'; court-hud.ts); below 1460px wide it
+   folds to 5x2 (the bottom-row block below) */
+#menu-buttons {
+  position: fixed; right: 20px; bottom: 32px; display: flex; gap: 6px; padding: 6px;
+  background: var(--lp-panel); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px;
+}
+#menu-buttons .btn {
+  position: relative; width: 40px; height: 40px; padding: 0; border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); color: #e3dac6;
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+}
+#menu-buttons .btn:hover { border-color: var(--lp-brass-line); color: #f6e7c4; }
+#menu-buttons .dkey {
+  position: absolute; right: 3px; bottom: 1px; font-size: 9px; font-weight: 700; line-height: 11px;
+  color: var(--lp-sub); pointer-events: none;
+}
+/* Home is two clicks; armed, it glows and asks. Scoped under the dock so it
+   out-ranks the hover, since the pointer is still on it after the first click */
+#menu-buttons #home-btn[data-armed] {
+  border-color: var(--lp-brass); color: #f6e7c4;
+  box-shadow: 0 0 0 1px rgba(201, 163, 92, 0.35), 0 0 14px rgba(201, 163, 92, 0.4);
+}
+/* the bubble rises over the gold readout (one-row dock) or the top row's keys
+   (5x2) for its 3s; z-index lifts it over the gold, which comes later in the
+   DOM and would otherwise paint across it */
+#home-btn[data-armed]::after {
+  content: "Go home?"; position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); z-index: 1;
+  white-space: nowrap; background: var(--lp-ink); border: 1px solid var(--lp-brass-line); border-radius: 6px;
+  padding: 3px 8px; font-size: 12px; line-height: 16px; color: var(--lp-parch-hi); pointer-events: none;
+}
+
+/* gold sits just above the dock */
+#gold-readout {
+  position: fixed; right: 22px; bottom: 95px; display: flex; align-items: center; gap: 6px;
+  font-size: 13px; color: var(--lp-parch-hi); pointer-events: none;
+}
+#gold-readout svg { color: #f0c06a; }
+
+/* bottom row at narrower windows (1280x720 is the floor it is measured at).
+   The hotbar and XP bar are a fixed 545px centred (x 367.5-912.5 at 1280); the
+   chat narrows on its own (see #chat), the one-row dock (nine keys: 9x40 + 8x6
+   + 12 padding + 2 border = 422px) would reach within 12px of the hotbar below
+   1453px (W - 20 - 422 >= W/2 + 272.5 + 12), so it folds to 5x2 (238px: x 1022
+   at 1280) and gold and the right column step up over the taller dock.
+   COURTS.md says "below 1400px"; at 1400-1452 one row would overlap the hotbar
+   by up to 41px, so the fold starts at 1460 (tmp/courts/PLAN.md question 1) */
+@media (max-width: 1459px) {
+  #menu-buttons { display: grid; grid-template-columns: repeat(5, 40px); }
+  #gold-readout { bottom: 140px; }
+  #hud #right-col { bottom: 180px; }
+}
+@media (max-height: 800px) {
+  #hud { --chat-log-h: 120px; }
+}
+
+/* experience: a thin bar under the hotbar, the same 545px wide */
+#xp-bar-wrap { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); width: 545px; pointer-events: none; }
+#xp-bar-wrap .xpbar { height: 4px; border-radius: 2px; background: rgba(11, 14, 21, 0.8); overflow: hidden; }
+#xp-bar-wrap .xpbar > div { height: 100%; background: var(--lp-xp-grad); transition: width 0.4s ease; }
+#xp-bar-wrap .xplabels {
+  display: flex; justify-content: space-between; margin-top: 3px;
+  font-size: 10px; color: var(--lp-parch-2); text-shadow: var(--lp-text-shadow);
+}
+
+/* interaction prompt: [key] verb name, and a red note when out of reach */
+#interact-prompt {
+  position: fixed; bottom: 252px; left: 50%; transform: translateX(-50%);
+  display: none; align-items: center; gap: 10px; padding: 6px 14px 6px 6px; border-radius: 10px;
+  background: var(--lp-panel); border: 1px solid var(--lp-brass-line); pointer-events: none; white-space: nowrap;
+}
+#interact-prompt.on { display: inline-flex; }
+#interact-prompt .lp-kbd { padding: 0 6px; }
+#interact-prompt .iverb { font-size: 14px; color: var(--lp-parch-hi); }
+#interact-prompt .iname { font-size: 13px; color: var(--lp-sub); }
+#interact-prompt .inote { font-size: 12px; font-style: italic; color: #e9a397; }
+
+/* windows (Panels artboard chrome): ink, brass hairline, radius 14. The
+   default spot clears the whole right column with a 16px gap — its 24px
+   margin plus Duties' 292px (the widest thing in it), not just the minimap —
+   so an unmoved window never sits on the duty you are following.
+   window-drag.ts moves a dragged one to left/top and remembers it per id,
+   which overrides all of this. --win-step is one window plus a 12px gap,
+   for the ones that open beside another. */
+#hud { --win-right: calc(24px + 292px + 16px); --win-step: calc(360px + 12px); --win-floor: 112px; }
+/* --win-floor keeps a full window off the bottom row: the hotbar's top (50px
+   up plus 50px slots) and a 12px gap. --win-top is the default spot, and a
+   cascaded window moves it so its height still stops at the floor. */
+.window {
+  --win-top: 150px;
+  position: fixed; top: var(--win-top); right: var(--win-right); width: 360px;
+  max-height: min(70vh, calc(100vh - var(--win-top) - var(--win-floor)));
+  background: var(--lp-window); border: 1px solid var(--lp-brass-line); border-radius: 14px;
+  box-shadow: var(--lp-shadow-window); overflow: hidden;
+  display: none; flex-direction: column; z-index: 20;
+}
+.window.on { display: flex; }
+/* the map sits at the default window top too, clear of the top-centre target frame */
+.window.wide { width: 600px; right: calc(50% - 300px); max-height: min(84vh, calc(100vh - var(--win-top) - var(--win-floor))); }
+/* The map takes most of the screen (Philip, 2026-10-14: it was too small at
+   600px). It sits just below the target frame and may cover the hotbar while
+   open; its width is whatever keeps the 560:430 canvas inside the height left
+   to it -- the header (~52px), the map's title row (~38px) and the padding --
+   and never wider than the screen less a margin. */
+#win-map {
+  --win-top: 96px;
+  --map-chrome: 118px;
+  --map-w: min(1280px, calc(100vw - 48px), calc((100vh - var(--win-top) - 20px - var(--map-chrome)) * 560 / 430 + 36px));
+  width: var(--map-w); right: calc(50% - var(--map-w) / 2);
+  max-height: calc(100vh - var(--win-top) - 20px);
+}
+#win-map .maphead { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; min-height: 30px; }
+#win-map .maptitle { font-family: Cinzel, serif; letter-spacing: 2px; }
+#win-map .mapnote { color: var(--dim); font-size: 11px; }
+#win-map .mapwrap { position: relative; }
+#win-map .mapcv { display: block; box-sizing: border-box; width: 100%; aspect-ratio: 560 / 430; border: 1px solid var(--line); border-radius: 6px; cursor: pointer; }
+#win-map .mappulse { position: absolute; inset: 1px; width: calc(100% - 2px); height: calc(100% - 2px); pointer-events: none; border-radius: 6px; }
+/* the duty being shown: its name in its colour, a lamp that breathes with the pulse */
+#win-map .mapfocus {
+  margin-left: auto; display: inline-flex; align-items: center; gap: 8px; min-width: 0;
+  padding: 3px 4px 3px 10px; border: 1px solid var(--qc); border-radius: 999px;
+  background: color-mix(in srgb, var(--qc) 14%, transparent); color: var(--lp-parch-hi);
+  font-size: 12px; animation: mapfocus-breathe 1.6s ease-in-out infinite;
+}
+#win-map .mapfocus-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 34ch; }
+#win-map .mapfocus-name::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; background: var(--qc); transform: rotate(45deg) translateY(-1px); }
+#win-map .mapfocus-x { border: 0; background: none; color: var(--lp-parch); font-size: 15px; line-height: 1; padding: 0 6px; cursor: pointer; }
+#win-map .mapfocus-x:hover { color: var(--lp-parch-hi); }
+@keyframes mapfocus-breathe {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--qc) 0%, transparent); }
+  50% { box-shadow: 0 0 12px 1px color-mix(in srgb, var(--qc) 55%, transparent); }
+}
+/* Every other window is a lone panel, but the three social windows were split
+   apart precisely so they can be read together — stagger them so opening two
+   does not hide one behind the other. */
+#win-who { right: var(--win-right); }
+#win-friends { right: calc(var(--win-right) + var(--win-step)); }
+#win-company { right: calc(var(--win-right) + 2 * var(--win-step)); }
+/* the one pager under every long list (pager.ts): AH, mail, rosters, search */
+.pager { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 8px 0 2px; }
+.pager .pager-step { height: 26px; min-width: 30px; padding: 0 8px; font-size: 14px; }
+.pager .pager-step:disabled { opacity: 0.35; cursor: default; }
+.pager .pager-label { font-size: 12px; color: var(--lp-parch); }
+/* Player Search: a friend is added from the row itself */
+#win-who .who-row .who-add { margin-left: auto; flex: 0 0 auto; }
+#win-who .who-row .who-friend { margin-left: auto; flex: 0 0 auto; font-size: 11px; color: var(--lp-brass); letter-spacing: 0.5px; }
+@media (max-width: 1859px) {
+  /* three across take 332 + 3 x 360 + 2 x 12 = 1436px from the right, and
+     must also clear the party frame and chat on the left (424px + a 20px
+     margin), so anything narrower than ~1860 cascades down and to the left */
+  /* steps of 48px, a window header's height, so each title stays readable */
+  #win-friends { right: calc(var(--win-right) + 48px); --win-top: 198px; }
+  #win-company { right: calc(var(--win-right) + 96px); --win-top: 246px; }
+}
+.window .whead {
+  display: flex; align-items: center; gap: 16px; flex: 0 0 auto;
+  padding: 12px 12px 10px 20px; border-bottom: 1px solid var(--lp-hair);
+}
+.window .whead .wtitle { font: 600 19px "Cinzel", serif; letter-spacing: 1px; color: var(--lp-parch-hi); }
+.window .whead .wclose {
+  margin-left: auto; width: 36px; height: 36px; padding: 0; border-radius: 8px; flex: 0 0 auto;
+  background: transparent; border: 1px solid var(--lp-hair-2); color: var(--lp-parch-2);
+  display: flex; align-items: center; justify-content: center;
+}
+.window .whead .wclose:hover { border-color: rgba(255, 255, 255, 0.28); color: var(--lp-parch-hi); }
+.window .wbody { padding: 14px 18px; overflow-y: auto; scrollbar-width: thin; }
+/* window-drag.ts: the header (the dialogue's name strip) moves the window;
+   touch-action keeps a touch drag from scrolling the page instead */
+.drag-handle { cursor: grab; user-select: none; touch-action: none; }
+.dragging .drag-handle { cursor: grabbing; }
+.dragging { box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55); }
+
+/* popup menus — the player menu (world click / who list), the gear slot menu
+   and the Social chooser share the ink-and-brass card; the closers in hud.ts
+   match on these classes and ids */
+.ctx-menu {
+  position: fixed; left: 0; top: 0; z-index: 70; display: none; min-width: 180px;
+  background: rgba(11, 14, 21, 0.96); border: 1px solid var(--lp-brass-line); border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); padding: 6px;
+}
+.ctx-menu.on { display: block; }
+.ctx-menu .ctx-name {
+  font: 600 13px "Cinzel", serif; color: var(--lp-parch-hi);
+  padding: 6px 10px 8px; border-bottom: 1px solid var(--lp-hair); margin-bottom: 4px;
+}
+.ctx-menu .ctx-item {
+  display: flex; align-items: center; gap: 8px; width: 100%; padding: 7px 10px; border-radius: 6px;
+  background: transparent; border: 0; color: #e3dac6; font-size: 13px; text-align: left;
+}
+.ctx-menu .ctx-item:hover { background: rgba(201, 163, 92, 0.12); color: #f6e7c4; }
+
+/* window rows (Panels): hairline-boxed on hover rather than ruled between */
+.invrow {
+  display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 8px;
+  border: 1px solid transparent; font-size: 13px;
+}
+.invrow:hover { background: rgba(255, 255, 255, 0.03); border-color: rgba(255, 255, 255, 0.08); }
+.invrow.pickable { cursor: pointer; }
+.invrow.pickable:hover { border-color: var(--lp-brass-line); }
+.invrow .iname { flex: 1; min-width: 0; color: var(--lp-parch); font-size: 13px; }
+.invrow .iname.rare { color: var(--rare); }
+.invrow .iname.uncommon { color: var(--uncommon); }
+/* the windows' quiet meta line — footers, notes, empty states. Before the
+   row-scoped sizes below so a row's own 11px still wins. */
+.window .imeta { color: var(--lp-muted); font-size: 12px; }
+.window .imeta b { color: var(--lp-sub); }
+.invrow .imeta { color: var(--lp-muted); font-size: 11px; }
+.invrow .imeta.online { color: var(--online); }
+/* a friend's lamp: the flame lit in TP gold, or cold ash */
+.invrow .iname.lamp { display: flex; align-items: center; gap: 7px; }
+.llamp { display: flex; color: #6f6a60; }
+.llamp.lit { color: #f0c06a; }
+
+/* gear slots — the Character window's half of the bags */
+.geargrid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-bottom: 6px; }
+.gearslot {
+  display: flex; align-items: center; gap: 7px; padding: 5px 6px; cursor: pointer; min-width: 0;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px;
+}
+.gearslot:hover { border-color: var(--lp-brass-line); background: rgba(201, 163, 92, 0.06); }
+.gearslot.empty { background: none; border: 1px dashed rgba(255, 255, 255, 0.16); }
+.gearslot .iicon {
+  width: 28px; height: 28px; border-radius: 6px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--lp-hair-2);
+  display: flex; align-items: center; justify-content: center; flex: none;
+}
+.gearslot .iicon .gicon { width: 19px; height: 19px; }
+.gearslot.empty .iicon { opacity: 0.3; }
+.gearslot .gtext { display: flex; flex-direction: column; min-width: 0; line-height: 1.25; }
+.gearslot .gslot { color: var(--lp-muted); font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; }
+.gearslot .gname { font-size: 12.5px; color: var(--lp-parch); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.gearslot .gname.rare { color: var(--rare); }
+.gearslot .gname.uncommon { color: var(--uncommon); }
+.gearslot.empty .gname { color: var(--lp-faint); font-style: italic; }
+.gearslot .imeta { color: var(--lp-muted); font-size: 10.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* the slot menu carries whole pieces, so its rows are wider than a plain menu */
+.ctx-menu.gear { min-width: 210px; max-width: 300px; max-height: 60vh; overflow-y: auto; scrollbar-width: thin; }
+.ctx-menu.gear .ctx-item { display: flex; align-items: center; gap: 7px; }
+.ctx-menu .ctx-item .ci-icon { width: 18px; height: 18px; flex: none; display: flex; }
+.ctx-menu .ctx-item .ci-icon .gicon { width: 18px; height: 18px; }
+.ctx-menu .ctx-item .ci-name { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ctx-menu .ctx-item .ci-name.rare { color: var(--rare); }
+.ctx-menu .ctx-item .ci-name.uncommon { color: var(--uncommon); }
+.ctx-menu .ctx-item .ci-meta { color: var(--lp-muted); font-size: 11px; flex: none; }
+.ctx-menu .ctx-item.off { opacity: 0.45; cursor: default; }
+.ctx-menu .ctx-item.off:hover { background: transparent; color: #e3dac6; }
+.ctx-menu .ctx-note { color: var(--lp-muted); font-size: 12px; padding: 6px 10px; }
+
+/* examine-a-piece window, opened beside the Character window */
+/* beside the Character window at the default spot; once that would run off
+   the left edge (332 + 372 + 360 = 1064px), it cascades over it instead */
+#win-item { right: calc(var(--win-right) + var(--win-step)); }
+@media (max-width: 1091px) { #win-item { right: calc(var(--win-right) + 32px); --win-top: 182px; } }
+.itemhead { display: flex; align-items: center; gap: 10px; }
+.itemhead .iicon.big {
+  width: 42px; height: 42px; border-radius: 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--lp-brass-line);
+  display: flex; align-items: center; justify-content: center; flex: none;
+}
+.itemhead .iicon.big .gicon { width: 28px; height: 28px; }
+
+.statgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; font-size: 13px; margin-bottom: 10px; }
+.statgrid .k { color: var(--lp-muted); }
+.jobrow { display: flex; justify-content: space-between; padding: 6px 4px; border-bottom: 1px solid var(--lp-hair); font-size: 13px; color: var(--lp-parch); }
+/* the Settings volume sliders */
+#win-settings input[type="range"] { accent-color: var(--lp-brass); }
+/* the Settings menu: a row per page, and the way back from one */
+#win-settings .setrow {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%;
+  padding: 10px 12px; margin-bottom: 6px; border-radius: 8px; text-align: left; cursor: pointer;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid var(--lp-hair); color: var(--lp-parch);
+}
+#win-settings .setrow:hover { border-color: rgba(201, 163, 92, 0.55); background: rgba(255, 255, 255, 0.06); }
+#win-settings .setrow > span:first-child { display: flex; flex-direction: column; gap: 2px; }
+#win-settings .setname { font-size: 14px; }
+#win-settings .setgo { color: var(--lp-brass); font-size: 20px; line-height: 1; }
+#win-settings .setback {
+  display: block; background: none; border: 0; padding: 0; margin: 0 0 12px; cursor: pointer;
+  color: var(--lp-muted); font-size: 12px; letter-spacing: 0.04em;
+}
+#win-settings .setback:hover { color: var(--lp-parch); }
+
+/* the Journal (Panels artboard): 700x640, the list pane and the detail pane.
+   The artboard's 72,64 has no HUD under it; in game it opens at the window
+   top (below the player and target frames), right-aligned with the other
+   windows so it clears Duties, and narrowed on small screens rather than
+   reaching back over the party frame (276px + a 16px gap); stops at the floor */
+.window.journal {
+  width: min(700px, calc(100vw - var(--win-right) - 292px));
+  height: min(640px, calc(100vh - var(--win-top) - var(--win-floor))); max-height: none;
+}
+.window.journal .whead { padding: 14px 14px 0 22px; }
+.window.journal .wtitle { margin-bottom: 12px; }
+.window.journal .wclose { margin-bottom: 10px; }
+.jtabs { display: flex; gap: 2px; align-self: flex-end; }
+.jtabs .lp-tab { padding: 8px 12px 10px; font-size: 13px; }
+.jtabs .jcount { color: var(--lp-muted); font-weight: 400; }
+.window.journal .wbody { display: flex; padding: 0; flex: 1; min-height: 0; overflow: hidden; }
+.jlist {
+  flex: 0 0 248px; padding: 14px 10px 14px 14px; border-right: 1px solid var(--lp-hair);
+  display: flex; flex-direction: column; gap: 4px; overflow-y: auto; scrollbar-width: thin;
+}
+.jchips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.jgroup { padding: 10px 8px 4px; }
+.jchips + .jgroup { padding-top: 4px; }
+.jrow {
+  display: flex; align-items: center; gap: 8px; padding: 9px 10px; border-radius: 8px; flex: 0 0 auto;
+  background: transparent; border: 1px solid transparent; color: #e3dac6; font-size: 13px; text-align: left;
+}
+.jrow:hover { background: rgba(255, 255, 255, 0.03); }
+.jrow .jdot { width: 6px; height: 6px; border-radius: 3px; flex: 0 0 auto; }
+.jrow .jname { flex: 1; min-width: 0; }
+.jrow .jprog { font-size: 11px; color: var(--lp-muted); }
+.jrow.sel { background: var(--lp-brass-soft); border-color: rgba(201, 163, 92, 0.4); color: var(--lp-parch-hi); }
+.jrow.sel .jprog { color: var(--lp-parch-2); }
+.jrow.paused { color: var(--lp-faint); font-style: italic; }
+.jrow.paused .jdot { background: #6f6a60; }
+.jrow.paused .jprog { color: inherit; }
+/* the next main chapter, above the duties (hud.ts storyRow, storyDetail) */
+.jrow.story:not(.sel) { border-color: rgba(201, 163, 92, 0.22); border-style: dashed; }
+.jnext { display: flex; align-items: center; gap: 8px; padding: 6px 2px; font-size: 13px; color: #e3dac6; }
+.jnext .jdot { width: 6px; height: 6px; border-radius: 3px; flex: 0 0 auto; }
+.jnext .jname { flex: 1; min-width: 0; }
+.jnext .jprog { font-size: 11px; color: var(--lp-muted); text-align: right; }
+.jnone, .jempty { font-size: 13px; color: var(--lp-muted); padding: 4px 8px; }
+.jempty { padding: 24px; line-height: 1.5; }
+.jdetail { flex: 1; min-width: 0; padding: 20px 24px; display: flex; flex-direction: column; gap: 14px; overflow-y: auto; scrollbar-width: thin; }
+.jmeta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--lp-muted); }
+.jmeta .lp-chip { padding: 1px 5px; }
+.jtitle { margin: 0; font: 600 24px "Cinzel", serif; color: var(--lp-parch-hi); }
+.jgiver { font-size: 13px; color: var(--lp-sub); }
+.jgiver .jnpc { color: var(--lp-npc); }
+.jquote {
+  margin: 0; padding: 2px 0 2px 16px; border-left: 2px solid rgba(201, 163, 92, 0.5);
+  font-size: 15px; line-height: 1.5; color: var(--lp-parch-2);
+}
+.jobj { padding: 12px 14px; border-radius: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); }
+.jobjhead { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; color: var(--lp-parch-hi); }
+.jobjhead > b { font-weight: 700; white-space: nowrap; }
+.jsegs { display: grid; gap: 4px; margin-top: 8px; }
+.jsegs > i { height: 5px; border-radius: 3px; background: var(--lp-hair-2); }
+.jrwhead { margin-bottom: 8px; }
+.jrws { display: flex; gap: 8px; flex-wrap: wrap; }
+.jrw {
+  display: inline-flex; align-items: center; gap: 6px; height: 32px; padding: 0 10px;
+  border-radius: 8px; font-size: 13px; font-weight: 700;
+}
+.jrw.xp { background: rgba(185, 170, 240, 0.12); color: #c9bdf5; }
+.jrw.gold { background: rgba(240, 192, 106, 0.12); color: #f0c06a; }
+.jrw.item {
+  background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--lp-parch); font-weight: 400; padding: 0 10px 0 6px; gap: 7px;
+}
+.jrw .jicon {
+  width: 22px; height: 22px; border-radius: 5px; background: rgba(255, 255, 255, 0.06);
+  display: flex; align-items: center; justify-content: center; flex: 0 0 auto;
+}
+.jrw .jicon .gicon { width: 14px; height: 14px; }
+/* a stacked reward's count (journal chip and dialogue strip alike) */
+.jrw .rcount, .dreward .rcount { color: var(--lp-sub); }
+.jfoot { margin-top: auto; display: flex; gap: 8px; align-items: center; }
+.jfoot .btn, .jtrack { height: 40px; border-radius: 9px; padding: 0 16px; font-size: 13px; }
+.jtrack {
+  display: inline-flex; align-items: center; gap: 7px; background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.14); color: var(--lp-sub);
+}
+.jtrack .lp-diamond { background: transparent; box-shadow: inset 0 0 0 1px currentColor; }
+.jtrack[aria-pressed="true"] { background: rgba(201, 163, 92, 0.16); border-color: rgba(201, 163, 92, 0.6); color: var(--lp-parch-hi); }
+.jtrack[aria-pressed="true"] .lp-diamond { background: var(--lp-brass); box-shadow: none; }
+
+/* npc dialogue (Panels artboard): green name over a hairline, the NPC's
+   standing line greyed above what they say now, then the duty's terms and
+   one brass action at most */
+#dialog-panel {
+  position: fixed; bottom: 110px; left: 50%; transform: translateX(-50%);
+  width: 560px; max-width: calc(100vw - 32px); max-height: calc(100vh - 140px);
+  background: var(--lp-window); border: 1px solid var(--lp-brass-line); border-radius: 14px;
+  box-shadow: var(--lp-shadow-window); overflow: hidden;
+  display: none; flex-direction: column; z-index: 25;
+}
+#dialog-panel.on { display: flex; }
+#dialog-panel .dhead {
+  display: flex; align-items: center; gap: 12px; padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--lp-hair); flex: 0 0 auto;
+}
+#dialog-panel .dwho { min-width: 0; }
+#dialog-panel .dname { font: 600 18px "Cinzel", serif; color: var(--lp-npc); }
+#dialog-panel .dtitle { font-size: 12px; color: var(--lp-muted); margin-top: 2px; }
+#dialog-panel .dquest { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; text-align: right; }
+#dialog-panel .dquest[hidden] { display: none; }
+#dialog-panel .dquest .lp-diamond { width: 8px; height: 8px; }
+#dialog-panel .dlines {
+  padding: 16px 20px 6px; display: flex; flex-direction: column; gap: 12px; overflow-y: auto; min-height: 0;
+  font-family: "Alegreya", serif; font-size: 16px; line-height: 1.5;
+}
+#dialog-panel .dlines > p { margin: 0; color: var(--lp-parch); }
+#dialog-panel .dlines > p.ambient { color: var(--lp-faint); }
+#dialog-panel .dreward {
+  margin: 10px 20px 0; padding: 10px 12px; border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 13px;
+}
+#dialog-panel .dreward[hidden], #dialog-panel .doffers[hidden] { display: none; }
+#dialog-panel .dreward .robj { color: var(--lp-parch-hi); }
+#dialog-panel .dreward .rxp { margin-left: auto; color: #c9bdf5; font-weight: 700; }
+#dialog-panel .dreward .rgold { color: #f0c06a; font-weight: 700; }
+#dialog-panel .dreward .ritem { color: var(--lp-parch); }
+#dialog-panel .doffers { display: flex; flex-direction: column; gap: 6px; padding: 10px 20px 0; }
+.doffer {
+  display: flex; align-items: center; gap: 8px; width: 100%; padding: 9px 10px; border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--lp-parch); font-size: 14px; text-align: left;
+}
+.doffer:hover { border-color: var(--lp-brass-line); }
+.doffer > i { width: 6px; height: 6px; border-radius: 3px; flex: 0 0 auto; }
+.doffer .dlabel { flex: 1; min-width: 0; }
+.doffer .dside { font-size: 12px; color: var(--lp-muted); }
+.doffer .dside.handin { color: var(--lp-brass); font-weight: 700; }
+#dialog-panel .dactions { display: flex; gap: 8px; padding: 14px 20px 18px; justify-content: flex-end; flex-wrap: wrap; flex: 0 0 auto; }
+
+/* death overlay */
+#death-overlay {
+  position: fixed; inset: 0; background: rgba(8, 8, 12, 0.72); display: none;
+  align-items: center; justify-content: center; flex-direction: column; gap: 18px; z-index: 40;
+}
+#death-overlay.on { display: flex; }
+#death-overlay .dtext { font: 600 28px "Cinzel", serif; letter-spacing: 4px; color: var(--danger); text-shadow: var(--lp-text-shadow); }
+#death-overlay .dsub { font-family: "Alegreya", serif; font-style: italic; font-size: 15px; color: var(--lp-parch-2); }
+
+/* toasts */
+/* under the target frame; pills, except a skillchain, which is a banner */
+/* over the windows (z 20, 23 in front — window-drag.ts) and under the
+   dialogue and prompts: a pill is pointer-events none, so it cannot take a
+   window's clicks */
+#toasts {
+  position: fixed; top: 136px; left: 50%; transform: translateX(-50%); width: 400px; z-index: 24;
+  display: flex; flex-direction: column; align-items: center; gap: 6px; pointer-events: none;
+}
+.toast {
+  display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px; border-radius: 999px;
+  background: var(--lp-panel); border: 1px solid var(--lp-brass-line);
+  font-family: "Alegreya Sans", sans-serif; font-size: 13px; color: var(--lp-parch);
+  animation: toastfade 4s forwards;
+}
+.toast > .lp-diamond { color: var(--lp-brass); }
+.toast .dim { color: var(--lp-sub); }
+.toast > b { font-weight: 700; }
+/* a discovery names a place, so it is set in the display face */
+.toast.discovery { font-family: "Cinzel", serif; font-size: 15px; font-weight: 600; color: var(--xp); }
+.toast.discovery > .lp-diamond { color: var(--xp); }
+.toast.sc {
+  background: none; border: 0; padding: 4px 14px;
+  font-family: "Cinzel", serif; font-weight: 600; font-size: 20px; letter-spacing: 2px;
+  color: #f0c06a; text-shadow: 0 0 14px rgba(240, 192, 106, 0.5);
+}
+@keyframes toastfade {
+  0% { opacity: 0; transform: translateY(-8px); }
+  8% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* prompt cards (Kit "Prompts and buttons"): the party/trade invite, the
+   Capital's gate and the raise offer share one card; positions and the z
+   ladder (30/31) are each prompt's own. .timed shows the countdown bar. */
+.lp-prompt {
+  padding: 14px 16px; background: rgba(11, 14, 21, 0.92); border: 1px solid var(--lp-brass-line);
+  border-radius: 12px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45); text-align: left; color: var(--lp-parch);
+}
+.lp-prompt .phead { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.lp-prompt .picon { display: flex; flex: 0 0 auto; }
+.lp-prompt .phead b { font-weight: 700; }
+.lp-prompt .pcount { margin-left: auto; font-size: 11px; color: var(--lp-muted); }
+.lp-prompt .pbar { display: none; height: 2px; margin-top: 10px; border-radius: 1px; background: var(--lp-track); overflow: hidden; }
+.lp-prompt.timed .pbar { display: block; }
+.lp-prompt .pbar > i { display: block; height: 100%; width: 100%; background: var(--lp-party); transition: width 0.25s linear; }
+.lp-prompt .pbar.gate > i { background: var(--lp-brass); }
+.lp-prompt .btns { display: flex; gap: 8px; margin-top: 12px; justify-content: flex-end; }
+#invite-prompt {
+  position: fixed; top: 150px; left: 50%; transform: translateX(-50%); width: 400px;
+  display: none; z-index: 30;
+}
+#invite-prompt.on { display: block; }
+
+/* the Capital's gate: the warning before the empty city. Laid out as the Kit
+   invite card is: the countdown bar right under the title line, the words,
+   then the buttons at the foot. */
+#gate-prompt {
+  position: fixed; top: 120px; left: 50%; transform: translateX(-50%); width: 440px;
+  display: none; z-index: 31;
+}
+#gate-prompt.on { display: block; }
+#gate-prompt .gtitle { font-size: 15px; color: var(--lp-parch-hi); letter-spacing: 1px; }
+#gate-prompt .gtext { line-height: 1.5; font-size: 13px; color: var(--lp-body); margin-top: 10px; }
+#gate-prompt .gpending { color: var(--lp-muted); font-size: 12px; margin-top: 8px; line-height: 1.4; }
+#gate-prompt .gcount { color: var(--lp-muted); font-size: 11px; margin-top: 6px; }
+
+/* floating combat text lives in world-space overlay */
+.float-text {
+  position: fixed; pointer-events: none; font-weight: 700; font-size: 15px;
+  text-shadow: 0 1px 3px #000; transform: translate(-50%, -50%);
+  animation: floatup 1.1s forwards; z-index: 6; font-family: "Alegreya Sans", sans-serif;
+}
+.float-text.dmg-out { color: #f0e6d4; }
+.float-text.dmg-in { color: #e08b7a; }
+.float-text.heal { color: #a5d69c; }
+.float-text.miss { color: #8d92a6; font-weight: 400; }
+.float-text.crit { font-size: 20px; color: var(--gold); }
+.float-text.ws { font-size: 17px; color: var(--gold); }
+.float-text.spell { color: #b7a8e8; }
+@keyframes floatup {
+  0% { opacity: 0; margin-top: 0; }
+  10% { opacity: 1; }
+  100% { opacity: 0; margin-top: -46px; }
+}
+
+/* overhead nameplates (Kit): the name's colour says who — blue players,
+   green townsfolk, rose enemies, orange when tough — and meters ride only on
+   what is fighting. A double shadow keeps them legible over bright ground. */
+.nameplate {
+  position: fixed; pointer-events: none; transform: translate(-50%, -100%);
+  text-align: center; z-index: 5; white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95), 0 0 8px rgba(0, 0, 0, 0.7);
+}
+.nameplate .nm { font: 700 15px "Alegreya Sans", sans-serif; color: var(--lp-player); }
+.nameplate .nm.pc { color: var(--lp-player); }
+.nameplate .nm.npc { color: var(--lp-npc); }
+.nameplate .nm.mob { color: var(--lp-foe-name); }
+.nameplate .nm.mob.tough { color: var(--lp-tough); }
+.nameplate .nm.tgt { text-decoration: underline; text-underline-offset: 3px; }
+/* a character beyond the nearest few is drawn as its plate alone (world.ts
+   streams bodies): the name is what a click lands on */
+.nameplate.bodiless .nm { pointer-events: auto; cursor: pointer; }
+.nameplate .sub { font-size: 11px; color: #e3dac6; }
+.nameplate .nm.mob + .sub { color: var(--lp-parch); }
+.nameplate .nm.mob + .sub.tough { color: var(--lp-tough); }
+.nameplate .mhp {
+  /* the Kit's 90x5 meter is content-box; 92x7 here is the same drawn size */
+  width: 92px; height: 7px; margin: 4px auto 0; border-radius: 3px; overflow: hidden;
+  background: rgba(0, 0, 0, 0.55); border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.nameplate .mhp > div { height: 100%; background: var(--lp-low); }
+.nameplate .mcastbar { width: 90px; height: 3px; margin: 3px auto 0; border-radius: 2px; background: rgba(0, 0, 0, 0.55); overflow: hidden; }
+.nameplate .mcastbar > div { height: 100%; background: #f0c06a; }
+.nameplate .mcastname { font-size: 11px; color: #f0c06a; font-style: italic; margin-top: 2px; }
+/* the quest diamond over an NPC: filled for an offer, hollow for a turn-in
+   or a talk target; --qc is the duty's colour (questColor) */
+.nameplate .qmark {
+  /* the Kit's 14px is content-box inside a 2px border: 18px outside */
+  width: 18px; height: 18px; margin: 0 auto 6px; box-sizing: border-box; transform: rotate(45deg);
+  border: 2px solid var(--lp-ink); box-shadow: 0 0 10px color-mix(in srgb, var(--qc) 80%, transparent);
+}
+.nameplate .qmark.offer { background: var(--qc); }
+.nameplate .qmark.turnin { background: var(--lp-ink); border-color: var(--qc); }
+/* a duty's destination in the world: a chevron down onto the spot */
+.nameplate .qbeacon { color: var(--qc); }
+.nameplate .qb-mark { display: flex; justify-content: center; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--qc) 60%, transparent)) drop-shadow(0 1px 2px #000); }
+.nameplate .qb-label { font-size: 11px; font-weight: 700; margin-top: 1px; }
+
+/* the loading screen: pregame.css #loading-screen */
+
+/* ---------- dev race lineup (/?lineup) ---------- */
+#lineup-bar {
+  position: fixed;
+  left: 12px;
+  bottom: 12px;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  background: rgba(12, 14, 20, 0.82);
+  border: 1px solid rgba(210, 190, 140, 0.22);
+  border-radius: 6px;
+  font-family: "Alegreya Sans", sans-serif;
+}
+#lineup-bar .lineup-row { display: flex; align-items: center; gap: 5px; }
+#lineup-bar .lineup-label {
+  width: 62px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--dim, #8d92a6);
+}
+#lineup-bar button {
+  padding: 3px 9px;
+  font: inherit;
+  font-size: 12px;
+  color: #d8d2c4;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+  cursor: pointer;
+}
+#lineup-bar button:hover { background: rgba(255, 255, 255, 0.12); }
+#lineup-bar button.sel {
+  color: #12141a;
+  background: #c9a35c;
+  border-color: #c9a35c;
+}
+
+/* A boarding promise stays visible while the passenger waits on the dock.
+   ferry-hud.ts stacks it in #right-col between the minimap and Duties (which
+   shrinks to make room); before the HUD exists it floats over #app instead,
+   at z 9: over the world labels (5-6), under #hud (10) and all its windows. */
+#ferry-panel {
+  position: static; width: 292px; box-sizing: border-box; padding: 12px 14px; flex: 0 0 auto;
+  background: var(--lp-panel-strong); border: 1px solid var(--lp-brass-line); border-radius: 12px;
+  box-shadow: var(--lp-shadow-panel); color: var(--lp-parch); pointer-events: auto;
+}
+#app > #ferry-panel { position: fixed; right: 24px; top: 260px; z-index: 9; }
+#ferry-panel h3 { margin: 0 0 6px; font: 600 15px "Cinzel", serif; color: var(--lp-parch-hi); }
+#ferry-panel p { margin: 6px 0 8px; font-size: 13px; line-height: 1.4; color: var(--lp-body); }
+#ferry-panel strong { display: block; font-size: 15px; font-weight: 700; color: #f0c06a; font-variant-numeric: tabular-nums; }
+#ferry-panel .btn { margin: 4px 6px 0 0; }
+/* fitTrackerRows (hud.ts) sets .tight when Duties, under the ferry panel,
+   could not keep even its focus row (a 720px window): the column closes up
+   and the panel folds — title and route on one line, the fine print on one
+   line with its full text in the tooltip — rather than Duties going away.
+   The column's bottom is unchanged, so nothing reaches the dock or gold. */
+#hud #right-col.tight { gap: 14px; }
+#right-col.tight #ferry-panel { padding: 8px 12px; }
+#right-col.tight #ferry-panel h3 { display: inline; margin: 0; font-size: 14px; }
+#right-col.tight #ferry-panel .froute { display: inline; margin: 0 0 0 6px; font-size: 12px; color: var(--lp-sub); }
+#right-col.tight #ferry-panel .froute::before { content: "· "; }
+#right-col.tight #ferry-panel strong { margin-top: 3px; font-size: 14px; }
+#right-col.tight #ferry-panel .fdetail, #right-col.tight #ferry-panel .fnote { margin: 2px 0 4px; font-size: 12px; }
+/* the note is what to do next, so only the fine print is cut to a line */
+#right-col.tight #ferry-panel .fdetail { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#right-col.tight #ferry-panel .btn { margin-top: 2px; }
+
+/* ---------- cutscenes (cutscene.ts) ----------
+   The scene's frame sits over the world and the HUD (z 10) and under the
+   loading screen (60); the HUD and every world label step aside while it plays,
+   so nothing but the picture, the letterbox and the words is on screen. The
+   overlay takes the pointer, so a click during a scene lands on nothing. */
+body.in-cutscene #hud, body.in-cutscene .nameplate, body.in-cutscene .float-text { display: none !important; }
+#cutscene { position: fixed; inset: 0; z-index: 42; pointer-events: auto; cursor: default; user-select: none; }
+#cutscene .cs-bar {
+  position: absolute; left: 0; right: 0; height: 12vh; background: #000; transform: scaleY(0);
+}
+#cutscene .cs-top { top: 0; transform-origin: top; }
+#cutscene .cs-bottom { bottom: 0; transform-origin: bottom; display: flex; align-items: center; justify-content: center; }
+#cutscene .cs-line {
+  max-width: min(860px, 86vw); text-align: center; opacity: 0;
+  font: 400 clamp(17px, 2.6vh, 25px)/1.45 "Alegreya", serif; color: var(--lp-parch-hi);
+  text-shadow: 0 1px 2px #000;
+}
+#cutscene .cs-who {
+  font: 600 clamp(11px, 1.6vh, 15px) "Cinzel", serif; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--lp-brass); margin-bottom: 3px;
+}
+#cutscene .cs-line.narration .cs-text { font-style: italic; color: var(--lp-parch); }
+#cutscene .cs-text b { color: var(--lp-brass); font-weight: 700; }
+#cutscene .cs-title {
+  position: absolute; left: 0; right: 0; top: 36%; text-align: center; opacity: 0;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+#cutscene .cs-title-text {
+  font: 600 clamp(38px, 7vh, 72px) "Cinzel", serif; letter-spacing: 0.32em; color: var(--lp-parch-hi);
+  padding-left: 0.32em; /* the last letter's spacing, so the word sits centred */
+}
+#cutscene .cs-title-sub {
+  margin-top: 6px; font: italic 400 clamp(16px, 2.3vh, 23px) "Alegreya", serif; color: var(--lp-parch);
+}
+#cutscene .cs-fade { position: absolute; inset: 0; background: #000; opacity: 0; pointer-events: none; }
+/* the skip sits in the lower bar's corner, quiet until you reach for it */
+#cutscene .cs-skip {
+  position: absolute; right: 22px; bottom: calc(6vh - 13px); display: flex; align-items: center; gap: 10px;
+  transition: opacity 0.3s;
+}
+#cutscene .cs-skip-btn {
+  font: 600 11px "Cinzel", serif; letter-spacing: 2px; text-transform: uppercase; cursor: pointer;
+  color: var(--lp-parch-2); background: transparent; border: 1px solid var(--lp-hair-2); border-radius: 4px;
+  padding: 5px 12px; opacity: 0.45; transition: opacity 0.2s, border-color 0.2s;
+}
+#cutscene .cs-skip-btn:hover, #cutscene .cs-skip.armed .cs-skip-btn { opacity: 1; border-color: var(--lp-brass); color: var(--lp-parch-hi); }
+#cutscene .cs-skip-hint { font: italic 13px "Alegreya", serif; color: var(--lp-parch-2); opacity: 0; transition: opacity 0.2s; }
+#cutscene .cs-skip.armed .cs-skip-hint { opacity: 1; }
+/* someone else watching a scene: the clapperboard over their name, and on
+   their party row (Philip's ruling 2026-10-11) */
+.nameplate .csmark { color: var(--lp-brass); display: flex; justify-content: center; margin-bottom: 2px; filter: drop-shadow(0 1px 2px #000); }
+#party-frame .pfilm { color: var(--lp-brass); display: inline-flex; vertical-align: -1px; }
+
+/* ---------- the intro (cutscene-cinema.ts) ----------
+   Over the chapter's own frame (#cutscene, z 42): black, with the narration
+   card in the middle while the next zone builds behind it. `.clear` lifts the
+   black when a chapter's shots roll; the card fades on its own. */
+#cinema { position: fixed; inset: 0; z-index: 43; background: #000; transition: background-color 0.35s; pointer-events: auto; user-select: none; }
+#cinema.clear { background: transparent; pointer-events: none; }
+#cinema.clear .cs-skip { pointer-events: auto; }
+#cinema .cin-card {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(820px, 84vw);
+  text-align: center; opacity: 0; transition: opacity 0.5s ease;
+}
+#cinema .cin-card.on { opacity: 1; }
+/* the first chapter building before the overture starts: a slow brass glint, low down */
+#cinema .cin-wait {
+  position: absolute; left: 50%; bottom: 14vh; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%;
+  background: var(--lp-brass); opacity: 0; transition: opacity 0.6s;
+}
+#cinema.waiting .cin-wait { animation: cin-wait 1.6s ease-in-out infinite; }
+@keyframes cin-wait { 0%, 100% { opacity: 0.08; transform: scale(0.7); } 50% { opacity: 0.6; transform: scale(1); } }
+/* the card's words held over the picture once the shots roll (cutscene-cinema.ts) */
+#cinema .cin-card.over { text-shadow: 0 0 14px rgba(0, 0, 0, 0.95), 0 2px 4px rgba(0, 0, 0, 0.9); }
+#cinema .cin-text { font: italic 400 clamp(20px, 3.1vh, 30px)/1.5 "Alegreya", serif; color: var(--lp-parch-hi); }
+#cinema .cin-sub { margin-top: 10px; font: italic 400 clamp(15px, 2.1vh, 20px) "Alegreya", serif; color: var(--lp-parch-2); }
+#cinema .cin-card.title .cin-text {
+  font: 600 clamp(54px, 10vh, 108px) "Cinzel", serif; font-style: normal; letter-spacing: 0.34em; padding-left: 0.34em;
+}
+#cinema .cin-card.title .cin-sub { font-size: clamp(18px, 2.7vh, 26px); letter-spacing: 0.06em; }
+body.in-cinema #cutscene .cs-skip { display: none; }
+#cinema .cs-skip { position: absolute; right: 22px; bottom: calc(6vh - 13px); display: flex; align-items: center; gap: 10px; }
+#cinema .cs-skip-btn {
+  font: 600 11px "Cinzel", serif; letter-spacing: 2px; text-transform: uppercase; cursor: pointer;
+  color: var(--lp-parch-2); background: transparent; border: 1px solid var(--lp-hair-2); border-radius: 4px;
+  padding: 5px 12px; opacity: 0.45; transition: opacity 0.2s, border-color 0.2s;
+}
+#cinema .cs-skip-btn:hover, #cinema .cs-skip.armed .cs-skip-btn { opacity: 1; border-color: var(--lp-brass); color: var(--lp-parch-hi); }
+#cinema .cs-skip-hint { font: italic 13px "Alegreya", serif; color: var(--lp-parch-2); opacity: 0; transition: opacity 0.2s; }
+#cinema .cs-skip.armed .cs-skip-hint { opacity: 1; }

@@ -1,0 +1,52 @@
+{
+ "file": "creatures/nm_gates_mm.glb",
+ "plan": "sentinel",
+ "height": 5.834,
+ "length": 2.103,
+ "width": 3.031,
+ "top": 5.834,
+ "minY": 0.0044,
+ "groundY": 0.0044,
+ "forward": 0.035,
+ "tris": [
+  10970,
+  3290
+ ],
+ "budget": 12000,
+ "bones": 20,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.667,
+  "Run": 0.799,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.972,
+  "Run": 6.293
+ },
+ "bytes": 1016316,
+ "held": [
+  [
+   11691,
+   12004
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.524,
+  "Special": 0.098
+ },
+ "notes": "The Sealing Clerk: Moonmere's trial at the Capital's gates -- a seal-press for an arm, a magistrate's cap, wax lit at the joints",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/nm_gates_mm.py",
+ "fast": false
+}

@@ -1,0 +1,78 @@
+{
+  "_note": "Baked backdrops for open-air dungeons (dungeon-backdrop.ts, BACKDROP.md). Read by the client and by tools/assets/bake_backdrop.mjs, so a vantage changed here is baked from here. from = [x, z, y] in the PARENT zone, y absolute metres. dir = the parent azimuth (radians, 0 = +z, pi/2 = +x) the dungeon's +z looks toward. time = dayFrac (0 sunrise, 0.25 noon, 0.5 sunset), the sky's fixed hour in the dungeon and the hour the bake renders. near = the bake's near clip: what stands closer to the vantage (the parent's own copy of the building) is left out. band = the elevations (degrees) the image covers, colour above, sky mask below.",
+  "band": [
+    -16,
+    40
+  ],
+  "width": 6144,
+  "specs": {
+    "beaconfort": {
+      "parent": "burnedland",
+      "from": [
+        252,
+        -44,
+        28
+      ],
+      "dir": -1.5708,
+      "time": 0.42,
+      "near": 45,
+      "lighting": {
+        "fog": {
+          "density": 0.0016,
+          "color": "#9a9894"
+        }
+      }
+    },
+    "greatwatchtower": {
+      "parent": "borderwall",
+      "from": [
+        0,
+        -21,
+        62
+      ],
+      "dir": 0,
+      "time": 0.2,
+      "near": 34,
+      "lighting": {
+        "fog": {
+          "density": 0.0016,
+          "color": "#8fa2b8"
+        }
+      }
+    },
+    "belltower": {
+      "parent": "reservoir",
+      "from": [
+        58,
+        58,
+        34
+      ],
+      "dir": 3.1416,
+      "time": 0.12,
+      "near": 16,
+      "lighting": {
+        "fog": {
+          "density": 0.002,
+          "color": "#8a9ea6"
+        }
+      }
+    },
+    "keep": {
+      "parent": "capital",
+      "from": [
+        0,
+        42,
+        30
+      ],
+      "dir": 0,
+      "time": 0.44,
+      "near": 60,
+      "lighting": {
+        "fog": {
+          "density": 0.0016,
+          "color": "#a08f86"
+        }
+      }
+    }
+  }
+}

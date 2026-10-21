@@ -1,0 +1,402 @@
+{
+ "homes": [
+  {
+   "name": "The Grudge Hall",
+   "x": -134,
+   "z": -40,
+   "r": 9,
+   "y": 8.602761561942962,
+   "height": 5.5
+  },
+  {
+   "name": "The Elder's Rest",
+   "x": -90,
+   "z": 11,
+   "r": 8.5,
+   "y": 9.135719403527688,
+   "height": 5.5
+  },
+  {
+   "name": "The Auction House",
+   "x": -27,
+   "z": -19,
+   "r": 13,
+   "y": 11.296815954207522,
+   "height": 6.8
+  },
+  {
+   "name": "The Woodwrights' Guild",
+   "x": 40,
+   "z": 55,
+   "r": 8,
+   "y": 11.579212830297681,
+   "height": 5.5
+  },
+  {
+   "name": "The Chanters' Hall",
+   "x": 106,
+   "z": -120,
+   "r": 9,
+   "y": 7.3314107479752835,
+   "height": 5.5
+  },
+  {
+   "name": "The Elder Tree \u00b7 1",
+   "x": 47.295844455038285,
+   "z": 25.664855710749574,
+   "r": 6.6,
+   "y": 11.411505792020565,
+   "height": 5.5
+  },
+  {
+   "name": "The Elder Tree \u00b7 2",
+   "x": 20.446383140404464,
+   "z": 15.626698308429255,
+   "r": 6.6,
+   "y": 11.858684420307878,
+   "height": 5.5
+  },
+  {
+   "name": "The Resting Bough \u00b7 1",
+   "x": -62.7805774819387,
+   "z": 17.805186578669506,
+   "r": 6.6,
+   "y": 10.46760669884373,
+   "height": 5.5
+  },
+  {
+   "name": "The Remembering Oak \u00b7 1",
+   "x": -132.94162601614056,
+   "z": -59.226837014060294,
+   "r": 7.3,
+   "y": 6.537682571091216,
+   "height": 5.5
+  },
+  {
+   "name": "Ferncourt \u00b7 1",
+   "x": -80.03653971478394,
+   "z": 59.328795205832364,
+   "r": 7.3,
+   "y": 8.676533947783932,
+   "height": 5.5
+  },
+  {
+   "name": "Ferncourt \u00b7 2",
+   "x": -59.63894932118156,
+   "z": 50.44809864938887,
+   "r": 6.949999999999999,
+   "y": 9.980441966989465,
+   "height": 5.5
+  },
+  {
+   "name": "Ferncourt \u00b7 3",
+   "x": -49.04665113400178,
+   "z": 70.01162809339966,
+   "r": 6.6,
+   "y": 10.041002702269772,
+   "height": 5.5
+  },
+  {
+   "name": "Sunleaf \u00b7 1",
+   "x": 2.4753417572697973,
+   "z": 55.18546348077883,
+   "r": 6.949999999999999,
+   "y": 11.62117530539489,
+   "height": 5.5
+  },
+  {
+   "name": "Sunleaf \u00b7 2",
+   "x": -2.9763477986768248,
+   "z": 76.75413395854335,
+   "r": 6.6,
+   "y": 11.108250507259879,
+   "height": 5.5
+  },
+  {
+   "name": "Sunleaf \u00b7 3",
+   "x": -23.235222643572246,
+   "z": 50.9844986725746,
+   "r": 6.949999999999999,
+   "y": 11.241812738820897,
+   "height": 5.5
+  },
+  {
+   "name": "Brookside \u00b7 1",
+   "x": 82.32749984971072,
+   "z": 65.23145843560287,
+   "r": 6.6,
+   "y": 9.72309937205789,
+   "height": 5.5
+  },
+  {
+   "name": "Brookside \u00b7 2",
+   "x": 84.86779718091388,
+   "z": 32.55053124217606,
+   "r": 6.949999999999999,
+   "y": 9.218357425317892,
+   "height": 5.5
+  },
+  {
+   "name": "Brookside \u00b7 3",
+   "x": 97.5109101453564,
+   "z": 59.68080649271478,
+   "r": 6.6,
+   "y": 8.742677312336749,
+   "height": 5.5
+  },
+  {
+   "name": "Mossfold \u00b7 1",
+   "x": -63.887899170770034,
+   "z": -25.550381967836273,
+   "r": 6.6,
+   "y": 10.254497295785027,
+   "height": 5.5
+  },
+  {
+   "name": "Mossfold \u00b7 2",
+   "x": -52.95935108343988,
+   "z": -54.19453039281382,
+   "r": 6.949999999999999,
+   "y": 10.655832754559128,
+   "height": 5.5
+  },
+  {
+   "name": "Mossfold \u00b7 3",
+   "x": -80.3797878398837,
+   "z": -40.481760782881054,
+   "r": 7.3,
+   "y": 10.101190686878084,
+   "height": 5.5
+  },
+  {
+   "name": "Amberroot \u00b7 1",
+   "x": 33.818396091333064,
+   "z": -77.8866263137006,
+   "r": 6.949999999999999,
+   "y": 10.399788694754436,
+   "height": 5.5
+  },
+  {
+   "name": "Amberroot \u00b7 2",
+   "x": 9.11318989699798,
+   "z": -59.73247557111233,
+   "r": 7.3,
+   "y": 10.329210614055256,
+   "height": 5.5
+  },
+  {
+   "name": "Amberroot \u00b7 3",
+   "x": 17.674152364114605,
+   "z": -78.72869500043342,
+   "r": 6.949999999999999,
+   "y": 9.754993512404798,
+   "height": 5.5
+  },
+  {
+   "name": "Southbough \u00b7 1",
+   "x": -28.40858113586045,
+   "z": -86.52943003358492,
+   "r": 6.6,
+   "y": 9.29332660342203,
+   "height": 5.5
+  },
+  {
+   "name": "Southbough \u00b7 2",
+   "x": -48.935808224723694,
+   "z": -95.10622507806673,
+   "r": 7.3,
+   "y": 8.948048308355027,
+   "height": 5.5
+  },
+  {
+   "name": "Southbough \u00b7 3",
+   "x": -20.457201048736415,
+   "z": -111.3378314701891,
+   "r": 6.6,
+   "y": 8.354306326715811,
+   "height": 5.5
+  },
+  {
+   "name": "Tallshade \u00b7 1",
+   "x": 122.76778008436582,
+   "z": 101.50557300749607,
+   "r": 6.6,
+   "y": 6.734200566777564,
+   "height": 5.5
+  },
+  {
+   "name": "Tallshade \u00b7 2",
+   "x": 94.55793170974512,
+   "z": 113.51077425404497,
+   "r": 6.949999999999999,
+   "y": 7.6525035585010075,
+   "height": 5.5
+  },
+  {
+   "name": "Southbough \u00b7 Canopy home",
+   "x": -37.994097930164386,
+   "z": -115.41816610883382,
+   "r": 7,
+   "y": 14.208395750671691,
+   "height": 5.5
+  },
+  {
+   "name": "North Canopy",
+   "x": 111,
+   "z": 135,
+   "r": 7,
+   "y": 12.39596627396082,
+   "height": 5.5
+  },
+  {
+   "name": "Grudge Bough",
+   "x": -171,
+   "z": -64,
+   "r": 7,
+   "y": 10.975830002574476,
+   "height": 5.5
+  },
+  {
+   "name": "The Resting Bough \u00b7 Upper 1",
+   "x": -63.33273811042197,
+   "z": 35.667261889578036,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Resting Bough \u00b7 Upper 2",
+   "x": -63.332738110421964,
+   "z": 12.332738110421968,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Resting Bough \u00b7 Upper 3",
+   "x": -86.66726188957803,
+   "z": 12.332738110421964,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Resting Bough \u00b7 Upper 4",
+   "x": -86.66726188957804,
+   "z": 35.66726188957803,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Elder Tree \u00b7 Upper 1",
+   "x": 41.66726188957803,
+   "z": 42.667261889578036,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Elder Tree \u00b7 Upper 2",
+   "x": 41.667261889578036,
+   "z": 19.332738110421968,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Elder Tree \u00b7 Upper 3",
+   "x": 18.332738110421968,
+   "z": 19.332738110421964,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Elder Tree \u00b7 Upper 4",
+   "x": 18.332738110421964,
+   "z": 42.66726188957803,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Remembering Oak \u00b7 Upper 1",
+   "x": -139.33273811042196,
+   "z": -46.332738110421964,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Remembering Oak \u00b7 Upper 2",
+   "x": -139.33273811042196,
+   "z": -69.66726188957803,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Remembering Oak \u00b7 Upper 3",
+   "x": -162.66726188957804,
+   "z": -69.66726188957804,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  },
+  {
+   "name": "The Remembering Oak \u00b7 Upper 4",
+   "x": -162.66726188957804,
+   "z": -46.33273811042197,
+   "r": 7,
+   "y": 24,
+   "height": 5.5
+  }
+ ],
+ "pocket": [
+  null,
+  null,
+  "hall:The Auction House",
+  null,
+  null,
+  "tree:The Elder Tree",
+  "tree:The Elder Tree",
+  "tree:The Resting Bough",
+  "tree:The Remembering Oak",
+  "tree:Ferncourt",
+  "tree:Ferncourt",
+  "tree:Ferncourt",
+  "tree:Sunleaf",
+  "tree:Sunleaf",
+  "tree:Sunleaf",
+  "tree:Brookside",
+  "tree:Brookside",
+  "tree:Brookside",
+  "tree:Mossfold",
+  "tree:Mossfold",
+  "tree:Mossfold",
+  "tree:Amberroot",
+  "tree:Amberroot",
+  "tree:Amberroot",
+  "tree:Southbough",
+  "tree:Southbough",
+  "tree:Southbough",
+  "tree:Tallshade",
+  "tree:Tallshade",
+  "tree:Southbough",
+  null,
+  null,
+  "ring:The Resting Bough",
+  "ring:The Resting Bough",
+  "ring:The Resting Bough",
+  "ring:The Resting Bough",
+  "ring:The Elder Tree",
+  "ring:The Elder Tree",
+  "ring:The Elder Tree",
+  "ring:The Elder Tree",
+  "ring:The Remembering Oak",
+  "ring:The Remembering Oak",
+  "ring:The Remembering Oak",
+  "ring:The Remembering Oak"
+ ]
+}

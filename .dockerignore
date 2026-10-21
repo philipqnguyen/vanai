@@ -1,0 +1,47 @@
+# Build context is the repository root (see server/Dockerfile).
+
+/.git/
+/.gitignore
+
+# Local settings and the deploy's secrets (.env, .env.production).
+/.env*
+
+# Screenshots, design scratch, and tooling output — none of it belongs in the image.
+/*.png
+/design/
+/.playwright-mcp/
+/*.md
+/docs/
+
+# Client: node_modules is reinstalled from the lockfile, dist is built in-image.
+/client/node_modules/
+/client/dist/
+
+# Server
+/server/.bundle
+/server/.env*
+/server/config/master.key
+/server/config/credentials/*.key
+/server/log/*
+!/server/log/.keep
+/server/tmp/*
+!/server/tmp/.keep
+/server/tmp/pids/*
+!/server/tmp/pids/.keep
+/server/storage/*
+!/server/storage/.keep
+/server/tmp/storage/*
+!/server/tmp/storage/.keep
+/server/node_modules/
+/server/app/assets/builds/*
+!/server/app/assets/builds/.keep
+/server/public/assets
+/server/.devcontainer
+/server/.dockerignore
+/server/Dockerfile*
+
+# Local raw sources and preview exports are not deployment inputs.
+/external_raw_assets/
+/client/public/models/preview/
+/tools/local/
+/client/local/

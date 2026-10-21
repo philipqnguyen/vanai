@@ -1,0 +1,43 @@
+{
+ "file": "creatures/old_greedgullet.glb",
+ "plan": "crustacean",
+ "height": 3.759,
+ "length": 7.436,
+ "width": 8.525,
+ "top": 3.759,
+ "minY": 0.0107,
+ "groundY": 0.0107,
+ "forward": 1.211,
+ "tris": [
+  11198,
+  3358
+ ],
+ "budget": 12000,
+ "bones": 26,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.135,
+  "Run": 0.811,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2,
+  "Special": 2.1
+ },
+ "speeds": {
+  "Walk": 1.871,
+  "Run": 4.403
+ },
+ "bytes": 1027796,
+ "held": [],
+ "groundLift": {},
+ "notes": "Old Greedgullet NM: a weed-green crab at 3x, a gullet across its whole front, brine pearls in the joints, a drowned village's bell on its back",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/old_greedgullet.py",
+ "fast": false
+}

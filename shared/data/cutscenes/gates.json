@@ -1,0 +1,1344 @@
+{
+ "gate_huntingwood": {
+  "name": "The Gate at Dawn: the Hunting Wood",
+  "zone": "huntingwood",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "party": true,
+  "daytime": 0.045,
+  "shots": [
+   {
+    "dur": 8.5,
+    "fade": {
+     "in": 2.5
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -248,
+       1.6,
+       -28
+      ],
+      "look": [
+       -288,
+       5.5,
+       -36
+      ],
+      "fov": 0.72
+     },
+     "to": {
+      "pos": [
+       -258,
+       2.2,
+       -29
+      ],
+      "look": [
+       -288,
+       5.8,
+       -36
+      ],
+      "fov": 0.68
+     },
+     "ease": "out"
+    },
+    "title": {
+     "at": 2.0,
+     "dur": 6,
+     "text": "The Hunting Wood",
+     "sub": "Caerdun's doorstep: the first province inside the border"
+    }
+   },
+   {
+    "dur": 12.0,
+    "cam": {
+     "from": {
+      "pos": [
+       -282,
+       2.5,
+       -33
+      ],
+      "look": [
+       -220,
+       4,
+       -30
+      ]
+     },
+     "to": {
+      "pos": [
+       -276,
+       21,
+       -32
+      ],
+      "look": [
+       -120,
+       2,
+       -22
+      ]
+     },
+     "ease": "inout"
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 11.1,
+      "text": "For three hundred years nobody passed this Border Gate. This spring its lock opened by itself. This morning, for explorers with letters of passage, it swung open."
+     }
+    ]
+   },
+   {
+    "dur": 11.7,
+    "cam": {
+     "from": {
+      "pos": [
+       -150,
+       42,
+       -75
+      ],
+      "look": [
+       30,
+       2,
+       -16
+      ]
+     },
+     "to": {
+      "pos": [
+       -95,
+       36,
+       -58
+      ],
+      "look": [
+       60,
+       2,
+       -16
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 11.1,
+      "who": "npc:scout_bettany",
+      "text": "First light, and the door just standing open, like somebody left it on the latch for us. The Hunting Wood: the empire's hunting ground, and Caerdun's doorstep now."
+     }
+    ]
+   },
+   {
+    "dur": 9.8,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "sentinel_411",
+       "off": [
+        0.9,
+        0.95,
+        3.0
+       ]
+      },
+      "look": {
+       "npc": "sentinel_411",
+       "off": [
+        0,
+        0.8,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "sentinel_411",
+       "off": [
+        0.4,
+        0.9,
+        2.3
+       ]
+      },
+      "look": {
+       "npc": "sentinel_411",
+       "off": [
+        0,
+        0.82,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 9.2,
+      "who": "npc:sentinel_411",
+      "text": "Good morning. You are trespassing on household grounds. The household is not receiving visitors; it has not received any in some time."
+     }
+    ]
+   },
+   {
+    "dur": 12.6,
+    "fade": {
+     "in": 0.5,
+     "out": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "scout_bettany",
+       "off": [
+        0.9,
+        1.9,
+        3.6
+       ]
+      },
+      "look": {
+       "npc": "scout_bettany",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "scout_bettany",
+       "off": [
+        0.4,
+        1.8,
+        2.7
+       ]
+      },
+      "look": {
+       "npc": "scout_bettany",
+       "off": [
+        0,
+        1.62,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 6.9,
+      "who": "npc:scout_bettany",
+      "text": "Sentinels: the empire's caretakers, still at work. The household is their word for the empire's people."
+     },
+     {
+      "at": 7.5,
+      "dur": 4.8,
+      "who": "npc:scout_bettany",
+      "text": "Find me at the **forward camp by the Hunting Lodge**, east up the road."
+     }
+    ]
+   }
+  ]
+ },
+ "gate_timberestates": {
+  "name": "The Gate at Dawn: the Timber Estates",
+  "zone": "timberestates",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "party": true,
+  "daytime": 0.045,
+  "shots": [
+   {
+    "dur": 8.5,
+    "fade": {
+     "in": 2.5
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       238,
+       1.6,
+       -3
+      ],
+      "look": [
+       286,
+       5,
+       -5
+      ],
+      "fov": 0.7
+     },
+     "to": {
+      "pos": [
+       250,
+       2.2,
+       -4
+      ],
+      "look": [
+       286,
+       5.2,
+       -5
+      ],
+      "fov": 0.66
+     },
+     "ease": "out"
+    },
+    "title": {
+     "at": 2.0,
+     "dur": 6,
+     "text": "The Timber Estates",
+     "sub": "Heartwood's doorstep: the first province inside the border"
+    }
+   },
+   {
+    "dur": 12.2,
+    "cam": {
+     "from": {
+      "pos": [
+       281,
+       2.5,
+       -5
+      ],
+      "look": [
+       220,
+       4,
+       -6
+      ]
+     },
+     "to": {
+      "pos": [
+       276,
+       22,
+       -4
+      ],
+      "look": [
+       150,
+       0,
+       -6
+      ]
+     },
+     "ease": "inout"
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 11.3,
+      "text": "Nobody had passed this Border Gate in three hundred years. This spring its lock opened by itself. This morning, for explorers with letters of passage, it swung open."
+     }
+    ]
+   },
+   {
+    "dur": 11.0,
+    "cam": {
+     "from": {
+      "pos": [
+       180,
+       45,
+       40
+      ],
+      "look": [
+       0,
+       0,
+       0
+      ]
+     },
+     "to": {
+      "pos": [
+       130,
+       40,
+       25
+      ],
+      "look": [
+       -40,
+       0,
+       0
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 10.4,
+      "who": "npc:scout_wenna",
+      "text": "Every tree standing where a clerk told it to. These were Heartwood's groves, before the empire felled them and planted the ground in rows for its timber."
+     }
+    ]
+   },
+   {
+    "dur": 9.9,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "sentinel_411b",
+       "off": [
+        0.9,
+        0.95,
+        3.0
+       ]
+      },
+      "look": {
+       "npc": "sentinel_411b",
+       "off": [
+        0,
+        0.8,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "sentinel_411b",
+       "off": [
+        0.4,
+        0.9,
+        2.3
+       ]
+      },
+      "look": {
+       "npc": "sentinel_411b",
+       "off": [
+        0,
+        0.82,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 9.3,
+      "who": "npc:sentinel_411b",
+      "text": "Good morning. You are trespassing on household grounds. The estate is closed. Please do not touch the trees; they have all been counted."
+     }
+    ],
+    "cues": [
+     {
+      "at": 0,
+      "who": "npc:scout_wenna",
+      "face": 3.1416
+     }
+    ]
+   },
+   {
+    "dur": 12.8,
+    "fade": {
+     "in": 0.5,
+     "out": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "scout_wenna",
+       "off": [
+        0.9,
+        1.85,
+        3.4
+       ]
+      },
+      "look": {
+       "npc": "scout_wenna",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "scout_wenna",
+       "off": [
+        0.4,
+        1.75,
+        2.6
+       ]
+      },
+      "look": {
+       "npc": "scout_wenna",
+       "off": [
+        0,
+        1.62,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 6.9,
+      "who": "npc:scout_wenna",
+      "text": "Sentinels: the empire's caretakers, still at work. The household is their word for the empire's people."
+     },
+     {
+      "at": 7.5,
+      "dur": 5.0,
+      "who": "npc:scout_wenna",
+      "text": "Then come to the **forward camp at Plantation Cross**, west along the road."
+     }
+    ]
+   }
+  ]
+ },
+ "gate_summerlakes": {
+  "name": "The Gate at Dawn: the Summer Lakes",
+  "zone": "summerlakes",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "party": true,
+  "daytime": 0.045,
+  "shots": [
+   {
+    "dur": 8.5,
+    "fade": {
+     "in": 2.5
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       63,
+       1.6,
+       -210
+      ],
+      "look": [
+       60,
+       3.8,
+       -249
+      ],
+      "fov": 0.7
+     },
+     "to": {
+      "pos": [
+       62,
+       2.2,
+       -218
+      ],
+      "look": [
+       60,
+       4.0,
+       -249
+      ],
+      "fov": 0.66
+     },
+     "ease": "out"
+    },
+    "title": {
+     "at": 2.0,
+     "dur": 6,
+     "text": "The Summer Lakes",
+     "sub": "Moonmere's doorstep: the first province inside the border"
+    }
+   },
+   {
+    "dur": 12.0,
+    "cam": {
+     "from": {
+      "pos": [
+       61,
+       2.5,
+       -243
+      ],
+      "look": [
+       64,
+       4,
+       -200
+      ]
+     },
+     "to": {
+      "pos": [
+       61,
+       22,
+       -238
+      ],
+      "look": [
+       70,
+       0,
+       -100
+      ]
+     },
+     "ease": "inout"
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 11.1,
+      "text": "This spring the three Border Gates unlocked themselves on one morning, as if on a schedule. This one is Moonmere's; this morning it opened to letters of passage."
+     }
+    ]
+   },
+   {
+    "dur": 11.8,
+    "cam": {
+     "from": {
+      "pos": [
+       150,
+       20,
+       -95
+      ],
+      "look": [
+       30,
+       6,
+       70
+      ]
+     },
+     "to": {
+      "pos": [
+       125,
+       16,
+       -75
+      ],
+      "look": [
+       15,
+       6,
+       80
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 11.2,
+      "who": "npc:scout_ilva",
+      "text": "Three hundred years, and somebody has kept the lawns. The Summer Lakes: the empire's own holiday villas, every one of them still aired. Look at it. Just look at it."
+     }
+    ]
+   },
+   {
+    "dur": 9.8,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "sentinel_411c",
+       "off": [
+        0.9,
+        0.95,
+        3.0
+       ]
+      },
+      "look": {
+       "npc": "sentinel_411c",
+       "off": [
+        0,
+        0.8,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "sentinel_411c",
+       "off": [
+        0.4,
+        0.9,
+        2.3
+       ]
+      },
+      "look": {
+       "npc": "sentinel_411c",
+       "off": [
+        0,
+        0.82,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 9.2,
+      "who": "npc:sentinel_411c",
+      "text": "Good morning. You are trespassing on household grounds. You will find the lakes exactly as they were left. Please leave them that way."
+     }
+    ]
+   },
+   {
+    "dur": 12.5,
+    "fade": {
+     "in": 0.5,
+     "out": 1.8
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "scout_ilva",
+       "off": [
+        0.9,
+        1.9,
+        3.6
+       ]
+      },
+      "look": {
+       "npc": "scout_ilva",
+       "off": [
+        0,
+        1.6,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "scout_ilva",
+       "off": [
+        0.4,
+        1.8,
+        2.7
+       ]
+      },
+      "look": {
+       "npc": "scout_ilva",
+       "off": [
+        0,
+        1.62,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 6.9,
+      "who": "npc:scout_ilva",
+      "text": "Sentinels: the empire's caretakers, still at work. The household is their word for the empire's people."
+     },
+     {
+      "at": 7.5,
+      "dur": 4.7,
+      "who": "npc:scout_ilva",
+      "text": "Come north up the road to the **forward camp**; I'll show you the map."
+     }
+    ]
+   }
+  ]
+ },
+ "story_morning": {
+  "name": "The Morning",
+  "zone": "capitalreturned",
+  "trigger": {
+   "type": "zone_first_visit"
+  },
+  "daytime": 0.05,
+  "mark": [
+   7,
+   -235,
+   0
+  ],
+  "shots": [
+   {
+    "dur": 9,
+    "fade": {
+     "in": 3
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       60,
+       48,
+       -340
+      ],
+      "look": [
+       0,
+       25,
+       -60
+      ]
+     },
+     "to": {
+      "pos": [
+       25,
+       40,
+       -315
+      ],
+      "look": [
+       0,
+       28,
+       -40
+      ]
+     },
+     "ease": "out"
+    },
+    "title": {
+     "at": 2.6,
+     "dur": 6,
+     "text": "The Morning",
+     "sub": "Dawn, on the date the empire wrote down"
+    }
+   },
+   {
+    "dur": 14.9,
+    "fade": {
+     "in": 0.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       4.3,
+       2.0,
+       -238.8
+      ],
+      "look": [
+       11.5,
+       1.5,
+       -232.4
+      ],
+      "fov": 0.55
+     },
+     "to": {
+      "pos": [
+       4.9,
+       1.9,
+       -238.0
+      ],
+      "look": [
+       11.5,
+       1.52,
+       -232.4
+      ],
+      "fov": 0.5
+     }
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "npc:junn_morning",
+      "face": "self"
+     },
+     {
+      "at": 0,
+      "who": "self",
+      "face": "npc:junn_morning"
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 8.8,
+      "who": "npc:junn_morning",
+      "text": "Dawn, on the date. The day every clock we found pointed to. I've checked the arithmetic eleven times; Sabel confiscated my chalk."
+     },
+     {
+      "at": 9.5,
+      "dur": 5.3,
+      "who": "npc:junn_morning",
+      "text": "Listen. The valley bell, over the mountains. A peal nobody living has heard."
+     }
+    ]
+   },
+   {
+    "dur": 9.8,
+    "cam": {
+     "from": {
+      "pos": [
+       -8.6,
+       1.0,
+       -229.6
+      ],
+      "look": [
+       -12,
+       0.82,
+       -228
+      ],
+      "fov": 0.6
+     },
+     "to": {
+      "pos": [
+       -9.3,
+       0.95,
+       -229.2
+      ],
+      "look": [
+       -12,
+       0.82,
+       -228
+      ],
+      "fov": 0.58
+     }
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "npc:sabel_morning",
+      "face": "self"
+     },
+     {
+      "at": 0.3,
+      "who": "self",
+      "face": "npc:sabel_morning"
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 5.7,
+      "who": "npc:sabel_morning",
+      "text": "Between one bell-stroke and the next, the streets are full. The household is home."
+     },
+     {
+      "at": 6.3,
+      "dur": 3.4,
+      "who": "npc:sabel_morning",
+      "text": "The city does not wake. It simply stops waiting."
+     }
+    ]
+   },
+   {
+    "dur": 5,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       22,
+       -225
+      ],
+      "look": [
+       0,
+       10,
+       -110
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       17,
+       -152
+      ],
+      "look": [
+       0,
+       8,
+       -60
+      ]
+     },
+     "ease": "in"
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 4.0,
+      "text": "The household of Vanai, home on the morning it promised."
+     }
+    ]
+   },
+   {
+    "dur": 7.0,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "citizen_3",
+       "off": [
+        1.0,
+        2.1,
+        3.8
+       ]
+      },
+      "look": {
+       "npc": "citizen_3",
+       "off": [
+        0,
+        1.95,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "citizen_3",
+       "off": [
+        0.6,
+        2.05,
+        3.1
+       ]
+      },
+      "look": {
+       "npc": "citizen_3",
+       "off": [
+        0,
+        1.97,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 6.5,
+      "who": "npc:citizen_3",
+      "text": "It's my move. It's been my move for three hundred years, they tell me. Don't touch the stones."
+     }
+    ]
+   },
+   {
+    "dur": 7.5,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "regent_offduty",
+       "off": [
+        0.8,
+        1.85,
+        2.8
+       ]
+      },
+      "look": {
+       "npc": "regent_offduty",
+       "off": [
+        0,
+        1.65,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "regent_offduty",
+       "off": [
+        0.4,
+        1.8,
+        2.1
+       ]
+      },
+      "look": {
+       "npc": "regent_offduty",
+       "off": [
+        0,
+        1.67,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 6.6,
+      "who": "npc:regent_offduty",
+      "text": "Do not mind me. I am off duty. I have never once been off duty, and it is harder than the wall was."
+     }
+    ]
+   },
+   {
+    "dur": 5.5,
+    "cam": {
+     "from": {
+      "pos": [
+       0,
+       3,
+       -48
+      ],
+      "look": [
+       0,
+       10,
+       20
+      ]
+     },
+     "to": {
+      "pos": [
+       0,
+       11,
+       -24
+      ],
+      "look": [
+       0,
+       8,
+       45
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 4.4,
+      "text": "On the palace steps, the First Minister of the returned Vanai."
+     }
+    ]
+   },
+   {
+    "dur": 17.3,
+    "fade": {
+     "in": 0.5
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "first_minister",
+       "off": [
+        1.0,
+        2.2,
+        3.8
+       ]
+      },
+      "look": {
+       "npc": "first_minister",
+       "off": [
+        0,
+        2.0,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "first_minister",
+       "off": [
+        0.6,
+        2.15,
+        3.1
+       ]
+      },
+      "look": {
+       "npc": "first_minister",
+       "off": [
+        0,
+        2.02,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 7.3,
+      "who": "npc:first_minister",
+      "text": "People of the morning. Ours, and... ours, I see. Yes. We know your faces, free cities; we kept your rolls."
+     },
+     {
+      "at": 8.0,
+      "dur": 9.2,
+      "who": "npc:first_minister",
+      "text": "There will be proclamations, and accountings, and more apologies than there are clerks to draft them, and they will all begin tomorrow."
+     }
+    ]
+   },
+   {
+    "dur": 7.9,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "morrow_morning",
+       "off": [
+        0.8,
+        1.8,
+        2.7
+       ]
+      },
+      "look": {
+       "npc": "morrow_morning",
+       "off": [
+        0,
+        1.55,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "morrow_morning",
+       "off": [
+        0.4,
+        1.75,
+        2.1
+       ]
+      },
+      "look": {
+       "npc": "morrow_morning",
+       "off": [
+        0,
+        1.56,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.5,
+      "dur": 6.9,
+      "who": "npc:morrow_morning",
+      "text": "They begin now, minister. I keep Heartwood's grudge hall: three hundred years, itemised, with interest."
+     }
+    ]
+   },
+   {
+    "dur": 7,
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "first_minister",
+       "off": [
+        0.5,
+        2.12,
+        2.7
+       ]
+      },
+      "look": {
+       "npc": "first_minister",
+       "off": [
+        0,
+        2.03,
+        0
+       ]
+      },
+      "fov": 0.55
+     },
+     "to": {
+      "pos": {
+       "npc": "first_minister",
+       "off": [
+        0.3,
+        2.1,
+        2.3
+       ]
+      },
+      "look": {
+       "npc": "first_minister",
+       "off": [
+        0,
+        2.04,
+        0
+       ]
+      },
+      "fov": 0.52
+     }
+    },
+    "lines": [
+     {
+      "at": 0.6,
+      "dur": 5.8,
+      "who": "npc:first_minister",
+      "text": "You will want to know why we left. You are owed why. But not this morning."
+     }
+    ]
+   },
+   {
+    "dur": 6,
+    "cam": {
+     "from": {
+      "pos": [
+       12.9,
+       2.2,
+       42.2
+      ],
+      "look": [
+       14.5,
+       2.05,
+       39.6
+      ],
+      "fov": 0.7
+     },
+     "to": {
+      "pos": [
+       12.6,
+       2.5,
+       42.6
+      ],
+      "look": [
+       -40,
+       120,
+       -160
+      ],
+      "fov": 0.7
+     },
+     "ease": "inout"
+    },
+    "lines": [
+     {
+      "at": 2.4,
+      "dur": 3.3,
+      "who": "npc:first_minister",
+      "text": "Not yet. Let us have this morning first."
+     }
+    ]
+   },
+   {
+    "dur": 8,
+    "fade": {
+     "in": 0.6,
+     "out": 2
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        0.7,
+        1.6,
+        -3.6
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.3,
+        8
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        1.6,
+        9.5,
+        -9
+       ]
+      },
+      "look": {
+       "self": [
+        -5,
+        12,
+        120
+       ]
+      }
+     }
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": 0
+     },
+     {
+      "at": 0.8,
+      "who": "self",
+      "walk": {
+       "fwd": 3
+      },
+      "speed": 1.2
+     }
+    ],
+    "lines": [
+     {
+      "at": 1.0,
+      "dur": 5.0,
+      "who": "npc:sabel_morning",
+      "text": "Two peoples on one world now. Try not to start anything before lunch."
+     }
+    ]
+   }
+  ]
+ }
+}

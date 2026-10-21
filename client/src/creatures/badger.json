@@ -1,0 +1,46 @@
+{
+ "file": "creatures/badger.glb",
+ "plan": "small_mammal",
+ "height": 0.948,
+ "length": 2.523,
+ "width": 1.184,
+ "top": 0.948,
+ "minY": -0.0005,
+ "groundY": -0.0005,
+ "forward": -0.009,
+ "tris": [
+  3146,
+  932
+ ],
+ "budget": 3200,
+ "bones": 25,
+ "atlas": 512,
+ "emissive": false,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.586,
+  "Run": 0.419,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 1.609,
+  "Run": 5.39
+ },
+ "bytes": 386268,
+ "held": [],
+ "groundLift": {
+  "Attack_A": 0.064,
+  "Attack_B": 0.059,
+  "Death": 0.207
+ },
+ "notes": "the Barrow Digger: a grave-robbing badger, spade claws, a satchel of grave goods, clay on the blaze",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/small_mammal.py",
+ "fast": false
+}

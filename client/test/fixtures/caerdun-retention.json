@@ -1,0 +1,2075 @@
+{
+  "sourceCommit": "2e6dc2076d30b57a9c0c03628fb97e1168ae1fd3",
+  "houses": [
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "wide",
+      "walkable": true,
+      "base": "UnevenBrick",
+      "skin": "UnevenBrick",
+      "tile": "FlatTiles",
+      "seed": 601,
+      "chimney": true,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "wide",
+      "walkable": true,
+      "base": "UnevenBrick",
+      "skin": "UnevenBrick",
+      "tile": "FlatTiles",
+      "seed": 602,
+      "chimney": true,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "wide",
+      "walkable": true,
+      "base": "UnevenBrick",
+      "skin": "UnevenBrick",
+      "tile": "FlatTiles",
+      "seed": 603,
+      "chimney": true,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "wide",
+      "walkable": true,
+      "base": "UnevenBrick",
+      "skin": "UnevenBrick",
+      "tile": "FlatTiles",
+      "seed": 604,
+      "chimney": true,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 697831,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 192854,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 14171,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 464355,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 11403,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 311124,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 180653,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 958705,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 720279,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 723774,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 781898,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 146708,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 591893,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 224994,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 407353,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 845908,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 420843,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 552845,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 260979,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 993726,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 685597,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 438729,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 95911,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 439683,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 169512,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 534136,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 294550,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 601619,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 786253,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 926579,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 576421,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 868791,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 273328,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 742273,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 487377,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 237799,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 503084,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 903006,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 376032,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 612212,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 232587,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 323956,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 943946,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 469130,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 971317,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 923577,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 152449,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 701340,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 229973,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 28355,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 638940,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 936412,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 748005,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 484330,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 940762,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 480217,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 771389,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 319872,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 689298,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 304423,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 793003,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 646005,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 254729,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 564947,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 735464,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 286782,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 912552,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 599483,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 503225,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 928430,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 802911,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 757362,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 637554,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 543905,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 18,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 148683,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 600451,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 770143,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 51982,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 89312,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 3,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 745851,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 518740,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 641604,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 710862,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 848340,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 314946,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 505610,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 511686,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 503307,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 580031,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 755923,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 857854,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 928736,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 610129,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 959764,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 870055,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 421323,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 356571,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 862528,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 806574,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 752325,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 32801,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 881144,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 863802,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 896849,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 241295,
+      "kit": "caerdun"
+    },
+    {
+      "span": 10,
+      "len": 14,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 857261,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 276843,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 2,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": true,
+      "seed": 603461,
+      "kit": "caerdun"
+    },
+    {
+      "span": 12,
+      "len": 16,
+      "storeys": 1,
+      "steps": "narrow",
+      "skin": "UnevenBrick",
+      "base": "UnevenBrick",
+      "tile": "FlatTiles",
+      "balcony": false,
+      "chimney": false,
+      "seed": 110516,
+      "kit": "caerdun"
+    }
+  ],
+  "towers": [
+    {
+      "seed": 69,
+      "r": 6.4,
+      "storeys": 4
+    },
+    {
+      "seed": 71,
+      "r": 6.4,
+      "storeys": 4
+    },
+    {
+      "seed": 319,
+      "r": 6.4,
+      "storeys": 4
+    },
+    {
+      "seed": 321,
+      "r": 6.4,
+      "storeys": 4
+    },
+    {
+      "seed": 721,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 745,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 769,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 793,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 849,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 874,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 898,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 922,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 947,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 971,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 996,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 1020,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 1044,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 1068,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 329,
+      "r": 6.4,
+      "storeys": 4
+    },
+    {
+      "seed": 331,
+      "r": 6.4,
+      "storeys": 4
+    },
+    {
+      "seed": 821,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 845,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 869,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 893,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 950,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 974,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 998,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 1022,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 1046,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 1070,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 1094,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 1021,
+      "r": 7,
+      "storeys": 3
+    },
+    {
+      "seed": 53,
+      "r": 7,
+      "storeys": 5
+    },
+    {
+      "seed": 5801,
+      "r": 7.6,
+      "storeys": 2
+    },
+    {
+      "seed": 57,
+      "r": 7.6,
+      "storeys": 5
+    }
+  ],
+  "npcs": [
+    {
+      "id": "gate_sergeant_ottey",
+      "name": "Gate-Sergeant Ottey",
+      "kind": "quest",
+      "title": "The Drill Yards",
+      "dialog": [
+        "Up here we don't ask why we keep the watch. The empire locked its door and left us on the step like a delivery nobody signed for. Fine. We're Caerdun. We signed for ourselves.",
+        "The wall's been walked every night for three hundred years and it will not stop being walked because my knees have opinions.",
+        "Harbour, lighthouse, ramparts, crown. Learn the city; the city is the route."
+      ]
+    },
+    {
+      "id": "paymaster_vail",
+      "name": "Paymaster Vail",
+      "kind": "quest",
+      "title": "The Wage Vaults",
+      "dialog": [
+        "Nine generations of my family have kept this room. Every night of watch stood on that wall since the Sealing, written down, valued, and owed.",
+        "The empire left without paying its garrison. So we kept the invoice.",
+        "Touch nothing else; the vault notices."
+      ],
+      "site": "court_archive",
+      "floor": 0
+    },
+    {
+      "id": "marshal_grett",
+      "name": "Marshal Grett",
+      "kind": "quest",
+      "title": "The Drill Yards",
+      "dialog": [
+        "FORMS! Wall-form third! Your grandmothers held this line with worse knees and better attitudes!",
+        "Our oath isn't fight. Our oath is hold until relieved. Nobody relieved us. So we hold.",
+        "I don't break oaths for civilians. So: stop being one."
+      ]
+    },
+    {
+      "id": "duelist_sabel_cd",
+      "name": "Duelist-Master Sabel",
+      "kind": "quest",
+      "title": "The Drill Yards",
+      "dialog": [
+        "First blood, all grievances discharged, drinks after. It's civilised, it's legal, and it keeps the lawyers poor, which I consider a public service.",
+        "People don't fight over old paper. They fight over paper that frightens them.",
+        "Composure is half of duelling and all of being a second. Practise on the walk."
+      ]
+    },
+    {
+      "id": "lord_marshal",
+      "name": "The Lord Marshal",
+      "kind": "quest",
+      "title": "The Parade Square",
+      "dialog": [
+        "Once as a soldier, once as a ruler, once as a man whose grandfather died on that wall. It reads differently each time and it never reads well.",
+        "Three cities, three pieces, three centuries of not comparing notes. That ends now.",
+        "If the empire truly means to settle its debts, what happens next is the largest transaction in the history of the world."
+      ]
+    },
+    {
+      "id": "armourer_brann",
+      "name": "Armourer Brann",
+      "kind": "vendor",
+      "title": "The Market Crossroads",
+      "stock": [
+        "worn_sword",
+        "worn_katana",
+        "worn_greatsword",
+        "ash_staff",
+        "worn_cudgel",
+        "cloth_wraps",
+        "bronze_sword",
+        "bronze_katana",
+        "bronze_greatsword",
+        "willow_staff",
+        "bronze_mace",
+        "leather_wraps",
+        "wold_blade",
+        "ronin_katana",
+        "wold_cleaver",
+        "yew_staff",
+        "pilgrims_mace",
+        "iron_knuckles",
+        "iron_sword",
+        "iron_katana",
+        "iron_greatsword",
+        "elder_staff",
+        "vigil_mace",
+        "studded_wraps",
+        "wold_cloth_hood",
+        "wold_cloth_robe",
+        "wold_cloth_slops",
+        "wold_cloth_shoes",
+        "lampright_cap",
+        "lampright_vest",
+        "lampright_trews",
+        "lampright_boots",
+        "thornguard_coif",
+        "thornguard_hauberk",
+        "thornguard_chausses",
+        "thornguard_sabatons",
+        "waywatcher_hood",
+        "waywatcher_jerkin",
+        "waywatcher_trews",
+        "waywatcher_boots",
+        "argent_cap",
+        "argent_robe",
+        "argent_slops",
+        "argent_shoes",
+        "greywall_helm",
+        "greywall_hauberk",
+        "greywall_chausses",
+        "greywall_sabatons"
+      ],
+      "dialog": [
+        "Swords for the shield line, katanas for the duelling code, and chain for anyone who means to be hit and remain upright.",
+        "Three hundred years of drill and not one sword drawn in anger. The steel doesn't know that. Keep it oiled.",
+        "The court buys the garrison's kit from me on credit against the day the empire pays. I have a very long ledger and a very patient wife.",
+        "Robes. Staves. Wraps for people who punch things for a living. The court says every job buys at its own city's door now, so here they hang, between my good swords. Don't touch the chain with ink on your hands."
+      ]
+    },
+    {
+      "id": "chandler_mott",
+      "name": "Chandler Mott",
+      "kind": "vendor",
+      "title": "The Market Crossroads",
+      "stock": [
+        "potion",
+        "hi_potion",
+        "ether",
+        "antidote",
+        "eye_drops",
+        "remedy",
+        "traveler_tunic",
+        "traveler_slops",
+        "traveler_boots",
+        "traveler_hood",
+        "hi_ether"
+      ],
+      "dialog": [
+        "Potions, salves, a coat that keeps the fjord out. If the wall wants it, I stock it; if the wall doesn't want it, someone's cousin does.",
+        "Fish carts yield for no one. You'll learn."
+      ]
+    },
+    {
+      "id": "broker_ashby",
+      "name": "Broker Ashby",
+      "kind": "auction",
+      "title": "The Auction House",
+      "dialog": [
+        "The auction house of Caerdun, chartered by the court, three percent to the treasury and not a copper more, whatever Moonmere charges.",
+        "Relics sell here. Relics also register with the court, for standing rather than gold. The court remembers who did which."
+      ]
+    },
+    {
+      "id": "drillmaster_hal",
+      "name": "Drillmaster Hal",
+      "kind": "sanctuary",
+      "title": "The Paladin Hall",
+      "dialog": [
+        "Shield line to the north hall, duelling code to the south, and the parade square between them where the two argue about which of them is Caerdun.",
+        "Every job is open to an explorer. Stand in the hall's light to take up another; the body remembers what the drill taught it."
+      ]
+    },
+    {
+      "id": "innkeeper_sayre",
+      "name": "Innkeeper Sayre",
+      "kind": "vendor",
+      "title": "The Crown Inn",
+      "stock": [
+        "potion",
+        "hi_potion",
+        "ether",
+        "lantern_oil_flask"
+      ],
+      "dialog": [
+        "A bed, a bowl, and a fire that has not gone out since the Sealing. My family has a bet on with the wall about which lasts longer.",
+        "Envoys, freebooters, sergeants off shift. Everybody's somebody's story in here."
+      ]
+    },
+    {
+      "id": "guildmaster_torv",
+      "name": "Guildmaster Torv",
+      "kind": "flavor",
+      "title": "The Smiths' Guild",
+      "dialog": [
+        "Iron from the Fields' seams, shell from the fen, antler from the wood. Bring me the makings and the guild will teach you the making. Press K to see what your hands know.",
+        "The empire's blades were better than ours. The empire's blades are also three hundred years away. Ours are here."
+      ]
+    },
+    {
+      "id": "quartermaster_kettle",
+      "name": "Quartermaster Ingrid Kettle",
+      "kind": "vendor",
+      "title": "The Halls' Stores",
+      "stock": [
+        "calling_pld_14_head",
+        "calling_sam_14_head"
+      ],
+      "dialog": [
+        "The halls' stores. Helms for the shield line, headguards for the duelling code, each one entered in the hall's account under your name. Boots are the doorstep's business.",
+        "The hall's account, your name, paid in full or not at all. The court has run on credit for three hundred years; my shelf does not.",
+        "Wear it when your job has earned the level. I sell early. The steel can wait for you; it has had practice."
+      ]
+    },
+    {
+      "id": "shield_captain_lund",
+      "name": "Shield-Captain Thora Lund",
+      "kind": "quest",
+      "title": "The Shield Line",
+      "dialog": [
+        "The shield line's terms are short. Hold until relieved. Three hundred years on, I can give you the shift count to the day; my father Bertil kept the tally before me and keeps it yet, retired, at the kitchen table.",
+        "A recruit's days of service are wages owed. I keep the hall's roll; Vail's vault gets the copy, and the empire can argue the rate when it gets home.",
+        "Paladin work is given out of this hall. Not by Hal; Hal teaches the body. I teach the terms."
+      ]
+    },
+    {
+      "id": "code_master_rudd",
+      "name": "Code-Master Eskil Rudd",
+      "kind": "quest",
+      "title": "The Duelling Code",
+      "h": -1.5708,
+      "dialog": [
+        "The code is three pages. The commentary is four hundred. Sabel keeps the commentary and the yard; I keep the three pages and the hall.",
+        "A duel is a contract with a witness. Everything else that happens with a sword is weather.",
+        "My cousin grinds blades on Smiths' Lane. She says nobody brings her a dull one twice. That is the whole curriculum."
+      ]
+    }
+  ],
+  "interactables": [
+    {
+      "id": "cd_muster_harbour",
+      "name": "The Harbour Tower Watch",
+      "idle_msg": "The harbour tower's watch post: a slate for the night's muster, three hundred years of chalk ghosts on it.",
+      "active_msg": "You hand over the first muster sheet. The watch officer signs for it without looking up. Fish carts yield for no one.",
+      "prop": "watch_post",
+      "site": "watch_harbour",
+      "floor": 0,
+      "yaw": 0
+    },
+    {
+      "id": "cd_muster_light",
+      "name": "The Lighthouse Watch",
+      "idle_msg": "The lighthouse keeper's post at the tower's foot. Stand on her left.",
+      "active_msg": "The second sheet, signed for. The keeper asks you to repeat yourself, then tells you she heard you the first time.",
+      "prop": "watch_post",
+      "site": "watch_light",
+      "floor": 0,
+      "yaw": 0
+    },
+    {
+      "id": "cd_muster_ramparts",
+      "name": "The Sea Ramparts Watch",
+      "idle_msg": "The rampart watch post over the sea wall: the granite gone soft at the corners from three hundred years of shoulders.",
+      "active_msg": "The third sheet. The watch officer reads it twice and files it under a stone that has held muster sheets since the Sealing.",
+      "prop": "watch_post",
+      "site": "watch_ramparts",
+      "floor": 0,
+      "yaw": 0
+    },
+    {
+      "id": "cd_muster_crown",
+      "name": "The Crown Terrace Watch",
+      "idle_msg": "The crown terrace's watch post, the highest on the wall. Ottey's father held it, and his father before him.",
+      "active_msg": "The top sheet, signed for on the crown. From here you can see the whole city, and the road east, and the border you are watching for.",
+      "prop": "watch_post",
+      "site": "watch_crown",
+      "floor": 2,
+      "yaw": 0
+    },
+    {
+      "id": "cd_volume_one",
+      "name": "Archive Volume: Year One",
+      "idle_msg": "The deep vault's shelves on rails. Volume one: the night watch of the night itself. One night: owed.",
+      "active_msg": "You lift volume one. The hand that wrote its first page did not shake.",
+      "prop": "book_shelf",
+      "site": "court_archive",
+      "floor": 0,
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "cd_volume_onefifty",
+      "name": "Archive Volume: Year One Hundred and Fifty",
+      "idle_msg": "Volume one-fifty, initialled on every page. Halfway through a debt nobody expected to collect.",
+      "active_msg": "You lift the volume. Halfway. They kept going.",
+      "prop": "book_shelf",
+      "site": "court_archive",
+      "floor": 0,
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "cd_volume_threehundred",
+      "name": "Archive Volume: Year Three Hundred",
+      "idle_msg": "Volume three hundred, this year's, the ink still bright on the newest page.",
+      "active_msg": "You lift the last volume. Something is misfiled between its pages: wrong century, wrong hand, wrong paper.",
+      "prop": "book_shelf",
+      "site": "court_archive",
+      "floor": 0,
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "cd_dueling_ground",
+      "name": "The Dueling Ground",
+      "idle_msg": "A ring of worn granite in the drill yards where Caerdun settles what the courts cannot. Two families face each other across it.",
+      "active_msg": "You stand at Sabel's left through the forms. A Harrow cousin's hand goes to a knife; your shoulder is already in the way. First blood, honour served, and the Tallis boy hands Sabel a folded schedule with visible relief.",
+      "prop": "duel_marker"
+    },
+    {
+      "id": "cd_gate_clock",
+      "name": "The Sealed Imperial Clock",
+      "idle_msg": "The clock tower beside the court. Behind a grate at the top of its stair, the only imperial thing in Caerdun that still runs.",
+      "active_msg": "You copy the dial-count through the grate, touching nothing. The numbers agree with the schedule. Of course they agree; it's theirs.",
+      "prop": "clock_face",
+      "site": "imperial_clock",
+      "floor": 4,
+      "yaw": 0
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_cd2_gate",
+      "name": "The East Gate",
+      "xp": 30
+    },
+    {
+      "id": "lm_cd2_quay",
+      "name": "The Harbour Terrace",
+      "xp": 40
+    },
+    {
+      "id": "lm_cd2_light",
+      "name": "The Lighthouse",
+      "xp": 60
+    },
+    {
+      "id": "lm_cd2_market",
+      "name": "The Market Crossroads",
+      "xp": 40
+    },
+    {
+      "id": "lm_cd2_drill",
+      "name": "The Drill Yards",
+      "xp": 60
+    },
+    {
+      "id": "lm_cd2_court",
+      "name": "The Wage Vaults",
+      "xp": 70
+    },
+    {
+      "id": "lm_cd2_wall",
+      "name": "The Sea Ramparts",
+      "xp": 50
+    }
+  ],
+  "milestones": [
+    {
+      "id": "crystal_caerdun",
+      "name": "The Crown Terrace Crystal"
+    }
+  ],
+  "portals": [
+    {
+      "id": "cd_fields",
+      "name": "The Landward Gate",
+      "to": "caerdunfields",
+      "built": true
+    }
+  ],
+  "sites": {
+    "court_archive": {
+      "name": "Wage Vaults beneath the Court Hall",
+      "floorCount": 3
+    },
+    "imperial_clock": {
+      "name": "Imperial clock tower",
+      "floorCount": 6
+    },
+    "watch_harbour": {
+      "name": "The Harbour Tower Watch",
+      "floorCount": 3
+    },
+    "watch_light": {
+      "name": "The Lighthouse Watch",
+      "floorCount": 6
+    },
+    "watch_ramparts": {
+      "name": "The Sea Ramparts Watch",
+      "floorCount": 4
+    },
+    "watch_crown": {
+      "name": "The Crown Terrace Watch",
+      "floorCount": 4
+    }
+  },
+  "furnishings": [
+    {
+      "id": "wage_desk",
+      "prop": "returns_desk",
+      "label": "WAGE VAULTS \u2022 PAYMASTER"
+    },
+    {
+      "id": "court_table",
+      "prop": "council_table"
+    },
+    {
+      "id": "cd_volume_one_rails",
+      "prop": "archive_rails",
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "cd_volume_onefifty_rails",
+      "prop": "archive_rails",
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "cd_volume_threehundred_rails",
+      "prop": "archive_rails",
+      "yaw": 1.5707963267948966
+    },
+    {
+      "id": "torv_craft_bench",
+      "prop": "craft_bench"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+ "pack": "casks",
+ "props": {
+  "cask": {
+   "pack": "casks",
+   "min": [
+    -0.334,
+    0,
+    -0.334
+   ],
+   "max": [
+    0.334,
+    0.9,
+    0.342
+   ],
+   "tris": 1861,
+   "farTris": 128,
+   "far": true,
+   "small": false,
+   "tint": {
+    "lodge": "#bca896",
+    "furnace": "#b0a294",
+    "beaconfort": "#b8aea4"
+   }
+  },
+  "cask_apples": {
+   "pack": "casks",
+   "min": [
+    -0.334,
+    0,
+    -0.334
+   ],
+   "max": [
+    0.334,
+    0.915,
+    0.334
+   ],
+   "tris": 2352,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "cask_cradle": {
+   "pack": "casks",
+   "min": [
+    -0.34,
+    0,
+    -0.487
+   ],
+   "max": [
+    0.34,
+    0.735,
+    0.43
+   ],
+   "tris": 2354,
+   "farTris": 228,
+   "far": true,
+   "small": false,
+   "tint": {
+    "furnace": "#a49488",
+    "beaconfort": "#b0a69c"
+   }
+  },
+  "cask_stack": {
+   "pack": "casks",
+   "min": [
+    -0.74,
+    0,
+    -0.42
+   ],
+   "max": [
+    0.74,
+    1.183,
+    0.44
+   ],
+   "tris": 5786,
+   "farTris": 476,
+   "far": true,
+   "small": false
+  },
+  "cask_rack": {
+   "pack": "casks",
+   "min": [
+    -0.73,
+    0,
+    -0.248
+   ],
+   "max": [
+    0.73,
+    0.965,
+    0.248
+   ],
+   "tris": 4316,
+   "farTris": 368,
+   "far": true,
+   "small": false
+  }
+ },
+ "swap": {
+  "props/Barrel.gltf": {
+   "to": "cask",
+   "from": {
+    "min": [
+     -0.349,
+     0.003,
+     -0.349
+    ],
+    "max": [
+     0.349,
+     0.901,
+     0.349
+    ]
+   }
+  },
+  "props/Barrel_Dark.gltf": {
+   "to": "cask",
+   "tint": {
+    "*": "#a08e80"
+   },
+   "from": {
+    "min": [
+     -0.349,
+     0.003,
+     -0.349
+    ],
+    "max": [
+     0.349,
+     0.895,
+     0.349
+    ]
+   }
+  },
+  "dungeon/barrel_small.glb": {
+   "to": "cask",
+   "from": {
+    "min": [
+     -0.501,
+     0,
+     -0.501
+    ],
+    "max": [
+     0.501,
+     1.018,
+     0.501
+    ]
+   }
+  },
+  "dungeon/barrel_large.glb": {
+   "to": "cask",
+   "from": {
+    "min": [
+     -0.9,
+     0,
+     -0.9
+    ],
+    "max": [
+     0.9,
+     2,
+     0.9
+    ]
+   }
+  },
+  "props/Barrel_Apples.gltf": {
+   "to": "cask_apples",
+   "from": {
+    "min": [
+     -0.349,
+     0.003,
+     -0.349
+    ],
+    "max": [
+     0.349,
+     0.901,
+     0.349
+    ]
+   }
+  },
+  "dungeon/keg.glb": {
+   "to": "cask_cradle",
+   "scale": 0.92,
+   "from": {
+    "min": [
+     -0.9,
+     0,
+     -0.976
+    ],
+    "max": [
+     0.9,
+     2.051,
+     1.024
+    ]
+   }
+  },
+  "dungeon/barrel_small_stack.glb": {
+   "to": "cask_stack",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.925,
+     0,
+     -0.5
+    ],
+    "max": [
+     0.925,
+     1.77,
+     0.5
+    ]
+   }
+  },
+  "props/Barrel_Holder.gltf": {
+   "to": "cask_rack",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.68,
+     -0.006,
+     -0.352
+    ],
+    "max": [
+     0.68,
+     1.251,
+     0.389
+    ]
+   }
+  }
+ }
+}

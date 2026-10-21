@@ -1,0 +1,294 @@
+{
+ "pack": "plants",
+ "props": {
+  "fern": {
+   "pack": "plants",
+   "min": [
+    -0.204,
+    0,
+    -0.209
+   ],
+   "max": [
+    0.19,
+    0.079,
+    0.201
+   ],
+   "tris": 660,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "rosette": {
+   "pack": "plants",
+   "min": [
+    -0.174,
+    0.004,
+    -0.15
+   ],
+   "max": [
+    0.15,
+    0.135,
+    0.202
+   ],
+   "tris": 440,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "seedling": {
+   "pack": "plants",
+   "min": [
+    -0.113,
+    0,
+    -0.129
+   ],
+   "max": [
+    0.138,
+    0.295,
+    0.131
+   ],
+   "tris": 504,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "flower_clump": {
+   "pack": "plants",
+   "min": [
+    -0.12,
+    0,
+    -0.132
+   ],
+   "max": [
+    0.132,
+    0.294,
+    0.112
+   ],
+   "tris": 568,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "palm": {
+   "pack": "plants",
+   "min": [
+    -1.417,
+    0,
+    -1.623
+   ],
+   "max": [
+    1.622,
+    3.335,
+    1.418
+   ],
+   "tris": 5432,
+   "farTris": 336,
+   "far": true,
+   "small": false
+  },
+  "ivy": {
+   "pack": "plants",
+   "min": [
+    -0.905,
+    0,
+    -0.035
+   ],
+   "max": [
+    1.067,
+    2.601,
+    0.053
+   ],
+   "tris": 5712,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "log": {
+   "pack": "plants",
+   "min": [
+    -0.306,
+    0,
+    -1.473
+   ],
+   "max": [
+    0.298,
+    0.75,
+    1.147
+   ],
+   "tris": 518,
+   "farTris": 48,
+   "far": true,
+   "small": false,
+   "tint": {
+    "furnace": "#b4a596",
+    "beaconfort": "#bdb2a6",
+    "greatwatchtower": "#c2b6a8"
+   }
+  }
+ },
+ "swap": {
+  "nature/Fern_2.gltf": {
+   "to": "fern",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -2.875,
+     -0.122,
+     -3.191
+    ],
+    "max": [
+     2.515,
+     2.37,
+     2.528
+    ]
+   }
+  },
+  "nature/Plant_1.gltf": {
+   "to": "rosette",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.711,
+     -0.035,
+     -0.764
+    ],
+    "max": [
+     0.563,
+     0.979,
+     0.622
+    ]
+   }
+  },
+  "nature/Plant_5.gltf": {
+   "to": "seedling",
+   "fit": "height",
+   "from": {
+    "min": [
+     -0.673,
+     -0.016,
+     -0.77
+    ],
+    "max": [
+     0.733,
+     1.376,
+     0.749
+    ]
+   }
+  },
+  "nature/Flower_3_Group.gltf": {
+   "to": "flower_clump",
+   "fit": "height",
+   "from": {
+    "min": [
+     -0.614,
+     -0.035,
+     -0.802
+    ],
+    "max": [
+     0.875,
+     2.02,
+     0.789
+    ]
+   }
+  },
+  "pirate/Environment_PalmTree_1.gltf": {
+   "to": "palm",
+   "fit": "height",
+   "offset": [
+    -0.381,
+    0,
+    0.147
+   ],
+   "from": {
+    "min": [
+     -0.942,
+     0.005,
+     -1.399
+    ],
+    "max": [
+     1.668,
+     3.593,
+     1.119
+    ]
+   }
+  },
+  "pirate/Environment_PalmTree_3.gltf": {
+   "to": "palm",
+   "fit": "height",
+   "offset": [
+    -0.243,
+    0,
+    0.255
+   ],
+   "from": {
+    "min": [
+     -1.2,
+     0.003,
+     -1.619
+    ],
+    "max": [
+     1.663,
+     2.692,
+     1.134
+    ]
+   }
+  },
+  "town/Prop_Vine1.gltf": {
+   "to": "ivy",
+   "fit": "height",
+   "offset": [
+    0,
+    2.121,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.783,
+     -2.121,
+     -0.045
+    ],
+    "max": [
+     0.753,
+     0.482,
+     0.174
+    ]
+   }
+  },
+  "town/Prop_Vine3.gltf": {
+   "to": "ivy",
+   "fit": "height",
+   "offset": [
+    0,
+    1.525,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.914,
+     -1.525,
+     -0.037
+    ],
+    "max": [
+     0.981,
+     0.574,
+     0.177
+    ]
+   }
+  },
+  "WoodLog.glb": {
+   "to": "log",
+   "from": {
+    "min": [
+     -0.303,
+     -0.001,
+     -1.498
+    ],
+    "max": [
+     0.33,
+     0.747,
+     1.172
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "pack": "metalwork",
+ "props": {
+  "cage": {
+   "pack": "metalwork",
+   "min": [
+    -0.625,
+    0,
+    -0.64
+   ],
+   "max": [
+    0.625,
+    2.14,
+    0.59
+   ],
+   "tris": 2250,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "weapon_rack": {
+   "pack": "metalwork",
+   "min": [
+    -0.65,
+    0,
+    -0.568
+   ],
+   "max": [
+    0.65,
+    2.238,
+    0.568
+   ],
+   "tris": 1508,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "dummy": {
+   "pack": "metalwork",
+   "min": [
+    -0.55,
+    0,
+    -0.396
+   ],
+   "max": [
+    0.55,
+    1.79,
+    0.396
+   ],
+   "tris": 1040,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "*": "#d8d0c4"
+   }
+  },
+  "bellows": {
+   "pack": "metalwork",
+   "min": [
+    -0.42,
+    0,
+    -0.917
+   ],
+   "max": [
+    0.407,
+    1.284,
+    0.88
+   ],
+   "tris": 2525,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "furnace": "#a49488"
+   }
+  },
+  "keyring": {
+   "pack": "metalwork",
+   "min": [
+    -0.116,
+    0,
+    -0.229
+   ],
+   "max": [
+    0.147,
+    0.909,
+    0
+   ],
+   "tris": 2376,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "arms_trophy": {
+   "pack": "metalwork",
+   "min": [
+    -0.406,
+    0,
+    -0.087
+   ],
+   "max": [
+    0.406,
+    0.833,
+    0.056
+   ],
+   "tris": 1026,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "arms_fallen": {
+   "pack": "metalwork",
+   "min": [
+    -0.395,
+    0,
+    -0.246
+   ],
+   "max": [
+    0.236,
+    0.935,
+    0.154
+   ],
+   "tris": 1078,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  }
+ },
+ "swap": {
+  "props/Cage_Large.gltf": {
+   "to": "cage",
+   "from": {
+    "min": [
+     -0.436,
+     -0.041,
+     -0.387
+    ],
+    "max": [
+     0.422,
+     1.292,
+     0.422
+    ]
+   }
+  },
+  "props/WeaponStand.gltf": {
+   "to": "weapon_rack",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.693,
+     -0.003,
+     -0.495
+    ],
+    "max": [
+     0.693,
+     1.106,
+     0.488
+    ]
+   }
+  },
+  "props/Dummy.gltf": {
+   "to": "dummy",
+   "scale": 0.905,
+   "from": {
+    "min": [
+     -0.404,
+     -0.003,
+     -0.292
+    ],
+    "max": [
+     0.404,
+     1.86,
+     0.293
+    ]
+   }
+  },
+  "props/Bellows.gltf": {
+   "to": "bellows",
+   "from": {
+    "min": [
+     -0.431,
+     0,
+     -0.751
+    ],
+    "max": [
+     0.446,
+     1.201,
+     1.131
+    ]
+   }
+  },
+  "dungeon/keyring_hanging.glb": {
+   "to": "keyring",
+   "dyaw": 3.141592653589793,
+   "pivot": [
+    0,
+    -1.196,
+    -0.045
+   ],
+   "from": {
+    "min": [
+     -0.34,
+     -1.196,
+     -0.159
+    ],
+    "max": [
+     0.34,
+     0.023,
+     0.225
+    ]
+   }
+  },
+  "dungeon/sword_shield.glb": {
+   "to": "arms_trophy",
+   "fit": "real",
+   "scale": 1.4,
+   "dyaw": 3.141592653589793,
+   "offset": [
+    0,
+    0.002,
+    0.017
+   ],
+   "from": {
+    "min": [
+     -1.116,
+     -0.815,
+     -0.085
+    ],
+    "max": [
+     1.116,
+     0.852,
+     0.251
+    ]
+   }
+  },
+  "dungeon/sword_shield_broken.glb": {
+   "to": "arms_fallen",
+   "fit": "real",
+   "offset": [
+    0,
+    0.634,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.759,
+     -0.793,
+     -0.085
+    ],
+    "max": [
+     0.667,
+     1.169,
+     0.251
+    ]
+   }
+  }
+ }
+}

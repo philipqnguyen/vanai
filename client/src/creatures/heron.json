@@ -1,0 +1,45 @@
+{
+ "file": "creatures/heron.glb",
+ "plan": "bird",
+ "height": 1.294,
+ "length": 0.987,
+ "width": 0.319,
+ "top": 1.294,
+ "minY": -0.003,
+ "groundY": -0.003,
+ "forward": 0.037,
+ "tris": [
+  4096,
+  1218
+ ],
+ "budget": 4200,
+ "bones": 23,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.78,
+  "Run": 0.55,
+  "Attack_A": 0.95,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.3,
+  "Fly": 0.44
+ },
+ "speeds": {
+  "Walk": 1.3,
+  "Run": 4.6
+ },
+ "bytes": 438940,
+ "held": [],
+ "groundLift": {
+  "Death": 0.145
+ },
+ "notes": "the heron look: long legs, an S neck, a dagger bill and black nape plumes",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/bird.py",
+ "fast": false
+}

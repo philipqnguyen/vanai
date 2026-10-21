@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-07",
+  "method": "Separate temporary account against the single restarted Rails server and ActionCable; QA account removed after checks.",
+  "results": [
+    {
+      "label": "at rendered NPC",
+      "npc": "archivist_junn_mm",
+      "x": 29.195269167022204,
+      "z": 34.679955718002304,
+      "messages": [
+        {
+          "t": "npc_dialog",
+          "npc": "archivist_junn_mm",
+          "name": "Archivist Junn"
+        }
+      ]
+    },
+    {
+      "label": "at rendered NPC",
+      "npc": "provost_selk",
+      "x": -70,
+      "z": 78,
+      "messages": [
+        {
+          "t": "npc_dialog",
+          "npc": "provost_selk",
+          "name": "Provost Selk"
+        }
+      ]
+    },
+    {
+      "label": "genuinely remote",
+      "npc": "archivist_junn_mm",
+      "x": 48.195269167022204,
+      "z": 34.679955718002304,
+      "messages": [
+        {
+          "t": "system",
+          "msg": "Too far away."
+        }
+      ]
+    },
+    {
+      "label": "same position on wrong floor",
+      "npc": "archivist_junn_mm",
+      "x": 29.195269167022204,
+      "z": 34.679955718002304,
+      "messages": [
+        {
+          "t": "system",
+          "msg": "Meet them on the same floor."
+        }
+      ]
+    },
+    {
+      "label": "leave site",
+      "npc": "archivist_junn_mm",
+      "x": 48.195269167022204,
+      "z": 34.679955718002304,
+      "messages": [
+        {
+          "t": "system",
+          "msg": "Too far away."
+        }
+      ]
+    },
+    {
+      "label": "ground floor after return",
+      "npc": "archivist_junn_mm",
+      "x": 29.195269167022204,
+      "z": 34.679955718002304,
+      "messages": [
+        {
+          "t": "npc_dialog",
+          "npc": "archivist_junn_mm",
+          "name": "Archivist Junn"
+        }
+      ]
+    }
+  ]
+}

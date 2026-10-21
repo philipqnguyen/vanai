@@ -1,0 +1,895 @@
+{
+ "opening_caerdun": {
+  "name": "The Sea Gate",
+  "zone": "caerdun",
+  "trigger": {
+   "type": "opening",
+   "city": "caerdun"
+  },
+  "daytime": 0.1,
+  "shots": [
+   {
+    "dur": 9,
+    "fade": {
+     "in": 2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -360,
+       30,
+       -40
+      ],
+      "look": [
+       -150,
+       25,
+       -10
+      ]
+     },
+     "to": {
+      "pos": [
+       -300,
+       24,
+       -25
+      ],
+      "look": [
+       -150,
+       22,
+       -10
+      ]
+     },
+     "ease": "out"
+    },
+    "title": {
+     "at": 1.5,
+     "dur": 6,
+     "text": "Caerdun",
+     "sub": "The Sea Gate"
+    }
+   },
+   {
+    "dur": 10.9,
+    "cam": {
+     "from": {
+      "pos": [
+       -262,
+       16,
+       78
+      ],
+      "look": [
+       -159,
+       24,
+       47
+      ]
+     },
+     "to": {
+      "pos": [
+       -250,
+       21,
+       64
+      ],
+      "look": [
+       -159,
+       28,
+       47
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 5.6,
+      "text": "The night the empire vanished, its border shut with the garrison on the outside."
+     },
+     {
+      "at": 6.2,
+      "dur": 4.6,
+      "text": "The soldiers stayed at their post anyway. The post became Caerdun."
+     }
+    ]
+   },
+   {
+    "dur": 11.2,
+    "cam": {
+     "from": {
+      "pos": [
+       -175,
+       34,
+       -70
+      ],
+      "look": [
+       -20,
+       16,
+       -30
+      ]
+     },
+     "to": {
+      "pos": [
+       -135,
+       42,
+       -38
+      ],
+      "look": [
+       10,
+       14,
+       -22
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 4.3,
+      "text": "Three hundred years on, they still walk the wall every night."
+     },
+     {
+      "at": 4.9,
+      "dur": 6.2,
+      "text": "And in the court's wage vaults, they still write down every wage the empire owes them."
+     }
+    ]
+   },
+   {
+    "dur": 12.4,
+    "fade": {
+     "in": 0.6
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "gate_sergeant_ottey",
+       "off": [
+        1.2,
+        1.9,
+        4.2
+       ]
+      },
+      "look": {
+       "npc": "gate_sergeant_ottey",
+       "off": [
+        0,
+        1.5,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "gate_sergeant_ottey",
+       "off": [
+        0.5,
+        1.7,
+        2.9
+       ]
+      },
+      "look": {
+       "npc": "gate_sergeant_ottey",
+       "off": [
+        0,
+        1.55,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 5.3,
+      "who": "npc:gate_sergeant_ottey",
+      "text": "Four posts on the wall tonight, four muster sheets, and nobody to walk them."
+     },
+     {
+      "at": 6.3,
+      "dur": 6.0,
+      "who": "npc:gate_sergeant_ottey",
+      "text": "If anyone new comes up the stair from the harbour, send them to me at the Drill Yards."
+     }
+    ]
+   },
+   {
+    "dur": 16.7,
+    "fade": {
+     "in": 0.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -209.5,
+       1.9,
+       -16.5
+      ],
+      "look": [
+       -211,
+       1.35,
+       -9
+      ],
+      "fov": 0.72
+     },
+     "to": {
+      "pos": [
+       -210.4,
+       1.8,
+       -15.6
+      ],
+      "look": [
+       -211,
+       1.4,
+       -9
+      ],
+      "fov": 0.68
+     }
+    },
+    "cues": [
+     {
+      "at": 0.8,
+      "who": "self",
+      "face": "npc:cd_resident_inga_daws"
+     },
+     {
+      "at": 0.6,
+      "who": "npc:cd_resident_inga_daws",
+      "face": "self"
+     },
+     {
+      "at": 5.5,
+      "who": "npc:cd_resident_inga_daws",
+      "anim": "emote:Wave",
+      "for": 2.4
+     }
+    ],
+    "lines": [
+     {
+      "at": 1.2,
+      "dur": 7.4,
+      "who": "npc:cd_resident_inga_daws",
+      "text": "Off the boat and staring up the stair. Everyone does. The whole city climbs that cliff, terrace on terrace."
+     },
+     {
+      "at": 8.8,
+      "dur": 7.8,
+      "who": "npc:cd_resident_inga_daws",
+      "text": "Looking for work? Gate-Sergeant Ottey needs hands to walk the wall. The **Drill Yards**: up the stair, then east."
+     }
+    ]
+   },
+   {
+    "dur": 7,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.3,
+        2.1,
+        -4.2
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.7,
+        5
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.7,
+        2.7,
+        -6.5
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.9,
+        7
+       ]
+      }
+     }
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": 1.5708
+     },
+     {
+      "at": 0.9,
+      "who": "self",
+      "walk": {
+       "fwd": 5
+      },
+      "speed": 1.4
+     }
+    ],
+    "lines": [
+     {
+      "at": 1.0,
+      "dur": 3.2,
+      "text": "Up the stair, then east, to the Drill Yards."
+     }
+    ]
+   }
+  ],
+  "mark": [
+   -208,
+   -10,
+   1.5708
+  ]
+ },
+ "opening_heartwood": {
+  "name": "The Living Ring",
+  "zone": "heartwood",
+  "trigger": {
+   "type": "opening",
+   "city": "heartwood"
+  },
+  "daytime": 0.1,
+  "shots": [
+   {
+    "dur": 9,
+    "fade": {
+     "in": 2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -190,
+       115,
+       -190
+      ],
+      "look": [
+       30,
+       40,
+       31
+      ]
+     },
+     "to": {
+      "pos": [
+       -140,
+       100,
+       -150
+      ],
+      "look": [
+       30,
+       45,
+       31
+      ]
+     },
+     "ease": "out"
+    },
+    "title": {
+     "at": 1.5,
+     "dur": 6,
+     "text": "Heartwood",
+     "sub": "The Living Ring"
+    }
+   },
+   {
+    "dur": 10.6,
+    "cam": {
+     "from": {
+      "pos": [
+       -40,
+       12,
+       -40
+      ],
+      "look": [
+       30,
+       30,
+       31
+      ]
+     },
+     "to": {
+      "pos": [
+       -10,
+       8,
+       -15
+      ],
+      "look": [
+       30,
+       36,
+       31
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 10.1,
+      "text": "The empire never took this wood. It felled the groves around it for timber, moved the families out at pike-point, and wrote down every acre it took."
+     }
+    ]
+   },
+   {
+    "dur": 10.1,
+    "cam": {
+     "from": {
+      "pos": [
+       -178,
+       20,
+       -88
+      ],
+      "look": [
+       -134,
+       9,
+       -40
+      ]
+     },
+     "to": {
+      "pos": [
+       -172,
+       22,
+       -81
+      ],
+      "look": [
+       -134,
+       10,
+       -40
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 9.6,
+      "text": "Heartwood wrote it down too, in its grudge hall. And the empire's own writ, promising payment for the groves, says: Restitution upon Return."
+     }
+    ]
+   },
+   {
+    "dur": 12.3,
+    "fade": {
+     "in": 0.6
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "chanter_ives",
+       "off": [
+        0.9,
+        1.25,
+        3.2
+       ]
+      },
+      "look": {
+       "npc": "chanter_ives",
+       "off": [
+        0,
+        0.85,
+        0
+       ]
+      },
+      "fov": 0.6
+     },
+     "to": {
+      "pos": {
+       "npc": "chanter_ives",
+       "off": [
+        0.35,
+        1.05,
+        2.3
+       ]
+      },
+      "look": {
+       "npc": "chanter_ives",
+       "off": [
+        0,
+        0.88,
+        0
+       ]
+      },
+      "fov": 0.6
+     }
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 6.8,
+      "who": "npc:chanter_ives",
+      "text": "Not one new voice on the Song-Steps all week. The trees will think we have stopped having children."
+     },
+     {
+      "at": 7.8,
+      "dur": 4.4,
+      "who": "npc:chanter_ives",
+      "text": "If anyone new comes through the west gate, send them up to me."
+     }
+    ]
+   },
+   {
+    "dur": 17.1,
+    "fade": {
+     "in": 0.6
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -278.5,
+       2.1,
+       -6.5
+      ],
+      "look": [
+       -276,
+       1.5,
+       3.5
+      ],
+      "fov": 0.72
+     },
+     "to": {
+      "pos": [
+       -277.6,
+       1.9,
+       -5.2
+      ],
+      "look": [
+       -276,
+       1.6,
+       3.5
+      ],
+      "fov": 0.68
+     }
+    },
+    "cues": [
+     {
+      "at": 0.8,
+      "who": "self",
+      "face": "npc:hw_resident_jasper_birch"
+     },
+     {
+      "at": 0.6,
+      "who": "npc:hw_resident_jasper_birch",
+      "face": "self"
+     },
+     {
+      "at": 5.5,
+      "who": "npc:hw_resident_jasper_birch",
+      "anim": "emote:Wave",
+      "for": 2.4
+     }
+    ],
+    "lines": [
+     {
+      "at": 1.2,
+      "dur": 6.2,
+      "who": "npc:hw_resident_jasper_birch",
+      "text": "A new face at the west gate. Go gently in here; the trees are old, and they're listening."
+     },
+     {
+      "at": 7.6,
+      "dur": 9.4,
+      "who": "npc:hw_resident_jasper_birch",
+      "text": "The greeting-song comes first, so the trees know you're no stranger. Chanter Ives teaches it on the **Song-Steps**, east across the ring."
+     }
+    ]
+   },
+   {
+    "dur": 7,
+    "fade": {
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.3,
+        2.1,
+        -4.2
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.7,
+        5
+       ]
+      }
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.7,
+        2.7,
+        -6.5
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.9,
+        7
+       ]
+      }
+     }
+    },
+    "cues": [
+     {
+      "at": 0,
+      "who": "self",
+      "face": 1.5708
+     },
+     {
+      "at": 0.9,
+      "who": "self",
+      "walk": {
+       "fwd": 5
+      },
+      "speed": 1.4
+     }
+    ],
+    "lines": [
+     {
+      "at": 1.0,
+      "dur": 2.9,
+      "text": "East across the ring, to the Song-Steps."
+     }
+    ]
+   }
+  ],
+  "mark": [
+   -280,
+   2,
+   1.5708
+  ]
+ },
+ "opening_moonmere": {
+  "name": "The Island Academy",
+  "zone": "moonmere",
+  "trigger": {
+   "type": "opening",
+   "city": "moonmere"
+  },
+  "daytime": 0.1,
+  "shots": [
+   {
+    "dur": 9,
+    "fade": {
+     "in": 2
+    },
+    "cam": {
+     "from": {
+      "pos": [
+       -140,
+       30,
+       340
+      ],
+      "look": [
+       0,
+       30,
+       160
+      ]
+     },
+     "to": {
+      "pos": [
+       -90,
+       24,
+       310
+      ],
+      "look": [
+       0,
+       30,
+       160
+      ]
+     },
+     "ease": "out"
+    },
+    "title": {
+     "at": 1.5,
+     "dur": 6,
+     "text": "Moonmere",
+     "sub": "The Island Academy"
+    }
+   },
+   {
+    "dur": 11.4,
+    "cam": {
+     "from": {
+      "pos": [
+       40,
+       6,
+       270
+      ],
+      "look": [
+       8,
+       14,
+       200
+      ]
+     },
+     "to": {
+      "pos": [
+       30,
+       10,
+       250
+      ],
+      "look": [
+       8,
+       16,
+       180
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 10.9,
+      "text": "The night the empire vanished, its academy stood on this island, a hundred yards out from the shore. The water was enough: the scholars were spared, and stayed."
+     }
+    ]
+   },
+   {
+    "dur": 11.8,
+    "cam": {
+     "from": {
+      "pos": [
+       -30,
+       30,
+       210
+      ],
+      "look": [
+       -75,
+       30,
+       175
+      ]
+     },
+     "to": {
+      "pos": [
+       -40,
+       36,
+       200
+      ],
+      "look": [
+       -75,
+       34,
+       175
+      ]
+     }
+    },
+    "lines": [
+     {
+      "at": 0.4,
+      "dur": 11.3,
+      "text": "Three hundred years on, they are the only people left who can read the empire's records. They are careful about what they read aloud, and about what they keep sealed."
+     }
+    ]
+   },
+   {
+    "dur": 13.3,
+    "fade": {
+     "in": 0.6
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "npc": "archivist_junn_mm",
+       "off": [
+        0.9,
+        1.8,
+        3.2
+       ]
+      },
+      "look": {
+       "npc": "archivist_junn_mm",
+       "off": [
+        0,
+        1.5,
+        0
+       ]
+      },
+      "fov": 0.62
+     },
+     "to": {
+      "pos": {
+       "npc": "archivist_junn_mm",
+       "off": [
+        0.4,
+        1.7,
+        2.5
+       ]
+      },
+      "look": {
+       "npc": "archivist_junn_mm",
+       "off": [
+        0,
+        1.55,
+        0
+       ]
+      },
+      "fov": 0.62
+     }
+    },
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 6.1,
+      "who": "npc:archivist_junn_mm",
+      "text": "The returns are winning. Someone has given back the whole second century's poetry, damp."
+     },
+     {
+      "at": 7.1,
+      "dur": 6.1,
+      "who": "npc:archivist_junn_mm",
+      "text": "If anyone new comes up the causeway, send them to the **Returns Desk**. Send them to me."
+     }
+    ]
+   },
+   {
+    "dur": 10,
+    "fade": {
+     "in": 0.6,
+     "out": 1.4
+    },
+    "cam": {
+     "from": {
+      "pos": {
+       "self": [
+        1.6,
+        1.7,
+        3.6
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        1.45,
+        0
+       ]
+      },
+      "fov": 0.7
+     },
+     "to": {
+      "pos": {
+       "self": [
+        0.8,
+        3.4,
+        -8.5
+       ]
+      },
+      "look": {
+       "self": [
+        0,
+        2.2,
+        8
+       ]
+      }
+     },
+     "via": {
+      "self": [
+       5.5,
+       2.4,
+       -1.5
+      ]
+     }
+    },
+    "cues": [
+     {
+      "at": 3.2,
+      "who": "self",
+      "walk": {
+       "fwd": 6
+      },
+      "speed": 1.4
+     }
+    ],
+    "lines": [
+     {
+      "at": 0.8,
+      "dur": 7.0,
+      "text": "Archivist Junn wants hands. At the end of the causeway road, up the cloister stair: the Returns Desk."
+     }
+    ]
+   }
+  ],
+  "mark": [
+   8,
+   288,
+   3.1416
+  ]
+ }
+}

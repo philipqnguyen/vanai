@@ -1,0 +1,24 @@
+# Async adapter only works within the same process, so for manually triggering cable updates from a console,
+# and seeing results in the browser, you must do so from the web console (running inside the dev process),
+# not a terminal started via bin/rails console! Add "console" to any action or any ERB template view
+# to make the web console appear.
+development:
+  adapter: async
+
+test:
+  adapter: test
+
+# Production's adapter is the game's own (lib/vanai/cable_adapter.rb): the
+# zone:<key> and char:<id> streams are delivered inside the web process, where
+# the world that broadcasts them lives, and everything else -- ActionCable's
+# remote_connections, which `accounts:ban`, a password change and signing out
+# everywhere use to close a player's sockets from another process -- goes
+# through Redis. So nothing outside the web process can reach a player through
+# zone: or char: (not Sidekiq, not a console, not a rake task); to tell players
+# something from there, write it down for the world thread to send.
+production:
+  adapter: vanai
+  # Defaulted rather than required: `assets:precompile` boots the app inside the
+  # Docker build, where no Redis env is set. Kamal supplies the real URL at runtime.
+  url: <%= ENV.fetch("REDIS_CABLE_URL", "redis://localhost:6379/0") %>
+  channel_prefix: vanai_production

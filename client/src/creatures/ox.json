@@ -1,0 +1,44 @@
+{
+ "file": "creatures/ox.glb",
+ "plan": "bovid",
+ "height": 1.65,
+ "length": 2.448,
+ "width": 1.089,
+ "top": 1.65,
+ "minY": 0.003,
+ "groundY": 0.003,
+ "forward": 0.216,
+ "tris": [
+  4158,
+  1246
+ ],
+ "budget": 4200,
+ "bones": 28,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.0,
+  "Run": 0.56,
+  "Attack_A": 1.1,
+  "Attack_B": 1.2,
+  "Hit": 0.45,
+  "Death": 1.5
+ },
+ "speeds": {
+  "Walk": 1.6,
+  "Run": 4.0
+ },
+ "bytes": 398108,
+ "notes": "the ox look: heavy and square, a dewlap, a wide boss of horn, a swinging tail",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/bovid.py",
+ "fast": false,
+ "held": [],
+ "groundLift": {
+  "Death": 0.351
+ }
+}

@@ -1,0 +1,7833 @@
+{
+  "worn_sword": {
+    "name": "Worn Sword",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 1,
+    "rarity": "common",
+    "dmg": 6,
+    "delay": 3.0,
+    "price": 40
+  },
+  "bronze_sword": {
+    "name": "Bronze Sword",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 6,
+    "rarity": "common",
+    "dmg": 11,
+    "delay": 3.0,
+    "stats": {
+      "vit": 1
+    },
+    "price": 320
+  },
+  "iron_sword": {
+    "name": "Iron Longsword",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 12,
+    "rarity": "common",
+    "dmg": 17,
+    "delay": 3.0,
+    "stats": {
+      "vit": 2,
+      "str": 1
+    },
+    "price": 1350
+  },
+  "lamplit_blade": {
+    "name": "Dawnlit Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 18,
+    "rarity": "uncommon",
+    "dmg": 24,
+    "delay": 2.9,
+    "stats": {
+      "vit": 3,
+      "mnd": 2
+    },
+    "price": 4200
+  },
+  "worn_katana": {
+    "name": "Worn Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 1,
+    "rarity": "common",
+    "dmg": 7,
+    "delay": 3.2,
+    "price": 40
+  },
+  "bronze_katana": {
+    "name": "Bronze Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 6,
+    "rarity": "common",
+    "dmg": 12,
+    "delay": 3.2,
+    "stats": {
+      "agi": 1
+    },
+    "price": 320
+  },
+  "iron_katana": {
+    "name": "Iron Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 12,
+    "rarity": "common",
+    "dmg": 19,
+    "delay": 3.2,
+    "stats": {
+      "agi": 2,
+      "str": 1
+    },
+    "price": 1350
+  },
+  "duskfell_katana": {
+    "name": "Duskfell Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 18,
+    "rarity": "uncommon",
+    "dmg": 27,
+    "delay": 3.1,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "price": 4200
+  },
+  "worn_greatsword": {
+    "name": "Worn Greatsword",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 1,
+    "rarity": "common",
+    "dmg": 9,
+    "delay": 3.8,
+    "price": 40
+  },
+  "bronze_greatsword": {
+    "name": "Bronze Greatsword",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 6,
+    "rarity": "common",
+    "dmg": 16,
+    "delay": 3.8,
+    "stats": {
+      "str": 1
+    },
+    "price": 320
+  },
+  "iron_greatsword": {
+    "name": "Iron Greatsword",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 12,
+    "rarity": "common",
+    "dmg": 25,
+    "delay": 3.8,
+    "stats": {
+      "str": 2
+    },
+    "price": 1350
+  },
+  "hollow_greatsword": {
+    "name": "Hollow Greatsword",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 17,
+    "rarity": "rare",
+    "dmg": 34,
+    "delay": 3.6,
+    "stats": {
+      "str": 4,
+      "int": 2
+    },
+    "price": 4200,
+    "desc": "Forged from a silence. It hums when the wild is near."
+  },
+  "ash_staff": {
+    "name": "Ash Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 1,
+    "rarity": "common",
+    "dmg": 4,
+    "delay": 3.6,
+    "stats": {
+      "int": 1
+    },
+    "price": 40
+  },
+  "willow_staff": {
+    "name": "Willow Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 6,
+    "rarity": "common",
+    "dmg": 7,
+    "delay": 3.6,
+    "stats": {
+      "int": 3
+    },
+    "price": 320
+  },
+  "elder_staff": {
+    "name": "Elder Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 12,
+    "rarity": "common",
+    "dmg": 10,
+    "delay": 3.6,
+    "stats": {
+      "int": 5,
+      "mp": 10
+    },
+    "price": 1350
+  },
+  "moonmere_rod": {
+    "name": "Moonmere Rod",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 18,
+    "rarity": "uncommon",
+    "dmg": 13,
+    "delay": 3.5,
+    "stats": {
+      "int": 7,
+      "mp": 20
+    },
+    "price": 4200
+  },
+  "worn_cudgel": {
+    "name": "Worn Cudgel",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 1,
+    "rarity": "common",
+    "dmg": 5,
+    "delay": 3.4,
+    "stats": {
+      "mnd": 1
+    },
+    "price": 40
+  },
+  "bronze_mace": {
+    "name": "Bronze Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 6,
+    "rarity": "common",
+    "dmg": 9,
+    "delay": 3.4,
+    "stats": {
+      "mnd": 3
+    },
+    "price": 320
+  },
+  "vigil_mace": {
+    "name": "Watch Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 12,
+    "rarity": "common",
+    "dmg": 13,
+    "delay": 3.4,
+    "stats": {
+      "mnd": 5,
+      "mp": 8
+    },
+    "price": 1350
+  },
+  "abbess_cane": {
+    "name": "Abbess's Cane",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 17,
+    "rarity": "rare",
+    "dmg": 17,
+    "delay": 3.2,
+    "stats": {
+      "mnd": 7,
+      "mp": 25
+    },
+    "price": 4200,
+    "desc": "Three centuries of prayers are worn into its grip."
+  },
+  "cloth_wraps": {
+    "name": "Cloth Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 1,
+    "rarity": "common",
+    "dmg": 5,
+    "delay": 2.4,
+    "price": 40
+  },
+  "leather_wraps": {
+    "name": "Leather Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 6,
+    "rarity": "common",
+    "dmg": 8,
+    "delay": 2.4,
+    "stats": {
+      "mnd": 2
+    },
+    "price": 320
+  },
+  "studded_wraps": {
+    "name": "Studded Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 12,
+    "rarity": "common",
+    "dmg": 12,
+    "delay": 2.4,
+    "stats": {
+      "mnd": 3,
+      "agi": 2
+    },
+    "price": 1350
+  },
+  "chanters_wraps": {
+    "name": "Chanter's Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 18,
+    "rarity": "uncommon",
+    "dmg": 16,
+    "delay": 2.3,
+    "stats": {
+      "mnd": 5,
+      "mp": 15
+    },
+    "price": 4200
+  },
+  "traveler_tunic": {
+    "name": "Traveler's Tunic",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 1,
+    "rarity": "common",
+    "def": 3,
+    "price": 60
+  },
+  "traveler_slops": {
+    "name": "Traveler's Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 1,
+    "rarity": "common",
+    "def": 2,
+    "price": 45
+  },
+  "traveler_hood": {
+    "name": "Traveler's Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 3,
+    "rarity": "common",
+    "def": 2,
+    "price": 70
+  },
+  "traveler_boots": {
+    "name": "Traveler's Boots",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 3,
+    "rarity": "common",
+    "def": 2,
+    "price": 70
+  },
+  "wold_cloth_robe": {
+    "name": "Woldcloth Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 7,
+    "stats": {
+      "int": 2,
+      "mnd": 2
+    },
+    "price": 520
+  },
+  "wold_cloth_hood": {
+    "name": "Woldcloth Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 4,
+    "stats": {
+      "mp": 8
+    },
+    "price": 380
+  },
+  "wold_cloth_slops": {
+    "name": "Woldcloth Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 5,
+    "stats": {
+      "int": 1
+    },
+    "price": 420
+  },
+  "wold_cloth_shoes": {
+    "name": "Woldcloth Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 3,
+    "stats": {
+      "agi": 1
+    },
+    "price": 340
+  },
+  "argent_robe": {
+    "name": "Argent Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 11,
+    "stats": {
+      "int": 4,
+      "mnd": 4,
+      "mp": 12
+    },
+    "price": 2600
+  },
+  "argent_cap": {
+    "name": "Argent Cap",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "int": 2,
+      "mp": 10
+    },
+    "price": 1900
+  },
+  "lampright_vest": {
+    "name": "Wayfarer Vest",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 9,
+    "stats": {
+      "agi": 1
+    },
+    "price": 560
+  },
+  "lampright_cap": {
+    "name": "Wayfarer Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 5,
+    "price": 400
+  },
+  "lampright_trews": {
+    "name": "Wayfarer Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 6,
+    "price": 450
+  },
+  "lampright_boots": {
+    "name": "Wayfarer Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 4,
+    "stats": {
+      "agi": 1
+    },
+    "price": 360
+  },
+  "gnarled_hide_vest": {
+    "name": "Gnarled Hide Vest",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 15,
+    "rarity": "rare",
+    "def": 16,
+    "stats": {
+      "str": 3,
+      "agi": 4
+    },
+    "price": 0,
+    "price_sell": 600,
+    "desc": "Cut from Gnarlfang's own back. It remembers being feared."
+  },
+  "thornguard_hauberk": {
+    "name": "Thornguard Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 12,
+    "stats": {
+      "vit": 2
+    },
+    "price": 640
+  },
+  "thornguard_coif": {
+    "name": "Thornguard Coif",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 7,
+    "stats": {
+      "vit": 1
+    },
+    "price": 460
+  },
+  "thornguard_chausses": {
+    "name": "Thornguard Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 8,
+    "stats": {
+      "vit": 1
+    },
+    "price": 510
+  },
+  "thornguard_sabatons": {
+    "name": "Thornguard Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 8,
+    "rarity": "common",
+    "def": 5,
+    "price": 400
+  },
+  "greywall_hauberk": {
+    "name": "Greywall Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 17,
+    "stats": {
+      "vit": 4,
+      "hp": 15
+    },
+    "price": 3000
+  },
+  "greywall_helm": {
+    "name": "Greywall Helm",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "vit": 2,
+      "hp": 10
+    },
+    "price": 2200
+  },
+  "hunters_ring": {
+    "name": "Hunter's Ring",
+    "slot": "ring",
+    "lvl": 5,
+    "rarity": "uncommon",
+    "stats": {
+      "agi": 2,
+      "str": 1
+    },
+    "price": 900
+  },
+  "mire_gem": {
+    "name": "Mire Gem Ring",
+    "slot": "ring",
+    "lvl": 10,
+    "rarity": "uncommon",
+    "stats": {
+      "int": 3
+    },
+    "price": 1400
+  },
+  "drake_fang_charm": {
+    "name": "Drake Fang Charm",
+    "slot": "ring",
+    "lvl": 13,
+    "rarity": "rare",
+    "stats": {
+      "str": 3,
+      "vit": 2,
+      "hp": 6
+    },
+    "price": 0,
+    "price_sell": 470
+  },
+  "vigil_locket": {
+    "name": "Watch Locket",
+    "slot": "ring",
+    "lvl": 15,
+    "rarity": "rare",
+    "stats": {
+      "mnd": 3,
+      "mp": 14,
+      "hp": 6
+    },
+    "price": 0,
+    "price_sell": 560,
+    "desc": "A watch officer's portrait, worn to nothing but a warm outline."
+  },
+  "keepers_cord": {
+    "name": "Keeper's Cord",
+    "slot": "ring",
+    "lvl": 14,
+    "rarity": "rare",
+    "stats": {
+      "mnd": 2,
+      "vit": 2
+    },
+    "price": 0,
+    "price_sell": 510
+  },
+  "wardens_signet": {
+    "name": "Warden's Signet",
+    "slot": "ring",
+    "lvl": 16,
+    "rarity": "rare",
+    "stats": {
+      "str": 2,
+      "vit": 2,
+      "mnd": 2,
+      "hp": 8
+    },
+    "price": 0,
+    "price_sell": 600
+  },
+  "gnarlfang_fang": {
+    "name": "Gnarlfang's Fang",
+    "slot": "ring",
+    "lvl": 15,
+    "rarity": "rare",
+    "stats": {
+      "str": 4,
+      "hp": 8
+    },
+    "price": 0,
+    "price_sell": 560,
+    "desc": "Still faintly cold."
+  },
+  "warders_lantern": {
+    "name": "The Warder's Lantern",
+    "slot": "ring",
+    "lvl": 17,
+    "rarity": "rare",
+    "stats": {
+      "mnd": 3,
+      "int": 3,
+      "hp": 10,
+      "mp": 10
+    },
+    "price": 0,
+    "price_sell": 640,
+    "desc": "Its little flame does not gutter, even underground. Especially underground."
+  },
+  "potion": {
+    "name": "Potion",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 40,
+    "price": 30,
+    "desc": "Restores 40 HP."
+  },
+  "hi_potion": {
+    "name": "Hi-Potion",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 110,
+    "price": 140,
+    "desc": "Restores 110 HP."
+  },
+  "ether": {
+    "name": "Ether",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "mp",
+    "power": 30,
+    "price": 90,
+    "desc": "Restores 30 MP."
+  },
+  "gloam_pelt": {
+    "name": "Feral Pelt",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 12,
+    "desc": "Fur off the empire's stock gone feral. Three centuries inside the border turned it the colour of the woods."
+  },
+  "wolf_fang": {
+    "name": "Wolf Fang",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 8
+  },
+  "boar_hide": {
+    "name": "Boar Hide",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 10
+  },
+  "boar_tusk": {
+    "name": "Boar Tusk",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 14
+  },
+  "sprite_dust": {
+    "name": "Sprite Dust",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 16,
+    "desc": "Glitters faintly, then thinks better of it."
+  },
+  "dim_ember": {
+    "name": "Dim Ember",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 40
+  },
+  "stag_antler": {
+    "name": "Elder Antler",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 20,
+    "desc": "A shed antler of the old herds."
+  },
+  "drake_scale": {
+    "name": "Drake Scale",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 24
+  },
+  "silver_shell": {
+    "name": "Silver Shell",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 20
+  },
+  "crab_meat": {
+    "name": "Crab Meat",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 9,
+    "price": 36
+  },
+  "wight_ash": {
+    "name": "Wight Ash",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 30,
+    "desc": "Ash that was never anything burned."
+  },
+  "echo_shard": {
+    "name": "Echo Shard",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 150,
+    "desc": "It repeats a bell that rang three hundred years ago."
+  },
+  "antidote": {
+    "name": "Antidote",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "cure_poison",
+    "price": 40,
+    "desc": "Neutralizes venom."
+  },
+  "eye_drops": {
+    "name": "Eye Drops",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "cure_blind",
+    "price": 35,
+    "desc": "Washes the wild from your eyes."
+  },
+  "remedy": {
+    "name": "Remedy",
+    "slot": "consumable",
+    "rarity": "uncommon",
+    "effect": "cure_all",
+    "price": 150,
+    "desc": "The old panacea. Cures all ailments."
+  },
+  "wold_blade": {
+    "name": "Wold Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 9,
+    "rarity": "common",
+    "dmg": 14,
+    "delay": 2.9,
+    "stats": {
+      "agi": 1
+    },
+    "price": 720
+  },
+  "ronin_katana": {
+    "name": "Ronin Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 9,
+    "rarity": "common",
+    "dmg": 15,
+    "delay": 3.1,
+    "stats": {
+      "str": 1
+    },
+    "price": 720
+  },
+  "wold_cleaver": {
+    "name": "Wold Cleaver",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 9,
+    "rarity": "common",
+    "dmg": 20,
+    "delay": 3.7,
+    "stats": {
+      "vit": 1
+    },
+    "price": 720
+  },
+  "yew_staff": {
+    "name": "Yew Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 9,
+    "rarity": "common",
+    "dmg": 8,
+    "delay": 3.5,
+    "stats": {
+      "int": 4,
+      "mp": 6
+    },
+    "price": 720
+  },
+  "pilgrims_mace": {
+    "name": "Pilgrim's Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 9,
+    "rarity": "common",
+    "dmg": 11,
+    "delay": 3.3,
+    "stats": {
+      "mnd": 4
+    },
+    "price": 720
+  },
+  "iron_knuckles": {
+    "name": "Iron Knuckles",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 9,
+    "rarity": "common",
+    "dmg": 10,
+    "delay": 2.4,
+    "stats": {
+      "str": 1,
+      "mnd": 2
+    },
+    "price": 720
+  },
+  "waywatcher_jerkin": {
+    "name": "Waywatcher Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 13,
+    "rarity": "common",
+    "def": 12,
+    "stats": {
+      "agi": 3
+    },
+    "price": 1900
+  },
+  "waywatcher_hood": {
+    "name": "Waywatcher Hood",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 13,
+    "rarity": "common",
+    "def": 7,
+    "stats": {
+      "agi": 2
+    },
+    "price": 1400
+  },
+  "waywatcher_trews": {
+    "name": "Waywatcher Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 13,
+    "rarity": "common",
+    "def": 8,
+    "stats": {
+      "agi": 2
+    },
+    "price": 1550
+  },
+  "waywatcher_boots": {
+    "name": "Waywatcher Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 13,
+    "rarity": "common",
+    "def": 5,
+    "stats": {
+      "agi": 2
+    },
+    "price": 1250
+  },
+  "argent_slops": {
+    "name": "Argent Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "int": 2,
+      "mnd": 2
+    },
+    "price": 2200
+  },
+  "argent_shoes": {
+    "name": "Argent Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 6,
+    "stats": {
+      "mp": 10
+    },
+    "price": 1800
+  },
+  "greywall_chausses": {
+    "name": "Greywall Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 11,
+    "stats": {
+      "vit": 2,
+      "hp": 10
+    },
+    "price": 2400
+  },
+  "greywall_sabatons": {
+    "name": "Greywall Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "vit": 2
+    },
+    "price": 2000
+  },
+  "drowned_katana": {
+    "name": "The Drowned Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 17,
+    "rarity": "rare",
+    "dmg": 28,
+    "delay": 3.0,
+    "stats": {
+      "agi": 4,
+      "str": 2
+    },
+    "price": 0,
+    "price_sell": 780,
+    "desc": "Rippled steel that never fully dries."
+  },
+  "bellbronze_mace": {
+    "name": "Bellbronze Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 17,
+    "rarity": "rare",
+    "dmg": 18,
+    "delay": 3.2,
+    "stats": {
+      "mnd": 6,
+      "mp": 20
+    },
+    "price": 4200,
+    "desc": "Cast from the bronze of the drowned valley's bell, the one that rings for nobody. It rings when swung true."
+  },
+  "bell_toll_band": {
+    "name": "Bell-Toll Band",
+    "slot": "ring",
+    "lvl": 19,
+    "rarity": "rare",
+    "stats": {
+      "mnd": 3,
+      "vit": 3,
+      "mp": 14
+    },
+    "price": 0,
+    "price_sell": 780,
+    "desc": "Hums faintly, always at the same note."
+  },
+  "summit_charm": {
+    "name": "Summit Charm",
+    "slot": "ring",
+    "lvl": 8,
+    "rarity": "uncommon",
+    "stats": {
+      "vit": 1,
+      "mnd": 1,
+      "hp": 8
+    },
+    "price": 900
+  },
+  "silt_pearl": {
+    "name": "Silt Pearl",
+    "slot": "ring",
+    "lvl": 16,
+    "rarity": "rare",
+    "stats": {
+      "int": 4,
+      "mp": 12
+    },
+    "price": 0,
+    "price_sell": 600
+  },
+  "venom_sac": {
+    "name": "Venom Sac",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 26
+  },
+  "drowned_relic": {
+    "name": "Drowned Relic",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 42,
+    "desc": "A votive from the sunken nave, worn smooth by the loch."
+  },
+  "meredge_blade": {
+    "name": "Meredge Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 20,
+    "rarity": "rare",
+    "dmg": 28,
+    "delay": 2.9,
+    "stats": {
+      "vit": 3,
+      "mnd": 3
+    },
+    "price": 0,
+    "price_sell": 900
+  },
+  "rootcleaver": {
+    "name": "Rootcleaver",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 20,
+    "rarity": "rare",
+    "dmg": 39,
+    "delay": 3.6,
+    "stats": {
+      "str": 5,
+      "vit": 2
+    },
+    "price": 0,
+    "price_sell": 900
+  },
+  "mistwalker_katana": {
+    "name": "Mistwalker",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 20,
+    "rarity": "rare",
+    "dmg": 31,
+    "delay": 3.1,
+    "stats": {
+      "agi": 4,
+      "str": 2
+    },
+    "price": 0,
+    "price_sell": 900
+  },
+  "merelight_staff": {
+    "name": "Merelight Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 20,
+    "rarity": "rare",
+    "dmg": 15,
+    "delay": 3.4,
+    "stats": {
+      "int": 8,
+      "mnd": 2,
+      "mp": 24
+    },
+    "price": 0,
+    "price_sell": 900
+  },
+  "heartwood_maul": {
+    "name": "Heartwood Maul",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 20,
+    "rarity": "rare",
+    "dmg": 20,
+    "delay": 3.2,
+    "stats": {
+      "mnd": 8,
+      "mp": 28
+    },
+    "price": 0,
+    "price_sell": 900
+  },
+  "rootbound_wraps": {
+    "name": "Rootbound Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 20,
+    "rarity": "rare",
+    "dmg": 19,
+    "delay": 2.6,
+    "stats": {
+      "mnd": 5,
+      "agi": 3,
+      "mp": 16
+    },
+    "price": 0,
+    "price_sell": 900
+  },
+  "wardenbark_helm": {
+    "name": "Wardenbark Helm",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "vit": 3,
+      "hp": 10
+    },
+    "price": 3400
+  },
+  "wardenbark_cuirass": {
+    "name": "Wardenbark Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 19,
+    "rarity": "rare",
+    "def": 20,
+    "stats": {
+      "vit": 5,
+      "hp": 20
+    },
+    "price": 5200
+  },
+  "wardenbark_greaves": {
+    "name": "Wardenbark Greaves",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "vit": 3,
+      "str": 2
+    },
+    "price": 3800
+  },
+  "wardenbark_sabatons": {
+    "name": "Wardenbark Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "vit": 2,
+      "agi": 2
+    },
+    "price": 3000
+  },
+  "merewoven_hood": {
+    "name": "Merewoven Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "int": 3,
+      "mp": 12
+    },
+    "price": 3400
+  },
+  "merewoven_robe": {
+    "name": "Merewoven Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 19,
+    "rarity": "rare",
+    "def": 13,
+    "stats": {
+      "int": 5,
+      "mnd": 5,
+      "mp": 20
+    },
+    "price": 5200
+  },
+  "merewoven_slops": {
+    "name": "Merewoven Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "mnd": 3,
+      "mp": 8
+    },
+    "price": 3800
+  },
+  "merewoven_sandals": {
+    "name": "Merewoven Sandals",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "agi": 2,
+      "int": 2
+    },
+    "price": 3000
+  },
+  "thornhide_cap": {
+    "name": "Thornhide Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "agi": 3
+    },
+    "price": 3400
+  },
+  "thornhide_jerkin": {
+    "name": "Thornhide Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 19,
+    "rarity": "rare",
+    "def": 17,
+    "stats": {
+      "agi": 5,
+      "str": 3
+    },
+    "price": 5200
+  },
+  "thornhide_trews": {
+    "name": "Thornhide Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "price": 3800
+  },
+  "thornhide_boots": {
+    "name": "Thornhide Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 19,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "agi": 3
+    },
+    "price": 3000
+  },
+  "thorn_band": {
+    "name": "Thorn Band",
+    "slot": "ring",
+    "lvl": 16,
+    "rarity": "uncommon",
+    "stats": {
+      "str": 2,
+      "agi": 2
+    },
+    "price": 0,
+    "price_sell": 300
+  },
+  "mere_pearl_ring": {
+    "name": "Mere Pearl Ring",
+    "slot": "ring",
+    "lvl": 18,
+    "rarity": "rare",
+    "stats": {
+      "int": 3,
+      "mp": 10
+    },
+    "price": 0,
+    "price_sell": 420
+  },
+  "wardens_heartwood": {
+    "name": "Warden's Heartwood",
+    "slot": "ring",
+    "lvl": 19,
+    "rarity": "rare",
+    "stats": {
+      "vit": 3,
+      "mnd": 3,
+      "hp": 12
+    },
+    "price": 0,
+    "price_sell": 800
+  },
+  "thorn_resin": {
+    "name": "Thorn Resin",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 14,
+    "desc": "Amber-dark sap that smells faintly of burnt honey."
+  },
+  "root_amber": {
+    "name": "Root Amber",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 42,
+    "desc": "Sap turned to stone around something that still moves."
+  },
+  "mire_pearl": {
+    "name": "Mire Pearl",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 55,
+    "desc": "A gray pearl from the fen shallows. It is always cold."
+  },
+  "fen_shell": {
+    "name": "Fen Shell",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 16,
+    "desc": "A lurker's plate, tough as boiled leather."
+  },
+  "wisp_essence": {
+    "name": "Wisp Essence",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 38,
+    "desc": "Light that pours like water and will not fill anything."
+  },
+  "quillback_hide": {
+    "name": "Quillback Hide",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 15,
+    "rarity": "rare",
+    "def": 16,
+    "stats": {
+      "str": 3,
+      "vit": 3
+    },
+    "price": 0,
+    "price_sell": 600
+  },
+  "duskmaw_fang": {
+    "name": "Duskmaw Fang",
+    "slot": "ring",
+    "lvl": 14,
+    "rarity": "rare",
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "price": 0,
+    "price_sell": 520
+  },
+  "paleshell_band": {
+    "name": "Paleshell Band",
+    "slot": "ring",
+    "lvl": 16,
+    "rarity": "rare",
+    "stats": {
+      "vit": 3,
+      "hp": 12
+    },
+    "price": 0,
+    "price_sell": 600
+  },
+  "sedge_lantern": {
+    "name": "Sedge Lantern",
+    "slot": "ring",
+    "lvl": 19,
+    "rarity": "rare",
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 12
+    },
+    "price": 0,
+    "price_sell": 780
+  },
+  "drakescale_vest": {
+    "name": "Drakescale Vest",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 16,
+    "rarity": "uncommon",
+    "def": 15,
+    "stats": {
+      "agi": 3,
+      "vit": 2
+    },
+    "price": 0,
+    "price_sell": 420
+  },
+  "fenshell_helm": {
+    "name": "Fenshell Helm",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 15,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "vit": 2,
+      "hp": 8
+    },
+    "price": 0,
+    "price_sell": 300
+  },
+  "antler_band": {
+    "name": "Antler Band",
+    "slot": "ring",
+    "lvl": 13,
+    "rarity": "uncommon",
+    "stats": {
+      "str": 1,
+      "agi": 1,
+      "hp": 6
+    },
+    "price": 0,
+    "price_sell": 220
+  },
+  "lantern_oil_flask": {
+    "name": "Hot Stew",
+    "slot": "consumable",
+    "rarity": "uncommon",
+    "effect": "heal",
+    "power": 70,
+    "price": 60,
+    "price_sell": 60,
+    "desc": "Restores 70 HP. The inn's own, in a lidded flask. Burns warm going down."
+  },
+  "lamproot": {
+    "name": "Sunroot",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 12,
+    "desc": "A pale tuber that holds a day of sunlight. Alchemists prize it; soup ruins it."
+  },
+  "glimmer_ore": {
+    "name": "Glimmer Ore",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 18,
+    "desc": "Ore threaded with light-bearing vein. Rings true when struck."
+  },
+  "mere_reed": {
+    "name": "Mere Reed",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 12,
+    "desc": "Hollow reed from the falling shallows. Whistles in a north wind."
+  },
+  "glimmer_band": {
+    "name": "Glimmer Band",
+    "slot": "ring",
+    "lvl": 10,
+    "rarity": "uncommon",
+    "stats": {
+      "int": 1,
+      "mnd": 1,
+      "mp": 6
+    },
+    "price": 0,
+    "price_sell": 180
+  },
+  "hushward_plate": {
+    "name": "Household Plate",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 20,
+    "rarity": "rare",
+    "def": 22,
+    "stats": {
+      "vit": 6,
+      "hp": 25
+    },
+    "price": 0,
+    "price_sell": 1100
+  },
+  "hushward_helm": {
+    "name": "Household Helm",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 20,
+    "rarity": "rare",
+    "def": 11,
+    "stats": {
+      "vit": 3,
+      "mnd": 2
+    },
+    "price": 0,
+    "price_sell": 800
+  },
+  "unlit_crown": {
+    "name": "The Unlit Crown",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 20,
+    "rarity": "rare",
+    "def": 9,
+    "stats": {
+      "int": 5,
+      "mnd": 5,
+      "mp": 20
+    },
+    "price": 0,
+    "price_sell": 1400
+  },
+  "kings_last_light": {
+    "name": "The King's Last Light",
+    "slot": "ring",
+    "lvl": 20,
+    "rarity": "rare",
+    "stats": {
+      "str": 3,
+      "int": 3,
+      "mnd": 3,
+      "hp": 10,
+      "mp": 10
+    },
+    "price": 0,
+    "price_sell": 1600
+  },
+  "ash_pearl": {
+    "name": "Ash Pearl",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 60,
+    "desc": "A pearl of pressed ash. Cold enough to remember being warm."
+  },
+  "fox_pelt": {
+    "name": "Marsh-fox Pelt",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 10,
+    "desc": "Rust-red fur that sheds fen-water like glass."
+  },
+  "votive_wax": {
+    "name": "Votive Wax",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 22,
+    "desc": "Candle-wax from the drowned shrine. It never quite hardens."
+  },
+  "amber_resin": {
+    "name": "Amber Resin",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 30,
+    "desc": "Sun-colored sap, set hard. Something is always caught in it."
+  },
+  "amber_shard": {
+    "name": "Amber Shard",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 44,
+    "desc": "A broken pane of the wastes' glass. It hums faintly at dusk."
+  },
+  "glass_scale": {
+    "name": "Glass Scale",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 40,
+    "desc": "A drake scale gone translucent. Light passes through; heat does not."
+  },
+  "mere_tear": {
+    "name": "Mere Tear",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 52,
+    "desc": "A bead of lake water that will not dry. Cold, and heavier than water should be."
+  },
+  "silt_chitin": {
+    "name": "Silt Chitin",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 46,
+    "desc": "Plate from a strider's back, silted through with old riverbed."
+  },
+  "brine_pearl": {
+    "name": "Brine Pearl",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 70,
+    "desc": "A pearl grown around grief, in water that no longer exists."
+  },
+  "cinder_ash": {
+    "name": "Cinder Ash",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 58,
+    "desc": "Ash that remembers being fire. Warm in any weather."
+  },
+  "slag_iron": {
+    "name": "Slag Iron",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 66,
+    "desc": "Forge-waste with good iron still in it, if you have the patience."
+  },
+  "ember_glass": {
+    "name": "Ember Glass",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 74,
+    "desc": "Glass from the dead forges. A spark still wanders inside it."
+  },
+  "pale_petal": {
+    "name": "Pale Petal",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 80,
+    "desc": "A flower of the King's Gardens, pale as the stags that carry it. It blooms without any light at all."
+  },
+  "gloam_thread": {
+    "name": "Wild Thread",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 90,
+    "desc": "Silk off the Gardens' stock gone wild, three centuries past its last loom. It still takes a stitch, and holds it."
+  },
+  "first_ash": {
+    "name": "First Ash",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 110,
+    "desc": "Ash from the morning of the burn, from the centre. It falls upward, slowly."
+  },
+  "x_potion": {
+    "name": "X-Potion",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 260,
+    "price": 520,
+    "desc": "Restores 260 HP."
+  },
+  "mega_potion": {
+    "name": "Mega Potion",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 520,
+    "price": 1250,
+    "desc": "Restores 520 HP."
+  },
+  "hi_ether": {
+    "name": "Hi-Ether",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "mp",
+    "power": 70,
+    "price": 640,
+    "desc": "Restores 70 MP."
+  },
+  "amberglass_sword": {
+    "name": "Amberglass Sword",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 26,
+    "rarity": "common",
+    "dmg": 33,
+    "delay": 3.0,
+    "stats": {
+      "vit": 3,
+      "str": 2
+    },
+    "price": 6084
+  },
+  "amberglass_katana": {
+    "name": "Amberglass Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 26,
+    "rarity": "common",
+    "dmg": 37,
+    "delay": 3.2,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "price": 6084
+  },
+  "amberglass_greatsword": {
+    "name": "Amberglass Greatsword",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 26,
+    "rarity": "common",
+    "dmg": 48,
+    "delay": 3.8,
+    "stats": {
+      "str": 3
+    },
+    "price": 6084
+  },
+  "amberglass_staff": {
+    "name": "Amberglass Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 26,
+    "rarity": "common",
+    "dmg": 20,
+    "delay": 3.6,
+    "stats": {
+      "int": 4,
+      "mp": 26
+    },
+    "price": 6084
+  },
+  "amberglass_cudgel": {
+    "name": "Amberglass Cudgel",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 26,
+    "rarity": "common",
+    "dmg": 25,
+    "delay": 3.4,
+    "stats": {
+      "mnd": 4,
+      "mp": 18
+    },
+    "price": 6084
+  },
+  "amberglass_knuckles": {
+    "name": "Amberglass Knuckles",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 26,
+    "rarity": "common",
+    "dmg": 24,
+    "delay": 2.4,
+    "stats": {
+      "mnd": 3,
+      "agi": 2
+    },
+    "price": 6084
+  },
+  "tideworn_blade": {
+    "name": "Tideworn Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 34,
+    "rarity": "common",
+    "dmg": 42,
+    "delay": 3.0,
+    "stats": {
+      "vit": 4,
+      "str": 3
+    },
+    "price": 10404
+  },
+  "tideworn_katana": {
+    "name": "Tideworn Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 34,
+    "rarity": "common",
+    "dmg": 47,
+    "delay": 3.2,
+    "stats": {
+      "agi": 4,
+      "str": 3
+    },
+    "price": 10404
+  },
+  "tideworn_greatsword": {
+    "name": "Tideworn Greatsword",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 34,
+    "rarity": "common",
+    "dmg": 62,
+    "delay": 3.8,
+    "stats": {
+      "str": 4
+    },
+    "price": 10404
+  },
+  "tideglass_rod": {
+    "name": "Tideglass Rod",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 34,
+    "rarity": "common",
+    "dmg": 25,
+    "delay": 3.6,
+    "stats": {
+      "int": 5,
+      "mp": 34
+    },
+    "price": 10404
+  },
+  "tideworn_maul": {
+    "name": "Tideworn Maul",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 34,
+    "rarity": "common",
+    "dmg": 32,
+    "delay": 3.4,
+    "stats": {
+      "mnd": 5,
+      "mp": 26
+    },
+    "price": 10404
+  },
+  "tideworn_wraps": {
+    "name": "Tideworn Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 34,
+    "rarity": "common",
+    "dmg": 30,
+    "delay": 2.4,
+    "stats": {
+      "mnd": 4,
+      "agi": 3
+    },
+    "price": 10404
+  },
+  "cinderforged_sword": {
+    "name": "Cinderforged Sword",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 42,
+    "rarity": "common",
+    "dmg": 51,
+    "delay": 3.0,
+    "stats": {
+      "vit": 5,
+      "str": 4
+    },
+    "price": 15876
+  },
+  "cinderforged_katana": {
+    "name": "Cinderforged Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 42,
+    "rarity": "common",
+    "dmg": 57,
+    "delay": 3.2,
+    "stats": {
+      "agi": 5,
+      "str": 4
+    },
+    "price": 15876
+  },
+  "cinderforged_greatsword": {
+    "name": "Cinderforged Greatsword",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 42,
+    "rarity": "common",
+    "dmg": 75,
+    "delay": 3.8,
+    "stats": {
+      "str": 6
+    },
+    "price": 15876
+  },
+  "emberglass_staff": {
+    "name": "Emberglass Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 42,
+    "rarity": "common",
+    "dmg": 30,
+    "delay": 3.6,
+    "stats": {
+      "int": 7,
+      "mp": 42
+    },
+    "price": 15876
+  },
+  "cinderforged_mace": {
+    "name": "Cinderforged Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 42,
+    "rarity": "common",
+    "dmg": 39,
+    "delay": 3.4,
+    "stats": {
+      "mnd": 7,
+      "mp": 34
+    },
+    "price": 15876
+  },
+  "cinderforged_fists": {
+    "name": "Cinderforged Fists",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 42,
+    "rarity": "common",
+    "dmg": 36,
+    "delay": 2.4,
+    "stats": {
+      "mnd": 5,
+      "agi": 4
+    },
+    "price": 15876
+  },
+  "palegarden_blade": {
+    "name": "Palace Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 48,
+    "rarity": "rare",
+    "dmg": 67,
+    "delay": 3.0,
+    "stats": {
+      "vit": 6,
+      "str": 4
+    },
+    "price": 20736
+  },
+  "palegarden_katana": {
+    "name": "Palace Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 48,
+    "rarity": "rare",
+    "dmg": 75,
+    "delay": 3.2,
+    "stats": {
+      "agi": 6,
+      "str": 4
+    },
+    "price": 20736
+  },
+  "palegarden_greatsword": {
+    "name": "Palace Greatsword",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 48,
+    "rarity": "rare",
+    "dmg": 98,
+    "delay": 3.8,
+    "stats": {
+      "str": 6
+    },
+    "price": 20736
+  },
+  "palelight_staff": {
+    "name": "Palelight Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 48,
+    "rarity": "rare",
+    "dmg": 40,
+    "delay": 3.6,
+    "stats": {
+      "int": 8,
+      "mp": 48
+    },
+    "price": 20736
+  },
+  "palelight_mace": {
+    "name": "Palelight Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 48,
+    "rarity": "rare",
+    "dmg": 51,
+    "delay": 3.4,
+    "stats": {
+      "mnd": 8,
+      "mp": 40
+    },
+    "price": 20736
+  },
+  "palegarden_wraps": {
+    "name": "Palace Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 48,
+    "rarity": "rare",
+    "dmg": 48,
+    "delay": 2.4,
+    "stats": {
+      "mnd": 6,
+      "agi": 5
+    },
+    "price": 20736
+  },
+  "amberplate_cuirass": {
+    "name": "Amberplate Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 29,
+    "stats": {
+      "vit": 4,
+      "hp": 27
+    },
+    "price": 10498
+  },
+  "amberplate_helm": {
+    "name": "Amberplate Helm",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 13,
+    "stats": {
+      "vit": 3,
+      "hp": 13
+    },
+    "price": 6299
+  },
+  "amberplate_chausses": {
+    "name": "Amberplate Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 22,
+    "stats": {
+      "vit": 3,
+      "hp": 13
+    },
+    "price": 8398
+  },
+  "amberplate_sabatons": {
+    "name": "Amberplate Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 14,
+    "stats": {
+      "vit": 3,
+      "hp": 13
+    },
+    "price": 5774
+  },
+  "glasswoven_robe": {
+    "name": "Glasswoven Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 18,
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 27
+    },
+    "price": 10498
+  },
+  "glasswoven_hood": {
+    "name": "Glasswoven Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 10,
+    "stats": {
+      "int": 2,
+      "mnd": 2,
+      "mp": 13
+    },
+    "price": 6299
+  },
+  "glasswoven_slops": {
+    "name": "Glasswoven Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 14,
+    "stats": {
+      "int": 2,
+      "mnd": 2,
+      "mp": 13
+    },
+    "price": 8398
+  },
+  "glasswoven_sandals": {
+    "name": "Glasswoven Sandals",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 9,
+    "stats": {
+      "int": 2,
+      "mnd": 2,
+      "mp": 13
+    },
+    "price": 5774
+  },
+  "wastewalker_cap": {
+    "name": "Wastewalker Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 12,
+    "stats": {
+      "agi": 4
+    },
+    "price": 6299
+  },
+  "wastewalker_jerkin": {
+    "name": "Wastewalker Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 23,
+    "stats": {
+      "agi": 6,
+      "str": 4
+    },
+    "price": 10498
+  },
+  "wastewalker_trews": {
+    "name": "Wastewalker Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 18,
+    "stats": {
+      "agi": 4,
+      "str": 2
+    },
+    "price": 8398
+  },
+  "wastewalker_boots": {
+    "name": "Wastewalker Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 27,
+    "rarity": "common",
+    "def": 11,
+    "stats": {
+      "agi": 3
+    },
+    "price": 5774
+  },
+  "tidewarden_cuirass": {
+    "name": "Tidewarden Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 37,
+    "stats": {
+      "vit": 5,
+      "hp": 35
+    },
+    "price": 17640
+  },
+  "tidewarden_helm": {
+    "name": "Tidewarden Helm",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 17,
+    "stats": {
+      "vit": 3,
+      "hp": 17
+    },
+    "price": 10584
+  },
+  "tidewarden_chausses": {
+    "name": "Tidewarden Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 28,
+    "stats": {
+      "vit": 3,
+      "hp": 17
+    },
+    "price": 14112
+  },
+  "tidewarden_sabatons": {
+    "name": "Tidewarden Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 18,
+    "stats": {
+      "vit": 3,
+      "hp": 17
+    },
+    "price": 9702
+  },
+  "deepsilk_robe": {
+    "name": "Deepsilk Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 23,
+    "stats": {
+      "int": 4,
+      "mnd": 4,
+      "mp": 35
+    },
+    "price": 17640
+  },
+  "deepsilk_hood": {
+    "name": "Deepsilk Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 12,
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 17
+    },
+    "price": 10584
+  },
+  "deepsilk_slops": {
+    "name": "Deepsilk Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 17,
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 17
+    },
+    "price": 14112
+  },
+  "deepsilk_sandals": {
+    "name": "Deepsilk Sandals",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 12,
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 17
+    },
+    "price": 9702
+  },
+  "tiderunner_cap": {
+    "name": "Tiderunner Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 15,
+    "stats": {
+      "agi": 5
+    },
+    "price": 10584
+  },
+  "tiderunner_jerkin": {
+    "name": "Tiderunner Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 30,
+    "stats": {
+      "agi": 8,
+      "str": 5
+    },
+    "price": 17640
+  },
+  "tiderunner_trews": {
+    "name": "Tiderunner Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 22,
+    "stats": {
+      "agi": 5,
+      "str": 3
+    },
+    "price": 14112
+  },
+  "tiderunner_boots": {
+    "name": "Tiderunner Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 35,
+    "rarity": "common",
+    "def": 15,
+    "stats": {
+      "agi": 4
+    },
+    "price": 9702
+  },
+  "cinderguard_cuirass": {
+    "name": "Cinderguard Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 45,
+    "stats": {
+      "vit": 7,
+      "hp": 43
+    },
+    "price": 26626
+  },
+  "cinderguard_helm": {
+    "name": "Cinderguard Helm",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 20,
+    "stats": {
+      "vit": 4,
+      "hp": 21
+    },
+    "price": 15976
+  },
+  "cinderguard_chausses": {
+    "name": "Cinderguard Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 34,
+    "stats": {
+      "vit": 4,
+      "hp": 21
+    },
+    "price": 21301
+  },
+  "cinderguard_sabatons": {
+    "name": "Cinderguard Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 22,
+    "stats": {
+      "vit": 4,
+      "hp": 21
+    },
+    "price": 14644
+  },
+  "embersilk_robe": {
+    "name": "Embersilk Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 28,
+    "stats": {
+      "int": 5,
+      "mnd": 5,
+      "mp": 43
+    },
+    "price": 26626
+  },
+  "embersilk_hood": {
+    "name": "Embersilk Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 13,
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 21
+    },
+    "price": 15976
+  },
+  "embersilk_slops": {
+    "name": "Embersilk Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 21,
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 21
+    },
+    "price": 21301
+  },
+  "embersilk_sandals": {
+    "name": "Embersilk Sandals",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 14,
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 21
+    },
+    "price": 14644
+  },
+  "ashstalker_cap": {
+    "name": "Ashstalker Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 16,
+    "stats": {
+      "agi": 6
+    },
+    "price": 15976
+  },
+  "ashstalker_jerkin": {
+    "name": "Ashstalker Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 36,
+    "stats": {
+      "agi": 10,
+      "str": 6
+    },
+    "price": 26626
+  },
+  "ashstalker_trews": {
+    "name": "Ashstalker Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 27,
+    "stats": {
+      "agi": 6,
+      "str": 4
+    },
+    "price": 21301
+  },
+  "ashstalker_boots": {
+    "name": "Ashstalker Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 43,
+    "rarity": "common",
+    "def": 18,
+    "stats": {
+      "agi": 5
+    },
+    "price": 14644
+  },
+  "firstward_cuirass": {
+    "name": "Firstward Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 54,
+    "stats": {
+      "vit": 10,
+      "hp": 56
+    },
+    "price": 33178
+  },
+  "firstward_helm": {
+    "name": "Firstward Helm",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 22,
+    "stats": {
+      "vit": 5,
+      "hp": 24
+    },
+    "price": 19907
+  },
+  "firstward_chausses": {
+    "name": "Firstward Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 38,
+    "stats": {
+      "vit": 5,
+      "hp": 24
+    },
+    "price": 26542
+  },
+  "firstward_sabatons": {
+    "name": "Firstward Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 25,
+    "stats": {
+      "vit": 5,
+      "hp": 24
+    },
+    "price": 18248
+  },
+  "gloamweave_robe": {
+    "name": "Wildweave Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 31,
+    "stats": {
+      "int": 6,
+      "mnd": 6,
+      "mp": 48
+    },
+    "price": 33178
+  },
+  "gloamweave_hood": {
+    "name": "Wildweave Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 14,
+    "stats": {
+      "int": 6,
+      "mnd": 6,
+      "mp": 28
+    },
+    "price": 19907
+  },
+  "gloamweave_slops": {
+    "name": "Wildweave Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 23,
+    "stats": {
+      "int": 4,
+      "mnd": 4,
+      "mp": 24
+    },
+    "price": 26542
+  },
+  "gloamweave_sandals": {
+    "name": "Wildweave Sandals",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 16,
+    "stats": {
+      "int": 4,
+      "mnd": 4,
+      "mp": 24
+    },
+    "price": 18248
+  },
+  "lastlight_cap": {
+    "name": "Lastlight Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 18,
+    "stats": {
+      "agi": 7
+    },
+    "price": 19907
+  },
+  "lastlight_jerkin": {
+    "name": "Lastlight Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 43,
+    "stats": {
+      "agi": 11,
+      "str": 7
+    },
+    "price": 33178
+  },
+  "lastlight_trews": {
+    "name": "Lastlight Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 30,
+    "stats": {
+      "agi": 7,
+      "str": 4
+    },
+    "price": 26542
+  },
+  "lastlight_boots": {
+    "name": "Lastlight Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 48,
+    "rarity": "rare",
+    "def": 20,
+    "stats": {
+      "agi": 6
+    },
+    "price": 18248
+  },
+  "undertow_pearl": {
+    "name": "Undertow Pearl",
+    "slot": "ring",
+    "lvl": 14,
+    "rarity": "rare",
+    "stats": {
+      "mnd": 3,
+      "mp": 12
+    },
+    "price": 0,
+    "price_sell": 500
+  },
+  "tidebound_blade": {
+    "name": "Tidebound Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 15,
+    "rarity": "rare",
+    "dmg": 22,
+    "delay": 2.9,
+    "stats": {
+      "vit": 2,
+      "mnd": 2
+    },
+    "price": 0,
+    "price_sell": 700
+  },
+  "choristers_cane": {
+    "name": "Chorister's Cane",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 16,
+    "rarity": "rare",
+    "dmg": 18,
+    "delay": 3.3,
+    "stats": {
+      "mnd": 5,
+      "mp": 16
+    },
+    "price": 0,
+    "price_sell": 740
+  },
+  "glass_antler_charm": {
+    "name": "Glass Antler Charm",
+    "slot": "ring",
+    "lvl": 26,
+    "rarity": "rare",
+    "stats": {
+      "agi": 4,
+      "hp": 15
+    },
+    "price": 0,
+    "price_sell": 900
+  },
+  "regents_seal": {
+    "name": "The Regent's Seal",
+    "slot": "ring",
+    "lvl": 28,
+    "rarity": "rare",
+    "stats": {
+      "str": 4,
+      "vit": 3,
+      "hp": 15
+    },
+    "price": 0,
+    "price_sell": 1900
+  },
+  "regents_edge": {
+    "name": "Regent's Edge",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 29,
+    "rarity": "rare",
+    "dmg": 39,
+    "delay": 2.9,
+    "stats": {
+      "str": 4,
+      "vit": 3
+    },
+    "price": 0,
+    "price_sell": 2200
+  },
+  "amber_crown": {
+    "name": "The Amber Crown",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 29,
+    "rarity": "rare",
+    "def": 11,
+    "stats": {
+      "int": 5,
+      "mnd": 5,
+      "mp": 22
+    },
+    "price": 0,
+    "price_sell": 2200
+  },
+  "greedgullet_band": {
+    "name": "Greedgullet Band",
+    "slot": "ring",
+    "lvl": 34,
+    "rarity": "rare",
+    "stats": {
+      "vit": 5,
+      "hp": 25
+    },
+    "price": 0,
+    "price_sell": 2600
+  },
+  "thirstless_band": {
+    "name": "Thirstless Band",
+    "slot": "ring",
+    "lvl": 31,
+    "rarity": "rare",
+    "stats": {
+      "mnd": 5,
+      "int": 3,
+      "mp": 22
+    },
+    "price": 0,
+    "price_sell": 2300
+  },
+  "tideglass_staff": {
+    "name": "Tideglass Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 36,
+    "rarity": "rare",
+    "dmg": 28,
+    "delay": 3.5,
+    "stats": {
+      "int": 8,
+      "mp": 40
+    },
+    "price": 0,
+    "price_sell": 3600
+  },
+  "wardens_trident": {
+    "name": "Warden's Trident",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 36,
+    "rarity": "rare",
+    "dmg": 68,
+    "delay": 3.8,
+    "stats": {
+      "str": 7
+    },
+    "price": 0,
+    "price_sell": 3600
+  },
+  "furnace_horn": {
+    "name": "Furnace Horn",
+    "slot": "ring",
+    "lvl": 42,
+    "rarity": "rare",
+    "stats": {
+      "str": 6,
+      "hp": 30
+    },
+    "price": 0,
+    "price_sell": 4200
+  },
+  "abbots_ember": {
+    "name": "The Abbot's Ember",
+    "slot": "ring",
+    "lvl": 43,
+    "rarity": "rare",
+    "stats": {
+      "int": 6,
+      "mnd": 5,
+      "mp": 30
+    },
+    "price": 0,
+    "price_sell": 5200
+  },
+  "abbots_maul": {
+    "name": "Abbot's Maul",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 44,
+    "rarity": "rare",
+    "dmg": 45,
+    "delay": 3.3,
+    "stats": {
+      "mnd": 9,
+      "mp": 45
+    },
+    "price": 0,
+    "price_sell": 5600
+  },
+  "cinderplate_cuirass": {
+    "name": "Cinderplate Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 44,
+    "rarity": "rare",
+    "def": 50,
+    "stats": {
+      "vit": 9,
+      "hp": 50
+    },
+    "price": 0,
+    "price_sell": 5600
+  },
+  "griefpetal_locket": {
+    "name": "Griefpetal Locket",
+    "slot": "ring",
+    "lvl": 47,
+    "rarity": "rare",
+    "stats": {
+      "mnd": 7,
+      "int": 6,
+      "mp": 35
+    },
+    "price": 0,
+    "price_sell": 6400
+  },
+  "the_first_flame": {
+    "name": "The First Flame",
+    "slot": "ring",
+    "lvl": 50,
+    "rarity": "rare",
+    "stats": {
+      "str": 5,
+      "int": 5,
+      "mnd": 5,
+      "hp": 30,
+      "mp": 30
+    },
+    "price": 0,
+    "price_sell": 9000
+  },
+  "borrowers_crown": {
+    "name": "The Borrower's Crown",
+    "slot": "head",
+    "atype": "any",
+    "lvl": 50,
+    "rarity": "rare",
+    "def": 24,
+    "stats": {
+      "str": 5,
+      "int": 5,
+      "mnd": 5,
+      "hp": 25,
+      "mp": 25
+    },
+    "price": 0,
+    "price_sell": 9000
+  },
+  "gloamheart_blade": {
+    "name": "Wildheart Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 50,
+    "rarity": "rare",
+    "dmg": 74,
+    "delay": 2.8,
+    "stats": {
+      "str": 6,
+      "vit": 5
+    },
+    "price": 0,
+    "price_sell": 9000
+  },
+  "meregate_lantern": {
+    "name": "Causeway Lantern",
+    "slot": "ring",
+    "lvl": 10,
+    "rarity": "uncommon",
+    "stats": {
+      "mnd": 2,
+      "mp": 8
+    },
+    "price": 0,
+    "price_sell": 260
+  },
+  "bramblewarden_band": {
+    "name": "Bramblewarden Band",
+    "slot": "ring",
+    "lvl": 10,
+    "rarity": "uncommon",
+    "stats": {
+      "vit": 2,
+      "hp": 8
+    },
+    "price": 0,
+    "price_sell": 260
+  },
+  "amberflame_charm": {
+    "name": "Amberflame Charm",
+    "slot": "ring",
+    "lvl": 27,
+    "rarity": "rare",
+    "stats": {
+      "str": 3,
+      "agi": 3,
+      "hp": 12
+    },
+    "price": 0,
+    "price_sell": 1500
+  },
+  "waterline_locket": {
+    "name": "Waterline Locket",
+    "slot": "ring",
+    "lvl": 35,
+    "rarity": "rare",
+    "stats": {
+      "vit": 4,
+      "mnd": 4,
+      "hp": 18
+    },
+    "price": 0,
+    "price_sell": 2800
+  },
+  "forgemothers_iron": {
+    "name": "Forgemother's Iron",
+    "slot": "ring",
+    "lvl": 43,
+    "rarity": "rare",
+    "stats": {
+      "str": 5,
+      "vit": 4,
+      "hp": 22
+    },
+    "price": 0,
+    "price_sell": 4600
+  },
+  "hare_pelt": {
+    "name": "Hare Pelt",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 6,
+    "desc": "Soft grey fur. Every farmhouse in the Fields has a blanket of it."
+  },
+  "mushroom_cap": {
+    "name": "Mushroom Cap",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 7,
+    "desc": "Cut from a cap mushnub. Edible, in the sense that it can be eaten.",
+    "price": 28
+  },
+  "slime_gel": {
+    "name": "Slime Gel",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 7,
+    "desc": "Clear and faintly warm. Alchemists thicken salves with it."
+  },
+  "wolf_pelt": {
+    "name": "Wolf Pelt",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 12,
+    "desc": "A grey wolf's winter coat."
+  },
+  "forged_charter": {
+    "name": "Forged Charter",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 30,
+    "desc": "A freebooter's papers: a court seal drawn by someone who has seen one once. The jackdaws on Beacon Knoll line their nests with them."
+  },
+  "bristle_hide": {
+    "name": "Bristle Hide",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 90,
+    "desc": "The hide of Old Bristle, the boar that ran the watch farms' fences for ten years."
+  },
+  "hen_feather": {
+    "name": "Hen Feather",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 5,
+    "desc": "A wood hen's tail feather. Fletchers buy them by the hundred."
+  },
+  "frog_leg": {
+    "name": "Frog Leg",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 6,
+    "desc": "Heartwood eats these. Caerdun pretends not to.",
+    "price": 24
+  },
+  "sow_hide": {
+    "name": "The Orchard Sow's Hide",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 90,
+    "desc": "The hide of the sow that ate a season of windfall a year for a decade."
+  },
+  "frost_gel": {
+    "name": "Frost Gel",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 14,
+    "desc": "Slime that never warms. Kept in a jar it will chill a room."
+  },
+  "yeti_hide": {
+    "name": "The Old Man's Hide",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 160,
+    "desc": "White fur a hand deep. Road-Warden Tesk will want to hear about this."
+  },
+  "pursers_ledger": {
+    "name": "The Purser's Ledger",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 160,
+    "desc": "The grain ship's manifest, every page signed for. The last entry is dated the Night."
+  },
+  "hound_collar": {
+    "name": "Hound Collar",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 14,
+    "desc": "Imperial brass, the kennel's mark and a number. The number is in the thousands."
+  },
+  "sentinel_plate": {
+    "name": "Sentinel Plate",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 26,
+    "desc": "A plate from a sentinel's casing, stamped with a work order. Courts pay for these."
+  },
+  "work_order": {
+    "name": "Work Order",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 18,
+    "desc": "A sentinel's standing instruction, signed by the Regent. Keep the rides. Keep well."
+  },
+  "masters_whistle": {
+    "name": "The Master's Whistle",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 180,
+    "desc": "The hound-master's whistle. Every hound in the wood still comes to it."
+  },
+  "visitors_list": {
+    "name": "The Visitors' List",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 220,
+    "desc": "Three hundred years of names, in the warden's hand. The last page is yours."
+  },
+  "beetle_shell": {
+    "name": "Beetle Shell",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 12,
+    "desc": "A sap beetle's wing case, amber-brown and hard as a board."
+  },
+  "foremans_saw": {
+    "name": "The Foreman's Saw",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 180,
+    "desc": "A two-man saw the Foreman carried alone. Every tooth is still sharp."
+  },
+  "the_rota": {
+    "name": "The Rota",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 220,
+    "desc": "Three hundred years of shifts, every one marked absent, excused. The last line is blank."
+  },
+  "cat_whisker": {
+    "name": "Cat Whisker",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 8,
+    "desc": "From a villa cat. The academy's alchemists want them for reasons they will not write down."
+  },
+  "dance_card": {
+    "name": "Dance Card",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 22,
+    "desc": "A dance card from the sunken ballroom, filled in to the last dance. The ink has not run."
+  },
+  "bellwethers_crown": {
+    "name": "Bellwether's Crown",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 180,
+    "desc": "The bony crest of the lily meres' old frog. Student Pell will want to measure it."
+  },
+  "the_music_box": {
+    "name": "The Music Box",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 240,
+    "desc": "Still mid-waltz. One bar, repeating. It will not stop and you have stopped trying."
+  },
+  "pike_tooth": {
+    "name": "Pike Tooth",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 14,
+    "desc": "From a lake pike three centuries fat. Fishers on the Shore Road will not believe you."
+  },
+  "striking_slip": {
+    "name": "Striking Slip",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 20,
+    "desc": "A slip from the bell's record. Two numbers and a date. The second number is smaller than the first."
+  },
+  "wardens_key": {
+    "name": "The Drowned Warden's Key",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 200,
+    "desc": "An iron key to a village that is under forty feet of water."
+  },
+  "the_striking_hammer": {
+    "name": "The Striking Hammer",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 280,
+    "desc": "The Bellringer's hammer. The bell will need another ringer."
+  },
+  "silver_cutting": {
+    "name": "Silver Cutting",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 26,
+    "desc": "A cutting from the King's Gardens' silver beds. Heartwood pays for these; the gardeners count them."
+  },
+  "gardeners_shears": {
+    "name": "The Gardener's Shears",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 240,
+    "desc": "The Head Gardener's shears. Every hedge in the Gardens will grow out now."
+  },
+  "nursery_ledger": {
+    "name": "The Nursery Ledger",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 280,
+    "desc": "Phase three, for the Restoration, by order of the Regent. The first time a court reads that name."
+  },
+  "cullet": {
+    "name": "Cullet",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 9,
+    "desc": "Broken glass swept from the Glassworks' floors, for the melt. It cuts.",
+    "price": 36
+  },
+  "glass_pane": {
+    "name": "Window Pane",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 34,
+    "desc": "A pane from the racking yard, stencilled for the capital. Phase four.",
+    "price": 136
+  },
+  "slag_lump": {
+    "name": "Slag Lump",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 11,
+    "desc": "What the furnace leaves. The slag hounds eat it, somehow."
+  },
+  "wasp_glass": {
+    "name": "Wasp Glass",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 22,
+    "desc": "A glass wasp's wing: the desert's own glass, thin as a leaf."
+  },
+  "drake_scale_amber": {
+    "name": "Amber Scale",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 30,
+    "desc": "A dune drake's scale, clear as the dunes it crossed."
+  },
+  "furnace_ledger": {
+    "name": "The Furnace Ledger",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 300,
+    "desc": "To the capital of Vanai. Window replacements, phase four. By order of the Regent, for the Restoration. Phase four. There were three before it."
+  },
+  "master_tongs": {
+    "name": "The Master's Tongs",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 260,
+    "desc": "The Master of the Furnace's tongs, still warm. The row will bank at last."
+  },
+  "stoker_iron": {
+    "name": "Stoker's Iron",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 24,
+    "desc": "A stoker's poker, worn to a point by three centuries of the same job."
+  },
+  "reed_bundle": {
+    "name": "Reed Bundle",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 8,
+    "desc": "Fen reeds, cut and tied. Thatch, baskets, arrows: the Canal Works grows one crop now.",
+    "price": 32
+  },
+  "bog_iron": {
+    "name": "Bog Iron",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 18,
+    "desc": "A lump of iron from the fen's mud. Moonmere's smiths take it; it smells of the canal."
+  },
+  "leech_gland": {
+    "name": "Leech Gland",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 16,
+    "desc": "From a fen leech. The alchemists want it; nobody asks what for."
+  },
+  "fen_wolf_pelt": {
+    "name": "Fen Wolf Pelt",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 26,
+    "desc": "A reed wolf's pelt, the colour of the mist."
+  },
+  "pike_roe": {
+    "name": "Pike Roe",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 20,
+    "desc": "Roe from a canal pike. The freebooters salt it in the old lock-keepers' jars.",
+    "price": 80
+  },
+  "repair_order": {
+    "name": "Repair Order",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 30,
+    "desc": "Nailed to a sluice post: 'Lock the third, gates to be rehung. Navigable by the Restoration.' Dated this season."
+  },
+  "works_ledger": {
+    "name": "The Works Ledger",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 320,
+    "desc": "The sluice master's ledger of repair orders. Every lock between here and the capital, every one dated to the same season, every one 'navigable by the Restoration'."
+  },
+  "lock_keepers_key": {
+    "name": "The Lock-Keeper's Key",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 260,
+    "desc": "The Lock-Keeper's key, three centuries in its ribs. The lock stair will open for the expedition's boats now."
+  },
+  "pump_gear": {
+    "name": "Pump Gear",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 34,
+    "desc": "A bronze gear from the great sluice's pumps, worn to a shine by the sentinels' hands."
+  },
+  "wheat_sheaf": {
+    "name": "Wheat Sheaf",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 8,
+    "desc": "A sheaf from the reaping line, cut this morning by something that does not tire.",
+    "price": 32
+  },
+  "flour_sack": {
+    "name": "Flour Sack",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 22,
+    "desc": "Milled and sacked, stencilled for the capital. Phase five.",
+    "price": 88
+  },
+  "hawk_feather": {
+    "name": "Hawk Feather",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 14,
+    "desc": "A field hawk's feather, barred gold and brown."
+  },
+  "husk_scale": {
+    "name": "Husk Scale",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 28,
+    "desc": "A husk drake's scale, the colour of ripe wheat."
+  },
+  "ox_horn": {
+    "name": "Ox Horn",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 30,
+    "desc": "A feral ox's horn. The plains' oxen went wild three centuries ago and got bigger."
+  },
+  "provisioning_order": {
+    "name": "Provisioning Order",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 32,
+    "desc": "'Flour for the capital, phase five. Rations for a city from the morning they arrive.' Stamped, countersigned."
+  },
+  "provisioning_ledger": {
+    "name": "The Provisioning Ledger",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 340,
+    "desc": "Forty towers, filled and filling. Enough to feed their city, every man, woman and child of it, from the morning they arrive. They are not coming back to rebuild. They are coming back to resume."
+  },
+  "reapers_blade": {
+    "name": "The Reaper's Blade",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 280,
+    "desc": "The Reaper's scythe-blade, worn to a sliver by three hundred harvests."
+  },
+  "tally_seal": {
+    "name": "Tally Seal",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 36,
+    "desc": "A tally sentinel's seal, for stamping a count. It still works. Junn wants it."
+  },
+  "crag_feather": {
+    "name": "Crag Feather",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 16,
+    "desc": "A crag hawk's feather from the wall's updraughts, grey as the stone."
+  },
+  "snowcat_pelt": {
+    "name": "Snow Cat Pelt",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 34,
+    "desc": "A snow cat's pelt, white as the peaks. Caerdun's furriers pay in gold for these."
+  },
+  "wall_stone": {
+    "name": "Wall Stone",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 14,
+    "desc": "A block of the Border Wall's own masonry, ruled to the millimetre three centuries ago and unweathered.",
+    "price": 56
+  },
+  "ice_crystal": {
+    "name": "Ice Crystal",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 24,
+    "desc": "Ice from an ice slime, which does not melt. The alchemists have theories."
+  },
+  "slate_scale": {
+    "name": "Slate Scale",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 40,
+    "desc": "A scale from the Wall Drake, the colour of the rampart it hunts along."
+  },
+  "runners_rope": {
+    "name": "Wall-Runner's Rope",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 20,
+    "desc": "A wall-runner's rope for the wall's outer face. Frayed where the sentinels cut it; a gecko has nested in the coils.",
+    "price": 80
+  },
+  "wardens_seal": {
+    "name": "The Wall-Warden's Seal",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 320,
+    "desc": "The Wall-Warden's seal, for the wall's dispatches. 'Your climb was reported an hour ago.'"
+  },
+  "regents_reply": {
+    "name": "The Regent's Reply",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 400,
+    "desc": "Addressed to the caretaker governments of the free cities. The household thanks you for keeping the land warm. You are asked to prepare an accounting of your stewardship, and to be ready to yield custody of the interior provinces upon the Restoration."
+  },
+  "watch_ledger": {
+    "name": "Watch Ledger",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 30,
+    "desc": "A page of the wall's watch ledger: every climb, every hour, for three hundred years. Junn will want the lot."
+  },
+  "ash_flower": {
+    "name": "Ash Flower",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 18,
+    "desc": "A flower that grows in the ash and nowhere else, the colour of an ember. Emmer put fresh ones on the grave.",
+    "price": 72
+  },
+  "glassed_bark": {
+    "name": "Glassed Bark",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 22,
+    "desc": "Bark from a burned trunk, run to glass in the one flash. Every ripple in it points away from the city."
+  },
+  "ember_shard": {
+    "name": "Ember Shard",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 28,
+    "desc": "A shard from an ember slime, still warm three centuries on."
+  },
+  "ash_pelt": {
+    "name": "Ash Beast Pelt",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 36,
+    "desc": "An ash beast's pelt, grey to the roots. They come at the light."
+  },
+  "giants_tooth": {
+    "name": "Ash Giant's Tooth",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 60,
+    "desc": "A tooth from an ash giant. Nobody knows what they were before the night."
+  },
+  "oil_flask": {
+    "name": "Beacon Oil",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 24,
+    "desc": "Oil from the Beacon Fort's stores, three hundred years old and still good. The empire built to last.",
+    "price": 96
+  },
+  "emmers_letters": {
+    "name": "Emmer's Letters",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 500,
+    "desc": "Three letters from a man who waited: year one, year forty, and the last. 'It wasn't your fault either.'"
+  },
+  "beacon_log": {
+    "name": "The Beacon Log",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 420,
+    "desc": "The Beacon Fort's log. The last entry, in a calm hand: 'the household departs at the appointed hour; lit at the signal; the fire faced outward, as instructed.'"
+  },
+  "keepers_lamp": {
+    "name": "The Beacon-Keeper's Lamp",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 300,
+    "desc": "The Beacon-Keeper's lamp, the one that lit the beacon on the night."
+  },
+  "stag_glass": {
+    "name": "The Glassed Stag's Antler",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 340,
+    "desc": "An antler run to glass. The stag was in the orchard on the night; it has been running ever since."
+  },
+  "household_key": {
+    "name": "Household Key",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 40,
+    "desc": "A key from a household guard's ring. Every door in the city is on somebody's ring."
+  },
+  "census_page": {
+    "name": "Census Page",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 60,
+    "desc": "A page of the census rolls. Not theirs. Ours: Caerdun, Heartwood, Moonmere, three hundred years of births, deaths and marriages in that same calm hand."
+  },
+  "palace_plate": {
+    "name": "Palace Plate",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 70,
+    "desc": "A plate from a palace sentinel, chased with the crown. It has never been scratched."
+  },
+  "archive_minute": {
+    "name": "Archive Minute",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 44,
+    "desc": "One minute of three hundred years of minutes. Every acre, every year, noted for the crown's attention."
+  },
+  "regents_minutes": {
+    "name": "The Regent's Minutes",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 1200,
+    "desc": "The minutes of three hundred years, kept to discuss with the household. Every acre the courts hold, every year, noted."
+  },
+  "the_last_keys": {
+    "name": "The Keys of the City",
+    "slot": "material",
+    "rarity": "rare",
+    "price_sell": 2000,
+    "desc": "The Regent's keys. 'The door is yours; the city was always yours.'"
+  },
+  "fresh_bread": {
+    "name": "Fresh Bread",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 150,
+    "price": 160,
+    "desc": "Restores 150 HP. A loaf from the capital's bakery, out warm on the morning after. The queue was chalked three hundred years ago."
+  },
+  "mere_pearl": {
+    "name": "Mere Pearl",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 40,
+    "desc": "A pearl from the Moonmere's mussel beds, the colour of the bay at dusk. The island's jewellers set them in silver."
+  },
+  "windfall_apple": {
+    "name": "Windfall Apple",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 2,
+    "desc": "Ground fruit from the wild orchards, never picked. A newcomer's first gift to the grove ring.",
+    "price": 20
+  },
+  "grave_goods": {
+    "name": "Grave-Goods",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 0,
+    "desc": "A displaced family's grave-goods, dug up and dragged into a sett. The grudge hall wants every piece back. The families come Thursday."
+  },
+  "book_spine": {
+    "name": "Burned Book Spine",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 4,
+    "desc": "A spine from the academy's burned astronomy section, drowned before the fire finished. Tables of Conjunction. Ephemeris, Years One Through..."
+  },
+  "fieldhand_hood": {
+    "name": "Fieldhand Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 1,
+    "stats": {
+      "int": 1,
+      "mnd": 1
+    },
+    "price": 175
+  },
+  "fieldhand_robe": {
+    "name": "Fieldhand Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 3,
+    "stats": {
+      "int": 1,
+      "mnd": 1
+    },
+    "price": 340
+  },
+  "fieldhand_slops": {
+    "name": "Fieldhand Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 2,
+    "stats": {
+      "int": 1,
+      "mnd": 1
+    },
+    "price": 265
+  },
+  "fieldhand_shoes": {
+    "name": "Fieldhand Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 2,
+    "stats": {
+      "int": 1,
+      "mnd": 1
+    },
+    "price": 190
+  },
+  "watchfarm_cap": {
+    "name": "Watchfarm Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 2,
+    "stats": {
+      "agi": 1
+    },
+    "price": 175
+  },
+  "watchfarm_vest": {
+    "name": "Watchfarm Vest",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 4,
+    "stats": {
+      "agi": 1
+    },
+    "price": 340
+  },
+  "watchfarm_trews": {
+    "name": "Watchfarm Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 3,
+    "stats": {
+      "agi": 1
+    },
+    "price": 265
+  },
+  "watchfarm_boots": {
+    "name": "Watchfarm Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 2,
+    "stats": {
+      "agi": 1
+    },
+    "price": 190
+  },
+  "gatewarden_coif": {
+    "name": "Gate-Warden Coif",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 3,
+    "stats": {
+      "vit": 1
+    },
+    "price": 175
+  },
+  "gatewarden_hauberk": {
+    "name": "Gate-Warden Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 7,
+    "stats": {
+      "vit": 1
+    },
+    "price": 340
+  },
+  "gatewarden_chausses": {
+    "name": "Gate-Warden Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 5,
+    "stats": {
+      "vit": 1
+    },
+    "price": 265
+  },
+  "gatewarden_sabatons": {
+    "name": "Gate-Warden Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 5,
+    "rarity": "common",
+    "def": 4,
+    "stats": {
+      "vit": 1
+    },
+    "price": 190
+  },
+  "valleyweave_hood": {
+    "name": "Valleyweave Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 7,
+    "stats": {
+      "int": 2,
+      "mnd": 2,
+      "mp": 7
+    },
+    "price": 2897
+  },
+  "valleyweave_robe": {
+    "name": "Valleyweave Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 15,
+    "stats": {
+      "int": 5,
+      "mnd": 5,
+      "mp": 16
+    },
+    "price": 6388
+  },
+  "valleyweave_slops": {
+    "name": "Valleyweave Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 11,
+    "stats": {
+      "int": 4,
+      "mnd": 4,
+      "mp": 12
+    },
+    "price": 4801
+  },
+  "valleyweave_sandals": {
+    "name": "Valleyweave Sandals",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 8,
+    "stats": {
+      "int": 2,
+      "mnd": 2,
+      "mp": 8
+    },
+    "price": 3214
+  },
+  "sounder's_cap": {
+    "name": "Sounder's Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 9,
+    "stats": {
+      "agi": 2,
+      "str": 1
+    },
+    "price": 2897
+  },
+  "sounder's_jerkin": {
+    "name": "Sounder's Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 20,
+    "stats": {
+      "agi": 4,
+      "str": 2
+    },
+    "price": 6388
+  },
+  "sounder's_trews": {
+    "name": "Sounder's Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 15,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "price": 4801
+  },
+  "sounder's_boots": {
+    "name": "Sounder's Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 10,
+    "stats": {
+      "agi": 2,
+      "str": 1
+    },
+    "price": 3214
+  },
+  "damwarden_coif": {
+    "name": "Dam-Warden Coif",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 11,
+    "stats": {
+      "vit": 2,
+      "hp": 10
+    },
+    "price": 2897
+  },
+  "damwarden_cuirass": {
+    "name": "Dam-Warden Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 25,
+    "stats": {
+      "vit": 5,
+      "hp": 22
+    },
+    "price": 6388
+  },
+  "damwarden_chausses": {
+    "name": "Dam-Warden Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 19,
+    "stats": {
+      "vit": 4,
+      "hp": 16
+    },
+    "price": 4801
+  },
+  "damwarden_sabatons": {
+    "name": "Dam-Warden Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 23,
+    "rarity": "common",
+    "def": 12,
+    "stats": {
+      "vit": 2,
+      "hp": 11
+    },
+    "price": 3214
+  },
+  "reedwoven_hood": {
+    "name": "Reedwoven Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 9,
+    "stats": {
+      "int": 3,
+      "mnd": 3,
+      "mp": 10
+    },
+    "price": 5229
+  },
+  "reedwoven_robe": {
+    "name": "Reedwoven Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 20,
+    "stats": {
+      "int": 7,
+      "mnd": 7,
+      "mp": 22
+    },
+    "price": 11572
+  },
+  "reedwoven_slops": {
+    "name": "Reedwoven Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 15,
+    "stats": {
+      "int": 5,
+      "mnd": 5,
+      "mp": 16
+    },
+    "price": 8689
+  },
+  "reedwoven_sandals": {
+    "name": "Reedwoven Sandals",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 10,
+    "stats": {
+      "int": 4,
+      "mnd": 4,
+      "mp": 11
+    },
+    "price": 5806
+  },
+  "bargeman's_cap": {
+    "name": "Bargeman's Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 12,
+    "stats": {
+      "agi": 3,
+      "str": 1
+    },
+    "price": 5229
+  },
+  "bargeman's_jerkin": {
+    "name": "Bargeman's Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 26,
+    "stats": {
+      "agi": 6,
+      "str": 3
+    },
+    "price": 11572
+  },
+  "bargeman's_trews": {
+    "name": "Bargeman's Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 20,
+    "stats": {
+      "agi": 4,
+      "str": 2
+    },
+    "price": 8689
+  },
+  "bargeman's_boots": {
+    "name": "Bargeman's Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 13,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "price": 5806
+  },
+  "lockplate_coif": {
+    "name": "Lockplate Coif",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 15,
+    "stats": {
+      "vit": 3,
+      "hp": 14
+    },
+    "price": 5229
+  },
+  "lockplate_cuirass": {
+    "name": "Lockplate Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 33,
+    "stats": {
+      "vit": 6,
+      "hp": 30
+    },
+    "price": 11572
+  },
+  "lockplate_chausses": {
+    "name": "Lockplate Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 25,
+    "stats": {
+      "vit": 4,
+      "hp": 22
+    },
+    "price": 8689
+  },
+  "lockplate_sabatons": {
+    "name": "Lockplate Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 31,
+    "rarity": "common",
+    "def": 16,
+    "stats": {
+      "vit": 3,
+      "hp": 15
+    },
+    "price": 5806
+  },
+  "wallscholar_hood": {
+    "name": "Wall-Scholar Hood",
+    "slot": "head",
+    "atype": "cloth",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 11,
+    "stats": {
+      "int": 4,
+      "mnd": 4,
+      "mp": 14
+    },
+    "price": 8253
+  },
+  "wallscholar_robe": {
+    "name": "Wall-Scholar Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 25,
+    "stats": {
+      "int": 9,
+      "mnd": 9,
+      "mp": 30
+    },
+    "price": 18292
+  },
+  "wallscholar_slops": {
+    "name": "Wall-Scholar Slops",
+    "slot": "legs",
+    "atype": "cloth",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 19,
+    "stats": {
+      "int": 7,
+      "mnd": 7,
+      "mp": 22
+    },
+    "price": 13729
+  },
+  "wallscholar_sandals": {
+    "name": "Wall-Scholar Sandals",
+    "slot": "feet",
+    "atype": "cloth",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 12,
+    "stats": {
+      "int": 4,
+      "mnd": 4,
+      "mp": 15
+    },
+    "price": 9166
+  },
+  "wallrunner_cap": {
+    "name": "Wall-Runner Cap",
+    "slot": "head",
+    "atype": "leather",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 15,
+    "stats": {
+      "agi": 4,
+      "str": 2
+    },
+    "price": 8253
+  },
+  "wallrunner_jerkin": {
+    "name": "Wall-Runner Jerkin",
+    "slot": "body",
+    "atype": "leather",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 33,
+    "stats": {
+      "agi": 8,
+      "str": 4
+    },
+    "price": 18292
+  },
+  "wallrunner_trews": {
+    "name": "Wall-Runner Trews",
+    "slot": "legs",
+    "atype": "leather",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 25,
+    "stats": {
+      "agi": 6,
+      "str": 3
+    },
+    "price": 13729
+  },
+  "wallrunner_boots": {
+    "name": "Wall-Runner Boots",
+    "slot": "feet",
+    "atype": "leather",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 16,
+    "stats": {
+      "agi": 4,
+      "str": 2
+    },
+    "price": 9166
+  },
+  "rampart_coif": {
+    "name": "Rampart Coif",
+    "slot": "head",
+    "atype": "chain",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 18,
+    "stats": {
+      "vit": 4,
+      "hp": 18
+    },
+    "price": 8253
+  },
+  "rampart_cuirass": {
+    "name": "Rampart Cuirass",
+    "slot": "body",
+    "atype": "chain",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 41,
+    "stats": {
+      "vit": 8,
+      "hp": 40
+    },
+    "price": 18292
+  },
+  "rampart_chausses": {
+    "name": "Rampart Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 31,
+    "stats": {
+      "vit": 6,
+      "hp": 30
+    },
+    "price": 13729
+  },
+  "rampart_sabatons": {
+    "name": "Rampart Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "lvl": 39,
+    "rarity": "common",
+    "def": 20,
+    "stats": {
+      "vit": 4,
+      "hp": 20
+    },
+    "price": 9166
+  },
+  "valley_blade": {
+    "name": "Valley Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 23,
+    "rarity": "common",
+    "dmg": 30,
+    "delay": 3.0,
+    "stats": {
+      "vit": 2,
+      "str": 2
+    },
+    "price": 4821
+  },
+  "valley_katana": {
+    "name": "Valley Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 23,
+    "rarity": "common",
+    "dmg": 34,
+    "delay": 3.0,
+    "stats": {
+      "str": 2,
+      "agi": 2
+    },
+    "price": 4821
+  },
+  "valley_cleaver": {
+    "name": "Valley Cleaver",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 23,
+    "rarity": "common",
+    "dmg": 44,
+    "delay": 3.0,
+    "stats": {
+      "str": 4
+    },
+    "price": 4821
+  },
+  "valley_mace": {
+    "name": "Valley Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 23,
+    "rarity": "common",
+    "dmg": 23,
+    "delay": 3.0,
+    "stats": {
+      "mnd": 4
+    },
+    "price": 4821
+  },
+  "valley_staff": {
+    "name": "Valley Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 23,
+    "rarity": "common",
+    "dmg": 18,
+    "delay": 3.0,
+    "stats": {
+      "int": 4,
+      "mp": 12
+    },
+    "price": 4821
+  },
+  "valley_wraps": {
+    "name": "Valley Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 23,
+    "rarity": "common",
+    "dmg": 22,
+    "delay": 3.0,
+    "stats": {
+      "str": 2,
+      "agi": 2
+    },
+    "price": 4821
+  },
+  "bogiron_blade": {
+    "name": "Bog-Iron Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 31,
+    "rarity": "common",
+    "dmg": 38,
+    "delay": 3.0,
+    "stats": {
+      "vit": 3,
+      "str": 3
+    },
+    "price": 8709
+  },
+  "bogiron_katana": {
+    "name": "Bog-Iron Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 31,
+    "rarity": "common",
+    "dmg": 43,
+    "delay": 3.0,
+    "stats": {
+      "str": 3,
+      "agi": 3
+    },
+    "price": 8709
+  },
+  "bogiron_cleaver": {
+    "name": "Bog-Iron Cleaver",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 31,
+    "rarity": "common",
+    "dmg": 55,
+    "delay": 3.0,
+    "stats": {
+      "str": 6
+    },
+    "price": 8709
+  },
+  "bogiron_mace": {
+    "name": "Bog-Iron Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 31,
+    "rarity": "common",
+    "dmg": 30,
+    "delay": 3.0,
+    "stats": {
+      "mnd": 6
+    },
+    "price": 8709
+  },
+  "bogiron_staff": {
+    "name": "Bog-Iron Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 31,
+    "rarity": "common",
+    "dmg": 23,
+    "delay": 3.0,
+    "stats": {
+      "int": 6,
+      "mp": 18
+    },
+    "price": 8709
+  },
+  "bogiron_wraps": {
+    "name": "Bog-Iron Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 31,
+    "rarity": "common",
+    "dmg": 27,
+    "delay": 3.0,
+    "stats": {
+      "str": 3,
+      "agi": 3
+    },
+    "price": 8709
+  },
+  "wallforged_blade": {
+    "name": "Wall-Forged Blade",
+    "slot": "weapon",
+    "wtype": "sword",
+    "lvl": 39,
+    "rarity": "common",
+    "dmg": 46,
+    "delay": 3.0,
+    "stats": {
+      "vit": 4,
+      "str": 4
+    },
+    "price": 13749
+  },
+  "wallforged_katana": {
+    "name": "Wall-Forged Katana",
+    "slot": "weapon",
+    "wtype": "katana",
+    "lvl": 39,
+    "rarity": "common",
+    "dmg": 52,
+    "delay": 3.0,
+    "stats": {
+      "str": 4,
+      "agi": 4
+    },
+    "price": 13749
+  },
+  "wallforged_cleaver": {
+    "name": "Wall-Forged Cleaver",
+    "slot": "weapon",
+    "wtype": "greatsword",
+    "lvl": 39,
+    "rarity": "common",
+    "dmg": 67,
+    "delay": 3.0,
+    "stats": {
+      "str": 8
+    },
+    "price": 13749
+  },
+  "wallforged_mace": {
+    "name": "Wall-Forged Mace",
+    "slot": "weapon",
+    "wtype": "cudgel",
+    "lvl": 39,
+    "rarity": "common",
+    "dmg": 36,
+    "delay": 3.0,
+    "stats": {
+      "mnd": 8
+    },
+    "price": 13749
+  },
+  "wallforged_staff": {
+    "name": "Wall-Forged Staff",
+    "slot": "weapon",
+    "wtype": "staff",
+    "lvl": 39,
+    "rarity": "common",
+    "dmg": 28,
+    "delay": 3.0,
+    "stats": {
+      "int": 8,
+      "mp": 24
+    },
+    "price": 13749
+  },
+  "wallforged_wraps": {
+    "name": "Wall-Forged Wraps",
+    "slot": "weapon",
+    "wtype": "handwraps",
+    "lvl": 39,
+    "rarity": "common",
+    "dmg": 33,
+    "delay": 3.0,
+    "stats": {
+      "str": 4,
+      "agi": 4
+    },
+    "price": 13749
+  },
+  "mushroom_broth": {
+    "name": "Mushroom Broth",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 45,
+    "price": 40,
+    "desc": "Restores 45 HP. Cap mushnub, boiled until it stops arguing."
+  },
+  "frog_legs_dish": {
+    "name": "Frog Legs",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 55,
+    "price": 50,
+    "desc": "Restores 55 HP. Heartwood eats these. Caerdun pretends not to."
+  },
+  "crab_stew": {
+    "name": "Crab Stew",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 70,
+    "price": 70,
+    "desc": "Restores 70 HP. The coach halt's own, in a lidded bowl."
+  },
+  "apple_tart": {
+    "name": "Windfall Tart",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 90,
+    "price": 90,
+    "desc": "Restores 90 HP. Ground fruit only, never picked."
+  },
+  "roe_toast": {
+    "name": "Roe on Toast",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 160,
+    "price": 200,
+    "desc": "Restores 160 HP. Canal pike roe, salted in the old locks, on granary bread."
+  },
+  "harvest_loaf": {
+    "name": "Harvest Loaf",
+    "slot": "consumable",
+    "rarity": "common",
+    "effect": "heal",
+    "power": 120,
+    "price": 130,
+    "desc": "Restores 120 HP. Baked from sheaves cut between the harvesters' rows."
+  },
+  "calling_pld_10_head": {
+    "name": "Oathbound Helm",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "vit": 1,
+      "hp": 4
+    },
+    "desc": "Oathbound job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_10_body": {
+    "name": "Oathbound Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 13,
+    "stats": {
+      "vit": 2,
+      "hp": 8
+    },
+    "desc": "Oathbound job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_10_legs": {
+    "name": "Oathbound Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "vit": 1,
+      "hp": 6
+    },
+    "desc": "Oathbound job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_10_feet": {
+    "name": "Oathbound Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "vit": 1,
+      "hp": 3
+    },
+    "desc": "Oathbound job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_14_head": {
+    "name": "Oathbound Waymark Helm",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 14,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "vit": 1,
+      "hp": 5
+    },
+    "price": 1098,
+    "desc": "Oathbound job attire. An individual refinement between milestone sets."
+  },
+  "calling_pld_17_feet": {
+    "name": "Oathbound Waymark Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 17,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "vit": 1,
+      "hp": 5
+    },
+    "price": 1774,
+    "desc": "Oathbound job attire. An individual refinement between milestone sets."
+  },
+  "calling_pld_20_head": {
+    "name": "Dawnwatch Helm",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "vit": 2,
+      "hp": 8
+    },
+    "desc": "Dawnwatch job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_20_body": {
+    "name": "Dawnwatch Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 23,
+    "stats": {
+      "vit": 4,
+      "hp": 16
+    },
+    "desc": "Dawnwatch job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_20_legs": {
+    "name": "Dawnwatch Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 17,
+    "stats": {
+      "vit": 3,
+      "hp": 12
+    },
+    "desc": "Dawnwatch job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_20_feet": {
+    "name": "Dawnwatch Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "vit": 2,
+      "hp": 6
+    },
+    "desc": "Dawnwatch job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_24_body": {
+    "name": "Dawnwatch Waymark Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 24,
+    "rarity": "uncommon",
+    "def": 27,
+    "stats": {
+      "vit": 5,
+      "hp": 19
+    },
+    "price": 0,
+    "price_sell": 1440,
+    "desc": "Dawnwatch job attire. An individual refinement between milestone sets."
+  },
+  "calling_pld_27_legs": {
+    "name": "Dawnwatch Waymark Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 27,
+    "rarity": "uncommon",
+    "def": 22,
+    "stats": {
+      "vit": 4,
+      "hp": 16
+    },
+    "price": 0,
+    "price_sell": 1367,
+    "desc": "Dawnwatch job attire. An individual refinement between milestone sets."
+  },
+  "calling_pld_30_head": {
+    "name": "Bastion Helm",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 20,
+    "stats": {
+      "vit": 3,
+      "hp": 12
+    },
+    "desc": "Bastion job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_30_body": {
+    "name": "Bastion Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 34,
+    "stats": {
+      "vit": 6,
+      "hp": 24
+    },
+    "desc": "Bastion job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_30_legs": {
+    "name": "Bastion Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 24,
+    "stats": {
+      "vit": 4,
+      "hp": 17
+    },
+    "desc": "Bastion job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_30_feet": {
+    "name": "Bastion Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 18,
+    "stats": {
+      "vit": 2,
+      "hp": 10
+    },
+    "desc": "Bastion job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_34_head": {
+    "name": "Bastion Waymark Helm",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 34,
+    "rarity": "uncommon",
+    "def": 22,
+    "stats": {
+      "vit": 3,
+      "hp": 13
+    },
+    "price": 0,
+    "price_sell": 1300,
+    "desc": "Bastion job attire. An individual refinement between milestone sets."
+  },
+  "calling_pld_37_feet": {
+    "name": "Bastion Waymark Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 37,
+    "rarity": "uncommon",
+    "def": 21,
+    "stats": {
+      "vit": 3,
+      "hp": 12
+    },
+    "price": 0,
+    "price_sell": 1711,
+    "desc": "Bastion job attire. An individual refinement between milestone sets."
+  },
+  "calling_pld_40_head": {
+    "name": "Sunward Helm",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 26,
+    "stats": {
+      "vit": 4,
+      "hp": 15
+    },
+    "desc": "Sunward job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_40_body": {
+    "name": "Sunward Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 44,
+    "stats": {
+      "vit": 8,
+      "hp": 32
+    },
+    "desc": "Sunward job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_40_legs": {
+    "name": "Sunward Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 32,
+    "stats": {
+      "vit": 6,
+      "hp": 23
+    },
+    "desc": "Sunward job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_40_feet": {
+    "name": "Sunward Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 23,
+    "stats": {
+      "vit": 3,
+      "hp": 13
+    },
+    "desc": "Sunward job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_44_body": {
+    "name": "Sunward Waymark Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 44,
+    "rarity": "uncommon",
+    "def": 48,
+    "stats": {
+      "vit": 9,
+      "hp": 35
+    },
+    "price": 23272,
+    "desc": "Sunward job attire. An individual refinement between milestone sets."
+  },
+  "calling_pld_47_legs": {
+    "name": "Sunward Waymark Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 47,
+    "rarity": "uncommon",
+    "def": 38,
+    "stats": {
+      "vit": 7,
+      "hp": 27
+    },
+    "price": 19921,
+    "desc": "Sunward job attire. An individual refinement between milestone sets."
+  },
+  "calling_pld_50_head": {
+    "name": "Everwatch Helm",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 32,
+    "stats": {
+      "vit": 5,
+      "hp": 19
+    },
+    "desc": "Everwatch job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_50_body": {
+    "name": "Everwatch Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 55,
+    "stats": {
+      "vit": 10,
+      "hp": 40
+    },
+    "desc": "Everwatch job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_50_legs": {
+    "name": "Everwatch Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 40,
+    "stats": {
+      "vit": 7,
+      "hp": 29
+    },
+    "desc": "Everwatch job attire. Part of a four-piece job milestone set."
+  },
+  "calling_pld_50_feet": {
+    "name": "Everwatch Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "PLD"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 29,
+    "stats": {
+      "vit": 4,
+      "hp": 16
+    },
+    "desc": "Everwatch job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_10_head": {
+    "name": "Reedblade Headguard",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "agi": 1,
+      "str": 1
+    },
+    "desc": "Reedblade job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_10_body": {
+    "name": "Reedblade Coat",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "agi": 1,
+      "str": 1
+    },
+    "desc": "Reedblade job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_10_legs": {
+    "name": "Reedblade Legguards",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "agi": 1,
+      "str": 1
+    },
+    "desc": "Reedblade job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_10_feet": {
+    "name": "Reedblade Boots",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "agi": 1,
+      "str": 1
+    },
+    "desc": "Reedblade job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_14_head": {
+    "name": "Reedblade Waymark Headguard",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 14,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "agi": 1,
+      "str": 1
+    },
+    "price": 1098,
+    "desc": "Reedblade job attire. An individual refinement between milestone sets."
+  },
+  "calling_sam_17_feet": {
+    "name": "Reedblade Waymark Boots",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 17,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "agi": 1,
+      "str": 1
+    },
+    "price": 1774,
+    "desc": "Reedblade job attire. An individual refinement between milestone sets."
+  },
+  "calling_sam_20_head": {
+    "name": "Stillwater Headguard",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 13,
+    "stats": {
+      "agi": 1,
+      "str": 1
+    },
+    "desc": "Stillwater job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_20_body": {
+    "name": "Stillwater Coat",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 22,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "desc": "Stillwater job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_20_legs": {
+    "name": "Stillwater Legguards",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 16,
+    "stats": {
+      "agi": 2,
+      "str": 1
+    },
+    "desc": "Stillwater job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_20_feet": {
+    "name": "Stillwater Boots",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "agi": 1,
+      "str": 1
+    },
+    "desc": "Stillwater job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_24_body": {
+    "name": "Stillwater Waymark Coat",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 24,
+    "rarity": "uncommon",
+    "def": 26,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "price": 0,
+    "price_sell": 1440,
+    "desc": "Stillwater job attire. An individual refinement between milestone sets."
+  },
+  "calling_sam_27_legs": {
+    "name": "Stillwater Waymark Legguards",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 27,
+    "rarity": "uncommon",
+    "def": 21,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "price": 0,
+    "price_sell": 1367,
+    "desc": "Stillwater job attire. An individual refinement between milestone sets."
+  },
+  "calling_sam_30_head": {
+    "name": "Windborne Headguard",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 19,
+    "stats": {
+      "agi": 2,
+      "str": 1
+    },
+    "desc": "Windborne job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_30_body": {
+    "name": "Windborne Coat",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 32,
+    "stats": {
+      "agi": 4,
+      "str": 3
+    },
+    "desc": "Windborne job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_30_legs": {
+    "name": "Windborne Legguards",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 23,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "desc": "Windborne job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_30_feet": {
+    "name": "Windborne Boots",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 17,
+    "stats": {
+      "agi": 2,
+      "str": 1
+    },
+    "desc": "Windborne job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_34_head": {
+    "name": "Windborne Waymark Headguard",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 34,
+    "rarity": "uncommon",
+    "def": 21,
+    "stats": {
+      "agi": 2,
+      "str": 2
+    },
+    "price": 0,
+    "price_sell": 1300,
+    "desc": "Windborne job attire. An individual refinement between milestone sets."
+  },
+  "calling_sam_37_feet": {
+    "name": "Windborne Waymark Boots",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 37,
+    "rarity": "uncommon",
+    "def": 20,
+    "stats": {
+      "agi": 2,
+      "str": 1
+    },
+    "price": 0,
+    "price_sell": 1711,
+    "desc": "Windborne job attire. An individual refinement between milestone sets."
+  },
+  "calling_sam_40_head": {
+    "name": "Stormguard Headguard",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 25,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "desc": "Stormguard job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_40_body": {
+    "name": "Stormguard Coat",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 42,
+    "stats": {
+      "agi": 6,
+      "str": 4
+    },
+    "desc": "Stormguard job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_40_legs": {
+    "name": "Stormguard Legguards",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 30,
+    "stats": {
+      "agi": 4,
+      "str": 3
+    },
+    "desc": "Stormguard job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_40_feet": {
+    "name": "Stormguard Boots",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 22,
+    "stats": {
+      "agi": 2,
+      "str": 2
+    },
+    "desc": "Stormguard job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_44_body": {
+    "name": "Stormguard Waymark Coat",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 44,
+    "rarity": "uncommon",
+    "def": 45,
+    "stats": {
+      "agi": 6,
+      "str": 4
+    },
+    "price": 23272,
+    "desc": "Stormguard job attire. An individual refinement between milestone sets."
+  },
+  "calling_sam_47_legs": {
+    "name": "Stormguard Waymark Legguards",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 47,
+    "rarity": "uncommon",
+    "def": 36,
+    "stats": {
+      "agi": 5,
+      "str": 3
+    },
+    "price": 19921,
+    "desc": "Stormguard job attire. An individual refinement between milestone sets."
+  },
+  "calling_sam_50_head": {
+    "name": "Horizon Headguard",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 31,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "desc": "Horizon job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_50_body": {
+    "name": "Horizon Coat",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 52,
+    "stats": {
+      "agi": 7,
+      "str": 5
+    },
+    "desc": "Horizon job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_50_legs": {
+    "name": "Horizon Legguards",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 38,
+    "stats": {
+      "agi": 5,
+      "str": 4
+    },
+    "desc": "Horizon job attire. Part of a four-piece job milestone set."
+  },
+  "calling_sam_50_feet": {
+    "name": "Horizon Boots",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "SAM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 28,
+    "stats": {
+      "agi": 3,
+      "str": 2
+    },
+    "desc": "Horizon job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_10_head": {
+    "name": "Ashen Vow Visor",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "str": 1,
+      "vit": 1
+    },
+    "desc": "Ashen Vow job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_10_body": {
+    "name": "Ashen Vow Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "str": 2,
+      "vit": 1
+    },
+    "desc": "Ashen Vow job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_10_legs": {
+    "name": "Ashen Vow Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "str": 1,
+      "vit": 1
+    },
+    "desc": "Ashen Vow job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_10_feet": {
+    "name": "Ashen Vow Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "str": 1,
+      "vit": 1
+    },
+    "desc": "Ashen Vow job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_14_head": {
+    "name": "Ashen Vow Waymark Visor",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 14,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "str": 1,
+      "vit": 1
+    },
+    "price": 1098,
+    "desc": "Ashen Vow job attire. An individual refinement between milestone sets."
+  },
+  "calling_drk_17_feet": {
+    "name": "Ashen Vow Waymark Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 17,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "str": 1,
+      "vit": 1
+    },
+    "price": 1774,
+    "desc": "Ashen Vow job attire. An individual refinement between milestone sets."
+  },
+  "calling_drk_20_head": {
+    "name": "Iron Dusk Visor",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 13,
+    "stats": {
+      "str": 2,
+      "vit": 1
+    },
+    "desc": "Iron Dusk job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_20_body": {
+    "name": "Iron Dusk Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 21,
+    "stats": {
+      "str": 4,
+      "vit": 1
+    },
+    "desc": "Iron Dusk job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_20_legs": {
+    "name": "Iron Dusk Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 16,
+    "stats": {
+      "str": 3,
+      "vit": 1
+    },
+    "desc": "Iron Dusk job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_20_feet": {
+    "name": "Iron Dusk Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 11,
+    "stats": {
+      "str": 2,
+      "vit": 1
+    },
+    "desc": "Iron Dusk job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_24_body": {
+    "name": "Iron Dusk Waymark Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 24,
+    "rarity": "uncommon",
+    "def": 25,
+    "stats": {
+      "str": 5,
+      "vit": 1
+    },
+    "price": 0,
+    "price_sell": 1440,
+    "desc": "Iron Dusk job attire. An individual refinement between milestone sets."
+  },
+  "calling_drk_27_legs": {
+    "name": "Iron Dusk Waymark Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 27,
+    "rarity": "uncommon",
+    "def": 20,
+    "stats": {
+      "str": 4,
+      "vit": 1
+    },
+    "price": 0,
+    "price_sell": 1367,
+    "desc": "Iron Dusk job attire. An individual refinement between milestone sets."
+  },
+  "calling_drk_30_head": {
+    "name": "Nightward Visor",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 19,
+    "stats": {
+      "str": 3,
+      "vit": 1
+    },
+    "desc": "Nightward job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_30_body": {
+    "name": "Nightward Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 31,
+    "stats": {
+      "str": 6,
+      "vit": 2
+    },
+    "desc": "Nightward job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_30_legs": {
+    "name": "Nightward Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 22,
+    "stats": {
+      "str": 4,
+      "vit": 1
+    },
+    "desc": "Nightward job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_30_feet": {
+    "name": "Nightward Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 17,
+    "stats": {
+      "str": 2,
+      "vit": 1
+    },
+    "desc": "Nightward job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_34_head": {
+    "name": "Nightward Waymark Visor",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 34,
+    "rarity": "uncommon",
+    "def": 20,
+    "stats": {
+      "str": 3,
+      "vit": 1
+    },
+    "price": 0,
+    "price_sell": 1300,
+    "desc": "Nightward job attire. An individual refinement between milestone sets."
+  },
+  "calling_drk_37_feet": {
+    "name": "Nightward Waymark Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 37,
+    "rarity": "uncommon",
+    "def": 20,
+    "stats": {
+      "str": 3,
+      "vit": 1
+    },
+    "price": 0,
+    "price_sell": 1711,
+    "desc": "Nightward job attire. An individual refinement between milestone sets."
+  },
+  "calling_drk_40_head": {
+    "name": "Blackthorn Visor",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 24,
+    "stats": {
+      "str": 4,
+      "vit": 1
+    },
+    "desc": "Blackthorn job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_40_body": {
+    "name": "Blackthorn Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 40,
+    "stats": {
+      "str": 8,
+      "vit": 2
+    },
+    "desc": "Blackthorn job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_40_legs": {
+    "name": "Blackthorn Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 29,
+    "stats": {
+      "str": 6,
+      "vit": 2
+    },
+    "desc": "Blackthorn job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_40_feet": {
+    "name": "Blackthorn Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 21,
+    "stats": {
+      "str": 3,
+      "vit": 1
+    },
+    "desc": "Blackthorn job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_44_body": {
+    "name": "Blackthorn Waymark Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 44,
+    "rarity": "uncommon",
+    "def": 44,
+    "stats": {
+      "str": 9,
+      "vit": 3
+    },
+    "price": 23272,
+    "desc": "Blackthorn job attire. An individual refinement between milestone sets."
+  },
+  "calling_drk_47_legs": {
+    "name": "Blackthorn Waymark Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 47,
+    "rarity": "uncommon",
+    "def": 35,
+    "stats": {
+      "str": 7,
+      "vit": 2
+    },
+    "price": 19921,
+    "desc": "Blackthorn job attire. An individual refinement between milestone sets."
+  },
+  "calling_drk_50_head": {
+    "name": "Eclipse Visor",
+    "slot": "head",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 30,
+    "stats": {
+      "str": 5,
+      "vit": 1
+    },
+    "desc": "Eclipse job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_50_body": {
+    "name": "Eclipse Hauberk",
+    "slot": "body",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 50,
+    "stats": {
+      "str": 10,
+      "vit": 3
+    },
+    "desc": "Eclipse job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_50_legs": {
+    "name": "Eclipse Chausses",
+    "slot": "legs",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 36,
+    "stats": {
+      "str": 7,
+      "vit": 2
+    },
+    "desc": "Eclipse job attire. Part of a four-piece job milestone set."
+  },
+  "calling_drk_50_feet": {
+    "name": "Eclipse Sabatons",
+    "slot": "feet",
+    "atype": "chain",
+    "allowed_jobs": [
+      "DRK"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 27,
+    "stats": {
+      "str": 4,
+      "vit": 1
+    },
+    "desc": "Eclipse job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_10_head": {
+    "name": "Emberstudy Pointed Hat",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 4,
+    "stats": {
+      "int": 1,
+      "mp": 4
+    },
+    "desc": "Emberstudy job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_10_body": {
+    "name": "Emberstudy Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "int": 2,
+      "mp": 8
+    },
+    "desc": "Emberstudy job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_10_legs": {
+    "name": "Emberstudy Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 6,
+    "stats": {
+      "int": 2,
+      "mp": 6
+    },
+    "desc": "Emberstudy job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_10_feet": {
+    "name": "Emberstudy Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 4,
+    "stats": {
+      "int": 1,
+      "mp": 3
+    },
+    "desc": "Emberstudy job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_14_head": {
+    "name": "Emberstudy Waymark Pointed Hat",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 14,
+    "rarity": "uncommon",
+    "def": 5,
+    "stats": {
+      "int": 2,
+      "mp": 5
+    },
+    "price": 1098,
+    "desc": "Emberstudy job attire. An individual refinement between milestone sets."
+  },
+  "calling_blm_17_feet": {
+    "name": "Emberstudy Waymark Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 17,
+    "rarity": "uncommon",
+    "def": 6,
+    "stats": {
+      "int": 2,
+      "mp": 5
+    },
+    "price": 1774,
+    "desc": "Emberstudy job attire. An individual refinement between milestone sets."
+  },
+  "calling_blm_20_head": {
+    "name": "Cinderweave Pointed Hat",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "int": 2,
+      "mp": 8
+    },
+    "desc": "Cinderweave job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_20_body": {
+    "name": "Cinderweave Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "int": 5,
+      "mp": 16
+    },
+    "desc": "Cinderweave job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_20_legs": {
+    "name": "Cinderweave Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "int": 3,
+      "mp": 12
+    },
+    "desc": "Cinderweave job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_20_feet": {
+    "name": "Cinderweave Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "int": 2,
+      "mp": 6
+    },
+    "desc": "Cinderweave job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_24_body": {
+    "name": "Cinderweave Waymark Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 24,
+    "rarity": "uncommon",
+    "def": 17,
+    "stats": {
+      "int": 6,
+      "mp": 19
+    },
+    "price": 0,
+    "price_sell": 1440,
+    "desc": "Cinderweave job attire. An individual refinement between milestone sets."
+  },
+  "calling_blm_27_legs": {
+    "name": "Cinderweave Waymark Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 27,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "int": 5,
+      "mp": 16
+    },
+    "price": 0,
+    "price_sell": 1367,
+    "desc": "Cinderweave job attire. An individual refinement between milestone sets."
+  },
+  "calling_blm_30_head": {
+    "name": "Starfall Pointed Hat",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "int": 3,
+      "mp": 12
+    },
+    "desc": "Starfall job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_30_body": {
+    "name": "Starfall Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 21,
+    "stats": {
+      "int": 7,
+      "mp": 24
+    },
+    "desc": "Starfall job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_30_legs": {
+    "name": "Starfall Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 15,
+    "stats": {
+      "int": 5,
+      "mp": 17
+    },
+    "desc": "Starfall job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_30_feet": {
+    "name": "Starfall Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "int": 3,
+      "mp": 10
+    },
+    "desc": "Starfall job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_34_head": {
+    "name": "Starfall Waymark Pointed Hat",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 34,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "int": 4,
+      "mp": 13
+    },
+    "price": 0,
+    "price_sell": 1300,
+    "desc": "Starfall job attire. An individual refinement between milestone sets."
+  },
+  "calling_blm_37_feet": {
+    "name": "Starfall Waymark Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 37,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "int": 4,
+      "mp": 12
+    },
+    "price": 0,
+    "price_sell": 1711,
+    "desc": "Starfall job attire. An individual refinement between milestone sets."
+  },
+  "calling_blm_40_head": {
+    "name": "Voidglass Pointed Hat",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "int": 5,
+      "mp": 15
+    },
+    "desc": "Voidglass job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_40_body": {
+    "name": "Voidglass Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 27,
+    "stats": {
+      "int": 10,
+      "mp": 32
+    },
+    "desc": "Voidglass job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_40_legs": {
+    "name": "Voidglass Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 20,
+    "stats": {
+      "int": 7,
+      "mp": 23
+    },
+    "desc": "Voidglass job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_40_feet": {
+    "name": "Voidglass Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 13,
+    "stats": {
+      "int": 4,
+      "mp": 13
+    },
+    "desc": "Voidglass job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_44_body": {
+    "name": "Voidglass Waymark Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 44,
+    "rarity": "uncommon",
+    "def": 29,
+    "stats": {
+      "int": 11,
+      "mp": 35
+    },
+    "price": 23272,
+    "desc": "Voidglass job attire. An individual refinement between milestone sets."
+  },
+  "calling_blm_47_legs": {
+    "name": "Voidglass Waymark Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 47,
+    "rarity": "uncommon",
+    "def": 23,
+    "stats": {
+      "int": 8,
+      "mp": 27
+    },
+    "price": 19921,
+    "desc": "Voidglass job attire. An individual refinement between milestone sets."
+  },
+  "calling_blm_50_head": {
+    "name": "Astral Pointed Hat",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "int": 6,
+      "mp": 19
+    },
+    "desc": "Astral job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_50_body": {
+    "name": "Astral Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 33,
+    "stats": {
+      "int": 12,
+      "mp": 40
+    },
+    "desc": "Astral job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_50_legs": {
+    "name": "Astral Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 25,
+    "stats": {
+      "int": 9,
+      "mp": 29
+    },
+    "desc": "Astral job attire. Part of a four-piece job milestone set."
+  },
+  "calling_blm_50_feet": {
+    "name": "Astral Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "BLM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 16,
+    "stats": {
+      "int": 5,
+      "mp": 16
+    },
+    "desc": "Astral job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_10_head": {
+    "name": "Mercyweave Veil",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 4,
+    "stats": {
+      "mnd": 1,
+      "mp": 4
+    },
+    "desc": "Mercyweave job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_10_body": {
+    "name": "Mercyweave Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "mnd": 2,
+      "mp": 8
+    },
+    "desc": "Mercyweave job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_10_legs": {
+    "name": "Mercyweave Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 6,
+    "stats": {
+      "mnd": 2,
+      "mp": 6
+    },
+    "desc": "Mercyweave job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_10_feet": {
+    "name": "Mercyweave Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 4,
+    "stats": {
+      "mnd": 1,
+      "mp": 3
+    },
+    "desc": "Mercyweave job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_14_head": {
+    "name": "Mercyweave Waymark Veil",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 14,
+    "rarity": "uncommon",
+    "def": 5,
+    "stats": {
+      "mnd": 2,
+      "mp": 5
+    },
+    "price": 1098,
+    "desc": "Mercyweave job attire. An individual refinement between milestone sets."
+  },
+  "calling_whm_17_feet": {
+    "name": "Mercyweave Waymark Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 17,
+    "rarity": "uncommon",
+    "def": 6,
+    "stats": {
+      "mnd": 2,
+      "mp": 5
+    },
+    "price": 1774,
+    "desc": "Mercyweave job attire. An individual refinement between milestone sets."
+  },
+  "calling_whm_20_head": {
+    "name": "Dawnpetal Veil",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "mnd": 2,
+      "mp": 8
+    },
+    "desc": "Dawnpetal job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_20_body": {
+    "name": "Dawnpetal Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "mnd": 5,
+      "mp": 16
+    },
+    "desc": "Dawnpetal job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_20_legs": {
+    "name": "Dawnpetal Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "mnd": 3,
+      "mp": 12
+    },
+    "desc": "Dawnpetal job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_20_feet": {
+    "name": "Dawnpetal Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "mnd": 2,
+      "mp": 6
+    },
+    "desc": "Dawnpetal job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_24_body": {
+    "name": "Dawnpetal Waymark Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 24,
+    "rarity": "uncommon",
+    "def": 17,
+    "stats": {
+      "mnd": 6,
+      "mp": 19
+    },
+    "price": 0,
+    "price_sell": 1440,
+    "desc": "Dawnpetal job attire. An individual refinement between milestone sets."
+  },
+  "calling_whm_27_legs": {
+    "name": "Dawnpetal Waymark Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 27,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "mnd": 5,
+      "mp": 16
+    },
+    "price": 0,
+    "price_sell": 1367,
+    "desc": "Dawnpetal job attire. An individual refinement between milestone sets."
+  },
+  "calling_whm_30_head": {
+    "name": "Gracewoven Veil",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "mnd": 3,
+      "mp": 12
+    },
+    "desc": "Gracewoven job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_30_body": {
+    "name": "Gracewoven Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 21,
+    "stats": {
+      "mnd": 7,
+      "mp": 24
+    },
+    "desc": "Gracewoven job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_30_legs": {
+    "name": "Gracewoven Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 15,
+    "stats": {
+      "mnd": 5,
+      "mp": 17
+    },
+    "desc": "Gracewoven job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_30_feet": {
+    "name": "Gracewoven Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "mnd": 3,
+      "mp": 10
+    },
+    "desc": "Gracewoven job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_34_head": {
+    "name": "Gracewoven Waymark Veil",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 34,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "mnd": 4,
+      "mp": 13
+    },
+    "price": 0,
+    "price_sell": 1300,
+    "desc": "Gracewoven job attire. An individual refinement between milestone sets."
+  },
+  "calling_whm_37_feet": {
+    "name": "Gracewoven Waymark Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 37,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "mnd": 4,
+      "mp": 12
+    },
+    "price": 0,
+    "price_sell": 1711,
+    "desc": "Gracewoven job attire. An individual refinement between milestone sets."
+  },
+  "calling_whm_40_head": {
+    "name": "Sanctuary Veil",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "mnd": 5,
+      "mp": 15
+    },
+    "desc": "Sanctuary job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_40_body": {
+    "name": "Sanctuary Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 27,
+    "stats": {
+      "mnd": 10,
+      "mp": 32
+    },
+    "desc": "Sanctuary job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_40_legs": {
+    "name": "Sanctuary Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 20,
+    "stats": {
+      "mnd": 7,
+      "mp": 23
+    },
+    "desc": "Sanctuary job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_40_feet": {
+    "name": "Sanctuary Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 13,
+    "stats": {
+      "mnd": 4,
+      "mp": 13
+    },
+    "desc": "Sanctuary job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_44_body": {
+    "name": "Sanctuary Waymark Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 44,
+    "rarity": "uncommon",
+    "def": 29,
+    "stats": {
+      "mnd": 11,
+      "mp": 35
+    },
+    "price": 23272,
+    "desc": "Sanctuary job attire. An individual refinement between milestone sets."
+  },
+  "calling_whm_47_legs": {
+    "name": "Sanctuary Waymark Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 47,
+    "rarity": "uncommon",
+    "def": 23,
+    "stats": {
+      "mnd": 8,
+      "mp": 27
+    },
+    "price": 19921,
+    "desc": "Sanctuary job attire. An individual refinement between milestone sets."
+  },
+  "calling_whm_50_head": {
+    "name": "Daybreak Veil",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "mnd": 6,
+      "mp": 19
+    },
+    "desc": "Daybreak job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_50_body": {
+    "name": "Daybreak Robe",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 33,
+    "stats": {
+      "mnd": 12,
+      "mp": 40
+    },
+    "desc": "Daybreak job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_50_legs": {
+    "name": "Daybreak Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 25,
+    "stats": {
+      "mnd": 9,
+      "mp": 29
+    },
+    "desc": "Daybreak job attire. Part of a four-piece job milestone set."
+  },
+  "calling_whm_50_feet": {
+    "name": "Daybreak Shoes",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "WHM"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 16,
+    "stats": {
+      "mnd": 5,
+      "mp": 16
+    },
+    "desc": "Daybreak job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_10_head": {
+    "name": "Breathbound Headband",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 4,
+    "stats": {
+      "mnd": 1,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Breathbound job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_10_body": {
+    "name": "Breathbound Tunic",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 8,
+    "stats": {
+      "mnd": 2,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Breathbound job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_10_legs": {
+    "name": "Breathbound Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 6,
+    "stats": {
+      "mnd": 1,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Breathbound job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_10_feet": {
+    "name": "Breathbound Footwraps",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 10,
+    "rarity": "uncommon",
+    "def": 4,
+    "stats": {
+      "mnd": 1,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Breathbound job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_14_head": {
+    "name": "Breathbound Waymark Headband",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 14,
+    "rarity": "uncommon",
+    "def": 5,
+    "stats": {
+      "mnd": 1,
+      "agi": 1,
+      "vit": 1
+    },
+    "price": 1098,
+    "desc": "Breathbound job attire. An individual refinement between milestone sets."
+  },
+  "calling_mnk_17_feet": {
+    "name": "Breathbound Waymark Footwraps",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 17,
+    "rarity": "uncommon",
+    "def": 6,
+    "stats": {
+      "mnd": 1,
+      "agi": 1,
+      "vit": 1
+    },
+    "price": 1774,
+    "desc": "Breathbound job attire. An individual refinement between milestone sets."
+  },
+  "calling_mnk_20_head": {
+    "name": "Willowstep Headband",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "mnd": 2,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Willowstep job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_20_body": {
+    "name": "Willowstep Tunic",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "mnd": 4,
+      "agi": 2,
+      "vit": 1
+    },
+    "desc": "Willowstep job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_20_legs": {
+    "name": "Willowstep Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "mnd": 3,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Willowstep job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_20_feet": {
+    "name": "Willowstep Footwraps",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 20,
+    "rarity": "uncommon",
+    "def": 7,
+    "stats": {
+      "mnd": 1,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Willowstep job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_24_body": {
+    "name": "Willowstep Waymark Tunic",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 24,
+    "rarity": "uncommon",
+    "def": 17,
+    "stats": {
+      "mnd": 4,
+      "agi": 2,
+      "vit": 1
+    },
+    "price": 0,
+    "price_sell": 1440,
+    "desc": "Willowstep job attire. An individual refinement between milestone sets."
+  },
+  "calling_mnk_27_legs": {
+    "name": "Willowstep Waymark Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 27,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "mnd": 3,
+      "agi": 2,
+      "vit": 1
+    },
+    "price": 0,
+    "price_sell": 1367,
+    "desc": "Willowstep job attire. An individual refinement between milestone sets."
+  },
+  "calling_mnk_30_head": {
+    "name": "Stillheart Headband",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 9,
+    "stats": {
+      "mnd": 3,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Stillheart job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_30_body": {
+    "name": "Stillheart Tunic",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 21,
+    "stats": {
+      "mnd": 5,
+      "agi": 2,
+      "vit": 1
+    },
+    "desc": "Stillheart job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_30_legs": {
+    "name": "Stillheart Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 15,
+    "stats": {
+      "mnd": 4,
+      "agi": 2,
+      "vit": 1
+    },
+    "desc": "Stillheart job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_30_feet": {
+    "name": "Stillheart Footwraps",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 30,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "mnd": 2,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Stillheart job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_34_head": {
+    "name": "Stillheart Waymark Headband",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 34,
+    "rarity": "uncommon",
+    "def": 10,
+    "stats": {
+      "mnd": 3,
+      "agi": 1,
+      "vit": 1
+    },
+    "price": 0,
+    "price_sell": 1300,
+    "desc": "Stillheart job attire. An individual refinement between milestone sets."
+  },
+  "calling_mnk_37_feet": {
+    "name": "Stillheart Waymark Footwraps",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 37,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "mnd": 3,
+      "agi": 1,
+      "vit": 1
+    },
+    "price": 0,
+    "price_sell": 1711,
+    "desc": "Stillheart job attire. An individual refinement between milestone sets."
+  },
+  "calling_mnk_40_head": {
+    "name": "Cloudstride Headband",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 12,
+    "stats": {
+      "mnd": 3,
+      "agi": 2,
+      "vit": 1
+    },
+    "desc": "Cloudstride job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_40_body": {
+    "name": "Cloudstride Tunic",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 27,
+    "stats": {
+      "mnd": 7,
+      "agi": 3,
+      "vit": 2
+    },
+    "desc": "Cloudstride job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_40_legs": {
+    "name": "Cloudstride Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 20,
+    "stats": {
+      "mnd": 5,
+      "agi": 2,
+      "vit": 1
+    },
+    "desc": "Cloudstride job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_40_feet": {
+    "name": "Cloudstride Footwraps",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 40,
+    "rarity": "uncommon",
+    "def": 13,
+    "stats": {
+      "mnd": 3,
+      "agi": 1,
+      "vit": 1
+    },
+    "desc": "Cloudstride job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_44_body": {
+    "name": "Cloudstride Waymark Tunic",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 44,
+    "rarity": "uncommon",
+    "def": 29,
+    "stats": {
+      "mnd": 8,
+      "agi": 4,
+      "vit": 2
+    },
+    "price": 23272,
+    "desc": "Cloudstride job attire. An individual refinement between milestone sets."
+  },
+  "calling_mnk_47_legs": {
+    "name": "Cloudstride Waymark Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 47,
+    "rarity": "uncommon",
+    "def": 23,
+    "stats": {
+      "mnd": 6,
+      "agi": 3,
+      "vit": 1
+    },
+    "price": 19921,
+    "desc": "Cloudstride job attire. An individual refinement between milestone sets."
+  },
+  "calling_mnk_50_head": {
+    "name": "Lotus Headband",
+    "slot": "head",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 14,
+    "stats": {
+      "mnd": 4,
+      "agi": 2,
+      "vit": 1
+    },
+    "desc": "Lotus job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_50_body": {
+    "name": "Lotus Tunic",
+    "slot": "body",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 33,
+    "stats": {
+      "mnd": 9,
+      "agi": 4,
+      "vit": 2
+    },
+    "desc": "Lotus job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_50_legs": {
+    "name": "Lotus Trousers",
+    "slot": "legs",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 25,
+    "stats": {
+      "mnd": 6,
+      "agi": 3,
+      "vit": 1
+    },
+    "desc": "Lotus job attire. Part of a four-piece job milestone set."
+  },
+  "calling_mnk_50_feet": {
+    "name": "Lotus Footwraps",
+    "slot": "feet",
+    "atype": "cloth",
+    "allowed_jobs": [
+      "MNK"
+    ],
+    "lvl": 50,
+    "rarity": "uncommon",
+    "def": 16,
+    "stats": {
+      "mnd": 4,
+      "agi": 2,
+      "vit": 1
+    },
+    "desc": "Lotus job attire. Part of a four-piece job milestone set."
+  },
+  "relic_caerdunfields_documents": {
+    "name": "Watch-Farm Muster Roll",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A garrison roll from the watch farms. Every name on it answered present the night before. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "caerdunfields",
+      "kind": "documents"
+    }
+  },
+  "relic_caerdunfields_goods": {
+    "name": "Requisitioned Sickle",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The farmer's mark is filed off the tang and the empire's stamped over it. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "caerdunfields",
+      "kind": "goods"
+    }
+  },
+  "relic_caerdunfields_surveys": {
+    "name": "Milestone Bearing Card",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Distances from milestone zero to places nobody has walked to in three hundred years. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "caerdunfields",
+      "kind": "surveys"
+    }
+  },
+  "relic_heartwoodfields_documents": {
+    "name": "Orchard Tithe Receipt",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A receipt for a tenth of a harvest. Who it was owed to has moved on, and so has the harvest. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "heartwoodfields",
+      "kind": "documents"
+    }
+  },
+  "relic_heartwoodfields_goods": {
+    "name": "Seized Grafting Knife",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Taken from a grove family. The receipt for it is in someone else's ledger. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "heartwoodfields",
+      "kind": "goods"
+    }
+  },
+  "relic_heartwoodfields_surveys": {
+    "name": "Charcoal Camp Plat",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Each camp drawn to the yard, with the trees it may burn ticked off in red. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "heartwoodfields",
+      "kind": "surveys"
+    }
+  },
+  "relic_moonmereshores_documents": {
+    "name": "Ferry Manifest Leaf",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "One page of a crossing's passengers. The ink stops halfway down, mid-name. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "moonmereshores",
+      "kind": "documents"
+    }
+  },
+  "relic_moonmereshores_goods": {
+    "name": "Impounded Net Float",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Glass, hand-blown, with a fishing family's mark etched round it. Impounded for an unpaid toll. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "moonmereshores",
+      "kind": "goods"
+    }
+  },
+  "relic_moonmereshores_surveys": {
+    "name": "Causeway Sounding Sheet",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Depths along the causeway's line, taken at every tide for a year. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "moonmereshores",
+      "kind": "surveys"
+    }
+  },
+  "relic_northroad_documents": {
+    "name": "Post-House Waybill",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A courier's waybill, signed at every post-house up to the last one. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "northroad",
+      "kind": "documents"
+    }
+  },
+  "relic_northroad_goods": {
+    "name": "Commandeered Sledge Bell",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A family's sledge bell, commandeered for an army sledge that never left the yard. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "northroad",
+      "kind": "goods"
+    }
+  },
+  "relic_northroad_surveys": {
+    "name": "Snow-Pole Route Chart",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The road as the snow poles mark it, pole by numbered pole. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "northroad",
+      "kind": "surveys"
+    }
+  },
+  "relic_shoreroad_documents": {
+    "name": "Grain Ship Lading Bill",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Bill of lading for a hold of grain bound for a city that was empty when it should have docked. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "shoreroad",
+      "kind": "documents"
+    }
+  },
+  "relic_shoreroad_goods": {
+    "name": "Confiscated Pearl Comb",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A diver's comb, pearl set in shell, taken as surety and never given back. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "shoreroad",
+      "kind": "goods"
+    }
+  },
+  "relic_shoreroad_surveys": {
+    "name": "Tide-Line Survey Strip",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The coast's high-water mark, walked and staked, a mile to the strip. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "shoreroad",
+      "kind": "surveys"
+    }
+  },
+  "relic_huntingwood_documents": {
+    "name": "Royal Ride Game Book",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Every stag taken on the king's rides, with the day, the weather and who missed. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "huntingwood",
+      "kind": "documents"
+    }
+  },
+  "relic_huntingwood_goods": {
+    "name": "Forfeit Hunting Horn",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A forester's horn, forfeit for hunting the king's deer. His family hunted here first. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "huntingwood",
+      "kind": "goods"
+    }
+  },
+  "relic_huntingwood_surveys": {
+    "name": "Ride-and-Clearing Map",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The wood cut into straight rides and round clearings, drawn for a king who liked a view. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "huntingwood",
+      "kind": "surveys"
+    }
+  },
+  "relic_timberestates_documents": {
+    "name": "Overseer's Felling Order",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "An order to fell, in a hand that underlines the number twice. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "timberestates",
+      "kind": "documents"
+    }
+  },
+  "relic_timberestates_goods": {
+    "name": "Seized Axe-Head",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A grove-folk axe-head, seized when the groves became ranks. The haft was burned. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "timberestates",
+      "kind": "goods"
+    }
+  },
+  "relic_timberestates_surveys": {
+    "name": "Plantation Rank Survey",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Trees in ranks a ruler would envy, every one numbered. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "timberestates",
+      "kind": "surveys"
+    }
+  },
+  "relic_summerlakes_documents": {
+    "name": "Villa Guest Register Page",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A page of a summer villa's guest book. The last party never signed out. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "summerlakes",
+      "kind": "documents"
+    }
+  },
+  "relic_summerlakes_goods": {
+    "name": "Requisitioned Boat Lantern",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A lake family's lantern, taken for the villas' regatta and never returned. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "summerlakes",
+      "kind": "goods"
+    }
+  },
+  "relic_summerlakes_surveys": {
+    "name": "Lake Depth Chart",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Soundings for a lake dug deeper to suit a view. The village it drowned is marked in pencil. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "summerlakes",
+      "kind": "surveys"
+    }
+  },
+  "relic_reservoir_documents": {
+    "name": "Drowned Parish Register",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The valley's births and marriages, up to the day the water was let in. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "reservoir",
+      "kind": "documents"
+    }
+  },
+  "relic_reservoir_goods": {
+    "name": "Drowned Valley Hearth Key",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Its house is under forty feet of water. The empire kept the key. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "reservoir",
+      "kind": "goods"
+    }
+  },
+  "relic_reservoir_surveys": {
+    "name": "Dam Footing Survey",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Where the dam would stand, and a careful line showing where the water would come to. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "reservoir",
+      "kind": "surveys"
+    }
+  },
+  "relic_kingsgardens_documents": {
+    "name": "Gardener's Planting Ledger",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "What was planted, where and when; the last entries are this spring's, in a sentinel's hand. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "kingsgardens",
+      "kind": "documents"
+    }
+  },
+  "relic_kingsgardens_goods": {
+    "name": "Grove Cutting Label",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A nursery label naming the grove this cutting was taken from. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "kingsgardens",
+      "kind": "goods"
+    }
+  },
+  "relic_kingsgardens_surveys": {
+    "name": "Parterre Layout Sheet",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The garden beds drawn to the inch, with a note on which hedge must never be cut. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "kingsgardens",
+      "kind": "surveys"
+    }
+  },
+  "relic_glassworks_documents": {
+    "name": "Furnace Tally Slip",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A count of panes crated for the capital. The furnaces have kept counting. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "glassworks",
+      "kind": "documents"
+    }
+  },
+  "relic_glassworks_goods": {
+    "name": "Seized Glassblower's Pipe",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A blowing pipe, seized with the workshop it belonged to. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "glassworks",
+      "kind": "goods"
+    }
+  },
+  "relic_glassworks_surveys": {
+    "name": "Kiln-Line Survey",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The line of the furnaces across the sand, drawn by someone who measured the heat too. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "glassworks",
+      "kind": "surveys"
+    }
+  },
+  "relic_canalworks_documents": {
+    "name": "Lock-Keeper's Log Leaf",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A lock-keeper's log: barges up, barges down, and one line written very small. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "canalworks",
+      "kind": "documents"
+    }
+  },
+  "relic_canalworks_goods": {
+    "name": "Impounded Eel Trap",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A fen family's eel trap, impounded when the fen was drained for the cut. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "canalworks",
+      "kind": "goods"
+    }
+  },
+  "relic_canalworks_surveys": {
+    "name": "Fen Drainage Plan",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Every ditch and sluice of a fen that would not stay drained. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "canalworks",
+      "kind": "surveys"
+    }
+  },
+  "relic_granaryplains_documents": {
+    "name": "Granary Store Docket",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A store docket, filled to the last sack for a homecoming. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "granaryplains",
+      "kind": "documents"
+    }
+  },
+  "relic_granaryplains_goods": {
+    "name": "Requisitioned Threshing Flail",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A farm's flail, requisitioned for the imperial floors with the harvest it threshed. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "granaryplains",
+      "kind": "goods"
+    }
+  },
+  "relic_granaryplains_surveys": {
+    "name": "Field Boundary Plat",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Fields squared off by a ruler, the old hedges marked for grubbing out. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "granaryplains",
+      "kind": "surveys"
+    }
+  },
+  "relic_borderwall_documents": {
+    "name": "Embassy Dispatch Fragment",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Part of a dispatch from the embassy on the wall. The rest was burned unread. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "borderwall",
+      "kind": "documents"
+    }
+  },
+  "relic_borderwall_goods": {
+    "name": "Seized Pedlar's Scales",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A pedlar's scales, seized at the gate for weighing short. They weigh true. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "borderwall",
+      "kind": "goods"
+    }
+  },
+  "relic_borderwall_surveys": {
+    "name": "Rampart Road Itinerary",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The wall's road tower by tower, with the distance and the climb between. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "borderwall",
+      "kind": "surveys"
+    }
+  },
+  "relic_burnedland_documents": {
+    "name": "Scorched Census Page",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "A census page, scorched at one edge, counting a household that was not there to count. Moonmere's court pays to read it.",
+    "relic": {
+      "zone": "burnedland",
+      "kind": "documents"
+    }
+  },
+  "relic_burnedland_goods": {
+    "name": "Fire-Blackened Keepsake",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "Something a family kept, blackened in a fire that ran the wrong way. Heartwood's court pays to have it back.",
+    "relic": {
+      "zone": "burnedland",
+      "kind": "goods"
+    }
+  },
+  "relic_burnedland_surveys": {
+    "name": "Fire-Line Sketch Map",
+    "slot": "material",
+    "rarity": "uncommon",
+    "price_sell": 8,
+    "desc": "The one border no surveyor drew. Somebody tried. Caerdun's court pays to enter it in the record.",
+    "relic": {
+      "zone": "burnedland",
+      "kind": "surveys"
+    }
+  },
+  "named_relic": {
+    "name": "A Named Relic",
+    "slot": "relic",
+    "rarity": "rare",
+    "price_sell": 0,
+    "bound": true,
+    "desc": "Bound to its finder. Register it at your own court's registry before it crumbles."
+  },
+  "snare_silk": {
+    "name": "Snare Silk",
+    "slot": "material",
+    "rarity": "common",
+    "price_sell": 18,
+    "desc": "A snow spider's line, cut off a coach wheel on the North Road pass. It looks like nothing and holds a mule."
+  }
+}

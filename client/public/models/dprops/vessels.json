@@ -1,0 +1,614 @@
+{
+ "pack": "vessels",
+ "props": {
+  "bottle": {
+   "pack": "vessels",
+   "min": [
+    -0.04,
+    0,
+    -0.04
+   ],
+   "max": [
+    0.04,
+    0.335,
+    0.04
+   ],
+   "tris": 312,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "bottle_amber": {
+   "pack": "vessels",
+   "min": [
+    -0.04,
+    0,
+    -0.041
+   ],
+   "max": [
+    0.04,
+    0.338,
+    0.04
+   ],
+   "tris": 384,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "flask": {
+   "pack": "vessels",
+   "min": [
+    -0.095,
+    0,
+    -0.095
+   ],
+   "max": [
+    0.095,
+    0.328,
+    0.095
+   ],
+   "tris": 384,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "flask_amber": {
+   "pack": "vessels",
+   "min": [
+    -0.095,
+    0,
+    -0.095
+   ],
+   "max": [
+    0.095,
+    0.328,
+    0.095
+   ],
+   "tris": 384,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "coin_heap": {
+   "pack": "vessels",
+   "min": [
+    -0.362,
+    -0.003,
+    -0.421
+   ],
+   "max": [
+    0.384,
+    0.336,
+    0.412
+   ],
+   "tris": 1398,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "coin_stacks": {
+   "pack": "vessels",
+   "min": [
+    -0.22,
+    -0.002,
+    -0.189
+   ],
+   "max": [
+    0.204,
+    0.12,
+    0.211
+   ],
+   "tris": 549,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "plate": {
+   "pack": "vessels",
+   "min": [
+    -0.16,
+    0,
+    -0.16
+   ],
+   "max": [
+    0.16,
+    0.026,
+    0.16
+   ],
+   "tris": 520,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "plate_stack": {
+   "pack": "vessels",
+   "min": [
+    -0.16,
+    0.004,
+    -0.162
+   ],
+   "max": [
+    0.159,
+    0.095,
+    0.164
+   ],
+   "tris": 616,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "plate_food": {
+   "pack": "vessels",
+   "min": [
+    -0.209,
+    0,
+    -0.171
+   ],
+   "max": [
+    0.214,
+    0.185,
+    0.171
+   ],
+   "tris": 683,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "urn_lidded": {
+   "pack": "vessels",
+   "min": [
+    -0.231,
+    0,
+    -0.2
+   ],
+   "max": [
+    0.231,
+    0.65,
+    0.2
+   ],
+   "tris": 1432,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "urn_jar": {
+   "pack": "vessels",
+   "min": [
+    -0.175,
+    0,
+    -0.158
+   ],
+   "max": [
+    0.175,
+    0.44,
+    0.158
+   ],
+   "tris": 640,
+   "farTris": 0,
+   "far": false,
+   "small": true
+  },
+  "jar_storage": {
+   "pack": "vessels",
+   "min": [
+    -0.355,
+    0,
+    -0.355
+   ],
+   "max": [
+    0.355,
+    0.85,
+    0.355
+   ],
+   "tris": 1063,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "jar_tall": {
+   "pack": "vessels",
+   "min": [
+    -0.248,
+    0,
+    -0.248
+   ],
+   "max": [
+    0.248,
+    1.018,
+    0.248
+   ],
+   "tris": 1040,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "pot": {
+   "pack": "vessels",
+   "min": [
+    -0.273,
+    -0.004,
+    -0.245
+   ],
+   "max": [
+    0.273,
+    0.409,
+    0.245
+   ],
+   "tris": 1116,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "pan": {
+   "pack": "vessels",
+   "min": [
+    -0.128,
+    0.003,
+    -0.38
+   ],
+   "max": [
+    0.128,
+    0.062,
+    0.13
+   ],
+   "tris": 448,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  }
+ },
+ "swap": {
+  "dungeon/bottle_A_green.glb": {
+   "to": "bottle",
+   "scale": 0.75,
+   "from": {
+    "min": [
+     -0.184,
+     0,
+     -0.184
+    ],
+    "max": [
+     0.184,
+     0.886,
+     0.184
+    ]
+   }
+  },
+  "dungeon/bottle_A_brown.glb": {
+   "to": "bottle_amber",
+   "scale": 0.75,
+   "from": {
+    "min": [
+     -0.184,
+     0,
+     -0.184
+    ],
+    "max": [
+     0.184,
+     0.886,
+     0.184
+    ]
+   }
+  },
+  "dungeon/bottle_A_labeled_brown.glb": {
+   "to": "bottle_amber",
+   "scale": 0.75,
+   "from": {
+    "min": [
+     -0.184,
+     0,
+     -0.184
+    ],
+    "max": [
+     0.184,
+     0.886,
+     0.184
+    ]
+   }
+  },
+  "dungeon/bottle_B_green.glb": {
+   "to": "flask",
+   "scale": 0.75,
+   "from": {
+    "min": [
+     -0.276,
+     0,
+     -0.276
+    ],
+    "max": [
+     0.276,
+     0.886,
+     0.276
+    ]
+   }
+  },
+  "dungeon/bottle_C_green.glb": {
+   "to": "flask",
+   "scale": 0.75,
+   "from": {
+    "min": [
+     -0.369,
+     0,
+     -0.369
+    ],
+    "max": [
+     0.369,
+     0.906,
+     0.369
+    ]
+   }
+  },
+  "dungeon/bottle_B_brown.glb": {
+   "to": "flask_amber",
+   "scale": 0.75,
+   "from": {
+    "min": [
+     -0.276,
+     0,
+     -0.276
+    ],
+    "max": [
+     0.276,
+     0.886,
+     0.276
+    ]
+   }
+  },
+  "dungeon/coin_stack_large.glb": {
+   "to": "coin_heap",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.719,
+     0,
+     -0.816
+    ],
+    "max": [
+     0.717,
+     1.157,
+     0.843
+    ]
+   }
+  },
+  "dungeon/coin_stack_medium.glb": {
+   "to": "coin_stacks",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.446,
+     0,
+     -0.507
+    ],
+    "max": [
+     0.547,
+     0.641,
+     0.527
+    ]
+   }
+  },
+  "dungeon/coin_stack_small.glb": {
+   "to": "coin_stacks",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.445,
+     0,
+     -0.461
+    ],
+    "max": [
+     0.514,
+     0.478,
+     0.436
+    ]
+   }
+  },
+  "dungeon/plate.glb": {
+   "to": "plate",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.485,
+     0,
+     -0.486
+    ],
+    "max": [
+     0.485,
+     0.129,
+     0.485
+    ]
+   }
+  },
+  "dungeon/plate_stack.glb": {
+   "to": "plate_stack",
+   "fit": "footprint",
+   "scale": 0.72,
+   "from": {
+    "min": [
+     -0.492,
+     0,
+     -0.502
+    ],
+    "max": [
+     0.505,
+     0.564,
+     0.5
+    ]
+   }
+  },
+  "dungeon/plate_food_A.glb": {
+   "to": "plate_food",
+   "fit": "footprint",
+   "scale": 0.85,
+   "from": {
+    "min": [
+     -0.54,
+     0,
+     -0.486
+    ],
+    "max": [
+     0.485,
+     0.788,
+     0.485
+    ]
+   }
+  },
+  "graveyard/urn-round.glb": {
+   "to": "urn_lidded",
+   "from": {
+    "min": [
+     -0.132,
+     0,
+     -0.132
+    ],
+    "max": [
+     0.132,
+     0.384,
+     0.132
+    ]
+   }
+  },
+  "props/Vase_4.gltf": {
+   "to": "urn_jar",
+   "from": {
+    "min": [
+     -0.18,
+     0.001,
+     -0.18
+    ],
+    "max": [
+     0.18,
+     0.486,
+     0.18
+    ]
+   }
+  },
+  "props/Vase_1.gltf": {
+   "to": "jar_storage",
+   "from": {
+    "min": [
+     -0.334,
+     -0.001,
+     -0.334
+    ],
+    "max": [
+     0.334,
+     0.706,
+     0.334
+    ]
+   }
+  },
+  "props/Vase_2.gltf": {
+   "to": "jar_storage",
+   "from": {
+    "min": [
+     -0.347,
+     -0.001,
+     -0.347
+    ],
+    "max": [
+     0.347,
+     0.515,
+     0.347
+    ]
+   }
+  },
+  "props/Vase_3.gltf": {
+   "to": "jar_tall",
+   "from": {
+    "min": [
+     -0.278,
+     0.001,
+     -0.278
+    ],
+    "max": [
+     0.278,
+     0.917,
+     0.278
+    ]
+   }
+  },
+  "props/Pot_1_Lid.gltf": {
+   "to": "pot",
+   "fit": "footprint",
+   "offset": [
+    0,
+    0.025,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.27,
+     -0.023,
+     -0.243
+    ],
+    "max": [
+     0.27,
+     0.258,
+     0.243
+    ]
+   }
+  },
+  "props/Pot_2.gltf": {
+   "to": "pot",
+   "fit": "footprint",
+   "offset": [
+    0,
+    0.023,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.28,
+     -0.023,
+     -0.242
+    ],
+    "max": [
+     0.28,
+     0.336,
+     0.242
+    ]
+   }
+  },
+  "props/Pot_2_Lid.gltf": {
+   "to": "pot",
+   "offset": [
+    0,
+    0.03,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.28,
+     -0.023,
+     -0.242
+    ],
+    "max": [
+     0.28,
+     0.388,
+     0.242
+    ]
+   }
+  },
+  "props/Pan_1.gltf": {
+   "to": "pan",
+   "fit": "real",
+   "offset": [
+    0,
+    0.023,
+    0
+   ],
+   "from": {
+    "min": [
+     -0.256,
+     -0.023,
+     -0.64
+    ],
+    "max": [
+     0.256,
+     0.082,
+     0.26
+    ]
+   }
+  }
+ }
+}

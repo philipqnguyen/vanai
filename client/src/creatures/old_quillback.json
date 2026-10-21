@@ -1,0 +1,45 @@
+{
+ "file": "creatures/old_quillback.glb",
+ "plan": "suid",
+ "height": 3.939,
+ "length": 5.471,
+ "width": 1.721,
+ "top": 3.939,
+ "minY": 0.003,
+ "groundY": 0.003,
+ "forward": 0.523,
+ "tris": [
+  11390,
+  3417
+ ],
+ "budget": 12000,
+ "bones": 27,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.97,
+  "Run": 0.693,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.3,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.511,
+  "Run": 5.716
+ },
+ "bytes": 951936,
+ "notes": "Old Quillback NM: a fan of banded quills crown to tail, thorn resin down the flanks",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/old_quillback.py",
+ "fast": false,
+ "held": [],
+ "groundLift": {
+  "Death": 0.664
+ }
+}

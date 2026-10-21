@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vanai — the score</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Alegreya+Sans:wght@400;600;700&display=swap">
+<style>html, body { margin: 0; background: #15120f; }</style>
+</head>
+<!--
+  Dev-only: the score jukebox (src/jukebox.ts), the same page as /?music but
+  without the game's boot path, so it loads in a second. Not in the production
+  build (vite only bundles index.html). tools/music/render.mjs renders pieces
+  offline through this page.
+
+    cd client && npx vite   ->   http://localhost:5173/audition.html
+-->
+<body>
+<script type="module">
+  import { runJukebox } from "./src/jukebox.ts";
+  runJukebox(document.body);
+</script>
+</body>
+</html>

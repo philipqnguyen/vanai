@@ -1,0 +1,49 @@
+{
+ "file": "creatures/the_overseer.glb",
+ "plan": "sentinel",
+ "height": 5.483,
+ "length": 1.434,
+ "width": 2.353,
+ "top": 5.483,
+ "minY": -0.044,
+ "groundY": 0.0024,
+ "forward": -0.099,
+ "tris": [
+  11347,
+  3402
+ ],
+ "budget": 12000,
+ "bones": 26,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.629,
+  "Run": 0.678,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 2.0,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.693,
+  "Run": 6.565
+ },
+ "bytes": 952720,
+ "held": [
+  [
+   9363,
+   10989
+  ]
+ ],
+ "groundLift": {},
+ "notes": "The Overseer: a gaunt clerk in a split-tailed office coat, porcelain mask, the pen for a cane and the rota under its arm",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_overseer.py",
+ "fast": false
+}

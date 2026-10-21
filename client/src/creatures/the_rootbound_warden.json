@@ -1,0 +1,51 @@
+{
+ "file": "creatures/the_rootbound_warden.glb",
+ "plan": "rooted",
+ "height": 6.552,
+ "length": 2.364,
+ "width": 3.041,
+ "top": 6.552,
+ "minY": 0.0058,
+ "groundY": 0.0058,
+ "forward": -0.007,
+ "tris": [
+  11196,
+  3354
+ ],
+ "budget": 12000,
+ "bones": 20,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 2.372,
+  "Run": 1.502,
+  "Attack_A": 1.25,
+  "Attack_B": 1.15,
+  "Hit": 0.5,
+  "Death": 1.7,
+  "Cast": 3.2,
+  "Special": 2.1
+ },
+ "speeds": {
+  "Walk": 2.055,
+  "Run": 4.743
+ },
+ "bytes": 989932,
+ "held": [
+  [
+   8769,
+   9972
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.356
+ },
+ "notes": "The Rootbound Warden: the lock-up's warden grown into a hunched walking oak, a crown of branches and moss, a quarry-stone maul bound in roots, the irons on his wrists",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_rootbound_warden.py",
+ "fast": false
+}

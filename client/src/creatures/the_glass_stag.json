@@ -1,0 +1,45 @@
+{
+ "file": "creatures/the_glass_stag.glb",
+ "plan": "cervid",
+ "height": 6.129,
+ "length": 4.779,
+ "width": 4.21,
+ "top": 6.129,
+ "minY": 0.003,
+ "groundY": 0.003,
+ "forward": 0.427,
+ "tris": [
+  11160,
+  3348
+ ],
+ "budget": 12000,
+ "bones": 27,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.451,
+  "Run": 0.838,
+  "Attack_A": 1.1,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4,
+  "Special": 2.1
+ },
+ "speeds": {
+  "Walk": 2.822,
+  "Run": 8.707
+ },
+ "bytes": 1019168,
+ "held": [],
+ "groundLift": {
+  "Death": 0.968
+ },
+ "notes": "the Mirror Stag NM: a rack of faceted mirror glass throwing the dunes back, a coat of glass sand, mirror crystals breaking through the hide",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_glass_stag.py",
+ "fast": false
+}

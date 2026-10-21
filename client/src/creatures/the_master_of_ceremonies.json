@@ -1,0 +1,151 @@
+{
+ "file": "creatures/the_master_of_ceremonies.glb",
+ "plan": "wisp",
+ "height": 6.878,
+ "length": 2.221,
+ "width": 2.038,
+ "top": 7.035,
+ "minY": 0.0002,
+ "groundY": 0.0002,
+ "forward": 0.936,
+ "tris": [
+  10498,
+  3148
+ ],
+ "budget": 12000,
+ "bones": 23,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 2.366,
+  "Run": 1.521,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 3.381,
+  "Run": 7.099
+ },
+ "bytes": 898980,
+ "held": [
+  [
+   6595,
+   6686
+  ],
+  [
+   6696,
+   6702
+  ],
+  [
+   6711,
+   6716
+  ],
+  [
+   6721,
+   6743
+  ],
+  [
+   6752,
+   6774
+  ],
+  [
+   6778,
+   6794
+  ],
+  [
+   6802,
+   6805
+  ],
+  [
+   6822,
+   6827
+  ],
+  [
+   6834,
+   6843
+  ],
+  [
+   6851,
+   6859
+  ],
+  [
+   6866,
+   6868
+  ],
+  [
+   6879,
+   6884
+  ],
+  [
+   6887,
+   6895
+  ],
+  [
+   6901,
+   6905
+  ],
+  [
+   6910,
+   6916
+  ],
+  [
+   6921,
+   6941
+  ],
+  [
+   6945,
+   6951
+  ],
+  [
+   6960,
+   6967
+  ],
+  [
+   6970,
+   6976
+  ],
+  [
+   6979,
+   7023
+  ],
+  [
+   7028,
+   7037
+  ],
+  [
+   7064,
+   7190
+  ],
+  [
+   7196,
+   7205
+  ],
+  [
+   7218,
+   7221
+  ],
+  [
+   7226,
+   7237
+  ],
+  [
+   7243,
+   8018
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.038
+ },
+ "notes": "The Master of Ceremonies: the dancers' gentleman at 3x, a masked flame, a music box for a heart, a rapier and a staff of merelight",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_master_of_ceremonies.py",
+ "fast": false
+}

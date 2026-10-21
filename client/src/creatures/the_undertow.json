@@ -1,0 +1,54 @@
+{
+ "file": "creatures/the_undertow.glb",
+ "plan": "husk",
+ "height": 4.829,
+ "length": 3.35,
+ "width": 3.354,
+ "top": 4.829,
+ "minY": -0.352,
+ "groundY": 0.0,
+ "forward": 0.088,
+ "tris": [
+  9438,
+  2822
+ ],
+ "budget": 12000,
+ "bones": 23,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 2.667,
+  "Run": 1.833,
+  "Hit": 0.5,
+  "Death": 1.8,
+  "Attack_A": 1.3,
+  "Attack_B": 1.2,
+  "Cast": 3.2,
+  "Special": 2.2
+ },
+ "speeds": {
+  "Walk": 2.0,
+  "Run": 5.0
+ },
+ "bytes": 916536,
+ "held": [
+  [
+   8457,
+   9199
+  ]
+ ],
+ "groundLift": {
+  "Run": 0.039,
+  "Attack_A": 0.053,
+  "Attack_B": 0.207,
+  "Special": 0.18
+ },
+ "notes": "The Undertow: the Rose Salon's boss -- a drowned body on a column of lake-water, roses, a water-bound sabre",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_undertow.py",
+ "fast": false
+}

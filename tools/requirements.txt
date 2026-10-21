@@ -1,0 +1,9 @@
+# Python packages the tools under tools/ import (pip install -r tools/requirements.txt).
+# The lower bounds are the versions the tools were last run with, on Python 3.11.
+# Not listed: bpy, bmesh, mathutils and bpy_extras, which come with Blender 5.2;
+# scripts that import them run inside it (`blender -b --python <script>`), and
+# Blender's own Python already bundles numpy.
+numpy>=2.2
+Pillow>=11.3
+scipy>=1.16
+shapely>=2.1

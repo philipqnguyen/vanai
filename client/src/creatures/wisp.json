@@ -1,0 +1,144 @@
+{
+ "file": "creatures/wisp.glb",
+ "plan": "wisp",
+ "height": 1.144,
+ "length": 0.683,
+ "width": 0.572,
+ "top": 1.144,
+ "minY": 0.0108,
+ "groundY": 0.0108,
+ "forward": -0.071,
+ "tris": [
+  2600,
+  780
+ ],
+ "budget": 3200,
+ "bones": 16,
+ "atlas": 512,
+ "emissive": true,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.2,
+  "Run": 0.8,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4,
+  "Cast": 3.2
+ },
+ "speeds": {
+  "Walk": 1.8,
+  "Run": 4.0
+ },
+ "bytes": 311192,
+ "held": [],
+ "groundLift": {},
+ "notes": "the wisp look: a glowing orb low and forward, its flame rising up and back off it, two motes",
+ "role": "common",
+ "variants": {
+  "thorn_sprite": {
+   "atlas": "creatures/wisp@thorn_sprite.ktx2",
+   "bytes": 55885,
+   "emit": "creatures/wisp@thorn_sprite_emit.ktx2"
+  },
+  "marsh_light": {
+   "atlas": "creatures/wisp@marsh_light.ktx2",
+   "bytes": 53244,
+   "emit": "creatures/wisp@marsh_light_emit.ktx2"
+  },
+  "rootbound_shade": {
+   "atlas": "creatures/wisp@rootbound_shade.ktx2",
+   "bytes": 72345,
+   "emit": "creatures/wisp@rootbound_shade_emit.ktx2"
+  },
+  "pale_watcher": {
+   "atlas": "creatures/wisp@pale_watcher.ktx2",
+   "bytes": 47895,
+   "emit": "creatures/wisp@pale_watcher_emit.ktx2"
+  },
+  "silence_haunt": {
+   "atlas": "creatures/wisp@silence_haunt.ktx2",
+   "bytes": 51056,
+   "emit": "creatures/wisp@silence_haunt_emit.ktx2"
+  },
+  "bog_wisp": {
+   "atlas": "creatures/wisp@bog_wisp.ktx2",
+   "bytes": 52939,
+   "emit": "creatures/wisp@bog_wisp_emit.ktx2"
+  },
+  "resin_sprite": {
+   "atlas": "creatures/wisp@resin_sprite.ktx2",
+   "bytes": 54677,
+   "emit": "creatures/wisp@resin_sprite_emit.ktx2"
+  },
+  "amber_acolyte": {
+   "atlas": "creatures/wisp@amber_acolyte.ktx2",
+   "bytes": 55281,
+   "emit": "creatures/wisp@amber_acolyte_emit.ktx2"
+  },
+  "rain_wisp": {
+   "atlas": "creatures/wisp@rain_wisp.ktx2",
+   "bytes": 54011,
+   "emit": "creatures/wisp@rain_wisp_emit.ktx2"
+  },
+  "ember_wisp": {
+   "atlas": "creatures/wisp@ember_wisp.ktx2",
+   "bytes": 53061,
+   "emit": "creatures/wisp@ember_wisp_emit.ktx2"
+  },
+  "hush_bloom": {
+   "atlas": "creatures/wisp@hush_bloom.ktx2",
+   "bytes": 62557,
+   "emit": "creatures/wisp@hush_bloom_emit.ktx2"
+  },
+  "gloam_echo": {
+   "atlas": "creatures/wisp@gloam_echo.ktx2",
+   "bytes": 54166,
+   "emit": "creatures/wisp@gloam_echo_emit.ktx2"
+  },
+  "rime_sprite": {
+   "atlas": "creatures/wisp@rime_sprite.ktx2",
+   "bytes": 53442,
+   "emit": "creatures/wisp@rime_sprite_emit.ktx2"
+  },
+  "ash_sprite": {
+   "atlas": "creatures/wisp@ash_sprite.ktx2",
+   "bytes": 54459,
+   "emit": "creatures/wisp@ash_sprite_emit.ktx2"
+  },
+  "marsh_wisp": {
+   "atlas": "creatures/wisp@marsh_wisp.ktx2",
+   "bytes": 52009,
+   "emit": "creatures/wisp@marsh_wisp_emit.ktx2"
+  },
+  "chaff_sprite": {
+   "atlas": "creatures/wisp@chaff_sprite.ktx2",
+   "bytes": 52843,
+   "emit": "creatures/wisp@chaff_sprite_emit.ktx2"
+  },
+  "frost_wight": {
+   "atlas": "creatures/wisp@frost_wight.ktx2",
+   "bytes": 53899,
+   "emit": "creatures/wisp@frost_wight_emit.ktx2"
+  },
+  "beacon_wisp": {
+   "atlas": "creatures/wisp@beacon_wisp.ktx2",
+   "bytes": 56336,
+   "emit": "creatures/wisp@beacon_wisp_emit.ktx2"
+  },
+  "oil_wisp": {
+   "atlas": "creatures/wisp@oil_wisp.ktx2",
+   "bytes": 55339,
+   "emit": "creatures/wisp@oil_wisp_emit.ktx2"
+  },
+  "archive_wisp": {
+   "atlas": "creatures/wisp@archive_wisp.ktx2",
+   "bytes": 62160,
+   "emit": "creatures/wisp@archive_wisp_emit.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/wisp.py",
+ "fast": false
+}

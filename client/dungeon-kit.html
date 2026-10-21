@@ -1,0 +1,22 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Dungeon kit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  Dev-only demo of the dungeon kit v2 (client/src/dungeon-kit/, KIT.md in
+  tmp/dungeons/kit/). Not part of the production build: vite only bundles
+  index.html. Every theme's hall built with the kit alone, side by side.
+
+    http://localhost:5176/dungeon-kit.html              fly (WASD + mouse), keys 1-9, 0, - jump to a theme
+    http://localhost:5176/dungeon-kit.html?theme=keep   start in one theme
+    http://localhost:5176/dungeon-kit.html?shoot        render the contact sheet into window.__kitSheet
+-->
+<style>
+  html, body { margin: 0; height: 100%; background: #08090b; overflow: hidden; }
+  canvas { width: 100%; height: 100%; display: block; outline: none; }
+</style>
+<canvas id="kit"></canvas>
+<script type="module">
+  import { runKitDemo } from '/src/dungeon-kit/demo.ts';
+  runKitDemo(document.getElementById('kit'));
+</script>

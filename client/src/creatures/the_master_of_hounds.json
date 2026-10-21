@@ -1,0 +1,50 @@
+{
+ "file": "creatures/the_master_of_hounds.glb",
+ "plan": "sentinel",
+ "height": 5.314,
+ "length": 1.796,
+ "width": 2.65,
+ "top": 5.314,
+ "minY": -1.2193,
+ "groundY": 0.003,
+ "forward": 0.244,
+ "tris": [
+  11720,
+  3513
+ ],
+ "budget": 12000,
+ "bones": 24,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.745,
+  "Run": 0.726,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.667,
+  "Run": 6.5
+ },
+ "bytes": 1053856,
+ "held": [
+  [
+   9918,
+   14118
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.15
+ },
+ "notes": "The Master of Hounds: the household's huntsman, two empty collars on his chains",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_master_of_hounds.py",
+ "fast": false
+}

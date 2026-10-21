@@ -1,0 +1,45 @@
+{
+ "file": "creatures/the_pale_lurker.glb",
+ "plan": "crustacean",
+ "height": 3.326,
+ "length": 7.85,
+ "width": 8.829,
+ "top": 3.326,
+ "minY": 0.0111,
+ "groundY": 0.0111,
+ "forward": 1.33,
+ "tris": [
+  10597,
+  3178
+ ],
+ "budget": 12000,
+ "bones": 25,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.155,
+  "Run": 0.825,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2,
+  "Special": 2.1
+ },
+ "speeds": {
+  "Walk": 1.904,
+  "Run": 4.481
+ },
+ "bytes": 1000080,
+ "held": [],
+ "groundLift": {
+  "Death": 0.041
+ },
+ "notes": "the Pale Lurker NM: a bone-pale crab at 3x, barnacle-crusted, a wrecked ship's lantern still burning on its back",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_pale_lurker.py",
+ "fast": false
+}

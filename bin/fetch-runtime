@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# The character runtime from the GitHub Release this checkout pins; see the header
+# of scripts/fetch-runtime.mjs for the options (--if-needed, --check, --tag, --latest, --dest).
+exec node "$(dirname "${BASH_SOURCE[0]}")/../scripts/fetch-runtime.mjs" "$@"

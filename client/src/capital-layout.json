@@ -1,0 +1,472 @@
+{
+  "version": 1,
+  "about": [
+    "The Capital's explicit plan, read by zones/capital.ts for both keys (capital, capitalreturned) and pinned by client/test/capital_layout.test.mjs.",
+    "Source: the approved redesign brief section 3 under Philip's rulings of 2026-10-04 (half the area, symmetric about the gate-to-palace axis).",
+    "x east, z north, metres. Rects are [x0, z0, x1, z1]. Houses: [cx, cz] is the footprint centre, span runs along x at yaw 0 and len along z.",
+    "Deliberate departure from the card: the card puts the palace ~32 m east of the gate; the plan mirrors the octagon so the avenue runs straight from the gate up the Great Stair to the palace's portico and its dome's gold crown.",
+    "`external.keep.keep_door` is where a player leaving the Keep lands: the brief's precinct ground in front of the door, tz 44 (ruling 7). L4 put the palace's podium front at z 46, its flight down to z 42.64, over 44, and moved the landing to 41; M1 (decisions 14) moved the palace 3 m north instead -- podium front z 49, flight foot z 45.64, the portico, the cap_keep plinth and portal (z 55), the wings, the precinct balustrade and the forecourt's north edge with it -- so tz 44 is forecourt ground again, 1.6 m before the first step (clear of the forecourt camp, the Regent at z 38 and the throne landmark at z 42).",
+    "Junction radii follow PATH.md (parent.half + branch.half - 0.6). Since L2 the three junctions left are named open places (the gate court, Survey Street's crossing, the stair's foot -- camp areas and discovery points), not discs laid: every crossing is laid square by zones/capital_paving.ts."
+  ],
+  "buildNotes": [
+    "L3: the named buildings in the Colonnade's civic language (zones/capital_civic.ts; `archive`, `chapel`, `tenants` below). The Archive and the Chapel close Survey Street's two ends, porticoes looking down it to the crossing -- the Archive (its room of presses the site capital_archive, its rolls tower at its back north corner) east, the Chapel (a domed rotunda of lamps behind a block with its door shut, the podium's top the returned city's site capital_chapel, the chaplain at the door) west. The kit-era archive_wing is gone (the hall and its tower are one building); `chapel_spire` is the Chapel's dome. The bakery, the inn, the auction house and the armoury carry their trades' signs; the bakery's chalk board stands where the story's board is. There is no gate-court guardhouse: the brief names none (its gate is L1's triumphal arch). The census hall's and the archive's sites are their rooms (not the kit's 8 x 14 m boxes, which refused a sited NPC to a player standing in the room outside the box).",
+    "L2: the frontage runs (houses.frontage) are built as Colonnade perimeter blocks (blocks.list), none left to plan but the four grand runs L2 dropped, kept in houses.deferred until Philip rules: two rows back to back across a courtyard, each on its street, the ends closed by wings or by an end row of houses. The wards between the ward streets and the lanes are cut by a mews either side (x +-79.5); the blocks on Gate Street's south side back onto the wall lanes (z -244.5); the outer wards keep their courts, the ward square and the east garden open. 124 houses, the cap 130. The bakery, the inn and the auction house are tenanted block houses (`role`, `within: blocks`), as K2's armoury is; their plan points are in those houses.",
+    "L2 paving (zones/capital_paving.ts): `plazas` are the paved open places that are not streets -- the gate court either side of the avenue, the arrival before the gate, the inn's yard, the bakery's yard and the alleys between blocks. The square's camp is r 10 (was 13), so the square's east lamp and tree row stands a metre clear of it.",
+    "Ends: the avenue starts ~7 m inside the gatehouse room and Gate Street / lanes A and C stop 27-42 m short of the walls. Step 4 lays a paved apron through the gate passage and gives each lane end a court, garden or bastion stair, so no street ends in dirt (brief diagnosis 3).",
+    "The Great Stair (built C5) tops out at the terrace edge (greatStair.z1, z 0): the lower flight, a landing at 10 m and the upper flight, all south of the edge, then a head landing on the terrace to z 4 (greatStair.head), short of the precinct wall's masonry (z 5.8) and its gate (z 12). There is no cut through the terrace: zones/capital.ts greatStair says why.",
+    "The terrace wall (L1, zones/capital_walls.ts) is a sheer ashlar retaining wall with a balustrade on top, its face terrain.terrace.depth (4.8 m) south of the edge, from the Great Stair's cheek walls (cheek, 1.2 m, either side of stairGap) to the curtain's inner face. C5's five tiered stone courses (z -10..0) are gone; gardens, courts and camps still keep south of z -10.",
+    "The walls (L1) are the Colonnade's own modules on the same plan: the curtain on the old rampart's footprint (columns: 0.4 m inside the survey line to 6.2 m out), its walk at height (15 m, decisions 13), a sixteen-sided bastion of radius bastion.r at every vertex with a stair up to the walk inside, the gate a triumphal arch (gatehouse: half its width, its inner and outer faces z0/z1 off the survey line, the passage passHalf either side of the axis). The curtain's runs stand on the floor or the terrace and step at the terrace edge on the east and west edges.",
+    "The rim's scale is [6, 9.5] (L1, RIM.md's per-zone `scale`; it was [9, 16]): crowns about 22-35 m over their seat. From the streets they do not tower over the raised curtain -- hidden behind it within ~100 m of the wall, just over the parapet from mid-city -- and from the 15 m walk they still close the horizon. (M1 tried RIM.md's own [8.5, 13] for the L look pass's 'lumpy from the air'; the M1 review found the rocks three to four times the curtain's height from the palace gardens and the wards, and the aerial no less lumpy: a chain of single rocks reads as rocks from 300 m up at any scale. Back to L1's.) Beyond the plate the ash falls away (capital.ts height), so from the air the canvas's square edge sinks behind the chain.",
+    "M1 (decisions 14): the palace and its forecourt edge, precinct, wings and cap_keep moved 3 m north so the keep_door landing is tz 44 again; the avenue's north stretch is the two civic ranges (blocks.ranges); the open ground is the grounds (grounds.features, zones/capital_grounds.ts) -- gardens, screens, pavilions, never houses; the empty city's festival tables stand only in the arcades (ruling 11 read strictly, dressing.cityWide); the curtain's foot is a flagged walk from bastion door to door (grounds `walk`); the ash falls away past the plate.",
+    "The square's household_guard camp (K3 review) is in the square's open east half, (24, -120) r 13, not on the fountain: the server deals spawn and wander points at r = rand * radius (zone_state.rb), uniform in r, so the 5.4 m basin at the old centre took about a quarter of them, and a guard in it was out of melee reach from the rim. capital_layout.test.mjs holds every camp a metre clear of the civic solids. The data move copies this place."
+  ],
+  "size": 700,
+  "walls": {
+    "vertices": [[-142, -260], [-260, -142], [-260, 22], [-142, 140], [142, 140], [260, 22], [260, -142], [142, -260]],
+    "height": 15,
+    "columns": [5.2, 3.0, 0.6],
+    "innerReserve": 6,
+    "bastion": {
+      "r": 9.2,
+      "centres": [[-143.2, -262.9], [-262.9, -143.2], [-262.9, 23.2], [-143.2, 142.9], [143.2, 142.9], [262.9, 23.2], [262.9, -143.2], [143.2, -262.9]]
+    }
+  },
+  "plate": {
+    "pts": [[-173.07, -335], [-335, -173.07], [-335, 53.07], [-173.07, 215], [173.07, 215], [335, 53.07], [335, -173.07], [173.07, -335]],
+    "coast": [false, false, false, false, false, false, false, false],
+    "offset": 75,
+    "wanderSeed": 21,
+    "wanderAmp": 26,
+    "clearWalls": 45,
+    "rimReach": 30,
+    "rimOver": 70,
+    "rim": { "seed": 9315, "scale": [6, 9.5], "bite": [8, 16], "yaw": 0.5 }
+  },
+  "terrain": {
+    "floor": 7,
+    "terrace": { "y": 12, "edge": [[-260, 0], [260, 0]], "stairGap": [-6, 6], "wall": "colonnade", "depth": 4.8, "cheek": 1.2 }
+  },
+  "arrival": { "x": 0, "z": -242, "level": 45 },
+  "campRule": { "aggro": 12, "clear": 90, "near": 100, "nearOver": 2 },
+  "streets": [
+    { "id": "avenue", "kind": "avenue", "pts": [[0, -252], [0, -18]], "half": 7 },
+    { "id": "gate_street", "kind": "cross", "pts": [[-170, -205], [170, -205]], "half": 4 },
+    { "id": "survey_street", "kind": "cross", "pts": [[-134, -60], [134, -60]], "half": 4.5 },
+    { "id": "west_lane", "kind": "lane", "pts": [[-110, -205], [-110, -60]], "half": 3.5 },
+    { "id": "east_lane", "kind": "lane", "pts": [[110, -205], [110, -60]], "half": 3.5 },
+    { "id": "lane_a", "kind": "back", "pts": [[-110, -155], [-205, -155]], "half": 3.5 },
+    { "id": "lane_b", "kind": "back", "pts": [[-110, -155], [-41.5, -155]], "half": 3.5 },
+    { "id": "lane_c", "kind": "back", "pts": [[110, -155], [205, -155]], "half": 3.5 },
+    { "id": "lane_d", "kind": "back", "pts": [[110, -155], [41.5, -155]], "half": 3.5 },
+    { "id": "west_ward_street", "kind": "lane", "pts": [[-41.5, -205], [-41.5, -60]], "half": 3.5 },
+    { "id": "east_ward_street", "kind": "lane", "pts": [[41.5, -205], [41.5, -60]], "half": 3.5 },
+    { "id": "east_mews", "kind": "lane", "pts": [[79.5, -244.5], [79.5, -60]], "half": 3.5 },
+    { "id": "west_mews_s", "kind": "lane", "pts": [[-79.5, -244.5], [-79.5, -205]], "half": 3.5 },
+    { "id": "west_mews_n", "kind": "lane", "pts": [[-79.5, -155], [-79.5, -60]], "half": 3.5 },
+    { "id": "wall_lane_e", "kind": "back", "pts": [[28, -244.5], [131, -244.5]], "half": 3.5 },
+    { "id": "wall_lane_w", "kind": "back", "pts": [[-131, -244.5], [-28, -244.5]], "half": 3.5 }
+  ],
+  "square": { "rect": [-38, -146, 38, -94] },
+  "junctions": [
+    { "id": "gate_court", "x": 0, "z": -205, "r": 22 },
+    { "id": "survey_cross", "x": 0, "z": -60, "r": 11 },
+    { "id": "stair_foot", "x": 0, "z": -24, "r": 9 }
+  ],
+  "plazas": [
+    { "id": "gate_court", "rect": [-38, -201, 38, -182] },
+    { "id": "arrival", "rect": [-32, -252, 32, -209] },
+    { "id": "inn_yard", "rect": [-76, -108.33, -45, -90] },
+    { "id": "bakery_yard", "rect": [45, -131, 76, -122] },
+    { "id": "alley_e1", "rect": [45, -94, 76, -90] },
+    { "id": "alley_e2", "rect": [83, -110, 106.5, -106] },
+    { "id": "alley_w1", "rect": [-76, -135, -45, -131.67] },
+    { "id": "alley_w2", "rect": [-106.5, -110, -83, -106] }
+  ],
+  "greatStair": { "x": 0, "z0": -18, "z1": 0, "half": 6, "y0": 7, "y1": 12, "flights": 2, "head": { "half": 8, "z": [0, 4] } },
+  "forecourt": { "rect": [-41, 10, 41, 45.64] },
+  "gatehouse": { "x": 0, "z": -260, "half": 16, "z0": -2.4, "z1": 8.6, "passHalf": 4 },
+  "palace": {
+    "about": [
+      "L4: THE PALACE (zones/capital_palace.ts, build_capital_modules.py palace_*), in the palace's frame: origin `front` (the podium's front face on the axis), u across, v out toward the avenue (+v is -z), y up from the terrace. A podium `podium.half` x `podium.depth` m and `podium.h` high with a full-width flight of `podium.steps` treads; the block's facade plane at v `face`, its walls the GIANT ORDER (`order`: columns and pilasters two storeys tall) under a civic entablature; the hexastyle portico (`portico`: its entablature and pediment `half` either side, the columns at `cols` on v `front`, returns at the outer pair on v `returns`, the 10 m civic column scaled `colScale`) over the keep door (`door.half`: the great door bay, open on its vestibule in the empty city with the cap_keep portal before it, shut on the morning); the great drum of twelve windows (one a month) and the ribbed verdigris dome at v `dome.v`, radius `dome.r`, `dome.drum` m of drum, its lantern's top `dome.lanternTop` over the roof terrace (held to the generator); the gold crown, an original module, `dome.crownScale` the crown_piece scale.",
+      "`wings`: two forward wings either side of the forecourt (a court of honour), the giant order on the terrace without a podium, copper hip roofs; u `wings.u` (both sides), v `wings.v`; the court face's door bays `wings.doors` (counted from the stair end). `precinct`: the balustrade (world x, z) fronting the forecourt on the terrace walk, open between the Great Stair's head and the wings, its gate a brazier either side. `walk`: the terrace walk along the edge (world rect). The palace gardens (plan.gardens palace_garden_*, mown) are the grounds' since M1 (grounds.features palace_*, zones/capital_grounds.ts): parterres round basins, hemicycles, bosquets, the tapis vert and its pavilion; no houses.",
+      "Heights over the city floor (terrace + 5): the cornice 19.9, the balustrade 20.7, the lantern's top 45.6, the crown's top ~50. The avenue's houses top out at 12.5, the curtain 15, the archive tower 31.5, the chapel 34.9."
+    ],
+    "front": [0, 49], "faces": "s",
+    "podium": { "h": 1.5, "steps": 8, "tread": 0.42, "half": 23, "depth": 44, "cheek": 0.9 },
+    "order": 11, "entablature": 2.4, "face": -8,
+    "portico": { "half": 13, "cols": [-11.8, -7.4, -3.0, 3.0, 7.4, 11.8], "front": -1.6, "returns": -5.0, "colScale": 1.1 },
+    "door": { "half": 3 },
+    "dome": { "v": -26, "r": 10, "drum": 7, "lanternTop": 25.7018, "crownScale": 1.8 },
+    "wings": { "u": [41, 53], "v": [-24, 24], "doors": [2, 9] },
+    "precinct": [[[10.2, 10], [47, 10], [47, 25]], [[-10.2, 10], [-47, 10], [-47, 25]]],
+    "gate": [[-9.2, 10], [9.2, 10]],
+    "walk": [-60, 0, 60, 10],
+    "banners": {
+      "e": [[-9.6, "banner"], [-5.2, "banner"], [5.2, "banner"], [9.6, "banner"]],
+      "r": [[-9.6, "banner_caerdun"], [-5.2, "banner_heartwood"], [5.2, "banner_moonmere"], [9.6, "banner"]]
+    }
+  },
+  "buildings": [
+    { "id": "census_hall", "kind": "house", "site": "census_hall", "within": "hall", "cx": -65.875, "cz": -120, "yaw": 0, "span": 16.85, "len": 19.8, "storeys": 1, "door": "px", "seed": 9430 },
+    { "id": "bakery", "kind": "house", "within": "blocks", "block": "e1m", "cx": 48.5, "cz": -137, "yaw": 0, "span": 6, "len": 8, "storeys": 2, "door": "nx", "seed": 9431 },
+    { "id": "inn", "kind": "house", "within": "blocks", "block": "w1n", "cx": -48.5, "cz": -84, "yaw": 0, "span": 10, "len": 14, "storeys": 3, "door": "nz", "seed": 9460 },
+    { "id": "exchange", "kind": "house", "site": "exchange", "within": "exchange", "cx": 60.95, "cz": -108, "yaw": 1.5707963267948966, "span": 25.6, "len": 27.7, "storeys": 1, "door": "nx", "seed": 9461 },
+    { "id": "exchange_tower", "kind": "tower", "within": "exchange", "cx": 72.5, "cz": -108, "r": 3.5, "height": 30.52, "seed": 9462 },
+    { "id": "archive", "kind": "house", "site": "capital_archive", "within": "archive", "cx": 187.875, "cz": -60, "yaw": 1.5707963267948966, "span": 11.2, "len": 16.85, "storeys": 1, "door": "nx", "seed": 9440 },
+    { "id": "archive_tower", "kind": "tower", "within": "archive", "cx": 195, "cz": -48.7, "r": 3.62, "height": 31.5, "seed": 9441 },
+    { "id": "chapel", "kind": "house", "site": "capital_chapel", "within": "chapel", "cx": -187.5, "cz": -60, "yaw": 1.5707963267948966, "span": 24, "len": 33, "storeys": 1, "door": "px", "seed": 9450 },
+    { "id": "chapel_spire", "kind": "tower", "within": "chapel", "cx": -191, "cz": -60, "r": 10, "height": 34.9, "seed": 9451 },
+    { "id": "palace_dome", "kind": "dome", "within": "palace", "cx": 0, "cz": 75, "r": 10, "height": 50, "crown": true, "seed": 9470 }
+  ],
+  "props": {
+    "fountain": { "x": 0, "z": -120, "r": 5.4 },
+    "childsGame": { "x": 12, "z": -108 }
+  },
+  "archive": {
+    "about": [
+      "THE ARCHIVE (L3), closing Survey Street's east end: zones/capital_civic.ts builds it from the Colonnade modules in the civic hierarchy -- a 14.6 x 27 m podium of nine steps, a tetrastyle portico (the Hall's 10 m order on a smaller front, so the Hall stays the square's first building), a cella of blind arcading with its great door open on one room of presses, the roof terrace railed, and beside it at its back north corner the rolls tower, a civic tower with a ribbed verdigris cupola (off the axis: a portico with a tower behind it reads as a church).",
+      "`front` is the middle of the podium's front face, on Survey Street's axis; `faces` the way the portico looks (west, down the street to the crossing).",
+      "The building `archive` is the site `capital_archive` (floor 0, the podium's top): the room of presses itself, 11.2 x 16.85 m inside the presses, turned a quarter (yaw) so its length runs down the room, keeping seed 9440 -- not the kit house's 8 x 14 m, which left the room's edges outside the site, where the server refuses a sited NPC (see the Hall's census room). The desks and the clerk stand in it; `site` is what zones.json's capital_archive carries -- its `entrance` is where tools/qa/quest_routes.mjs starts its walk to them (a site with no house and no stairs has nothing else to start from), just inside the door on the floor.",
+      "`court`: the paved court before it, [half its width, how far out from the podium's front] -- to Survey Street's end.",
+      "`banners` per city: [u across the portico, module], the outer intercolumniations (the middle one is the door's)."
+    ],
+    "front": [171, -60], "faces": "w", "court": [10, 37],
+    "site": { "floors": [8.6], "decks": [], "ramps": [], "entrance": { "x": 180.2, "z": -60, "y": 8.6 } },
+    "banners": { "e": [[-3.4667, "banner"], [3.4667, "banner"]], "r": [[-3.4667, "banner"], [3.4667, "banner"]] }
+  },
+  "chapel": {
+    "about": [
+      "THE CHAPEL (L3), closing Survey Street's west end, the Archive's mirror: a 24 x 33 m podium, the same tetrastyle portico before a block whose great door is shut, and behind it a twelve-sided rotunda of blind arcading under a stepped attic and a ribbed verdigris dome. Civic and imperial, not ecclesiastical -- no tower, no cross, no saint (LORE.md: the empire doesn't do religion, it does appointments): a domed hall of lamps, its drum and four tall lamps on the podium burning at night in BOTH cities (the lamp-core texel), the one lit building within the empty city ('the chapel lamps, lit that night'; the bastions' doors and loops on the walls glow on the same texel, L1's).",
+      "`chapel_spire` in the buildings is its dome: the top of the lantern's finial, the skyline's height between the archive tower and the palace dome's lantern.",
+      "The building `chapel` is the site `capital_chapel` (the returned city's: the chaplain, citizen_5, stands at its door in the portico, a storey's height over the court, so the server must know the podium's floor): the podium's top, 24 x 33 m, one floor, no stairs; `entrance` is the flight's head, where tools/qa/quest_routes.mjs starts."
+    ],
+    "front": [-171, -60], "faces": "e", "court": [10, 37],
+    "site": { "floors": [8.6], "decks": [], "ramps": [], "entrance": { "x": -171.8, "z": -60, "y": 8.6 } }
+  },
+  "exchange": {
+    "about": [
+      "THE EXCHANGE (2026-10-11, Philip's auction-house ruling: every main city's auction house a prominent building where players crowd, on its plaza, in the city's own language, one emblem in every city): the Crown's auction house on the square's east side, facing the Hall of the Household across the fountain -- the square framed by the census on the west and the market's house on the east. It stands on the ground of the square_e block (four houses: 124 -> 120, the cap's target), so no street, plaza, camp or story spot moved. zones/capital_exchange.ts plans it, build_capital_modules.py exch_* builds it.",
+      "The Colonnade's civic order, not a house: a podium of five steps the whole front's width (low: the steps are the crowd's seats), a GIANT OCTASTYLE colonnade with no pediment (a stoa: the Hall keeps the square's one temple front and its dome) two rows deep under a coffered ceiling, opening straight onto a COURT open to the sky -- the open floor for the crowd -- walled in the Hall's blind arcading, and at the back a colonnaded aisle where four brokers stand behind their counters either side of the tower's foot, the board on the tower's face between them under the large emblem. The tower (the Archive's rolls tower in family, 0.9 m lower: the city's second tower, never the Archive's rival) carries the auction house's balance on all four faces above every roof; its top is a small ribbed verdigris dome. Copper hips over the colonnade and the back aisle: authority's colour from the air (ruling 4).",
+      "Frame as the Hall's: `front` the middle of the podium's front face, u across (+u north here), v out toward the square; `faces` w. `halfW` x `depth` the podium; `podium` its height (5 treads of `tread`); `cols` the octastyle's u (a wider middle bay: the board and its emblem show through it from the square), `colV` its two rows; `back` the aisle's colonnade (none before the tower); `wall` the blind arcading's thickness (two 0.6 m slabs, the Hall's); `tower` its centre and half side; `counters` [u, v] of each counter's middle, its broker `brokerBack` m behind (zones.json's broker spots are these, the test holds them); `board` [u, v] on the tower's face; `lamps` the court's four standards; `court` [half, reach] the paved forecourt across the ward street to the square's edge.",
+      "The building `exchange` is the site `exchange` (zones.json, the returned city's only): the podium's top inside the side walls, from its front edge to the back wall's inner face -- one floor, so a broker answers from anywhere on the Exchange's floor and from nowhere off it (the east mews runs 4.6 m behind the counters, through the back wall). `entrance` is the flight's head on the axis."
+    ],
+    "front": [47.1, -108], "faces": "w",
+    "halfW": 14, "depth": 28.9, "podium": 0.9, "treads": 5, "tread": 0.42,
+    "cols": [-12.4, -9.0, -5.6, -2.2, 2.2, 5.6, 9.0, 12.4], "colV": [-1.6, -6.6],
+    "back": { "colV": -21.9, "cols": [-9.0, -5.2, 5.2, 9.0] },
+    "wall": 1.2, "wallFrom": -7.6,
+    "tower": { "u": 0, "v": -25.4, "half": 3.5, "top": 30.52 },
+    "counters": [[-10.9, -23.75], [-7.1, -23.75], [7.1, -23.75], [10.9, -23.75]], "brokerBack": 1.45,
+    "board": [0, -21.9],
+    "lamps": [[-9.0, -9.4], [9.0, -9.4], [-9.0, -19.4], [9.0, -19.4]],
+    "court": [16, 9.6],
+    "site": { "floors": [7.9], "decks": [], "ramps": [], "entrance": { "x": 48.2, "z": -108, "y": 7.9 } }
+  },
+  "tenants": {
+    "about": [
+      "L3: the block houses the plan tenants (blocks `role`) are told from their neighbours by their trade's sign, never a portico (houses never get one): a teal board on a bronze bracket over the door on the ward streets -- the bakery's sheaf, the inn's cup -- and under the armoury's door arch a board on chains, a shield on crossed blades. (The auction house's balance hung over w1m's door until 2026-10-11, when the auction house became the Exchange on the square: `exchange` above.) `signs` maps a role to its module. The bakery's chalk board stands in the ward street before its door, where zones.json's bakery_board and bakery_board_morning are (the spots below): the empty city's chalked queues, the returned city's morning list."
+    ],
+    "signs": { "bakery": "sign_bakery", "inn": "sign_inn", "armoury": "sign_armoury" }
+  },
+  "hall": {
+    "about": [
+      "THE HALL OF THE HOUSEHOLD (K3), the Census Hall: zones/capital_civic.ts builds it from the Colonnade modules -- a 23.2 x 27 m podium with nine steps, a hexastyle portico, the cella of blind arcading, the roof terrace and the verdigris dome with its lantern and plain gilt finial.",
+      "`front` is the middle of the podium's front face; the flight runs 3.78 m on from it toward the square, stopping at the west ward street's kerb (x -45). `faces` is the way the portico looks.",
+      "The building `census_hall` (the site, floor 0) is the census room inside the cella, `within` the Hall, remeasured (L3) to the room itself -- its floor inside the presses, 16.85 x 19.8 m -- keeping the site's seed. The kit house's 8 x 14 m box it kept until then left a strip of the room on every side outside the site, where the server (SiteLevels.reachable?: a sited NPC answers only from inside its site) refused Sabel to a player two metres from her (MEASURED: tools/qa/quest_routes.mjs then check_quest_routes.rb, 'final floor rejected'). The story spots that live indoors stand in it.",
+      "`banners` per city: [u across the portico, module]. The middle intercolumniation stays clear: a banner there hangs in front of the door's fanlight.",
+      "`site` is the census room remeasured for zones.json's `census_hall` (BUILDINGS.md: a site is a measured copy of a building's floors, decks and stairs): ONE floor, the podium's top, at city floor 7 + 1.6; no decks, no stairs, nothing walkable above or below it. The data move (brief step 8) writes it with the plan's census_hall box, and gives sabel_census and census_rolls y = that floor, site census_hall, floor 0."
+    ],
+    "front": [-49, -120], "faces": "e",
+    "site": { "floors": [8.6], "decks": [], "ramps": [], "entrance": { "x": -58.2, "z": -120, "y": 8.6 } },
+    "banners": {
+      "e": [[-7.6, "banner"], [-3.8, "banner"], [3.8, "banner"], [7.6, "banner"]],
+      "r": [[-7.6, "banner_caerdun"], [-3.8, "banner_heartwood"], [3.8, "banner_moonmere"], [7.6, "banner"]]
+    }
+  },
+  "dressing": {
+    "about": [
+      "K3's street, square and courtyard dressing (zones/capital_civic.ts). Avenue kerb: a lamp standard and a tree in its box alternate every `pitch` m on the bay joints, `kerbOff` m out from the arcade face (crowns clear of the balconettes), none within `passageClear` m of a carriage passage's mouth.",
+      "The square: benches round the fountain on its diagonals at `benchR`, lamps at its corners, trees in boxes along the block ends. Trees are the project's generated broadleaf (`trees`, three of nature/CommonTree_1..5), dealt from `seed` the same in both cities, each at its own turn and a +-8% scale.",
+      "Three variants, not five: each is a thin-instanced template, near and far (trees.ts), two submeshes each in the main and glow passes and in every shadow cascade -- 22 trees in five variants were ~90 draws (MEASURED, K3).",
+      "L2: the square's `rows` -- lamps and trees in boxes alternating `pitch` apart down its long sides at `x`, from `z[0]` to `z[1]`, none in `keep` (the Hall's portico stays open to the square); a lamp between each pair of the block ends' trees. `garden`: every courtyard is a garden (zones/capital_civic.ts courtGarden), a `walk` of gravel round its faces and a `path` down and across it, four mown lawns between with a box-edged parterre each, low hedges, benches, a well where the paths cross, one to three trees."
+    ],
+    "seed": 9490, "trees": ["nature/CommonTree_1.gltf", "nature/CommonTree_3.gltf", "nature/CommonTree_5.gltf"], "kerbOff": 2.2, "pitch": 8, "passageClear": 3, "treeScale": 0.62, "courtTreeScale": 0.9,
+    "square": {
+      "benchR": 9.5,
+      "lamps": [[-33, -141], [33, -141], [-33, -99], [33, -99]],
+      "trees": [[-28, -142.5], [-20, -142.5], [-12, -142.5], [12, -142.5], [20, -142.5], [28, -142.5],
+                [-28, -97.5], [-20, -97.5], [-12, -97.5], [12, -97.5], [20, -97.5], [28, -97.5]],
+      "rows": { "x": [-36, 36], "z": [-138, -102], "pitch": 4.5, "keep": [[-38, -131.7, -30, -108.3], [30, -122, 38, -94]] }
+    },
+    "garden": { "walk": 1.4, "path": 1.6 },
+    "cityWide": {
+      "about": [
+        "L5: THE TWO CITIES CITY-WIDE (zones/capital_civic.ts cityWide), the direction's empty_vs_returned and the brief's section 4 beyond the avenue's arcades and the courtyards. `seeds`: the brief's two (9401 the empty city, 9402 the morning) deal the clutter -- which window bays set a table, which lanes hang washing -- never the house plan.",
+        "`banners`: a banner on every avenue lamp standard, out over the kerb: the Household's in the empty city, the three courts' in turn on the morning (each row dealt from its south end, so the two sides fly the same court abreast). `lanterns`: a bronze bracket lantern on the ward fronts, one every `pitch` m of facade on every street and plaza, none on a tenant's sign; CL_Glow, so cold in the empty city and lit on the morning's nights, no light spent. `arrival`: lamps and trees in boxes alternating `pitch` apart before the ward fronts either side of the arrival plaza, none within `doorClear` of a door.",
+        "`stalls`: the square's market, [x, z, the side the counter faces]: the same spots in both cities -- under canvas in the empty city (none in its camp), full on the morning, the two vendors (market_greens, market_potions) behind their counters. The child's game stands at props.childsGame in both (childs_game_<state>).",
+        "`tables` (the empty city; Philip's ruling 11 carried beyond the arcades): on the `kinds` of street, a separate table in the carriageway `kerbGap` off the kerb before a window bay -- never a door's, a passage's or a tenant's, so every footway and every door stays clear -- on one side of a street at a time (`across` m), `every` m apart on a side, `endClear` from a street's ends and `crossClear` off any other street, `campClear` outside every camp, clear of the story's spots; `keep` of the qualifying bays are set, dealt from the seed. In the listed `plazas` (the gate court), `plazaOff` m before the window bays on their edges, `plazaEnd` from their ends, every one that keeps `every` from the plaza's middle outward (symmetric on the axis, not dealt). `washlines` (the morning): `per` a back lane, `apart` m between, a line from a window or door bay to the one across the lane (the back lanes and the mews: a facade either side), stretched to its span (the module is `span` m).",
+        "RULING 11 READ STRICTLY (M1; the L look pass found an empty-city table standing in a ward street's roadway): a festival table stands ONLY before a blind or shop bay, never in a roadway, never before a door -- and the ward ranks have no blind or shop bays, so the streets and the gate court set none (`kinds` and `plazas` empty; L5 had read the ruling wider, a table in the carriageway before a ward window bay, for Philip to confirm). The empty city's tables are the arcades': the avenue's, the square's and (M1) the civic ranges'. capital_layout.test.mjs audits every table against the ruling.",
+        "`kerbRows` (the L5 review; zones/capital_civic.ts kerbRows): the direction's lamp standards and trees in boxes alternating every `pitch` m carried the avenue's whole length beyond its arcade rows (the arrival, the gate court, the run to the Great Stair; `ends` m short of its gate and stair ends), on the rows' own lattice and lamps where the rows have them, broken by a crossing (`crossClear`) and the square, both sides or neither, a banner on every lamp; and one row down each listed cross street -- Gate Street's in its carriageway `gap` off the south kerb (houses both sides, 1.5 m footways), Survey Street's on the lawn `gap` past its north footway -- `endClear` from its ends, none before a door or a passage. One plan for both cities, so it keeps clear of both cities' story and of every camp (`campClear`); the empty city's street tables keep `pass` m from a row's piece."
+      ],
+      "seeds": { "e": 9401, "r": 9402 },
+      "banners": { "e": ["banner_pole"], "r": ["banner_pole_caerdun", "banner_pole_heartwood", "banner_pole_moonmere"] },
+      "lanterns": { "pitch": 8, "signClear": 1.2 },
+      "arrival": { "x": [-29.6, 29.6], "z": [-239, -215], "pitch": 12, "doorClear": 3 },
+      "kerbRows": { "pitch": 8, "crossClear": 3, "campClear": 3, "endClear": 8, "pass": 1.5, "ends": [1, 3],
+                    "streets": [{ "id": "gate_street", "side": -1, "at": "carriage", "gap": 0.15 }, { "id": "survey_street", "side": 1, "at": "verge", "gap": 0.3 }] },
+      "stalls": [[-20, -131.6, "n"], [26, -110.4, "s"], [-12, -101.5, "s"], [-19.5, -101.5, "s"], [-27, -101.5, "s"], [28, -101.5, "s"],
+                 [-12, -138.4, "n"], [-28, -138.4, "n"], [12, -138.4, "n"], [20, -138.4, "n"], [28, -138.4, "n"]],
+      "tables": { "kinds": [], "plazas": [], "every": 16, "across": 8, "endClear": 8, "crossClear": 3,
+                  "campClear": 3, "kerbGap": 0.3, "plazaOff": 3.3, "plazaEnd": 4, "keep": 0.75 },
+      "washlines": { "streets": ["lane_a", "lane_b", "lane_c", "lane_d", "east_mews", "west_mews_s", "west_mews_n"], "per": 2, "apart": 20, "span": 7 }
+    }
+  },
+  "houses": {
+    "target": 120,
+    "cap": 130,
+    "plotDepth": 14,
+    "setback": [2.4, 3.8],
+    "gap": 0.6,
+    "frontage": [],
+    "about_m1": [
+      "M1 (decisions 14): the grand frontage L2 deferred (avenue_n_w/e, survey_n_w/e: 22 more houses, 146) is not built and never will be -- the cap holds, 124 houses. The avenue's north stretch, Survey Street to the Great Stair, is the two civic ranges (blocks.ranges), public buildings in the avenue's own bays; Survey Street's north side is the survey gardens (grounds)."
+    ]
+  },
+  "blocks": {
+    "about": [
+      "The Colonnade City's perimeter blocks (decisions 8-9), built by capital-architecture.ts from zones/capital_blocks.ts, which turns this into modules, colliders and footprints and is what the node test reads.",
+      "A block is [x0, z0, x1, z1] beside the avenue: its avenue row (arcade rank, 14 m: a 4 m walk and a 10 m body) faces the avenue on `avenueSide`, then the 10 m courtyard, then the ward row (2 storeys, rusticated, 7 m) facing the ward street on the far side. A 4 m ward-rank wing closes each end of the courtyard between the rows' corner houses.",
+      "Houses are listed south to north, bays 4 m. `proj` is the projecting centre (every 5th avenue house); `passage` the bay (0-based, south to north) that carries the carriage passage from the arcade through the house into the courtyard; `belvedere` a corner house's roof pavilion; `role` a later step's tenant.",
+      "Rows are free-standing frontages (the square's east side): `line` is the facade from its south (or west) end, `faces` the street side; the courtyard face is 14 m behind it, open until the block behind it is built.",
+      "`aprons` (metres) pave a strip along a block end that faces no street, or the square's fading edge, so no facade rises out of the lawn.",
+      "Ward rows are 7 m deep, half the avenue's plot: x1 - x0 = 14 + 10 + 7, which puts every block's outer face on the square's edge line (x +-38), so the square's north and south sides are wholly block ends and the ward streets run straight past its corners.",
+      "L2, the general form: `rows` names the two rows by the side each faces (`rank` av or wd, `depth` for a ward row, 7 by default; `tag` the row's id suffix; `row` what HouseRecs call it), `ends` the other two sides (`wing`, the default, or a row of ward houses whose bays stretch to the courtyard). Only the avenue and the square have the arcade rank. `passage` is the bay (0-based, south to north / west to east) the carriage passage runs through; `belvedere` a corner house's pavilion (the ward rank's on its own lower eave, 12.6 m)."
+    ],
+    "bay": 4, "avenueDepth": 14, "walk": 4, "court": 10, "wardDepth": 7, "wing": 4,
+    "list": [
+      { "id": "sw", "rect": [-38, -182, -7, -146], "avenueSide": "e", "seed": 9481,
+        "avenue": [{ "bays": 3, "belvedere": true }, { "bays": 3, "proj": true }, { "bays": 3, "belvedere": true, "passage": 1 }],
+        "ward": [{ "bays": 3 }, { "bays": 3 }, { "bays": 3 }],
+        "aprons": { "s": 3, "n": 3 } },
+      { "id": "se", "rect": [7, -182, 38, -146], "avenueSide": "w", "seed": 9482,
+        "avenue": [{ "bays": 3, "belvedere": true }, { "bays": 3, "proj": true, "role": "armoury" }, { "bays": 3, "belvedere": true, "passage": 1 }],
+        "ward": [{ "bays": 3 }, { "bays": 3 }, { "bays": 3 }],
+        "aprons": { "s": 3, "n": 3 } },
+      { "id": "nw", "rect": [-38, -94, -7, -70], "avenueSide": "e", "seed": 9483,
+        "avenue": [{ "bays": 3, "belvedere": true }, { "bays": 3, "belvedere": true, "passage": 1 }],
+        "ward": [{ "bays": 3 }, { "bays": 3 }],
+        "aprons": { "s": 3, "n": 5.5 } },
+      { "id": "ne", "rect": [7, -94, 38, -70], "avenueSide": "w", "seed": 9484,
+        "avenue": [{ "bays": 3, "belvedere": true }, { "bays": 3, "belvedere": true, "passage": 1 }],
+        "ward": [{ "bays": 3 }, { "bays": 3 }],
+        "aprons": { "s": 3, "n": 5.5 } },
+      { "id": "e1s", "rect": [45, -200, 76, -160], "seed": 9501,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 3, "belvedere": true }, { "bays": 4, "passage": 2 }, { "bays": 3 }] }, "e": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4 }, { "bays": 3 }] } } },
+      { "id": "e1m", "rect": [45, -151, 76, -131], "seed": 9502,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 2 }, { "bays": 3, "role": "bakery" }] }, "e": { "rank": "wd", "houses": [{ "bays": 2 }, { "bays": 3, "passage": 1 }] } } },
+      { "id": "e1n", "rect": [45, -90, 76, -66], "seed": 9503,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 3, "belvedere": true }] }, "e": { "rank": "wd", "houses": [{ "bays": 3, "passage": 2 }, { "bays": 3 }] } } },
+      { "id": "e2s", "rect": [83, -200, 106.5, -160], "seed": 9504,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4, "passage": 1 }, { "bays": 3 }] }, "e": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4 }, { "bays": 3 }] } } },
+      { "id": "e2m", "rect": [83, -150, 106.5, -110], "seed": 9505,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4 }, { "bays": 3 }] }, "e": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4, "passage": 2 }, { "bays": 3 }] } } },
+      { "id": "e2n", "rect": [83, -106, 106.5, -66], "seed": 9506,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4, "passage": 1 }, { "bays": 3 }] }, "e": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4 }, { "bays": 3, "belvedere": true }] } } },
+      { "id": "g1e", "rect": [32, -241, 76, -209], "seed": 9507,
+        "rows": { "n": { "rank": "wd", "houses": [{ "bays": 4, "belvedere": true }, { "bays": 3, "passage": 1 }, { "bays": 4 }] }, "s": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3 }, { "bays": 4 }] } },
+        "ends": { "w": { "rank": "wd", "houses": [{ "bays": 4 }] }, "e": "wing" } },
+      { "id": "g2e", "rect": [83, -241, 127, -209], "seed": 9508,
+        "rows": { "n": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3, "passage": 1 }, { "bays": 4 }] }, "s": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3 }, { "bays": 4 }] } } },
+      { "id": "g1w", "rect": [-76, -241, -32, -209], "seed": 9509,
+        "rows": { "n": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3, "passage": 1 }, { "bays": 4, "belvedere": true }] }, "s": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3 }, { "bays": 4 }] } },
+        "ends": { "e": { "rank": "wd", "houses": [{ "bays": 4 }] }, "w": "wing" } },
+      { "id": "g2w", "rect": [-127, -241, -83, -209], "seed": 9510,
+        "rows": { "n": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3, "passage": 1 }, { "bays": 4 }] }, "s": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3 }, { "bays": 4 }] } } },
+      { "id": "w1s", "rect": [-71, -200, -45, -160], "seed": 9511,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4, "passage": 2 }, { "bays": 3 }] }, "e": { "rank": "wd", "houses": [{ "bays": 3, "belvedere": true }, { "bays": 4 }, { "bays": 3 }] } } },
+      { "id": "w1m", "rect": [-76, -151, -45, -135], "seed": 9512,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 4, "passage": 2 }] }, "e": { "rank": "wd", "houses": [{ "bays": 4 }] } } },
+      { "id": "w1n", "rect": [-76, -90, -45, -66], "seed": 9513,
+        "rows": { "e": { "rank": "wd", "houses": [{ "bays": 3, "role": "inn" }, { "bays": 3, "belvedere": true }] }, "w": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 3, "passage": 0 }] } } },
+      { "id": "w2m", "rect": [-106.5, -150, -83, -110], "seed": 9514,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4 }, { "bays": 3 }] }, "e": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4, "passage": 1 }, { "bays": 3 }] } } },
+      { "id": "w2n", "rect": [-106.5, -106, -83, -66], "seed": 9515,
+        "rows": { "w": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4 }, { "bays": 3, "belvedere": true }] }, "e": { "rank": "wd", "houses": [{ "bays": 3 }, { "bays": 4, "passage": 1 }, { "bays": 3 }] } } },
+      { "id": "o1e", "rect": [114, -150, 158, -114], "seed": 9516,
+        "rows": { "s": { "rank": "wd", "houses": [{ "bays": 4, "belvedere": true }, { "bays": 3, "passage": 1 }, { "bays": 4 }] }, "n": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3 }, { "bays": 4 }] } } },
+      { "id": "o1w", "rect": [-160, -200, -116, -160], "seed": 9517,
+        "rows": { "s": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3, "passage": 1 }, { "bays": 4, "belvedere": true }] }, "n": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3 }, { "bays": 4 }] } } },
+      { "id": "o2w", "rect": [-161, -150, -117, -118], "seed": 9518,
+        "rows": { "s": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3 }, { "bays": 4, "belvedere": true }] }, "n": { "rank": "wd", "houses": [{ "bays": 4 }, { "bays": 3, "passage": 1 }, { "bays": 4 }] } } }
+    ],
+    "rows": [],
+    "about_ranges": [
+      "M1, THE CIVIC RANGES (decisions 14: the mock-up's unbroken arcade canyon to the stair, never more houses): the Offices of the Household either side of the avenue's north stretch, Survey Street to the Great Stair -- zones/capital_blocks.ts arcadeRow `civic`: the avenue's own arcade, piano nobile, attic and cornice line (so the canyon is one street from the gate court to the stair), one stone, a pedimented centre over the one great door, offices' glazed fronts and niches alternating down the arcade, a copper roof, no stacks. Not houses: out of the 130 cap (124).",
+      "The facade stands at x +-9.8, 2.8 m behind the avenue's edge (the footway): the stair-foot camp's 8 m reaches x +-8, and the projecting centre's piers, 0.6 m forward, keep the camp rule's metre. From Survey Street's footway (z -54) to 5.2 m short of the terrace wall's face (z -10), flanking the stair's lower flight: 11 bays, a 4-bay corner range, the 3-bay centre, a 4-bay corner range."
+    ],
+    "ranges": [
+      { "id": "office_w", "line": [[-9.8, -54], [-9.8, -10]], "faces": "e", "seed": 9520, "footway": 2.8, "aprons": { "s": 1.5, "n": 5.2 },
+        "houses": [{ "bays": 4 }, { "bays": 3, "proj": true }, { "bays": 4 }] },
+      { "id": "office_e", "line": [[9.8, -54], [9.8, -10]], "faces": "w", "seed": 9521, "footway": 2.8, "aprons": { "s": 1.5, "n": 5.2 },
+        "houses": [{ "bays": 4 }, { "bays": 3, "proj": true }, { "bays": 4 }] }
+    ]
+  },
+  "grounds": {
+    "about": ["M1, THE GROUNDS (zones/capital_grounds.ts): the open ground the blocks never reached, filled with non-house fabric in the Colonnade's own modules (decisions 14) -- parterre gardens in gravel walks, clipped hedges, tree avenues and bosquets, colonnade screens and hemicycles, round pavilions, statues, urns and basins. The camps' ground stays open (lawn or paving, nothing standing in it): the chapel garden's and both ward courts' are mown lawn, the west ward square paved; the gate court keeps the crystal's ring and the arrival's landing.", "Every feature is an explicit place; a piece the planner could not place clear of the city and the story is recorded (Civic.groundsSkipped), and the node test holds that list empty."],
+    "seed": 9496, "trees": ["nature/CommonTree_1.gltf", "nature/CommonTree_3.gltf", "nature/CommonTree_5.gltf"], "treeScale": 0.85,
+    "features": [
+      {"kind": "garden", "id": "survey_garden_e", "rect": [27, -51, 127, -8], "grid": [3, 2], "walk": 4, "margin": 4, "crossings": "statue", "corners": "urn", "trees": {"edges": ["n"], "pitch": 8, "inset": 2}},
+      {"kind": "garden", "id": "survey_garden_w", "rect": [-127, -51, -27, -8], "grid": [3, 2], "walk": 4, "margin": 4, "crossings": "statue", "corners": "urn", "trees": {"edges": ["n"], "pitch": 8, "inset": 2}},
+      {"kind": "colonnade", "id": "survey_screen_e", "from": [31, -49], "to": [123, -49], "gaps": [7, 15]},
+      {"kind": "colonnade", "id": "survey_screen_w", "from": [-123, -49], "to": [-31, -49], "gaps": [7, 15]},
+      {"kind": "garden", "id": "archive_garden_n", "rect": [133, -40, 250, -8], "grid": [3, 1], "walk": 4, "margin": 4, "centre": "pavilion", "corners": "urn", "trees": {"edges": ["n", "e"], "pitch": 8, "inset": 2}},
+      {"kind": "lawn", "id": "chapel_garden", "rect": [-205, -45, -169, -9]},
+      {"kind": "trees", "id": "chapel_garden_trees_w", "from": [-207, -43], "to": [-207, -11], "pitch": 6.4},
+      {"kind": "trees", "id": "chapel_garden_trees_e", "from": [-167, -43], "to": [-167, -11], "pitch": 6.4},
+      {"kind": "trees", "id": "chapel_garden_trees_n", "from": [-200.6, -8], "to": [-173.4, -8], "pitch": 6.8},
+      {"kind": "bosquet", "id": "chapel_bosquet_w", "rect": [-250, -40, -211, -8], "pitch": 7, "hedge": true},
+      {"kind": "bosquet", "id": "chapel_bosquet_e", "rect": [-163, -40, -131, -8], "pitch": 7, "hedge": true},
+      {"kind": "bosquet", "id": "archive_bosquet_e", "rect": [207, -72, 250, -44], "pitch": 7, "hedge": true},
+      {"kind": "bosquet", "id": "archive_bosquet_w", "rect": [-250, -72, -207, -44], "pitch": 7, "hedge": true},
+      {"kind": "garden", "id": "ward_garden_e", "rect": [170, -140, 250, -76], "grid": [3, 3], "walk": 4, "margin": 4, "centre": "basin", "crossings": "urn", "trees": {"edges": ["e"], "pitch": 8, "inset": 2}},
+      {"kind": "garden", "id": "ward_garden_w", "rect": [-250, -140, -170, -76], "grid": [3, 3], "walk": 4, "margin": 4, "centre": "pavilion", "crossings": "urn", "trees": {"edges": ["w"], "pitch": 8, "inset": 2}},
+      {"kind": "bosquet", "id": "ward_bosquet_e", "rect": [116, -108, 160, -76], "pitch": 8, "hedge": true},
+      {"kind": "lawn", "id": "west_ward_square", "rect": [-168, -118, -132, -82], "pave": "flags"},
+      {"kind": "trees", "id": "west_ward_square_trees_e", "from": [-129, -114], "to": [-129, -86], "pitch": 7},
+      {"kind": "trees", "id": "west_ward_square_trees_n", "from": [-164, -79], "to": [-136, -79], "pitch": 7},
+      {"kind": "lawn", "id": "east_ward_court", "rect": [114, -201, 186, -159]},
+      {"kind": "lawn", "id": "west_ward_court", "rect": [-106, -201, -72, -159]},
+      {"kind": "trees", "id": "ward_avenue_e", "from": [228, -150.7], "to": [186, -192.7], "pitch": 7, "pair": 7},
+      {"kind": "trees", "id": "ward_avenue_w", "from": [-228, -150.7], "to": [-186, -192.7], "pitch": 7, "pair": 7},
+      {"kind": "lawn", "id": "wall_lawn_e", "rect": [131, -241, 148, -209]},
+      {"kind": "lawn", "id": "wall_lawn_w", "rect": [-148, -241, -131, -209]},
+      {"kind": "lawn", "id": "archive_lawn", "rect": [127, -76, 167, -40]},
+      {"kind": "lawn", "id": "archive_lawn_n", "rect": [127, -40, 133, -8]},
+      {"kind": "lawn", "id": "chapel_lawn", "rect": [-169, -76, -127, -40]},
+      {"kind": "lawn", "id": "chapel_lawn_n", "rect": [-131, -40, -127, -8]},
+      {"kind": "lawn", "id": "chapel_lawn_trees", "rect": [-169, -40, -163, -8]},
+      {"kind": "lawn", "id": "survey_verge_e", "rect": [24.8, -55.5, 127, -51]},
+      {"kind": "lawn", "id": "survey_verge_w", "rect": [-127, -55.5, -24.8, -51]},
+      {"kind": "lawn", "id": "terrace_foot_e", "rect": [24.8, -8, 257, -5]},
+      {"kind": "lawn", "id": "terrace_foot_w", "rect": [-257, -8, -24.8, -5]},
+      {"kind": "walk", "id": "walk_s_e", "rect": [5, -256.5, 138.9, -252]},
+      {"kind": "walk", "id": "walk_s_w", "rect": [-138.9, -256.5, -5, -252]},
+      {"kind": "walk", "id": "walk_s_door_e", "rect": [138.9, -255.4, 141, -252]},
+      {"kind": "walk", "id": "walk_s_door_w", "rect": [-141, -255.4, -138.9, -252]},
+      {"kind": "walk", "id": "walk_s_lane_e", "rect": [131, -252, 138.9, -241]},
+      {"kind": "walk", "id": "walk_s_lane_w", "rect": [-138.9, -252, -131, -241]},
+      {"kind": "walk", "id": "walk_e_lo", "rect": [253, -138.25, 257, -5.3]},
+      {"kind": "walk", "id": "walk_w_lo", "rect": [-257, -138.25, -253, -5.3]},
+      {"kind": "walk", "id": "walk_e_door_lo", "rect": [253, -141, 255.4, -138.25]},
+      {"kind": "walk", "id": "walk_w_door_lo", "rect": [-255.4, -141, -253, -138.25]},
+      {"kind": "walk", "id": "walk_e_hi", "rect": [253, 1, 257, 18.25]},
+      {"kind": "walk", "id": "walk_w_hi", "rect": [-257, 1, -253, 18.25]},
+      {"kind": "walk", "id": "walk_e_door_hi", "rect": [253, 18.25, 255.4, 21]},
+      {"kind": "walk", "id": "walk_w_door_hi", "rect": [-255.4, 18.25, -253, 21]},
+      {"kind": "walk", "id": "walk_n_door_e", "rect": [138.25, 133, 141, 135.4]},
+      {"kind": "walk", "id": "walk_n_door_w", "rect": [-141, 133, -138.25, 135.4]},
+      {"kind": "walk", "id": "walk_n", "rect": [-138.25, 133, 138.25, 137]},
+      {"kind": "exedra", "id": "gate_exedra_e", "centre": [29, -191], "r": 8, "a0": -70, "a1": 70, "statue": true},
+      {"kind": "exedra", "id": "gate_exedra_w", "centre": [-29, -191], "r": 8, "a0": 110, "a1": 250, "statue": true},
+      {"kind": "lawn", "id": "arrival_bed_e", "rect": [15, -238, 27, -214], "hedge": true, "gaps": 2.4},
+      {"kind": "lawn", "id": "arrival_bed_w", "rect": [-27, -238, -15, -214], "hedge": true, "gaps": 2.4},
+      {"kind": "trees", "id": "arrival_bed_trees_e", "from": [21, -232], "to": [21, -220], "pitch": 12},
+      {"kind": "trees", "id": "arrival_bed_trees_w", "from": [-21, -232], "to": [-21, -220], "pitch": 12},
+      {"kind": "garden", "id": "palace_parterre_e", "rect": [64, 8, 150, 96], "grid": [3, 3], "walk": 4, "margin": 4, "centre": "basin", "crossings": "statue", "corners": "urn", "trees": {"edges": ["n"], "pitch": 8, "inset": 2}},
+      {"kind": "garden", "id": "palace_parterre_w", "rect": [-150, 8, -64, 96], "grid": [3, 3], "walk": 4, "margin": 4, "centre": "basin", "crossings": "statue", "corners": "urn", "trees": {"edges": ["n"], "pitch": 8, "inset": 2}},
+      {"kind": "exedra", "id": "palace_exedra_e", "centre": [162, 52], "r": 9, "a0": -70, "a1": 70, "statue": true},
+      {"kind": "exedra", "id": "palace_exedra_w", "centre": [-162, 52], "r": 9, "a0": 110, "a1": 250, "statue": true},
+      {"kind": "bosquet", "id": "palace_bosquet_e1", "rect": [176, 8, 232, 26], "pitch": 7, "hedge": true},
+      {"kind": "bosquet", "id": "palace_bosquet_w1", "rect": [-232, 8, -176, 26], "pitch": 7, "hedge": true},
+      {"kind": "bosquet", "id": "palace_bosquet_e2", "rect": [176, 30, 200, 60], "pitch": 7, "hedge": true},
+      {"kind": "bosquet", "id": "palace_bosquet_w2", "rect": [-200, 30, -176, 60], "pitch": 7, "hedge": true},
+      {"kind": "bosquet", "id": "palace_bosquet_e3", "rect": [154, 66, 176, 92], "pitch": 7, "hedge": true},
+      {"kind": "bosquet", "id": "palace_bosquet_w3", "rect": [-176, 66, -154, 92], "pitch": 7, "hedge": true},
+      {"kind": "lawn", "id": "palace_tapis", "rect": [-8, 98, 8, 123]},
+      {"kind": "trees", "id": "palace_allee_e", "from": [13, 99], "to": [13, 127], "pitch": 7},
+      {"kind": "trees", "id": "palace_allee_w", "from": [-13, 99], "to": [-13, 127], "pitch": 7},
+      {"kind": "garden", "id": "palace_parterre_ne", "rect": [26, 98, 58, 130], "grid": [2, 1], "walk": 3, "margin": 3, "corners": "urn"},
+      {"kind": "garden", "id": "palace_parterre_ne_w", "rect": [-58, 98, -26, 130], "grid": [2, 1], "walk": 3, "margin": 3, "corners": "urn"},
+      {"kind": "pavilion", "id": "palace_pavilion_n", "at": [0, 127]}
+    ]
+  },
+  "gardens": [
+    { "id": "palace_garden_w", "poly": [[-60, 6], [-60, 130], [-140, 130], [-250, 20], [-250, 6]] },
+    { "id": "palace_garden_e", "poly": [[60, 6], [250, 6], [250, 20], [140, 130], [60, 130]] },
+    { "id": "palace_garden_n", "rect": [-60, 96, 60, 130] },
+    { "id": "chapel_garden", "circle": [-187, -27, 15] },
+    { "id": "survey_garden_w", "rect": [-122, -34, -28, -12] },
+    { "id": "survey_garden_e", "rect": [28, -34, 122, -12] },
+    { "id": "east_ward_garden", "rect": [164, -140, 250, -74] }
+  ],
+  "courts": [
+    { "id": "west_ward_court", "rect": [-106, -201, -72, -159] },
+    { "id": "east_ward_court", "rect": [114, -201, 186, -159] },
+    { "id": "west_ward_square", "circle": [-150, -100, 16] },
+    { "id": "chapel_court", "rect": [-166, -70, -134, -42] },
+    { "id": "archive_court", "rect": [134, -70, 166, -42] }
+  ],
+  "camps": [
+    { "area": "west_ward_court", "monster": "ward_hound", "min_lvl": 44, "max_lvl": 45, "count": 5, "x": -90, "z": -185, "radius": 18, "respawn": 40 },
+    { "area": "east_ward_court", "monster": "ward_hound", "min_lvl": 46, "max_lvl": 47, "count": 5, "x": 155, "z": -180, "radius": 15, "respawn": 40 },
+    { "area": "west_ward_square", "monster": "household_guard", "min_lvl": 46, "max_lvl": 47, "count": 4, "x": -150, "z": -100, "radius": 15, "respawn": 45 },
+    { "area": "square", "monster": "household_guard", "min_lvl": 44, "max_lvl": 45, "count": 4, "x": 24, "z": -120, "radius": 10, "respawn": 45 },
+    { "area": "archive_court", "monster": "archive_wisp", "min_lvl": 47, "max_lvl": 48, "count": 5, "x": 150, "z": -55, "radius": 12, "respawn": 40 },
+    { "area": "chapel_court", "monster": "household_guard", "min_lvl": 47, "max_lvl": 48, "count": 4, "x": -150, "z": -55, "radius": 12, "respawn": 45 },
+    { "area": "stair_foot", "monster": "household_guard", "min_lvl": 48, "max_lvl": 49, "count": 5, "x": 0, "z": -30, "radius": 8, "respawn": 45 },
+    { "area": "forecourt", "monster": "palace_sentinel", "min_lvl": 48, "max_lvl": 49, "count": 3, "x": 0, "z": 24, "radius": 8, "respawn": 60 },
+    { "area": "chapel_garden", "monster": "gloam_echo", "min_lvl": 46, "max_lvl": 47, "count": 3, "x": -187, "z": -27, "radius": 15, "respawn": 45 },
+    { "area": "great_stair", "monster": "first_keeper", "min_lvl": 47, "max_lvl": 48, "count": 3, "x": 0, "z": 2, "radius": 3, "respawn": 45 }
+  ],
+  "spots": {
+    "capital": {
+      "spawn": [0, -242],
+      "portals": { "cap_gate": [0, -268], "cap_keep": [0, 55] },
+      "milestones": {},
+      "landmarks": {
+        "lm_cap_gate": [0, -250], "lm_cap_square": [0, -110], "lm_cap_census": [-63.5, -116.5], "lm_cap_archive": [160, -60],
+        "lm_cap_chapel": [-160, -60], "lm_cap_stair": [0, 0], "lm_cap_throne": [0, 42]
+      },
+      "npcs": { "junn_cap": [10, -234], "sabel_census": [-63.4, -123], "morrow_stair": [4, -10], "regent_walls": [0, 38] },
+      "interactables": { "census_rolls": [-66, -116.5], "bakery_board": [43, -140.4], "archive_desk": [187, -60] },
+      "furnishings": {}
+    },
+    "capitalreturned": {
+      "spawn": [0, -242],
+      "portals": { "capr_gate": [0, -268] },
+      "milestones": { "crystal_capitalreturned": [-14, -200] },
+      "landmarks": {
+        "lm_cap_gate": [0, -250], "lm_cap_square": [0, -110], "lm_cap_census": [-63.5, -116.5], "lm_cap_archive": [160, -60],
+        "lm_cap_chapel": [-160, -60], "lm_cap_stair": [0, 0], "lm_cap_throne": [0, 42]
+      },
+      "npcs": {
+        "first_minister": [14, 40], "morrow_morning": [-12, 40], "master_of_arms": [-24, 24],
+        "junn_morning": [12, -232], "sabel_morning": [-12, -228], "citizen_4": [6, -248],
+        "baker": [44, -136], "market_potions": [26, -108], "market_greens": [-20, -134],
+        "citizen_1": [-26, -104], "citizen_3": [16, -111], "regent_offduty": [20, -106],
+        "broker_imperial": [72.3, -115.1], "broker_vane": [72.3, -118.9], "broker_odile": [72.3, -100.9], "broker_reeve": [72.3, -97.1],
+        "imperial_innkeeper": [-50, -96], "imperial_armourer": [8.4, -164],
+        "citizen_2": [188.8, -60.5], "citizen_5": [-176.6, -62.6], "citizen_6": [-96, -180],
+        "lamplighter_morning": [24, -186], "crier_morning": [-26, -188], "porter_morning": [-22, -224], "goodwife_maren": [-84, -170],
+        "smith_pell": [140, -170], "watchman_east": [172, -192], "mother_east": [124, -186], "observer_hesk": [-31.5, -138.5],
+        "flour_carrier": [60, -126], "ostler_morning": [-68, -100], "water_carrier": [-142, -94], "tutor_brannoch": [-158, -108],
+        "surveyor_crane": [-60, -52], "letter_writer_morning": [60, -52], "bookbinder_haskel": [142, -48], "candlemaker_ysolde": [-140, -48],
+        "gardener_fennick": [-180, -20], "petitioner_morning": [-68.5, -23], "herald_morning": [30, 22], "groundskeeper_abel": [-90, 38],
+        "orchard_keeper": [204.5, -99]
+      },
+      "interactables": { "bakery_board_morning": [43, -140.4] },
+      "furnishings": { "returned_archive_desk": [187, -60] }
+    }
+  },
+  "inside": {
+    "sabel_census": "census_hall", "census_rolls": "census_hall", "lm_cap_census": "census_hall",
+    "archive_desk": "archive", "citizen_2": "archive", "returned_archive_desk": "archive", "citizen_5": "chapel",
+    "broker_imperial": "exchange", "broker_vane": "exchange", "broker_odile": "exchange", "broker_reeve": "exchange"
+  },
+  "inGatehouse": ["cap_gate", "capr_gate"],
+  "clearance": { "portals": 14, "milestones": 10, "npcs": 10, "landmarks": 12, "interactables": 6, "furnishings": 6, "spawn": 10, "solid": 2, "blockSolid": 1, "portalSolid": 0.5, "crystalRing": 6.5, "discover": 30 },
+  "external": {
+    "burnedland": { "bl_capital": { "tx": 0, "tz": -242 } },
+    "keep": { "keep_door": { "tx": 0, "tz": 44 } }
+  }
+}

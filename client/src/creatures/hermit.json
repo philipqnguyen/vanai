@@ -1,0 +1,44 @@
+{
+ "file": "creatures/hermit.glb",
+ "plan": "crustacean",
+ "height": 1.659,
+ "length": 2.249,
+ "width": 1.938,
+ "top": 1.659,
+ "minY": 0.0021,
+ "groundY": 0.0021,
+ "forward": 0.316,
+ "tris": [
+  3894,
+  1168
+ ],
+ "budget": 4200,
+ "bones": 25,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.659,
+  "Run": 0.458,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 0.792,
+  "Run": 1.989
+ },
+ "bytes": 461148,
+ "held": [],
+ "groundLift": {
+  "Death": 0.046
+ },
+ "notes": "the Combe Hermit: shelled in a salvaged iron-bound strongbox, the lid up like a visor, the tideline lashed on top",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/crustacean.py",
+ "fast": false
+}

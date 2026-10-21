@@ -1,0 +1,51 @@
+{
+ "file": "creatures/the_nurseryman.glb",
+ "plan": "sentinel",
+ "height": 6.048,
+ "length": 1.961,
+ "width": 3.582,
+ "top": 6.048,
+ "minY": 0.0031,
+ "groundY": 0.0031,
+ "forward": 0.624,
+ "tris": [
+  11918,
+  3574
+ ],
+ "budget": 12000,
+ "bones": 24,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.767,
+  "Run": 0.736,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.921,
+  "Run": 7.12
+ },
+ "bytes": 1099312,
+ "held": [
+  [
+   11596,
+   14100
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.567
+ },
+ "notes": "The Nurseryman: the seed ledger open on a lectern grown to its arm, saplings in its joints",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_nurseryman.py",
+ "fast": false
+}

@@ -1,0 +1,685 @@
+{
+  "key": "keep",
+  "format": 1,
+  "notes": "The Keep rebuild (tmp/dungeons/keep/PLAN.md); written by tmp/dungeons/keep/make_plan.py, then `dungeon_plan.py write keep`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "gate",
+        "name": "The Gate Hall",
+        "x": -3,
+        "z": -12,
+        "w": 7,
+        "d": 4,
+        "kind": "entry",
+        "y": 0,
+        "ceiling": 11
+      },
+      {
+        "id": "guard",
+        "name": "The Guardroom",
+        "x": -12,
+        "z": -12,
+        "w": 6,
+        "d": 4,
+        "kind": "guard",
+        "y": 0,
+        "ceiling": 5.2
+      },
+      {
+        "id": "kitchen",
+        "name": "The Kitchens",
+        "x": -12,
+        "z": -6,
+        "w": 6,
+        "d": 5,
+        "kind": "kitchen",
+        "y": 0,
+        "ceiling": 10
+      },
+      {
+        "id": "armoury",
+        "name": "The Armoury",
+        "x": -12,
+        "z": 0,
+        "w": 6,
+        "d": 5,
+        "kind": "armoury",
+        "y": 0,
+        "ceiling": 9
+      },
+      {
+        "id": "cells",
+        "name": "The Cells",
+        "x": -12,
+        "z": 6,
+        "w": 5,
+        "d": 6,
+        "kind": "cells",
+        "y": 0,
+        "ceiling": 4
+      },
+      {
+        "id": "gallery",
+        "name": "The Long Gallery",
+        "x": -12,
+        "z": 15,
+        "w": 25,
+        "d": 3,
+        "kind": "gallery",
+        "y": 0,
+        "ceiling": 7.2
+      },
+      {
+        "id": "council",
+        "name": "The Council Chamber",
+        "x": 7,
+        "z": 7,
+        "w": 6,
+        "d": 5,
+        "kind": "council",
+        "y": 0,
+        "ceiling": 7.2
+      },
+      {
+        "id": "chapel",
+        "name": "The Chapel",
+        "x": 7,
+        "z": 0,
+        "w": 6,
+        "d": 6,
+        "kind": "chapel",
+        "y": 0,
+        "ceiling": 14
+      },
+      {
+        "id": "library",
+        "name": "The Library",
+        "x": 7,
+        "z": -7,
+        "w": 6,
+        "d": 6,
+        "kind": "library",
+        "y": 0,
+        "ceiling": 7.2
+      },
+      {
+        "id": "treasury",
+        "name": "The Treasury",
+        "x": 8,
+        "z": -12,
+        "w": 4,
+        "d": 4,
+        "kind": "treasury",
+        "y": 0,
+        "ceiling": 8
+      },
+      {
+        "id": "ante",
+        "name": "The Presence Chamber",
+        "x": -3,
+        "z": -7,
+        "w": 7,
+        "d": 3,
+        "kind": "ante",
+        "y": 0,
+        "ceiling": 8.2
+      },
+      {
+        "id": "hall",
+        "name": "The Great Hall",
+        "x": -4,
+        "z": -3,
+        "w": 9,
+        "d": 11,
+        "kind": "hall",
+        "y": 0,
+        "ceiling": 9.5
+      },
+      {
+        "id": "king",
+        "name": "The King's Chamber",
+        "x": -4,
+        "z": 9,
+        "w": 9,
+        "d": 5,
+        "kind": "king",
+        "y": 0,
+        "ceiling": 7.7
+      }
+    ],
+    "corridors": [
+      {
+        "points": [
+          [
+            -3,
+            -11
+          ],
+          [
+            -7,
+            -11
+          ]
+        ],
+        "name": "The Guard Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -9,
+            -9
+          ],
+          [
+            -9,
+            -6
+          ]
+        ],
+        "name": "The Kitchen Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -10,
+            -2
+          ],
+          [
+            -10,
+            0
+          ]
+        ],
+        "name": "The Armoury Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -10,
+            4
+          ],
+          [
+            -10,
+            6
+          ]
+        ],
+        "name": "The Cell Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -10,
+            11
+          ],
+          [
+            -10,
+            15
+          ]
+        ],
+        "name": "The Cell Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            10,
+            15
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "name": "The Council Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        "name": "The Chapel Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            10,
+            0
+          ],
+          [
+            10,
+            -2
+          ]
+        ],
+        "name": "The Library Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            10,
+            -7
+          ],
+          [
+            10,
+            -9
+          ]
+        ],
+        "name": "The Treasury Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            7,
+            -6
+          ],
+          [
+            3,
+            -6
+          ]
+        ],
+        "name": "The Sentinels' Walk",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -1,
+            -5
+          ],
+          [
+            -1,
+            -3
+          ]
+        ],
+        "name": "The Great Doors",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            0,
+            -5
+          ],
+          [
+            0,
+            -3
+          ]
+        ],
+        "name": "The Great Doors",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            1,
+            -5
+          ],
+          [
+            1,
+            -3
+          ]
+        ],
+        "name": "The Great Doors",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -4,
+            7
+          ],
+          [
+            -4,
+            9
+          ]
+        ],
+        "name": "The King's Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "name": "The King's Door",
+        "ceiling": 5
+      }
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    },
+    "obstacles": [
+      {
+        "x": 0,
+        "z": 7,
+        "w": 1,
+        "d": 1
+      },
+      {
+        "x": 0,
+        "z": 13,
+        "w": 1,
+        "d": 1
+      }
+    ]
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "The throne dais",
+      "yaw": 0,
+      "floors": [
+        0,
+        2
+      ],
+      "decks": [
+        {
+          "derive": "cells"
+        },
+        {
+          "cx": 0.0,
+          "cz": 26.0,
+          "hx": 14.0,
+          "hz": 4.0,
+          "sin": 0,
+          "cos": 1,
+          "y": 2,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": 0,
+          "z0": 18,
+          "y0": 0,
+          "x1": 0,
+          "z1": 22,
+          "y1": 2,
+          "half": 4.6
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout",
+        "raise": [
+          {
+            "x": -3,
+            "z": 6,
+            "w": 7,
+            "d": 2,
+            "y": 2
+          }
+        ]
+      }
+    }
+  },
+  "spawn": {
+    "x": 4.5,
+    "z": -42.5
+  },
+  "portals": [
+    {
+      "id": "keep_door",
+      "name": "The Keep's Door, to the Capital",
+      "x": 0,
+      "z": -42.6,
+      "to": "capital",
+      "tx": 0,
+      "tz": 44,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.0,
+        "floor": 0.05
+      }
+    },
+    {
+      "id": "keep_out",
+      "name": "The Throne Room's Way Out",
+      "x": -14.5,
+      "z": 18,
+      "to": "capital",
+      "tx": 0,
+      "tz": 44,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.0,
+        "floor": 0.05
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_keep_gate",
+      "name": "The Gate Hall",
+      "x": 0,
+      "z": -42,
+      "xp": 90
+    },
+    {
+      "id": "lm_keep_hall",
+      "name": "The Great Hall",
+      "x": 0,
+      "z": 2,
+      "xp": 140
+    },
+    {
+      "id": "lm_keep_chapel",
+      "name": "The Chapel",
+      "x": 38,
+      "z": 10,
+      "xp": 100
+    },
+    {
+      "id": "lm_keep_chamber",
+      "name": "The King's Chamber",
+      "x": 0,
+      "z": 46,
+      "xp": 160
+    },
+    {
+      "id": "lm_keep_gallery",
+      "name": "The Long Gallery",
+      "x": -31,
+      "z": 65,
+      "xp": 100
+    },
+    {
+      "id": "lm_keep_library",
+      "name": "The Library",
+      "x": 40,
+      "z": -16,
+      "xp": 90
+    }
+  ],
+  "interactables": [
+    {
+      "id": "empty_throne",
+      "name": "The Empty Throne",
+      "x": 0,
+      "z": 24.6,
+      "idle_msg": "The throne, on its dais, under the household's banners. Nobody has sat in it for a very long time; the cushion is new.",
+      "active_msg": "You look at the throne for a while. It goes on being empty.",
+      "prop": "existing_throne",
+      "y": 2,
+      "site": "raised_chamber",
+      "floor": 1
+    }
+  ],
+  "camps": [
+    {
+      "monster": "household_guard",
+      "min_lvl": 47,
+      "max_lvl": 48,
+      "count": 2,
+      "x": -20,
+      "z": -44,
+      "radius": 1.1,
+      "respawn": 45
+    },
+    {
+      "monster": "household_guard",
+      "min_lvl": 47,
+      "max_lvl": 48,
+      "count": 3,
+      "x": -40,
+      "z": -42,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "household_guard",
+      "min_lvl": 47,
+      "max_lvl": 48,
+      "count": 3,
+      "x": -36,
+      "z": -30,
+      "radius": 1.1,
+      "respawn": 50
+    },
+    {
+      "monster": "ward_hound",
+      "min_lvl": 48,
+      "max_lvl": 49,
+      "count": 2,
+      "x": -42,
+      "z": -20,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "ward_hound",
+      "min_lvl": 48,
+      "max_lvl": 49,
+      "count": 2,
+      "x": -32,
+      "z": -10,
+      "radius": 2.5,
+      "respawn": 45
+    },
+    {
+      "monster": "pale_watcher",
+      "min_lvl": 47,
+      "max_lvl": 48,
+      "count": 3,
+      "x": -38,
+      "z": 8,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "unlit_keeper",
+      "min_lvl": 48,
+      "max_lvl": 49,
+      "count": 3,
+      "x": -40,
+      "z": 34,
+      "radius": 3.5,
+      "respawn": 45
+    },
+    {
+      "monster": "palace_sentinel",
+      "min_lvl": 48,
+      "max_lvl": 49,
+      "count": 3,
+      "x": 0,
+      "z": 64,
+      "radius": 3.5,
+      "respawn": 50
+    },
+    {
+      "monster": "house_steward",
+      "min_lvl": 49,
+      "max_lvl": 50,
+      "count": 2,
+      "x": 44,
+      "z": 36,
+      "radius": 3,
+      "respawn": 60
+    },
+    {
+      "monster": "silence_haunt",
+      "min_lvl": 48,
+      "max_lvl": 49,
+      "count": 3,
+      "x": 42.5,
+      "z": 10,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "archive_wisp",
+      "min_lvl": 47,
+      "max_lvl": 48,
+      "count": 2,
+      "x": 36,
+      "z": -17,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "archive_wisp",
+      "min_lvl": 47,
+      "max_lvl": 48,
+      "count": 2,
+      "x": 44,
+      "z": -11,
+      "radius": 2.5,
+      "respawn": 45
+    },
+    {
+      "monster": "hushed_keeper",
+      "min_lvl": 48,
+      "max_lvl": 49,
+      "count": 2,
+      "x": 38,
+      "z": -42,
+      "radius": 2.5,
+      "respawn": 45
+    },
+    {
+      "monster": "palace_sentinel",
+      "min_lvl": 48,
+      "max_lvl": 49,
+      "count": 3,
+      "x": 0,
+      "z": -24,
+      "radius": 3.5,
+      "respawn": 50
+    },
+    {
+      "monster": "the_regent",
+      "min_lvl": 50,
+      "max_lvl": 50,
+      "count": 1,
+      "x": 0,
+      "z": 10,
+      "radius": 3,
+      "respawn": 900
+    },
+    {
+      "monster": "the_unlit_king",
+      "min_lvl": 49,
+      "max_lvl": 49,
+      "count": 1,
+      "x": 0,
+      "z": 41,
+      "radius": 4,
+      "respawn": 600
+    }
+  ]
+}

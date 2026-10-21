@@ -1,0 +1,62 @@
+{
+ "file": "creatures/crab.glb",
+ "plan": "crustacean",
+ "height": 1.033,
+ "length": 2.824,
+ "width": 3.262,
+ "top": 1.033,
+ "minY": 0.0028,
+ "groundY": 0.0028,
+ "forward": 0.454,
+ "tris": [
+  3896,
+  1168
+ ],
+ "budget": 4200,
+ "bones": 25,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.703,
+  "Run": 0.502,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 1.159,
+  "Run": 2.727
+ },
+ "bytes": 463480,
+ "held": [],
+ "groundLift": {},
+ "notes": "the crab look: wide, toothed carapace, a crusher claw; silver, melt-glass, fen and silt variants painted",
+ "role": "common",
+ "variants": {
+  "silvershell_crab": {
+   "atlas": "creatures/crab@silvershell_crab.ktx2",
+   "bytes": 107286,
+   "mr": "creatures/crab@silvershell_crab_mr.ktx2"
+  },
+  "fen_lurker": {
+   "atlas": "creatures/crab@fen_lurker.ktx2",
+   "bytes": 89616
+  },
+  "silt_strider": {
+   "atlas": "creatures/crab@silt_strider.ktx2",
+   "bytes": 85143
+  },
+  "melt_crab": {
+   "atlas": "creatures/crab@melt_crab.ktx2",
+   "bytes": 98658,
+   "emit": "creatures/crab@melt_crab_emit.ktx2",
+   "mr": "creatures/crab@melt_crab_mr.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/crustacean.py",
+ "fast": false
+}

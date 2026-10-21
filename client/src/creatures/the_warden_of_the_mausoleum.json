@@ -1,0 +1,48 @@
+{
+ "file": "creatures/the_warden_of_the_mausoleum.glb",
+ "plan": "sentinel",
+ "height": 5.94,
+ "length": 2.131,
+ "width": 3.751,
+ "top": 5.94,
+ "minY": -0.1223,
+ "groundY": 0.0026,
+ "forward": 0.174,
+ "tris": [
+  11496,
+  3448
+ ],
+ "budget": 12000,
+ "bones": 26,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.819,
+  "Run": 0.757,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 2.1,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.872,
+  "Run": 7.001
+ },
+ "bytes": 973648,
+ "held": [
+  [
+   10581,
+   11717
+  ]
+ ],
+ "groundLift": {},
+ "notes": "The Warden of the Mausoleum: a skull helm with a jaw, mourning plate, a mantle and a tabard in strips, the visitors' list and the mistwalker",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_warden_of_the_mausoleum.py",
+ "fast": false
+}

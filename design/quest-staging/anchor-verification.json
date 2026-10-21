@@ -1,0 +1,192 @@
+{
+  "date": "2026-09-07",
+  "scope": "Local renderer access within interaction radius; does not independently establish a complete route or narrative location.",
+  "zones": [
+    {
+      "zone": "caerdun",
+      "anchors": 28,
+      "locally_accessible": 28,
+      "errors": []
+    },
+    {
+      "zone": "heartwood",
+      "anchors": 21,
+      "locally_accessible": 21,
+      "errors": []
+    },
+    {
+      "zone": "moonmere",
+      "anchors": 27,
+      "locally_accessible": 27,
+      "errors": []
+    },
+    {
+      "zone": "moonmereshores",
+      "anchors": 35,
+      "locally_accessible": 35,
+      "errors": []
+    },
+    {
+      "zone": "caerdunfields",
+      "anchors": 38,
+      "locally_accessible": 38,
+      "errors": []
+    },
+    {
+      "zone": "heartwoodfields",
+      "anchors": 43,
+      "locally_accessible": 43,
+      "errors": []
+    },
+    {
+      "zone": "northroad",
+      "anchors": 34,
+      "locally_accessible": 34,
+      "errors": []
+    },
+    {
+      "zone": "shoreroad",
+      "anchors": 31,
+      "locally_accessible": 31,
+      "errors": []
+    },
+    {
+      "zone": "huntingwood",
+      "anchors": 37,
+      "locally_accessible": 37,
+      "errors": []
+    },
+    {
+      "zone": "mausoleum",
+      "anchors": 15,
+      "locally_accessible": 15,
+      "errors": []
+    },
+    {
+      "zone": "timberestates",
+      "anchors": 36,
+      "locally_accessible": 36,
+      "errors": []
+    },
+    {
+      "zone": "overseerslodge",
+      "anchors": 12,
+      "locally_accessible": 12,
+      "errors": []
+    },
+    {
+      "zone": "summerlakes",
+      "anchors": 36,
+      "locally_accessible": 36,
+      "errors": []
+    },
+    {
+      "zone": "sunkenballroom",
+      "anchors": 15,
+      "locally_accessible": 15,
+      "errors": []
+    },
+    {
+      "zone": "reservoir",
+      "anchors": 39,
+      "locally_accessible": 39,
+      "errors": []
+    },
+    {
+      "zone": "belltower",
+      "anchors": 14,
+      "locally_accessible": 14,
+      "errors": []
+    },
+    {
+      "zone": "kingsgardens",
+      "anchors": 39,
+      "locally_accessible": 39,
+      "errors": []
+    },
+    {
+      "zone": "glasshouse",
+      "anchors": 14,
+      "locally_accessible": 14,
+      "errors": []
+    },
+    {
+      "zone": "glassworks",
+      "anchors": 41,
+      "locally_accessible": 41,
+      "errors": []
+    },
+    {
+      "zone": "furnacehall",
+      "anchors": 17,
+      "locally_accessible": 17,
+      "errors": []
+    },
+    {
+      "zone": "canalworks",
+      "anchors": 40,
+      "locally_accessible": 40,
+      "errors": []
+    },
+    {
+      "zone": "greatsluice",
+      "anchors": 15,
+      "locally_accessible": 15,
+      "errors": []
+    },
+    {
+      "zone": "granaryplains",
+      "anchors": 40,
+      "locally_accessible": 40,
+      "errors": []
+    },
+    {
+      "zone": "greatgranary",
+      "anchors": 11,
+      "locally_accessible": 11,
+      "errors": []
+    },
+    {
+      "zone": "borderwall",
+      "anchors": 38,
+      "locally_accessible": 38,
+      "errors": []
+    },
+    {
+      "zone": "greatwatchtower",
+      "anchors": 11,
+      "locally_accessible": 11,
+      "errors": []
+    },
+    {
+      "zone": "burnedland",
+      "anchors": 45,
+      "locally_accessible": 45,
+      "errors": []
+    },
+    {
+      "zone": "beaconfort",
+      "anchors": 12,
+      "locally_accessible": 12,
+      "errors": []
+    },
+    {
+      "zone": "capital",
+      "anchors": 26,
+      "locally_accessible": 26,
+      "errors": []
+    },
+    {
+      "zone": "capitalreturned",
+      "anchors": 27,
+      "locally_accessible": 27,
+      "errors": []
+    },
+    {
+      "zone": "keep",
+      "anchors": 19,
+      "locally_accessible": 19,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+ "pack": "lights",
+ "props": {
+  "candle_stand": {
+   "pack": "lights",
+   "min": [
+    -0.166,
+    0.004,
+    -0.135
+   ],
+   "max": [
+    0.135,
+    0.7,
+    0.164
+   ],
+   "tris": 1256,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "candle_cluster": {
+   "pack": "lights",
+   "min": [
+    -0.208,
+    0.002,
+    -0.16
+   ],
+   "max": [
+    0.317,
+    0.874,
+    0.2
+   ],
+   "tris": 1612,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "shrine_candles": {
+   "pack": "lights",
+   "min": [
+    -0.55,
+    0,
+    -0.55
+   ],
+   "max": [
+    0.55,
+    1.796,
+    0.55
+   ],
+   "tris": 4747,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  }
+ },
+ "swap": {
+  "dungeon/candle_melted.glb": {
+   "to": "candle_stand",
+   "from": {
+    "min": [
+     -0.167,
+     0,
+     -0.17
+    ],
+    "max": [
+     0.167,
+     0.702,
+     0.16
+    ]
+   }
+  },
+  "dungeon/candle_triple.glb": {
+   "to": "candle_cluster",
+   "from": {
+    "min": [
+     -0.167,
+     0,
+     -0.16
+    ],
+    "max": [
+     0.334,
+     0.873,
+     0.23
+    ]
+   }
+  },
+  "halloween/shrine_candles.gltf": {
+   "to": "shrine_candles",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.55,
+     0,
+     -0.55
+    ],
+    "max": [
+     0.55,
+     1.789,
+     0.55
+    ]
+   }
+  }
+ }
+}

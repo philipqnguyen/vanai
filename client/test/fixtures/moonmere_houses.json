@@ -1,0 +1,1772 @@
+{
+ "about": "client/test/moonmere_layout.test.mjs writes this from the planners (MOONMERE_WRITE_FIXTURE=1); moonmere_modules.test.mjs computes the per-house LOD ratio over it (section 5)",
+ "houses": [
+  {
+   "id": "E1-f0",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 4.243,
+   "crown": "hip",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_win",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "E1-f1",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 4.243,
+   "crown": "gable",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "E1-r0",
+   "rank": "rs",
+   "bays": 7,
+   "bayW": 4.243,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "E2-f0",
+   "rank": "st",
+   "bays": 3,
+   "bayW": 4.071,
+   "crown": "gable",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "E2-f1",
+   "rank": "st",
+   "bays": 3,
+   "bayW": 4.071,
+   "crown": "altana",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "altana",
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "E2-r0",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 4.1,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "E2-r1",
+   "rank": "rs",
+   "bays": 2,
+   "bayW": 4.1,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "E3-f0",
+   "rank": "ct",
+   "bays": 2,
+   "bayW": 4.35,
+   "crown": "pav",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_cy_win",
+    "bay_cy_win",
+    "half_turret"
+   ],
+   "lod1": [
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "half_turret_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "cap_turret",
+    "chimney",
+    "roof_pav"
+   ]
+  },
+  {
+   "id": "E3-f1",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 4.35,
+   "crown": "hip",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "E3-r0",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 4.35,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "E3-r1",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 4.35,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "E4-f0",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 4.263,
+   "crown": "mono",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "chimney",
+    "roof_mono",
+    "roof_mono",
+    "roof_mono",
+    "roof_mono_end",
+    "roof_mono_end"
+   ]
+  },
+  {
+   "id": "E4-f1",
+   "rank": "ct",
+   "bays": 4,
+   "bayW": 4.263,
+   "crown": "gable",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 4,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "E4-r0",
+   "rank": "rs",
+   "bays": 4,
+   "bayW": 4.263,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "E4-r1",
+   "rank": "rs",
+   "bays": 4,
+   "bayW": 4.263,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "N1-f0",
+   "rank": "hl",
+   "bays": 4,
+   "bayW": 3.913,
+   "crown": "gable",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_hl_door",
+    "bay_hl_door",
+    "bay_hl_win",
+    "bay_hl_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_hl_l1",
+    "bay_hl_l1",
+    "bay_hl_l1_door",
+    "bay_hl_l1_door"
+   ],
+   "eaves": 4,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "N1-f1",
+   "rank": "hl",
+   "bays": 3,
+   "bayW": 3.913,
+   "crown": "altana",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_hl_door",
+    "bay_hl_win",
+    "bay_hl_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_hl_l1",
+    "bay_hl_l1",
+    "bay_hl_l1_door"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "altana",
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "N1-r0",
+   "rank": "rs",
+   "bays": 4,
+   "bayW": 3.913,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "N1-r1",
+   "rank": "rs",
+   "bays": 4,
+   "bayW": 3.913,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "N2-f0",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 4.543,
+   "crown": "pav",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "chimney",
+    "roof_pav"
+   ]
+  },
+  {
+   "id": "N2-f1",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 4.543,
+   "crown": "mono",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "half_turret"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "half_turret_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "cap_turret",
+    "chimney",
+    "roof_mono",
+    "roof_mono",
+    "roof_mono",
+    "roof_mono_end",
+    "roof_mono_end"
+   ]
+  },
+  {
+   "id": "N2-r0",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 3.967,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "N2-r1",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 3.967,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "W1-f0",
+   "rank": "st",
+   "bays": 2,
+   "bayW": 4.333,
+   "crown": "pav",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_shop",
+    "half_turret"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "half_turret_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "cap_turret",
+    "chimney",
+    "roof_pav"
+   ]
+  },
+  {
+   "id": "W1-f1",
+   "rank": "st",
+   "bays": 3,
+   "bayW": 4.333,
+   "crown": "gable",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "W1-r0",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 4.333,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "W1-r1",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 4.333,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "W2-f0",
+   "rank": "ct",
+   "bays": 4,
+   "bayW": 3.891,
+   "crown": "gable",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 4,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "W2-f1",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 3.891,
+   "crown": "altana",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "altana",
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "W2-f2",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 3.891,
+   "crown": "mono",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "chimney",
+    "roof_mono",
+    "roof_mono",
+    "roof_mono",
+    "roof_mono_end",
+    "roof_mono_end"
+   ]
+  },
+  {
+   "id": "W2-r0",
+   "rank": "rs",
+   "bays": 4,
+   "bayW": 3.867,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "W2-r1",
+   "rank": "rs",
+   "bays": 5,
+   "bayW": 3.867,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "W3-f0",
+   "rank": "st",
+   "bays": 2,
+   "bayW": 4.033,
+   "crown": "pav",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "chimney",
+    "roof_pav"
+   ]
+  },
+  {
+   "id": "W3-f1",
+   "rank": "st",
+   "bays": 3,
+   "bayW": 4.033,
+   "crown": "hip",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "W3-r0",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 4.033,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "W3-r1",
+   "rank": "rs",
+   "bays": 3,
+   "bayW": 4.033,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "W4-f0",
+   "rank": "ct",
+   "bays": 2,
+   "bayW": 4,
+   "crown": "pav",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "chimney",
+    "roof_pav"
+   ]
+  },
+  {
+   "id": "W4-f1",
+   "rank": "ct",
+   "bays": 3,
+   "bayW": 4,
+   "crown": "gable",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_win",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "W4-r0",
+   "rank": "rs",
+   "bays": 6,
+   "bayW": 4,
+   "crown": "terrace",
+   "lod0": [
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_back",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win",
+    "bay_rs_win"
+   ],
+   "lod1": [
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_back_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1",
+    "bay_rs_l1"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QE1-0",
+   "rank": "wr",
+   "bays": 3,
+   "bayW": 4,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QE1-1",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 4,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QE2-0",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 4,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QN-0",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 3.85,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QN-1",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 3.85,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QNW-0",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 3.367,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QNW-1",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 3.367,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QNW-2",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 3.367,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QW1-0",
+   "rank": "wr",
+   "bays": 3,
+   "bayW": 4,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QW1-1",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 4,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "QW2-0",
+   "rank": "wr",
+   "bays": 2,
+   "bayW": 4,
+   "crown": "terrace",
+   "lod0": [
+    "bay_wr_door",
+    "bay_wr_load"
+   ],
+   "lod1": [
+    "bay_wr_l1_open",
+    "bay_wr_l1_open"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "pergola",
+    "roof_flat",
+    "roof_flat"
+   ]
+  },
+  {
+   "id": "ER1-0",
+   "rank": "st",
+   "bays": 5,
+   "bayW": 4.21,
+   "crown": "hip",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop",
+    "bay_st_shop",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 5,
+   "skyline": [
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "ER1-1",
+   "rank": "st",
+   "bays": 5,
+   "bayW": 4.21,
+   "crown": "gable",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop",
+    "bay_st_win",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 5,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "ER2-0",
+   "rank": "st",
+   "bays": 5,
+   "bayW": 4.12,
+   "crown": "altana",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop",
+    "bay_st_win",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 5,
+   "skyline": [
+    "altana",
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "WR1-0",
+   "rank": "st",
+   "bays": 5,
+   "bayW": 4.39,
+   "crown": "gable",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop",
+    "bay_st_shop",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 5,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "WR1-1",
+   "rank": "st",
+   "bays": 5,
+   "bayW": 4.39,
+   "crown": "hip",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop",
+    "bay_st_win",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 5,
+   "skyline": [
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "WR2-0",
+   "rank": "st",
+   "bays": 6,
+   "bayW": 3.933,
+   "crown": "gable",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_shop",
+    "bay_st_shop",
+    "bay_st_win",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 6,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run",
+    "roof_run",
+    "roof_run",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "LR-0",
+   "rank": "st",
+   "bays": 3,
+   "bayW": 4,
+   "crown": "gable",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_shop",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_door"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "LR-1",
+   "rank": "st",
+   "bays": 2,
+   "bayW": 4,
+   "crown": "pav",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 0,
+   "skyline": [
+    "chimney",
+    "roof_pav"
+   ]
+  },
+  {
+   "id": "LR-2",
+   "rank": "st",
+   "bays": 3,
+   "bayW": 4,
+   "crown": "hip",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_door",
+    "bay_st_oriel",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1_door",
+    "bay_st_l1_oriel"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "LR-3",
+   "rank": "st",
+   "bays": 3,
+   "bayW": 4,
+   "crown": "gable",
+   "lod0": [
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_st_shop",
+    "bay_st_win",
+    "bay_st_win"
+   ],
+   "lod1": [
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_st_l1",
+    "bay_st_l1",
+    "bay_st_l1_door"
+   ],
+   "eaves": 3,
+   "skyline": [
+    "chimney",
+    "roof_gable_end",
+    "roof_gable_end",
+    "roof_run"
+   ]
+  },
+  {
+   "id": "PW-0",
+   "rank": "ct",
+   "bays": 5,
+   "bayW": 4.4,
+   "crown": "hip",
+   "lod0": [
+    "bay_ct_door",
+    "bay_ct_shop",
+    "bay_ct_win",
+    "bay_ct_win",
+    "bay_ct_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win",
+    "bay_cy_win"
+   ],
+   "lod1": [
+    "bay_ct_l1",
+    "bay_ct_l1",
+    "bay_ct_l1",
+    "bay_ct_l1_door",
+    "bay_ct_l1_door",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1",
+    "bay_cy_l1"
+   ],
+   "eaves": 5,
+   "skyline": [
+    "chimney",
+    "roof_hip_end",
+    "roof_hip_end",
+    "roof_run",
+    "roof_run",
+    "roof_run"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "file": "creatures/the_bellringer_of_the_valley.glb",
+ "plan": "sentinel",
+ "height": 5.996,
+ "length": 1.734,
+ "width": 3.435,
+ "top": 5.996,
+ "minY": 0.0026,
+ "groundY": 0.0026,
+ "forward": 0.864,
+ "tris": [
+  11738,
+  3520
+ ],
+ "budget": 12000,
+ "bones": 25,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.628,
+  "Run": 0.678,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 2.1,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.822,
+  "Run": 6.879
+ },
+ "bytes": 1009936,
+ "held": [
+  [
+   366,
+   369
+  ],
+  [
+   11065,
+   12122
+  ]
+ ],
+ "groundLift": {},
+ "notes": "The Bellringer: a robed ringer with a bell for a head, the striking hammer on its shoulder, the bell-rope for a harness",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_bellringer_of_the_valley.py",
+ "fast": false
+}

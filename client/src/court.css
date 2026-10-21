@@ -1,0 +1,164 @@
+/* The courts' HUD (court-hud.ts): the dock key's badge, the court window and
+   the hall window, the notice card. Built from the Lamplight tokens and the
+   window chrome in style.css; only what is the courts' own lives here. */
+
+/* the dock key's unread badge, the Tells tab's pill in the key's corner */
+#menu-buttons .cbadge {
+  position: absolute; top: -5px; right: -5px; min-width: 15px; height: 15px; padding: 0 4px; box-sizing: border-box;
+  border-radius: 8px; background: var(--lp-brass); color: var(--lp-ink);
+  font-size: 10px; font-weight: 700; line-height: 15px; text-align: center; display: none; pointer-events: none;
+}
+#menu-buttons .cbadge.has { display: block; }
+
+/* the court window: a tab row in the header, as the Journal has */
+.window.court .whead { padding: 14px 14px 0 22px; }
+.window.court .wtitle { margin-bottom: 12px; }
+.window.court .wclose { margin-bottom: 10px; }
+#win-court { width: 440px; }
+/* the title beside three tabs: one line, as the Journal's */
+.window.court .wtitle { white-space: nowrap; }
+#win-courthall { width: 380px; right: calc(var(--win-right) + 32px); --win-top: 182px; }
+#win-courthall .whead { padding: 12px 12px 10px 20px; }
+#win-courthall .wtitle { margin-bottom: 0; }
+#win-courthall .wclose { margin-bottom: 0; }
+.ctabs { display: flex; gap: 2px; align-self: flex-end; }
+.ctabs .lp-tab { padding: 8px 10px 10px; font-size: 13px; cursor: pointer; }
+.ctabs .cunread, .ctabs .clunread {
+  min-width: 15px; height: 15px; padding: 0 4px; box-sizing: border-box; border-radius: 8px; background: var(--lp-brass);
+  color: var(--lp-ink); font-size: 10px; font-weight: 700; line-height: 15px; text-align: center; margin-left: 5px; display: none;
+}
+.ctabs .cunread.has, .ctabs .clunread.has { display: inline-block; }
+
+/* a court's banner colour, trimmed in its metal */
+.cswatch {
+  display: inline-block; flex: 0 0 auto; width: 12px; height: 16px; border: 1px solid; border-radius: 2px 2px 0 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%); vertical-align: -3px; margin-right: 7px;
+}
+.csworn { display: flex; gap: 4px; align-items: flex-start; margin: 2px 0 10px; }
+.csworn .cswatch { width: 16px; height: 22px; margin-top: 1px; }
+.csworn .cname { font: 600 15px "Cinzel", serif; color: var(--lp-parch-hi); margin-bottom: 2px; }
+.cdormant {
+  margin: 10px 0 2px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--lp-hair-2);
+  background: rgba(255, 255, 255, 0.03); font-size: 12px; color: var(--lp-body); line-height: 1.45;
+}
+#win-court .wsection { margin: 14px 0 6px; }
+.ccourts { display: flex; flex-direction: column; gap: 4px; }
+.ccourt { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 8px; border: 1px solid transparent; font-size: 13px; }
+.ccourt.mine { border-color: var(--lp-brass-line); background: var(--lp-brass-soft); }
+.ccourt .cn { flex: 1 1 auto; color: var(--lp-parch); }
+.ccourt .ctreas { min-width: 70px; text-align: right; color: var(--lp-sub); font-size: 12px; }
+.ccourt .cheld { min-width: 52px; text-align: right; color: var(--lp-sub); font-size: 12px; }
+.cheldline { margin: 8px 2px 0; font-size: 12px; line-height: 1.45; color: var(--lp-parch-2); }
+/* a member's price at the merchant of a zone their court holds (S4) */
+.cfull { color: var(--lp-sub); }
+.chalf { color: var(--lp-brass); }
+.crecord { font-size: 12px; color: var(--lp-body); line-height: 1.55; }
+.crecord.ctotals { color: var(--lp-parch-hi); margin-bottom: 8px; }
+.crecwrap .cmore { margin: 6px 0 4px; }
+.cfoot { margin-top: 12px; line-height: 1.45; }
+
+/* a News row or a board item: what, whose, when, then the words */
+.cnews { padding: 9px 0 10px; border-bottom: 1px solid var(--lp-hair); }
+.cnews:last-of-type { border-bottom: 0; }
+.cnews .chead { display: flex; align-items: center; gap: 10px; margin-bottom: 3px; font-size: 11px; }
+.cnews .ckind { font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--lp-brass); }
+.cnews .cby { color: var(--lp-sub); display: inline-flex; align-items: center; }
+.cnews .cby .cswatch { width: 9px; height: 12px; margin-right: 5px; }
+.cnews .cwhen { margin-left: auto; color: var(--lp-muted); }
+.cnews p { margin: 3px 0 0; font-size: 13px; line-height: 1.5; color: var(--lp-body); }
+.cnews.digest p:first-of-type { color: var(--lp-parch-hi); font-style: italic; }
+.cmore { margin-top: 10px; }
+.chall { display: flex; align-items: center; margin: 0 0 8px; font: 600 14px "Cinzel", serif; color: var(--lp-parch-hi); }
+#win-courthall .cline { font-size: 13px; line-height: 1.55; color: var(--lp-body); }
+.cnamed { display: inline-flex; align-items: center; color: var(--lp-parch-hi); }
+.cnamed .cswatch { width: 9px; height: 12px; margin-right: 5px; }
+#win-courthall .btns { display: flex; justify-content: flex-end; margin-top: 14px; }
+#win-courthall .imeta { line-height: 1.5; margin-top: 6px; }
+
+/* the notice card: a prompt card where the party invite sits, and below it
+   when an invite or the gate is already showing (they come first in the HUD) */
+#court-card {
+  position: fixed; top: 150px; left: 50%; transform: translateX(-50%); width: 420px; max-width: calc(100vw - 32px);
+  display: none; z-index: 30;
+}
+#court-card.on { display: block; }
+#invite-prompt.on ~ #court-card, #gate-prompt.on ~ #court-card { top: 290px; }
+#court-card .ctitle { font-size: 15px; color: var(--lp-parch-hi); letter-spacing: 1px; }
+#court-card .ctext p { margin: 8px 0 0; line-height: 1.5; font-size: 13px; color: var(--lp-body); }
+
+/* the character panel's line */
+.ccharline { display: flex; align-items: center; font-size: 13px; color: var(--lp-parch); margin: -4px 0 8px; }
+
+/* a bounty on the board (S3): what and where, the pay and the places, the
+   court's line, then the one thing this explorer can do about it */
+.cnews.bounty .cbtitle { font: 600 14px "Cinzel", serif; color: var(--lp-parch-hi); margin: 2px 0 6px; }
+.cnews.bounty .cbterms { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--lp-sub); }
+.cnews.bounty .cbterms .jrw { height: 24px; padding: 0 8px; font-size: 12px; gap: 4px; }
+.cnews.bounty .cbact { display: flex; justify-content: flex-end; align-items: center; min-height: 0; margin-top: 8px; }
+.cnews.bounty .cbact:empty { display: none; }
+.cnews.bounty .cbact .imeta { margin: 0; font-size: 12px; }
+
+/* the Journal's court bounties: rows like the duties', a long count as a bar */
+.cbbar { height: 5px; border-radius: 3px; background: var(--lp-hair-2); margin-top: 8px; overflow: hidden; }
+.cbbar > i { display: block; height: 100%; border-radius: 3px; }
+.cbnote { margin-top: 8px; line-height: 1.5; }
+/* one selection at a time: a picked bounty takes the highlight from the duty
+   the Journal keeps selected underneath it */
+.jlist:has(.cbounty.sel) .jrow.sel:not(.cbounty) { background: transparent; border-color: transparent; color: #e3dac6; }
+.jlist:has(.cbounty.sel) .jrow.sel:not(.cbounty) .jprog { color: var(--lp-muted); }
+
+/* the registry desk (S5): what the court pays per kind (its own want marked),
+   then a row per relic with its price and the desk's buttons */
+.cprices { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 6px; }
+.cprice {
+  display: inline-flex; align-items: center; gap: 6px; padding: 3px 8px; border-radius: 6px; font-size: 12px;
+  border: 1px solid var(--lp-hair-2); color: var(--lp-body);
+}
+.cprice b { color: var(--lp-parch-hi); font-weight: 600; }
+.cprice.wanted { border-color: var(--lp-brass-line); background: var(--lp-brass-soft); }
+.creduced { color: var(--lp-brass); }
+#win-courthall .wsection { margin: 14px 0 4px; }
+.crelic { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--lp-hair); }
+.crelic:last-child { border-bottom: 0; }
+.crelic .crmain { flex: 1 1 auto; min-width: 0; }
+.crelic .crprice { flex: 0 0 auto; font-size: 12px; color: var(--lp-sub); white-space: nowrap; text-align: right; }
+.crelic .crprice .creduced { display: block; font-style: normal; font-size: 11px; }
+.crelic .btn { flex: 0 0 auto; }
+.crname { font-size: 13px; color: var(--lp-parch); line-height: 1.35; }
+.crname.named { font: 600 13.5px "Cinzel", serif; color: var(--lp-parch-hi); }
+.crmeta { font-size: 11.5px; color: var(--lp-sub); line-height: 1.45; margin-top: 1px; }
+.ccrumble { color: var(--lp-brass); }
+
+/* the book of names (S5): a zone filter, then the entries, newest first */
+.cbookbar { display: flex; align-items: center; gap: 10px; margin: 10px 0 4px; }
+.cbookbar .cbookzone { flex: 1 1 auto; font-size: 12px; }
+.cbookbar .cbookcount { font-size: 12px; color: var(--lp-sub); white-space: nowrap; }
+.cbook { padding: 8px 0; border-bottom: 1px solid var(--lp-hair); }
+.cbook:last-of-type { border-bottom: 0; }
+.cbook .cbookname { color: var(--lp-parch-hi); }
+.cbooknav { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; font-size: 12px; color: var(--lp-sub); }
+
+/* a letter (S6): whose and when, the court's prose as spoken words, then the
+   terms on their own ruled line (the server's, from the verb, never the
+   prose), then the answer */
+.cletnote { margin: 0 0 6px; line-height: 1.45; }
+.cletter { padding: 10px 0 12px; border-bottom: 1px solid var(--lp-hair); }
+.cletter:last-of-type { border-bottom: 0; }
+.cletter .chead { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; font-size: 11px; }
+.cletter .ckind { font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--lp-brass); }
+.cletter .cby { color: var(--lp-sub); display: inline-flex; align-items: center; }
+.cletter .cby .cswatch { width: 9px; height: 12px; margin-right: 5px; }
+.cletter .cwhen { margin-left: auto; color: var(--lp-muted); }
+.cletter .cltext { margin: 0 0 8px; font-size: 13px; line-height: 1.55; }
+.cletter.unread .ckind::after { content: " · new"; color: var(--lp-parch-hi); letter-spacing: 0.6px; text-transform: none; font-weight: 600; }
+.cletter .clterms {
+  display: flex; align-items: flex-start; gap: 6px; padding: 7px 9px; border-radius: 7px; border: 1px solid var(--lp-brass-line);
+  background: var(--lp-brass-soft); font-size: 12px; line-height: 1.45; color: var(--lp-parch);
+}
+.cletter .clterms svg { flex: 0 0 auto; margin-top: 2px; color: var(--lp-brass); }
+.cletter .clact { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 8px; margin-top: 9px; }
+.cletter .clact .imeta { margin: 0; font-size: 12px; flex: 1 1 100%; text-align: right; }
+.cletter.accepted .clterms, .cletter.declined .clterms, .cletter.lapsed .clterms { opacity: 0.7; }
+
+/* the broker: the rate here, and every house compared (court-hud.ts courtAuctionTaxHtml) */
+.cauction-rates .chere { color: var(--lp-parch-hi); font-weight: 700; }

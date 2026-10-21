@@ -1,0 +1,110 @@
+server/log/
+server/tmp/
+server/storage/
+client/node_modules/
+client/dist/
+.DS_Store
+.playwright-mcp/
+# scratch space for screenshots and other throwaway files — never commit these
+/tmp/
+# the maintainer's own Claude Code instructions (workflow habits, not project rules)
+/CLAUDE.local.md
+external_raw_assets/
+
+# gen_cc0_manifest.py imports measure_gltf, so the tools dir now byte-compiles
+__pycache__/
+
+# Local authoring outputs: production models under models/characters stay tracked.
+/client/public/models/preview/
+/design/race-preview/**/sources/
+/design/race-preview/**/checkpoint/
+/design/race-preview/**/checkpoints/
+# Reports, recipes and handoff Markdown remain visible; binary sources do not.
+/design/race-preview/**/*.blend
+/design/race-preview/**/*.blend1
+/design/race-preview/**/*.blend2
+/design/race-preview/**/*.glb
+/design/race-preview/**/*.gltf
+/design/race-preview/**/*.bin
+/design/race-preview/**/*.fbx
+/design/race-preview/**/*.obj
+/design/race-preview/**/*.mtl
+/design/race-preview/**/*.png
+/design/race-preview/**/*.jpg
+/design/race-preview/**/*.jpeg
+/design/race-preview/**/*.webp
+/design/race-preview/**/*.exr
+/design/race-preview/**/*.npy
+/design/race-preview/**/*.npz
+/design/race-preview/**/*.gz
+/design/race-preview/**/*.zip
+/design/race-preview/**/*.log
+# Embedded copies of old preview code are checkpoints, not maintained source.
+/design/race-preview/**/*.py
+/design/race-preview/**/*.ts
+/design/race-preview/**/*.mjs
+/design/race-preview/**/*.html
+/design/checkpoints/**/*.gz
+/design/checkpoints/**/*.blend
+/design/checkpoints/**/*.glb
+
+# Put future one-off scripts and standalone experiments here.
+/tools/local/
+# Build intermediates (build_capital_modules.py's merge-only parts): never shipped.
+/tools/assets/build/
+/client/local/
+
+# Historical standalone character studios, retained locally for comparisons.
+/client/human-preview.html
+/client/meshy-elf-runtime.html
+/client/meshy-female-preview.html
+/client/meshy-female-runtime.html
+/client/meshy-karrog-runtime.html
+/client/meshy-male-runtime.html
+/client/meshy-nym-runtime.html
+/client/meshy-rasha-production.html
+/client/meshy-rasha-runtime.html
+/client/meshy-underwear-runtime.html
+/client/src/human-preview.css
+/client/src/human-preview.ts
+/client/src/meshy-elf-equipment.ts
+/client/src/meshy-elf-runtime.ts
+/client/src/meshy-female-preview.css
+/client/src/meshy-female-preview.ts
+/client/src/meshy-female-runtime.ts
+/client/src/meshy-karrog-equipment.ts
+/client/src/meshy-karrog-runtime.ts
+/client/src/meshy-male-runtime.ts
+/client/src/meshy-nym-runtime.ts
+/client/src/meshy-rasha-production.ts
+/client/src/meshy-rasha-runtime.ts
+/client/src/meshy-underwear-runtime.ts
+
+# Dense historical pose captures are local replay inputs; retain summaries/checkpoints.
+/design/race-preview/meshy-human-locomotion-v01/before-measurements.json
+/design/race-preview/meshy-human-locomotion-v01/after-measurements.json
+
+# Hash-pinned binary source objects travel in the bounded footwear asset archive.
+/tools/gear_production/objects/7a6c8bce6719cb8d2024c0e042acf21678f1d5f227bbcd5dc5775b1744fa0d10/body.glb
+/tools/gear_production/objects/817caa20735820c9a151401605153aa7199a5c212d44328fb16a9148211ae78d/projected.glb
+
+# Reproducible current Traveler runtime export; source and inventory stay tracked.
+/client/public/gear/traveler-aedri-male-v1/
+
+/client/public/gear/catalog-v1/
+
+/client/public/gear/weapons-candidates-v1/
+
+# The character runtime bin/fetch-runtime installs (the default VANAI_RUNTIME).
+/runtime/
+
+# Local settings: .env (VANAI_RUNTIME, the character runtime folder) and
+# .env.production (the deploy's host and secrets, DEPLOY.md). Only the templates
+# are committed.
+.env
+/.env*
+!/.env.example
+!/.env.*.example
+
+# Claude Code worktrees
+/.claude/worktrees/

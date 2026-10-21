@@ -1,0 +1,26 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Dungeon prop sheet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  Dev-only contact sheet of dungeon props (client/src/dungeon-kit/propsheet.ts,
+  LIBRARY.md in tmp/dungeons/polish/props/). Not part of the production build:
+  vite only bundles index.html. Each prop alone in a small dungeon corner (the
+  theme's hemi, fog and one lamp), framed to its bounds, with a 1 m post.
+
+    http://localhost:5176/prop-sheet.html?items=props/Barrel.gltf,dp:cask_wine&theme=lodge
+        an item is a CC0 path (drawn as itself, never swapped), a CC0 path with
+        `>` (drawn through the swap table: what the game now draws for it), or
+        dp:<id> (an original prop by id)
+    window.__propSheetItems = [{ item, scale, label }]   (set before load) overrides ?items
+    &shoot   render the sheet into window.__propSheet (a PNG data URL)
+-->
+<style>
+  html, body { margin: 0; height: 100%; background: #08090b; overflow: hidden; }
+  canvas { width: 100%; height: 100%; display: block; outline: none; }
+</style>
+<canvas id="sheet"></canvas>
+<script type="module">
+  import { runPropSheet } from '/src/dungeon-kit/propsheet.ts';
+  runPropSheet(document.getElementById('sheet'));
+</script>

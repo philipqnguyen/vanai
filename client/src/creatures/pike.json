@@ -1,0 +1,49 @@
+{
+ "file": "creatures/pike.glb",
+ "plan": "fish",
+ "height": 0.955,
+ "length": 3.516,
+ "width": 0.851,
+ "top": 0.955,
+ "minY": -0.0047,
+ "groundY": -0.0047,
+ "forward": -0.393,
+ "tris": [
+  3476,
+  1010
+ ],
+ "budget": 4200,
+ "bones": 18,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.75,
+  "Run": 0.5,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 1.8,
+  "Run": 4.2
+ },
+ "bytes": 336288,
+ "held": [],
+ "groundLift": {
+  "Death": 0.04
+ },
+ "notes": "the pike look: hauled out on lobed pectorals, a shovel jaw, the beans of a pike",
+ "role": "common",
+ "variants": {
+  "canal_pike": {
+   "atlas": "creatures/pike@canal_pike.ktx2",
+   "bytes": 67703
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/fish.py",
+ "fast": false
+}

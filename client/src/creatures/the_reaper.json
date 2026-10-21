@@ -1,0 +1,52 @@
+{
+ "file": "creatures/the_reaper.glb",
+ "plan": "sentinel",
+ "height": 6.182,
+ "length": 2.89,
+ "width": 3.058,
+ "top": 6.218,
+ "minY": 0.0048,
+ "groundY": 0.0048,
+ "forward": 0.153,
+ "tris": [
+  10938,
+  3267
+ ],
+ "budget": 12000,
+ "bones": 21,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.654,
+  "Run": 0.793,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 3.195,
+  "Run": 6.755
+ },
+ "bytes": 1034800,
+ "held": [
+  [
+   11637,
+   12826
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.131,
+  "Special": 0.19
+ },
+ "notes": "The Reaper: the Granary Plains' boss -- a straw cape and hat over plate, chaff in the joints, the reaper's blade on a long snath",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_reaper.py",
+ "fast": false
+}

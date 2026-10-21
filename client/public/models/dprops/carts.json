@@ -1,0 +1,44 @@
+{
+ "pack": "carts",
+ "props": {
+  "wagon_cage": {
+   "pack": "carts",
+   "min": [
+    -1.105,
+    -0.004,
+    -1.67
+   ],
+   "max": [
+    1.105,
+    2.55,
+    2.96
+   ],
+   "tris": 5930,
+   "farTris": 1464,
+   "far": true,
+   "small": false,
+   "tint": {
+    "furnace": "#a49488",
+    "beaconfort": "#b8aea4"
+   }
+  }
+ },
+ "swap": {
+  "props/Wagon.gltf": {
+   "to": "wagon_cage",
+   "fit": "real",
+   "from": {
+    "min": [
+     -1.045,
+     0.082,
+     -1.51
+    ],
+    "max": [
+     1.041,
+     3.032,
+     2.983
+    ]
+   }
+  }
+ }
+}

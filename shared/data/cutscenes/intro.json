@@ -1,0 +1,724 @@
+{
+ "intro": {
+  "name": "The Empty Throne",
+  "trigger": {
+   "type": "intro"
+  },
+  "bars": 49,
+  "chapters": [
+   {
+    "bar": 0,
+    "cardBars": 2,
+    "card": {
+     "text": "For a thousand years, the Empire of Vanai ruled all of Ardenfell.",
+     "hold": 3.2
+    },
+    "zone": "capitalreturned",
+    "daytime": 0.53,
+    "crowd": [
+     {
+      "from": [
+       -1,
+       -172
+      ],
+      "to": [
+       -1,
+       -132
+      ],
+      "n": 7,
+      "w": 4,
+      "walk": true
+     },
+     {
+      "from": [
+       -14,
+       -120
+      ],
+      "to": [
+       14,
+       -112
+      ],
+      "n": 5,
+      "w": 5
+     }
+    ],
+    "shots": [
+     {
+      "dur": 4,
+      "cam": {
+       "from": {
+        "pos": [
+         0,
+         40,
+         -350
+        ],
+        "look": [
+         0,
+         20,
+         0
+        ]
+       },
+       "to": {
+        "pos": [
+         0,
+         22,
+         -250
+        ],
+        "look": [
+         0,
+         18,
+         0
+        ]
+       },
+       "ease": "linear"
+      }
+     },
+     {
+      "dur": 4,
+      "cam": {
+       "from": {
+        "pos": [
+         5,
+         7,
+         -205
+        ],
+        "look": [
+         0,
+         5,
+         -40
+        ]
+       },
+       "to": {
+        "pos": [
+         5,
+         6,
+         -150
+        ],
+        "look": [
+         0,
+         5,
+         -40
+        ]
+       },
+       "ease": "linear"
+      },
+      "lines": [
+       {
+        "at": 0.4,
+        "dur": 3.4,
+        "text": "Every road in Ardenfell led here, to the capital."
+       }
+      ]
+     },
+     {
+      "dur": 4,
+      "cam": {
+       "from": {
+        "pos": [
+         -34,
+         10,
+         -118
+        ],
+        "look": [
+         0,
+         26,
+         40
+        ]
+       },
+       "to": {
+        "pos": [
+         -12,
+         38,
+         -62
+        ],
+        "look": [
+         0,
+         30,
+         40
+        ]
+       },
+       "ease": "out"
+      }
+     }
+    ]
+   },
+   {
+    "bar": 8,
+    "cardBars": 2,
+    "card": {
+     "text": "Then, one night, between dusk and dawn, everyone in the heartland was gone.",
+     "sub": "No war. No plague. Not one body.",
+     "hold": 3.0
+    },
+    "zone": "capital",
+    "daytime": 0.03,
+    "shots": [
+     {
+      "dur": 4,
+      "cam": {
+       "from": {
+        "pos": [
+         -34,
+         10,
+         -118
+        ],
+        "look": [
+         0,
+         26,
+         40
+        ]
+       },
+       "to": {
+        "pos": [
+         -12,
+         38,
+         -62
+        ],
+        "look": [
+         0,
+         30,
+         40
+        ]
+       },
+       "ease": "out"
+      }
+     },
+     {
+      "dur": 6,
+      "cam": {
+       "from": {
+        "pos": [
+         -22,
+         3,
+         -128
+        ],
+        "look": [
+         0,
+         1.5,
+         -110
+        ]
+       },
+       "to": {
+        "pos": [
+         -12,
+         2.4,
+         -120
+        ],
+        "look": [
+         4,
+         1.2,
+         -108
+        ]
+       }
+      },
+      "lines": [
+       {
+        "at": 0.6,
+        "dur": 5.0,
+        "text": "Dinner was still on the tables. A game was left in the square, mid-move."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "bar": 15,
+    "cardBars": 2,
+    "card": {
+     "text": "Around the emptied heartland a border closed, and no one could cross it.",
+     "hold": 2.0
+    },
+    "zone": "borderwall",
+    "daytime": 0.15,
+    "shots": [
+     {
+      "dur": 2,
+      "cam": {
+       "from": {
+        "pos": [
+         -151.8,
+         18,
+         -114.5
+        ],
+        "look": [
+         25.3,
+         30,
+         -21.3
+        ]
+       },
+       "to": {
+        "pos": [
+         -114.0,
+         18,
+         -96.2
+        ],
+        "look": [
+         61.3,
+         30,
+         -3.9
+        ]
+       },
+       "ease": "linear"
+      }
+     },
+     {
+      "dur": 3,
+      "cam": {
+       "from": {
+        "pos": [
+         -79.1,
+         6,
+         -2.8
+        ],
+        "look": [
+         -37.7,
+         20,
+         -51.7
+        ]
+       },
+       "to": {
+        "pos": [
+         -47.7,
+         8,
+         1.2
+        ],
+        "look": [
+         -12.5,
+         22,
+         -39.5
+        ]
+       },
+       "ease": "linear"
+      },
+      "lines": [
+       {
+        "at": 0.1,
+        "dur": 2.8,
+        "text": "Mountains, and walls where they gave out."
+       }
+      ]
+     },
+     {
+      "dur": 3,
+      "cam": {
+       "from": {
+        "pos": [
+         82.7,
+         18,
+         -71.3
+        ],
+        "look": [
+         0.1,
+         30,
+         -33.5
+        ]
+       },
+       "to": {
+        "pos": [
+         84.0,
+         50,
+         -108.5
+        ],
+        "look": [
+         0.1,
+         26,
+         -33.5
+        ]
+       },
+       "ease": "out"
+      },
+      "lines": [
+       {
+        "at": 0.2,
+        "dur": 2.7,
+        "text": "No one went in for three hundred years."
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "bar": 21,
+    "cardBars": 1,
+    "card": {
+     "text": "Those left outside built three free cities:",
+     "sub": "one around a locked-out garrison that kept the watch,",
+     "hold": 3.5
+    },
+    "zone": "caerdun",
+    "daytime": 0.1,
+    "shots": [
+     {
+      "dur": 4,
+      "cam": {
+       "from": {
+        "pos": [
+         190,
+         75,
+         60
+        ],
+        "look": [
+         -120,
+         10,
+         -10
+        ]
+       },
+       "to": {
+        "pos": [
+         110,
+         55,
+         28
+        ],
+        "look": [
+         -120,
+         8,
+         -10
+        ]
+       },
+       "ease": "linear"
+      }
+     },
+     {
+      "dur": 4,
+      "cam": {
+       "from": {
+        "pos": [
+         -60,
+         20,
+         140
+        ],
+        "look": [
+         -159,
+         30,
+         47
+        ]
+       },
+       "to": {
+        "pos": [
+         -110,
+         26,
+         120
+        ],
+        "look": [
+         -170,
+         34,
+         40
+        ]
+       },
+       "ease": "linear"
+      }
+     }
+    ]
+   },
+   {
+    "bar": 26,
+    "cardBars": 3,
+    "card": {
+     "text": "one in a wood the empire never took, with the families it had driven out,",
+     "hold": 2.2
+    },
+    "zone": "heartwood",
+    "daytime": 0.1,
+    "shots": [
+     {
+      "dur": 3,
+      "cam": {
+       "from": {
+        "pos": [
+         280,
+         9,
+         112
+        ],
+        "look": [
+         30,
+         20,
+         31
+        ]
+       },
+       "to": {
+        "pos": [
+         232,
+         11,
+         92
+        ],
+        "look": [
+         30,
+         24,
+         31
+        ]
+       },
+       "ease": "linear",
+       "via": [
+        256,
+        8,
+        110
+       ]
+      }
+     },
+     {
+      "dur": 3,
+      "cam": {
+       "from": {
+        "pos": [
+         200,
+         10,
+         80
+        ],
+        "look": [
+         30,
+         30,
+         31
+        ]
+       },
+       "to": {
+        "pos": [
+         178,
+         64,
+         64
+        ],
+        "look": [
+         30,
+         36,
+         31
+        ]
+       },
+       "ease": "out"
+      }
+     }
+    ]
+   },
+   {
+    "bar": 32,
+    "cardBars": 1,
+    "card": {
+     "text": "and one on an island where the sea had saved the empire's own academy.",
+     "hold": 3.0
+    },
+    "zone": "moonmere",
+    "daytime": 0.1,
+    "shots": [
+     {
+      "dur": 4,
+      "cam": {
+       "from": {
+        "pos": [
+         40,
+         30,
+         -320
+        ],
+        "look": [
+         0,
+         18,
+         130
+        ]
+       },
+       "to": {
+        "pos": [
+         26,
+         24,
+         -210
+        ],
+        "look": [
+         0,
+         20,
+         130
+        ]
+       },
+       "ease": "linear"
+      }
+     },
+     {
+      "dur": 4,
+      "cam": {
+       "from": {
+        "pos": [
+         22,
+         16,
+         -175
+        ],
+        "look": [
+         0,
+         20,
+         150
+        ]
+       },
+       "to": {
+        "pos": [
+         8,
+         60,
+         -110
+        ],
+        "look": [
+         0,
+         10,
+         150
+        ]
+       },
+       "ease": "out"
+      }
+     }
+    ]
+   },
+   {
+    "bar": 37,
+    "cardBars": 3,
+    "card": {
+     "text": "Now, after three hundred years, the border is failing.",
+     "hold": 1.8
+    },
+    "zone": "caerdunfields",
+    "daytime": 0.06,
+    "gates": [
+     {
+      "at": 4.0,
+      "open": "cf_gate"
+     }
+    ],
+    "shots": [
+     {
+      "dur": 2,
+      "cam": {
+       "from": {
+        "pos": [
+         185.2,
+         28,
+         -66.0
+        ],
+        "look": [
+         231.0,
+         8,
+         -188.0
+        ]
+       },
+       "to": {
+        "pos": [
+         199.5,
+         19,
+         -103.5
+        ],
+        "look": [
+         231.0,
+         8,
+         -188.0
+        ]
+       },
+       "ease": "linear"
+      }
+     },
+     {
+      "dur": 2,
+      "cam": {
+       "from": {
+        "pos": [
+         228.4,
+         2,
+         -163.7
+        ],
+        "look": [
+         231.0,
+         7,
+         -188.0
+        ]
+       },
+       "to": {
+        "pos": [
+         228.4,
+         2.2,
+         -168.9
+        ],
+        "look": [
+         231.0,
+         7.5,
+         -188.0
+        ]
+       },
+       "ease": "linear"
+      },
+      "lines": [
+       {
+        "at": 0.0,
+        "dur": 2.0,
+        "text": "One morning, the gates opened."
+       }
+      ]
+     },
+     {
+      "dur": 3,
+      "cam": {
+       "from": {
+        "pos": [
+         225.9,
+         2.5,
+         -170.8
+        ],
+        "look": [
+         233.9,
+         5,
+         -197.6
+        ]
+       },
+       "to": {
+        "pos": [
+         228.1,
+         2.9,
+         -178.4
+        ],
+        "look": [
+         236.7,
+         5,
+         -207.2
+        ]
+       }
+      },
+      "lines": [
+       {
+        "at": 0.2,
+        "dur": 2.75,
+        "text": "Behind them, a whole country is waiting."
+       }
+      ]
+     },
+     {
+      "dur": 3,
+      "cam": {
+       "from": {
+        "pos": [
+         228.4,
+         3,
+         -179.4
+        ],
+        "look": [
+         236.7,
+         4,
+         -207.2
+        ]
+       },
+       "to": {
+        "pos": [
+         231.6,
+         3.2,
+         -189.9
+        ],
+        "look": [
+         239.6,
+         4,
+         -216.7
+        ]
+       },
+       "ease": "in"
+      }
+     }
+    ]
+   },
+   {
+    "bar": 45,
+    "cardBars": 4,
+    "card": {
+     "text": "VANAI",
+     "sub": "The Empty Throne",
+     "title": true
+    }
+   }
+  ]
+ }
+}

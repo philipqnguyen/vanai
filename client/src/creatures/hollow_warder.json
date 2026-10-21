@@ -1,0 +1,51 @@
+{
+ "file": "creatures/hollow_warder.glb",
+ "plan": "husk",
+ "height": 4.731,
+ "length": 2.469,
+ "width": 2.112,
+ "top": 4.731,
+ "minY": -0.8364,
+ "groundY": -0.0093,
+ "forward": -0.349,
+ "tris": [
+  11078,
+  3313
+ ],
+ "budget": 12000,
+ "bones": 23,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 2.214,
+  "Run": 1.423,
+  "Hit": 0.5,
+  "Death": 1.8,
+  "Attack_A": 1.3,
+  "Attack_B": 1.2,
+  "Cast": 3.2,
+  "Special": 2.2
+ },
+ "speeds": {
+  "Walk": 1.265,
+  "Run": 3.795
+ },
+ "bytes": 941632,
+ "held": [
+  [
+   9635,
+   10496
+  ]
+ ],
+ "groundLift": {
+  "Run": 0.06
+ },
+ "notes": "The Hollow Warder: the Mausoleum east hall's boss -- cope, lantern, greatsword, the abbess's cane",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/hollow_warder.py",
+ "fast": false
+}

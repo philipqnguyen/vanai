@@ -1,0 +1,48 @@
+{
+ "file": "creatures/the_glassblower.glb",
+ "plan": "sentinel",
+ "height": 5.522,
+ "length": 1.616,
+ "width": 2.817,
+ "top": 5.522,
+ "minY": -1.1096,
+ "groundY": 0.0024,
+ "forward": 0.492,
+ "tris": [
+  10746,
+  3222
+ ],
+ "budget": 12000,
+ "bones": 23,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.534,
+  "Run": 0.639,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 2.0,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.797,
+  "Run": 6.817
+ },
+ "bytes": 846448,
+ "held": [
+  [
+   6962,
+   9082
+  ]
+ ],
+ "groundLift": {},
+ "notes": "The Glassblower: a barrel-chested sentinel in soot and leather, a blown-glass globe for a head, the blowpipe and the pane in its fists",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_glassblower.py",
+ "fast": false
+}

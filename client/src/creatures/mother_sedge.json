@@ -1,0 +1,46 @@
+{
+ "file": "creatures/mother_sedge.glb",
+ "plan": "rooted",
+ "height": 4.941,
+ "length": 2.754,
+ "width": 2.682,
+ "top": 4.941,
+ "minY": 0.0082,
+ "groundY": 0.0082,
+ "forward": 0.003,
+ "tris": [
+  11673,
+  3500
+ ],
+ "budget": 12000,
+ "bones": 20,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.98,
+  "Run": 1.273,
+  "Attack_A": 1.1,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.6,
+  "Cast": 3.2,
+  "Special": 2.0
+ },
+ "speeds": {
+  "Walk": 2.546,
+  "Run": 5.374
+ },
+ "bytes": 931136,
+ "held": [],
+ "groundLift": {
+  "Death": 0.37
+ },
+ "notes": "Mother Sedge: a hooded form of reeds and marsh-light, a wisp in every fold, roots that walk",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/mother_sedge.py",
+ "fast": false
+}

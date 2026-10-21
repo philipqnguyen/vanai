@@ -1,0 +1,6221 @@
+{
+ "about": "The Caerdun fortress build contract (CAERDUN-CONTRACT.md). Decided 2026-10-06 from RULINGS.md CF-1..CF-14, BRIEF.md, VERDICT.md and the sea-gate + wage-keep mock-ups. Derived numbers are computed by contract_gen.py.",
+ "datums": {
+  "F": 9.875,
+  "walkRel": 11.4,
+  "walk": 21.275,
+  "crownRel": 24.1,
+  "crown": 33.975,
+  "paradosTopRel": 12.4,
+  "merlonTopRel": 13.2,
+  "crenelSillRel": 12.2,
+  "walkClear": 2.2,
+  "walkZ": [
+   -1.0,
+   1.2
+  ],
+  "townFaceZ": {
+   "sea": -1.4,
+   "land": -1.5
+  },
+  "parapetZ": [
+   1.2,
+   1.85
+  ],
+  "strip": 0.5,
+  "apron": 0.95,
+  "moleDeck": 1.6,
+  "sea": -1.3,
+  "ditchFloor": 1.875,
+  "bastionPlatform": 21.275,
+  "houseEave": 11.0,
+  "houseDepth": 10.0,
+  "bay": 4.0,
+  "storey": 3.4,
+  "stepUp": 0.9,
+  "riserMax": 0.205,
+  "treadMin": 0.3,
+  "flightHalfMin": 1.0,
+  "headroom": 2.2,
+  "endPad": 0.05,
+  "risersPerFlightMax": 30,
+  "deckOverlap": 0.25,
+  "platEdgeOutboardOfCurtain": 3.0,
+  "scarpTopOutboardOfPlat": 4.5,
+  "scarpApronDepth": 5.0,
+  "scarpFootBelowStrip": 3.0,
+  "grid": {
+   "size": 700,
+   "n": 150,
+   "cell": 4.666666666666667,
+   "origin": -350.0
+  }
+ },
+ "walls": {
+  "nodes": [
+   {
+    "id": "sw",
+    "x": -146.0,
+    "z": -107.333,
+    "kind": "corner"
+   },
+   {
+    "id": "w1",
+    "x": -155.0,
+    "z": -70.0,
+    "kind": "tower"
+   },
+   {
+    "id": "sgS",
+    "x": -160.0,
+    "z": -29.4,
+    "kind": "cone"
+   },
+   {
+    "id": "seagate",
+    "x": -160.0,
+    "z": -10.0,
+    "kind": "seagate"
+   },
+   {
+    "id": "sgN",
+    "x": -156.335,
+    "z": 9.755,
+    "kind": "cone"
+   },
+   {
+    "id": "bastionS",
+    "x": -153.837,
+    "z": 23.227,
+    "kind": "bastionS"
+   },
+   {
+    "id": "bastionN",
+    "x": -134.595,
+    "z": 47.532,
+    "kind": "bastionN"
+   },
+   {
+    "id": "n1",
+    "x": -122.0,
+    "z": 58.0,
+    "kind": "tower"
+   },
+   {
+    "id": "ramparts",
+    "x": -95.0,
+    "z": 71.0,
+    "kind": "tall"
+   },
+   {
+    "id": "n3",
+    "x": -62.0,
+    "z": 84.0,
+    "kind": "tower"
+   },
+   {
+    "id": "n4",
+    "x": -37.0,
+    "z": 93.1,
+    "kind": "tall"
+   },
+   {
+    "id": "n5",
+    "x": 0.0,
+    "z": 107.0,
+    "kind": "tower"
+   },
+   {
+    "id": "n6",
+    "x": 34.0,
+    "z": 106.0,
+    "kind": "tower"
+   },
+   {
+    "id": "ne",
+    "x": 65.333,
+    "z": 103.0,
+    "kind": "corner"
+   },
+   {
+    "id": "e1",
+    "x": 65.333,
+    "z": 62.0,
+    "kind": "tower"
+   },
+   {
+    "id": "e2",
+    "x": 65.333,
+    "z": 22.0,
+    "kind": "tower"
+   },
+   {
+    "id": "crowngate",
+    "x": 65.333,
+    "z": -18.0,
+    "kind": "gate"
+   },
+   {
+    "id": "e3",
+    "x": 65.333,
+    "z": -62.0,
+    "kind": "tower"
+   },
+   {
+    "id": "se",
+    "x": 65.333,
+    "z": -107.333,
+    "kind": "corner"
+   },
+   {
+    "id": "s1",
+    "x": 22.0,
+    "z": -107.333,
+    "kind": "tower"
+   },
+   {
+    "id": "s2",
+    "x": -20.0,
+    "z": -107.333,
+    "kind": "tower"
+   },
+   {
+    "id": "s3",
+    "x": -62.0,
+    "z": -107.333,
+    "kind": "tower"
+   },
+   {
+    "id": "s4",
+    "x": -104.0,
+    "z": -107.333,
+    "kind": "tower"
+   }
+  ],
+  "towers": [
+   {
+    "id": "sw",
+    "x": -146.0,
+    "z": -107.333,
+    "kind": "corner",
+    "file": "sg_tower_corner",
+    "yaw": -2.47447,
+    "bend": 76.4,
+    "cone": false
+   },
+   {
+    "id": "w1",
+    "x": -155.0,
+    "z": -70.0,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": -1.75034,
+    "bend": 6.5,
+    "cone": false
+   },
+   {
+    "id": "sgS",
+    "x": -160.0,
+    "z": -29.4,
+    "kind": "cone",
+    "file": "sg_tower_tall",
+    "yaw": -1.63206,
+    "bend": 7.0,
+    "cone": true
+   },
+   {
+    "id": "seagate",
+    "x": -160.0,
+    "z": -10.0,
+    "kind": "seagate",
+    "file": "sg_seagate",
+    "yaw": -1.47908,
+    "bend": 10.5,
+    "cone": false
+   },
+   {
+    "id": "sgN",
+    "x": -156.335,
+    "z": 9.755,
+    "kind": "cone",
+    "file": "sg_tower_tall",
+    "yaw": -1.38741,
+    "bend": 0.0,
+    "cone": true
+   },
+   {
+    "id": "n1",
+    "x": -122.0,
+    "z": 58.0,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": -0.57108,
+    "bend": 14.0,
+    "cone": false
+   },
+   {
+    "id": "ramparts",
+    "x": -95.0,
+    "z": 71.0,
+    "kind": "tall",
+    "file": "sg_tower_tall",
+    "yaw": -0.412,
+    "bend": 4.2,
+    "cone": false
+   },
+   {
+    "id": "n3",
+    "x": -62.0,
+    "z": 84.0,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": -0.36218,
+    "bend": 1.5,
+    "cone": false
+   },
+   {
+    "id": "n4",
+    "x": -37.0,
+    "z": 93.1,
+    "kind": "tall",
+    "file": "sg_tower_tall",
+    "yaw": -0.35423,
+    "bend": 0.6,
+    "cone": false
+   },
+   {
+    "id": "n5",
+    "x": 0.0,
+    "z": 107.0,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": -0.16498,
+    "bend": 22.3,
+    "cone": false
+   },
+   {
+    "id": "n6",
+    "x": 34.0,
+    "z": 106.0,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": 0.06243,
+    "bend": 3.8,
+    "cone": false
+   },
+   {
+    "id": "ne",
+    "x": 65.333,
+    "z": 103.0,
+    "kind": "corner",
+    "file": "sg_tower_corner",
+    "yaw": 0.83313,
+    "bend": 84.5,
+    "cone": false
+   },
+   {
+    "id": "e1",
+    "x": 65.333,
+    "z": 62.0,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": 1.5708,
+    "bend": 0.0,
+    "cone": false
+   },
+   {
+    "id": "e2",
+    "x": 65.333,
+    "z": 22.0,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": 1.5708,
+    "bend": 0.0,
+    "cone": false
+   },
+   {
+    "id": "crowngate",
+    "x": 65.333,
+    "z": -18.0,
+    "kind": "gate",
+    "file": "sg_crown_gate",
+    "yaw": 1.5708,
+    "bend": 0.0,
+    "cone": false
+   },
+   {
+    "id": "e3",
+    "x": 65.333,
+    "z": -62.0,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": 1.5708,
+    "bend": 0.0,
+    "cone": false
+   },
+   {
+    "id": "se",
+    "x": 65.333,
+    "z": -107.333,
+    "kind": "corner",
+    "file": "sg_tower_corner",
+    "yaw": 2.35619,
+    "bend": 90.0,
+    "cone": false
+   },
+   {
+    "id": "s1",
+    "x": 22.0,
+    "z": -107.333,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": -3.14159,
+    "bend": 0.0,
+    "cone": false
+   },
+   {
+    "id": "s2",
+    "x": -20.0,
+    "z": -107.333,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": -3.14159,
+    "bend": 0.0,
+    "cone": false
+   },
+   {
+    "id": "s3",
+    "x": -62.0,
+    "z": -107.333,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": -3.14159,
+    "bend": 0.0,
+    "cone": false
+   },
+   {
+    "id": "s4",
+    "x": -104.0,
+    "z": -107.333,
+    "kind": "tower",
+    "file": "sg_tower",
+    "yaw": -3.14159,
+    "bend": 0.0,
+    "cone": false
+   }
+  ],
+  "runs": [
+   {
+    "id": "sw-w1",
+    "from": "sw",
+    "to": "w1",
+    "a": [
+     -146.0,
+     -107.333
+    ],
+    "b": [
+     -155.0,
+     -70.0
+    ],
+    "length": 38.403,
+    "clear": 26.903,
+    "bays": 7,
+    "scaleX": 0.9608,
+    "yaw": -1.80736,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:sw"
+   },
+   {
+    "id": "w1-sgS",
+    "from": "w1",
+    "to": "sgS",
+    "a": [
+     -155.0,
+     -70.0
+    ],
+    "b": [
+     -160.0,
+     -29.4
+    ],
+    "length": 40.907,
+    "clear": 30.907,
+    "bays": 8,
+    "scaleX": 0.9658,
+    "yaw": -1.69333,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:w1"
+   },
+   {
+    "id": "sgS-seagate",
+    "from": "sgS",
+    "to": "seagate",
+    "a": [
+     -160.0,
+     -29.4
+    ],
+    "b": [
+     -160.0,
+     -10.0
+    ],
+    "length": 19.4,
+    "clear": 8.0,
+    "bays": 2,
+    "scaleX": 1.0,
+    "yaw": -1.5708,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:sgS"
+   },
+   {
+    "id": "seagate-sgN",
+    "from": "seagate",
+    "to": "sgN",
+    "a": [
+     -160.0,
+     -10.0
+    ],
+    "b": [
+     -156.335,
+     9.755
+    ],
+    "length": 20.092,
+    "clear": 8.692,
+    "bays": 2,
+    "scaleX": 1.0865,
+    "yaw": -1.38736,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:seagate"
+   },
+   {
+    "id": "sgN-bastionS",
+    "from": "sgN",
+    "to": "bastionS",
+    "a": [
+     -156.335,
+     9.755
+    ],
+    "b": [
+     -153.837,
+     23.227
+    ],
+    "length": 13.702,
+    "clear": 8.702,
+    "bays": 2,
+    "scaleX": 1.0877,
+    "yaw": -1.38746,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:sgN"
+   },
+   {
+    "id": "bastionN-n1",
+    "from": "bastionN",
+    "to": "n1",
+    "a": [
+     -134.595,
+     47.532
+    ],
+    "b": [
+     -122.0,
+     58.0
+    ],
+    "length": 16.377,
+    "clear": 11.377,
+    "bays": 3,
+    "scaleX": 0.9481,
+    "yaw": -0.69343,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:bastionN"
+   },
+   {
+    "id": "n1-ramparts",
+    "from": "n1",
+    "to": "ramparts",
+    "a": [
+     -122.0,
+     58.0
+    ],
+    "b": [
+     -95.0,
+     71.0
+    ],
+    "length": 29.967,
+    "clear": 19.967,
+    "bays": 5,
+    "scaleX": 0.9983,
+    "yaw": -0.44872,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:n1"
+   },
+   {
+    "id": "ramparts-n3",
+    "from": "ramparts",
+    "to": "n3",
+    "a": [
+     -95.0,
+     71.0
+    ],
+    "b": [
+     -62.0,
+     84.0
+    ],
+    "length": 35.468,
+    "clear": 25.468,
+    "bays": 6,
+    "scaleX": 1.0612,
+    "yaw": -0.37527,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:ramparts"
+   },
+   {
+    "id": "n3-n4",
+    "from": "n3",
+    "to": "n4",
+    "a": [
+     -62.0,
+     84.0
+    ],
+    "b": [
+     -37.0,
+     93.1
+    ],
+    "length": 26.605,
+    "clear": 16.605,
+    "bays": 4,
+    "scaleX": 1.0378,
+    "yaw": -0.34909,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:n3"
+   },
+   {
+    "id": "n4-n5",
+    "from": "n4",
+    "to": "n5",
+    "a": [
+     -37.0,
+     93.1
+    ],
+    "b": [
+     0.0,
+     107.0
+    ],
+    "length": 39.525,
+    "clear": 29.525,
+    "bays": 7,
+    "scaleX": 1.0545,
+    "yaw": -0.35936,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:n4"
+   },
+   {
+    "id": "n5-n6",
+    "from": "n5",
+    "to": "n6",
+    "a": [
+     0.0,
+     107.0
+    ],
+    "b": [
+     34.0,
+     106.0
+    ],
+    "length": 34.015,
+    "clear": 24.015,
+    "bays": 6,
+    "scaleX": 1.0006,
+    "yaw": 0.0294,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:n5"
+   },
+   {
+    "id": "n6-ne",
+    "from": "n6",
+    "to": "ne",
+    "a": [
+     34.0,
+     106.0
+    ],
+    "b": [
+     65.333,
+     103.0
+    ],
+    "length": 31.476,
+    "clear": 19.976,
+    "bays": 5,
+    "scaleX": 0.9988,
+    "yaw": 0.09545,
+    "type": "sea",
+    "file": "sg_seawall_arcade|sg_seawall_window",
+    "cell": "wall:n6"
+   },
+   {
+    "id": "ne-e1",
+    "from": "ne",
+    "to": "e1",
+    "a": [
+     65.333,
+     103.0
+    ],
+    "b": [
+     65.333,
+     62.0
+    ],
+    "length": 41.0,
+    "clear": 29.5,
+    "bays": 7,
+    "scaleX": 1.0536,
+    "yaw": 1.5708,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:ne"
+   },
+   {
+    "id": "e1-e2",
+    "from": "e1",
+    "to": "e2",
+    "a": [
+     65.333,
+     62.0
+    ],
+    "b": [
+     65.333,
+     22.0
+    ],
+    "length": 40.0,
+    "clear": 30.0,
+    "bays": 8,
+    "scaleX": 0.9375,
+    "yaw": 1.5708,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:e1"
+   },
+   {
+    "id": "e2-crowngate",
+    "from": "e2",
+    "to": "crowngate",
+    "a": [
+     65.333,
+     22.0
+    ],
+    "b": [
+     65.333,
+     -18.0
+    ],
+    "length": 40.0,
+    "clear": 20.0,
+    "bays": 5,
+    "scaleX": 1.0,
+    "yaw": 1.5708,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:e2"
+   },
+   {
+    "id": "crowngate-e3",
+    "from": "crowngate",
+    "to": "e3",
+    "a": [
+     65.333,
+     -18.0
+    ],
+    "b": [
+     65.333,
+     -62.0
+    ],
+    "length": 44.0,
+    "clear": 24.0,
+    "bays": 6,
+    "scaleX": 1.0,
+    "yaw": 1.5708,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:crowngate"
+   },
+   {
+    "id": "e3-se",
+    "from": "e3",
+    "to": "se",
+    "a": [
+     65.333,
+     -62.0
+    ],
+    "b": [
+     65.333,
+     -107.333
+    ],
+    "length": 45.333,
+    "clear": 33.833,
+    "bays": 8,
+    "scaleX": 1.0573,
+    "yaw": 1.5708,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:e3"
+   },
+   {
+    "id": "se-s1",
+    "from": "se",
+    "to": "s1",
+    "a": [
+     65.333,
+     -107.333
+    ],
+    "b": [
+     22.0,
+     -107.333
+    ],
+    "length": 43.333,
+    "clear": 31.833,
+    "bays": 8,
+    "scaleX": 0.9948,
+    "yaw": -3.14159,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:se"
+   },
+   {
+    "id": "s1-s2",
+    "from": "s1",
+    "to": "s2",
+    "a": [
+     22.0,
+     -107.333
+    ],
+    "b": [
+     -20.0,
+     -107.333
+    ],
+    "length": 42.0,
+    "clear": 32.0,
+    "bays": 8,
+    "scaleX": 1.0,
+    "yaw": -3.14159,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:s1"
+   },
+   {
+    "id": "s2-s3",
+    "from": "s2",
+    "to": "s3",
+    "a": [
+     -20.0,
+     -107.333
+    ],
+    "b": [
+     -62.0,
+     -107.333
+    ],
+    "length": 42.0,
+    "clear": 32.0,
+    "bays": 8,
+    "scaleX": 1.0,
+    "yaw": -3.14159,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:s2"
+   },
+   {
+    "id": "s3-s4",
+    "from": "s3",
+    "to": "s4",
+    "a": [
+     -62.0,
+     -107.333
+    ],
+    "b": [
+     -104.0,
+     -107.333
+    ],
+    "length": 42.0,
+    "clear": 32.0,
+    "bays": 8,
+    "scaleX": 1.0,
+    "yaw": -3.14159,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:s3"
+   },
+   {
+    "id": "s4-sw",
+    "from": "s4",
+    "to": "sw",
+    "a": [
+     -104.0,
+     -107.333
+    ],
+    "b": [
+     -146.0,
+     -107.333
+    ],
+    "length": 42.0,
+    "clear": 30.5,
+    "bays": 8,
+    "scaleX": 0.9531,
+    "yaw": -3.14159,
+    "type": "land",
+    "file": "sg_curtain_land",
+    "cell": "wall:s4"
+   }
+  ],
+  "walledArea": 42226,
+  "curtainLength": {
+   "sea": 345.9,
+   "land": 421.7
+  },
+  "curtainBays": {
+   "sea": 57,
+   "land": 74
+  },
+  "plateauEdgeRef": [
+   [
+    -148.92,
+    -108.04
+   ],
+   [
+    -157.95,
+    -70.54
+   ],
+   [
+    -162.99,
+    -29.58
+   ],
+   [
+    -162.99,
+    -9.73
+   ],
+   [
+    -159.3,
+    10.18
+   ],
+   [
+    -157.69,
+    22.29
+   ],
+   [
+    -165.31,
+    28.06
+   ],
+   [
+    -167.91,
+    39.39
+   ],
+   [
+    -162.64,
+    49.97
+   ],
+   [
+    -153.56,
+    57.52
+   ],
+   [
+    -141.93,
+    57.59
+   ],
+   [
+    -135.0,
+    51.54
+   ],
+   [
+    -123.54,
+    60.58
+   ],
+   [
+    -96.2,
+    73.75
+   ],
+   [
+    -63.06,
+    86.81
+   ],
+   [
+    -38.04,
+    95.91
+   ],
+   [
+    -0.49,
+    109.96
+   ],
+   [
+    34.19,
+    108.99
+   ],
+   [
+    65.62,
+    105.99
+   ]
+  ],
+  "scarpTopRef": [
+   [
+    -153.29,
+    -109.09
+   ],
+   [
+    -162.38,
+    -71.34
+   ],
+   [
+    -167.49,
+    -29.86
+   ],
+   [
+    -167.47,
+    -9.31
+   ],
+   [
+    -163.76,
+    10.82
+   ],
+   [
+    -161.84,
+    20.54
+   ],
+   [
+    -169.11,
+    25.65
+   ],
+   [
+    -172.37,
+    39.94
+   ],
+   [
+    -166.17,
+    52.76
+   ],
+   [
+    -155.12,
+    61.74
+   ],
+   [
+    -140.46,
+    61.84
+   ],
+   [
+    -134.91,
+    56.04
+   ],
+   [
+    -125.84,
+    64.44
+   ],
+   [
+    -98.0,
+    77.87
+   ],
+   [
+    -64.66,
+    91.01
+   ],
+   [
+    -39.6,
+    100.13
+   ],
+   [
+    -1.23,
+    114.4
+   ],
+   [
+    34.47,
+    113.49
+   ],
+   [
+    66.05,
+    110.47
+   ]
+  ],
+  "bastion": {
+   "x": -145.0,
+   "z": 36.0,
+   "face": [
+    -24.0,
+    19.0
+   ],
+   "yaw": -0.90116,
+   "localX": [
+    0.6207,
+    0.784
+   ],
+   "localZ": [
+    -0.784,
+    0.6207
+   ],
+   "attachS": [
+    -153.837,
+    23.227
+   ],
+   "attachN": [
+    -134.595,
+    47.532
+   ]
+  }
+ },
+ "landward": {
+  "ditch": {
+   "lipIn": 93.333,
+   "floor0": 98.0,
+   "floor1": 107.333,
+   "lipOut": 112.0,
+   "zSouthFace": -130.667,
+   "zSouthFloor": -126.0,
+   "zNorthFloor": 107.333,
+   "floorY": 1.875,
+   "dry": true
+  },
+  "barbican": {
+   "x": 89.333,
+   "z": -18.0,
+   "yaw": 1.5707963267948966,
+   "tower": [
+    12.0,
+    8.0
+   ]
+  },
+  "glacis": {
+   "x0": 112.0,
+   "x1": 140.0,
+   "y": 9.875
+  },
+  "spawn": [
+   124.0,
+   -18.0
+  ],
+  "portal": [
+   146.0,
+   -18.0
+  ]
+ },
+ "civic": {
+  "crown_gate": {
+   "file": "sg_crown_gate",
+   "x": 65.333,
+   "z": -18.0,
+   "yaw": 1.5708,
+   "y": 0.0
+  },
+  "barbican": {
+   "file": "sg_barbican",
+   "x": 89.333,
+   "z": -18.0,
+   "yaw": 1.5708,
+   "y": 0.0
+  },
+  "seagate": {
+   "file": "sg_seagate",
+   "x": -160.0,
+   "z": -10.0,
+   "yaw": -1.47908,
+   "y": 0.0
+  },
+  "bastion": {
+   "file": "sg_bastion",
+   "x": -145.0,
+   "z": 36.0,
+   "yaw": -0.90116,
+   "yAbs": 0.5
+  },
+  "lighthouse": {
+   "file": "sg_lighthouse",
+   "x": -152.056,
+   "z": 41.586,
+   "yaw": -0.90116,
+   "yAbs": 21.275
+  },
+  "court_hall": {
+   "file": "sg_court_hall",
+   "x": 25.0,
+   "z": 2.0,
+   "yaw": 3.14159,
+   "y": 0.0,
+   "body": [
+    13.0,
+    -6.0,
+    37.0,
+    10.0
+   ]
+  },
+  "clock_tower": {
+   "file": "sg_clock_tower",
+   "x": 42.5,
+   "z": 0.0,
+   "yaw": 3.14159,
+   "y": 0.0,
+   "body": [
+    37.5,
+    -5.0,
+    47.5,
+    5.0
+   ]
+  },
+  "paladin_hall": {
+   "file": "sg_guild_hall",
+   "x": 25.0,
+   "z": -40.0,
+   "yaw": 3.14159,
+   "y": 0.0,
+   "body": [
+    9.0,
+    -48.0,
+    41.0,
+    -32.0
+   ],
+   "door": "south, on the parade"
+  },
+  "samurai_hall": {
+   "file": "sg_guild_hall",
+   "x": 25.0,
+   "z": -94.333,
+   "yaw": 0.0,
+   "y": 0.0,
+   "body": [
+    9.0,
+    -102.333,
+    41.0,
+    -86.333
+   ],
+   "door": "north, on the parade; its back a metre clear of tower s1"
+  },
+  "street_arch": {
+   "file": "sg_street_arch",
+   "x": -10.0,
+   "z": -18.0,
+   "yaw": 1.5708,
+   "y": 0.0
+  }
+ },
+ "sites": {
+  "court_archive": {
+   "cx": 25.0,
+   "cz": 2.0,
+   "yaw": 3.141592653589793,
+   "span": 24.0,
+   "len": 16.0,
+   "floors": [
+    10.875,
+    14.275,
+    17.675
+   ],
+   "shell": "sg_court_hall",
+   "name": "Wage Vaults beneath the Court Hall"
+  },
+  "imperial_clock": {
+   "cx": 42.5,
+   "cz": 0.0,
+   "yaw": 3.141592653589793,
+   "span": 10.0,
+   "len": 10.0,
+   "floors": [
+    10.875,
+    14.275,
+    17.675,
+    21.075,
+    24.475,
+    27.875
+   ],
+   "shell": "sg_clock_tower",
+   "name": "Imperial clock tower"
+  },
+  "watch_harbour": {
+   "cx": -275.0,
+   "cz": -6.0,
+   "r": 7.0,
+   "floors": [
+    1.6
+   ],
+   "shell": "sg_chain_tower",
+   "name": "The Harbour Tower"
+  },
+  "watch_light": {
+   "cx": -151.272,
+   "cz": 40.966,
+   "yaw": -0.90116,
+   "span": 36.0,
+   "len": 22.0,
+   "floors": [
+    0.5,
+    9.875,
+    21.275
+   ],
+   "shell": "sg_bastion",
+   "groundCells": true,
+   "name": "The Lantern Bastion"
+  },
+  "watch_ramparts": {
+   "cx": -95.0,
+   "cz": 71.0,
+   "yaw": -0.412,
+   "span": 46.0,
+   "len": 13.0,
+   "floors": [
+    9.875,
+    21.275
+   ],
+   "shell": "sg_tower_tall",
+   "groundCells": true,
+   "name": "The Sea Ramparts Watch"
+  },
+  "watch_crown": {
+   "cx": 65.333,
+   "cz": -18.0,
+   "yaw": 1.5707963267948966,
+   "span": 34.0,
+   "len": 20.0,
+   "floors": [
+    9.875,
+    21.275,
+    27.625,
+    33.975
+   ],
+   "shell": "sg_crown_gate",
+   "groundCells": true,
+   "name": "The Crown Gate"
+  }
+ },
+ "droppedSites": [
+  "cd_house_511686",
+  "cd_house_192854",
+  "cd_house_464355",
+  "cd_house_224994",
+  "cd_house_881144",
+  "cd_house_11403"
+ ],
+ "spots": {
+  "spawn": {
+   "x": 124.0,
+   "z": -18.0,
+   "region": "outside",
+   "why": "CF-5/Q3(b): on the glacis road 12 m beyond the counterscarp, facing the barbican; == caerdunfields cf_caerdun tx/tz"
+  },
+  "cd_fields": {
+   "x": 146.0,
+   "z": -18.0,
+   "region": "outside",
+   "kind": "portal",
+   "why": "the head of the approach road, EAST (cd3/cd6); 22 m beyond spawn so an arrival is never inside its reach"
+  },
+  "lm_cd2_gate": {
+   "x": 88.0,
+   "z": -18.0,
+   "region": "wall",
+   "kind": "landmark",
+   "why": "the barbican on the bridge (fix round 1: with the portal it was discovered on arrival, 22 m from spawn, never at the gate; here 36 m on)"
+  },
+  "crystal_caerdun": {
+   "x": 25.0,
+   "z": -18.0,
+   "region": "city",
+   "kind": "milestone",
+   "why": "CF-9: does not move; Crown Square on the Crown Street axis"
+  },
+  "lm_cd2_court": {
+   "x": 25.0,
+   "z": -8.5,
+   "region": "city",
+   "kind": "landmark",
+   "why": "The Wage Vaults: the court hall door on Crown Square"
+  },
+  "lm_cd2_market": {
+   "x": -40.0,
+   "z": -22.0,
+   "region": "city",
+   "kind": "landmark",
+   "why": "the Market Yard, where Crown Street, Wall Street and Cross Street meet"
+  },
+  "lm_cd2_drill": {
+   "x": 16.0,
+   "z": -74.0,
+   "region": "city",
+   "kind": "landmark",
+   "why": "== cd_dueling_ground, in the drill yards"
+  },
+  "lm_cd2_quay": {
+   "x": -207.0,
+   "z": -117.0,
+   "region": "harbour",
+   "kind": "landmark",
+   "why": "s_caer_1: the Harbour Terrace at the harbour ward's south end, at sea level; to the lighthouse's foot only by the Wall Stair, the city and the bastion's stairs"
+  },
+  "lm_cd2_light": {
+   "x": -159.426,
+   "z": 47.421,
+   "region": "harbour",
+   "kind": "landmark",
+   "why": "s_caer_1: the other end, at sea level: the keeper's door at the Lantern Bastion's foot"
+  },
+  "lm_cd2_wall": {
+   "x": -95.0,
+   "z": 71.0,
+   "region": "wall",
+   "kind": "landmark",
+   "why": "== cd_muster_ramparts"
+  },
+  "cd_muster_harbour": {
+   "x": -271.5,
+   "z": -6.0,
+   "region": "harbour",
+   "kind": "interactable",
+   "y": 1.6,
+   "site": "watch_harbour",
+   "floor": 0,
+   "why": "1/4: inside the south chain tower (the harbour tower) at mole-deck level"
+  },
+  "cd_muster_light": {
+   "x": -146.529,
+   "z": 38.741,
+   "region": "wall",
+   "kind": "interactable",
+   "y": 21.275,
+   "site": "watch_light",
+   "floor": 2,
+   "why": "2/4: on the Lantern Bastion's platform at the lighthouse door (the lighthouse's foot)"
+  },
+  "cd_muster_ramparts": {
+   "x": -95.0,
+   "z": 71.0,
+   "region": "wall",
+   "kind": "interactable",
+   "y": 21.275,
+   "site": "watch_ramparts",
+   "floor": 1,
+   "why": "3/4: in the tall sea-curtain tower at walk level (the sea ramparts)"
+  },
+  "cd_muster_crown": {
+   "x": 66.833,
+   "z": -20.5,
+   "region": "wall",
+   "kind": "interactable",
+   "y": 33.975,
+   "site": "watch_crown",
+   "floor": 3,
+   "why": "4/4: the crown terrace on the Crown Gate, the highest walkable deck on the wall, facing the road east"
+  },
+  "paymaster_vail": {
+   "x": 30.0,
+   "z": 3.0,
+   "region": "city",
+   "kind": "npc",
+   "y": 10.875,
+   "site": "court_archive",
+   "floor": 0,
+   "why": "the Wage Vaults (court hall floor 0)"
+  },
+  "wage_desk": {
+   "x": 28.6,
+   "z": 3.5,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 10.875,
+   "yaw": 3.14159,
+   "why": "beside Vail; faces the door, its plaque read from the way in (fix round 1: at yaw 0 it read mirrored)"
+  },
+  "cd_volume_one": {
+   "x": 20.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "interactable",
+   "y": 10.875,
+   "site": "court_archive",
+   "floor": 0,
+   "why": "the shelves on rails at the vault back wall"
+  },
+  "cd_volume_one_rails": {
+   "x": 20.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 10.875,
+   "yaw": 3.14159,
+   "why": "under its volume"
+  },
+  "cd_volume_onefifty": {
+   "x": 23.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "interactable",
+   "y": 10.875,
+   "site": "court_archive",
+   "floor": 0,
+   "why": "the shelves on rails at the vault back wall"
+  },
+  "cd_volume_onefifty_rails": {
+   "x": 23.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 10.875,
+   "yaw": 3.14159,
+   "why": "under its volume"
+  },
+  "cd_volume_threehundred": {
+   "x": 26.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "interactable",
+   "y": 10.875,
+   "site": "court_archive",
+   "floor": 0,
+   "why": "the shelves on rails at the vault back wall"
+  },
+  "cd_volume_threehundred_rails": {
+   "x": 26.0,
+   "z": 7.5,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 10.875,
+   "yaw": 3.14159,
+   "why": "under its volume"
+  },
+  "court_table": {
+   "x": 25.0,
+   "z": 2.0,
+   "region": "city",
+   "kind": "furnishing",
+   "y": 14.275,
+   "why": "court hall floor 1 (\"at this table\")"
+  },
+  "cd_gate_clock": {
+   "x": 42.5,
+   "z": -2.6,
+   "region": "city",
+   "kind": "interactable",
+   "y": 24.475,
+   "site": "imperial_clock",
+   "floor": 4,
+   "why": "floor 4 of the clock tower beside the court hall, behind the grate in the square-facing dial"
+  },
+  "gate_sergeant_ottey": {
+   "x": 14.0,
+   "z": -56.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "The Drill Yards, the parade NW"
+  },
+  "marshal_grett": {
+   "x": 40.0,
+   "z": -60.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "The Drill Yards, drilling recruits"
+  },
+  "duelist_sabel_cd": {
+   "x": 20.0,
+   "z": -77.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "at the dueling ground"
+  },
+  "cd_dueling_ground": {
+   "x": 16.0,
+   "z": -74.0,
+   "region": "city",
+   "kind": "interactable",
+   "why": "a ring of worn granite in the drill yards (cd4)"
+  },
+  "lord_marshal": {
+   "x": 29.0,
+   "z": -68.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "keeps to the parade square: its centre"
+  },
+  "drillmaster_hal": {
+   "x": 22.0,
+   "z": -50.5,
+   "region": "city",
+   "kind": "npc",
+   "why": "sanctuary at the Paladin (north) hall's great door, in the hall's light"
+  },
+  "shield_captain_lund": {
+   "x": 28.5,
+   "z": -50.5,
+   "region": "city",
+   "kind": "npc",
+   "why": "the Shield Line, at the north hall door"
+  },
+  "code_master_rudd": {
+   "x": 25.0,
+   "z": -84.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "the Duelling Code, at the south hall's great door (before its frontispiece, the hall at its true depth)"
+  },
+  "quartermaster_kettle": {
+   "x": 51.0,
+   "z": -68.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "the Halls' Stores against the landward curtain between the halls"
+  },
+  "armourer_brann": {
+   "x": -54.0,
+   "z": -36.5,
+   "region": "city",
+   "kind": "npc",
+   "why": "Market Yard south row shopfront (\"between my good swords\")"
+  },
+  "chandler_mott": {
+   "x": -44.0,
+   "z": -23.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "Market Yard stall (unchanged)"
+  },
+  "broker_ashby": {
+   "x": -38.0,
+   "z": -36.5,
+   "region": "city",
+   "kind": "npc",
+   "why": "the Auction House bay on the Market Yard south row; street floor"
+  },
+  "innkeeper_sayre": {
+   "x": -10.24,
+   "z": -50.7,
+   "region": "city",
+   "kind": "npc",
+   "room": "inn:0",
+   "why": "the Crown Inn's taproom, by its fire (indoors, CF-6)"
+  },
+  "guildmaster_torv": {
+   "x": -110.0,
+   "z": -14.0,
+   "region": "city",
+   "kind": "npc",
+   "why": "the Smiths' Guild on Wall Street (unchanged x)"
+  },
+  "torv_craft_bench": {
+   "x": -113.0,
+   "z": -14.4,
+   "region": "city",
+   "kind": "furnishing",
+   "why": "against the guild facade beside Torv"
+  },
+  "cd_resident_elin_lathe": {
+   "x": -186.5,
+   "z": -52.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay Warehouses",
+   "why": "Warehouse Tallyman: at a warehouse door"
+  },
+  "cd_resident_ragnar_stave": {
+   "x": -234.0,
+   "z": -12.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Line Baiter: on the quay apron by the south mole"
+  },
+  "cd_resident_helga_kettle": {
+   "x": 10.0,
+   "z": -9.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Ledger Copyist: by the court hall"
+  },
+  "cd_resident_osk_holt": {
+   "x": -208.0,
+   "z": 44.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Pilots' House",
+   "why": "Fjord Pilot: at the pilots' house by the north mole"
+  },
+  "cd_resident_maud_selby": {
+   "x": 19.0,
+   "z": -8.5,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Wage Clerk: at the court hall door"
+  },
+  "cd_resident_gerda_lowe": {
+   "x": -186.5,
+   "z": -30.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Sail Loft",
+   "why": "Sail Mender"
+  },
+  "cd_resident_olav_garth": {
+   "x": 8.5,
+   "z": -62.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Parade",
+   "why": "Pensioned Pikeman: the parade edge"
+  },
+  "cd_resident_einar_colter": {
+   "x": -26.0,
+   "z": -32.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Market Yard",
+   "why": "Grain Factor"
+  },
+  "cd_resident_birger_keane": {
+   "x": -51.0,
+   "z": 28.5,
+   "region": "city",
+   "kind": "npc",
+   "home": "Lantern Street",
+   "why": "Home Nurse: a north-row doorstep (the third house's door: x -70 was a walled yard's)"
+  },
+  "cd_resident_astrid_kemp": {
+   "x": 44.0,
+   "z": -46.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Shield Lane",
+   "why": "Shield Polisher: by the Paladin hall"
+  },
+  "cd_resident_dag_grieve": {
+   "x": 50.0,
+   "z": -9.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Harness Maker: inside the Crown Gate"
+  },
+  "cd_resident_lotta_rudd": {
+   "x": -102.0,
+   "z": -40.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Smiths' Lane",
+   "why": "Blade Grinder (Rudd's cousin)"
+  },
+  "cd_resident_runa_boyd": {
+   "x": -108.0,
+   "z": 48.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Rampart Row",
+   "why": "Retired Net Maker"
+  },
+  "cd_resident_bertil_lund": {
+   "x": 47.8,
+   "z": 69.3,
+   "region": "city",
+   "kind": "npc",
+   "home": "Landward Lane",
+   "why": "Retired Wall Captain: at his kitchen table, in the open ground-floor room of his house on Landward Lane by the W3 wall stair (CF-6, indoors: his daughter's 'at the kitchen table')",
+   "room": "nsq_e:0"
+  },
+  "cd_resident_garrick_stott": {
+   "x": -228.0,
+   "z": -40.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Quay Porter"
+  },
+  "cd_resident_ida_wain": {
+   "x": -224.0,
+   "z": -2.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Rope Coiler: by the water gate"
+  },
+  "cd_resident_lennart_hurst": {
+   "x": -172.0,
+   "z": 32.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Lantern Bastion",
+   "why": "Lighthouse Oil Carrier: at the bastion foot"
+  },
+  "cd_resident_folke_orr": {
+   "x": -214.0,
+   "z": -20.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Fish Seller"
+  },
+  "cd_resident_inga_daws": {
+   "x": -214.0,
+   "z": -8.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Mussel Seller"
+  },
+  "cd_resident_sten_mallet": {
+   "x": 36.0,
+   "z": -60.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Parade",
+   "why": "Drill Recruit, under Grett"
+  },
+  "cd_resident_ivar_copper": {
+   "x": -50.0,
+   "z": -26.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Market Yard",
+   "why": "Cloth Buyer"
+  },
+  "cd_resident_ulf_bracy": {
+   "x": 5.5,
+   "z": -24.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Pie Seller: where Crown Street enters the square"
+  },
+  "cd_resident_signe_hobb": {
+   "x": 40.0,
+   "z": -28.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Lamplighter"
+  },
+  "cd_resident_vigdis_sorley": {
+   "x": 31.0,
+   "z": -8.5,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Court Petitioner: at the court hall door"
+  },
+  "cd_resident_britt_lisle": {
+   "x": 50.0,
+   "z": -29.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Crown Square",
+   "why": "Wagon Wright: inside the Crown Gate"
+  },
+  "cd_resident_kerstin_webb": {
+   "x": -36.0,
+   "z": -8.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "The Market Yard",
+   "why": "Town Crier"
+  },
+  "cd_resident_karin_grange": {
+   "x": -58.0,
+   "z": 22.0,
+   "region": "city",
+   "kind": "npc",
+   "home": "Lantern Street",
+   "why": "Chimney Sweep"
+  },
+  "cd_resident_arne_wray": {
+   "x": -210.0,
+   "z": 38.0,
+   "region": "harbour",
+   "kind": "npc",
+   "home": "The Quay",
+   "why": "Gull Scarer: by the north mole"
+  },
+  "cd_resident_knut_crofton": {
+   "x": -86.161,
+   "z": 74.482,
+   "region": "wall",
+   "kind": "npc",
+   "y": 21.275,
+   "site": "watch_ramparts",
+   "floor": 1,
+   "home": "The Sea Ramparts",
+   "why": "Wall Sentry: on the walk (CF-6 upper levels allowed, CF-7)"
+  }
+ },
+ "shape": {
+  "pts": [
+   [
+    -201.24,
+    -182.832
+   ],
+   [
+    -210.8207,
+    -132.1765
+   ],
+   [
+    -222.2607,
+    -82.0704
+   ],
+   [
+    -244.842,
+    -35.256
+   ],
+   [
+    -232.6709,
+    16.1713
+   ],
+   [
+    -215.3959,
+    65.4633
+   ],
+   [
+    -184.47,
+    109.044
+   ],
+   [
+    -139.9561,
+    131.5
+   ],
+   [
+    -92.8847,
+    147.5622
+   ],
+   [
+    -46.4062,
+    165.1066
+   ],
+   [
+    0.0,
+    182.832
+   ],
+   [
+    46.1669,
+    176.4638
+   ],
+   [
+    92.2837,
+    169.7506
+   ],
+   [
+    137.6203,
+    157.6738
+   ],
+   [
+    184.47,
+    156.0
+   ],
+   [
+    176.0,
+    110.0
+   ],
+   [
+    172.0,
+    60.0
+   ],
+   [
+    174.0,
+    10.0
+   ],
+   [
+    174.0,
+    -40.0
+   ],
+   [
+    166.0,
+    -95.0
+   ],
+   [
+    140.0,
+    -135.0
+   ],
+   [
+    100.0,
+    -148.0
+   ],
+   [
+    50.0,
+    -150.0
+   ],
+   [
+    0.0,
+    -150.0
+   ],
+   [
+    -50.0,
+    -150.0
+   ],
+   [
+    -100.0,
+    -156.0
+   ],
+   [
+    -150.0,
+    -168.0
+   ]
+  ],
+  "coast": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ]
+ },
+ "plateArea": {
+  "old": 141185,
+  "new": 120636
+ },
+ "terrain": {
+  "about": "height(x,z,h): F inside plateauEdge (and over the lists, glacis and south glacis); the ditch at ditchFloor with its faces over exactly one terrain cell; the strip at 0.5 (the zone glue keeps the sea and strand carves); outside the glacis the field noise h, ramped up to the rim. Every level change starts and ends on a 4.667 m grid line where it is axis-aligned (ditch, lists); along the diagonal sea step the scarp stands scarpTopOutboardOfPlat out so the drawn slope stays under its face.",
+  "plateauEdge": "walls.plateauEdgeRef (the sea curtain offset 3.0 m out), continued south from the SW corner along x = -152 to the plate edge and east from the NE corner along the north cliff: (68.3,106), (100,107), (140,104), (176,100)",
+  "ditch": {
+   "lipIn": 93.333,
+   "floor0": 98.0,
+   "floor1": 107.333,
+   "lipOut": 112.0,
+   "zSouthFace": -130.667,
+   "zSouthFloor": -126.0,
+   "zNorthFloor": 107.333,
+   "floorY": 1.875,
+   "dry": true
+  },
+  "lists": {
+   "x0": 65.333,
+   "x1": 93.333,
+   "z0": -126.0,
+   "z1": 103.0,
+   "y": 9.875,
+   "ground": "turf"
+  },
+  "glacis": {
+   "x0": 112.0,
+   "x1": 140.0,
+   "z0": -135.333,
+   "z1": 100.0,
+   "y": 9.875,
+   "ground": "turf"
+  },
+  "southGlacis": {
+   "x0": -152.0,
+   "x1": 93.333,
+   "z0": -135.333,
+   "z1": -107.333,
+   "y": 9.875,
+   "ground": "turf"
+  },
+  "strip": {
+   "y": 0.5,
+   "apron": {
+    "rect": [
+     -238.0,
+     -121.333,
+     -172.667,
+     18.667
+    ],
+    "y": 0.95
+   }
+  },
+  "wild": "east of glacis.x1 (140) or south of z -135.333 (grid k 46, clear of the ditch end face): F + max(0, h) ramped in over 20 m, pines and rock (the zone glue)",
+  "priority": [
+   "ditch",
+   "wild",
+   "plateau",
+   "strip"
+  ],
+  "houseYScale": {
+   "free": [
+    0.84,
+    1.16
+   ],
+   "againstCurtain": [
+    0.84,
+    1.0
+   ]
+  },
+  "grid": {
+   "size": 700,
+   "n": 150,
+   "cell": 4.666666666666667,
+   "origin": -350.0
+  }
+ },
+ "streets": [
+  {
+   "id": "crown_street",
+   "pts": [
+    [
+     57.333,
+     -18.0
+    ],
+    [
+     -6.06,
+     -18.0
+    ]
+   ],
+   "half": 4.5,
+   "stone": "setts",
+   "why": "CF-1: gate -> square -> street arch -> Market Yard"
+  },
+  {
+   "id": "wall_street",
+   "pts": [
+    [
+     -62.0,
+     -10.0
+    ],
+    [
+     -153.9,
+     -10.0
+    ]
+   ],
+   "half": 3.5,
+   "stone": "setts",
+   "why": "the Market Yard to the Sea Gate (the Market Crossroads stands where it meets Crown Street)"
+  },
+  {
+   "id": "cross_street",
+   "pts": [
+    [
+     -40.0,
+     -2.0
+    ],
+    [
+     -40.0,
+     21.0
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "lantern_street",
+   "pts": [
+    [
+     -4.0,
+     25.0
+    ],
+    [
+     -100.0,
+     25.0
+    ]
+   ],
+   "half": 4.0,
+   "stone": "setts",
+   "why": "the mock-up's main street: its vista ends on the Lantern Yard and the lighthouse"
+  },
+  {
+   "id": "north_street",
+   "pts": [
+    [
+     0.0,
+     -13.5
+    ],
+    [
+     0.0,
+     92.0
+    ]
+   ],
+   "half": 4.0,
+   "stone": "setts"
+  },
+  {
+   "id": "yard_street",
+   "pts": [
+    [
+     0.0,
+     -22.5
+    ],
+    [
+     0.0,
+     -92.0
+    ]
+   ],
+   "half": 4.0,
+   "stone": "setts"
+  },
+  {
+   "id": "south_lane",
+   "pts": [
+    [
+     -140.0,
+     -92.8
+    ],
+    [
+     -4.0,
+     -92.8
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "smiths_lane",
+   "pts": [
+    [
+     -102.0,
+     -15.0
+    ],
+    [
+     -102.0,
+     -89.8
+    ]
+   ],
+   "half": 2.5,
+   "stone": "setts"
+  },
+  {
+   "id": "tally_lane",
+   "pts": [
+    [
+     -146.0,
+     -55.0
+    ],
+    [
+     -62.0,
+     -55.0
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "landward_lane",
+   "pts": [
+    [
+     56.0,
+     -4.0
+    ],
+    [
+     56.0,
+     90.0
+    ]
+   ],
+   "half": 3.0,
+   "stone": "setts"
+  },
+  {
+   "id": "rampart_lane",
+   "line": "the north sea curtain from bastionN to ne, offset 11.5..18.4 m inboard (the mock-up rule)",
+   "half": 3.45,
+   "stone": "setts"
+  },
+  {
+   "id": "approach_road",
+   "pts": [
+    [
+     112.0,
+     -18.0
+    ],
+    [
+     176.0,
+     -18.0
+    ]
+   ],
+   "half": 3.5,
+   "stone": "earth",
+   "why": "outside: over the glacis to the portal and on east through the rim gap"
+  }
+ ],
+ "squares": [
+  {
+   "id": "crown_square",
+   "rect": [
+    4.0,
+    -32.0,
+    57.333,
+    -6.0
+   ],
+   "stone": "flags",
+   "why": "the arrival square: crystal, court hall + clock (N), Paladin hall (S), the gate (E)"
+  },
+  {
+   "id": "market_yard",
+   "rect": [
+    -62.0,
+    -40.0,
+    -14.0,
+    -2.0
+   ],
+   "stone": "flags",
+   "why": "The Market Crossroads"
+  },
+  {
+   "id": "lantern_yard",
+   "poly": [
+    [
+     -128,
+     8
+    ],
+    [
+     -104,
+     8
+    ],
+    [
+     -100,
+     19
+    ],
+    [
+     -100,
+     31
+    ],
+    [
+     -104,
+     42
+    ],
+    [
+     -117,
+     42
+    ],
+    [
+     -128,
+     38
+    ]
+   ],
+   "stone": "flags",
+   "why": "the bastion's gorge doors"
+  },
+  {
+   "id": "parade",
+   "rect": [
+    6.0,
+    -86.0,
+    52.0,
+    -50.0
+   ],
+   "stone": "earth",
+   "why": "the drill yards and parade square (Lord Marshal, dueling ground)"
+  },
+  {
+   "id": "quay",
+   "rect": [
+    -238.0,
+    -62.0,
+    -226.0,
+    -6.0
+   ],
+   "stone": "flags",
+   "level": 0.95
+  },
+  {
+   "id": "harbour_terrace",
+   "rect": [
+    -210.0,
+    -120.0,
+    -166.0,
+    -102.0
+   ],
+   "stone": "flags",
+   "level": 0.95,
+   "why": "s_caer_1's Harbour Terrace, the ward's south end"
+  }
+ ],
+ "districts": [
+  {
+   "id": "rampart_row",
+   "target": 9,
+   "where": "wall-houses against the north sea curtain town face from bastionN to x 38 (the NE wall stair), backs on the curtain, wrapping tower backs; the curtain bays behind them are sg_seawall_window"
+  },
+  {
+   "id": "lantern_quarter",
+   "target": 8,
+   "rect": [
+    -100.0,
+    10.0,
+    -4.0,
+    40.0
+   ],
+   "where": "Lantern Street north row (facade z 30) and south row (facade z 20)"
+  },
+  {
+   "id": "wall_street_quarter",
+   "target": 9,
+   "rect": [
+    -150.0,
+    -25.0,
+    -66.0,
+    5.0
+   ],
+   "where": "Wall Street north row (facade z -5) and south row (facade z -15) with the Smiths' Guild (role smiths, x -125..-105, not a house)"
+  },
+  {
+   "id": "yard_north",
+   "target": 3,
+   "rect": [
+    -62.0,
+    -2.0,
+    -4.0,
+    10.0
+   ],
+   "where": "one row facing the Market Yard (facade z -2)"
+  },
+  {
+   "id": "market_south",
+   "target": 3,
+   "rect": [
+    -62.0,
+    -50.0,
+    -16.0,
+    -40.0
+   ],
+   "where": "one row facing the yard (facade z -40): the armourer and the auction house are two of its bays"
+  },
+  {
+   "id": "arch_flanks",
+   "target": 2,
+   "rect": [
+    -14.0,
+    -34.0,
+    -4.0,
+    -2.0
+   ],
+   "where": "the houses the street arch springs from, north and south of Crown Street"
+  },
+  {
+   "id": "tally_quarter",
+   "target": 7,
+   "rect": [
+    -146.0,
+    -105.833,
+    -4.0,
+    -25.0
+   ],
+   "where": "south-lane wall-houses (facade z -95.83, backs on the south curtain), rows on Tally Lane, Smiths' Lane and Yard Street's west side; the Crown Inn (role inn, x -16..-4, z -56..-40, facade x -4) is here and not a house"
+  },
+  {
+   "id": "north_street_quarter",
+   "target": 5,
+   "rect": [
+    4.0,
+    12.0,
+    53.0,
+    86.0
+   ],
+   "where": "east of North Street behind the court hall: North Street east row, the landward lane west row, an E-W lane at z 50"
+  },
+  {
+   "id": "north_street_west",
+   "target": 2,
+   "rect": [
+    -36.0,
+    40.0,
+    -4.0,
+    76.0
+   ],
+   "where": "rows facing North Street (facade x -4)"
+  }
+ ],
+ "named": [
+  {
+   "id": "crown_inn",
+   "role": "inn",
+   "rect": [
+    -16.0,
+    -56.0,
+    -4.0,
+    -40.0
+   ],
+   "build": "house bays (sg_house_shop ground floor) + sg_sign; facade x -4 (yaw pi/2)"
+  },
+  {
+   "id": "smiths_guild",
+   "role": "smiths",
+   "rect": [
+    -125.0,
+    -25.0,
+    -105.0,
+    -15.0
+   ],
+   "build": "house bays, facade z -15 (yaw pi); torv_craft_bench against it"
+  },
+  {
+   "id": "halls_stores",
+   "role": "stores",
+   "rect": [
+    53.833,
+    -86.0,
+    63.833,
+    -50.0
+   ],
+   "build": "9 sg_house_shut bays facing the parade (facade x 53.833, yaw -pi/2), backs on the landward curtain, stepping forward where e3 projects"
+  },
+  {
+   "id": "warehouses",
+   "role": "harbour",
+   "at": [
+    [
+     -176.0,
+     -70.0
+    ],
+    [
+     -176.0,
+     -52.0
+    ],
+    [
+     -176.0,
+     -30.0
+    ]
+   ],
+   "build": "sg_warehouse facing west (yaw -pi/2) against the scarp foot; the -30 one is the sail loft"
+  },
+  {
+   "id": "pilots_house",
+   "role": "harbour",
+   "at": [
+    [
+     -212.0,
+     50.0
+    ]
+   ],
+   "build": "sg_pilot_house by the north mole root"
+  }
+ ],
+ "harbour": {
+  "harbourWall": [
+   [
+    [
+     -244.0,
+     -60.0
+    ],
+    [
+     -236.0,
+     -6.0
+    ]
+   ],
+   [
+    [
+     -233.0,
+     10.0
+    ],
+    [
+     -222.0,
+     48.0
+    ]
+   ]
+  ],
+  "waterGate": {
+   "x": -236.0,
+   "z": 2.0,
+   "faces": "west"
+  },
+  "moles": [
+   {
+    "from": [
+     -238.0,
+     -6.0
+    ],
+    "to": [
+     -270.0,
+     -6.0
+    ]
+   },
+   {
+    "from": [
+     -228.0,
+     42.0
+    ],
+    "to": [
+     -262.0,
+     42.0
+    ]
+   }
+  ],
+  "chainTowers": [
+   {
+    "x": -275.0,
+    "z": -6.0,
+    "harbourTower": true
+   },
+   {
+    "x": -267.0,
+    "z": 42.0
+   }
+  ],
+  "quayBays": "sg_quay along x -238 (the harbour wall inner face) from z -60 to -8",
+  "wallStair": {
+   "bays": [
+    {
+     "x": -189.5,
+     "z": -10.0,
+     "yAbs": 0.5
+    },
+    {
+     "x": -185.5,
+     "z": -10.0,
+     "yAbs": 2.0625
+    },
+    {
+     "x": -181.5,
+     "z": -10.0,
+     "yAbs": 3.625
+    },
+    {
+     "x": -177.5,
+     "z": -10.0,
+     "yAbs": 5.1875
+    },
+    {
+     "x": -173.5,
+     "z": -10.0,
+     "yAbs": 6.75
+    },
+    {
+     "x": -169.5,
+     "z": -10.0,
+     "yAbs": 8.3125
+    }
+   ],
+   "yaw": 0.0,
+   "top": [
+    -167.5,
+    -10.0
+   ],
+   "flight": {
+    "from": [
+     -191.5,
+     0.5,
+     -10.0
+    ],
+    "to": [
+     -167.5,
+     9.875,
+     -10.0
+    ],
+    "half": 2.4,
+    "risers": 48,
+    "riser": 0.1953,
+    "tread": 0.5,
+    "endPad": 0.05
+   }
+  },
+  "southCurtain": {
+   "from": [
+    -154.5,
+    -128.5
+   ],
+   "to": [
+    -200.0,
+    -128.5
+   ],
+   "yAbs": 0.5,
+   "file": "sg_curtain_land",
+   "tower": {
+    "x": -205.0,
+    "z": -128.5,
+    "file": "sg_tower"
+   },
+   "seaBay": [
+    -214.0,
+    -128.5
+   ],
+   "seaEnd": "one sg_harbour_wall bay from the tower into the water at (-214,-128.5)",
+   "walkable": false
+  },
+  "lanternWall": {
+   "from": [
+    -158.0,
+    28.0
+   ],
+   "to": [
+    -224.5,
+    28.0
+   ],
+   "yAbs": 0.5,
+   "file": "sg_curtain_land",
+   "walkable": false,
+   "why": "the harbour ward's north end: the Lantern Quay beyond it (keeper's door, pilots' house, north mole) is reached through the bastion"
+  },
+  "terrace": {
+   "rect": [
+    -210.0,
+    -120.0,
+    -166.0,
+    -102.0
+   ],
+   "y": 0.95,
+   "stone": "flags",
+   "why": "the Harbour Terrace at the ward's south end (s_caer_1's harbour terrace)"
+  },
+  "boats": 5,
+  "quayDress": 2
+ },
+ "wallStairs": [
+  {
+   "id": "W1",
+   "where": "Lantern Bastion interior flights B1..B4b (strip -> gorge level -> up into the lighthouse base room -> out of its door onto the platform)",
+   "shell": "sg_bastion"
+  },
+  {
+   "id": "W2",
+   "where": "Crown Gate: flights F1,F2 in both flank towers (F -> walk gallery), F3,F4 in the north tower (walk -> crown terrace)",
+   "shell": "sg_crown_gate"
+  },
+  {
+   "id": "W3",
+   "run": "ne-e1",
+   "foot": [
+    62.7,
+    69.0
+   ],
+   "rises": "north",
+   "landing": "z 88.0..90.4",
+   "file": "sg_wall_stair",
+   "where": "landward curtain town face"
+  },
+  {
+   "id": "W4",
+   "run": "w1-sgS",
+   "foot": "z -62 on the town face",
+   "rises": "north",
+   "landing": "z -43..-40.6",
+   "file": "sg_wall_stair",
+   "where": "sea curtain town face"
+  },
+  {
+   "id": "W5",
+   "run": "s4-sw",
+   "foot": [
+    -112.0,
+    -104.7
+   ],
+   "rises": "west",
+   "landing": "x -131..-133.4",
+   "file": "sg_wall_stair",
+   "where": "south curtain town face"
+  }
+ ],
+ "wallStairRules": "a wall stair hugs a curtain town face, lands ON the walk through a parados gap (the one bay with no sg_parados), keeps 1.0 m clear of every tower footprint and of every house; the walk loop is continuous through every tower room, the Sea Gate chamber, the Crown Gate gallery and the bastion platform",
+ "materials": {
+  "SG_Stone": {
+   "facade": "stone",
+   "color": "#959aa0",
+   "roughness": 0.92,
+   "metallic": 0,
+   "casts": true,
+   "sheet": "2048 granite atlas (C r1 painter, CF-4)"
+  },
+  "SG_Joinery": {
+   "facade": "joinery",
+   "color": "#4a3a2b",
+   "roughness": 0.8,
+   "metallic": 0,
+   "sheet": "1024: oak, iron, lead, rope, banner cloth (#2c4a6e / #e6dfcc, CF-8), boat"
+  },
+  "SG_Glass": {
+   "facade": "glass",
+   "color": "#1d2a33",
+   "roughness": 0.15,
+   "metallic": 0,
+   "sheet": "512 leaded panes"
+  },
+  "SG_Far": {
+   "facade": "far",
+   "color": "#8e939a",
+   "roughness": 0.9,
+   "metallic": 0,
+   "sheet": "2048x1024: LOD1 bay elevations, LOD2 cards"
+  },
+  "SG_Slate": {
+   "albedo": "sg_slate.jpg",
+   "roughness": 0.85,
+   "metallic": 0,
+   "casts": true,
+   "sheet": "1024 tile + cone strip"
+  },
+  "SG_Brass": {
+   "color": "#b39b5e",
+   "roughness": 0.35,
+   "metallic": 0.85,
+   "emissive": "#120d04",
+   "sheet": "flat; clock dials + lighthouse lantern cage ONLY (CF-8)"
+  },
+  "SG_Glow": {
+   "albedo": "sg_glow.jpg",
+   "emissiveTexture": "sg_glow_e.png",
+   "color": "#2e2925",
+   "emissiveNight": "#ffcf88",
+   "roughness": 0.6,
+   "metallic": 0,
+   "glow": 0.8,
+   "sheet": "512: lantern panes, cresset cores, lit slits"
+  },
+  "SG_Beam": {
+   "color": "#000000",
+   "emissive": "#fff1c8",
+   "additive": true,
+   "unlit": true,
+   "roughness": 1,
+   "metallic": 0,
+   "glow": 1.6,
+   "sheet": "none: the lighthouse beam cards and lamp core (CF-12)"
+  }
+ },
+ "facade": {
+  "name": "SG_Facade",
+  "file": "sg_facade.jpg",
+  "size": [
+   2048,
+   4096
+  ],
+  "rough": "sg_facade_rough.png",
+  "roughSize": [
+   1024,
+   2048
+  ],
+  "glow": {
+   "e": "sg_facade_glow.png"
+  },
+  "glowSize": [
+   1024,
+   2048
+  ],
+  "uv": {
+   "stone": [
+    1,
+    0,
+    0.5,
+    0
+   ],
+   "far": [
+    1,
+    0,
+    0.25,
+    0.5
+   ],
+   "joinery": [
+    0.5,
+    0,
+    0.25,
+    0.75
+   ],
+   "glass": [
+    0.25,
+    0.5,
+    0.125,
+    0.75
+   ]
+  },
+  "uvOrder": "[su, ou, sv, ov]: u' = u su + ou, v' = v sv + ov in glTF UVs (v down), as CL_FACADE",
+  "parts": {
+   "SG_Stone": "stone",
+   "SG_Far": "far",
+   "SG_Joinery": "joinery",
+   "SG_Glass": "glass"
+  }
+ },
+ "kit": {
+  "id": "caerdun",
+  "prefix": "sg",
+  "dir": "seagate",
+  "metaKey": "caerdun",
+  "states": [
+   "e"
+  ],
+  "lod": {
+   "lod1": 45,
+   "lod2": 140
+  },
+  "cell": 48,
+  "skyGrid": {
+   "sky": 96,
+   "originX": -47.5,
+   "originZ": -18.0
+  },
+  "cellHeight": 19,
+  "reach": 7,
+  "wallReach": 14,
+  "gateReach": 17,
+  "floor": 9.875,
+  "shadowless": "^(sg_arch_glow|sg_auction_house_l2|sg_banner|sg_barbican_l2|sg_bastion_l2|sg_beam|sg_boat|sg_cart|sg_chain_tower_l2|sg_clock_tower_in|sg_clock_tower_l2|sg_court_hall_in|sg_court_hall_l2|sg_cresset|sg_crown_gate_l2|sg_curtain_land_l2|sg_device_blades|sg_device_shield|sg_ditch|sg_ditch_end|sg_drill|sg_guild_hall_l2|sg_house_l2|sg_lamp|sg_leanto|sg_lighthouse_l2|sg_market|sg_parados|sg_quay_dress|sg_rail|sg_rail_flight|sg_roof_dormer|sg_seagate_l2|sg_seawall_l2|sg_sign|sg_stall|sg_street_arch_l2|sg_tower_corner_l2|sg_tower_l2|sg_tower_tall_l2|sg_well|sg_yard_dress)$",
+  "glowAlways": "^(sg_arch_glow|sg_beam|sg_cresset|sg_crown_gate|sg_crown_gate_l1|sg_lamp|sg_lighthouse|sg_lighthouse_l1)$",
+  "glowNightOnly": "^(sg_auction_house|sg_auction_house_l1|sg_backhouse|sg_court_hall|sg_court_hall_l1|sg_guild_hall|sg_guild_hall_l1|sg_house_end|sg_house_hoist|sg_house_hoist_l1|sg_house_l2|sg_house_open|sg_house_oriel|sg_house_oriel_l1|sg_house_plain|sg_house_plain_l1|sg_house_plain_l1|sg_house_shop|sg_house_shop_l1|sg_house_shut|sg_house_shut_l1|sg_seagate|sg_seagate_l1|sg_seawall_l2|sg_seawall_window|sg_seawall_window_l1|sg_street_arch|sg_street_arch_l1|sg_warehouse)$",
+  "glowOut": "every other sg_ pool; glowOccluder boxes 0.8 m inside every house and wall face stand in (one merged mesh per set)",
+  "night": {
+   "facadeGlow": {
+    "e": 0.55
+   },
+   "litStates": [
+    "e"
+   ],
+   "lamplitFrom": "SG_Glow",
+   "pointLights": [
+    "the lighthouse lamp (range 70, at lantern local y 33.2)",
+    "the crystal"
+   ],
+   "beam": "sg_beam turned by one before-render observer at 0.25 rad/s about the lamp, emissive scaled by the night amount"
+  },
+  "light": {
+   "shadow": 0.38,
+   "hemiGround": "#62666a",
+   "cascades": "scene default (3) with cullCascades; no Caerdun override"
+  },
+  "pave": {
+   "setts": "pave_setts.jpg",
+   "flags": "pave_flags.jpg",
+   "earth": "pave_earth.jpg",
+   "tileM": 4.0,
+   "px": 512
+  },
+  "shadowSkip": [
+   "SG_Brass#caerdun",
+   "SG_Glow#caerdun",
+   "SG_Beam#caerdun"
+  ]
+ },
+ "catalogue": {
+  "sg_seawall_arcade": {
+   "set": "walls",
+   "size": [
+    4.0,
+    13.2,
+    4.0
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py); town face z -1.4, walk deck y 11.4 z -1.0..1.2",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 760,
+   "lod1": {
+    "file": "sg_seawall_arcade_l1",
+    "ceil": 190
+   },
+   "lod2": "sg_seawall_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "c_seawall_arcade with its parados REMOVED (now sg_parados) and no y scaling (CF-7); arcade oversail 9.5-11.65, merlons to 13.2"
+  },
+  "sg_seawall_window": {
+   "set": "walls",
+   "size": [
+    4.0,
+    13.2,
+    4.0
+   ],
+   "origin": "as sg_seawall_arcade",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 820,
+   "lod1": {
+    "file": "sg_seawall_window_l1",
+    "ceil": 205
+   },
+   "lod2": "sg_seawall_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "the wall-house windows (5.6-8.2, both lit: fix round 1), shutters, latrine bay: wherever Rampart Row stands behind (CF-1); the sea L2 card is drawn from it"
+  },
+  "sg_seawall_l2": {
+   "set": "walls",
+   "size": [
+    4.0,
+    13.2,
+    3.2
+   ],
+   "origin": "card on the curtain centreline, faces +z",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 4,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "night",
+   "shell": false,
+   "notes": "a front and a back face (4 triangles), each cut to its silhouette, the arcade rhythm painted (never a dam)"
+  },
+  "sg_curtain_land": {
+   "set": "walls",
+   "size": [
+    4.0,
+    13.2,
+    4.2
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py); town face z -1.4, walk y 11.4",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 520,
+   "lod1": {
+    "file": "sg_curtain_land_l1",
+    "ceil": 130
+   },
+   "lod2": "sg_curtain_land_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "c_curtain_land raised from walk 8.6 to 11.4 (one walk height, CF-7), parados removed, box machicolation per bay"
+  },
+  "sg_curtain_land_l2": {
+   "set": "walls",
+   "size": [
+    4.0,
+    13.2,
+    3.4
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 4,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_parados": {
+   "set": "walls",
+   "size": [
+    4.0,
+    1.0,
+    0.4
+   ],
+   "origin": "bay origin; occupies z -1.4..-1.0, y 11.4..12.4",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 16,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "on every curtain bay except a wall stair landing bay; 1.0 m > stepUp 0.9 so nobody steps off the walk"
+  },
+  "sg_tower": {
+   "set": "walls",
+   "size": [
+    12.7,
+    22.0,
+    11.8
+   ],
+   "origin": "curtain centreline at the tower centre, base y 0, +z outward; poly x +-5.0, z -4.0..5.0 (+machicolation)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 2700,
+   "lod1": {
+    "file": "sg_tower_l1",
+    "ceil": 675
+   },
+   "lod2": "sg_tower_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "c_halfoct_tower + walk room (deck y 11.4, x +-3.8, z -2.8..3.8, ceiling 15.2) + flank doors at y 11.4 on x = +-5.0, z -0.55..0.75, 2.4 high; ground door drawn SHUT; flat crenellated top"
+  },
+  "sg_tower_l2": {
+   "set": "walls",
+   "size": [
+    12.5,
+    22.2,
+    8.5
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_tower_tall": {
+   "set": "walls",
+   "size": [
+    12.7,
+    29.2,
+    11.8
+   ],
+   "origin": "as sg_tower",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 3300,
+   "lod1": {
+    "file": "sg_tower_tall_l1",
+    "ceil": 825
+   },
+   "lod2": "sg_tower_tall_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "c_halfoct_tall with its stair turret CAPPED FLAT and crenellated (CF-3) + the sg_tower walk room/doors; the Sea Gate pair get sg_cone on the turret"
+  },
+  "sg_tower_tall_l2": {
+   "set": "walls",
+   "size": [
+    12.6,
+    29.4,
+    8.6
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_tower_corner": {
+   "set": "walls",
+   "size": [
+    16.6,
+    26.6,
+    15.8
+   ],
+   "origin": "tower centre, +z the outward bisector; octagon apothem 6.5",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 3300,
+   "lod1": {
+    "file": "sg_tower_corner_l1",
+    "ceil": 825
+   },
+   "lod2": "sg_tower_corner_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "NEW: octagonal corner tower, arcaded machicolation on its 5 outer faces, flat crenellated; walk room at 11.4, doors on the two back-diagonal faces (normals (+-0.707, -0.707))"
+  },
+  "sg_tower_corner_l2": {
+   "set": "walls",
+   "size": [
+    16.6,
+    26.8,
+    12.9
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_cone": {
+   "set": "walls",
+   "size": [
+    3.5,
+    4.4,
+    3.5
+   ],
+   "origin": "centre of the turret top (tall tower turret walk+4.6 / house turret top)",
+   "materials": [
+    "SG_Slate",
+    "SG_Joinery"
+   ],
+   "lod0": 60,
+   "lod1": null,
+   "lod2": null,
+   "mask": "sky",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "slate cone + iron finial. CF-3: placed on the Sea Gate pair (sgS, sgN) and at most 2 house stair turrets; nowhere else"
+  },
+  "sg_seagate": {
+   "set": "walls",
+   "size": [
+    14.9,
+    25.6,
+    14.3
+   ],
+   "origin": "passage centre on the curtain line, base y 0, +z the sea (west)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Slate"
+   ],
+   "lod0": 2600,
+   "lod1": {
+    "file": "sg_seagate_l1",
+    "ceil": 650
+   },
+   "lod2": "sg_seagate_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "c_seagate_tower: pointed passage 4 x 6 along z with portcullis, HIPPED slate roof, walk chamber at 11.4 with flank doors on x = +-6.4; parapet raised to 18 so the chamber fits under the roof (25.6 m to the ridge, as built)"
+  },
+  "sg_seagate_l2": {
+   "set": "walls",
+   "size": [
+    14.9,
+    25.6,
+    13.1
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_crown_gate": {
+   "set": "walls",
+   "size": [
+    33.9,
+    30.6,
+    17.0
+   ],
+   "origin": "passage centre on the curtain line, base y 0, +z outward (east); flank towers x +-(6..15)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass",
+    "SG_Glow"
+   ],
+   "lod0": 8000,
+   "lod1": {
+    "file": "sg_crown_gate_l1",
+    "ceil": 2000
+   },
+   "lod2": "sg_crown_gate_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "always",
+   "shell": true,
+   "notes": "c_crown_gate raised: block roof = crown terrace at 24.1 level with the flank towers; walk gallery at 11.4 through the whole gate (doors on x = +-15.0); flights F1-F4 inside the towers (datums); crown watch turret FLAT lead cap (CF-3); ledger-and-key panel authored mirrored (CF-8)"
+  },
+  "sg_crown_gate_l2": {
+   "set": "walls",
+   "size": [
+    32.8,
+    30.0,
+    14.7
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_barbican": {
+   "set": "walls",
+   "size": [
+    15.8,
+    22.0,
+    27.7
+   ],
+   "origin": "barbican tower base centre at F, +z outward (east); tower z -4..4, bridge to z +22.67 (the counterscarp)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 3600,
+   "lod1": {
+    "file": "sg_barbican_l1",
+    "ceil": 900
+   },
+   "lod2": "sg_barbican_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": true,
+   "notes": "A's a_barbican_gate rebuilt in C's granite (CF-2, CF-4) for this ditch: drawbridge lowered from z 4.0 to the pier (z 10.67..13.07, x +-2.7, foot y -8), fixed segmental arch from the pier to z 22.67; deck y 0, clear 4.4 wide"
+  },
+  "sg_barbican_l2": {
+   "set": "walls",
+   "size": [
+    15.8,
+    22.2,
+    27.6
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "the tower cross plus the side picture over the crossing to the counterscarp (a card of the tower alone left it over an open ditch)"
+  },
+  "sg_ditch": {
+   "set": "walls",
+   "size": [
+    18.7,
+    8.0,
+    4.667
+   ],
+   "origin": "ditch floor centreline (x 102.667), y 0 = ditchFloor; x across, the run along z",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 40,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "A's a_ditch for the 4.667 grid: rock faces from the lips (x +-9.333, y 8.0) to the floor edges (x +-4.667, y 0), 0.15 m proud of the drawn slope; lip coping 0.6 m; DRY (no water quad: WATER.md one water)"
+  },
+  "sg_ditch_end": {
+   "set": "walls",
+   "size": [
+    19.9,
+    8.3,
+    5.5
+   ],
+   "origin": "south terminal: floor end at local z 0, the face rising to z -4.667",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 40,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_scarp": {
+   "set": "walls",
+   "size": [
+    8.0,
+    13.4,
+    8.0
+   ],
+   "origin": "face top centre at F (y 0); face battered 1:4 down to strip-3.0; apron 5.0 m deep inboard at y +0.05",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 300,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "cf_scarp + the 5 m top apron that hides the drawn slope behind its top edge (the test samples it)"
+  },
+  "sg_wall_stair": {
+   "set": "walls",
+   "size": [
+    21.4,
+    12.4,
+    2.4
+   ],
+   "origin": "foot of the flight at x 0, y 0; back (z 0) against a curtain town face; flight +x to 19.0 at 11.4, landing 19.0..21.4",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 600,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "57 risers of 0.2 on 0.3333 treads, clear 2.2 (half 1.0 walk), 1.0 m parapet on the open (+z) side"
+  },
+  "sg_cresset": {
+   "set": "walls",
+   "size": [
+    0.34,
+    0.82,
+    0.8
+   ],
+   "origin": "wall bracket",
+   "materials": [
+    "SG_Joinery",
+    "SG_Glow"
+   ],
+   "lod0": 120,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "always",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_arch_glow": {
+   "set": "walls",
+   "size": [
+    3.2,
+    5.65,
+    0.0
+   ],
+   "origin": "the arch soffit",
+   "materials": [
+    "SG_Glow"
+   ],
+   "lod0": 16,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "always",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_banner": {
+   "set": "walls",
+   "size": [
+    1.7,
+    5.0,
+    0.47
+   ],
+   "origin": "hanging point",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 60,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "Caerdun blue and bone, ledger crossed by a key, mirrored (CF-8)"
+  },
+  "sg_bastion": {
+   "set": "harbour",
+   "size": [
+    36.3,
+    22.6,
+    20.5
+   ],
+   "origin": "gorge-line centre at the strip (local y 0 = abs 0.5), +z the round face",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 6500,
+   "lod1": {
+    "file": "sg_bastion_l1",
+    "ceil": 1600
+   },
+   "lod2": "sg_bastion_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": true,
+   "notes": "c_lantern_bastion with the platform raised to local 20.775 (= walk), the interior stair hall and flights B1-B4a (B4b is in the lighthouse base), gorge doors at local (+-8, 9.375, 0), postern + keeper door at the strip"
+  },
+  "sg_bastion_l2": {
+   "set": "harbour",
+   "size": [
+    36.3,
+    22.8,
+    15.6
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_lighthouse": {
+   "set": "harbour",
+   "size": [
+    10.2,
+    44.5,
+    10.2
+   ],
+   "origin": "tower centre on the platform (y 0 = walk), door on local -z",
+   "materials": [
+    "SG_Stone",
+    "SG_Glass",
+    "SG_Brass",
+    "SG_Beam"
+   ],
+   "lod0": 3800,
+   "lod1": {
+    "file": "sg_lighthouse_l1",
+    "ceil": 950
+   },
+   "lod2": "sg_lighthouse_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "always",
+   "shell": false,
+   "notes": "octagon r 5.1, gallery at 30, brass-and-glass lantern 30-35 (SG_Beam core at 33.2), stone spire 35-44.5 (the one stone cone, CF-3); base room r 4.1 at y 0 (the bastion stair B4b arrives inside), its door OPEN and lit on local -z"
+  },
+  "sg_lighthouse_l2": {
+   "set": "harbour",
+   "size": [
+    11.2,
+    44.6,
+    11.2
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_beam": {
+   "set": "harbour",
+   "size": [
+    46.0,
+    20.0,
+    20.0
+   ],
+   "origin": "the lamp",
+   "materials": [
+    "SG_Beam"
+   ],
+   "lod0": 8,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "always",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_harbour_wall": {
+   "set": "harbour",
+   "size": [
+    8.0,
+    15.9,
+    5.0
+   ],
+   "origin": "absolute: top 3.9, foot -12",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 380,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_water_gate": {
+   "set": "harbour",
+   "size": [
+    10.0,
+    21.0,
+    8.0
+   ],
+   "origin": "absolute",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 1500,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_chain_tower": {
+   "set": "harbour",
+   "size": [
+    15.5,
+    30.9,
+    15.5
+   ],
+   "origin": "absolute: foot -12, top 18.9; door + room at moleDeck 1.6 facing local -z",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 2100,
+   "lod1": {
+    "file": "sg_chain_tower_l1",
+    "ceil": 525
+   },
+   "lod2": "sg_chain_tower_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "c_chain_tower + a room (deck 1.6, r 5.5, ceiling 5.4) behind a door; the south one is the harbour tower (cd1 1/4)"
+  },
+  "sg_chain_tower_l2": {
+   "set": "harbour",
+   "size": [
+    16.6,
+    20.6,
+    16.6
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_mole_bay": {
+   "set": "harbour",
+   "size": [
+    8.0,
+    14.7,
+    17.0
+   ],
+   "origin": "absolute: deck 1.6, parapet 2.7, foot -12",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 260,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_quay": {
+   "set": "harbour",
+   "size": [
+    8.0,
+    13.75,
+    6.0
+   ],
+   "origin": "absolute: deck at apron 0.95",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 300,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_stair_bay": {
+   "set": "harbour",
+   "size": [
+    4.0,
+    16.8,
+    7.5
+   ],
+   "origin": "bay centre on the flight line, y 0 = the bay foot; rises 1.5625 over its 4 m",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Slate"
+   ],
+   "lod0": 520,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "c_stair_bay: the covered Wall Stair from the quay to the Sea Gate, slate pentroof one side, loops"
+  },
+  "sg_warehouse": {
+   "set": "harbour",
+   "size": [
+    16.4,
+    17.9,
+    12.2
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass",
+    "SG_Slate"
+   ],
+   "lod0": 1500,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_pilot_house": {
+   "set": "harbour",
+   "size": [
+    9.7,
+    16.9,
+    9.8
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py)",
+   "materials": [
+    "SG_Stone",
+    "SG_Glass",
+    "SG_Slate"
+   ],
+   "lod0": 1300,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "HIPPED/pyramidal roof, not a cone (CF-3)"
+  },
+  "sg_quay_dress": {
+   "set": "harbour",
+   "size": [
+    11.2,
+    10.6,
+    8.4
+   ],
+   "origin": "quay deck",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 900,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_boat": {
+   "set": "harbour",
+   "size": [
+    7.0,
+    5.0,
+    2.3
+   ],
+   "origin": "waterline centre (y -0.45..4.6 above the sea -1.3)",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 160,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_house_shop": {
+   "set": "town",
+   "size": [
+    4.0,
+    11.0,
+    11.4
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py); back wall z -10 (a wall-house: on the curtain town face)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 950,
+   "lod1": {
+    "file": "sg_house_shop_l1",
+    "ceil": 160
+   },
+   "lod2": "sg_house_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "c_house_shop: no interior; a door is shut or shows a painted far room (CITY-BUILD trap)"
+  },
+  "sg_house_shut": {
+   "set": "town",
+   "size": [
+    4.0,
+    11.0,
+    11.4
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py); back wall z -10 (a wall-house: on the curtain town face)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 950,
+   "lod1": {
+    "file": "sg_house_shut_l1",
+    "ceil": 160
+   },
+   "lod2": "sg_house_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "c_house_shut: no interior; a door is shut or shows a painted far room (CITY-BUILD trap)"
+  },
+  "sg_house_hoist": {
+   "set": "town",
+   "size": [
+    4.0,
+    11.0,
+    10.0
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py); back wall z -10 (a wall-house: on the curtain town face)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 950,
+   "lod1": {
+    "file": "sg_house_hoist_l1",
+    "ceil": 160
+   },
+   "lod2": "sg_house_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "c_house_hoist: no interior; a door is shut or shows a painted far room (CITY-BUILD trap)"
+  },
+  "sg_house_plain": {
+   "set": "town",
+   "size": [
+    4.0,
+    11.0,
+    10.0
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py); back wall z -10 (a wall-house: on the curtain town face)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 950,
+   "lod1": {
+    "file": "sg_house_plain_l1",
+    "ceil": 160
+   },
+   "lod2": "sg_house_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "c_house_plain: no interior; a door is shut or shows a painted far room (CITY-BUILD trap)"
+  },
+  "sg_house_oriel": {
+   "set": "town",
+   "size": [
+    4.0,
+    11.0,
+    10.0
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py); back wall z -10 (a wall-house: on the curtain town face)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 950,
+   "lod1": {
+    "file": "sg_house_oriel_l1",
+    "ceil": 160
+   },
+   "lod2": "sg_house_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "c_house_oriel: no interior; a door is shut or shows a painted far room (CITY-BUILD trap)"
+  },
+  "sg_house_l2": {
+   "set": "town",
+   "size": [
+    4.0,
+    11.0,
+    10.0
+   ],
+   "origin": "card on the facade plane",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 4,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "night",
+   "shell": false,
+   "notes": "facade only; the roofs stay (skyline)"
+  },
+  "sg_roof_ridge": {
+   "set": "town",
+   "size": [
+    4.0,
+    6.85,
+    10.9
+   ],
+   "origin": "on the eave line (y 0 = eave), per bay",
+   "materials": [
+    "SG_Joinery",
+    "SG_Slate"
+   ],
+   "lod0": 60,
+   "lod1": null,
+   "lod2": null,
+   "mask": "sky",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_roof_hip": {
+   "set": "town",
+   "size": [
+    11.0,
+    6.9,
+    4.6
+   ],
+   "origin": "END frame: origin on the ridge line in the end plane, y 0 = eave, +z outward; roofs the end bay z -4..0.45, its slopes 2 cm over the ridge planes",
+   "materials": [
+    "SG_Joinery",
+    "SG_Slate"
+   ],
+   "lod0": 120,
+   "lod1": null,
+   "lod2": null,
+   "mask": "sky",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "NEW: the hipped end (CF-3) used wherever a roof end is free"
+  },
+  "sg_roof_gable": {
+   "set": "town",
+   "size": [
+    10.9,
+    9.35,
+    1.0
+   ],
+   "origin": "party-wall gable, y 0 = eave",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 300,
+   "lod1": null,
+   "lod2": null,
+   "mask": "sky",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "crow-stepped; only where two roofs of different eave meet"
+  },
+  "sg_roof_dormer": {
+   "set": "town",
+   "size": [
+    4.0,
+    6.85,
+    12.0
+   ],
+   "origin": "per bay",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Slate"
+   ],
+   "lod0": 260,
+   "lod1": null,
+   "lod2": null,
+   "mask": "sky",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_stair_turret": {
+   "set": "town",
+   "size": [
+    3.3,
+    14.9,
+    3.5
+   ],
+   "origin": "turret centre at the party wall",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 320,
+   "lod1": null,
+   "lod2": null,
+   "mask": "sky",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "CF-3: FLAT crenellated cap, 14.9 m to its merlon tops (where an sg_cone sits); at most 8 placed"
+  },
+  "sg_street_arch": {
+   "set": "town",
+   "size": [
+    13.9,
+    14.7,
+    7.9
+   ],
+   "origin": "passage centre, +z the gate side (east)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 2000,
+   "lod1": {
+    "file": "sg_street_arch_l1",
+    "ceil": 500
+   },
+   "lod2": "sg_street_arch_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_street_arch_l2": {
+   "set": "town",
+   "size": [
+    13.7,
+    14.8,
+    7.2
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_market": {
+   "set": "town",
+   "size": [
+    18.0,
+    2.75,
+    17.6
+   ],
+   "origin": "market centre",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 2200,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_leanto": {
+   "set": "town",
+   "size": [
+    6.4,
+    3.9,
+    3.2
+   ],
+   "origin": "against a wall",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 260,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_sign": {
+   "set": "town",
+   "size": [
+    0.1,
+    1.1,
+    1.5
+   ],
+   "origin": "bracket at the facade",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 40,
+   "lod1": null,
+   "lod2": null,
+   "mask": "in",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "a blank blue board with a bone border (CF-8), hanging across the facade on its arm (+z)"
+  },
+  "sg_court_hall": {
+   "set": "civic",
+   "size": [
+    24.0,
+    21.0,
+    18.0
+   ],
+   "origin": "body centre at F, +z the facade (placed yaw pi: faces Crown Square)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass",
+    "SG_Slate"
+   ],
+   "lod0": 9000,
+   "lod1": {
+    "file": "sg_court_hall_l1",
+    "ceil": 2250
+   },
+   "lod2": "sg_court_hall_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": true,
+   "notes": "exterior shell: vault (floor 0 at 1.0) under a double-height hall (floor 1 at 4.4) with a gallery (7.8); hipped slate roof; painted far room behind the door; entry steps 0 -> 1.0"
+  },
+  "sg_court_hall_l2": {
+   "set": "civic",
+   "size": [
+    25.4,
+    21.2,
+    16.4
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_court_hall_in": {
+   "set": "civic",
+   "size": [
+    21.6,
+    7.8,
+    13.6
+   ],
+   "origin": "as the shell",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 4000,
+   "lod1": null,
+   "lod2": null,
+   "mask": "in",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "vaulting, the hall, the gallery, the stacked flights (datums)"
+  },
+  "sg_clock_tower": {
+   "set": "civic",
+   "size": [
+    10.9,
+    36.8,
+    12.1
+   ],
+   "origin": "body centre at F, +z the door face (placed yaw pi: faces the square)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Brass",
+    "SG_Slate"
+   ],
+   "lod0": 5000,
+   "lod1": {
+    "file": "sg_clock_tower_l1",
+    "ceil": 1250
+   },
+   "lod2": "sg_clock_tower_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "out",
+   "shell": true,
+   "notes": "flat crenellated parapet + low HIPPED slate cap (CF-3); brass dials on local +z and -x at y 26 (square + gate); entry steps 0 -> 1.0"
+  },
+  "sg_clock_tower_l2": {
+   "set": "civic",
+   "size": [
+    10.9,
+    36.8,
+    9.0
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_clock_tower_in": {
+   "set": "civic",
+   "size": [
+    7.6,
+    18.0,
+    7.6
+   ],
+   "origin": "as the shell",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 2500,
+   "lod1": null,
+   "lod2": null,
+   "mask": "in",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "floors 0-5, flights K0-K4 (datums), the grate + works on floor 4"
+  },
+  "sg_guild_hall": {
+   "set": "civic",
+   "size": [
+    33.4,
+    19.1,
+    18.4
+   ],
+   "origin": "body centre at F, +z the great door",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass",
+    "SG_Slate"
+   ],
+   "lod0": 7000,
+   "lod1": {
+    "file": "sg_guild_hall_l1",
+    "ceil": 1750
+   },
+   "lod2": "sg_guild_hall_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": true,
+   "notes": "Paladin (yaw pi) and Samurai (yaw 0) halls, one shell; the lit great door is 'the hall's light'; hipped slate roof; painted far room; banners tell them apart"
+  },
+  "sg_guild_hall_l2": {
+   "set": "civic",
+   "size": [
+    33.4,
+    19.2,
+    16.5
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_low_wall": {
+   "set": "town",
+   "size": [
+    4.0,
+    1.4,
+    0.6
+   ],
+   "origin": "bay centre on its line at the ground (y 0; a 0.3 m skirt below), +z its outer face",
+   "materials": [
+    "SG_Stone"
+   ],
+   "lod0": 60,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "4 m of low coped granite wall, 1.1 m: the yard walls along every street a yard meets, and the parapet on the scarp's coping and across the ledge's ends (one file, two jobs)"
+  },
+  "sg_yard_gate": {
+   "set": "town",
+   "size": [
+    4.0,
+    2.1,
+    1.6
+   ],
+   "origin": "as sg_low_wall; the leaves fold back to -z (into the yard)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 260,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "a bay of the low wall with two capped piers and a plank gate standing open, 2.3 m clear"
+  },
+  "sg_yard_dress": {
+   "set": "town",
+   "size": [
+    5.9,
+    2.1,
+    3.9
+   ],
+   "origin": "plot centre on the ground",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 300,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "a kitchen-garden plot 6 x 4 m: two raised beds of greens, a bean wigwam, a water butt, a log stack"
+  },
+  "sg_well": {
+   "set": "town",
+   "size": [
+    2.1,
+    2.8,
+    1.9
+   ],
+   "origin": "curb centre on the ground",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 260,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "a yard well: granite curb, oak windlass frame under a small slate roof, the bucket"
+  },
+  "sg_rail": {
+   "set": "walls",
+   "size": [
+    2.0,
+    1.06,
+    0.08
+   ],
+   "origin": "rail line on its floor (y 0), x along, centred",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 140,
+   "lod1": null,
+   "lod2": null,
+   "mask": "in",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "2 m of oak handrail on iron balusters, 1.0 m: every open floor edge the plan's guard rails find inside the climbing shells"
+  },
+  "sg_rail_flight": {
+   "set": "walls",
+   "size": [
+    1.23,
+    1.47,
+    0.07
+   ],
+   "origin": "the nosing line at the chunk's middle, x up the run",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 80,
+   "lod1": null,
+   "lod2": null,
+   "mask": "in",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "a 1.2 m chunk of handrail at pitch 0.625, 0.9 over the nosing line; the plan scales x to its chunk's run and y to its flight's pitch"
+  },
+  "sg_house_open": {
+   "set": "town",
+   "size": [
+    4.0,
+    11.0,
+    10.0
+   ],
+   "origin": "one origin per bay: pavement/base centre on the facade plane, +z the street/outside, x along, 4 m bays (capital_geom.py); back wall z -10",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass",
+    "SG_Glow"
+   ],
+   "lod0": 950,
+   "lod1": {
+    "file": "sg_house_plain_l1",
+    "ceil": 160,
+    "borrowed": true
+   },
+   "lod2": "sg_house_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "the plain bay with its door open on a walkable ground-floor room (x +-1.8, z -0.45..-9.8, ceiling 3.4): hearth (its fire SG_Glow), table and bench, dresser; Bertil Lund's kitchen and the Crown Inn's taproom (CF-6). Its LOD1 and card are the plain bay's"
+  },
+  "sg_backhouse": {
+   "set": "town",
+   "size": [
+    4.0,
+    6.2,
+    8.2
+   ],
+   "origin": "bay centre on its front at the ground, +z the close; back wall z -7 (the plan scales z to its depth)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 320,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "one 4 m bay of a two-storey back range (workshop, store, stable): rubble granite, a plank door and a light below, a loft light above, a loft door behind; roofed with sg_roof_ridge / sg_roof_hip / sg_roof_gable scaled to its depth. Not a house (4.7: 44-52 houses)"
+  },
+  "sg_roof_pent": {
+   "set": "town",
+   "size": [
+    4.0,
+    3.0,
+    10.7
+   ],
+   "origin": "on the eave line (y 0) at the facade plane; its head at z -10.2, 0.2 m into the curtain",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Slate"
+   ],
+   "lod0": 40,
+   "lod1": null,
+   "lod2": null,
+   "mask": "sky",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": "a lean-to slate roof bay for a house against a curtain: 2.4 m over its 10 m depth, stone cheeks, lead fascia and flashing. The curtain rows stand at 0.68 so its head is 1.5 m under the walk (CF-7: the views down)"
+  },
+  "sg_house_end": {
+   "set": "town",
+   "size": [
+    10.0,
+    11.0,
+    1.0
+   ],
+   "origin": "END frame: the house end plane at its middle (as sg_roof_hip), x across, +z out, y from the pavement",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass"
+   ],
+   "lod0": 900,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "night",
+   "shell": false,
+   "notes": "a row end dressed where it faces a street or square: windows on both upper floors, a door and a light, the strings, cornice and quoins, a chimney breast into the crow-stepped gable (sg_roof_gable) over it"
+  },
+  "sg_stall": {
+   "set": "town",
+   "size": [
+    4.6,
+    2.6,
+    2.6
+   ],
+   "origin": "stall centre on the ground, its counter toward +z",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 360,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "the market's stall with its goods: greens, fish, blue and bone cloth, sacks (CF-8)"
+  },
+  "sg_cart": {
+   "set": "town",
+   "size": [
+    3.2,
+    1.4,
+    1.35
+   ],
+   "origin": "cart centre on the ground, its shafts toward +x",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 320,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_drill": {
+   "set": "town",
+   "size": [
+    9.4,
+    2.65,
+    5.2
+   ],
+   "origin": "group centre on the ground, +z the parade",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 420,
+   "lod1": null,
+   "lod2": null,
+   "mask": "near",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "the drill furniture: a weapon rack, two pells, an archery butt, a trough, a mounting block"
+  },
+  "sg_flagpole": {
+   "set": "town",
+   "size": [
+    2.2,
+    13.7,
+    1.1
+   ],
+   "origin": "mast foot centre; its yard at y 11.6 along x (sg_banner hangs at its end)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery"
+   ],
+   "lod0": 100,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": true,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  },
+  "sg_lamp": {
+   "set": "harbour",
+   "size": [
+    0.7,
+    3.8,
+    0.7
+   ],
+   "origin": "post foot centre on the ground",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glow"
+   ],
+   "lod0": 80,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "always",
+   "shell": false,
+   "notes": "an iron lamp on a post: the strand's and the bastion foot's night (lit always, as the cressets)"
+  },
+  "sg_device_shield": {
+   "set": "civic",
+   "size": [
+    1.6,
+    2.0,
+    0.12
+   ],
+   "origin": "the board's foot point on the wall, +z out",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 40,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "the Paladin hall's board: a bone shield, its blue cross, on blue (CF-8)"
+  },
+  "sg_device_blades": {
+   "set": "civic",
+   "size": [
+    1.6,
+    2.0,
+    0.12
+   ],
+   "origin": "the board's foot point on the wall, +z out",
+   "materials": [
+    "SG_Joinery"
+   ],
+   "lod0": 40,
+   "lod1": null,
+   "lod2": null,
+   "mask": "all",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": "the Samurai hall's board: two bone blades crossed on blue (CF-8)"
+  },
+  "sg_auction_house": {
+   "set": "civic",
+   "size": [
+    29.1,
+    35.2,
+    17.3
+   ],
+   "origin": "body centre at F, +z the arcade (placed yaw 0: faces the Market Yard)",
+   "materials": [
+    "SG_Stone",
+    "SG_Joinery",
+    "SG_Glass",
+    "SG_Slate"
+   ],
+   "lod0": 7000,
+   "lod1": {
+    "file": "sg_auction_house_l1",
+    "ceil": 1750
+   },
+   "lod2": "sg_auction_house_l2",
+   "mask": "lods",
+   "casts": true,
+   "glow": "night",
+   "shell": true,
+   "notes": "a granite cloth hall: one open hall (26 x 13.5 m, ceiling 6.6) behind a five-bay arcade, no doors; four broker counters and the board on its back wall; the belfry over the arcade's middle bay to a crenellated parapet and a low HIPPED slate cap (CF-3), the emblem (a balance in a roundel, bone on Caerdun blue, CF-8) on its four faces above the roofs; hipped slate roof, lamplit lancets (night)"
+  },
+  "sg_auction_house_l2": {
+   "set": "civic",
+   "size": [
+    29.1,
+    34.3,
+    17.3
+   ],
+   "origin": "card",
+   "materials": [
+    "SG_Far"
+   ],
+   "lod0": 128,
+   "lod1": null,
+   "lod2": null,
+   "mask": "lod2",
+   "casts": false,
+   "glow": "out",
+   "shell": false,
+   "notes": ""
+  }
+ },
+ "files": [
+  "sg_arch_glow",
+  "sg_auction_house",
+  "sg_auction_house_l1",
+  "sg_auction_house_l2",
+  "sg_backhouse",
+  "sg_banner",
+  "sg_barbican",
+  "sg_barbican_l1",
+  "sg_barbican_l2",
+  "sg_bastion",
+  "sg_bastion_l1",
+  "sg_bastion_l2",
+  "sg_beam",
+  "sg_boat",
+  "sg_cart",
+  "sg_chain_tower",
+  "sg_chain_tower_l1",
+  "sg_chain_tower_l2",
+  "sg_clock_tower",
+  "sg_clock_tower_in",
+  "sg_clock_tower_l1",
+  "sg_clock_tower_l2",
+  "sg_cone",
+  "sg_court_hall",
+  "sg_court_hall_in",
+  "sg_court_hall_l1",
+  "sg_court_hall_l2",
+  "sg_cresset",
+  "sg_crown_gate",
+  "sg_crown_gate_l1",
+  "sg_crown_gate_l2",
+  "sg_curtain_land",
+  "sg_curtain_land_l1",
+  "sg_curtain_land_l2",
+  "sg_device_blades",
+  "sg_device_shield",
+  "sg_ditch",
+  "sg_ditch_end",
+  "sg_drill",
+  "sg_flagpole",
+  "sg_guild_hall",
+  "sg_guild_hall_l1",
+  "sg_guild_hall_l2",
+  "sg_harbour_wall",
+  "sg_house_end",
+  "sg_house_hoist",
+  "sg_house_hoist_l1",
+  "sg_house_l2",
+  "sg_house_open",
+  "sg_house_oriel",
+  "sg_house_oriel_l1",
+  "sg_house_plain",
+  "sg_house_plain_l1",
+  "sg_house_shop",
+  "sg_house_shop_l1",
+  "sg_house_shut",
+  "sg_house_shut_l1",
+  "sg_lamp",
+  "sg_leanto",
+  "sg_lighthouse",
+  "sg_lighthouse_l1",
+  "sg_lighthouse_l2",
+  "sg_low_wall",
+  "sg_market",
+  "sg_mole_bay",
+  "sg_parados",
+  "sg_pilot_house",
+  "sg_quay",
+  "sg_quay_dress",
+  "sg_rail",
+  "sg_rail_flight",
+  "sg_roof_dormer",
+  "sg_roof_gable",
+  "sg_roof_hip",
+  "sg_roof_pent",
+  "sg_roof_ridge",
+  "sg_scarp",
+  "sg_seagate",
+  "sg_seagate_l1",
+  "sg_seagate_l2",
+  "sg_seawall_arcade",
+  "sg_seawall_arcade_l1",
+  "sg_seawall_l2",
+  "sg_seawall_window",
+  "sg_seawall_window_l1",
+  "sg_sign",
+  "sg_stair_bay",
+  "sg_stair_turret",
+  "sg_stall",
+  "sg_street_arch",
+  "sg_street_arch_l1",
+  "sg_street_arch_l2",
+  "sg_tower",
+  "sg_tower_corner",
+  "sg_tower_corner_l1",
+  "sg_tower_corner_l2",
+  "sg_tower_l1",
+  "sg_tower_l2",
+  "sg_tower_tall",
+  "sg_tower_tall_l1",
+  "sg_tower_tall_l2",
+  "sg_wall_stair",
+  "sg_warehouse",
+  "sg_water_gate",
+  "sg_well",
+  "sg_yard_dress",
+  "sg_yard_gate"
+ ],
+ "templatesPerSet": {
+  "walls": 37,
+  "harbour": 20,
+  "town": 34,
+  "civic": 16
+ },
+ "shellDatums": {
+  "curtain": {
+   "walkY": 11.4,
+   "walkZ": [
+    -1.0,
+    1.2
+   ],
+   "townFaceZ": -1.4,
+   "paradosZ": [
+    -1.4,
+    -1.0
+   ],
+   "paradosTop": 12.4,
+   "parapetZ": [
+    1.2,
+    1.85
+   ],
+   "merlonTop": 13.2,
+   "colliders": "body y -inf..11.4 over the section; parapet box to 13.2; parados box to 12.4 (none on a stair-landing bay)"
+  },
+  "sg_tower": {
+   "room": {
+    "y": 11.4,
+    "x": [
+     -3.8,
+     3.8
+    ],
+    "z": [
+     -2.8,
+     3.8
+    ],
+    "ceiling": 15.2
+   },
+   "walkDeck": {
+    "x": [
+     -5.25,
+     5.25
+    ],
+    "z": [
+     -1.0,
+     1.2
+    ]
+   },
+   "doors": [
+    {
+     "face": "x=-5.0",
+     "z": [
+      -0.55,
+      0.75
+     ],
+     "y": [
+      11.4,
+      13.8
+     ]
+    },
+    {
+     "face": "x=+5.0",
+     "z": [
+      -0.55,
+      0.75
+     ],
+     "y": [
+      11.4,
+      13.8
+     ]
+    }
+   ]
+  },
+  "sg_tower_tall": "as sg_tower",
+  "sg_tower_corner": {
+   "room": {
+    "y": 11.4,
+    "apothem": 5.3,
+    "ceiling": 15.2
+   },
+   "doors": "centres (+-4.6, -4.6) on the back-diagonal faces, 1.3 wide, y 11.4..13.8"
+  },
+  "sg_seagate": {
+   "passage": {
+    "x": [
+     -2.0,
+     2.0
+    ],
+    "z": [
+     -6.1,
+     6.1
+    ],
+    "clear": 6.0
+   },
+   "chamber": {
+    "y": 11.4,
+    "x": [
+     -6.65,
+     6.65
+    ],
+    "z": [
+     -1.0,
+     1.2
+    ]
+   },
+   "doors": "flank faces x = +-6.4, z -0.55..0.75, y 11.4..13.8"
+  },
+  "sg_crown_gate": {
+   "passage": {
+    "x": [
+     -2.5,
+     2.5
+    ],
+    "z": [
+     -7.0,
+     9.0
+    ],
+    "apex": 7.6
+   },
+   "gallery": {
+    "y": 11.4,
+    "x": [
+     -15.25,
+     15.25
+    ],
+    "z": [
+     -1.0,
+     1.2
+    ],
+    "doors": "x = +-15.0, z -0.55..0.75"
+   },
+   "crownTerrace": {
+    "y": 24.1,
+    "x": [
+     -15.0,
+     15.0
+    ],
+    "z": [
+     -7.0,
+     7.0
+    ],
+    "hole": "caphouse x -9.6..-7.2, z -7.0..0.0",
+    "post": [
+     2.5,
+     1.5
+    ]
+   },
+   "towerDoors": "town face z -7.0 at x = +-10.5, 1.3 wide, y 0..2.6",
+   "flights": [
+    {
+     "id": "F1",
+     "from": [
+      -12.6,
+      0.0,
+      -5.6
+     ],
+     "to": [
+      -12.6,
+      5.7,
+      3.1
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F2",
+     "from": [
+      -8.4,
+      5.7,
+      3.1
+     ],
+     "to": [
+      -8.4,
+      11.4,
+      -5.6
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F3",
+     "from": [
+      -12.6,
+      11.4,
+      -5.6
+     ],
+     "to": [
+      -12.6,
+      17.75,
+      4.0
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F4",
+     "from": [
+      -8.4,
+      17.75,
+      4.0
+     ],
+     "to": [
+      -8.4,
+      24.1,
+      -5.6
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F1s",
+     "from": [
+      12.6,
+      0.0,
+      -5.6
+     ],
+     "to": [
+      12.6,
+      5.7,
+      3.1
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F2s",
+     "from": [
+      8.4,
+      5.7,
+      3.1
+     ],
+     "to": [
+      8.4,
+      11.4,
+      -5.6
+     ],
+     "half": 1.0
+    }
+   ],
+   "landings": [
+    {
+     "y": 5.7,
+     "x": [
+      -13.8,
+      -7.2
+     ],
+     "z": [
+      3.1,
+      5.8
+     ]
+    },
+    {
+     "y": 17.75,
+     "x": [
+      -13.8,
+      -7.2
+     ],
+     "z": [
+      4.0,
+      5.8
+     ]
+    },
+    {
+     "y": 5.7,
+     "x": [
+      7.2,
+      13.8
+     ],
+     "z": [
+      3.1,
+      5.8
+     ]
+    }
+   ],
+   "towerRooms": {
+    "y": 11.4,
+    "x": [
+     [
+      -13.8,
+      -7.2
+     ],
+     [
+      7.2,
+      13.8
+     ]
+    ],
+    "z": [
+     -5.8,
+     5.8
+    ],
+    "holes": "over F2/F2s (x -9.4..-7.4 / 7.4..9.4, z -5.6..3.1)"
+   },
+   "note": "local x -10.5 is the NORTH tower when placed at yaw pi/2 (world z = cz - lx)"
+  },
+  "sg_bastion": {
+   "platform": {
+    "y": 20.775,
+    "shape": "half disc r 14.4 (local z >= 0) + the gorge strip x -16.5..16.5, z -1.5..0, minus the lighthouse (collider r 5.1)",
+    "joins": "curtain walks at local (+-15.5, -1.0)"
+   },
+   "gorgeLevel": {
+    "y": 9.375,
+    "corridor": {
+     "x": [
+      -9.0,
+      9.0
+     ],
+     "z": [
+      0.2,
+      2.0
+     ]
+    },
+    "doors": "gorge face z 0 at x = +-8.0, 1.6 wide, 2.6 high (onto the plateau)"
+   },
+   "postern": "strip level, facets 3 -> 7, clear 3.0 x 3.6; keeper door on facet 5 at local (0, 0, 16); both reach B1 foot",
+   "flights": [
+    {
+     "id": "B1",
+     "from": [
+      -6.5,
+      0.0,
+      3.0
+     ],
+     "to": [
+      1.0,
+      4.6875,
+      3.0
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "B2",
+     "from": [
+      1.0,
+      4.6875,
+      5.4
+     ],
+     "to": [
+      -6.5,
+      9.375,
+      5.4
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "B3",
+     "from": [
+      6.8,
+      9.375,
+      3.0
+     ],
+     "to": [
+      -2.3,
+      15.075,
+      3.0
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "B4a",
+     "from": [
+      -2.3,
+      15.075,
+      7.4
+     ],
+     "to": [
+      2.25,
+      17.925,
+      7.4
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "B4b",
+     "from": [
+      2.25,
+      17.925,
+      9.6
+     ],
+     "to": [
+      -2.3,
+      20.775,
+      9.6
+     ],
+     "half": 1.0
+    }
+   ],
+   "landings": [
+    {
+     "y": 4.6875,
+     "x": [
+      1.0,
+      2.4
+     ],
+     "z": [
+      2.0,
+      6.4
+     ]
+    },
+    {
+     "y": 9.375,
+     "x": [
+      -8.6,
+      -6.5
+     ],
+     "z": [
+      0.2,
+      6.4
+     ]
+    },
+    {
+     "y": 9.375,
+     "x": [
+      6.8,
+      8.2
+     ],
+     "z": [
+      0.2,
+      4.0
+     ]
+    },
+    {
+     "y": 15.075,
+     "x": [
+      -3.7,
+      -2.3
+     ],
+     "z": [
+      2.0,
+      8.4
+     ]
+    },
+    {
+     "y": 17.925,
+     "x": [
+      2.25,
+      3.65
+     ],
+     "z": [
+      6.4,
+      10.6
+     ]
+    }
+   ],
+   "lighthouseRoom": {
+    "y": 20.775,
+    "centre": [
+     0.0,
+     9.0
+    ],
+    "r": 4.1,
+    "ceiling": 24.4,
+    "hole": "over B4b x -2.3..1.3, z 8.6..10.6",
+    "door": "the lighthouse door on its local -z face, centre (0, 3.9), 1.4 wide, OPEN: the stair comes up inside the tower and out of its door"
+   },
+   "lighthouse": [
+    0.0,
+    9.0
+   ],
+   "lightPost": [
+    1.2,
+    2.9
+   ]
+  },
+  "sg_chain_tower": {
+   "room": {
+    "y": 1.6,
+    "r": 5.5,
+    "ceiling": 5.4
+   },
+   "door": "local -z face (toward the mole root), 1.3 wide, y 1.6..4.0",
+   "post": [
+    0.0,
+    -3.5
+   ],
+   "placedYaw": "south tower: local -z faces east (yaw -pi/2)"
+  },
+  "sg_court_hall": {
+   "floors": [
+    1.0,
+    4.4,
+    7.8
+   ],
+   "room": {
+    "x": [
+     -10.8,
+     10.8
+    ],
+    "z": [
+     -6.8,
+     6.8
+    ]
+   },
+   "entry": {
+    "from": [
+     0.0,
+     0.0,
+     9.8
+    ],
+    "to": [
+     0.0,
+     1.0,
+     8.2
+    ],
+    "half": 2.0
+   },
+   "flights": [
+    {
+     "id": "C1",
+     "from": [
+      -9.5,
+      1.0,
+      2.8
+     ],
+     "to": [
+      -9.5,
+      4.4,
+      -2.8
+     ],
+     "half": 1.08
+    },
+    {
+     "id": "C2",
+     "from": [
+      -9.5,
+      4.4,
+      2.8
+     ],
+     "to": [
+      -9.5,
+      7.8,
+      -2.8
+     ],
+     "half": 1.08
+    }
+   ],
+   "gallery": {
+    "y": 7.8,
+    "x": [
+     -10.8,
+     10.8
+    ],
+    "z": [
+     -6.8,
+     -4.4
+    ]
+   },
+   "holes": "floors 1 and 2 over C1/C2 (x -10.74..-8.26, z -2.8..2.8)"
+  },
+  "sg_clock_tower": {
+   "floors": [
+    1.0,
+    4.4,
+    7.8,
+    11.2,
+    14.6,
+    18.0
+   ],
+   "room": {
+    "x": [
+     -3.8,
+     3.8
+    ],
+    "z": [
+     -3.8,
+     3.8
+    ]
+   },
+   "entry": {
+    "from": [
+     0.0,
+     0.0,
+     6.6
+    ],
+    "to": [
+     0.0,
+     1.0,
+     5.0
+    ],
+    "half": 1.2
+   },
+   "flights": [
+    {
+     "id": "K0",
+     "from": [
+      2.7,
+      1.0,
+      -2.8
+     ],
+     "to": [
+      2.7,
+      4.4,
+      2.8
+     ]
+    },
+    {
+     "id": "K1",
+     "from": [
+      2.8,
+      4.4,
+      2.7
+     ],
+     "to": [
+      -2.8,
+      7.8,
+      2.7
+     ]
+    },
+    {
+     "id": "K2",
+     "from": [
+      -2.7,
+      7.8,
+      2.8
+     ],
+     "to": [
+      -2.7,
+      11.2,
+      -2.8
+     ]
+    },
+    {
+     "id": "K3",
+     "from": [
+      -2.8,
+      11.2,
+      -2.7
+     ],
+     "to": [
+      2.8,
+      14.6,
+      -2.7
+     ]
+    },
+    {
+     "id": "K4",
+     "from": [
+      2.7,
+      14.6,
+      -2.8
+     ],
+     "to": [
+      2.7,
+      18.0,
+      2.8
+     ]
+    }
+   ],
+   "half": 1.0,
+   "holes": "floor k+1 over flight Kk: 2.5 x 5.6 along its wall",
+   "post": [
+    0.0,
+    2.6
+   ],
+   "postFloor": 4
+  },
+  "sg_wall_stair": {
+   "flight": {
+    "from": [
+     0.0,
+     0.0,
+     1.1
+    ],
+    "to": [
+     19.0,
+     11.4,
+     1.1
+    ],
+    "half": 1.0
+   },
+   "landing": {
+    "y": 11.4,
+    "x": [
+     19.0,
+     21.65
+    ],
+    "z": [
+     0.0,
+     2.4
+    ]
+   }
+  },
+  "sg_stair_bay": {
+   "flight": "continuous over the 6 bays: harbour.wallStair.flight"
+  },
+  "sg_scarp": {
+   "apron": {
+    "y": 0.05,
+    "depth": 5.0
+   },
+   "batter": 0.25,
+   "foot": "strip - 3.0"
+  },
+  "sg_ditch": {
+   "lips": 9.333,
+   "floorHalf": 4.667,
+   "depth": 8.0,
+   "proud": 0.15
+  },
+  "flightsRule": "every flight: a ramp on the nosing line with a 0.05 m end pad + a stair body (solid to the ground unless thickness given); decks that only touch overlap 0.25 m"
+ },
+ "asBuilt": {
+  "sg_tower": {
+   "room": {
+    "chamfer": "front corners cut parallel to the outer diagonals, 1 m inside them (the rectangle poked 0.17-0.37 m through the wall)"
+   },
+   "doors": [
+    {
+     "face": "x=-5.0",
+     "z": [
+      -1.55,
+      0.75
+     ],
+     "y": [
+      11.4,
+      13.8
+     ]
+    },
+    {
+     "face": "x=+5.0",
+     "z": [
+      -1.55,
+      0.75
+     ],
+     "y": [
+      11.4,
+      13.8
+     ]
+    }
+   ],
+   "why": "CF-7: the walk meets a bent tower's flank 5 tan(bend/2) m inboard of the door's centre (0.98 m at n5, 22.3 deg): the doors open where the plan's colliders do"
+  },
+  "sg_tower_corner": {
+   "doors": "centres (+-4.6, -4.6) on the back-diagonal faces, 2.9 wide (half 1.45), y 11.4..13.8"
+  },
+  "sg_crown_gate": {
+   "stairwells": {
+    "F2": [
+     -9.4,
+     -5.6,
+     -7.4,
+     -1.6
+    ],
+    "F2s": [
+     7.4,
+     -5.6,
+     9.4,
+     -1.6
+    ],
+    "F4": [
+     -9.4,
+     -5.6,
+     -7.4,
+     -1.2
+    ],
+    "why": "the walk gallery crosses over F2 (F2 keeps 2.2 m); F4 opens under the caphouse only where it needs its headroom"
+   },
+   "caphouseDoor": {
+    "face": "x = -7.2 (east)",
+    "z": [
+     -6.95,
+     -5.65
+    ],
+    "y": [
+     24.1,
+     26.4
+    ],
+    "why": "F4 arrives facing the back wall; the standard 1.3 m"
+   },
+   "towerRooms": {
+    "chamfer": 0.94
+   },
+   "flights": [
+    {
+     "id": "F1",
+     "from": [
+      -12.6,
+      0.0,
+      -5.6
+     ],
+     "to": [
+      -12.6,
+      5.7,
+      3.1
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F2",
+     "from": [
+      -8.4,
+      5.7,
+      3.1
+     ],
+     "to": [
+      -8.4,
+      11.4,
+      -5.6
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F3a",
+     "from": [
+      -12.6,
+      11.4,
+      -5.6
+     ],
+     "to": [
+      -12.6,
+      14.6774,
+      -0.8
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F3b",
+     "from": [
+      -12.6,
+      14.6774,
+      0.2
+     ],
+     "to": [
+      -12.6,
+      17.75,
+      4.7
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F4a",
+     "from": [
+      -8.4,
+      17.75,
+      4.7
+     ],
+     "to": [
+      -8.4,
+      20.8226,
+      0.2
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F4b",
+     "from": [
+      -8.4,
+      20.8226,
+      -0.8
+     ],
+     "to": [
+      -8.4,
+      24.1,
+      -5.6
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F1s",
+     "from": [
+      12.6,
+      0.0,
+      -5.6
+     ],
+     "to": [
+      12.6,
+      5.7,
+      3.1
+     ],
+     "half": 1.0
+    },
+    {
+     "id": "F2s",
+     "from": [
+      8.4,
+      5.7,
+      3.1
+     ],
+     "to": [
+      8.4,
+      11.4,
+      -5.6
+     ],
+     "half": 1.0
+    }
+   ],
+   "landings": [
+    {
+     "y": 5.7,
+     "x": [
+      -13.8,
+      -7.2
+     ],
+     "z": [
+      3.1,
+      5.8
+     ]
+    },
+    {
+     "y": 14.6774,
+     "x": [
+      -13.6,
+      -11.6
+     ],
+     "z": [
+      -0.8,
+      0.2
+     ]
+    },
+    {
+     "y": 17.75,
+     "x": [
+      -13.8,
+      -7.2
+     ],
+     "z": [
+      4.7,
+      5.8
+     ]
+    },
+    {
+     "y": 20.8226,
+     "x": [
+      -9.4,
+      -7.4
+     ],
+     "z": [
+      -0.8,
+      0.2
+     ]
+    },
+    {
+     "y": 5.7,
+     "x": [
+      7.2,
+      13.8
+     ],
+     "z": [
+      3.1,
+      5.8
+     ]
+    }
+   ],
+   "flightsWhy": "F3 and F4 rose 6.35 m: 31 risers of 0.205 against 30 a flight. Each split by a 1.0 m half-landing in its own lane (16 + 15 risers of 0.2048 on 0.30 treads); the 17.75 landing taken back to z 4.7"
+  },
+  "sg_house_open": {
+   "room": {
+    "x": [
+     -1.8,
+     1.8
+    ],
+    "z": [
+     -9.8,
+     -0.45
+    ],
+    "ceiling": 3.4,
+    "door": [
+     -0.75,
+     0.75
+    ],
+    "doorTop": 3.0,
+    "hearth": [
+     -0.95,
+     0.95,
+     -9.8,
+     -9.2
+    ],
+    "table": [
+     -1.7,
+     -0.35,
+     -6.5,
+     -4.0
+    ],
+    "dresser": [
+     1.35,
+     1.8,
+     -8.6,
+     -6.6
+    ]
+   },
+   "why": "CF-6: Bertil Lund keeps the tally 'at the kitchen table' and Innkeeper Sayre says 'in here': the bay's door open on a ground-floor room at the pavement, in the bay's facade frame (front z 0, back -10, x across its centre)"
+  },
+  "sg_bastion": {
+   "lighthouseRoom": {
+    "hole": "over B4b x -2.3..1.6, z 8.6..10.6 (B4b keeps 2.2 m over its steps)"
+   }
+  },
+  "sg_clock_tower": {
+   "flights": [
+    {
+     "id": "K0",
+     "from": [
+      2.7,
+      1.0,
+      -2.8
+     ],
+     "to": [
+      2.7,
+      4.4,
+      2.8
+     ]
+    },
+    {
+     "id": "K1",
+     "from": [
+      -2.7,
+      4.4,
+      2.8
+     ],
+     "to": [
+      -2.7,
+      7.8,
+      -2.8
+     ]
+    },
+    {
+     "id": "K2",
+     "from": [
+      2.7,
+      7.8,
+      -2.8
+     ],
+     "to": [
+      2.7,
+      11.2,
+      2.8
+     ]
+    },
+    {
+     "id": "K3",
+     "from": [
+      -2.7,
+      11.2,
+      2.8
+     ],
+     "to": [
+      -2.7,
+      14.6,
+      -2.8
+     ]
+    },
+    {
+     "id": "K4",
+     "from": [
+      2.7,
+      14.6,
+      -2.8
+     ],
+     "to": [
+      2.7,
+      18.0,
+      2.8
+     ]
+    }
+   ],
+   "holes": [
+    null,
+    [
+     1.3,
+     -2.8,
+     3.8,
+     2.8
+    ],
+    [
+     -3.8,
+     -2.8,
+     -1.3,
+     2.8
+    ],
+    [
+     1.3,
+     -2.8,
+     3.8,
+     2.8
+    ],
+    [
+     -3.8,
+     -2.8,
+     -1.3,
+     2.8
+    ],
+    [
+     1.3,
+     -2.8,
+     3.8,
+     2.8
+    ]
+   ],
+   "why": "the first version's K0-K4 wrapped all four walls and overlapped at every corner (K1's first steps 0.2-0.9 m over K0's last): they alternate between the +x and -x walls instead, half, run, rise and floors kept"
+  },
+  "sg_roof_hip": "END frame: origin on the ridge line in the end plane, +z outward; roofs the end bay z -4..0.45, its slopes 2 cm over the ridge planes",
+  "lod2Cards": "SG_Far only, cut to the silhouette, no baked occlusion; curtains and houses a front and a back face (<= 4 triangles), towers, gates, halls and round towers a cross through the middle (<= 128); the barbican's carries its crossing to the counterscarp"
+ },
+ "instancerApi": "CAERDUN-CONTRACT.md section 5 (TypeScript); Moonmere needs folded in (build/MOONMERE-NEEDS.md)",
+ "cameras": {
+  "note": "capital_perf.mjs conventions: [x, y|'g+h', z] -> [x, y|'g+h', z]; g = ground at the pos; daytimes 0.2 and 0.6; 1440x900 DSF 1; fov 0.8. Baseline draws are MEASURED (brief r1, Chromium, M1 Pro): old Caerdun at the matching camera, day/night.",
+  "matched": [
+   {
+    "id": "a_gate_avenue",
+    "pos": [
+     54,
+     "g+1.7",
+     -18
+    ],
+    "target": [
+     -60,
+     "g+3",
+     -18
+    ],
+    "what": "inside the Crown Gate down Crown Street to the street arch",
+    "baseline": [
+     4369,
+     4517
+    ]
+   },
+   {
+    "id": "b_arcade",
+    "pos": [
+     -45,
+     "g+1.7",
+     25
+    ],
+    "target": [
+     -130,
+     "g+14",
+     33
+    ],
+    "what": "Lantern Street to the Lantern Yard and lighthouse (the mock-up street view)",
+    "baseline": [
+     3794,
+     3971
+    ]
+   },
+   {
+    "id": "c_square_hall",
+    "pos": [
+     25,
+     "g+1.7",
+     -84
+    ],
+    "target": [
+     25,
+     "g+6",
+     -40
+    ],
+    "what": "the parade facing the Paladin hall",
+    "baseline": [
+     3081,
+     3250
+    ]
+   },
+   {
+    "id": "d_aerial_district",
+    "pos": [
+     -50,
+     "g+85",
+     -120
+    ],
+    "target": [
+     10,
+     "g",
+     -60
+    ],
+    "what": "45 deg over the south wards, parade, market",
+    "baseline": [
+     2965,
+     2877
+    ]
+   },
+   {
+    "id": "e_aerial_city",
+    "pos": [
+     -200,
+     "g+212",
+     -160
+    ],
+    "target": [
+     -47,
+     "g",
+     -2
+    ],
+    "what": "the whole city from ~212 m",
+    "baseline": [
+     4684,
+     4012
+    ]
+   },
+   {
+    "id": "k_forecourt_palace",
+    "pos": [
+     25,
+     "g+1.7",
+     -28
+    ],
+    "target": [
+     25,
+     "g+8",
+     2
+    ],
+    "what": "Crown Square facing the court hall and clock",
+    "baseline": [
+     1760,
+     1916
+    ]
+   },
+   {
+    "id": "l_stair_avenue",
+    "pos": [
+     -150,
+     "g+1.7",
+     -10
+    ],
+    "target": [
+     60,
+     "g",
+     -16
+    ],
+    "what": "inside the Sea Gate at the top of the Wall Stair, up Wall Street",
+    "baseline": [
+     4383,
+     4593
+    ]
+   },
+   {
+    "id": "m_ward_street",
+    "pos": [
+     2,
+     "g+1.7",
+     12
+    ],
+    "target": [
+     2,
+     "g+1.7",
+     90
+    ],
+    "what": "North Street, a residential ward street",
+    "baseline": [
+     3833,
+     3952
+    ]
+   },
+   {
+    "id": "n_courtyard_garden",
+    "pos": [
+     -215,
+     2.65,
+     -20
+    ],
+    "target": [
+     -160,
+     20,
+     36
+    ],
+    "what": "the quay under the sea wall toward the bastion",
+    "baseline": [
+     2505,
+     2618
+    ]
+   }
+  ],
+  "caerdunOnly": [
+   {
+    "id": "f_sea",
+    "pos": [
+     -275,
+     18,
+     125
+    ],
+    "target": [
+     -120,
+     20,
+     30
+    ],
+    "what": "from the fjord (expected worst at night: lit arches, lit wall-houses in the glow pass)"
+   },
+   {
+    "id": "g_approach",
+    "pos": [
+     124,
+     "g+1.7",
+     -18
+    ],
+    "target": [
+     60,
+     "g+12",
+     -18
+    ],
+    "what": "from spawn: glacis, bridge, barbican, Crown Gate (CF-2)"
+   },
+   {
+    "id": "h_wall_walk",
+    "pos": [
+     -80,
+     22.975,
+     76.9
+    ],
+    "target": [
+     60,
+     21.275,
+     103
+    ],
+    "what": "on the north wall walk looking east (CF-7)"
+   },
+   {
+    "id": "i_crown",
+    "pos": [
+     66.8,
+     35.675,
+     -23.0
+    ],
+    "target": [
+     -100,
+     9.875,
+     10
+    ],
+    "what": "from the crown watch over the whole city"
+   },
+   {
+    "id": "j_bastion",
+    "pos": [
+     -145.3,
+     22.975,
+     36.5
+    ],
+    "target": [
+     60,
+     15,
+     -18
+    ],
+    "what": "from the bastion platform east over the town"
+   },
+   {
+    "id": "o_gate_court",
+    "pos": [
+     50,
+     "g+1.7",
+     -10
+    ],
+    "target": [
+     -100,
+     "g+1.7",
+     -10
+    ],
+    "what": "Crown Street west from the Crown Gate's inner court: the worst grounded view of a 5,928-camera sweep (fix round 1)"
+   }
+  ]
+ },
+ "budgets": {
+  "drawsMax": 600,
+  "drawsTarget": 480,
+  "drawsVsBaseline": "at most the baseline at every matched camera (the 600 cap binds)",
+  "syncedFrame": "median <= baseline + 10% at the matched camera (Chromium baseline 26.5-62.5 ms, k 26.5 the tightest)",
+  "cpu": "median <= baseline + 10%",
+  "buildMs": 1500,
+  "heapMB": 360,
+  "errors": 0,
+  "perCellBatches": {
+   "lod0": 24,
+   "lod1": 18,
+   "lod2": 6
+  },
+  "templatesPerSet": 60,
+  "libraryFiles": 112,
+  "pointLights": 2,
+  "materials": 8,
+  "materialsOnDiskPerModule": 4,
+  "submeshesAfterFacade": 3,
+  "houses": {
+   "min": 44,
+   "max": 52,
+   "target": 48
+  },
+  "cones": 5,
+  "coneFile": "sg_cone",
+  "conePlacedMax": 4,
+  "bays": {
+   "min": 150,
+   "max": 220
+  },
+  "bareGroundMaxFrac": 0.15,
+  "placedLod0TrisMax": 460000,
+  "yards": {
+   "openLotMax": 12.0,
+   "gateRunMin": 4.5,
+   "verge": 3.0
+  },
+  "harbourEndsWalkMin": 250.0
+ }
+}

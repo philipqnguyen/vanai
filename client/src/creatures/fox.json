@@ -1,0 +1,49 @@
+{
+ "file": "creatures/fox.glb",
+ "plan": "canine",
+ "height": 0.886,
+ "length": 1.647,
+ "width": 0.372,
+ "top": 0.886,
+ "minY": -0.0018,
+ "groundY": -0.0018,
+ "forward": -0.131,
+ "tris": [
+  3130,
+  918
+ ],
+ "budget": 3200,
+ "bones": 26,
+ "atlas": 512,
+ "emissive": false,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.548,
+  "Run": 0.406,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 2.208,
+  "Run": 4.946
+ },
+ "bytes": 398844,
+ "held": [],
+ "groundLift": {
+  "Death": 0.186
+ },
+ "notes": "the fox look: big ears, a pointed muzzle, black stockings, a white-tipped brush",
+ "role": "common",
+ "variants": {
+  "amber_jackal": {
+   "atlas": "creatures/fox@amber_jackal.ktx2",
+   "bytes": 90662
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/canine.py",
+ "fast": false
+}

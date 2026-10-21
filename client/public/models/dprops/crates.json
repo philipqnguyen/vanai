@@ -1,0 +1,363 @@
+{
+ "pack": "crates",
+ "props": {
+  "crate": {
+   "pack": "crates",
+   "min": [
+    -0.415,
+    0,
+    -0.415
+   ],
+   "max": [
+    0.415,
+    0.865,
+    0.415
+   ],
+   "tris": 2022,
+   "farTris": 10,
+   "far": true,
+   "small": false,
+   "tint": {
+    "lodge": "#c4b0a0",
+    "furnace": "#a49488",
+    "beaconfort": "#b8aea4"
+   }
+  },
+  "crate_banded": {
+   "pack": "crates",
+   "min": [
+    -0.405,
+    0,
+    -0.411
+   ],
+   "max": [
+    0.405,
+    0.805,
+    0.405
+   ],
+   "tris": 1954,
+   "farTris": 10,
+   "far": true,
+   "small": false
+  },
+  "crate_stack": {
+   "pack": "crates",
+   "min": [
+    -0.805,
+    0,
+    -0.462
+   ],
+   "max": [
+    0.822,
+    1.405,
+    0.448
+   ],
+   "tris": 5278,
+   "farTris": 30,
+   "far": true,
+   "small": false
+  },
+  "chest": {
+   "pack": "crates",
+   "min": [
+    -0.512,
+    0,
+    -0.292
+   ],
+   "max": [
+    0.512,
+    0.574,
+    0.292
+   ],
+   "tris": 1780,
+   "farTris": 28,
+   "far": true,
+   "small": false,
+   "tint": {
+    "lodge": "#c4b0a0"
+   }
+  },
+  "chest_rich": {
+   "pack": "crates",
+   "min": [
+    -0.532,
+    0,
+    -0.302
+   ],
+   "max": [
+    0.532,
+    0.634,
+    0.302
+   ],
+   "tris": 2204,
+   "farTris": 28,
+   "far": true,
+   "small": false
+  },
+  "farm_crate": {
+   "pack": "crates",
+   "min": [
+    -0.352,
+    0,
+    -0.21
+   ],
+   "max": [
+    0.352,
+    0.24,
+    0.21
+   ],
+   "tris": 464,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "farm_crate_full": {
+   "pack": "crates",
+   "min": [
+    -0.423,
+    0,
+    -0.3
+   ],
+   "max": [
+    0.407,
+    0.29,
+    0.3
+   ],
+   "tris": 1140,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  }
+ },
+ "swap": {
+  "props/Crate_Wooden.gltf": {
+   "to": "crate",
+   "from": {
+    "min": [
+     -0.426,
+     -0.052,
+     -0.454
+    ],
+    "max": [
+     0.416,
+     0.878,
+     0.454
+    ]
+   }
+  },
+  "dungeon/box_small.glb": {
+   "to": "crate",
+   "from": {
+    "min": [
+     -0.5,
+     0,
+     -0.5
+    ],
+    "max": [
+     0.5,
+     1,
+     0.5
+    ]
+   }
+  },
+  "dungeon/box_large.glb": {
+   "to": "crate",
+   "from": {
+    "min": [
+     -0.75,
+     0,
+     -0.75
+    ],
+    "max": [
+     0.75,
+     1.5,
+     0.75
+    ]
+   }
+  },
+  "props/Crate_Metal.gltf": {
+   "to": "crate_banded",
+   "from": {
+    "min": [
+     -0.432,
+     0.003,
+     -0.433
+    ],
+    "max": [
+     0.432,
+     0.871,
+     0.433
+    ]
+   }
+  },
+  "dungeon/crates_stacked.glb": {
+   "to": "crate_stack",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -1.09,
+     0,
+     -1.157
+    ],
+    "max": [
+     0.999,
+     2.142,
+     1.092
+    ]
+   }
+  },
+  "props/Chest_Wood.gltf": {
+   "to": "chest",
+   "from": {
+    "min": [
+     -0.638,
+     -0.023,
+     -0.378
+    ],
+    "max": [
+     0.638,
+     0.693,
+     0.378
+    ]
+   }
+  },
+  "dungeon/trunk_large_A.glb": {
+   "to": "chest",
+   "from": {
+    "min": [
+     -0.75,
+     0,
+     -0.65
+    ],
+    "max": [
+     0.75,
+     1,
+     0.65
+    ]
+   }
+  },
+  "dungeon/trunk_medium_B.glb": {
+   "to": "chest",
+   "from": {
+    "min": [
+     -0.477,
+     0,
+     -0.438
+    ],
+    "max": [
+     0.477,
+     0.726,
+     0.438
+    ]
+   }
+  },
+  "dungeon/trunk_small_A.glb": {
+   "to": "chest",
+   "from": {
+    "min": [
+     -0.338,
+     0,
+     -0.292
+    ],
+    "max": [
+     0.338,
+     0.484,
+     0.292
+    ]
+   }
+  },
+  "props/Chest_Legendary.gltf": {
+   "to": "chest_rich",
+   "from": {
+    "min": [
+     -0.695,
+     -0.007,
+     -0.348
+    ],
+    "max": [
+     0.695,
+     0.83,
+     0.356
+    ]
+   }
+  },
+  "dungeon/chest_gold.glb": {
+   "to": "chest_rich",
+   "from": {
+    "min": [
+     -0.85,
+     0,
+     -0.7
+    ],
+    "max": [
+     0.85,
+     1.3,
+     0.746
+    ]
+   }
+  },
+  "props/FarmCrate_Empty.gltf": {
+   "to": "farm_crate",
+   "from": {
+    "min": [
+     -0.357,
+     -0.016,
+     -0.207
+    ],
+    "max": [
+     0.357,
+     0.228,
+     0.207
+    ]
+   }
+  },
+  "props/FarmCrate_Carrot.gltf": {
+   "to": "farm_crate_full",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.357,
+     -0.016,
+     -0.36
+    ],
+    "max": [
+     0.357,
+     0.395,
+     0.207
+    ]
+   }
+  },
+  "props/FarmCrate_Leek.gltf": {
+   "to": "farm_crate_full",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.357,
+     -0.016,
+     -0.312
+    ],
+    "max": [
+     0.357,
+     0.345,
+     0.207
+    ]
+   }
+  },
+  "props/FarmCrate_Radish.gltf": {
+   "to": "farm_crate_full",
+   "fit": "footprint",
+   "from": {
+    "min": [
+     -0.357,
+     -0.016,
+     -0.304
+    ],
+    "max": [
+     0.357,
+     0.363,
+     0.293
+    ]
+   }
+  }
+ }
+}

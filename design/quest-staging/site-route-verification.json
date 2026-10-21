@@ -1,0 +1,633 @@
+{
+  "sites": [
+    {
+      "zone": "caerdun",
+      "id": "court_archive",
+      "start": {
+        "x": 213,
+        "z": -95.11,
+        "y": 22.254067111866725
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "cd_volume_one",
+          "ok": true,
+          "pick": true,
+          "visited": 122,
+          "path_steps": 9
+        },
+        {
+          "id": "cd_volume_onefifty",
+          "ok": true,
+          "pick": true,
+          "visited": 244,
+          "path_steps": 16
+        },
+        {
+          "id": "cd_volume_threehundred",
+          "ok": true,
+          "pick": true,
+          "visited": 335,
+          "path_steps": 22
+        },
+        {
+          "id": "paymaster_vail",
+          "ok": true,
+          "pick": null,
+          "visited": 1,
+          "path_steps": 1
+        }
+      ]
+    },
+    {
+      "zone": "caerdun",
+      "id": "imperial_clock",
+      "start": {
+        "x": 224,
+        "z": -99.18042204869177,
+        "y": 22.587711619459544
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "cd_gate_clock",
+          "ok": true,
+          "pick": true,
+          "visited": 3120,
+          "path_steps": 167
+        }
+      ]
+    },
+    {
+      "zone": "caerdun",
+      "id": "watch_harbour",
+      "start": {
+        "x": -287.25364226730494,
+        "z": -24.836910928368393,
+        "y": 1.2966616740682226
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "cd_muster_harbour",
+          "ok": true,
+          "pick": true,
+          "visited": 226,
+          "path_steps": 9
+        }
+      ]
+    },
+    {
+      "zone": "caerdun",
+      "id": "watch_light",
+      "start": {
+        "x": -195.1639060120092,
+        "z": 126.66102439087886,
+        "y": 1.4497591256166764
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "cd_muster_light",
+          "ok": true,
+          "pick": true,
+          "visited": 18,
+          "path_steps": 2
+        }
+      ]
+    },
+    {
+      "zone": "caerdun",
+      "id": "watch_ramparts",
+      "start": {
+        "x": -88.26032129201478,
+        "z": -54.44219717887947,
+        "y": 20.215798274696592
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "cd_muster_ramparts",
+          "ok": true,
+          "pick": true,
+          "visited": 170,
+          "path_steps": 8
+        }
+      ]
+    },
+    {
+      "zone": "caerdun",
+      "id": "watch_crown",
+      "start": {
+        "x": 206.57607616501195,
+        "z": 3.0979001060185967,
+        "y": 20.322833135911996
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "cd_muster_crown",
+          "ok": true,
+          "pick": true,
+          "visited": 1122,
+          "path_steps": 82
+        }
+      ]
+    },
+    {
+      "zone": "heartwood",
+      "id": "grudge_hall",
+      "start": {
+        "x": -131.10999999999999,
+        "z": -40,
+        "y": 8.602761561942962
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "grudgekeeper_morrow_hw",
+          "ok": true,
+          "pick": null,
+          "visited": 57,
+          "path_steps": 6
+        }
+      ]
+    },
+    {
+      "zone": "moonmere",
+      "id": "returns_archive",
+      "start": {
+        "x": 24.756886534605687,
+        "z": 36.93065002712037,
+        "y": 29.413455495407685
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "mm_shelf_moon",
+          "ok": true,
+          "pick": true,
+          "visited": 1630,
+          "path_steps": 50
+        },
+        {
+          "id": "mm_shelf_twomoons",
+          "ok": true,
+          "pick": true,
+          "visited": 597,
+          "path_steps": 18
+        },
+        {
+          "id": "archivist_junn_mm",
+          "ok": true,
+          "pick": null,
+          "visited": 144,
+          "path_steps": 8
+        }
+      ]
+    },
+    {
+      "zone": "moonmere",
+      "id": "registry_office",
+      "start": {
+        "x": 29.202553439816768,
+        "z": 63.872624120223364,
+        "y": 29.178626896355517
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "mm_stamp_registry",
+          "ok": true,
+          "pick": true,
+          "visited": 71,
+          "path_steps": 5
+        }
+      ]
+    },
+    {
+      "zone": "moonmere",
+      "id": "bursars_office",
+      "start": {
+        "x": 3.053601568582003,
+        "z": 67.29149015417514,
+        "y": 32.33674530305132
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "mm_stamp_bursar",
+          "ok": true,
+          "pick": true,
+          "visited": 153,
+          "path_steps": 7
+        }
+      ]
+    },
+    {
+      "zone": "moonmere",
+      "id": "observatory",
+      "start": {
+        "x": -67.7929274444316,
+        "z": 81.41415668312364,
+        "y": 40.141548080386876
+      },
+      "geometryMatches": true,
+      "door": {
+        "closed": "box1070@-71.0,78.8 h0.62x0.16 y43.7..46.7",
+        "leafClosed": true,
+        "open": "clear",
+        "leafOpen": false
+      },
+      "routes": [
+        {
+          "id": "mm_annex_door",
+          "ok": true,
+          "pick": true,
+          "visited": 1778,
+          "path_steps": 62
+        },
+        {
+          "id": "provost_selk",
+          "ok": true,
+          "pick": null,
+          "visited": 148,
+          "path_steps": 7
+        }
+      ]
+    },
+    {
+      "zone": "moonmere",
+      "id": "mending_college",
+      "start": {
+        "x": 135.1790668652167,
+        "z": 36.801403804915374,
+        "y": 19.78188742093787
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "warden_liss",
+          "ok": true,
+          "pick": null,
+          "visited": 401,
+          "path_steps": 13
+        },
+        {
+          "id": "proctor_elm",
+          "ok": true,
+          "pick": null,
+          "visited": 174,
+          "path_steps": 8
+        }
+      ]
+    },
+    {
+      "zone": "northroad",
+      "id": "inn_table",
+      "start": {
+        "x": 0,
+        "z": 10.5,
+        "y": 1.1
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "duelist_sabel",
+          "ok": true,
+          "pick": null,
+          "visited": 962,
+          "path_steps": 21
+        },
+        {
+          "id": "grudgekeeper_morrow",
+          "ok": true,
+          "pick": null,
+          "visited": 832,
+          "path_steps": 19
+        },
+        {
+          "id": "archivist_junn",
+          "ok": true,
+          "pick": null,
+          "visited": 431,
+          "path_steps": 12
+        }
+      ]
+    },
+    {
+      "zone": "mausoleum",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": 37,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "writ_mausoleum",
+          "ok": true,
+          "pick": true,
+          "visited": 1850,
+          "path_steps": 22
+        }
+      ]
+    },
+    {
+      "zone": "overseerslodge",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": 53,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "writ_lodge",
+          "ok": true,
+          "pick": true,
+          "visited": 1269,
+          "path_steps": 22
+        }
+      ]
+    },
+    {
+      "zone": "sunkenballroom",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": 17,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "writ_ballroom",
+          "ok": true,
+          "pick": true,
+          "visited": 1935,
+          "path_steps": 23
+        }
+      ]
+    },
+    {
+      "zone": "belltower",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": -35,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "wax_cabinet",
+          "ok": true,
+          "pick": true,
+          "visited": 8478,
+          "path_steps": 227
+        },
+        {
+          "id": "striking_rolls",
+          "ok": true,
+          "pick": true,
+          "visited": 8588,
+          "path_steps": 229
+        }
+      ]
+    },
+    {
+      "zone": "glasshouse",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": 33,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "nursery_orders",
+          "ok": true,
+          "pick": true,
+          "visited": 1602,
+          "path_steps": 22
+        }
+      ]
+    },
+    {
+      "zone": "furnacehall",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": 37,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "furnace_ledger_stand",
+          "ok": true,
+          "pick": true,
+          "visited": 1602,
+          "path_steps": 22
+        }
+      ]
+    },
+    {
+      "zone": "greatsluice",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": 37,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "works_ledger_stand",
+          "ok": true,
+          "pick": true,
+          "visited": 1602,
+          "path_steps": 22
+        }
+      ]
+    },
+    {
+      "zone": "greatgranary",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": 37,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "provisioning_stand",
+          "ok": true,
+          "pick": true,
+          "visited": 1602,
+          "path_steps": 22
+        }
+      ]
+    },
+    {
+      "zone": "greatwatchtower",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": -19,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "herald_lectern",
+          "ok": true,
+          "pick": true,
+          "visited": 8902,
+          "path_steps": 182
+        }
+      ]
+    },
+    {
+      "zone": "beaconfort",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": -19,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "beacon_log_stand",
+          "ok": true,
+          "pick": true,
+          "visited": 8868,
+          "path_steps": 182
+        }
+      ]
+    },
+    {
+      "zone": "capital",
+      "id": "census_hall",
+      "start": {
+        "x": -75.11,
+        "z": -140,
+        "y": 7.847917355564252
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "census_rolls",
+          "ok": true,
+          "pick": true,
+          "visited": 181,
+          "path_steps": 11
+        },
+        {
+          "id": "sabel_census",
+          "ok": true,
+          "pick": null,
+          "visited": 70,
+          "path_steps": 6
+        }
+      ]
+    },
+    {
+      "zone": "capital",
+      "id": "capital_archive",
+      "start": {
+        "x": 183.10999999999999,
+        "z": 70,
+        "y": 8.057094176445569
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "archive_desk",
+          "ok": true,
+          "pick": true,
+          "visited": 52,
+          "path_steps": 5
+        }
+      ]
+    },
+    {
+      "zone": "capitalreturned",
+      "id": "capital_archive",
+      "start": {
+        "x": 183.10999999999999,
+        "z": 70,
+        "y": 8.057094176445569
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "citizen_2",
+          "ok": true,
+          "pick": null,
+          "visited": 36,
+          "path_steps": 4
+        }
+      ]
+    },
+    {
+      "zone": "keep",
+      "id": "raised_chamber",
+      "start": {
+        "x": 0,
+        "z": 1,
+        "y": 0
+      },
+      "geometryMatches": true,
+      "door": null,
+      "routes": [
+        {
+          "id": "empty_throne",
+          "ok": true,
+          "pick": true,
+          "visited": 3130,
+          "path_steps": 27
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "method": "Swept renderer paths and authoritative floor replay",
+  "date": "2026-09-07",
+  "server_replay": {
+    "routes": 38,
+    "failures": 0
+  }
+}

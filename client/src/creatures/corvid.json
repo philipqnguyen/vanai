@@ -1,0 +1,51 @@
+{
+ "file": "creatures/corvid.glb",
+ "plan": "bird",
+ "height": 0.839,
+ "length": 1.014,
+ "width": 0.339,
+ "top": 0.839,
+ "minY": -0.0021,
+ "groundY": -0.0021,
+ "forward": -0.082,
+ "tris": [
+  3145,
+  932
+ ],
+ "budget": 3200,
+ "bones": 23,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.4,
+  "Run": 0.36,
+  "Attack_A": 0.95,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.3,
+  "Fly": 0.36
+ },
+ "speeds": {
+  "Walk": 1.4,
+  "Run": 4.6
+ },
+ "bytes": 369520,
+ "held": [
+  [
+   3238,
+   3394
+  ]
+ ],
+ "groundLift": {
+  "Walk": 0.02,
+  "Death": 0.112
+ },
+ "notes": "the corvid look: a hunched jackdaw, pale-eyed, grey-naped, its crop stuffed with paper",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/bird.py",
+ "fast": false
+}

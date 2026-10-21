@@ -1,0 +1,51 @@
+{
+ "file": "creatures/gnarlfang.glb",
+ "plan": "canine",
+ "height": 3.484,
+ "length": 6.27,
+ "width": 1.562,
+ "top": 3.484,
+ "minY": -0.0331,
+ "groundY": -0.0331,
+ "forward": -0.158,
+ "tris": [
+  11640,
+  3463
+ ],
+ "budget": 12000,
+ "bones": 26,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.1,
+  "Run": 0.816,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4,
+  "Special": 2.2
+ },
+ "speeds": {
+  "Walk": 4.437,
+  "Run": 9.939
+ },
+ "bytes": 958880,
+ "held": [],
+ "groundLift": {
+  "Idle": 0.033,
+  "Walk": 0.047,
+  "Attack_A": 0.033,
+  "Attack_B": 0.033,
+  "Hit": 0.033,
+  "Death": 0.81,
+  "Special": 0.033
+ },
+ "notes": "Gnarlfang NM: hunched, maned, spurred, an overgrown fang, a torn ear, a narrow yellow eye under a heavy brow and one scarred shut, a garrison chain",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/gnarlfang.py",
+ "fast": false
+}

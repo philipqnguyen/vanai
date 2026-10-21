@@ -1,0 +1,587 @@
+{
+  "key": "glasshouse",
+  "format": 1,
+  "notes": "Revamp 2026-10-11 (tmp/dungeons/glasshouse/PLAN.md): the cart landing, the Cart Stair down 3 m, then the brick-vaulted cellars at y -3 under the glasshouse's floor lights. Written by tmp/dungeons/glasshouse/make_plan.py; edit there, then `write`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "The Cellar Stair",
+        "x": -2,
+        "z": -11,
+        "w": 5,
+        "d": 3,
+        "kind": "entry",
+        "y": 0,
+        "ceiling": 6
+      },
+      {
+        "id": "potting",
+        "name": "Potting Hall",
+        "x": -3,
+        "z": -5,
+        "w": 7,
+        "d": 8,
+        "kind": "potting",
+        "y": -3,
+        "ceiling": 6
+      },
+      {
+        "id": "seed",
+        "name": "Seed Cabinets",
+        "x": 7,
+        "z": -4,
+        "w": 5,
+        "d": 5,
+        "kind": "seed",
+        "y": -3,
+        "ceiling": 5
+      },
+      {
+        "id": "forcing",
+        "name": "The Forcing Range",
+        "x": -7,
+        "z": 6,
+        "w": 15,
+        "d": 5,
+        "kind": "forcing",
+        "y": -3,
+        "ceiling": 5
+      },
+      {
+        "id": "graft",
+        "name": "Grafting Room",
+        "x": -14,
+        "z": 5,
+        "w": 5,
+        "d": 7,
+        "kind": "graft",
+        "y": -3,
+        "ceiling": 5
+      },
+      {
+        "id": "prop",
+        "name": "The Propagation House",
+        "x": 2,
+        "z": 13,
+        "w": 8,
+        "d": 5,
+        "kind": "propagation",
+        "y": -3,
+        "ceiling": 5
+      },
+      {
+        "id": "nursery",
+        "name": "Sapling Nursery",
+        "x": -10,
+        "z": 13,
+        "w": 9,
+        "d": 9,
+        "kind": "nursery",
+        "y": -3,
+        "ceiling": 9
+      },
+      {
+        "id": "root",
+        "name": "Rootbound Stock",
+        "x": -17,
+        "z": 14,
+        "w": 6,
+        "d": 6,
+        "kind": "roots",
+        "y": -3,
+        "ceiling": 5
+      },
+      {
+        "id": "ledger",
+        "name": "Seed Ledger Room",
+        "x": -10,
+        "z": 24,
+        "w": 9,
+        "d": 3,
+        "kind": "ledger",
+        "y": -3,
+        "ceiling": 5
+      },
+      {
+        "id": "office",
+        "name": "Nurseryman’s Office",
+        "x": -10,
+        "z": 29,
+        "w": 9,
+        "d": 9,
+        "kind": "office",
+        "y": -3,
+        "ceiling": 10
+      }
+    ],
+    "corridors": [
+      {
+        "points": [
+          [
+            -1,
+            -9
+          ],
+          [
+            -1,
+            -5
+          ]
+        ],
+        "name": "The Cart Stair"
+      },
+      {
+        "points": [
+          [
+            0,
+            -9
+          ],
+          [
+            0,
+            -5
+          ]
+        ],
+        "name": "The Cart Stair"
+      },
+      {
+        "points": [
+          [
+            1,
+            -9
+          ],
+          [
+            1,
+            -5
+          ]
+        ],
+        "name": "The Cart Stair"
+      },
+      {
+        "points": [
+          [
+            3,
+            -2
+          ],
+          [
+            7,
+            -2
+          ]
+        ],
+        "name": "Cabinet passage"
+      },
+      {
+        "points": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "name": "The Hot Walk"
+      },
+      {
+        "points": [
+          [
+            -7,
+            8
+          ],
+          [
+            -10,
+            8
+          ]
+        ],
+        "name": "Grafting passage"
+      },
+      {
+        "points": [
+          [
+            5,
+            10
+          ],
+          [
+            5,
+            13
+          ]
+        ],
+        "name": "Propagation passage"
+      },
+      {
+        "points": [
+          [
+            2,
+            15
+          ],
+          [
+            -2,
+            15
+          ]
+        ],
+        "name": "Nursery passage"
+      },
+      {
+        "points": [
+          [
+            -10,
+            17
+          ],
+          [
+            -12,
+            17
+          ]
+        ],
+        "name": "Rootbound passage"
+      },
+      {
+        "points": [
+          [
+            -6,
+            21
+          ],
+          [
+            -6,
+            24
+          ]
+        ],
+        "name": "Ledger passage"
+      },
+      {
+        "points": [
+          [
+            -7,
+            26
+          ],
+          [
+            -7,
+            29
+          ]
+        ],
+        "name": "The Office Arches"
+      },
+      {
+        "points": [
+          [
+            -6,
+            26
+          ],
+          [
+            -6,
+            29
+          ]
+        ],
+        "name": "The Office Arches"
+      },
+      {
+        "points": [
+          [
+            -5,
+            26
+          ],
+          [
+            -5,
+            29
+          ]
+        ],
+        "name": "The Office Arches"
+      }
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    },
+    "obstacles": [
+      {
+        "x": -6,
+        "z": 8,
+        "w": 5,
+        "d": 1
+      },
+      {
+        "x": 2,
+        "z": 8,
+        "w": 5,
+        "d": 1
+      },
+      {
+        "x": -16,
+        "z": 18,
+        "w": 1,
+        "d": 1
+      }
+    ]
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "The cellar descent and the Nurseryman's office platform",
+      "yaw": 0,
+      "floors": [
+        -3,
+        -1.4,
+        0
+      ],
+      "decks": [
+        {
+          "cx": -24.0,
+          "cz": 146.0,
+          "hx": 18.0,
+          "hz": 4.0,
+          "sin": 0,
+          "cos": 1,
+          "y": -1.4,
+          "holes": []
+        },
+        {
+          "derive": "cells"
+        }
+      ],
+      "ramps": [
+        {
+          "x0": 0,
+          "z0": -34,
+          "y0": 0,
+          "x1": 0,
+          "z1": -22,
+          "y1": -3,
+          "half": 5.1
+        },
+        {
+          "x0": -24,
+          "z0": 134.5,
+          "y0": -3,
+          "x1": -24,
+          "z1": 142,
+          "y1": -1.4,
+          "half": 3.4
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout",
+        "raise": [
+          {
+            "x": -10,
+            "z": 36,
+            "w": 9,
+            "d": 2,
+            "y": -1.4
+          }
+        ]
+      }
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -37.5
+  },
+  "portals": [
+    {
+      "id": "gh_stair",
+      "name": "The Cellar Stair",
+      "x": 0,
+      "z": -42.7,
+      "to": "kingsgardens",
+      "tx": 241,
+      "tz": -163.3,
+      "fx": "rune",
+      "th": 1.5708,
+      "rune": {
+        "radius": 2.2,
+        "column": 4.4,
+        "floor": 0.03
+      }
+    },
+    {
+      "id": "gh_out",
+      "name": "The Nursery's Way Out",
+      "x": -38,
+      "z": 146,
+      "y": -1.4,
+      "to": "kingsgardens",
+      "tx": 241,
+      "tz": -163.3,
+      "site": "raised_chamber",
+      "floor": 1,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.0,
+        "column": 3.4,
+        "floor": 0.02
+      },
+      "th": 1.5708
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_gh_potting",
+      "name": "The Potting Hall",
+      "x": 0,
+      "z": -14,
+      "xp": 90
+    },
+    {
+      "id": "lm_gh_graft",
+      "name": "The Grafting Room",
+      "x": -48,
+      "z": 32,
+      "xp": 90
+    },
+    {
+      "id": "lm_gh_office",
+      "name": "The Nurseryman's Office",
+      "x": -24,
+      "z": 124,
+      "xp": 150
+    },
+    {
+      "id": "lm_gh_nursery",
+      "name": "The Sapling Nursery",
+      "x": -20,
+      "z": 73,
+      "xp": 90
+    },
+    {
+      "id": "lm_gh_forcing",
+      "name": "The Forcing Range",
+      "x": 2,
+      "z": 34,
+      "xp": 90
+    }
+  ],
+  "interactables": [
+    {
+      "id": "nursery_orders",
+      "name": "The Nursery Work Orders",
+      "x": -24,
+      "z": 147,
+      "idle_msg": "Work orders on the nurseryman's desk, stamped and countersigned: cuttings and potted stock to be grown here and carted to the capital. The heading on every sheet reads 'Stock for the capital's parks, phase three, for the Restoration, by order of the Regent.'",
+      "active_msg": "You take the top sheet. 'Phase three, for the Restoration, by order of the Regent.' Somebody inside the capital is still signing orders, and the Gardens have been growing a city's parks for three hundred years. Every court will want to read this.",
+      "prop": "zone_desk",
+      "y": -1.4,
+      "site": "raised_chamber",
+      "floor": 1
+    }
+  ],
+  "camps": [
+    {
+      "monster": "graft_sentinel",
+      "min_lvl": 26,
+      "max_lvl": 27,
+      "count": 3,
+      "x": 0,
+      "z": -6,
+      "radius": 3.2,
+      "respawn": 40
+    },
+    {
+      "monster": "rootbound_shade",
+      "min_lvl": 27,
+      "max_lvl": 27,
+      "count": 3,
+      "x": 31.5,
+      "z": -12.5,
+      "radius": 2.4,
+      "respawn": 40
+    },
+    {
+      "monster": "root_slime",
+      "min_lvl": 26,
+      "max_lvl": 27,
+      "count": 2,
+      "x": -18,
+      "z": 26,
+      "radius": 2.4,
+      "respawn": 40
+    },
+    {
+      "monster": "root_slime",
+      "min_lvl": 26,
+      "max_lvl": 27,
+      "count": 2,
+      "x": 18,
+      "z": 38,
+      "radius": 2.4,
+      "respawn": 40
+    },
+    {
+      "monster": "root_slime",
+      "min_lvl": 27,
+      "max_lvl": 28,
+      "count": 2,
+      "x": -53,
+      "z": 23,
+      "radius": 2.4,
+      "respawn": 45
+    },
+    {
+      "monster": "root_slime",
+      "min_lvl": 27,
+      "max_lvl": 28,
+      "count": 2,
+      "x": -43,
+      "z": 41,
+      "radius": 2.4,
+      "respawn": 45
+    },
+    {
+      "monster": "seed_wasp",
+      "min_lvl": 27,
+      "max_lvl": 28,
+      "count": 3,
+      "x": 14,
+      "z": 54.5,
+      "radius": 2.4,
+      "respawn": 40
+    },
+    {
+      "monster": "seed_wasp",
+      "min_lvl": 27,
+      "max_lvl": 28,
+      "count": 2,
+      "x": 30,
+      "z": 65.5,
+      "radius": 2.4,
+      "respawn": 40
+    },
+    {
+      "monster": "graft_sentinel",
+      "min_lvl": 27,
+      "max_lvl": 28,
+      "count": 3,
+      "x": -24,
+      "z": 79,
+      "radius": 3.0,
+      "respawn": 45
+    },
+    {
+      "monster": "root_horror",
+      "min_lvl": 27,
+      "max_lvl": 28,
+      "count": 3,
+      "x": -54,
+      "z": 61,
+      "radius": 3.0,
+      "respawn": 40
+    },
+    {
+      "monster": "garden_keeper",
+      "min_lvl": 27,
+      "max_lvl": 28,
+      "count": 2,
+      "x": -24,
+      "z": 100,
+      "radius": 2.6,
+      "respawn": 40
+    },
+    {
+      "monster": "the_nurseryman",
+      "min_lvl": 28,
+      "max_lvl": 28,
+      "count": 1,
+      "x": -24,
+      "z": 126,
+      "radius": 4,
+      "respawn": 600
+    }
+  ]
+}

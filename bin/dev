@@ -1,0 +1,160 @@
+#!/usr/bin/env bash
+# Boot the whole game from the repository root: Rails on 3000, Vite on 5173.
+#
+# The two halves stay separate processes -- Rails is the authoritative world and
+# must run as exactly one web process (see DEPLOY.md), Vite is just a dev file
+# server -- so this supervises them rather than merging them. Output from each is
+# prefixed and interleaved; Ctrl-C stops both; if either dies the other is torn
+# down too, so you never end up talking to half a game.
+set -uo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+if [ "${1:-}" = "-h" ] || [ "${1:-}" = "--help" ]; then
+  cat <<'USAGE'
+Usage: bin/dev [--skip-setup]
+
+Boots both halves of Vanai and streams their logs:
+
+  server   Rails      http://localhost:3000   the authoritative world
+  client   Vite       http://localhost:5173   open this one
+
+Missing gems, npm packages, the character runtime (bin/fetch-runtime, about
+5 GB the first time) and the database are installed/prepared first; pass
+--skip-setup to go straight to booting. Ctrl-C stops both.
+USAGE
+  exit 0
+fi
+
+SKIP_SETUP=""
+case "${1:-}" in
+  --skip-setup) SKIP_SETUP=1 ;;
+  "") ;;
+  *) echo "bin/dev: unknown argument '$1' (try --help)" >&2; exit 64 ;;
+esac
+
+if [ -t 1 ]; then
+  C_SERVER=$'\033[36m'; C_CLIENT=$'\033[35m'; C_DEV=$'\033[2m'; C_ERR=$'\033[31m'; C_OFF=$'\033[0m'
+else
+  C_SERVER=""; C_CLIENT=""; C_DEV=""; C_ERR=""; C_OFF=""
+fi
+
+say()  { printf '%s%-6s |%s %s\n' "$C_DEV" "dev" "$C_OFF" "$*"; }
+fail() { printf '%s%-6s |%s %s\n' "$C_ERR" "dev" "$C_OFF" "$*" >&2; }
+
+# --- preflight ---------------------------------------------------------------
+
+# A second Rails would boot a second world with its own monsters and its own
+# idea of where everyone is standing, so refuse rather than race for the port.
+port_busy() { (exec 3<>"/dev/tcp/127.0.0.1/$1") 2>/dev/null && exec 3<&- 3>&-; }
+
+for port_check in "3000 Rails" "5173 Vite"; do
+  set -- $port_check
+  if port_busy "$1"; then
+    fail "port $1 is already in use -- stop the other $2 first."
+    exit 1
+  fi
+done
+
+if [ -z "$SKIP_SETUP" ]; then
+  if ! (cd server && bundle check >/dev/null 2>&1); then
+    say "installing gems..."
+    (cd server && bundle install) || { fail "bundle install failed"; exit 1; }
+  fi
+
+  if [ ! -d client/node_modules ]; then
+    say "installing npm packages..."
+    (cd client && npm install) || { fail "npm install failed"; exit 1; }
+  fi
+
+  # The character runtime: fetched from the pinned GitHub Release when the folder
+  # is missing or on another release; a maker's prepared folder is left alone.
+  say "checking the character runtime..."
+  node scripts/fetch-runtime.mjs --if-needed || { fail "the character runtime could not be fetched (see above; bin/fetch-runtime retries)"; exit 1; }
+
+  say "preparing the database..."
+  (cd server && bin/rails db:prepare) || { fail "db:prepare failed"; exit 1; }
+fi
+
+VITE="client/node_modules/.bin/vite"
+if [ ! -x "$VITE" ]; then
+  fail "$VITE is missing -- run 'cd client && npm install' (or drop --skip-setup)."
+  exit 1
+fi
+
+# --- supervise ---------------------------------------------------------------
+
+# Job control puts each child in its own process group, so a signal reaches the
+# whole tree (bash -> rails -> puma workers) instead of just the shell we forked.
+set -m
+
+pids=()
+
+# stdin comes from /dev/null: these run in their own process groups, so a child
+# that grabbed the terminal (Vite's `h`/`r`/`q` shortcuts) would take a SIGTTIN
+# and stop. The cost is that `binding.b` has nowhere to prompt -- for a debugger
+# session, run `cd server && bin/rails server` on its own.
+start() { # start <name> <color> <dir> <command...>
+  local name=$1 color=$2 dir=$3; shift 3
+  (
+    # Job control was only needed to give this subshell its own process group;
+    # inside, it just makes bash narrate the child's death. Turn it back off.
+    set +m
+    cd "$dir" || exit 1
+    # ...and bash still announces a signalled child as a bare "Terminated", with
+    # no prefix and no news (the monitor below reports the exit status anyway).
+    # Only this shell's own diagnostics are dropped; the command's own stderr is
+    # folded into the prefixed stream on the next line.
+    exec 2>/dev/null
+    "$@" </dev/null 2>&1 | while IFS= read -r line; do
+      printf '%s%-6s |%s %s\n' "$color" "$name" "$C_OFF" "$line"
+    done
+  ) &
+  pids+=("$!")
+}
+
+shutting_down=""
+shutdown() {
+  [ -n "$shutting_down" ] && return
+  shutting_down=1
+  trap - INT TERM
+  set +m  # stop bash narrating each job's death over the top of the logs
+  say "shutting down..."
+  for pid in "${pids[@]}"; do
+    kill -TERM -- "-$pid" 2>/dev/null
+  done
+  # Give them a beat to flush, then insist.
+  for _ in 1 2 3 4 5 6 7 8 9 10; do
+    local alive=""
+    for pid in "${pids[@]}"; do kill -0 "$pid" 2>/dev/null && alive=1; done
+    [ -z "$alive" ] && break
+    sleep 0.5
+  done
+  for pid in "${pids[@]}"; do
+    kill -KILL -- "-$pid" 2>/dev/null
+  done
+  wait 2>/dev/null
+}
+on_signal() { printf '\n'; shutdown; exit 130; }
+trap on_signal INT TERM
+
+start server "$C_SERVER" server bin/rails server
+start client "$C_CLIENT" client node_modules/.bin/vite
+
+say "server http://localhost:3000  ·  client http://localhost:5173  ·  Ctrl-C stops both"
+
+# `wait -n` would be tidier but needs bash 4.3, and macOS still ships 3.2.
+status=0
+while :; do
+  for pid in "${pids[@]}"; do
+    if ! kill -0 "$pid" 2>/dev/null; then
+      wait "$pid"; status=$?
+      [ "$status" -eq 0 ] && status=1
+      fail "a process exited (status $status) -- stopping the other half."
+      shutdown
+      exit "$status"
+    fi
+  done
+  sleep 0.5
+done

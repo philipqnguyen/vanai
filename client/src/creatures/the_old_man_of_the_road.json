@@ -1,0 +1,50 @@
+{
+ "file": "creatures/the_old_man_of_the_road.glb",
+ "plan": "giant",
+ "height": 5.276,
+ "length": 2.455,
+ "width": 3.073,
+ "top": 5.276,
+ "minY": 0.003,
+ "groundY": 0.003,
+ "forward": 0.315,
+ "tris": [
+  9598,
+  2878
+ ],
+ "budget": 12000,
+ "bones": 21,
+ "atlas": 1024,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 2.405,
+  "Run": 1.492,
+  "Attack_A": 1.25,
+  "Attack_B": 1.15,
+  "Hit": 0.5,
+  "Death": 1.7,
+  "Special": 2.1
+ },
+ "speeds": {
+  "Walk": 2.156,
+  "Run": 4.975
+ },
+ "bytes": 839068,
+ "held": [
+  [
+   7527,
+   8686
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.746
+ },
+ "notes": "The Old Man of the Road: the giant under snow, an icicle beard, a coach wheel for a shield",
+ "role": "unique",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/uniques/the_old_man_of_the_road.py",
+ "fast": false
+}

@@ -1,0 +1,46 @@
+{
+ "file": "creatures/rat.glb",
+ "plan": "small_mammal",
+ "height": 1.081,
+ "length": 3.717,
+ "width": 0.86,
+ "top": 1.081,
+ "minY": -0.0032,
+ "groundY": -0.0032,
+ "forward": -0.652,
+ "tris": [
+  2840,
+  836
+ ],
+ "budget": 3200,
+ "bones": 24,
+ "atlas": 512,
+ "emissive": false,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.575,
+  "Run": 0.415,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.2
+ },
+ "speeds": {
+  "Walk": 1.988,
+  "Run": 7.226
+ },
+ "bytes": 370544,
+ "held": [],
+ "groundLift": {
+  "Attack_A": 0.028,
+  "Attack_B": 0.03,
+  "Death": 0.233
+ },
+ "notes": "the Stack Gnawer and the Granary Rat: cheeks crammed, iron-stained incisors, sawdust in the coat",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/small_mammal.py",
+ "fast": false
+}

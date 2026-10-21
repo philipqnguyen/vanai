@@ -1,0 +1,78 @@
+{
+ "file": "creatures/wolf.glb",
+ "plan": "canine",
+ "height": 1.171,
+ "length": 1.936,
+ "width": 0.476,
+ "top": 1.171,
+ "minY": -0.0053,
+ "groundY": -0.0053,
+ "forward": -0.074,
+ "tris": [
+  4080,
+  1205
+ ],
+ "budget": 4200,
+ "bones": 26,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.62,
+  "Run": 0.46,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 2.5,
+  "Run": 5.6
+ },
+ "bytes": 432504,
+ "held": [],
+ "groundLift": {
+  "Death": 0.247
+ },
+ "notes": "the wolf look: the adult canine",
+ "role": "common",
+ "variants": {
+  "hush_stalker": {
+   "atlas": "creatures/wolf@hush_stalker.ktx2",
+   "bytes": 109981,
+   "emit": "creatures/wolf@hush_stalker_emit.ktx2",
+   "mr": "creatures/wolf@hush_stalker_mr.ktx2"
+  },
+  "cinder_wolf": {
+   "atlas": "creatures/wolf@cinder_wolf.ktx2",
+   "bytes": 82530,
+   "emit": "creatures/wolf@cinder_wolf_emit.ktx2"
+  },
+  "winter_wolf": {
+   "atlas": "creatures/wolf@winter_wolf.ktx2",
+   "bytes": 93345
+  },
+  "forest_wolf": {
+   "atlas": "creatures/wolf@forest_wolf.ktx2",
+   "bytes": 83440
+  },
+  "valley_wolf": {
+   "atlas": "creatures/wolf@valley_wolf.ktx2",
+   "bytes": 92984
+  },
+  "reed_wolf": {
+   "atlas": "creatures/wolf@reed_wolf.ktx2",
+   "bytes": 93410
+  },
+  "ash_beast": {
+   "atlas": "creatures/wolf@ash_beast.ktx2",
+   "bytes": 119191,
+   "emit": "creatures/wolf@ash_beast_emit.ktx2",
+   "mr": "creatures/wolf@ash_beast_mr.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/canine.py",
+ "fast": false
+}

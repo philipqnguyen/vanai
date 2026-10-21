@@ -1,0 +1,594 @@
+{
+  "key": "greatsluice",
+  "format": 1,
+  "notes": "Revamp 2026-10-11 (tmp/dungeons/greatsluice/PLAN.md): the Wheel Hall is one vaulted hall, a dry maintenance circuit (two galleries and two bridges) round the recessed wheel channel, which is obstacle cells inside the two gallery rooms. Written by tmp/dungeons/greatsluice/make_plan.py; edit there, then `write`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "The Sluice Door",
+        "x": -2,
+        "z": -12,
+        "w": 5,
+        "d": 3,
+        "kind": "entry",
+        "y": 0,
+        "ceiling": 8
+      },
+      {
+        "id": "west",
+        "name": "Wheel-Pit West Gallery",
+        "x": -8,
+        "z": -8,
+        "w": 12,
+        "d": 17,
+        "kind": "gallery",
+        "y": 0,
+        "ceiling": 24
+      },
+      {
+        "id": "east",
+        "name": "East Service Gallery",
+        "x": 4,
+        "z": -8,
+        "w": 11,
+        "d": 17,
+        "kind": "gallery",
+        "y": 0,
+        "ceiling": 24
+      },
+      {
+        "id": "chain",
+        "name": "Chain Store",
+        "x": -17,
+        "z": -4,
+        "w": 6,
+        "d": 5,
+        "kind": "chain",
+        "y": 0,
+        "ceiling": 9
+      },
+      {
+        "id": "tar",
+        "name": "Tar Store",
+        "x": 17,
+        "z": -4,
+        "w": 6,
+        "d": 5,
+        "kind": "tar",
+        "y": 0,
+        "ceiling": 9
+      },
+      {
+        "id": "cellar",
+        "name": "The West Sump",
+        "x": -16,
+        "z": 5,
+        "w": 6,
+        "d": 6,
+        "kind": "cellar",
+        "y": -0.8,
+        "ceiling": 7.8
+      },
+      {
+        "id": "count",
+        "name": "Counting Room",
+        "x": 17,
+        "z": 5,
+        "w": 6,
+        "d": 6,
+        "kind": "count",
+        "y": 0,
+        "ceiling": 8
+      },
+      {
+        "id": "pumps",
+        "name": "Pump Hall",
+        "x": -5,
+        "z": 11,
+        "w": 11,
+        "d": 7,
+        "kind": "pump",
+        "y": 0,
+        "ceiling": 21
+      },
+      {
+        "id": "master",
+        "name": "Sluice Master’s Chamber",
+        "x": -4,
+        "z": 21,
+        "w": 9,
+        "d": 7,
+        "kind": "master",
+        "y": 0,
+        "ceiling": 17
+      }
+    ],
+    "corridors": [
+      {
+        "points": [
+          [
+            0,
+            -10
+          ],
+          [
+            0,
+            -8
+          ]
+        ],
+        "name": "The Intake Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -8,
+            -2
+          ],
+          [
+            -12,
+            -2
+          ]
+        ],
+        "name": "The Chain Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            14,
+            -2
+          ],
+          [
+            17,
+            -2
+          ]
+        ],
+        "name": "The Tar Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -14,
+            0
+          ],
+          [
+            -14,
+            5
+          ]
+        ],
+        "name": "The Sump Steps",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            20,
+            0
+          ],
+          [
+            20,
+            5
+          ]
+        ],
+        "name": "The Tally Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            -11,
+            8
+          ],
+          [
+            -8,
+            8
+          ]
+        ],
+        "name": "The Sump Door",
+        "ceiling": 5,
+        "y": 0
+      },
+      {
+        "points": [
+          [
+            14,
+            8
+          ],
+          [
+            17,
+            8
+          ]
+        ],
+        "name": "The Counting Door",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            11
+          ]
+        ],
+        "name": "The Pump Passage",
+        "ceiling": 5
+      },
+      {
+        "points": [
+          [
+            0,
+            17
+          ],
+          [
+            0,
+            21
+          ]
+        ],
+        "name": "The Master's Door",
+        "ceiling": 5
+      }
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    },
+    "obstacles": [
+      {
+        "x": -1,
+        "z": -7,
+        "w": 5,
+        "d": 15
+      },
+      {
+        "x": 4,
+        "z": -7,
+        "w": 4,
+        "d": 15
+      },
+      {
+        "x": -4,
+        "z": 13,
+        "w": 2,
+        "d": 3
+      },
+      {
+        "x": 3,
+        "z": 13,
+        "w": 2,
+        "d": 3
+      }
+    ]
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "Floor levels, with the works ledger landing",
+      "yaw": 0,
+      "floors": [
+        0,
+        2
+      ],
+      "decks": [
+        {
+          "cx": 0.0,
+          "cz": 106.0,
+          "hx": 18.0,
+          "hz": 4.0,
+          "sin": 0,
+          "cos": 1,
+          "y": 2,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": 0,
+          "z0": 96,
+          "y0": 0,
+          "x1": 0,
+          "z1": 102,
+          "y1": 2,
+          "half": 3
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout",
+        "raise": [
+          {
+            "x": -4,
+            "z": 26,
+            "w": 9,
+            "d": 2,
+            "y": 2
+          }
+        ]
+      }
+    },
+    "drowned_cellar": {
+      "name": "Recessed drowned cellar",
+      "cx": -54,
+      "cz": 30,
+      "span": 44,
+      "len": 44,
+      "yaw": 0,
+      "floors": [
+        -0.8,
+        0
+      ],
+      "ground_cells": {
+        "derive": "rect",
+        "rect": [
+          -19,
+          1,
+          12,
+          14
+        ],
+        "y": 0
+      },
+      "decks": [
+        {
+          "cx": -54,
+          "cz": 30,
+          "hx": 12,
+          "hz": 12,
+          "sin": 0,
+          "cos": 1,
+          "y": -0.8,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": -56,
+          "z0": 18,
+          "y0": 0,
+          "x1": -56,
+          "z1": 20,
+          "y1": -0.8,
+          "half": 1.7,
+          "ux": 0.0,
+          "uz": 1.0,
+          "len": 2.0
+        },
+        {
+          "x0": -42,
+          "z0": 32,
+          "y0": 0,
+          "x1": -44,
+          "z1": 32,
+          "y1": -0.8,
+          "half": 1.7,
+          "ux": -1.0,
+          "uz": 0.0,
+          "len": 2.0
+        }
+      ]
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -41.5
+  },
+  "portals": [
+    {
+      "id": "gs_door",
+      "name": "The Sluice Door",
+      "x": 0,
+      "z": -46.7,
+      "to": "canalworks",
+      "tx": -11,
+      "tz": 25,
+      "fx": "rune",
+      "th": -1.5708,
+      "rune": {
+        "radius": 2.2,
+        "column": 6,
+        "floor": 0.04
+      }
+    },
+    {
+      "id": "gs_out",
+      "name": "The Sluice Master's Way Out",
+      "x": -10,
+      "z": 99,
+      "to": "canalworks",
+      "tx": -11,
+      "tz": 25,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.0,
+        "column": 6,
+        "floor": 0.04
+      },
+      "th": -1.5708
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_gs_wheel",
+      "name": "The Wheel Pit",
+      "x": 12,
+      "z": -32,
+      "xp": 90
+    },
+    {
+      "id": "lm_gs_pumps",
+      "name": "The Pump Hall",
+      "x": 0,
+      "z": 46,
+      "xp": 90
+    },
+    {
+      "id": "lm_gs_master",
+      "name": "The Sluice Master's Chamber",
+      "x": 0,
+      "z": 86,
+      "xp": 150
+    },
+    {
+      "id": "lm_gs_sump",
+      "name": "The West Sump",
+      "x": -52,
+      "z": 32,
+      "xp": 90
+    },
+    {
+      "id": "lm_gs_counting",
+      "name": "The Counting Room",
+      "x": 80,
+      "z": 32,
+      "xp": 90
+    }
+  ],
+  "interactables": [
+    {
+      "id": "works_ledger_stand",
+      "name": "The Works Ledger",
+      "x": 4,
+      "z": 106,
+      "idle_msg": "The Works Ledger, open on its stand: a page for every lock between this fen and the capital, a repair order against each one, every order dated to this season, and every one marked the same way: 'navigable by the Restoration'.",
+      "active_msg": "You read the season's pages through to the last. Every lock on the way to the capital is to be mended and running by one date. The house is not just being cleaned; it is being made ready to run.",
+      "prop": "ledger_stand",
+      "y": 2,
+      "site": "raised_chamber",
+      "floor": 1
+    }
+  ],
+  "camps": [
+    {
+      "monster": "drowned_bargeman",
+      "min_lvl": 30,
+      "max_lvl": 31,
+      "count": 2,
+      "x": 44,
+      "z": -20,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "pump_sentinel",
+      "min_lvl": 31,
+      "max_lvl": 32,
+      "count": 3,
+      "x": 44,
+      "z": 12,
+      "radius": 6,
+      "respawn": 40
+    },
+    {
+      "monster": "thirst_root",
+      "min_lvl": 30,
+      "max_lvl": 31,
+      "count": 3,
+      "x": 78,
+      "z": -8,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "drowned_warden",
+      "min_lvl": 31,
+      "max_lvl": 31,
+      "count": 2,
+      "x": 78,
+      "z": 30,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "deep_chorister",
+      "min_lvl": 30,
+      "max_lvl": 31,
+      "count": 3,
+      "x": -20,
+      "z": 14,
+      "radius": 2,
+      "respawn": 40
+    },
+    {
+      "monster": "drowned_bargeman",
+      "min_lvl": 30,
+      "max_lvl": 31,
+      "count": 2,
+      "x": -58,
+      "z": -8,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "sluice_eel",
+      "min_lvl": 30,
+      "max_lvl": 31,
+      "count": 2,
+      "x": -60,
+      "z": 24,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "sluice_eel",
+      "min_lvl": 30,
+      "max_lvl": 31,
+      "count": 2,
+      "x": -46,
+      "z": 24,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "the_thirst",
+      "min_lvl": 31,
+      "max_lvl": 31,
+      "count": 1,
+      "x": -54,
+      "z": 35,
+      "radius": 4,
+      "respawn": 600
+    },
+    {
+      "monster": "drowned_bargeman",
+      "min_lvl": 31,
+      "max_lvl": 32,
+      "count": 2,
+      "x": -4,
+      "z": 47,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "drowned_bargeman",
+      "min_lvl": 31,
+      "max_lvl": 32,
+      "count": 2,
+      "x": 4,
+      "z": 58,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "pump_sentinel",
+      "min_lvl": 31,
+      "max_lvl": 32,
+      "count": 3,
+      "x": 0,
+      "z": 66,
+      "radius": 3,
+      "respawn": 45
+    },
+    {
+      "monster": "the_sluice_master",
+      "min_lvl": 32,
+      "max_lvl": 32,
+      "count": 1,
+      "x": 0,
+      "z": 92,
+      "radius": 3,
+      "respawn": 900
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "file": "creatures/beetle.glb",
+ "plan": "insect",
+ "height": 0.919,
+ "length": 1.52,
+ "width": 1.536,
+ "top": 0.919,
+ "minY": -0.0011,
+ "groundY": -0.0011,
+ "forward": 0.042,
+ "tris": [
+  4146,
+  1242
+ ],
+ "budget": 4200,
+ "bones": 28,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.8,
+  "Run": 0.42,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 1.1,
+  "Run": 2.6
+ },
+ "bytes": 435796,
+ "held": [],
+ "groundLift": {
+  "Death": 0.12
+ },
+ "notes": "the beetle look: the sap beetle, glossed elytra that flare, a forked horn",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/insect.py",
+ "fast": false
+}

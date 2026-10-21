@@ -1,0 +1,538 @@
+{
+  "key": "greatwatchtower",
+  "format": 1,
+  "notes": "Extracted from zones.json by tools/data/dungeon_plan.py; edit this, then `write`.",
+  "layout": {
+    "cell": 4,
+    "rooms": [
+      {
+        "id": "entry",
+        "name": "Gate Hall",
+        "x": -2,
+        "z": -11,
+        "w": 5,
+        "d": 3,
+        "kind": "entry",
+        "y": 0,
+        "ceiling": 9
+      },
+      {
+        "id": "guard",
+        "name": "Lower Guardroom",
+        "x": -4,
+        "z": -7,
+        "w": 9,
+        "d": 5,
+        "kind": "guard",
+        "y": 0,
+        "ceiling": 10
+      },
+      {
+        "id": "armoury",
+        "name": "Armoury",
+        "x": -15,
+        "z": -6,
+        "w": 7,
+        "d": 6,
+        "kind": "armoury",
+        "y": 0,
+        "ceiling": 12
+      },
+      {
+        "id": "stair",
+        "name": "The Bastion",
+        "x": -4,
+        "z": 4,
+        "w": 9,
+        "d": 6,
+        "kind": "stair",
+        "y": 8,
+        "open": true
+      },
+      {
+        "id": "cells",
+        "name": "Wardens’ Cells",
+        "x": -14,
+        "z": 5,
+        "w": 6,
+        "d": 6,
+        "kind": "cells",
+        "y": 8,
+        "ceiling": 8
+      },
+      {
+        "id": "beacon",
+        "name": "Beacon Stores",
+        "x": 8,
+        "z": 5,
+        "w": 6,
+        "d": 6,
+        "kind": "beacon",
+        "y": 8,
+        "ceiling": 12
+      },
+      {
+        "id": "signal",
+        "name": "Signal Room",
+        "x": 7,
+        "z": 17,
+        "w": 7,
+        "d": 6,
+        "kind": "signal",
+        "y": 16,
+        "ceiling": 13
+      },
+      {
+        "id": "herald",
+        "name": "Herald’s Chamber",
+        "x": -4,
+        "z": 17,
+        "w": 9,
+        "d": 7,
+        "kind": "herald",
+        "y": 16,
+        "open": true
+      }
+    ],
+    "corridors": [
+      [
+        [
+          0,
+          -9
+        ],
+        [
+          0,
+          -7
+        ]
+      ],
+      [
+        [
+          -4,
+          -4
+        ],
+        [
+          -9,
+          -4
+        ]
+      ],
+      [
+        [
+          -4,
+          7
+        ],
+        [
+          -9,
+          7
+        ]
+      ],
+      [
+        [
+          4,
+          7
+        ],
+        [
+          8,
+          7
+        ]
+      ],
+      {
+        "points": [
+          [
+            4,
+            19
+          ],
+          [
+            7,
+            19
+          ]
+        ],
+        "open": true,
+        "name": "The Herald's Walk"
+      },
+      {
+        "points": [
+          [
+            4,
+            20
+          ],
+          [
+            7,
+            20
+          ]
+        ],
+        "open": true,
+        "name": "The Herald's Walk"
+      },
+      {
+        "points": [
+          [
+            -1,
+            -3
+          ],
+          [
+            -1,
+            4
+          ]
+        ],
+        "open": true,
+        "name": "The Great Stair"
+      },
+      {
+        "points": [
+          [
+            0,
+            -3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "open": true,
+        "name": "The Great Stair"
+      },
+      {
+        "points": [
+          [
+            1,
+            -3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "open": true,
+        "name": "The Great Stair"
+      },
+      {
+        "points": [
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            17
+          ]
+        ],
+        "open": true,
+        "name": "The East Flight"
+      },
+      {
+        "points": [
+          [
+            10,
+            10
+          ],
+          [
+            10,
+            17
+          ]
+        ],
+        "open": true,
+        "name": "The East Flight"
+      },
+      {
+        "points": [
+          [
+            11,
+            10
+          ],
+          [
+            11,
+            17
+          ]
+        ],
+        "open": true,
+        "name": "The East Flight"
+      }
+    ],
+    "obstacles": [
+      {
+        "x": 0,
+        "z": 9,
+        "w": 1,
+        "d": 1
+      }
+    ],
+    "heights": {
+      "derive": "site",
+      "site": "raised_chamber"
+    }
+  },
+  "sites": {
+    "raised_chamber": {
+      "name": "Watchtower ascent",
+      "cx": 0,
+      "cz": 24,
+      "span": 132,
+      "len": 144,
+      "yaw": 0,
+      "floors": [
+        0,
+        8,
+        16,
+        18
+      ],
+      "decks": [
+        {
+          "derive": "cells"
+        },
+        {
+          "cx": 0.0,
+          "cz": 89.5,
+          "hx": 18.0,
+          "hz": 4.5,
+          "sin": 0,
+          "cos": 1,
+          "y": 18,
+          "holes": []
+        }
+      ],
+      "ramps": [
+        {
+          "x0": 0,
+          "z0": -10,
+          "y0": 0,
+          "x1": 0,
+          "z1": 14,
+          "y1": 8,
+          "half": 5.5
+        },
+        {
+          "x0": 40,
+          "z0": 42,
+          "y0": 8,
+          "x1": 40,
+          "z1": 66,
+          "y1": 16,
+          "half": 5.5
+        },
+        {
+          "x0": -12,
+          "z0": 79,
+          "y0": 16,
+          "x1": -12,
+          "z1": 85,
+          "y1": 18,
+          "half": 2.3
+        },
+        {
+          "x0": 12,
+          "z0": 79,
+          "y0": 16,
+          "x1": 12,
+          "z1": 85,
+          "y1": 18,
+          "half": 2.3
+        }
+      ],
+      "ground_cells": {
+        "derive": "layout",
+        "raise": [
+          {
+            "x": -4,
+            "z": 22,
+            "w": 9,
+            "d": 2,
+            "y": 18
+          }
+        ]
+      }
+    }
+  },
+  "spawn": {
+    "x": 0,
+    "z": -37.5
+  },
+  "portals": [
+    {
+      "id": "gwt_door",
+      "name": "The Great Watchtower's Door",
+      "x": 0,
+      "z": -42.7,
+      "to": "borderwall",
+      "tx": 2.5,
+      "tz": -49,
+      "fx": "rune",
+      "th": 2.6583,
+      "rune": {
+        "radius": 2.2,
+        "column": 6
+      }
+    },
+    {
+      "id": "gwt_out",
+      "name": "The Herald's Way Out",
+      "x": -10,
+      "z": 90,
+      "y": 18,
+      "to": "borderwall",
+      "tx": 2.5,
+      "tz": -49,
+      "site": "raised_chamber",
+      "floor": 3,
+      "fx": "rune",
+      "rune": {
+        "radius": 2.2,
+        "column": 5.5,
+        "floor": 0.02
+      },
+      "th": 2.6583
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "lm_gwt_guard",
+      "name": "The Guardroom",
+      "x": 0,
+      "z": -21,
+      "xp": 90
+    },
+    {
+      "id": "lm_gwt_stair",
+      "name": "The Bastion",
+      "x": 0,
+      "z": 26,
+      "xp": 90
+    },
+    {
+      "id": "lm_gwt_herald",
+      "name": "The Herald's Chamber",
+      "x": 0,
+      "z": 76,
+      "xp": 160
+    },
+    {
+      "id": "lm_gwt_signal",
+      "name": "The Signal Room",
+      "x": 42,
+      "z": 80,
+      "xp": 90
+    },
+    {
+      "id": "lm_gwt_armoury",
+      "name": "The Armoury",
+      "x": -46,
+      "z": -12,
+      "xp": 90
+    }
+  ],
+  "interactables": [
+    {
+      "id": "herald_lectern",
+      "name": "The Herald's Lectern",
+      "x": 0,
+      "z": 89,
+      "idle_msg": "The herald's lectern, and on it the reply, prepared in advance: to the caretaker governments of the free cities.",
+      "active_msg": "You take the reply for the courts. The bill now has a cover letter.",
+      "prop": "ledger_stand",
+      "y": 18,
+      "site": "raised_chamber",
+      "floor": 3
+    }
+  ],
+  "camps": [
+    {
+      "monster": "watch_sentinel",
+      "min_lvl": 34,
+      "max_lvl": 35,
+      "count": 2,
+      "x": -8,
+      "z": -20,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "watch_sentinel",
+      "min_lvl": 34,
+      "max_lvl": 35,
+      "count": 2,
+      "x": 8,
+      "z": -20,
+      "radius": 4,
+      "respawn": 40
+    },
+    {
+      "monster": "ice_slime",
+      "min_lvl": 34,
+      "max_lvl": 35,
+      "count": 2,
+      "x": -48,
+      "z": -14,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "watch_sentinel",
+      "min_lvl": 35,
+      "max_lvl": 36,
+      "count": 2,
+      "x": -10,
+      "z": 30,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "watch_sentinel",
+      "min_lvl": 35,
+      "max_lvl": 36,
+      "count": 2,
+      "x": 10,
+      "z": 24,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "ice_slime",
+      "min_lvl": 34,
+      "max_lvl": 35,
+      "count": 2,
+      "x": -46,
+      "z": 30,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "beacon_wisp",
+      "min_lvl": 35,
+      "max_lvl": 36,
+      "count": 3,
+      "x": 42,
+      "z": 30,
+      "radius": 5,
+      "respawn": 40
+    },
+    {
+      "monster": "beacon_wisp",
+      "min_lvl": 35,
+      "max_lvl": 36,
+      "count": 2,
+      "x": 48,
+      "z": 74,
+      "radius": 3,
+      "respawn": 40
+    },
+    {
+      "monster": "rampart_sentinel",
+      "min_lvl": 36,
+      "max_lvl": 36,
+      "count": 3,
+      "x": 36,
+      "z": 82,
+      "radius": 4,
+      "respawn": 45
+    },
+    {
+      "monster": "the_wall_warden",
+      "min_lvl": 36,
+      "max_lvl": 36,
+      "count": 1,
+      "x": 0,
+      "z": 78,
+      "radius": 3,
+      "respawn": 900
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+ "file": "creatures/hen.glb",
+ "plan": "bird",
+ "height": 0.706,
+ "length": 0.644,
+ "width": 0.318,
+ "top": 0.706,
+ "minY": -0.0019,
+ "groundY": -0.0019,
+ "forward": -0.035,
+ "tris": [
+  3150,
+  936
+ ],
+ "budget": 3200,
+ "bones": 23,
+ "atlas": 512,
+ "emissive": false,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 0.42,
+  "Run": 0.3,
+  "Attack_A": 0.95,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.3,
+  "Fly": 0.3
+ },
+ "speeds": {
+  "Walk": 1.2,
+  "Run": 4.0
+ },
+ "bytes": 391204,
+ "held": [],
+ "groundLift": {
+  "Walk": 0.024,
+  "Death": 0.092
+ },
+ "notes": "the hen look: round and upright, laced feathers, comb and wattles, a roof of sickle tail",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/bird.py",
+ "fast": false
+}

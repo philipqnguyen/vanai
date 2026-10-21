@@ -1,0 +1,71 @@
+{
+ "file": "creatures/chorister.glb",
+ "plan": "wisp",
+ "height": 1.947,
+ "length": 0.98,
+ "width": 0.899,
+ "top": 1.947,
+ "minY": 0.002,
+ "groundY": 0.002,
+ "forward": -0.032,
+ "tris": [
+  3900,
+  1170
+ ],
+ "budget": 4200,
+ "bones": 20,
+ "atlas": 512,
+ "emissive": true,
+ "mr": false,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.4,
+  "Run": 0.9,
+  "Attack_A": 1.1,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.5,
+  "Cast": 3.2
+ },
+ "speeds": {
+  "Walk": 2.0,
+  "Run": 4.4
+ },
+ "bytes": 436960,
+ "held": [
+  [
+   3132,
+   3414
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.046
+ },
+ "notes": "the chorister look: a hooded singer in a bell of veils, a hymnal in both hands",
+ "role": "common",
+ "variants": {
+  "drowned_chorister": {
+   "atlas": "creatures/chorister@drowned_chorister.ktx2",
+   "bytes": 111178,
+   "emit": "creatures/chorister@drowned_chorister_emit.ktx2"
+  },
+  "deep_chorister": {
+   "atlas": "creatures/chorister@deep_chorister.ktx2",
+   "bytes": 110831,
+   "emit": "creatures/chorister@deep_chorister_emit.ktx2"
+  },
+  "cinder_chorister": {
+   "atlas": "creatures/chorister@cinder_chorister.ktx2",
+   "bytes": 114449,
+   "emit": "creatures/chorister@cinder_chorister_emit.ktx2"
+  },
+  "crypt_shade": {
+   "atlas": "creatures/chorister@crypt_shade.ktx2",
+   "bytes": 108350,
+   "emit": "creatures/chorister@crypt_shade_emit.ktx2"
+  }
+ },
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/wisp.py",
+ "fast": false
+}

@@ -1,0 +1,50 @@
+{
+ "file": "creatures/clerk.glb",
+ "plan": "husk",
+ "height": 1.75,
+ "length": 0.607,
+ "width": 0.739,
+ "top": 1.75,
+ "minY": -0.0037,
+ "groundY": -0.0037,
+ "forward": 0.128,
+ "tris": [
+  3907,
+  1163
+ ],
+ "budget": 4200,
+ "bones": 21,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.014,
+  "Run": 0.629,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2
+ },
+ "speeds": {
+  "Walk": 1.115,
+  "Run": 2.839
+ },
+ "bytes": 411420,
+ "held": [
+  [
+   3693,
+   4073
+  ]
+ ],
+ "groundLift": {
+  "Death": 0.123
+ },
+ "notes": "the clerk look: bent over an open ledger, quill, tailed coat, spectacles",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/husk.py",
+ "fast": false
+}

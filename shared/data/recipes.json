@@ -1,0 +1,908 @@
+{
+  "smithing": {
+    "name": "Smithing",
+    "recipes": [
+      {
+        "id": "sm_fenshell_helm",
+        "output": "fenshell_helm",
+        "inputs": {
+          "fen_shell": 3,
+          "wolf_fang": 2
+        }
+      },
+      {
+        "id": "sm_drakescale_vest",
+        "output": "drakescale_vest",
+        "inputs": {
+          "drake_scale": 4,
+          "fen_shell": 2
+        }
+      },
+      {
+        "id": "sm_antler_band",
+        "output": "antler_band",
+        "inputs": {
+          "stag_antler": 2,
+          "root_amber": 1
+        }
+      },
+      {
+        "id": "sm_thorn_band",
+        "output": "thorn_band",
+        "inputs": {
+          "thorn_resin": 3,
+          "boar_tusk": 2
+        }
+      },
+      {
+        "id": "sm_mere_ring",
+        "output": "mere_pearl_ring",
+        "inputs": {
+          "mire_pearl": 2,
+          "wisp_essence": 1
+        }
+      },
+      {
+        "id": "sm_glimmer_band",
+        "output": "glimmer_band",
+        "inputs": {
+          "glimmer_ore": 3
+        }
+      },
+      {
+        "id": "sm_gatewarden_coif",
+        "output": "gatewarden_coif",
+        "inputs": {
+          "glimmer_ore": 2,
+          "boar_hide": 1
+        }
+      },
+      {
+        "id": "sm_gatewarden_hauberk",
+        "output": "gatewarden_hauberk",
+        "inputs": {
+          "glimmer_ore": 3,
+          "boar_hide": 1
+        }
+      },
+      {
+        "id": "sm_gatewarden_chausses",
+        "output": "gatewarden_chausses",
+        "inputs": {
+          "glimmer_ore": 2,
+          "boar_hide": 1
+        }
+      },
+      {
+        "id": "sm_gatewarden_sabatons",
+        "output": "gatewarden_sabatons",
+        "inputs": {
+          "glimmer_ore": 2,
+          "boar_hide": 1
+        }
+      },
+      {
+        "id": "sm_damwarden_coif",
+        "output": "damwarden_coif",
+        "inputs": {
+          "silt_chitin": 2,
+          "glimmer_ore": 2,
+          "pike_tooth": 1
+        }
+      },
+      {
+        "id": "sm_damwarden_cuirass",
+        "output": "damwarden_cuirass",
+        "inputs": {
+          "silt_chitin": 3,
+          "glimmer_ore": 2,
+          "pike_tooth": 1
+        }
+      },
+      {
+        "id": "sm_damwarden_chausses",
+        "output": "damwarden_chausses",
+        "inputs": {
+          "silt_chitin": 2,
+          "glimmer_ore": 2,
+          "pike_tooth": 1
+        }
+      },
+      {
+        "id": "sm_damwarden_sabatons",
+        "output": "damwarden_sabatons",
+        "inputs": {
+          "silt_chitin": 2,
+          "glimmer_ore": 2,
+          "pike_tooth": 1
+        }
+      },
+      {
+        "id": "sm_lockplate_coif",
+        "output": "lockplate_coif",
+        "inputs": {
+          "bog_iron": 2,
+          "fen_shell": 1
+        }
+      },
+      {
+        "id": "sm_lockplate_cuirass",
+        "output": "lockplate_cuirass",
+        "inputs": {
+          "bog_iron": 3,
+          "fen_shell": 1,
+          "pump_gear": 1
+        }
+      },
+      {
+        "id": "sm_lockplate_chausses",
+        "output": "lockplate_chausses",
+        "inputs": {
+          "bog_iron": 2,
+          "fen_shell": 1
+        }
+      },
+      {
+        "id": "sm_lockplate_sabatons",
+        "output": "lockplate_sabatons",
+        "inputs": {
+          "bog_iron": 2,
+          "fen_shell": 1
+        }
+      },
+      {
+        "id": "sm_rampart_coif",
+        "output": "rampart_coif",
+        "inputs": {
+          "wall_stone": 2,
+          "bog_iron": 2,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "sm_rampart_cuirass",
+        "output": "rampart_cuirass",
+        "inputs": {
+          "wall_stone": 3,
+          "bog_iron": 2,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "sm_rampart_chausses",
+        "output": "rampart_chausses",
+        "inputs": {
+          "wall_stone": 2,
+          "bog_iron": 2,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "sm_rampart_sabatons",
+        "output": "rampart_sabatons",
+        "inputs": {
+          "wall_stone": 2,
+          "bog_iron": 2,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "sm_valley_blade",
+        "output": "valley_blade",
+        "inputs": {
+          "glimmer_ore": 3,
+          "silt_chitin": 2,
+          "stag_antler": 1
+        }
+      },
+      {
+        "id": "sm_bogiron_blade",
+        "output": "bogiron_blade",
+        "inputs": {
+          "bog_iron": 4,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "sm_wallforged_blade",
+        "output": "wallforged_blade",
+        "inputs": {
+          "wall_stone": 3,
+          "bog_iron": 3,
+          "crag_feather": 1
+        }
+      },
+      {
+        "id": "sm_valley_katana",
+        "output": "valley_katana",
+        "inputs": {
+          "glimmer_ore": 3,
+          "silt_chitin": 2,
+          "stag_antler": 1
+        }
+      },
+      {
+        "id": "sm_bogiron_katana",
+        "output": "bogiron_katana",
+        "inputs": {
+          "bog_iron": 4,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "sm_wallforged_katana",
+        "output": "wallforged_katana",
+        "inputs": {
+          "wall_stone": 3,
+          "bog_iron": 3,
+          "crag_feather": 1
+        }
+      },
+      {
+        "id": "sm_valley_cleaver",
+        "output": "valley_cleaver",
+        "inputs": {
+          "glimmer_ore": 3,
+          "silt_chitin": 2,
+          "stag_antler": 1
+        }
+      },
+      {
+        "id": "sm_bogiron_cleaver",
+        "output": "bogiron_cleaver",
+        "inputs": {
+          "bog_iron": 4,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "sm_wallforged_cleaver",
+        "output": "wallforged_cleaver",
+        "inputs": {
+          "wall_stone": 3,
+          "bog_iron": 3,
+          "slate_scale": 1
+        }
+      },
+      {
+        "id": "sm_valley_mace",
+        "output": "valley_mace",
+        "inputs": {
+          "glimmer_ore": 3,
+          "silt_chitin": 2,
+          "stag_antler": 1
+        }
+      },
+      {
+        "id": "sm_bogiron_mace",
+        "output": "bogiron_mace",
+        "inputs": {
+          "bog_iron": 4,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "sm_wallforged_mace",
+        "output": "wallforged_mace",
+        "inputs": {
+          "wall_stone": 3,
+          "bog_iron": 3,
+          "crag_feather": 1
+        }
+      },
+      {
+        "id": "sm_valley_staff",
+        "output": "valley_staff",
+        "inputs": {
+          "glimmer_ore": 3,
+          "silt_chitin": 2,
+          "stag_antler": 1
+        }
+      },
+      {
+        "id": "sm_bogiron_staff",
+        "output": "bogiron_staff",
+        "inputs": {
+          "bog_iron": 4,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "sm_wallforged_staff",
+        "output": "wallforged_staff",
+        "inputs": {
+          "wall_stone": 3,
+          "bog_iron": 3,
+          "crag_feather": 1
+        }
+      },
+      {
+        "id": "sm_valley_wraps",
+        "output": "valley_wraps",
+        "inputs": {
+          "glimmer_ore": 3,
+          "silt_chitin": 2,
+          "stag_antler": 1
+        }
+      },
+      {
+        "id": "sm_bogiron_wraps",
+        "output": "bogiron_wraps",
+        "inputs": {
+          "bog_iron": 4,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "sm_wallforged_wraps",
+        "output": "wallforged_wraps",
+        "inputs": {
+          "wall_stone": 3,
+          "bog_iron": 3,
+          "crag_feather": 1
+        }
+      },
+      {
+        "id": "sm_pld_24_body",
+        "output": "calling_pld_24_body",
+        "inputs": {
+          "silt_chitin": 4,
+          "sentinel_plate": 2,
+          "pike_tooth": 2
+        }
+      },
+      {
+        "id": "sm_sam_24_body",
+        "output": "calling_sam_24_body",
+        "inputs": {
+          "silt_chitin": 4,
+          "sentinel_plate": 2,
+          "pike_tooth": 2
+        }
+      },
+      {
+        "id": "sm_drk_24_body",
+        "output": "calling_drk_24_body",
+        "inputs": {
+          "silt_chitin": 4,
+          "sentinel_plate": 2,
+          "pike_tooth": 2
+        }
+      },
+      {
+        "id": "sm_pld_27_legs",
+        "output": "calling_pld_27_legs",
+        "inputs": {
+          "slag_lump": 3,
+          "sentinel_plate": 2,
+          "amber_shard": 1
+        }
+      },
+      {
+        "id": "sm_sam_27_legs",
+        "output": "calling_sam_27_legs",
+        "inputs": {
+          "slag_lump": 3,
+          "sentinel_plate": 2,
+          "amber_shard": 1
+        }
+      },
+      {
+        "id": "sm_drk_27_legs",
+        "output": "calling_drk_27_legs",
+        "inputs": {
+          "slag_lump": 3,
+          "sentinel_plate": 2,
+          "amber_shard": 1
+        }
+      }
+    ]
+  },
+  "alchemy": {
+    "name": "Alchemy",
+    "recipes": [
+      {
+        "id": "al_hi_potion",
+        "output": "hi_potion",
+        "inputs": {
+          "potion": 2,
+          "sprite_dust": 1
+        }
+      },
+      {
+        "id": "al_ether",
+        "output": "ether",
+        "inputs": {
+          "sprite_dust": 2
+        }
+      },
+      {
+        "id": "al_antidote",
+        "output": "antidote",
+        "inputs": {
+          "thorn_resin": 2
+        }
+      },
+      {
+        "id": "al_remedy",
+        "output": "remedy",
+        "inputs": {
+          "antidote": 1,
+          "eye_drops": 1,
+          "wisp_essence": 1
+        }
+      },
+      {
+        "id": "al_potion",
+        "output": "potion",
+        "inputs": {
+          "lamproot": 2
+        }
+      },
+      {
+        "id": "al_reed_ether",
+        "output": "ether",
+        "inputs": {
+          "mere_reed": 2,
+          "lamproot": 1
+        }
+      },
+      {
+        "id": "al_potion_gel",
+        "output": "potion",
+        "inputs": {
+          "slime_gel": 1,
+          "lamproot": 1
+        }
+      },
+      {
+        "id": "al_eye_drops",
+        "output": "eye_drops",
+        "inputs": {
+          "cat_whisker": 1,
+          "slime_gel": 1
+        }
+      },
+      {
+        "id": "al_antidote_gland",
+        "output": "antidote",
+        "inputs": {
+          "leech_gland": 1,
+          "lamproot": 1
+        }
+      },
+      {
+        "id": "al_x_potion",
+        "output": "x_potion",
+        "inputs": {
+          "hi_potion": 2,
+          "frost_gel": 1
+        }
+      },
+      {
+        "id": "al_hi_ether",
+        "output": "hi_ether",
+        "inputs": {
+          "ether": 2,
+          "wisp_essence": 1
+        }
+      },
+      {
+        "id": "al_mega_potion",
+        "output": "mega_potion",
+        "inputs": {
+          "x_potion": 2,
+          "ember_shard": 1,
+          "ice_crystal": 1
+        }
+      }
+    ]
+  },
+  "leatherworking": {
+    "name": "Leatherworking",
+    "recipes": [
+      {
+        "id": "lw_watchfarm_cap",
+        "output": "watchfarm_cap",
+        "inputs": {
+          "hare_pelt": 2,
+          "boar_hide": 1
+        }
+      },
+      {
+        "id": "lw_watchfarm_vest",
+        "output": "watchfarm_vest",
+        "inputs": {
+          "hare_pelt": 2,
+          "boar_hide": 2
+        }
+      },
+      {
+        "id": "lw_watchfarm_trews",
+        "output": "watchfarm_trews",
+        "inputs": {
+          "hare_pelt": 2,
+          "boar_hide": 1
+        }
+      },
+      {
+        "id": "lw_watchfarm_boots",
+        "output": "watchfarm_boots",
+        "inputs": {
+          "hare_pelt": 2,
+          "boar_hide": 1
+        }
+      },
+      {
+        "id": "lw_sounder's_cap",
+        "output": "sounder's_cap",
+        "inputs": {
+          "wolf_pelt": 2,
+          "drake_scale": 1
+        }
+      },
+      {
+        "id": "lw_sounder's_jerkin",
+        "output": "sounder's_jerkin",
+        "inputs": {
+          "wolf_pelt": 2,
+          "drake_scale": 2,
+          "hound_collar": 1
+        }
+      },
+      {
+        "id": "lw_sounder's_trews",
+        "output": "sounder's_trews",
+        "inputs": {
+          "wolf_pelt": 2,
+          "drake_scale": 1
+        }
+      },
+      {
+        "id": "lw_sounder's_boots",
+        "output": "sounder's_boots",
+        "inputs": {
+          "wolf_pelt": 2,
+          "drake_scale": 1
+        }
+      },
+      {
+        "id": "lw_bargeman's_cap",
+        "output": "bargeman's_cap",
+        "inputs": {
+          "fen_wolf_pelt": 2,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "lw_bargeman's_jerkin",
+        "output": "bargeman's_jerkin",
+        "inputs": {
+          "fen_wolf_pelt": 2,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "lw_bargeman's_trews",
+        "output": "bargeman's_trews",
+        "inputs": {
+          "fen_wolf_pelt": 2,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "lw_bargeman's_boots",
+        "output": "bargeman's_boots",
+        "inputs": {
+          "fen_wolf_pelt": 2,
+          "leech_gland": 1,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "lw_wallrunner_cap",
+        "output": "wallrunner_cap",
+        "inputs": {
+          "snowcat_pelt": 2,
+          "runners_rope": 1,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "lw_wallrunner_jerkin",
+        "output": "wallrunner_jerkin",
+        "inputs": {
+          "snowcat_pelt": 2,
+          "runners_rope": 1,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "lw_wallrunner_trews",
+        "output": "wallrunner_trews",
+        "inputs": {
+          "snowcat_pelt": 2,
+          "runners_rope": 1,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "lw_wallrunner_boots",
+        "output": "wallrunner_boots",
+        "inputs": {
+          "snowcat_pelt": 2,
+          "runners_rope": 1,
+          "ice_crystal": 1
+        }
+      }
+    ]
+  },
+  "weaving": {
+    "name": "Weaving",
+    "recipes": [
+      {
+        "id": "wv_fieldhand_hood",
+        "output": "fieldhand_hood",
+        "inputs": {
+          "mere_reed": 2,
+          "hen_feather": 2
+        }
+      },
+      {
+        "id": "wv_fieldhand_robe",
+        "output": "fieldhand_robe",
+        "inputs": {
+          "mere_reed": 2,
+          "hen_feather": 2
+        }
+      },
+      {
+        "id": "wv_fieldhand_slops",
+        "output": "fieldhand_slops",
+        "inputs": {
+          "mere_reed": 2,
+          "hen_feather": 2
+        }
+      },
+      {
+        "id": "wv_fieldhand_shoes",
+        "output": "fieldhand_shoes",
+        "inputs": {
+          "mere_reed": 2,
+          "hen_feather": 2
+        }
+      },
+      {
+        "id": "wv_valleyweave_hood",
+        "output": "valleyweave_hood",
+        "inputs": {
+          "hen_feather": 2,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "wv_valleyweave_robe",
+        "output": "valleyweave_robe",
+        "inputs": {
+          "hen_feather": 3,
+          "reed_bundle": 1,
+          "silt_pearl": 1
+        }
+      },
+      {
+        "id": "wv_valleyweave_slops",
+        "output": "valleyweave_slops",
+        "inputs": {
+          "hen_feather": 2,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "wv_valleyweave_sandals",
+        "output": "valleyweave_sandals",
+        "inputs": {
+          "hen_feather": 2,
+          "reed_bundle": 1
+        }
+      },
+      {
+        "id": "wv_reedwoven_hood",
+        "output": "reedwoven_hood",
+        "inputs": {
+          "reed_bundle": 2,
+          "gloam_thread": 1
+        }
+      },
+      {
+        "id": "wv_reedwoven_robe",
+        "output": "reedwoven_robe",
+        "inputs": {
+          "reed_bundle": 2,
+          "gloam_thread": 1,
+          "leech_gland": 1
+        }
+      },
+      {
+        "id": "wv_reedwoven_slops",
+        "output": "reedwoven_slops",
+        "inputs": {
+          "reed_bundle": 2,
+          "gloam_thread": 1
+        }
+      },
+      {
+        "id": "wv_reedwoven_sandals",
+        "output": "reedwoven_sandals",
+        "inputs": {
+          "reed_bundle": 2,
+          "gloam_thread": 1
+        }
+      },
+      {
+        "id": "wv_wallscholar_hood",
+        "output": "wallscholar_hood",
+        "inputs": {
+          "crag_feather": 2,
+          "gloam_thread": 1,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "wv_wallscholar_robe",
+        "output": "wallscholar_robe",
+        "inputs": {
+          "crag_feather": 2,
+          "gloam_thread": 1,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "wv_wallscholar_slops",
+        "output": "wallscholar_slops",
+        "inputs": {
+          "crag_feather": 2,
+          "gloam_thread": 1,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "wv_wallscholar_sandals",
+        "output": "wallscholar_sandals",
+        "inputs": {
+          "crag_feather": 2,
+          "gloam_thread": 1,
+          "ice_crystal": 1
+        }
+      },
+      {
+        "id": "wv_mnk_24_body",
+        "output": "calling_mnk_24_body",
+        "inputs": {
+          "mere_tear": 3,
+          "votive_wax": 2,
+          "drowned_relic": 1
+        }
+      },
+      {
+        "id": "wv_whm_24_body",
+        "output": "calling_whm_24_body",
+        "inputs": {
+          "mere_tear": 3,
+          "votive_wax": 2,
+          "drowned_relic": 1
+        }
+      },
+      {
+        "id": "wv_blm_24_body",
+        "output": "calling_blm_24_body",
+        "inputs": {
+          "mere_tear": 3,
+          "votive_wax": 2,
+          "drowned_relic": 1
+        }
+      },
+      {
+        "id": "wv_mnk_27_legs",
+        "output": "calling_mnk_27_legs",
+        "inputs": {
+          "gloam_thread": 3,
+          "pale_petal": 3,
+          "silver_cutting": 1
+        }
+      },
+      {
+        "id": "wv_whm_27_legs",
+        "output": "calling_whm_27_legs",
+        "inputs": {
+          "gloam_thread": 3,
+          "pale_petal": 3,
+          "silver_cutting": 1
+        }
+      },
+      {
+        "id": "wv_blm_27_legs",
+        "output": "calling_blm_27_legs",
+        "inputs": {
+          "gloam_thread": 3,
+          "pale_petal": 3,
+          "silver_cutting": 1
+        }
+      }
+    ]
+  },
+  "cooking": {
+    "name": "Cooking",
+    "recipes": [
+      {
+        "id": "co_mushroom_broth",
+        "output": "mushroom_broth",
+        "inputs": {
+          "mushroom_cap": 2
+        }
+      },
+      {
+        "id": "co_frog_legs",
+        "output": "frog_legs_dish",
+        "inputs": {
+          "frog_leg": 2
+        }
+      },
+      {
+        "id": "co_crab_stew",
+        "output": "crab_stew",
+        "inputs": {
+          "crab_meat": 2,
+          "mushroom_cap": 1
+        }
+      },
+      {
+        "id": "co_hot_stew",
+        "output": "lantern_oil_flask",
+        "inputs": {
+          "frog_leg": 1,
+          "mushroom_cap": 1,
+          "windfall_apple": 1
+        }
+      },
+      {
+        "id": "co_apple_tart",
+        "output": "apple_tart",
+        "inputs": {
+          "windfall_apple": 3
+        }
+      },
+      {
+        "id": "co_harvest_loaf",
+        "output": "harvest_loaf",
+        "inputs": {
+          "wheat_sheaf": 2
+        }
+      },
+      {
+        "id": "co_fresh_bread",
+        "output": "fresh_bread",
+        "inputs": {
+          "flour_sack": 1,
+          "wheat_sheaf": 1
+        }
+      },
+      {
+        "id": "co_roe_toast",
+        "output": "roe_toast",
+        "inputs": {
+          "pike_roe": 1,
+          "harvest_loaf": 1
+        }
+      }
+    ]
+  }
+}

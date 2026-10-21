@@ -1,0 +1,51 @@
+{
+ "file": "creatures/keeper.glb",
+ "plan": "husk",
+ "height": 2.052,
+ "length": 0.711,
+ "width": 0.823,
+ "top": 2.052,
+ "minY": -0.0031,
+ "groundY": -0.0031,
+ "forward": 0.093,
+ "tris": [
+  4179,
+  1242
+ ],
+ "budget": 4200,
+ "bones": 21,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 1.37,
+  "Run": 0.843,
+  "Attack_A": 1.15,
+  "Attack_B": 1.1,
+  "Hit": 0.5,
+  "Death": 1.6,
+  "Cast": 3.2
+ },
+ "speeds": {
+  "Walk": 0.791,
+  "Run": 2.53
+ },
+ "bytes": 461144,
+ "held": [
+  [
+   4255,
+   4677
+  ]
+ ],
+ "groundLift": {
+  "Run": 0.053,
+  "Death": 0.07
+ },
+ "notes": "the keeper look: hooded, a habit to the floor, a crook-staff with a plumb-hung lantern",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/husk.py",
+ "fast": false
+}

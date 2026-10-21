@@ -1,0 +1,44 @@
+{
+ "file": "creatures/giant.glb",
+ "plan": "giant",
+ "height": 3.837,
+ "length": 1.727,
+ "width": 2.232,
+ "top": 3.837,
+ "minY": 0.0052,
+ "groundY": 0.0052,
+ "forward": 0.147,
+ "tris": [
+  3997,
+  1198
+ ],
+ "budget": 4200,
+ "bones": 20,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 4.0,
+  "Walk": 2.051,
+  "Run": 1.273,
+  "Attack_A": 1.25,
+  "Attack_B": 1.15,
+  "Hit": 0.5,
+  "Death": 1.7
+ },
+ "speeds": {
+  "Walk": 1.838,
+  "Run": 4.243
+ },
+ "bytes": 433912,
+ "held": [],
+ "groundLift": {
+  "Death": 0.543
+ },
+ "notes": "the giant look: the ash giants, shaggy under burnt glass, embers in the hide",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/giant.py",
+ "fast": false
+}

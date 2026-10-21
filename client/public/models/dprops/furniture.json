@@ -1,0 +1,482 @@
+{
+ "pack": "furniture",
+ "props": {
+  "bench": {
+   "pack": "furniture",
+   "min": [
+    -1.2,
+    0,
+    -0.16
+   ],
+   "max": [
+    1.2,
+    0.461,
+    0.16
+   ],
+   "tris": 664,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "lodge": "#c4b0a0",
+    "beaconfort": "#b8aea4"
+   }
+  },
+  "table_trestle": {
+   "pack": "furniture",
+   "min": [
+    -0.685,
+    0,
+    -1.55
+   ],
+   "max": [
+    0.685,
+    0.801,
+    1.55
+   ],
+   "tris": 1020,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "table_laid": {
+   "pack": "furniture",
+   "min": [
+    -0.685,
+    0,
+    -1.55
+   ],
+   "max": [
+    0.685,
+    1.141,
+    1.55
+   ],
+   "tris": 5044,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "table_supper": {
+   "pack": "furniture",
+   "min": [
+    -0.739,
+    0,
+    -1.614
+   ],
+   "max": [
+    0.739,
+    1.303,
+    1.614
+   ],
+   "tris": 5680,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "table_cloth": {
+   "pack": "furniture",
+   "min": [
+    -0.714,
+    0,
+    -0.714
+   ],
+   "max": [
+    0.714,
+    0.783,
+    0.714
+   ],
+   "tris": 2268,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "table_cloth_laid": {
+   "pack": "furniture",
+   "min": [
+    -0.714,
+    0,
+    -0.714
+   ],
+   "max": [
+    0.714,
+    1.125,
+    0.714
+   ],
+   "tris": 4276,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "bed_pallet": {
+   "pack": "furniture",
+   "min": [
+    -0.5,
+    0,
+    -1.025
+   ],
+   "max": [
+    0.5,
+    0.341,
+    1.025
+   ],
+   "tris": 1664,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "bed": {
+   "pack": "furniture",
+   "min": [
+    -0.6,
+    0,
+    -1.1
+   ],
+   "max": [
+    0.6,
+    1.094,
+    1.1
+   ],
+   "tris": 3488,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "bunk": {
+   "pack": "furniture",
+   "min": [
+    -0.51,
+    0,
+    -1.05
+   ],
+   "max": [
+    0.558,
+    1.942,
+    1.05
+   ],
+   "tris": 3964,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "cupboard": {
+   "pack": "furniture",
+   "min": [
+    -0.675,
+    0,
+    -0.2
+   ],
+   "max": [
+    0.675,
+    0.98,
+    0.175
+   ],
+   "tris": 3208,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "lodge": "#e2d6ca",
+    "furnace": "#a49488"
+   }
+  },
+  "dresser": {
+   "pack": "furniture",
+   "min": [
+    -0.735,
+    0,
+    -0.23
+   ],
+   "max": [
+    0.735,
+    1.08,
+    0.205
+   ],
+   "tris": 4152,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "bedside": {
+   "pack": "furniture",
+   "min": [
+    -0.3,
+    0,
+    -0.225
+   ],
+   "max": [
+    0.3,
+    0.84,
+    0.22
+   ],
+   "tris": 1650,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  },
+  "shelf_tall": {
+   "pack": "furniture",
+   "min": [
+    -0.322,
+    0,
+    -0.185
+   ],
+   "max": [
+    0.322,
+    1.355,
+    0.17
+   ],
+   "tris": 1704,
+   "farTris": 0,
+   "far": false,
+   "small": false,
+   "tint": {
+    "lodge": "#c4b0a0"
+   }
+  },
+  "armchair": {
+   "pack": "furniture",
+   "min": [
+    -0.319,
+    0,
+    -0.324
+   ],
+   "max": [
+    0.319,
+    1.45,
+    0.283
+   ],
+   "tris": 2414,
+   "farTris": 0,
+   "far": false,
+   "small": false
+  }
+ },
+ "swap": {
+  "props/Bench.gltf": {
+   "to": "bench",
+   "scale": 0.868,
+   "from": {
+    "min": [
+     -1.388,
+     -0.007,
+     -0.262
+    ],
+    "max": [
+     1.388,
+     0.526,
+     0.272
+    ]
+   }
+  },
+  "dungeon/table_long.glb": {
+   "to": "table_trestle",
+   "from": {
+    "min": [
+     -1,
+     0,
+     -2
+    ],
+    "max": [
+     1,
+     1,
+     2
+    ]
+   }
+  },
+  "dungeon/table_long_decorated_A.glb": {
+   "to": "table_laid",
+   "fit": "footprint",
+   "scale": 0.97,
+   "from": {
+    "min": [
+     -1.031,
+     0,
+     -2
+    ],
+    "max": [
+     1.028,
+     1.886,
+     2
+    ]
+   }
+  },
+  "dungeon/table_long_tablecloth_decorated_A.glb": {
+   "to": "table_supper",
+   "fit": "footprint",
+   "scale": 0.97,
+   "from": {
+    "min": [
+     -1.031,
+     0,
+     -2
+    ],
+    "max": [
+     1.028,
+     1.886,
+     2
+    ]
+   }
+  },
+  "dungeon/table_medium_tablecloth.glb": {
+   "to": "table_cloth",
+   "from": {
+    "min": [
+     -1,
+     0,
+     -1
+    ],
+    "max": [
+     1,
+     1,
+     1
+    ]
+   }
+  },
+  "dungeon/table_medium_tablecloth_decorated_B.glb": {
+   "to": "table_cloth_laid",
+   "fit": "footprint",
+   "scale": 0.835,
+   "from": {
+    "min": [
+     -1,
+     0,
+     -1
+    ],
+    "max": [
+     1,
+     1.886,
+     1
+    ]
+   }
+  },
+  "dungeon/bed_floor.glb": {
+   "to": "bed_pallet",
+   "fit": "footprint",
+   "scale": 0.86,
+   "from": {
+    "min": [
+     -0.75,
+     0,
+     -1.5
+    ],
+    "max": [
+     0.75,
+     0.563,
+     1.5
+    ]
+   }
+  },
+  "dungeon/bed_frame.glb": {
+   "to": "bed",
+   "fit": "real",
+   "from": {
+    "min": [
+     -0.75,
+     0,
+     -1.5
+    ],
+    "max": [
+     0.75,
+     1.063,
+     1.5
+    ]
+   }
+  },
+  "props/Bed_Bunk.gltf": {
+   "to": "bunk",
+   "fit": "real",
+   "from": {
+    "min": [
+     -0.938,
+     -0.012,
+     -1.209
+    ],
+    "max": [
+     0.938,
+     2.119,
+     1.206
+    ]
+   }
+  },
+  "props/Cabinet.gltf": {
+   "to": "cupboard",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.681,
+     0,
+     -0.181
+    ],
+    "max": [
+     0.681,
+     0.998,
+     0.177
+    ]
+   }
+  },
+  "props/Dresser_1.gltf": {
+   "to": "dresser",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.731,
+     -0.017,
+     -0.206
+    ],
+    "max": [
+     0.731,
+     1.093,
+     0.208
+    ]
+   }
+  },
+  "props/Nightstand_Drawer.gltf": {
+   "to": "bedside",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.361,
+     -0.006,
+     -0.246
+    ],
+    "max": [
+     0.361,
+     0.889,
+     0.246
+    ]
+   }
+  },
+  "props/Nightstand_Shelf.gltf": {
+   "to": "shelf_tall",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.347,
+     -0.006,
+     -0.193
+    ],
+    "max": [
+     0.347,
+     1.209,
+     0.2
+    ]
+   }
+  },
+  "props/Chair_3.gltf": {
+   "to": "armchair",
+   "dyaw": 3.141592653589793,
+   "from": {
+    "min": [
+     -0.338,
+     -0.002,
+     -0.315
+    ],
+    "max": [
+     0.338,
+     1.482,
+     0.287
+    ]
+   }
+  }
+ }
+}

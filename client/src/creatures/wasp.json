@@ -1,0 +1,44 @@
+{
+ "file": "creatures/wasp.glb",
+ "plan": "insect",
+ "height": 0.899,
+ "length": 0.899,
+ "width": 0.987,
+ "top": 0.899,
+ "minY": 0.0126,
+ "groundY": 0.0126,
+ "forward": 0.025,
+ "tris": [
+  2870,
+  860
+ ],
+ "budget": 4200,
+ "bones": 25,
+ "atlas": 512,
+ "emissive": true,
+ "mr": true,
+ "clips": {
+  "Idle": 3.6,
+  "Walk": 1.8,
+  "Run": 1.8,
+  "Attack_A": 1.0,
+  "Attack_B": 1.1,
+  "Hit": 0.45,
+  "Death": 1.4
+ },
+ "speeds": {
+  "Walk": 2.4,
+  "Run": 5.6
+ },
+ "bytes": 358588,
+ "held": [],
+ "groundLift": {
+  "Death": 0.203
+ },
+ "notes": "the wasp look: hovering, a hanging sting, glass wings beating at 15 Hz",
+ "role": "common",
+ "variants": {},
+ "blender": "5.2.0 LTS",
+ "planFile": "tools/assets/creatures/plans/insect.py",
+ "fast": false
+}
