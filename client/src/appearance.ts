@@ -6,10 +6,13 @@ import MEASURED from './hair-colours.json' with {type:'json'};
 export type HairStyle='tousled'|'bun'|'braid'|'waves'|'cascade';
 export type HairColour='natural'|'dark_blue'|'dark_green'|'auburn';
 export interface CharacterAppearance { face?: 'male'|'female'; hair?: HairStyle|'none'; beard?: boolean; hair_colour?: HairColour }
+// A Nym's hair follows the gender, players and NPCs alike (Philip, 2026-10-21):
+// female wears the tousled topknot ("bun"), male the layers ("tousled"), as the
+// server resolves a player's saved hair (Character#hair_choices).
 export function nymChoice(race:string, appearance?:CharacterAppearance) {
   if(race!=='nym')return undefined;
-  return {face:appearance?.face==='female'?'female' as const:'male' as const,
-    hair:appearance?.hair==='bun'?'bun' as const:'tousled' as const,...dyed(appearance)};
+  const face=appearance?.face==='female'?'female' as const:'male' as const;
+  return {face,hair:face==='female'?'bun' as const:'tousled' as const,...dyed(appearance)};
 }
 export function aedriChoice(race:string, appearance?:CharacterAppearance) {
   if(race!=='aedri')return undefined;
@@ -34,7 +37,7 @@ export const mappedRace=(race?:string)=>race==='nym'||race==='aedri'||race==='ra
 /** The hair a race offers at creation, with its label: never "no hair". The
  * label is the style alone; its colour is hairColourOptions'. */
 export function hairOptions(race:string,face:'male'|'female'):[HairStyle,string][] {
-  if(race==='nym')return [['tousled','Layers'],['bun','Tousled topknot']];
+  if(race==='nym')return face==='female'?[['bun','Tousled topknot']]:[['tousled','Layers']];
   if(race==='karrog')return [['braid','Braided warrior coif']];
   if(race==='rasha')return [['waves','Waves']];
   if(race==='valdren')return face==='female'?[['braid','Braid']]:[['cascade','Half-up cascade']];

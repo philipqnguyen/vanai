@@ -68,7 +68,7 @@ test('v1 identity samples pin all eight bodies independently of the hash impleme
     ['gate_sergeant_ottey','rasha','female','waves'],
     ['paymaster_vail','valdren','male','cascade'],
     ['marshal_grett','aedri','male','waves'],
-    ['duelist_sabel_cd','nym','female','tousled'],
+    ['duelist_sabel_cd','nym','female','bun'],
     ['lord_marshal','valdren','female','braid'],
     ['armourer_brann','nym','male','tousled'],
     ['drillmaster_hal','aedri','female','braid'],

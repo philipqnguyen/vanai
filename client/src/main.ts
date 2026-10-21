@@ -341,7 +341,7 @@ function showCharacterCreate(): void {
           <section class="pg-section" id="step-look">
             <h3><b>2</b>Appearance<small>Never changes your stats</small></h3>
             <div class="pg-look">
-              <div class="pg-look-row"><span>Body</span><div class="pg-seg" role="radiogroup" aria-label="Body" id="n-face"></div></div>
+              <div class="pg-look-row"><span>Gender</span><div class="pg-seg" role="radiogroup" aria-label="Gender" id="n-face"></div></div>
               <div class="pg-look-row"><span>Hair</span><div class="pg-seg" role="radiogroup" aria-label="Hair" id="n-hair"></div></div>
               <div class="pg-look-row"><span>Colour</span><div class="pg-seg" role="radiogroup" aria-label="Hair colour" id="n-hair-colour"></div></div>
               <div class="pg-look-row" id="n-beard-pick" hidden><span>Beard</span><div class="pg-seg" role="radiogroup" aria-label="Facial hair" id="n-beard"></div></div>
@@ -394,7 +394,7 @@ function showCharacterCreate(): void {
   const steps = s.querySelectorAll<HTMLAnchorElement>(".pg-steps a");
   const nameOk = () => !nameProblem(nameInput.value.trim());
   const render = () => {
-    // a people with one body shows only that body; every hair offered is
+    // a people with one gender shows only that one; every hair offered is
     // real hair (Philip, 2026-10-15: no player character is bald)
     if (race === "karrog") face = "male";
     if (race === "rasha") face = "female";
@@ -406,12 +406,12 @@ function showCharacterCreate(): void {
     $("#n-racedesc").textContent = RACES[race].desc + (race === "nym" ? " Higher magic and agility, with lower strength and vitality." : "");
     $("#n-racestats").innerHTML = statBars(race);
     const single = race === "karrog" || race === "rasha";
-    seg($("#n-face"), [["male", "Masculine"], ["female", "Feminine"]], face, single);
+    seg($("#n-face"), [["male", "Male"], ["female", "Female"]], face, single);
     seg($("#n-hair"), hairs, hair);
     seg($("#n-hair-colour"), hairColourOptions(race, face, hair as HairStyle), hairColour);
     $("#n-beard-pick").hidden = race !== "karrog";
     seg($("#n-beard"), [["beard", "Beard and moustache"], ["none", "Clean shaven"]], beard ? "beard" : "none");
-    $("#n-look-note").textContent = single ? `The ${RACES[race].name} have one body in Vanai for now.` : "";
+    $("#n-look-note").textContent = single ? `The ${RACES[race].name} are ${face} only in Vanai for now.` : "";
     $("#n-jobdesc").innerHTML = `<b style="font-style:normal;color:${ROLE_COLOR[JOBS[job].role]}">${esc(JOBS[job].name)}</b> — ${esc(JOBS[job].desc)}`;
     $("#n-citydesc").textContent = START_CITIES[city].desc;
     goBtn.textContent = `Begin in ${START_CITIES[city].name}`;

@@ -1,9 +1,15 @@
 import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
 import {nymChoice,aedriChoice,rashaChoice,valdrenChoice,karrogChoice,appearanceChoice,mappedRace,hairOptions} from '../src/appearance.ts';
-test('Nym appearance defaults and independent faces/hair leave other races alone',()=>{
+test('Nym hair follows the gender, whatever was saved, and leaves other races alone',()=>{
  assert.deepEqual(nymChoice('nym'),{face:'male',hair:'tousled'});
- for(const face of ['male','female'])for(const hair of ['tousled','bun'])assert.deepEqual(nymChoice('nym',{face,hair}),{face,hair});
+ for(const face of ['male','female'])for(const hair of ['tousled','bun'])assert.deepEqual(nymChoice('nym',{face,hair}),{face,hair:face==='female'?'bun':'tousled'});
  for(const race of ['aedri','valdren','karrog','rasha'])assert.equal(nymChoice(race,{face:'female',hair:'bun'}),undefined);
+});
+// Philip, 2026-10-21: creation offers a Nym woman only the tousled topknot and
+// a Nym man only the layers.
+test('Nym hair follows the gender at creation',()=>{
+ assert.deepEqual(hairOptions('nym','female'),[['bun','Tousled topknot']]);
+ assert.deepEqual(hairOptions('nym','male'),[['tousled','Layers']]);
 });
 test('only approved races are playable and Nym retains existing stat modifiers',()=>{
  const {races}=JSON.parse(fs.readFileSync(new URL('../../shared/data/jobs.json',import.meta.url)));
@@ -39,7 +45,7 @@ test('Karrog male coif and beard are independent and old empty rows resolve to a
 // Philip, 2026-10-15: every player character has hair. Creation offers no
 // "no hair", and a legacy saved "none" resolves to the race's own style.
 test('no player character is ever bald',()=>{
- const defaults={nym:{male:'tousled',female:'tousled'},aedri:{male:'waves',female:'braid'},valdren:{male:'cascade',female:'braid'},karrog:{male:'braid',female:'braid'},rasha:{male:'waves',female:'waves'}};
+ const defaults={nym:{male:'tousled',female:'bun'},aedri:{male:'waves',female:'braid'},valdren:{male:'cascade',female:'braid'},karrog:{male:'braid',female:'braid'},rasha:{male:'waves',female:'waves'}};
  for(const race of Object.keys(defaults))for(const face of ['male','female']){
   assert.equal(appearanceChoice(race,{face,hair:'none'}).hair,defaults[race][face],`${race} ${face}`);
   const options=hairOptions(race,face);

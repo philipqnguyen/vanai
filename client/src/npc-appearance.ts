@@ -33,10 +33,9 @@ export function npcAppearance(npc:string|NpcIdentity) {
     if(!pinned)throw new Error(`NPC ${record.id}: unsupported body pin ${record.body}`);
     [race,face]=pinned;
   }
-  const style=hash('npc-hair-v1:'+key);
   const appearance:CharacterAppearance=appearanceChoice(race,{face:face as 'male'|'female'})!;
-  // Every NPC has hair (Philip, 2026-10-12): no bald roll.
-  if(race==='nym'&&style%2===0)appearance.hair='bun';
+  // Every NPC has hair (Philip, 2026-10-12): no bald roll. A Nym's follows
+  // the gender (appearance.ts nymChoice).
   if(race==='karrog')appearance.beard=hash('npc-beard-v1:'+key)%4!==0;
   return {race,appearance,body:`${race}-${face}`};
 }

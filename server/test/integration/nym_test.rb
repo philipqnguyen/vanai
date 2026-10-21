@@ -23,8 +23,10 @@ class NymIntegrationTest < Minitest::Test
     JSON.parse(@api.response.body)
   end
 
-  def test_all_independent_faces_and_hair_survive_create_select_state_and_public_payload
-    %w[male female].product(%w[tousled bun]).each_with_index do |(face, hair), i|
+  # Philip, 2026-10-21: a Nym's hair follows the gender, the tousled topknot
+  # ("bun") for a woman and the layers ("tousled") for a man.
+  def test_both_genders_and_their_hair_survive_create_select_state_and_public_payload
+    [%w[male tousled], %w[female bun]].each_with_index do |(face, hair), i|
       appearance = { 'face' => face, 'hair' => hair }
       response = create_character(name: "Nym#{('a'.ord+i).chr}", appearance: appearance)
       assert_equal 200, @api.response.status, response.inspect
@@ -45,7 +47,23 @@ class NymIntegrationTest < Minitest::Test
     @api.delete '/api/logout', as: :json
     @api.post '/api/login', params: { email: 'nym-test@example.invalid', password: 'isolated-test-password' }, as: :json
     @api.get '/api/characters'
-    assert_equal 4, JSON.parse(@api.response.body)['characters'].size
+    assert_equal 2, JSON.parse(@api.response.body)['characters'].size
+    assert_equal({ 'face' => 'female', 'hair' => 'bun' }, create_character(name: 'Nymdefault', appearance: { face: 'female' }).dig('character', 'appearance'))
+    [{ face: 'male', hair: 'bun' }, { face: 'female', hair: 'tousled' }, { hair: 'bun' }].each do |appearance|
+      assert create_character(name: 'Invalidnym', appearance: appearance)['error'], appearance.inspect
+      assert_equal 422, @api.response.status
+    end
+  end
+
+  def test_nym_saved_with_the_other_genders_hair_reads_and_saves_as_its_own
+    [%w[female tousled bun], %w[male bun tousled]].each_with_index do |(face, saved, own), i|
+      c = Character.find(create_character(name: "Oldnym#{('a'.ord+i).chr}", appearance: { face: face }).fetch('character').fetch('id'))
+      c.update_column(:appearance, { 'face' => face, 'hair' => saved })
+      assert_equal own, c.reload.appearance_payload['hair']
+      assert_equal own, Vanai::PlayerState.new(c).public_payload[:appearance]['hair']
+      c.update!(gold: 99)
+      assert_equal own, c.reload.appearance['hair']
+    end
   end
 
   def test_aedri_bodies_and_independent_optional_hair

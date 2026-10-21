@@ -4,10 +4,11 @@ Character creation offers male/female Aedri, Nym and Valdren, plus female Rasha 
 live preview using the same `buildAvatar` factory as normal play. Drag the
 preview to orbit and scroll to zoom. Gender is stored as `appearance.face`;
 it selects a complete body. Rasha always resolves to its approved female body.
-Every player character has hair (Philip, 2026-10-15): there is no "none". Hair
-is a saved choice only for Nym, chestnut layers (`tousled`) or topknot (`bun`)
-on either body; every other body has one style, Rasha `waves`, Aedri male
-`waves` and female `braid`, Valdren male blonde half-up `cascade` and female
+Every player character has hair (Philip, 2026-10-15): there is no "none". Every
+body has one style. A Nym's hair follows the gender, players and NPCs alike
+(Philip, 2026-10-21): female the tousled topknot (`bun`), male the layers
+(`tousled`); a row saved with the other reads and saves as its own. Rasha
+`waves`, Aedri male `waves` and female `braid`, Valdren male blonde half-up `cascade` and female
 silver `braid`, Karrog the braided warrior coif (`braid`). Karrog's facial hair
 is independent (`beard: true/false`); beard and moustache are one unit. A legacy
 saved `none`, or any style a body does not offer, resolves to the body's own
@@ -89,8 +90,9 @@ through the asset index ([ASSETS.md](ASSETS.md)); there is no wardrobe editor.
 ## September 9 replacement integration
 
 The approved Meshy Nyms and fox Rasha replace the prior production recipes in
-creation, login and self/remote actors. Nym cross-body hairstyles use a fixed
-measured scalp fit; native body/style pairs and all source assets remain intact.
+creation, login and self/remote actors. Nym cross-body hairstyles had a fixed
+measured scalp fit (still in `nym.ts`), unused since each gender wears its own
+hair (2026-10-21); all source assets remain intact.
 Rasha creation accepts only female with waves, while old empty records
 resolve those defaults without a database rewrite. Existing race modifiers,
 progression, equipment rules and action mappings are preserved.
@@ -140,8 +142,8 @@ Production approval does not automatically approve new gameplay integration or m
 Every NPC in `shared/data/zones.json`, including both Capital variants, uses the
 same production body, hair, equipment and animation loaders as players.
 `npc-appearance.ts` assigns one of the eight supported race/body combinations
-(`NPC_BODIES`) from the stable content ID, with independently seeded Nym hair
-and Karrog beard choices; every NPC has hair (Philip, 2026-10-12). Names, roles,
+(`NPC_BODIES`) from the stable content ID, with a seeded Karrog beard choice
+(a Nym's hair follows the gender); every NPC has hair (Philip, 2026-10-12). Names, roles,
 zones and array order do not affect the assignment. A record's optional `body`
 pins the body where the story fixes the person's sex, and `likeness` seeds the
 hashes from another record so a recurring character looks the same in every

@@ -11,7 +11,7 @@ try{
  const info=page=>page.evaluate(()=>{const v=window.__vanai,a=v.avatar();return {appearance:v.state.self.appearance,race:v.state.self.race,model:a.modelVariant,anim:a.currentAnim,height:a.raceH,visible:a.model.root.getChildMeshes().filter(m=>m.isEnabled()&&m.getTotalVertices()>0&&!m.name.startsWith('wp')&&!m.name.startsWith('equipped ')).map(m=>m.name)}});
  for(const [i,page]of[p,o].entries()){await page.goto(QA_BASE+'/?daytime=.25');assert.equal((await api(page,'register',{email:users[i],password})).status,200);await page.reload();}
  const obs=await api(o,'characters',{name:'Observer'+seed.slice(-5),race:'aedri',job:'PLD',city:'caerdun',appearance:{face:'female',hair:'braid'}});assert.equal(obs.status,200);report.observer=obs.body.character;await o.reload();await o.locator(`[data-id="${report.observer.id}"]`).dblclick();await ready(o);
- const combos=[['nym','female','tousled','PLD'],['nym','male','bun','SAM'],['aedri','female','braid','DRK'],['aedri','male','waves','BLM'],['nym','female','bun','WHM'],['nym','male','tousled','MNK']];
+ const combos=[['nym','female','bun','PLD'],['nym','male','tousled','SAM'],['aedri','female','braid','DRK'],['aedri','male','waves','BLM'],['nym','female','bun','WHM'],['nym','male','tousled','MNK']];
  for(const [i,[race,face,hair,job]]of combos.entries()){
   if(i)await p.reload();await p.locator('#c-new').click();await p.locator(`[data-r=${race}]`).click();await p.locator(`#n-face [data-v=${face}]`).click();await p.locator(`#n-hair [data-v=${hair}]`).click();await p.locator(`[data-j=${job}]`).click();await p.locator('#n-name').fill('Char'+seed.slice(-6)+String.fromCharCode(97+i));
   await p.locator('#n-preview-status').waitFor({state:'hidden',timeout:60000});

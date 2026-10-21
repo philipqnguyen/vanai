@@ -7,7 +7,6 @@ class Character < ApplicationRecord
 
   # Only approved playable races; retained data for other races is not an unlock.
   RACES = Vanai::Data.races.select { |_, data| data["playable"] }.keys.freeze
-  NYM_APPEARANCE = { "face" => %w[male female], "hair" => %w[tousled bun] }.freeze
   NYM_DEFAULTS = { "face" => "male", "hair" => "tousled" }.freeze
   RASHA_DEFAULTS = { "face" => "female", "hair" => "waves" }.freeze
   KARROG_DEFAULTS = { "face" => "male", "hair" => "braid", "beard" => true }.freeze
@@ -50,22 +49,24 @@ class Character < ApplicationRecord
   before_validation :default_appearance
 
   def appearance_defaults
-    return NYM_DEFAULTS if race == "nym"
     return RASHA_DEFAULTS if race == "rasha"
     return KARROG_DEFAULTS if race == "karrog"
-    return {} unless %w[aedri valdren].include?(race)
+    return {} unless %w[aedri valdren nym].include?(race)
     face = appearance.is_a?(Hash) && appearance["face"] == "female" ? "female" : "male"
-    { "face" => face, "hair" => face == "female" ? "braid" : race == "valdren" ? "cascade" : "waves" }
+    female = face == "female"
+    hair = race == "nym" ? (female ? "bun" : "tousled") : female ? "braid" : race == "valdren" ? "cascade" : "waves"
+    { "face" => face, "hair" => hair }
   end
 
   # Every player character has hair (Philip, 2026-10-15): a race offers only its
-  # own styles, never "none". Aedri and Valdren have one style per body.
+  # own styles, never "none". Aedri, Valdren and Nym have one style per gender
+  # (Philip, 2026-10-21: a Nym woman wears the tousled topknot, "bun", and a Nym
+  # man the layers, "tousled"); a Nym row saved with the other reads as its own.
   def hair_choices
     case race
-    when "nym" then NYM_APPEARANCE["hair"]
     when "karrog" then %w[braid]
     when "rasha" then %w[waves]
-    when "aedri", "valdren" then [appearance_defaults["hair"]]
+    when "aedri", "valdren", "nym" then [appearance_defaults["hair"]]
     else []
     end
   end
@@ -76,7 +77,8 @@ class Character < ApplicationRecord
     # A row saved before the ruling may still say "none" (the migration
     # 20261015100001 rewrites them): on its next save it takes the race's
     # default instead of failing validation. A new character asking for no
-    # hair is refused by valid_appearance.
+    # hair is refused by valid_appearance. A Nym saved with the other gender's
+    # hair, before 2026-10-21, takes its own the same way.
     self.appearance = appearance.merge("hair" => appearance_defaults["hair"]) if persisted? && legacy_hairless?
   end
 
@@ -90,10 +92,9 @@ class Character < ApplicationRecord
       return
     end
     allowed = case race
-    when "nym" then NYM_APPEARANCE
     when "karrog" then { "face" => %w[male], "hair" => hair_choices, "beard" => [true, false] }
     when "rasha" then { "face" => %w[female], "hair" => hair_choices }
-    when "aedri", "valdren" then { "face" => %w[male female], "hair" => hair_choices }
+    when "aedri", "valdren", "nym" then { "face" => %w[male female], "hair" => hair_choices }
     else {}
     end
     allowed = allowed.merge("hair_colour" => HAIR_COLOURS) unless allowed.empty?
