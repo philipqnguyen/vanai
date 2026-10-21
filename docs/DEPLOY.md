@@ -120,7 +120,10 @@ and Sidekiq both read it, and a deploy restarts both.
 `GOODSORCERY_API_KEY` (optional, `gs_live_...`) sends the server's errors to
 [Good Sorcery](https://github.com/creativesorcery/goodsorcery-ruby): requests,
 cable actions and Sidekiq jobs, from a background thread of the gem's own, with
-`KAMAL_VERSION` as the release. Empty, it reaches the containers empty and
+`KAMAL_VERSION` as the release. The errors the world's own threads rescue (a
+tick phase, a zone, a client's action, a save) go too, through
+`Vanai::ErrorReports`: one report a site and raising line a minute, counting the
+rest, built on a thread of its own (SERVER-PERF.md rule 1). Empty, it reaches the containers empty and
 nothing is sent: the gem logs one warning the first time there is an error to
 report and starts no thread. Development and test never report.
 

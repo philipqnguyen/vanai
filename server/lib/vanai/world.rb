@@ -1,3 +1,4 @@
+require_relative "error_reports"
 require_relative "site_levels"
 require_relative "ferry_world"
 require_relative "cutscenes"
@@ -139,6 +140,7 @@ module Vanai
         yield
       rescue => e
         Rails.logger.error("[vanai] #{what} error: #{e.class}: #{e.message}\n#{Array(e.backtrace).first(lines).join("\n")}")
+        ErrorReports.report(e, what)
       end
 
       # ---- session lifecycle ----
@@ -2036,6 +2038,7 @@ module Vanai
           # a lock wait or a deadlock the database broke: the trade still
           # closes, and both are told
           Rails.logger.error("[vanai] trade #{a}-#{b}: #{e.class}: #{e.message}")
+          ErrorReports.report(e, "trade", level: :warning, char_ids: [a, b])
           false
         end
         @trades.delete_if { |_, t| t == trade }
@@ -2094,6 +2097,7 @@ module Vanai
         end
       rescue => e
         Rails.logger.error("[vanai] persist_position: #{e.message}")
+        ErrorReports.report(e, "persist_position", char_id: ps.char_id)
       end
 
       # The fall alone, for the moment it happens or ends (a death, a Raise),
@@ -2107,6 +2111,7 @@ module Vanai
         end
       rescue => e
         Rails.logger.error("[vanai] persist_death: #{e.message}")
+        ErrorReports.report(e, "persist_death", char_id: ps.char_id)
       end
 
       def persist_job(ps)
@@ -2115,6 +2120,7 @@ module Vanai
         end
       rescue => e
         Rails.logger.error("[vanai] persist_job: #{e.message}")
+        ErrorReports.report(e, "persist_job", char_id: ps.char_id)
       end
 
       # A party's kill XP in one statement (Combat.award_xp) rather than one
@@ -2136,6 +2142,7 @@ module Vanai
         end
       rescue => e
         Rails.logger.error("[vanai] persist_jobs: #{e.message}")
+        ErrorReports.report(e, "persist_jobs", characters: list.size)
       end
 
       # Nothing for the dead (Philip, 2026-10-19): a party's kill, a quest or a

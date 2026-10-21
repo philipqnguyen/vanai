@@ -49,10 +49,19 @@ stalls every zone, and 500 players times a query a line is a frozen world.
   `World.company_online`, kept in join, leave and `company_cmd`.
 - Examine still reads the target's equipment from the database. It is rare, so
   it stays.
+- An error the world thread rescues is never reported to Good Sorcery from that
+  thread: the gem builds an event where it is called, reading source files from
+  disk (about 150 us). `Vanai::ErrorReports.report` only counts and queues
+  (0.2 us with no key, 4-11 us with one) and sends one report a site and raising
+  line a minute from a thread of its own, below the world's priority. Rescue
+  sites the world, the position writer or the join loaders reach call it, never
+  `GoodSorcery.notify`.
 - *Guards:*
   - `test/integration/world_thread_budget_test.rb`: steady play in a city, in a
     dungeon and in an empty world asks the database nothing.
   - `social_index_test.rb`: a chat line and a company line ask nothing.
+  - `error_reports_test.rb`: a report is built off the thread that raised it,
+    once a site a minute, and with no key nothing is queued and no thread starts.
 
 ### 2. Durable writes are batched and spread, never one statement per row in one tick
 

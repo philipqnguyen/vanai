@@ -56,6 +56,7 @@ module ApplicationCable
         # The adapter's thread pool would swallow it without a word; the one
         # message is lost either way, so at least say so.
         logger.error("#{self.class.name} could not stream from #{broadcasting}: #{e.class}: #{e.message}")
+        Vanai::ErrorReports.report(e, "stream #{self.class.name}")
       end
     end
 
