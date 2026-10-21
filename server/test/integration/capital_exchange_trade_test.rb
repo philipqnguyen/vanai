@@ -102,6 +102,9 @@ class CapitalExchangeTradeIntegrationTest < Minitest::Test
   # total the buyer was not shown is refused, not charged.
   def test_the_leaders_rate_and_a_moved_rate
     Vanai::Courts.dormant_override = false
+    # an earlier test in this process may have marked rows ensured that its
+    # rollback took away (world_load_test.rb does the same)
+    Vanai::Courts.instance_variable_set(:@courts_ensured, false)
     Vanai::Courts.ensure_courts!
     Court.where(key: 'caerdun').update_all(tax_bp: 700)
     CourtFlag.set('capital_leader', 'caerdun')
