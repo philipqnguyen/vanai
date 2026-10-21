@@ -199,18 +199,26 @@ export function buildNpcAvatar(npc:NpcIdentity&{kind?:string}):AvatarNode {
   const p=npcPresentation(npc,npc.kind);
   const id=`npc_${npc.id}`,av=buildAvatar(id, p.race, p.job, true, p.look, npc.kind, p.appearance);
   av.proc.setEnabled(false);
-  // Clothing masks remove body triangles and equipment is deliberately not
-  // pickable. A body-sized invisible target keeps clothed torsos clickable.
+  addHitCapsule(av,id);
+  return av;
+}
+
+/** Clothing masks remove body triangles and equipment is deliberately not
+ * pickable, so a clothed body alone leaves only face and hands to click. A
+ * body-sized invisible capsule, added once the body has loaded and measured
+ * its height, keeps the whole figure clickable. Every NPC and every other
+ * player wears one; your own avatar does not (it would catch clicks meant
+ * for whatever stands past your shoulder). */
+export function addHitCapsule(av:AvatarNode,entityId:string):void {
   const owner=av.root.getScene();
   const ready=owner.onBeforeRenderObservable.add(()=>{
     if(!av.model)return;
     owner.onBeforeRenderObservable.remove(ready);
-    const hit=MeshBuilder.CreateCapsule(`npc_hit_${npc.id}`,{height:av.raceH,radius:av.raceH<1.4?.22:av.raceH>2?.38:.28,tessellation:8},owner);
+    const hit=MeshBuilder.CreateCapsule(`hit_${entityId}`,{height:av.raceH,radius:av.raceH<1.4?.22:av.raceH>2?.38:.28,tessellation:8},owner);
     hit.parent=av.root;hit.position.y=av.raceH/2;hit.visibility=0;
-    hit.isPickable=true;hit.metadata={entityId:id};
+    hit.isPickable=true;hit.metadata={entityId};
   });
   av.root.onDisposeObservable.addOnce(()=>owner.onBeforeRenderObservable.remove(ready));
-  return av;
 }
 
 export function buildAvatar(id: string, race: string, job: string, isNpc = false, look: Look = {}, npcKind?: string, appearance?: CharacterAppearance): AvatarNode {
@@ -711,14 +719,31 @@ export function buildMonsterMesh(id: string, key: string): MonsterNode {
     node.creatureScale = worldH / cr.stats.height;
     node.creature = cr.stats;
     node.model = mi;
+    addMonsterHit(trueRoot, id, worldH, cr.stats.width * node.creatureScale, cr.stats.length * node.creatureScale);
     playAnim(mi, ["Idle"], true);
     node.currentAnim = "Idle";
   });
   return node;
 }
 
+// A creature is picked on its skinned triangles, which a pick sees in the
+// bind pose and which leave gaps between legs, wings and tails: a side-on wolf
+// caught a third of the clicks on it. An invisible box of its measured height,
+// width and length (creatures/<glb>.json at its built scale), turning with it,
+// takes the click instead, never smaller than a small creature can still be
+// clicked at.
+const MOB_HIT_MIN = 0.9;
+function addMonsterHit(root: TransformNode, id: string, h: number, w: number, l: number): void {
+  const height = Math.max(h, MOB_HIT_MIN);
+  const hit = MeshBuilder.CreateBox(`mob_hit_${id}`, { height, width: Math.max(w, MOB_HIT_MIN), depth: Math.max(l, MOB_HIT_MIN) }, scene);
+  hit.parent = root; hit.position.y = height / 2; hit.visibility = 0;
+  hit.isPickable = true; hit.metadata = { entityId: id };
+}
+
 // play a death animation, then dispose (used instead of instant removal)
 export function monsterDeathAndDispose(node: MonsterNode): void {
+  // a corpse on its way out is no longer a target
+  node.root.getChildMeshes().forEach((m) => { m.isPickable = false; });
   const free = () => {
     if (node.root.isDisposed()) return; // a zone change already took the whole scene
     disposeProceduralMaterials(node.root);
