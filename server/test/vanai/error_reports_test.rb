@@ -47,7 +47,7 @@ class ErrorReportsTest < Minitest::Test
     R.report(boom, "zone caerdun")
     assert R.instance_variable_get(:@queue).empty?
     assert_empty R.instance_variable_get(:@last)
-    assert_same before, R.instance_variable_get(:@thread)
+    assert R.instance_variable_get(:@thread).equal?(before), "no thread of its own started"
   end
 
   def test_the_event_is_built_off_the_reporting_thread
