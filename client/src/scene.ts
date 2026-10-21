@@ -6085,11 +6085,10 @@ function buildZoneEdge(zoneKey: string, size: number): void {
       break;
     case "heartwood":
       // land on three sides, the bay east; the west exit is a pass in the
-      // chain, and the trees run right up to it
+      // chain (HW2_PASS, the module's), and the trees run right up to it
       buildRimMountains(zoneKey, size, 9232, {
         scale: [9, 16], tint: "#7e8a72",
         clearWhere: (x, z) => HW2_SEA.seaward(x, z) > 25,
-        faceClear: [[HW2_RIM_PASS[0], HW2_RIM_PASS[1], 34]],
       });
       break;
     default:
@@ -8606,13 +8605,13 @@ function makeBorderWall(s: BorderWallSpec): void {
 // song-steps -- is heartwood-city-build.ts (CITY-BUILD.md "Heartwood"). This
 // file keeps the plate, the forest floor and the bay, the road from the west
 // exit through the ring to the shore, the quay, the camps and orchards west
-// of the ring, and the border wall across the rim pass.
+// of the ring, and the West Gate, the cleft through the rim.
 //
 // What it is: the people the empire never conquered, in a city its survey
 // chains stopped at ("the empire's chains stopped where the grove began").
 // The town lives inside a ring of living trees, with paths curving round
-// trunks. The west border has one tall stone gate across the rim pass; it
-// carries the Fields portal. Timber homes, tiles gone to moss.
+// trunks. The way out west is a cleft in the rim, the West Gate, with the
+// Fields portal in it. Timber homes, tiles gone to moss.
 //
 // Card polygon at k = 2.15, centred on its own middle (svg 193, 151). Coast
 // on the east -- Heartwood Bay -- wild everywhere else.
@@ -8631,27 +8630,26 @@ const HW2_STRAND = makeBeach(HW2_SEA, { half: 520, cells: 260 });
 // land; a third more room, and the ring still reads as one ring
 const HW2_RING = { x: 0, z: 0, r: 170, band: 16 };
 const HW2_STEPS: [number, number] = [118, -62];   // the song-steps' stage, inside the east of the ring
-// the card's west exit, to the Heartwood Fields: the pass in the rim, placed
-// 10m inside the land edge as it actually wanders
-const HW2_RIM_PASS: [number, number] = (() => {
-  for (let x = -200; x > -350; x -= 1) if (!shapeNear(HW2_SHAPE, x, 2).inside) return [x + 10, 2];
-  return [-300, 2];
-})();
-// The shared portal is at the tall gate, not at the older inner gate. Keep
-// the rim clearance centred on its surveyed pass so moving the marker does
-// not regenerate a different mountain opening.
+// THE WEST GATE, to the Heartwood Fields: a cleft through the rim, the way
+// every field exit leaves (RIM.md "Passes"). It was a 30 m masonry wall with
+// a brick gate and two towers, the one cut stone in a grown city; a city that
+// keeps nothing ruled leaves by a crevice in the mountains (Philip,
+// 2026-10-21). The Fields' end of it is the same cleft. The veil stands where
+// the wall's gate stood, 10 m out past the plate's wandered edge, and the
+// gorge is 30 m, not 45: a longer one reached the crystal and the arrival.
+// Its axis is the road's own line (HW2_WEST_ROAD), not the edge's normal,
+// 6 degrees apart: the road keeps its first point, and the lamp planner
+// spaces the road's crooks from that point, so a road started up the cleft
+// instead moved every lamp along it through the city.
 const HW2_PORTAL = ZONES.heartwood.portals.find((p: any) => p.id === "hw_fields");
 const HW2_EXIT: [number, number] = [HW2_PORTAL.x, HW2_PORTAL.z];
-// THE BORDER WALL: preserve its 30m height, gate, towers and masonry grid.
-// Extend only the north end along the existing line into the rim. Keeping
-// the south origin fixed also keeps the gate's snapped 4m course unchanged.
-const HW2_WALL_X = -318;
-const HW2_WALL: [[number, number], [number, number]] = (() => {
-  const dx = 17.2, dz = 202.2, L = Math.hypot(dx, dz);   // the west border's own direction
-  const ux = dx / L, uz = dz / L;
-  // (south end run out to -105: at -70 it stopped a wall's width short of the rock)
-  return [[HW2_WALL_X + ux * -105, uz * -105], [HW2_WALL_X + ux * 128, uz * 128]];
-})();
+const HW2_WEST_ROAD: [[number, number], [number, number]] = [[-340, 2], [-250, 6]];
+const HW2_PASS = makeRimPass("heartwood", HW2_SHAPE, { portal: "hw_fields", depth: 30,
+  dir: [HW2_WEST_ROAD[1][0] - HW2_WEST_ROAD[0][0], HW2_WEST_ROAD[1][1] - HW2_WEST_ROAD[0][1]] });
+// The city is built here and not in a zones/ module, so it registers only
+// its pass: buildRimMountains cuts the gorge from it and buildPortals finds
+// the veil by it (rimVeil). The floor and the clearing are heartwood2Height's.
+registerZone({ key: "heartwood", passes: [HW2_PASS] });
 
 // THE FLOOR: soft, rolling, a low dome under the ring so the city sits on a
 // rise and the ground falls away to the bay -- a grove, not a lawn. No
@@ -8696,8 +8694,9 @@ const HW2_SHORE_PTS: [number, number][] = [100, 70, 40, 10, -20].map((z) => {
 const HW2_ROADS: Road[] = [
   // west exit, through the ring's west gap, across the middle, out through the
   // east gap and down to the shore. It never runs straight for long.
-  // (it starts past the border wall, so it runs out through the wall's gate)
-  { pts: [[HW2_WALL_X - 22, 2], [-250, 6], [-206, -4], [-166, 0], [-126, 8], [-84, -6], [-40, 4], [0, 0],
+  // (it starts behind the West Gate's veil, under the cleft's cap rocks, and
+  // runs out down the cleft's axis)
+  { pts: [...HW2_WEST_ROAD, [-206, -4], [-166, 0], [-126, 8], [-84, -6], [-40, 4], [0, 0],
           [40, 4], [65, 4], [90, 4], [100, 0], [124, 6], [164, 0], [200, 14], [232, 32], [HW2_ROAD_X1, HW2_SHORE_Z]], half: 4.2 },
   // north-east, curving round the inside of the ring toward the steps' side
   { pts: [[0, 0], [6, 30], [24, 58], [40, 94], [65, 94], [90, 94], [120, 84]], half: 3.4 },
@@ -8722,7 +8721,7 @@ const HW2_ORCHARDS: { x: number; z: number; cols: number; rows: number; yaw: num
 
 function heartwood2Height() {
   const roads = gradeRoads(HW2_ROADS, hw2Natural);
-  const base = (x: number, z: number) => {
+  const pre = (x: number, z: number) => {
     const o = offshore(HW2_SHAPE, x, z);
     if (o.sea) return Math.max(-9, -1.1 - o.d * 0.09);
     let h = hw2Natural(x, z);
@@ -8734,6 +8733,10 @@ function heartwood2Height() {
     h = HW2_STRAND.carve(x, z, h);
     return h;
   };
+  // the West Gate's floor over the finished ground, and nothing grows in it
+  // (fieldHeight's two lines for a module's passes)
+  const base = (x: number, z: number) => HW2_PASS.carve(x, z, pre(x, z), pre);
+  scatterExclusions.push((x, z) => HW2_PASS.blocks(x, z));
   fineTerrainZones.add("heartwood");
   return prepareHeartwoodCity(HW2_ROADS, base);
 }
@@ -8748,7 +8751,6 @@ function buildHeartwood2(): void {
     ships: [[4, 8, 0.9, "pirate/Ship_Small.gltf", 1.4, 0], [-16, 7, 0.9, "pirate/Ship_Small.gltf", 1.3, 0.2]],
   });
   hw2West();
-  makeBorderWall({ a: HW2_WALL[0], b: HW2_WALL[1], height: 30, road: HW2_ROADS[0], seed: 77, open: true, barrier: true });
   flushTown();
 }
 

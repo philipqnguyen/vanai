@@ -2442,19 +2442,14 @@
         "x": -317.7457254204942,
         "z": 2.9892046497717653,
         "to": "heartwoodfields",
-        "tx": 306,
-        "tz": -35,
-        "built": true,
+        "tx": 310,
+        "tz": -35.8,
         "fx": "veil",
         "veil": {
-          "width": 6.8,
-          "height": 9.6,
-          "yaw": -1.4892,
-          "frame": "rect",
-          "at": [
-            -317.73,
-            2.99
-          ]
+          "frame": "free",
+          "width": 20,
+          "height": 10,
+          "yaw": 1.5264
         }
       }
     ],
@@ -6956,19 +6951,14 @@
         "x": 320,
         "z": -35,
         "to": "heartwood",
-        "tx": -290,
-        "tz": 2,
-        "built": true,
+        "tx": -307.8,
+        "tz": 3.4,
         "fx": "veil",
         "veil": {
-          "width": 6.8,
-          "height": 9.6,
-          "yaw": -1.4808,
-          "frame": "rect",
-          "at": [
-            319.83,
-            -36.99
-          ]
+          "frame": "free",
+          "width": 20,
+          "height": 10,
+          "yaw": -1.6488
         }
       },
       {

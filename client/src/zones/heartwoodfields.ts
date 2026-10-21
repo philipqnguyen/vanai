@@ -6,14 +6,14 @@
 // charcoal smoke; orchard #6f9a4e, deep canopy #4e7c46, meadow #93b060,
 // smoke #9a938a. "Everything planted, everything loved, nothing surveyed."
 //
-// Layout: the road from the city gate in the east runs west across the
-// whole plate to the border gate, under trees the whole way -- the grove's
+// Layout: the road down out of Heartwood's cleft in the east runs west
+// across the whole plate to the border gate, under trees the whole way -- the grove's
 // shadow. North of it the orchards, ruled where nothing else here is; a
 // brook comes down from the north, turns the mill wheel where old Tammon
 // keeps the flume, crosses the road under a small bridge and runs on south
 // down a wooded dene to the camps' flat. South of the road the charcoal
-// camps burn in their clearings. The North Road leaves north-west and the
-// Shore Road south-west, each up a gorge through the chain; the ridge path
+// camps burn in their clearings. Heartwood is east, the North Road north-west
+// and the Shore Road south-west, each up a gorge through the chain; the ridge path
 // runs along the foot of the western ridge to the Widow Crake's door.
 //
 // The 2026-10 revamp (heartwoodfields_plan.ts holds the plan and the ground)
@@ -31,7 +31,7 @@ import { roadBed, zoneKeepClear, type Pt } from "../wild-terrain";
 import { wildPlace, wildScatter, wildLine } from "../wild-nature";
 import { dressCliffs } from "../wild-cliffs";
 import {
-  GATE_E, GATE_W, CROSS, ORCHARDS, CAMPS, MILL, CRAKE, BRIDGE, WATCH, WATCH_PATH, RING, RING_R, DENE, CRAG,
+  GATE_W, CROSS, ORCHARDS, CAMPS, MILL, CRAKE, BRIDGE, WATCH, WATCH_PATH, RING, RING_R, DENE, CRAG,
   roads, land,
 } from "./heartwoodfields_plan";
 
@@ -49,17 +49,20 @@ const SHAPE = shapeDetail({
   coast: [false, false, false, false, false, false],
 }, 8);
 
-// The two road exits are passes through the rim (RIM.md "Passes"): the lane
-// climbs a gorge between the chain's own rocks to the veil on the plate's
-// edge. The North Road's stands west of Elder Hazel's orchard gate, so her
+// The three road exits are passes through the rim (RIM.md "Passes"): the
+// road climbs a gorge between the chain's own rocks to the veil on the
+// plate's edge. Heartwood's is the West Gate, a cleft and not a wall: a
+// grown city keeps no masonry at its door (Philip, 2026-10-21), and the
+// cleft is the same on its own side of the mountains. The North Road's stands west of Elder Hazel's orchard gate, so her
 // gate stays in the fields and not in the cut. The north gorge bends at its
 // knee toward the lane coming up to it; the south-west one runs straight,
 // because bent east (-0.3) its mouth turned into the box collider of its own
 // first wall rock (a 66 m Rock_Medium_3) and the lane ran into it (pass QA).
+const PASS_E = makeRimPass(KEY, SHAPE, { portal: "hf_heartwood", bend: 0 });     // to Heartwood
 const PASS_NW = makeRimPass(KEY, SHAPE, { portal: "hf_northroad", bend: 0.3 });   // to the North Road
 const PASS_SW = makeRimPass(KEY, SHAPE, { portal: "hf_shoreroad", bend: 0 });     // to the Shore Road
 
-const ROADS = roads(PASS_NW.road as Pt[], PASS_SW.road as Pt[]);
+const ROADS = roads(PASS_E.road as Pt[], PASS_NW.road as Pt[], PASS_SW.road as Pt[]);
 function roadDist(x: number, z: number): number {
   let best = Infinity;
   for (const r of ROADS) for (let i = 0; i + 1 < r.pts.length; i++) {
@@ -107,18 +110,17 @@ registerZone({
   // roadBed FIRST (the trench trap: the old `h *= 0.35` near a road dug the
   // lanes in wherever the ground rose), then the brook cuts its ford through it
   carves: [roadBed(ROADS), BROOK],
-  passes: [PASS_NW, PASS_SW],
+  // the gorges' rocks are seeded by their place in this list: Heartwood's,
+  // added last, leaves the other two as they were
+  passes: [PASS_NW, PASS_SW, PASS_E],
   exclusions: () => {
     scatterExclusions.push((x, z) => roadDist(x, z) < 6);
   },
   edge: (size) => {
-    // 44 at the city gate: its wall runs 110m each way into the rock, so the
-    // break is a gate in a wall and not a hole (the gate is `built`, so the
-    // chain gives it no room of its own). The city gate's break sets its
-    // rocks back behind the wall, full reach 4m outside the edge, clear of
-    // the wall's back face: dropped, the strip behind the 30m wall was
-    // 108m of open ground to the plate's end from above (MEASURED 2026-10-10)
-    buildRimMountains(KEY, size, 9302, { scale: [9, 16], tint: "#7e8a72", faceClear: [[GATE_W[0], GATE_W[1], 44], [GATE_E[0], GATE_E[1], 44, 4]] });
+    // 44 at the border gate: its wall runs 110m each way into the rock, so
+    // the break is a gate in a wall and not a hole (the gate is `built`, so
+    // the chain gives it no room of its own)
+    buildRimMountains(KEY, size, 9302, { scale: [9, 16], tint: "#7e8a72", faceClear: [[GATE_W[0], GATE_W[1], 44]] });
   },
   build: (size) => build(size),
 });
@@ -146,7 +148,6 @@ function build(size: number): void {
   charcoalCamps(rnd);
   ridgePath(rnd);
   borderGate();
-  cityGate();
   flushTown();
 
   // the set pieces first (exact spots), then the scatters, which keep clear
@@ -160,27 +161,8 @@ function build(size: number): void {
   dressCliffs(KEY, size, { roads: ROADS, tint: RIM_TINT });
 }
 
-// THE CITY GATE, to Heartwood: the same wall the city stands behind on its
-// own side of the mountains, at the same height -- Heartwood's 30m border
-// wall in the grove's mossy tile (Philip: "use the same walls from
-// heartwood. Make it the same height as the walls in heartwood"). Its line
-// runs along the east border through the gate, 110m each way, so both ends
-// are buried in the chain. The portal stands in its gate (zones.json, built).
-function cityGate(): void {
-  const [gx, gz] = GATE_E;
-  // the east edge runs from (342,100) to (330,240) on the card: nearly due south
-  const dx = -12 * K, dz = -140 * K, L = Math.hypot(dx, dz);
-  const ux = dx / L, uz = dz / L;
-  setPalette("heartwood");
-  // 110m each way, and the chain's faces 44m off the gate: the wall has to
-  // reach INTO the rim's rocks or there is sky between its end and the first
-  // mountain (Philip, in three zones: "connect wall to mountain")
-  makeBorderWall({ a: [gx - ux * 110, gz - uz * 110], b: [gx + ux * 110, gz + uz * 110], height: 30, road: ROADS[0], seed: 98, open: true, barrier: true });
-  setPalette(null);
-}
-
 // THE GROVE-SHADOWED ROAD. Big broadleaves either side of the road the whole
-// way from the city gate to the crossroads, close enough that their crowns
+// way from Heartwood's cleft to the crossroads, close enough that their crowns
 // meet over it -- the card's "grove-shadowed road west".
 function groveRoad(rnd: () => number): void {
   const big: { x: number; z: number; scale: number; rot: number }[] = [];

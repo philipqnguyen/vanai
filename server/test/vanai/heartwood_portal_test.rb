@@ -42,14 +42,16 @@ class HeartwoodPortalTest < Minitest::Test
     [messages, departures]
   end
 
-  def test_tall_gate_activates_the_existing_fields_destination
+  # The West Gate is a cleft in the rim (2026-10-21): the veil spans the
+  # gorge, and it lands you up the Fields' own cleft, in front of its veil.
+  def test_the_cleft_veil_activates_the_fields_destination
     messages, departures = interact_at(@portal['x'] + 2, @portal['z'])
     assert_equal [[1, { transferring: true }]], departures
-    assert_equal [[1, { t: 'zone_change', zone: 'heartwoodfields', x: 306, z: -35 }]], messages
-    assert_equal true, @portal['built']
+    assert_equal [[1, { t: 'zone_change', zone: 'heartwoodfields', x: 310, z: -35.8 }]], messages
+    assert_nil @portal['built']
   end
 
-  def test_old_small_gate_position_no_longer_activates_the_portal
+  def test_the_cleft_mouth_is_too_far_from_the_veil
     messages, departures = interact_at(-306, 2)
     assert_empty departures
     assert_equal 'Too far away.', messages.last.last[:msg]
@@ -57,7 +59,7 @@ class HeartwoodPortalTest < Minitest::Test
 
   def test_return_arrival_and_crystal_stay_inside_the_city
     back = Vanai::Data.zones.fetch('heartwoodfields').fetch('portals').find { |p| p['id'] == 'hf_heartwood' }
-    assert_equal ['heartwood', -290, 2], back.values_at('to', 'tx', 'tz')
+    assert_equal ['heartwood', -307.8, 3.4], back.values_at('to', 'tx', 'tz')
     crystal = @definition.fetch('milestones').find { |p| p['id'] == 'crystal_heartwood' }
     assert_equal [-282, -10], crystal.values_at('x', 'z')
   end

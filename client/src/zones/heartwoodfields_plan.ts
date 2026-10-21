@@ -7,13 +7,13 @@
 // country to walk through: downs in the east with the families' verse stones
 // on one crown, a wooded dene the brook runs down south of the bridge, the
 // empire's old watch on a knoll over the crossroads, a crag over the Widow
-// Crake's door, and the two road exits as gorges through the chain.
+// Crake's door, and the road exits as gorges through the chain.
 import {
   terrain, mound, hills, valley, protect, union, roadsClear, keepClear, circleMask, corridorMask,
   smoothstep, type Pt, type Feature,
 } from "../wild-terrain";
 
-export const GATE_E: Pt = [320, -35];        // to Heartwood
+export const GATE_E: Pt = [320, -35];        // to Heartwood, the West Gate's cleft
 export const GATE_W: Pt = [-324, -12];       // the border gate, to the Timber Estates
 export const CROSS: Pt = [-100, -10];        // the crossroads under the grove
 export const ORCHARDS: Pt = [-108, 127];     // the wild orchards
@@ -45,17 +45,9 @@ export const DENE: Pt[] = [[-38, -34], [-37, -62], [-22, -96], [-9, -124], [-2, 
 // path passes under it.
 export const CRAG: Pt = [-245, -132];
 
-// the city wall's line through the east gate (the shape's east edge, nearly
-// due south on the card): makeBorderWall stands it 110 m each way
-const K = 2.3, ED = Math.hypot(12 * K, 140 * K);
-export const EAST_U: Pt = [-12 * K / ED, -140 * K / ED];
-export const EAST_WALL: [Pt, Pt] = [
-  [GATE_E[0] - EAST_U[0] * 110, GATE_E[1] - EAST_U[1] * 110],
-  [GATE_E[0] + EAST_U[0] * 110, GATE_E[1] + EAST_U[1] * 110],
-];
 // the border wall's line through the west gate (the ridge edge, nearly due
 // north on the card), 84 m south and 110 m north of the gate
-const WD = Math.hypot(12 * K, 144 * K);
+const K = 2.3, WD = Math.hypot(12 * K, 144 * K);
 export const WEST_U: Pt = [12 * K / WD, 144 * K / WD];
 export const WEST_WALL: [Pt, Pt] = [
   [GATE_W[0] - WEST_U[0] * 84, GATE_W[1] - WEST_U[1] * 84],
@@ -63,12 +55,13 @@ export const WEST_WALL: [Pt, Pt] = [
 ];
 
 export type Road = { pts: Pt[]; half: number };
-/** The roads, given the two passes' own road stubs (veil front -> mouth).
+/** The roads, given the three passes' own road stubs (veil front -> mouth).
  *  The first seven are the through roads and lanes the features keep off;
  *  the watch path goes WITH its knoll. */
-export function roads(passNW: Pt[], passSW: Pt[]): Road[] {
+export function roads(passE: Pt[], passNW: Pt[], passSW: Pt[]): Road[] {
   return [
-    { pts: [GATE_E, [200, -40], [60, -30], [-10, -16], BRIDGE, CROSS, [-220, -8], GATE_W], half: 3.4 },
+    // the grove road, down out of Heartwood's cleft and west to the border gate
+    { pts: [...passE, [200, -40], [60, -30], [-10, -16], BRIDGE, CROSS, [-220, -8], GATE_W], half: 3.4 },
     // the North Road lane, west of the orchards and Elder Hazel's gate, up
     // into its gorge
     { pts: [CROSS, [-140, 80], [-176, 128], ...passNW.slice().reverse()], half: 3.0 },
@@ -93,7 +86,7 @@ export function land(rs: Road[], keep: [number, number, number][]): (x: number, 
   const SAFE = union(
     keepClear(keep, 8), roadsClear(main, 10, 2),
     circleMask(LEVEL[0][0], LEVEL[0][1], LEVEL[0][2], 14), circleMask(LEVEL[1][0], LEVEL[1][1], LEVEL[1][2], 14),
-    corridorMask([EAST_WALL[0], EAST_WALL[1]], 10, 16), corridorMask([WEST_WALL[0], WEST_WALL[1]], 10, 16),
+    corridorMask([WEST_WALL[0], WEST_WALL[1]], 10, 16),
   );
   const F: Feature[] = [
     // the Hen Downs: rolling chalk-less downs either side of the grove road

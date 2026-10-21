@@ -182,9 +182,11 @@ export interface LampAdd { kind: 'lane' | 'tally'; at: XZ; toward: XZ; why: stri
 // cell's mean / p10 (both MEASURED, tmp/heartwood-night/steps/L4).
 export const LAMP_ADD: readonly LampAdd[] = [
   // the West Gate: the ruled crooks stop 300 m out, so the last 26 m of road
-  // to the gate, where every arrival walks in, had none (samples to 48 m)
-  { kind: 'lane', at: [-307.3, 9.2], toward: [-307, 3.5], why: 'West Gate, north of the road: the gate apron had no lamp (48 m)' },
-  { kind: 'lane', at: [-306.7, -2.3], toward: [-307, 3.5], why: 'West Gate, south of the road: the pair frames the arrival' },
+  // to the gate, where every arrival walks in, had none (samples to 48 m).
+  // The gate is a cleft in the rim now (2026-10-21) and its walls stand where
+  // the gate's pair stood, so the pair frames the cleft's mouth instead
+  { kind: 'lane', at: [-283, 10.2], toward: [-283, 4.5], why: "West Gate, north of the road at the cleft's mouth: the gate road had no lamp (48 m)" },
+  { kind: 'lane', at: [-292, -2], toward: [-292, 4], why: "West Gate, south of the road at the cleft's mouth: the pair frames the arrival" },
   // the gate road under the West Elder: both ruled crooks fell on the north
   // verge, so the south half lay in the Elder's moon shadow
   { kind: 'lane', at: [-208.4, -7.9], toward: [-208, -2.1], why: 'gate road under the West Elder: the darkest gate-road cell, (-212,-4) 19.5 / 14.9' },

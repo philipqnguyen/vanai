@@ -166,7 +166,16 @@ edge: (size) => {
 
 scene.ts `buildZoneEdge` still makes the call itself for two zones whose
 builds predate modules: Moonmere Shores (its module, `zones/moonmereshores.ts`,
-adds passes but must not set `edge`) and Heartwood.
+adds passes but must not set `edge`) and Heartwood (scene.ts registers a
+module for it with only its pass, `HW2_PASS`, and applies the pass's floor and
+clearing in `heartwood2Height` itself).
+
+Heartwood's West Gate and the Fields' end of it (`hw_fields`, `hf_heartwood`)
+were a 30 m `makeBorderWall` across the rim until 2026-10-21, when Philip had
+both made clefts: a grown city keeps no masonry at its door. Heartwood's pass
+takes `dir` along its road's first leg and `depth: 30` (scene.ts says why);
+the Fields' pass is last in its module's `passes`, because each gorge is
+seeded by its place in that list.
 
 | option | what it does |
 | --- | --- |
@@ -346,8 +355,7 @@ are measured (like the passes'), with their furthest bulge at the ground cut
 `back` metres outside the land edge, so nothing comes through the wall, and an
 oriented box collider each. RIM_ROCK's table would have stood them 15-25 m off
 where asked (it is the kit's box; the stones are generated). In use: Caerdun
-Fields `cf_caerdun` (0: the far mouth's bays end ~0.5 m past the edge), Heartwood
-Fields `hf_heartwood` (4, behind the open gate's 30 m wall), Hunting Wood `hw_gate` (2),
+Fields `cf_caerdun` (0: the far mouth's bays end ~0.5 m past the edge), Hunting Wood `hw_gate` (2),
 Moonmere Shores `ms_gate` (3). A gate with a `makeBorderWall` backdrop keeps it.
 
 ### Why the gorge waits for the templates (measured 2026-10-10)
