@@ -117,6 +117,13 @@ the courts are dormant: every auction house charges 3% and no council sits. Add 
 and redeploy to wake them; remove it and redeploy to put them back to sleep. Web
 and Sidekiq both read it, and a deploy restarts both.
 
+`GOODSORCERY_API_KEY` (optional, `gs_live_...`) sends the server's errors to
+[Good Sorcery](https://github.com/creativesorcery/goodsorcery-ruby): requests,
+cable actions and Sidekiq jobs, from a background thread of the gem's own, with
+`KAMAL_VERSION` as the release. Empty, it reaches the containers empty and
+nothing is sent: the gem logs one warning the first time there is an error to
+report and starts no thread. Development and test never report.
+
 Production uses no Rails credentials: Rails reads `SECRET_KEY_BASE` from the
 environment, and nothing reads `Rails.application.credentials`.
 
@@ -272,8 +279,9 @@ Set in `config/deploy.yml`:
 | `RAILS_MAX_THREADS` | `5`. Puma threads and Sidekiq concurrency. The Active Record pool is this **+9**: ActionCable's worker pool (4), the world's position writer and two join loaders (3), the world thread and one spare check out connections alongside the request threads (`config/database.yml`). |
 | `RUBY_THREAD_TIMESLICE` | `10`. Ruby's time slice in ms (default 100), so the world thread waking for its tick waits a few ms for the GVL rather than a whole slice behind each busy thread; the world thread's own priority keeps its slice long (SERVER-PERF.md rule 10). |
 
-`SECRET_KEY_BASE`, `POSTGRES_PASSWORD` and `ANTHROPIC_API_KEY` (empty unless
-the courts are on; see Settings and secrets) come in as secrets.
+`SECRET_KEY_BASE`, `POSTGRES_PASSWORD`, `ANTHROPIC_API_KEY` (empty unless
+the courts are on) and `GOODSORCERY_API_KEY` (empty, no error reports; see
+Settings and secrets) come in as secrets.
 
 `VANAI_FORCE_SSL` is not set, so it is on: Rails assumes TLS ended at the proxy,
 redirects to HTTPS, sends HSTS and marks cookies Secure. Both Kamal front doors

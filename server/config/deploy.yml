@@ -75,6 +75,9 @@ env:
     # The AI courts' switch (COURTS.md "Dormant courts"): empty, the courts are
     # dormant; set, they sit. Read by web (the world) and job (CouncilJob) alike.
     - ANTHROPIC_API_KEY
+    # Error reports to Good Sorcery: empty, nothing is sent and the app runs as
+    # before (DEPLOY.md "Settings and secrets").
+    - GOODSORCERY_API_KEY
   clear:
     RAILS_ENV: production
 

@@ -30,6 +30,11 @@ gem "sidekiq", "~> 8.0"
 # Without ANTHROPIC_API_KEY the courts are dormant and this is never called.
 gem "anthropic", "~> 1.78"
 
+# Error reports to Good Sorcery, configured by its defaults alone: the key is
+# GOODSORCERY_API_KEY, development and test never report, and without a key it
+# sends nothing and starts no thread (DEPLOY.md "Settings and secrets").
+gem "goodsorcery", "~> 0.1"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
