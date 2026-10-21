@@ -456,13 +456,20 @@ svg.lp { display: block; flex: 0 0 auto; }
 
 /* chat (Main artboard): channel tabs over one shared log, the composer always
    showing beneath it. Its height is fixed by construction (tab row 38 + log +
-   composer 38 + border 2) so the party frame can stop short of it. */
-#hud { --chat-log-h: 168px; --chat-h: calc(var(--chat-log-h) + 78px); }
+   composer 38 + border 2) so the party frame can stop short of it. The player
+   may drag it larger or smaller (hud.ts initChatResize sets --chat-w and
+   --chat-log-user); the caps here repeat chat_model.ts chatBounds so a saved
+   size from a bigger screen still fits this one. */
+#hud {
+  --chat-log-h: 168px;
+  --chat-log: min(var(--chat-log-user, var(--chat-log-h)), max(var(--chat-log-h), calc(100vh - 434px)));
+  --chat-h: calc(var(--chat-log) + 78px);
+}
 #chat {
   position: fixed; left: 20px; bottom: 20px; box-sizing: border-box;
   /* the design's 404, narrowed with the window so the chat's right edge stays
      14.5px clear of the centred 545px hotbar: 20 + (50vw - 307) = 50vw - 272.5 - 14.5 */
-  width: min(404px, max(300px, calc(50vw - 307px)));
+  width: min(var(--chat-w, 404px), max(300px, calc(50vw - 307px)));
   background: var(--lp-panel); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; overflow: hidden;
 }
 .chat-tabs { display: flex; gap: 2px; padding: 6px 6px 0; border-bottom: 1px solid var(--lp-hair); }
@@ -473,8 +480,21 @@ svg.lp { display: block; flex: 0 0 auto; }
   color: var(--lp-ink); font-size: 10px; font-weight: 700; line-height: 15px; text-align: center; margin-left: 5px; display: none;
 }
 .chat-tabs .unread.has { display: inline-block; }
+/* the grips sit inside the box (it clips), along the two edges that face open
+   screen; the corner shows a bracket while the pointer is over the chat */
+.chat-grip { position: absolute; z-index: 1; touch-action: none; }
+.chat-grip.n { top: 0; left: 0; right: 14px; height: 5px; cursor: ns-resize; }
+.chat-grip.e { top: 14px; right: 0; bottom: 0; width: 5px; cursor: ew-resize; }
+.chat-grip.ne { top: 0; right: 0; width: 14px; height: 14px; cursor: nesw-resize; }
+.chat-grip.ne::after {
+  content: ""; position: absolute; top: 4px; right: 4px; width: 6px; height: 6px;
+  border-top: 2px solid var(--lp-sub); border-right: 2px solid var(--lp-sub); border-top-right-radius: 3px;
+  opacity: 0; transition: opacity 0.15s;
+}
+#chat:hover .chat-grip.ne::after, #chat.resizing .chat-grip.ne::after { opacity: 1; }
+#chat.resizing { user-select: none; }
 #chat-log {
-  height: var(--chat-log-h); box-sizing: border-box; padding: 8px 12px; font-size: 13px; line-height: 1.55;
+  height: var(--chat-log); box-sizing: border-box; padding: 8px 12px; font-size: 13px; line-height: 1.55;
   overflow-y: auto; scrollbar-width: thin; overflow-wrap: anywhere;
 }
 /* the tabs filter by row class; chat_model.ts TAB_GROUPS names the same groups */
