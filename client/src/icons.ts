@@ -184,6 +184,81 @@ export const LP_PATHS: Record<string, string> = {
   // pommel, because a single-line blade with a square end read as a pencil
   // (a fuller was tried; at 26px it fills the blade in).
   job_DRK: "M7.7 13.7 15.7 5.7 20.5 3.5 18.3 8.3 10.3 16.3zM5.6 11.6l6.8 6.8M9 15l-3.4 3.4M4.6 18a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 1 0 0-2.8",
+  // ---- ability glyphs (2026-10-20): one picture per ability, so no two
+  // abilities on one job's bar ever share a face. A ranked spell (Stone II,
+  // Cure IV) draws its family's picture with the rank as Roman ticks in the
+  // lower-right corner, so those families keep x>16,y>17 clear. A weapon
+  // skill family (the samurai's tachi, the dark knight's scythe, the monk's
+  // fist, the paladin's blade) keeps the weapon lower-left and its own
+  // mark upper-right. Sized for 24 px; checked on the contact sheet
+  // (tools/qa/ability_icon_sheet.mjs) before any of them was kept.
+  // black mage
+  stone: "M4 15l3-7 6-3 5 4-2 7H6zM11 5l3 6-3 5",
+  blizzard: "M11 3v14M4.9 6.5l12.2 7M17.1 6.5 4.9 13.5M9 5l2 1.5 2-1.5M9 15l2-1.5 2 1.5",
+  fire: "M11 3c3 3.5 5 6 5 9.5a5 5 0 0 1-10 0c0-2.5 1.5-3.5 1.5-6 1.5.8 2.5 2.5 2.5 4.5 1-2 1-5 1-8z",
+  thunder: "M12 2 4 12h6l-1.5 7L17 9h-6z",
+  sleep: "M14 12.5A6 6 0 1 1 6.5 5a4.5 4.5 0 0 0 7.5 7.5zM15 4h4l-4 4h4M20 9.5h2l-2 2h2",
+  aero: "M3 8h11a2.5 2.5 0 1 0-2.5-2.5M3 13h15a2.5 2.5 0 1 1-2.5 2.5M3 18h8a2 2 0 1 1-2 2",
+  aspir: "M12 12a1 1 0 0 1 1 1a2 2 0 0 1-2 2a3 3 0 0 1-3-3a4 4 0 0 1 4-4a5 5 0 0 1 5 5a6 6 0 0 1-6 6a7 7 0 0 1-7-7a8 8 0 0 1 8-8",
+  flare: "M12 2l1.5 6 4.5-3-3 4.5 6 1.5-6 1.5 3 4.5-4.5-3-1.5 6-1.5-6-4.5 3 3-4.5-6-1.5 6-1.5-3-4.5 4.5 3z",
+  freeze: "M12 2l8.7 5v10L12 22l-8.7-5V7zM12 7v10M7.7 9.5l8.6 5M16.3 9.5l-8.6 5",
+  // dark knight: the scythe is a pole lower-left and a hooked blade at its head
+  hard_slash: "M5 21 13 6M13 6c2-3 7-3 9 1-4-1-7 0-9 2",
+  shadow_cleave: "M5 21 13 6M13 6c2-3 7-3 9 1-4-1-7 0-9 2M19 12v9M17 17l2 2 2-2",
+  nightfall: "M5 21 13 6M13 6c2-3 7-3 9 1-4-1-7 0-9 2M21 15.5a3.5 3.5 0 1 1-4.3-4.3 2.8 2.8 0 0 0 4.3 4.3z",
+  gloom_scythe: "M5 21 13 6M13 6c2-3 7-3 9 1-4-1-7 0-9 2M15 14c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0M15 18c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0",
+  torment: "M5 21 13 6M13 6c2-3 7-3 9 1-4-1-7 0-9 2M16 13l1.5 3M19.5 12l.5 3.5M22 14l-1 3",
+  guillotine: "M5 3v18M19 3v18M5 7h14l-14 6M5 21h14",
+  soul_eater: "M12 2c2 2.5 3.5 4 3.5 6.5a3.5 3.5 0 0 1-7 0C8.5 6 10 4.5 12 2zM4 14c2 3 5 5 8 5s6-2 8-5M7.5 15.5 9 18M12 16.5V19M16.5 15.5 15 18",
+  last_resort: "M6 3h12M6 21h12M7 3c0 5 5 6 5 9s-5 4-5 9M17 3c0 5-5 6-5 9s5 4 5 9M10.5 19h3",
+  blood_weapon: "M19 4 9 14M19 4h-4M19 4v4M6.5 13.5l4 4M5 19l2.5-2.5M16 14c1 1.3 1.5 2 1.5 3a1.5 1.5 0 0 1-3 0c0-1 .5-1.7 1.5-3z",
+  weapon_bash: "M12 2v12M8 14h8M9 14v4h6v-4M5 21l2-2M19 21l-2-2M12 20v2",
+  drain: "M10 15s-6-3.7-6-8.5a3.4 3.4 0 0 1 6-2.2 3.4 3.4 0 0 1 6 2.2c0 4.8-6 8.5-6 8.5zM10 15v5M8 18l2 2.5 2-2.5",
+  bio: "M10 3a6 6 0 0 0-6 6c0 2.3 1.2 4.1 3 5.2V17h6v-2.8c1.8-1.1 3-2.9 3-5.2a6 6 0 0 0-6-6zM7 9.5a.6.6 0 1 0 1.2 0 .6.6 0 1 0-1.2 0M11.8 9.5a.6.6 0 1 0 1.2 0 .6.6 0 1 0-1.2 0M8.5 17v2.5M11.5 17v2.5",
+  // monk: a side-on fist, knuckles right, and the mark that names the skill
+  burning_fists: "M5 12v-2a1.2 1.2 0 0 1 2.4 0v2M8 11.5V9a1.2 1.2 0 0 1 2.4 0v2.5M11 11.5V9.5a1.2 1.2 0 0 1 2.4 0v2M14 12v-1.5a1.2 1.2 0 0 1 2.4 0V15a5.5 5.5 0 0 1-5.5 5.5H10A5 5 0 0 1 5 15.5V12M8 7c0-2.5 1.2-3 1.8-5 .6 2 1.8 2.5 1.8 5M13 7c0-2.5 1.2-3 1.8-5 .6 2 1.8 2.5 1.8 5",
+  raging_fists: "M5 12v-2a1.2 1.2 0 0 1 2.4 0v2M8 11.5V9a1.2 1.2 0 0 1 2.4 0v2.5M11 11.5V9.5a1.2 1.2 0 0 1 2.4 0v2M14 12v-1.5a1.2 1.2 0 0 1 2.4 0V15a5.5 5.5 0 0 1-5.5 5.5H10A5 5 0 0 1 5 15.5V12M3 5l2-2.5 2 2.5 2-2.5 2 2.5 2-2.5 2 2.5 2-2.5 2 2.5",
+  lamplit_fist: "M5 12v-2a1.2 1.2 0 0 1 2.4 0v2M8 11.5V9a1.2 1.2 0 0 1 2.4 0v2.5M11 11.5V9.5a1.2 1.2 0 0 1 2.4 0v2M14 12v-1.5a1.2 1.2 0 0 1 2.4 0V15a5.5 5.5 0 0 1-5.5 5.5H10A5 5 0 0 1 5 15.5V12M7 6.5a4 4 0 0 1 8 0M11 1v2M5.5 3l1.2 1.2M16.5 3l-1.2 1.2",
+  howling_fist: "M5 12v-2a1.2 1.2 0 0 1 2.4 0v2M8 11.5V9a1.2 1.2 0 0 1 2.4 0v2.5M11 11.5V9.5a1.2 1.2 0 0 1 2.4 0v2M14 12v-1.5a1.2 1.2 0 0 1 2.4 0V15a5.5 5.5 0 0 1-5.5 5.5H10A5 5 0 0 1 5 15.5V12M18.5 10a4 4 0 0 1 0 6M21 7.5a7.5 7.5 0 0 1 0 11",
+  final_heaven: "M5 12v-2a1.2 1.2 0 0 1 2.4 0v2M8 11.5V9a1.2 1.2 0 0 1 2.4 0v2.5M11 11.5V9.5a1.2 1.2 0 0 1 2.4 0v2M14 12v-1.5a1.2 1.2 0 0 1 2.4 0V15a5.5 5.5 0 0 1-5.5 5.5H10A5 5 0 0 1 5 15.5V12M11 1v4M5 3l2 2M17 3l-2 2M2 8l2 1M20 8l-2 1",
+  hundred_fists: "M5 12v-2a1.2 1.2 0 0 1 2.4 0v2M8 11.5V9a1.2 1.2 0 0 1 2.4 0v2.5M11 11.5V9.5a1.2 1.2 0 0 1 2.4 0v2M14 12v-1.5a1.2 1.2 0 0 1 2.4 0V15a5.5 5.5 0 0 1-5.5 5.5H10A5 5 0 0 1 5 15.5V12M18 6l3.5-2.5M19 11.5h4M18 17l3.5 2.5M4 6 1 3.5",
+  mending_chant: "M8 17a2.5 2.5 0 1 1-.01 0M8 17V4c3 0 5 1.5 6 4M16 9a4 4 0 0 1 0 6M19 6.5a7.5 7.5 0 0 1 0 11",
+  stillness: "M12 12a1 1 0 1 0 .01 0M12 12m-4.5 0a4.5 4.5 0 1 0 9 0 4.5 4.5 0 1 0-9 0M12 12m-8.5 0a8.5 8.5 0 1 0 17 0 8.5 8.5 0 1 0-17 0",
+  breath_of_dawn: "M3 16h18M6 16a6 6 0 0 1 12 0M12 5v2M4.5 9 6 10.5M19.5 9 18 10.5M8 20h8",
+  breath_of_the_lamp: "M12 21v-5M5 16h14l-4.5-5h2.5L12 3 7 11h2.5z",
+  counterstance: "M5 8h10a4 4 0 0 1 0 8H8M11 13l-3 3 3 3M5 8l2-2M5 8l2 2",
+  // paladin (the other eight are the artboard's, above)
+  royal_blade: "M17 7 7 17M17 7h-4M17 7v4M4.5 15.5l4 4M3 21l2.5-2.5M14 6V2l2 1.5L18 1l2 2.5L22 2v4z",
+  vorpal_blade: "M19 4 9 14M19 4h-4M19 4v4M6.5 13.5l4 4M5 19l2.5-2.5M3 8a9 9 0 0 1 6-5M21 16a9 9 0 0 1-6 5",
+  saints_edge: "M17 7 7 17M17 7h-4M17 7v4M4.5 15.5l4 4M3 21l2.5-2.5M18 3a3 3 0 1 0 .01 0",
+  palisade: "M4 21V9l2-3 2 3v12M10 21V7l2-3 2 3v14M16 21V9l2-3 2 3v12M3 14h18",
+  bulwark: "M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6zM4 10h16M4.6 14.5h14.8",
+  hold_until_relieved: "M6 21V3M6 3h12l-3 4 3 4H6M3 21h6",
+  // samurai: the katana lower-left, the skill's mark upper-right
+  tachi_enpi: "M3 19 19 3M19 3h-4M19 3v4M5 15l4 4M12 9c2-2.5 4-2.5 5 0 1-2.5 3-2.5 5 0",
+  tachi_gekko: "M3 19 19 3M19 3h-4M19 3v4M5 15l4 4M21.5 11.5A4.5 4.5 0 1 1 15.5 6a3.5 3.5 0 0 0 6 5.5z",
+  tachi_jinpu: "M3 19 19 3M19 3h-4M19 3v4M5 15l4 4M12 7h6a1.5 1.5 0 1 0-1.5-1.5M14 11h8a1.5 1.5 0 1 1-1.5 1.5",
+  tachi_yukikaze: "M3 19 19 3M19 3h-4M19 3v4M5 15l4 4M17 6v8M13.5 8l7 4M20.5 8l-7 4",
+  tachi_koki: "M3 19 19 3M19 3h-4M19 3v4M5 15l4 4M17 10m-2.5 0a2.5 2.5 0 1 0 5 0 2.5 2.5 0 1 0-5 0M17 5v1.5M17 13.5V15M12 10h1.5M20.5 10H22",
+  tachi_kagero: "M3 19 19 3M19 3h-4M19 3v4M5 15l4 4M12 8c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0M13 12c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0",
+  tachi_rana: "M3 19 19 3M19 3h-4M19 3v4M5 15l4 4M13 7l3 3M17 5l3 3M14.5 12l3 3",
+  challenge: "M4 4l16 16M20 4 4 20M4 4h3M4 4v3M20 4h-3M20 4v3M4 20h3M4 20v-3M20 20h-3M20 20v-3",
+  third_eye: "M2 14s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 14 2 14zM12 11.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5M12 1.5l2 2.5-2 2.5-2-2.5z",
+  meditate: "M12 3a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5M7 13c1.5-2 3-3 5-3s3.5 1 5 3M3 19c2-3 5-4 9-4s7 1 9 4M3 19h18",
+  hasso: "M12 2v13M12 2l-2.5 3M12 2l2.5 3M8 15h8M12 15v6M10.5 21h3M4 10l2 2M20 10l-2 2",
+  warding_circle: "M12 12m-9 0a9 9 0 1 0 18 0 9 9 0 1 0-18 0M12 12m-4 0a4 4 0 1 0 8 0 4 4 0 1 0-8 0M12 3v2M12 19v2M3 12h2M19 12h2",
+  seigan: "M2 15h13l5-2v4l-5-2M7 12v6M4 13v4M7 6s2-3 5-3 5 3 5 3-2 3-5 3-5-3-5-3zM12 4.5a1.5 1.5 0 1 0 .01 0",
+  second_wind: "M3 15h10a2 2 0 1 0-2-2M3 19h6a2 2 0 1 1-2 2M17 11V3M14 6l3-3 3 3",
+  meikyo_shisui: "M12 12m-8 0a8 8 0 1 0 16 0 8 8 0 1 0-16 0M5 14c2-1.5 4-1.5 6 0s4 1.5 6 0M8 9l-2 2M11.5 7.5l-4 4",
+  // white mage
+  banish: "M10 2l2 6 6 2-6 2-2 6-2-6-6-2 6-2z",
+  radiant_smite: "M8 4h8v6H8zM12 10v11M9 21h6M12 1v1.5M5 6h2M17 6h2",
+  protect: "M10 3 3 5.5V11c0 4.5 3 7.2 7 8 4-.8 7-3.5 7-8V5.5zM7 9.5l2 2 4-4",
+  regen: "M10 20V9M10 13c0-3-2.5-5-6-5 0 3.5 2.5 5.5 6 5zM10 10c0-3 2.5-5 6-5 0 3.5-2.5 5.5-6 5z",
+  raise: "M12 21V7M8 11l4-4 4 4M9 3.5a3 3 0 0 1 6 0",
+  esuna: "M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11zM9 13.5l2 2 4-4",
+  benediction: "M6 3h12v4a6 6 0 0 1-12 0zM12 13v5M8 21h8M12 1v1M3.5 5l1-.5M20.5 5l-1-.5",
+  holy: "M12 3v18M3 12h18M12 12m-7 0a7 7 0 1 0 14 0 7 7 0 1 0-14 0",
 };
 
 // One stroke path as an inline svg. `class="gicon lp"` keeps the existing
@@ -203,41 +278,56 @@ export function jobIcon(job: string, size = 24, sw = 1.6): string {
   return strokeIcon(LP_PATHS[`job_${job}`] ?? LP_PATHS.shield, size, sw);
 }
 
-// The abilities the Main artboard draws by name. They are matched before the
-// effect rules, because several share an effect with a different picture:
-// Flash and Provoke are both enmity, Radiant Blade and Fast Blade both ws.
-// Keyed by abilities.json key; ABILITY_BY_NAME covers payloads without one.
+// Every ability draws its own picture (2026-10-20: two spells on one bar
+// shared the flash). Keyed by abilities.json key with any rank suffix
+// stripped, so Stone II finds "stone"; the eight the Main artboard drew keep
+// the artboard's names. A family shared across jobs (Cure and Cure Light,
+// Protect and Warding Chant, Regen and Verse of Vigor, Aspir and Absorb) is
+// the same picture on purpose: it is the same spell, and no job holds both.
 const ABILITY_GLYPH: Record<string, string> = {
   fast_blade: "sword",
   provoke: "provoke",
   cure_light: "cure",
+  cure: "cure",
   shield_bash: "bash",
   flash: "flash",
   rampart: "rampart",
   sentinel: "sentinel",
   radiant_blade: "radiant",
+  absorb: "aspir",
+  warding_chant: "protect",
+  verse_of_vigor: "regen",
 };
+// A name whose slug is not its key (the ability was renamed and kept its key).
 const ABILITY_BY_NAME: Record<string, string> = {
-  "Fast Blade": "sword",
-  "Provoke": "provoke",
-  "Cure Light": "cure",
-  "Shield Bash": "bash",
-  "Flash": "flash",
-  "Rampart": "rampart",
-  "Sentinel": "sentinel",
-  "Radiant Blade": "radiant",
+  "Shadow Scythe": "gloom_scythe",
+  "Dawn Fist": "lamplit_fist",
+  "Breath of the Grove": "breath_of_the_lamp",
+};
+const RANK: Record<string, number> = { ii: 2, iii: 3, iv: 4 };
+// Roman ticks in the lower-right corner: the rank of a spell whose family
+// picture it shares. Rank I draws nothing, as the spell lists read.
+const RANK_MARK: Record<number, string> = {
+  2: "M18.5 18v4M21.5 18v4",
+  3: "M17 18v4M20 18v4M23 18v4",
+  4: "M16 18v4M18.5 18l2 4 2-4",
 };
 
-// The stroke glyph for an ability payload {id|key, name, kind, element,
-// effect, power}. A design-named ability gets its own picture; otherwise
-// effect wins over kind, because what an ability does is what the player
-// needs to read at a glance on the bar; weapon skills fall through to kind.
-export function abilityStrokeIcon(ab: any, size = 24): string {
+// "Tachi: Enpi" -> tachi_enpi, "Saint's Edge" -> saints_edge, "Cure II" -> cure_ii
+const slug = (name: string) => name.toLowerCase().replace(/[':]/g, "").trim().replace(/\s+/g, "_");
+
+// An ability's picture and rank: {glyph, rank} for the key or name given.
+export function abilityGlyph(ab: any): { glyph: string; rank: number } {
   const a = ab || {};
-  const named = ABILITY_GLYPH[a.id] ?? ABILITY_GLYPH[a.key] ?? ABILITY_BY_NAME[a.name];
+  const key: string = a.id ?? a.key ?? (a.name ? ABILITY_BY_NAME[a.name] ?? slug(a.name) : "");
+  const m = /^(.*?)_(ii|iii|iv)$/.exec(key);
+  const base = m ? m[1] : key;
+  const rank = m ? RANK[m[2]] : 1;
+  const glyph = ABILITY_GLYPH[base] ?? (LP_PATHS[base] ? base : "");
+  if (glyph) return { glyph, rank };
+  // an ability the table does not know: read what it does, as before
   let name = "flash";
-  if (named) name = named;
-  else if (a.effect === "enmity") name = "provoke";
+  if (a.effect === "enmity") name = "provoke";
   else if (a.effect === "heal" || a.effect === "hot" || a.effect === "cure") name = "cure";
   else if (a.effect === "stun") name = "bash";
   // abilities.json spells the evade buff "evade_charges"
@@ -248,8 +338,16 @@ export function abilityStrokeIcon(ab: any, size = 24): string {
   else if (a.effect === "sleep") name = "moon";
   else if (a.effect === "dot" || a.effect === "poison") name = "droplet";
   else if (a.kind === "ws") name = "sword";
-  // elemental nukes and everything unmatched keep the default flash
-  return lpIcon(name, size);
+  return { glyph: name, rank: 1 };
+}
+
+// The stroke glyph for an ability payload {id|key, name, kind, element,
+// effect, power}: its own picture, with its rank's ticks appended to the
+// same path so the icon stays one currentColor stroke.
+export function abilityStrokeIcon(ab: any, size = 24): string {
+  const { glyph, rank } = abilityGlyph(ab);
+  const d = (LP_PATHS[glyph] ?? LP_PATHS.flash) + (RANK_MARK[rank] ?? "");
+  return strokeIcon(d, size);
 }
 
 // A consumable's hotbar glyph, by what it does, so a Potion and an Ether on

@@ -4,7 +4,10 @@
 
 import test from "node:test";
 import assert from "node:assert/strict";
-import { LP_PATHS, strokeIcon, lpIcon, jobIcon, abilityStrokeIcon, itemStrokeIcon } from "../src/icons.ts";
+import { readFileSync } from "node:fs";
+import { LP_PATHS, strokeIcon, lpIcon, jobIcon, abilityGlyph, abilityStrokeIcon, itemStrokeIcon } from "../src/icons.ts";
+
+const ABILITIES = JSON.parse(readFileSync(new URL("../../shared/data/abilities.json", import.meta.url), "utf8"));
 
 const pathOf = (svg) => svg.match(/<path d="([^"]*)"/)[1];
 
@@ -33,7 +36,7 @@ test("strokeIcon embeds the path verbatim, implicit command repetition included"
   assert.match(svg, /stroke-width="1.8"/);
 });
 
-test("abilityStrokeIcon reads the effect before the kind", () => {
+test("an ability the table does not know reads the effect before the kind", () => {
   assert.notEqual(abilityStrokeIcon({ effect: "revive" }), abilityStrokeIcon({}));
   assert.equal(pathOf(abilityStrokeIcon({ effect: "revive" })), LP_PATHS.crystal);
   assert.equal(pathOf(abilityStrokeIcon({ effect: "heal", kind: "spell" })), LP_PATHS.cure);
@@ -54,9 +57,36 @@ test("a design-named ability draws its own icon before the effect rules", () => 
   assert.equal(pathOf(abilityStrokeIcon({ id: "shield_bash", kind: "ja", effect: "stun" })), LP_PATHS.bash);
   // a payload without its key still matches by name
   assert.equal(pathOf(abilityStrokeIcon({ name: "Flash", effect: "enmity" })), LP_PATHS.flash);
-  // an ability the design never drew keeps the effect rule
-  assert.equal(pathOf(abilityStrokeIcon({ id: "palisade", name: "Palisade", kind: "ja", effect: "enmity" })), LP_PATHS.provoke);
-  assert.equal(pathOf(abilityStrokeIcon({ id: "royal_blade", name: "Royal Blade", kind: "ws" })), LP_PATHS.sword);
+  assert.equal(pathOf(abilityStrokeIcon({ name: "Tachi: Enpi" })), LP_PATHS.tachi_enpi);
+  assert.equal(pathOf(abilityStrokeIcon({ name: "Saint's Edge" })), LP_PATHS.saints_edge);
+  assert.equal(pathOf(abilityStrokeIcon({ name: "Shadow Scythe" })), LP_PATHS.gloom_scythe);
+});
+
+test("a ranked spell draws its family's picture with its rank's ticks", () => {
+  assert.deepEqual(abilityGlyph({ id: "stone" }), { glyph: "stone", rank: 1 });
+  assert.deepEqual(abilityGlyph({ id: "stone_iv" }), { glyph: "stone", rank: 4 });
+  assert.deepEqual(abilityGlyph({ name: "Cure III" }), { glyph: "cure", rank: 3 });
+  assert.deepEqual(abilityGlyph({ id: "radiant_smite_ii" }), { glyph: "radiant_smite", rank: 2 });
+  assert.equal(pathOf(abilityStrokeIcon({ id: "stone" })), LP_PATHS.stone);
+  assert.ok(pathOf(abilityStrokeIcon({ id: "stone_ii" })).startsWith(LP_PATHS.stone));
+  assert.notEqual(pathOf(abilityStrokeIcon({ id: "stone_ii" })), pathOf(abilityStrokeIcon({ id: "stone_iii" })));
+  // the same spell under two jobs' names is the same picture on purpose
+  assert.equal(abilityGlyph({ id: "warding_chant_ii" }).glyph, abilityGlyph({ id: "protect_ii" }).glyph);
+});
+
+test("every ability in abilities.json has its own picture, and no two on one job share one", () => {
+  const byJob = new Map();
+  for (const [id, ab] of Object.entries(ABILITIES)) {
+    const { glyph } = abilityGlyph({ id, ...ab });
+    assert.ok(LP_PATHS[glyph], `${id} draws an unknown glyph ${glyph}`);
+    // the name alone (a buff tile) finds the same picture as the key
+    assert.deepEqual(abilityGlyph({ name: ab.name }), abilityGlyph({ id }), `${ab.name} by name`);
+    const d = pathOf(abilityStrokeIcon({ id, ...ab }));
+    const seen = byJob.get(ab.job) ?? new Map();
+    assert.ok(!seen.has(d), `${ab.job}: ${id} and ${seen.get(d)} draw the same icon`);
+    seen.set(d, id);
+    byJob.set(ab.job, seen);
+  }
 });
 
 test("a consumable's hotbar glyph follows what it does", () => {
