@@ -5,6 +5,9 @@ one-character-every-job freedom. Combat is slow enough to talk during, and one
 character can learn every job. A Rails 8 server runs the world, a Babylon.js
 client draws it, and PostgreSQL keeps it.
 
+This is the open-source repository for the game hosted at
+[vanaiworld.com](https://vanaiworld.com).
+
 ## The game
 
 - **The world**: three starting cities (Caerdun, Heartwood and Moonmere), the
