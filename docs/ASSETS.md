@@ -29,6 +29,8 @@ The runtime is published as GitHub Releases of the game repository, tagged `runt
 
 **The pin.** `npm run assets:import` copies `release` `{repo, tag}` from the runtime folder's `release.json` into `client/src/asset-index.json` when that release was made from the very index being imported (its sha256 matches); otherwise it warns and pins nothing, and `client/test/release_pin.test.mjs` fails, so an index reaches `main` only with the release that matches it. `bin/fetch-runtime` reads the pin; `--tag` and `--latest` override it.
 
+**The tag lands on the pin commit.** `release.mjs` leaves the release a *draft*, which has no git tag yet. When the commit that pins it reaches `main`, `.github/workflows/publish-runtime.yml` (it runs on pushes that touch `asset-index.json`) publishes the draft with the pushed commit as the release's target, so the tag points at the commit that pins the release (push the pin on its own, or the tag lands on the head of the push). A pushed pin whose release is already published, or that names no draft yet, is left alone. Until it is published, the release's download links answer 404 (a token still reaches it through the API); the fallback is `node tools/runtime/release.mjs --publish` in the maker, which publishes the draft onto the tip of `main`.
+
 ## How the game loads them
 
 `client/src/asset-index.ts` resolves everything: `pinUrl(pin)` for a gear pin, `runtimePath('models/characters/aedri-male/body.glb')` for a file by path, `refPin` for a packed file. The base is `/assets` unless the build sets `VITE_ASSET_BASE` (production: `VANAI_ASSET_BASE`, a bucket URL or `/runtime` on the game's own server; DEPLOY.md "The maker's assets"). Gear bytes are hash-checked as they arrive (`gear/assets.ts`).
@@ -37,9 +39,9 @@ The runtime is published as GitHub Releases of the game repository, tagged `runt
 
 1. Build and approve it in the maker (its README, `GEAR-FITTING.md`, the authoritative fitting runbook). Run gear-production commands from the maker directory: its frozen approval records and relative producer paths assume it.
 2. In the maker: `node tools/runtime/prepare.mjs`. It packs what is new (only sources with no packed copy), checks every file and writes `runtime/files/` and `runtime/index.json`.
-3. In the maker: `node tools/runtime/release.mjs` (`--dry-run` first if you like). It builds the archives, uploads the changed ones to a new `runtime-YYYY.MM.DD.N` release on the game repository, and writes `runtime/release.json`. Then `node tools/runtime/publish.mjs` uploads the new files to R2 for the live server.
+3. In the maker: `node tools/runtime/release.mjs` (`--dry-run` first if you like). It builds the archives, uploads the changed ones to a new `runtime-YYYY.MM.DD.N` *draft* release on the game repository, and writes `runtime/release.json`. Then `node tools/runtime/publish.mjs` uploads the new files to R2 for the live server.
 4. Here: `npm --prefix client run assets:import` (copies the index after checking every file it names by size and hash, and that the maker verified packed gear with this checkout's decoder; `--fast` checks sizes only; pins the release), then `npm --prefix client test`.
-5. Commit `client/src/asset-index.json` here and the maker's `tools/runtime/pack/packed-report.json` there.
+5. Commit `client/src/asset-index.json` here and the maker's `tools/runtime/pack/packed-report.json` there. When the commit reaches `main`, the publish-runtime workflow publishes the draft onto it ("The tag lands on the pin commit" above).
 6. Before deploying: the files must be wherever `VANAI_ASSET_BASE` points (DEPLOY.md "The maker's assets"): R2 has them from step 3; a server that serves them itself runs `bin/fetch-runtime --dest`.
 
 ## Packed copies

@@ -32,7 +32,8 @@ They default to `VANAI_QA_BASE` (http://localhost:5173) for the dev client and
 
 **CI** (`.github/workflows/ci.yml`) runs the same checks on every push and pull
 request: `bin/ci` for the server, and `npm run build` plus `npm run
-test:no-runtime` for the client. CI has no character runtime, so the full `npm
+test:no-runtime` for the client. `publish-runtime.yml` publishes a draft runtime
+release when the commit pinning it reaches `main` (ASSETS.md "Releases"). CI has no character runtime, so the full `npm
 test` is yours to run locally with the runtime fetched (`bin/fetch-runtime`).
 
 ## One world, one process

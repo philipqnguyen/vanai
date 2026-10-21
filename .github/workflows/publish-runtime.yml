@@ -1,0 +1,40 @@
+# Publish the runtime release a commit pins. The maker's tools/runtime/release.mjs
+# uploads a runtime-YYYY.MM.DD.N release as a DRAFT (a draft has no git tag yet);
+# the game then imports the index, which pins that tag in
+# client/src/asset-index.json, and commits. When that commit reaches main, this
+# publishes the draft with the commit as its target, so the release's tag lands on
+# the very commit that pins it (ASSETS.md "Releases"). A push whose pinned release
+# is already published, or pins nothing, does nothing. Manual fallback: in the
+# maker, node tools/runtime/release.mjs --publish.
+name: Publish runtime release
+
+on:
+  push:
+    branches: [main]
+    paths: [client/src/asset-index.json]
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: client/src/asset-index.json
+          sparse-checkout-cone-mode: false
+      - name: Publish the pinned draft, if there is one
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          tag=$(jq -r '.release.tag // empty' client/src/asset-index.json)
+          if [ -z "$tag" ]; then echo "No release pinned; nothing to publish"; exit 0; fi
+          case "$tag" in runtime-[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9].*) ;; *) echo "Not a runtime tag: $tag" >&2; exit 1;; esac
+          if ! draft=$(gh release view "$tag" -R "$GITHUB_REPOSITORY" --json isDraft -q .isDraft); then
+            echo "No release $tag on $GITHUB_REPOSITORY (not yet uploaded?)"; exit 0
+          fi
+          if [ "$draft" != "true" ]; then echo "$tag is already published"; exit 0; fi
+          gh release edit "$tag" -R "$GITHUB_REPOSITORY" --draft=false --latest=false --target "$GITHUB_SHA"
+          echo "Published $tag at $GITHUB_SHA"

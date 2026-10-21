@@ -99,7 +99,9 @@ soon. Its output reaches this game as one folder of hash-named files plus one
 index, published as [GitHub Releases of this repository](../../releases) tagged
 `runtime-YYYY.MM.DD.N`. Each checkout pins the release it was tested against in
 `client/src/asset-index.json`, so a clone at any commit fetches the runtime that
-commit was tested with.
+commit was tested with, and each release's tag points at the commit that pins
+it (a release is uploaded as a draft and published by a workflow when its pin
+lands on `main`).
 
 `bin/fetch-runtime` installs that release into `runtime/` (gitignored). It
 downloads the release's manifest, then only the archives whose checksums the

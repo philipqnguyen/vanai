@@ -87,7 +87,7 @@ async function open(publicUrl){
   for(let attempt=1;;attempt++){
     const r=await fetch(url,{headers:{...headers(),Accept:token?'application/octet-stream':'*/*'}}).catch(e=>({ok:false,status:e.message}));
     if(r.ok)return r;
-    if(r.status===404)throw Error(`${publicUrl}: not found${token?'':' (a private repository needs GITHUB_TOKEN)'}`);
+    if(r.status===404)throw Error(`${publicUrl}: not found (a release not yet published, or a private repository${token?'':': set GITHUB_TOKEN'})`);
     if(attempt>=4)throw Error(`${publicUrl}: HTTP ${r.status}`);
     await new Promise(res=>setTimeout(res,attempt*2000));
   }
