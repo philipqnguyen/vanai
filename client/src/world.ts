@@ -8,7 +8,7 @@ import { attachFollowCamera } from "./follow_camera";
 import { arrivalHeading, arrivalBeta, alphaFor, portalLandings } from "./arrival";
 import { ArcRotateCamera, Vector3, PointerEventTypes } from "@babylonjs/core";
 import { engine, scene, buildZone, onGpuReset, openQuestDoor, setBorderGateOpen, groundHeight, entryHeight, standHeight, debugHit, worldObjects, setMilestoneLit, resolveCollision, updateCarpet } from "./scene";
-import { placeNpcAvatar, buildNpcAvatar, buildAvatar, disposeAvatar, npcStandY, raceHeight, animateAvatar, animateMonster, flashAttack, flashCast, flashMonsterHit, buildMonsterMesh, monsterDeathAndDispose, type AvatarNode, type MonsterNode, type Look } from "./entities";
+import { placeNpcAvatar, buildNpcAvatar, buildAvatar, addHitCapsule, disposeAvatar, npcStandY, raceHeight, animateAvatar, animateMonster, flashAttack, flashCast, flashMonsterHit, buildMonsterMesh, monsterDeathAndDispose, type AvatarNode, type MonsterNode, type Look } from "./entities";
 import { Track, INTERP_DELAY, noteServerClock, serverNow, tickServerClock } from "./interp";
 import { actorDrawn, npcPresent, handOffActor, setActorShown, whenActorSettled } from "./actor-reveal";
 import { DetailStreamer, type StreamCandidate } from "./actor_stream_plan";
@@ -841,7 +841,7 @@ function upsertPlayer(p: any): void {
 // snapshot -- the players after it and every monster -- so it is logged and
 // left without an avatar; every per-frame reader already skips that case.
 function buildRemoteAvatar(p: any): AvatarNode | null {
-  try { const av = buildAvatar(p.id, p.race, p.job, false, p.look || {}, undefined, p.appearance); builtFrom.set(av, lookKey(p.race, p.job, p.look || {}, p.appearance)); return av; }
+  try { const av = buildAvatar(p.id, p.race, p.job, false, p.look || {}, undefined, p.appearance); addHitCapsule(av, p.id); builtFrom.set(av, lookKey(p.race, p.job, p.look || {}, p.appearance)); return av; }
   catch (error) { console.error("Remote player avatar failed", p.id, error); return null; }
 }
 
@@ -1139,7 +1139,8 @@ function toggleAutorun(): void {
 }
 
 // A click targets. A double-click on an NPC or a touchable thing also uses
-// it — the same as pressing E once it is targeted. (Babylon reports the second
+// it — the same as pressing E once it is targeted — and on a monster fights
+// it, the same as F. (Babylon reports the second
 // click as POINTERDOUBLETAP and withholds POINTERPICK for it, so the first
 // click has already done the targeting by the time the double-tap lands.)
 function setupPointer(): void {
@@ -1168,11 +1169,15 @@ function setupPointer(): void {
       if (twice) tryInteract();
       return;
     }
-    if (twice) return; // a monster or a fellow explorer: the first click targeted it
-    if (entityId.startsWith("m")) {
-      state.targetId = entityId;
-      hud.updateTarget();
-    } else if (entityId.startsWith("p")) {
+    // (by the roster, not the "m" prefix: your own body's id is "me")
+    if (state.monsters.has(entityId)) {
+      if (state.targetId !== entityId) { state.targetId = entityId; hud.updateTarget(); }
+      // a double-click also fights it, as F does
+      if (twice && !fighting(entityId)) tryAttack();
+      return;
+    }
+    if (twice) return; // a fellow explorer: the first click targeted them
+    if (entityId.startsWith("p")) {
       // target player (for heals) — store as target too
       state.targetId = entityId;
       hud.updateTarget();
@@ -1257,11 +1262,16 @@ function clearTarget(): void {
   hud.updateTarget();
 }
 
+// Auto-attack is on against this monster (the one last engaged with F).
+let attackedId: string | null = null;
+const fighting = (id: string | null): boolean => attacking && !!id && id === attackedId;
+
 export function tryAttack(): void {
   if (!state.targetId || !state.targetId.startsWith("m")) return;
   // the world refuses both, and the flag would hold the music and the weapon
   if (state.self?.dead || cutscene) return;
   attacking = true;
+  attackedId = state.targetId;
   send("attack", { id: state.targetId });
   hud.addChat("combatline", "", `You engage ${nameOf(state.targetId)}.`);
 }
@@ -1630,6 +1640,14 @@ function tickRemotes(dt: number, now: number): void {
     || !!cutscene || cutsceneQueue.length > 0);
 }
 
+// A live monster targeted while you are not already fighting it, and while
+// tryAttack would act (not dead, not in a scene).
+function fightable(id: string | null): boolean {
+  if (!id || !id.startsWith("m") || fighting(id) || state.self?.dead || cutscene) return false;
+  const m = state.monsters.get(id);
+  return !!m && m.state !== "dead";
+}
+
 function checkPrompts(now: number): void {
   // a relic targeted while its quest was active goes inert at hand-in; let go
   // of it rather than leave a target frame on what is now furniture
@@ -1652,6 +1670,9 @@ function checkPrompts(now: number): void {
       key: "E", verb: isCourtStationId(obj.id) ? "Use" : interactVerb(obj.kind, obj.kind === "milestone" && !!state.milestones[obj.id]),
       name: obj.name, note: obj.d > obj.reach ? "too far" : undefined,
     });
+  } else if (fightable(state.targetId)) {
+    // a monster in your sights you are not yet fighting: F engages it
+    hud.setInteractPrompt({ key: "F", verb: "Fight", name: state.monsters.get(state.targetId!)!.name });
   } else {
     const near = nearestInteractable();
     hud.setInteractPrompt(near ? { key: "Tab", verb: "Target", name: near.name } : null);
