@@ -1,8 +1,8 @@
 # Vanai
 
 A browser MMORPG in the spirit of FFXI's social combat and FFXIV's
-one-character-every-job freedom. Combat is slow enough to talk during, and one
-character can learn every job. A Rails 8 server runs the world, a Babylon.js
+one-character-every-job freedom. Fights are won by the party, with weaponskills
+chained into skillchains and magic burst on top. A Rails 8 server runs the world, a Babylon.js
 client draws it, and PostgreSQL keeps it.
 
 This is the open-source repository for the game hosted at
