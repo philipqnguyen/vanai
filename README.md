@@ -1,7 +1,5 @@
 # Vanai
 
-*The lights are going out, and no one believes it.*
-
 A browser MMORPG in the spirit of FFXI's social combat and FFXIV's
 one-character-every-job freedom. Combat is slow enough to talk during, and one
 character can learn every job. A Rails 8 server runs the world, a Babylon.js
