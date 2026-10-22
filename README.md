@@ -8,6 +8,8 @@ client draws it, and PostgreSQL keeps it.
 This is the open-source repository for the game hosted at
 [vanaiworld.com](https://vanaiworld.com).
 
+<img src="https://www.vanaiworld.com/media/shots/combat-drake-thunder.jpg" alt="Combat" width="50%"><img src="https://www.vanaiworld.com/media/shots/moonmere-island.jpg" alt="Moonmere" width="50%"><img src="https://www.vanaiworld.com/media/shots/sunkenballroom-dancers.jpg" alt="Dungeon" width="50%"><img src="https://www.vanaiworld.com/media/shots/huntingwood-path.jpg" alt="Landscape" width="50%">
+
 ## The game
 
 - **The world**: three starting cities (Caerdun, Heartwood and Moonmere), the
