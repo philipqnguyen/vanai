@@ -39,7 +39,7 @@ fetched for you (see below).
 
 | | Version | Why |
 | --- | --- | --- |
-| Ruby | 4.0.6 (`server/.ruby-version`) | the server |
+| Ruby | 4.0.10 (`server/.ruby-version`) | the server |
 | Node.js | 25.9.0 or newer, as production builds use (`.node-version`) | the client and its tools |
 | PostgreSQL | a current release (production runs 18) | the database |
 | Python 3 | any current release | `tools/data/audit.py`, which `bin/ci` runs |

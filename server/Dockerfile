@@ -10,7 +10,7 @@
 #   docker build -f server/Dockerfile --build-arg VITE_ASSET_BASE=/runtime -t vanai .
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version
-ARG RUBY_VERSION=4.0.6
+ARG RUBY_VERSION=4.0.10
 ARG NODE_VERSION=25.9.0
 
 

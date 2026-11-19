@@ -2,7 +2,7 @@
 
 A cloud session gets a fresh Ubuntu 24.04 VM with the repo cloned and common
 toolchains preinstalled. Vanai needs three things that aren't in the base image —
-Ruby 4.0.6 (the image ships 3.1–3.3), Node 25 (it ships 20–22), and a running
+Ruby 4.0.10 (the image ships 3.1–3.3), Node 25 (it ships 20–22), and a running
 PostgreSQL with a role the app can connect as — so the pieces below exist.
 
 | File | When it runs | What it does |
@@ -41,7 +41,7 @@ Two hard constraints, both from the platform:
   in parallel, and Ruby is *copied* rather than built.
 
 Where Ruby comes from is the one part worth knowing. The VM image ships 3.1-3.3
-and `ruby/ruby-builder` publishes no prebuilt 4.0.6 for Ubuntu 24.04, so the
+and `ruby/ruby-builder` publishes no prebuilt 4.0.10 for Ubuntu 24.04, so the
 script pulls `ruby:$RUBY_VERSION-slim-bookworm` — the same official image
 `server/Dockerfile` builds on — and copies its `/usr/local` onto the host. That
 works because the image compiles Ruby for exactly that prefix, and its default
