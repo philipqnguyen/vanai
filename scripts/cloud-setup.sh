@@ -34,7 +34,7 @@ elapsed() { printf '%dm%02ds' $(( (SECONDS - START_TS) / 60 )) $(( (SECONDS - ST
 # Versions used when the repository can't be located (see find_repo). The real
 # values are read from server/.ruby-version and the Dockerfile's NODE_VERSION arg
 # so this script never drifts from what production builds.
-RUBY_VERSION_DEFAULT=4.0.6
+RUBY_VERSION_DEFAULT=4.0.10
 NODE_VERSION_DEFAULT=25.9.0
 
 # --------------------------------------------------------------------------- #
@@ -120,7 +120,7 @@ install_node() {
 # Ruby                                                                         #
 # --------------------------------------------------------------------------- #
 # The image ships Ruby 3.1-3.3; this app needs 4.0.x, and ruby/ruby-builder has
-# no prebuilt 4.0.6 for ubuntu-24.04, so the fast path is the official Docker
+# no prebuilt 4.0.10 for ubuntu-24.04, so the fast path is the official Docker
 # image — the very artifact production is built on (server/Dockerfile starts
 # FROM ruby:$RUBY_VERSION-slim). It installs into /usr/local, so its contents can
 # be copied onto the host at the prefix they were compiled for, and its default
